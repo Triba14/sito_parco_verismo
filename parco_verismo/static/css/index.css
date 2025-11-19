@@ -1,0 +1,754 @@
+/* Hero Section con Video Background */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Disabilita hover su tutte le immagini */
+img {
+    transition: none !important;
+}
+
+img:hover {
+    transform: none !important;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    color: var(--color-avorio);
+    line-height: 1.2;
+}
+
+#hero h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: var(--color-avorio);
+    opacity: 0.9;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    #hero h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Titolo Sezione Principale (Missione e Visione) */
+#missione-visione {
+    background-color: #ffffff;
+}
+
+.main-section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.title-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-malpelo);
+    margin: 0 auto 0.5rem;
+}
+
+.main-section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* Responsive per titolo principale */
+@media (max-width: 768px) {
+    .main-section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Ottimizzazione dimensioni sezioni */
+section[id^="luoghi"],
+section[id^="autori"],
+section[id^="eventi-news"] {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    position: relative;
+}
+
+section[id^="luoghi"] img,
+section[id^="autori"] img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Sezioni monocromatiche */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem !important;
+    margin-bottom: 0.3rem !important;
+    color: var(--color-text-primary) !important;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.8rem !important;
+    color: var(--color-malpelo) !important;
+}
+
+.section-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-secondary) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Bottone monocromatico */
+.btn-custom {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    color: var(--color-white);
+    background-color: var(--color-malpelo);
+    border: 2px solid var(--color-malpelo);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--color-malpelo-dark);
+    border-color: var(--color-malpelo-dark);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Sfondi sezioni alternati */
+#missione-visione {
+    background-color: var(--color-white);
+}
+
+#luoghi {
+    background-color: var(--color-avorio);
+}
+
+#autori {
+    background-color: var(--color-white);
+}
+
+/* Eventi e News Section */
+#eventi-news {
+    background-color: var(--color-avorio);
+}
+
+.eventi-box,
+.news-box {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease;
+}
+
+.eventi-box:hover,
+.news-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.box-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.box-divider {
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-malpelo);
+    margin: 0 auto;
+}
+
+.box-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Eventi Cards */
+.eventi-list {
+    margin-bottom: 2rem;
+}
+
+.evento-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--color-malpelo);
+    background-color: var(--color-avorio);
+    transition: all 0.3s ease;
+}
+
+.evento-card:hover {
+    border-left-color: var(--color-malpelo-dark);
+    background-color: var(--color-terracotta);
+}
+
+.evento-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    margin-right: 1rem;
+}
+
+.date-day {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-text-primary);
+    line-height: 1;
+}
+
+.date-month {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--color-malpelo);
+    text-transform: uppercase;
+}
+
+.evento-info {
+    flex: 1;
+}
+
+.evento-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.evento-location {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* News Cards */
+.news-list {
+    margin-bottom: 2rem;
+}
+
+.news-card {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.news-card:last-child {
+    border-bottom: none;
+}
+
+.news-card:hover {
+    background-color: var(--color-avorio);
+    padding-left: 1.5rem;
+}
+
+.news-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.news-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.news-excerpt {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Box Footer */
+.box-footer {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.btn-custom-alt {
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    background-color: transparent;
+    border: 2px solid var(--color-malpelo);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-alt:hover {
+    background-color: var(--color-malpelo);
+    color: var(--color-white);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .eventi-box,
+    .news-box {
+        padding: 1.5rem;
+    }
+    
+    .box-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Itinerari Section */
+#itinerari {
+    background-color: var(--color-white);
+}
+
+.itinerari-main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.itinerari-divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-malpelo);
+    margin: 0 auto 1.5rem;
+}
+
+.itinerari-intro {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Itinerario Cards */
+.itinerario-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--color-malpelo);
+}
+
+.itinerario-card:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-ocra);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(154, 78, 64, 0.2);
+}
+
+.itinerario-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--color-malpelo) 0%, var(--color-ocra) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 6px 20px rgba(154, 78, 64, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.itinerario-card:hover .itinerario-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(154, 78, 64, 0.4);
+}
+
+.itinerario-icon svg,
+.itinerario-icon i {
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.itinerario-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.itinerario-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--color-malpelo);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    font-style: italic;
+}
+
+.itinerario-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.itinerario-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    text-align: left;
+}
+
+.itinerario-highlights li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.itinerario-highlights li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-malpelo);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-itinerario {
+    display: inline-block;
+    padding: 14px 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-malpelo) 0%, var(--color-malpelo-dark) 100%);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    align-self: center;
+    box-shadow: 0 4px 15px rgba(154, 78, 64, 0.3);
+}
+
+.btn-itinerario:hover {
+    background: linear-gradient(135deg, var(--color-malpelo-dark) 0%, var(--color-malpelo) 100%);
+    color: var(--color-white);
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(154, 78, 64, 0.4);
+}
+    transform: translateX(5px);
+}
+
+/* Prenotazione CTA */
+.prenotazione-cta {
+    background: linear-gradient(135deg, var(--color-malpelo) 0%, var(--color-malpelo-dark) 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-strong);
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-avorio);
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: rgba(245, 241, 230, 0.9);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.btn-prenotazione {
+    display: inline-block;
+    padding: 15px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-avorio);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-prenotazione:hover {
+    background-color: var(--color-white);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Itinerari */
+@media (max-width: 768px) {
+    .itinerari-main-title {
+        font-size: 2rem;
+    }
+
+    .itinerari-intro {
+        font-size: 1rem;
+    }
+
+    .itinerario-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .itinerario-title {
+        font-size: 1.2rem;
+    }
+
+    .prenotazione-cta {
+        padding: 2rem 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 1.6rem;
+    }
+
+    .cta-text {
+        font-size: 0.95rem;
+    }
+
+    .btn-prenotazione {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Citazioni Letterarie */
+.quote-section {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 0 !important;
+    overflow: hidden;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(154, 78, 64, 0.85) 0%, rgba(212, 164, 69, 0.75) 100%);
+    z-index: 1;
+}
+
+.quote-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.literary-quote {
+    position: relative;
+    max-width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.98);
+    border-left: 4px solid var(--color-ocra);
+    border-radius: 6px;
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    font-size: 3rem;
+    color: var(--color-ocra);
+    font-family: Georgia, serif;
+    line-height: 1;
+    opacity: 0.3;
+}
+
+.quote-text {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    font-style: italic;
+    margin: 0 0 0.8rem 0;
+    padding-left: 0.5rem;
+}
+
+.quote-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+    padding-right: 0.5rem;
+    border-top: 2px solid var(--color-ocra);
+    padding-top: 0.6rem;
+}
+
+.author-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-malpelo);
+}
+
+.quote-source {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--color-text-primary);
+    opacity: 0.7;
+    font-style: italic;
+}
+
+@media (max-width: 992px) {
+    .quote-section {
+        min-height: 240px;
+        padding: 2.5rem 0 !important;
+    }
+
+    .literary-quote {
+        padding: 1.3rem 1.3rem 1.3rem 1.8rem;
+    }
+
+    .quote-icon {
+        font-size: 2.5rem;
+    }
+
+    .quote-text {
+        font-size: 0.95rem;
+    }
+
+    .author-name {
+        font-size: 0.9rem;
+    }
+
+    .quote-source {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .quote-section {
+        min-height: 200px;
+        padding: 2rem 0 !important;
+    }
+
+    .literary-quote {
+        padding: 1rem 1rem 1rem 1.5rem;
+    }
+
+    .quote-icon {
+        font-size: 2rem;
+        top: -5px;
+    }
+
+    .quote-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}

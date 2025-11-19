@@ -19,20 +19,368 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 </head>
 
 <body>
-    {% include 'parco_verismo/navbar.html' %}
-    <header>
-        <video class="videobg" src="{% static 'assets/video/videobg.mp4' %}" autoplay muted loop></video>
+
+    <header> {% include 'parco_verismo/navbar.html' %}
+        <section id="hero" class="d-flex align-items-center">
+            <video autoplay muted loop id="myVideo">
+                <source src="{% static 'assets/video/videobg.mp4' %}" type="video/mp4">
+            </video>
+            <div class="container-fluid text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 data-aos="fade-up" data-aos-delay="100">Parco Letterario Verismo</h1>
+                <h2 data-aos="fade-up" data-aos-delay="300">Un viaggio nella letteratura verista siciliana</h2>
+            </div>
+        </section>
+
     </header>
-    </div>
+
+    <!-- Missione e Visione Section -->
+    <section id="missione-visione" class="main-section-header py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <article class="text-center">
+                        <h2 class="main-section-title" data-aos="fade-up">Missione e Visione</h2>
+                        <div class="title-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                        <p class="main-section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Il nostro Parco Letterario nasce con la missione di preservare e valorizzare il patrimonio
+                            letterario del Verismo siciliano, celebrando i luoghi e le opere di Giovanni Verga e Luigi
+                            Capuana.
+                            Attraverso percorsi culturali immersivi, vogliamo far rivivere l'autenticità della Sicilia
+                            dell'Ottocento, quella raccontata ne "I Malavoglia" e "Mastro-don Gesualdo". La nostra
+                            visione
+                            è trasformare questi luoghi storici in spazi vivi di cultura, dove letteratura, storia e
+                            tradizione si intrecciano per offrire un'esperienza unica. Dai paesaggi di Aci Trezza alle
+                            strade di Vizzini, ogni angolo del nostro parco racconta una storia di dignità, fatica e
+                            umanità che ancora oggi parla al cuore di chi lo visita.
+                        </p>
+                        <a href="#" class="btn-custom mt-3" data-aos="fade-up" data-aos-delay="300">Scopri di più</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luoghi Section -->
+    <section id="luoghi" class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'assets/img/logo-header.png' %}" alt="Luoghi del Verismo"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <article>
+                        <h2 class="section-title" data-aos="fade-right">I Luoghi del Verismo</h2>
+                        <h3 class="section-subtitle" data-aos="fade-right" data-aos-delay="100">Tra Catania e la provincia</h3>
+                        <p class="section-text" data-aos="fade-right" data-aos-delay="200">
+                            Percorri i sentieri che hanno ispirato le opere immortali del Verismo. Da Aci Trezza,
+                            teatro dei Malavoglia, alla Casa del Nespolo, fino alle strade di Vizzini dove nacque
+                            Giovanni Verga. Ogni luogo racconta una storia, ogni pietra custodisce un ricordo.
+                            Il nostro parco letterario ti guida attraverso questi scenari autentici, dove la realtà
+                            e la finzione si fondono, permettendoti di rivivere le atmosfere e le emozioni che
+                            hanno dato vita a capolavori della letteratura italiana.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autori Section -->
+    <section id="autori" class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="{% static 'assets/img/logo-header.png' %}" alt="Autori del Verismo"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <article>
+                        <h2 class="section-title" data-aos="fade-left">I Grandi Autori</h2>
+                        <h3 class="section-subtitle" data-aos="fade-left" data-aos-delay="100">Le voci del realismo siciliano</h3>
+                        <p class="section-text" data-aos="fade-left" data-aos-delay="200">
+                            Giovanni Verga, Luigi Capuana, Federico De Roberto: i maestri che hanno rivoluzionato
+                            la letteratura italiana. Attraverso le loro opere, hanno raccontato con spietato realismo
+                            la Sicilia dell'Ottocento, dando voce ai vinti, ai pescatori, ai contadini. Le loro storie
+                            di fatica, passione e dignità umana hanno superato i confini del tempo e dello spazio,
+                            diventando patrimonio universale. Scopri le loro biografie, leggi le loro opere,
+                            immergiti nel loro mondo letterario che continua a parlare al cuore dei lettori di oggi.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citazione Letteraria 2 -->
+    <section class="quote-section" style="background-image: url({% static 'assets/img/logo-header.png' %});">
+        <div class="quote-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-6">
+                    <blockquote class="literary-quote" data-aos="fade-up">
+                        <div class="quote-icon">“</div>
+                        <p class="quote-text">
+                            La vita è nuda e cruda, spietata; bisogna ritrarla così come è, senza veli, 
+                            senza infingimenti, con la sincerità dell'arte che non mente.
+                        </p>
+                        <footer class="quote-author">
+                            <span class="author-name">Luigi Capuana</span>
+                            <span class="quote-source">Studi sulla letteratura contemporanea</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventi e News Section -->
+    <section id="eventi-news" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Eventi Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="eventi-box h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="box-header">
+                            <h2 class="box-title">Eventi</h2>
+                            <div class="box-divider"></div>
+                        </div>
+                        <p class="box-description">
+                            Partecipa ai nostri eventi culturali dedicati al Verismo: letture, spettacoli teatrali,
+                            visite guidate e workshop letterari nei luoghi che hanno ispirato i grandi autori.
+                        </p>
+                        <div class="eventi-list">
+                            <div class="evento-card">
+                                <div class="evento-date">
+                                    <span class="date-day">15</span>
+                                    <span class="date-month">DIC</span>
+                                </div>
+                                <div class="evento-info">
+                                    <h3 class="evento-title">Lettura dei Malavoglia</h3>
+                                    <p class="evento-location">Aci Trezza - Casa del Nespolo</p>
+                                </div>
+                            </div>
+                            <div class="evento-card">
+                                <div class="evento-date">
+                                    <span class="date-day">22</span>
+                                    <span class="date-month">DIC</span>
+                                </div>
+                                <div class="evento-info">
+                                    <h3 class="evento-title">Teatro: Mastro-don Gesualdo</h3>
+                                    <p class="evento-location">Vizzini - Piazza Umberto I</p>
+                                </div>
+                            </div>
+                            <div class="evento-card">
+                                <div class="evento-date">
+                                    <span class="date-day">10</span>
+                                    <span class="date-month">GEN</span>
+                                </div>
+                                <div class="evento-info">
+                                    <h3 class="evento-title">Workshop: Scrivere alla Verga</h3>
+                                    <p class="evento-location">Catania - Museo Verga</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <a href="{% url 'parco_verismo:eventi' %}" class="btn-custom-alt">Tutti gli eventi</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Column -->
+                <div class="col-lg-6">
+                    <div class="news-box h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box-header">
+                            <h2 class="box-title">News</h2>
+                            <div class="box-divider"></div>
+                        </div>
+                        <p class="box-description">
+                            Rimani aggiornato sulle ultime novità del Parco: nuovi percorsi, restauri,
+                            pubblicazioni e iniziative culturali legate al patrimonio letterario del Verismo.
+                        </p>
+                        <div class="news-list">
+                            <div class="news-card">
+                                <span class="news-date">5 Novembre 2025</span>
+                                <h3 class="news-title">Inaugurazione nuovo percorso letterario</h3>
+                                <p class="news-excerpt">
+                                    Apre al pubblico il sentiero "Sulle orme di Verga" che collega
+                                    Aci Trezza a Catania attraverso i luoghi più significativi...
+                                </p>
+                            </div>
+                            <div class="news-card">
+                                <span class="news-date">28 Ottobre 2025</span>
+                                <h3 class="news-title">Restauro completato: Casa Museo Capuana</h3>
+                                <p class="news-excerpt">
+                                    Terminati i lavori di restauro della Casa Museo di Luigi Capuana a Mineo.
+                                    La riapertura è prevista per dicembre...
+                                </p>
+                            </div>
+                            <div class="news-card">
+                                <span class="news-date">15 Ottobre 2025</span>
+                                <h3 class="news-title">Nuova pubblicazione: I luoghi del Verismo</h3>
+                                <p class="news-excerpt">
+                                    È disponibile la guida illustrata ai luoghi letterari del Parco,
+                                    con mappe dettagliate e itinerari consigliati...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <a href="{% url 'parco_verismo:news' %}" class="btn-custom-alt">Tutte le news</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citazione Letteraria 3 -->
+    <section class="quote-section" style="background-image: url({% static 'assets/img/logo-header.png' %});">
+        <div class="quote-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <blockquote class="literary-quote" data-aos="fade-up">
+                        <div class="quote-icon">“</div>
+                        <p class="quote-text">
+                            Ogni paese ha le sue passioni, i suoi pregiudizi, le sue grandezze e le sue miserie; 
+                            ed è roba che bisogna saperla.
+                        </p>
+                        <footer class="quote-author">
+                            <span class="author-name">Giovanni Verga</span>
+                            <span class="quote-source">Vita dei campi</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerari e Prenotazioni Section -->
+    <section id="itinerari" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="itinerari-main-title" data-aos="fade-up">Itinerari Letterari</h2>
+                    <div class="itinerari-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="itinerari-intro" data-aos="fade-up" data-aos-delay="200">
+                        Scegli il tuo percorso tra i luoghi che hanno ispirato i capolavori del Verismo siciliano.
+                        Ogni itinerario è un'esperienza unica tra letteratura, storia e paesaggi indimenticabili.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itinerari Verghiani -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="itinerario-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="itinerario-icon" data-aos="zoom-in" data-aos-delay="200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a.5.5 0 0 1 .5.5V2a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 8 0zM3.732 1.732a.5.5 0 0 1 .707 0l1.06 1.06a.5.5 0 1 1-.707.708L3.732 2.44a.5.5 0 0 1 0-.708zM0 8a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H.5A.5.5 0 0 1 0 8zm1.732 5.268a.5.5 0 0 1 .708 0l1.06-1.06a.5.5 0 1 1 .708.707l-1.06 1.06a.5.5 0 0 1-.708-.707zm10.536 0a.5.5 0 0 1 0 .707l-1.06 1.06a.5.5 0 1 1-.708-.707l1.06-1.06a.5.5 0 0 1 .708 0zM14 8a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1h-1.5A.5.5 0 0 1 14 8zm-1.232-5.268a.5.5 0 0 1 0 .708l-1.06 1.06a.5.5 0 1 1-.708-.707l1.06-1.06a.5.5 0 0 1 .708 0z"/>
+                                <path d="M8 4.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="itinerario-title" data-aos="fade-up" data-aos-delay="250">Itinerari Verghiani</h3>
+                        <p class="itinerario-description" data-aos="fade-up" data-aos-delay="300">
+                            Percorsi dedicati ai luoghi di Giovanni Verga: da Aci Trezza con i Malavoglia, alla Vizzini 
+                            di Mastro-don Gesualdo, fino alla Catania letteraria. Esplora i paesaggi che hanno ispirato 
+                            il maestro del Verismo attraverso itinerari tematici tra mare, campagna e città.
+                        </p>
+                        <ul class="itinerario-details">
+                            <li><strong>Percorsi:</strong> 5 itinerari disponibili</li>
+                            <li><strong>Difficoltà:</strong> Varia (da Facile a Medio)</li>
+                            <li><strong>Luoghi chiave:</strong> Aci Trezza, Vizzini, Catania</li>
+                        </ul>
+                        <a href="#" class="btn-itinerario">Esplora gli itinerari</a>
+                    </div>
+                </div>
+
+                <!-- Itinerari Capuaniani -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="itinerario-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="itinerario-icon" data-aos="zoom-in" data-aos-delay="300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="itinerario-title" data-aos="fade-up" data-aos-delay="350">Itinerari Capuaniani</h3>
+                        <p class="itinerario-description" data-aos="fade-up" data-aos-delay="400">
+                            Alla scoperta dei luoghi di Luigi Capuana, teorico del Verismo. Visita Mineo, la sua città 
+                            natale, la Casa Museo e le campagne siciliane che fanno da sfondo alle sue novelle. 
+                            Un viaggio nella poetica realista tra borghi storici e paesaggi rurali autentici.
+                        </p>
+                        <ul class="itinerario-details">
+                            <li><strong>Percorsi:</strong> 4 itinerari disponibili</li>
+                            <li><strong>Difficoltà:</strong> Varia (da Facile a Impegnativo)</li>
+                            <li><strong>Luoghi chiave:</strong> Mineo, Caltagirone, Catania</li>
+                        </ul>
+                        <a href="#" class="btn-itinerario">Esplora gli itinerari</a>
+                    </div>
+                </div>
+
+                <!-- Itinerari Tematici -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="itinerario-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="itinerario-icon" data-aos="zoom-in" data-aos-delay="400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                        </div>
+                        <h3 class="itinerario-title" data-aos="fade-up" data-aos-delay="450">Itinerari Tematici</h3>
+                        <p class="itinerario-description" data-aos="fade-up" data-aos-delay="500">
+                            Percorsi speciali che intrecciano letteratura, tradizioni e cultura siciliana. Dal tour 
+                            completo del Verismo, agli itinerari enogastronomici, fino ai percorsi dedicati alle 
+                            tradizioni artigiane e contadine descritte nelle opere veriste. Esperienze uniche e personalizzabili.
+                        </p>
+                        <ul class="itinerario-details">
+                            <li><strong>Percorsi:</strong> 6 itinerari disponibili</li>
+                            <li><strong>Difficoltà:</strong> Varia (da Facile a Impegnativo)</li>
+                            <li><strong>Temi:</strong> Tradizioni, Enogastronomia, Arte</li>
+                        </ul>
+                        <a href="#" class="btn-itinerario">Esplora gli itinerari</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prenotazione CTA -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="prenotazione-cta" data-aos="fade-up">
+                        <div class="cta-content">
+                            <h3 class="cta-title">Prenota la tua Visita</h3>
+                            <p class="cta-text">
+                                Tutti gli itinerari sono disponibili con guide esperte e possono essere personalizzati 
+                                in base alle tue esigenze. Prenota ora la tua esperienza nel Parco Letterario Verismo.
+                            </p>
+                            <a href="#" class="btn-prenotazione">Vai alla Prenotazione</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'parco_verismo/footer.html' %}
 
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    
+    <script src="{% static 'js/aos.js' %}"></script>
     <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 120
+        });
+
         // Navbar scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.getElementById('mainNav');
             if (window.scrollY > 50) {
                 navbar.classList.add('navbar-scrolled');
