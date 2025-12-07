@@ -16,3 +16,4 @@ django-parler==2.3
 
 # PostgreSQL for production (uncomment when needed)
 # psycopg2-binary==2.9.9
+django-ratelimit==4.1.0
