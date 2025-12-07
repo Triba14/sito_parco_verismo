@@ -1,12 +1,17 @@
 """
-Admin personalizzato per la gestione delle Prenotazioni
+Admin personalizzato per la gestione delle Prenotazioni.
 """
-from django.contrib import admin
-from django.urls import path
-from django.shortcuts import render
-from django.db.models import Count, Q
-from django.utils import timezone
+# Standard library imports
 from datetime import timedelta
+
+# Django imports
+from django.contrib import admin
+from django.db.models import Count, Q
+from django.shortcuts import render
+from django.urls import path
+from django.utils import timezone
+
+# Local imports
 from .models import Prenotazione
 
 

@@ -1,11 +1,17 @@
 """
-Form per validazione Prenotazioni e altri form del sito
+Form per validazione Prenotazioni e altri form del sito.
 """
-from django import forms
-from django.core.validators import EmailValidator, RegexValidator
-from django.core.exceptions import ValidationError
-from .models import Prenotazione
+# Standard library imports
 import re
+from datetime import date, timedelta
+
+# Django imports
+from django import forms
+from django.core.exceptions import ValidationError
+from django.core.validators import EmailValidator, RegexValidator
+
+# Local imports
+from .models import Prenotazione
 
 
 class PrenotazioneForm(forms.ModelForm):
@@ -163,12 +169,10 @@ class PrenotazioneForm(forms.ModelForm):
         """Validazione data preferita"""
         data = self.cleaned_data.get('data_preferita')
         if data:
-            from datetime import date
             oggi = date.today()
             if data < oggi:
                 raise ValidationError('La data preferita non può essere nel passato')
             # Limite massimo 1 anno in futuro
-            from datetime import timedelta
             max_data = oggi + timedelta(days=365)
             if data > max_data:
                 raise ValidationError('La data preferita non può essere oltre 1 anno da oggi')
