@@ -1,30 +1,64 @@
 #!/usr/bin/env python3
 """
-Script completo per popolare il database con:
-- Tutte le opere principali di Verga e Capuana con link Wikisource
-- Eventi con foto
-- Notizie con foto
-- Archivio fotografico con foto esistenti del sito
+Script completo per popolare e gestire il database del Parco Letterario del Verismo.
+Include:
+- Popolamento database (autori, opere, eventi, notizie, archivio foto, itinerari)
+- Aggiornamento coordinate itinerari per mappa interattiva
+- Verifica e controllo dati
 
-Esegui questo script con: python populate_db_complete.py
+Esegui con: 
+  python populate_db_complete.py                # Popola database
+  python populate_db_complete.py --update-coords # Aggiorna coordinate itinerari
+  python populate_db_complete.py --check        # Verifica dati
 """
 import os
 import django
 from datetime import datetime, timedelta
 from django.core.files import File
 import shutil
+import sys
 
 # Setup Django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 django.setup()
 
-from parco_verismo.models import Autore, Opera, Evento, Notizia, FotoArchivio
+from parco_verismo.models import Autore, Opera, Evento, Notizia, FotoArchivio, Itinerario
 from django.conf import settings
+from django.contrib.auth import get_user_model
+
+def create_superuser():
+    """
+    Crea o aggiorna il superuser admin con password admin123
+    """
+    User = get_user_model()
+    username = 'admin'
+    email = 'admin@parcolettverismo.it'
+    password = 'admin123'
+    
+    user, created = User.objects.get_or_create(
+        username=username,
+        defaults={'email': email, 'is_staff': True, 'is_superuser': True}
+    )
+    
+    if created:
+        user.set_password(password)
+        user.save()
+        print(f"✓ Superuser creato: {username} / {password}")
+    else:
+        # Aggiorna la password anche se esiste già
+        user.set_password(password)
+        user.is_staff = True
+        user.is_superuser = True
+        user.save()
+        print(f"• Superuser aggiornato: {username} / {password}")
 
 def copy_static_to_media(source_path, destination_relative):
     """
     Copia un file da static/assets/img a media/ e restituisce il percorso del file copiato
     """
+    if not source_path:
+        return None
+        
     static_source = os.path.join(settings.BASE_DIR, 'parco_verismo', 'static', 'assets', 'img', source_path)
     media_dest = os.path.join(settings.MEDIA_ROOT, destination_relative)
     
@@ -32,15 +66,29 @@ def copy_static_to_media(source_path, destination_relative):
     os.makedirs(os.path.dirname(media_dest), exist_ok=True)
     
     if os.path.exists(static_source):
-        shutil.copy2(static_source, media_dest)
-        # Restituisce il percorso relativo per usarlo con Django File
-        return destination_relative
+        try:
+            shutil.copy2(static_source, media_dest)
+            # Restituisce il percorso relativo per usarlo con Django File
+            return destination_relative
+        except Exception as e:
+            print(f"  ⚠️  Errore copia immagine {source_path}: {e}")
+            return None
+    else:
+        print(f"  ⚠️  Immagine non trovata: {source_path}")
     return None
 
 def populate():
     print("="*70)
     print("POPOLAMENTO COMPLETO DEL DATABASE")
     print("="*70)
+    
+    # ========================================================================
+    # CREAZIONE SUPERUSER
+    # ========================================================================
+    print("\n" + "="*70)
+    print("CREAZIONE SUPERUSER")
+    print("="*70)
+    create_superuser()
     
     # ========================================================================
     # CREAZIONE AUTORI
@@ -90,7 +138,22 @@ Il romanzo è caratterizzato dall'uso del discorso indiretto libero e da una lin
 il parlato popolare siciliano. Tema centrale è il contrasto tra il mondo tradizionale, rappresentato 
 da Padron 'Ntoni, e le aspirazioni di modernità dei giovani.''',
             'link_wikisource': 'https://it.wikisource.org/wiki/I_Malavoglia',
-            'copertina_path': 'vizzini/centrostorico.jpg'
+            'copertina_path': 'vizzini/centrostorico.jpg',
+            'traduzioni': {
+                'en': {
+                    'titolo': 'The House by the Medlar Tree',
+                    'trama': '''I Malavoglia is a choral novel that tells the story of the Toscano family, 
+nicknamed "Malavoglia" (The House by the Medlar Tree), poor fishermen from the village of Aci Trezza. 
+The story focuses on Padron 'Ntoni's attempts to keep the family together and repay a debt incurred 
+from purchasing a shipment of lupins for trade. The shipwreck of the boat "Provvidenza" carrying 
+the lupins marks the beginning of a series of misfortunes that will strike the family.''',
+                    'analisi': '''The work is considered the masterpiece of Italian Verismo. Verga describes 
+the life of Sicilian fishermen with realism, their struggles against poverty and fate. The novel 
+is characterized by the use of free indirect discourse and a language that reflects Sicilian popular 
+speech. The central theme is the contrast between the traditional world, represented by Padron 'Ntoni, 
+and the aspirations for modernity of the young.'''
+                }
+            }
         },
         {
             'titolo': 'Mastro-don Gesualdo',
@@ -193,6 +256,56 @@ veristi a un contesto urbano e industriale, mantenendo lo stesso stile impersona
             'copertina_path': 'vizzini/cunziria.jpg'
         },
         {
+            'titolo': 'Il marito di Elena',
+            'slug': 'il-marito-di-elena',
+            'anno_pubblicazione': 1882,
+            'trama': '''Romanzo che racconta la storia di Cesare Dorello, marito di Elena, una donna 
+che lo tradisce. Il protagonista è combattuto tra l'amore per la moglie e l'umiliazione del tradimento, 
+in un dramma borghese che esplora la gelosia e l'onore.''',
+            'analisi': '''Opera di transizione tra il romanticismo e il verismo, Il marito di Elena 
+mostra l'interesse di Verga per l'analisi psicologica e per i conflitti interiori dei personaggi. 
+Il tema del tradimento viene trattato con realismo e senza moralismi.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Il_marito_di_Elena',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Eros',
+            'slug': 'eros-verga',
+            'anno_pubblicazione': 1875,
+            'trama': '''Romanzo epistolare che racconta la passione amorosa tra Alberto e Adele, 
+una storia d'amore tormentata che si conclude tragicamente. L'opera esplora i temi della passione, 
+della gelosia e del destino.''',
+            'analisi': '''Eros rappresenta ancora un'opera del periodo romantico di Verga, con toni 
+melodrammatici e un'attenzione particolare agli stati d'animo dei protagonisti. Tuttavia, emergono 
+già elementi di realismo nella descrizione dei sentimenti.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Eros_(Verga)',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Don Candeloro e C.i',
+            'slug': 'don-candeloro',
+            'anno_pubblicazione': 1894,
+            'trama': '''Raccolta di novelle che esplorano vari aspetti della società siciliana, 
+dalla nobiltà decaduta ai contadini, con storie che mostrano l'ipocrisia, l'avidità e le 
+contraddizioni sociali dell'epoca.''',
+            'analisi': '''Questa raccolta dimostra la maturità stilistica di Verga nel verismo, 
+con una rappresentazione distaccata e oggettiva dei vizi e delle virtù della società siciliana. 
+Le storie sono caratterizzate da ironia amara e pessimismo.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Don_Candeloro_e_C.i',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'I ricordi del capitano d\'Arce',
+            'slug': 'ricordi-capitano-arce',
+            'anno_pubblicazione': 1891,
+            'trama': '''Raccolta di novelle narrate in prima persona da un capitano in pensione, 
+che ricorda episodi della sua vita militare e civile, tra avventure, amori e disillusioni.''',
+            'analisi': '''Opera minore di Verga che mostra la sua capacità di variare registro narrativo 
+e punto di vista. Le storie hanno un tono più leggero rispetto alle opere veriste maggiori.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/I_ricordi_del_capitano_d%27Arce',
+            'copertina_path': None
+        },
+        {
             'titolo': 'Vagabondaggio',
             'slug': 'vagabondaggio',
             'anno_pubblicazione': 1887,
@@ -203,19 +316,105 @@ società, rappresentati con il tipico realismo verista.''',
 sugli emarginati e sui disadattati. Verga mostra come la modernità non porti necessariamente al 
 progresso e alla felicità, ma spesso all'alienazione e alla solitudine.''',
             'link_wikisource': 'https://it.wikisource.org/wiki/Vagabondaggio',
-            'copertina_path': 'vizzini/comune.jpg'
+            'copertina_path': None
         },
         {
-            'titolo': 'Don Candeloro e C.i',
-            'slug': 'don-candeloro-e-ci',
-            'anno_pubblicazione': 1894,
-            'trama': '''Raccolta di novelle che segna un ritorno parziale al periodo giovanile di Verga, 
-con storie più leggere e a volte umoristiche. Il titolo si riferisce a una compagnia teatrale itinerante.''',
-            'analisi': '''Don Candeloro e C.i mostra un Verga in parte diverso, più disteso e ironico. 
-L'opera dimostra la versatilità dello scrittore, capace di alternare toni tragici e comici, 
-mantenendo sempre un alto livello letterario.''',
-            'link_wikisource': 'https://it.wikisource.org/wiki/Don_Candeloro_e_C.i',
-            'copertina_path': 'vizzini/festa.jpeg'
+            'titolo': 'Primavera e altri racconti',
+            'slug': 'primavera-e-altri-racconti',
+            'anno_pubblicazione': 1876,
+            'trama': '''Raccolta di novelle del periodo romantico di Verga, che includono storie d'amore, 
+di passioni e di dramma. Le novelle mostrano ancora l'influenza del romanticismo ma anticipano alcuni 
+temi che Verga svilupperà in chiave verista.''',
+            'analisi': '''Primavera rappresenta un momento di transizione nella produzione di Verga, 
+con elementi ancora romantici ma con un'attenzione crescente al realismo e alla descrizione oggettiva 
+della realtà.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Primavera_e_altri_racconti',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Nedda',
+            'slug': 'nedda',
+            'anno_pubblicazione': 1874,
+            'trama': '''Novella che racconta la storia di Nedda, una giovane contadina siciliana che 
+vive in condizioni di estrema povertà. Dopo la morte della madre e del suo amato, Nedda si ritrova 
+sola con un bambino, destinata a una vita di miseria e sofferenza.''',
+            'analisi': '''Nedda è considerata la prima opera verista di Verga, anche se conserva ancora 
+alcuni elementi romantici. La novella segna il passaggio dello scrittore dal romanticismo al verismo, 
+con un'attenzione nuova alla rappresentazione realistica delle condizioni di vita dei ceti popolari.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Nedda',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Cavalleria rusticana',
+            'slug': 'cavalleria-rusticana-novella',
+            'anno_pubblicazione': 1880,
+            'trama': '''Novella che narra la storia di Turiddu, un giovane che torna dal servizio militare 
+e trova la sua fidanzata Lola sposata con il carrettiere Alfio. Turiddu inizia una relazione con Santa, 
+ma quando Lola lo richiama a sé, lui non resiste. Alfio scopre il tradimento e sfida Turiddu a duello, 
+uccidendolo.''',
+            'analisi': '''Cavalleria rusticana è forse la novella più famosa di Verga, resa celebre 
+dall'opera lirica di Mascagni. L'opera rappresenta perfettamente il verismo siciliano, con i temi 
+dell'onore, della gelosia e della violenza. Lo stile è asciutto ed essenziale, con dialoghi 
+che riproducono il parlato popolare.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Cavalleria_rusticana_(novella)',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'La Lupa',
+            'slug': 'la-lupa-novella',
+            'anno_pubblicazione': 1880,
+            'trama': '''Novella che racconta la storia della Lupa, una donna siciliana dalla forte 
+personalità e dalla sessualità incontenibile. Ossessionata dal giovane Nanni, la Lupa lo fa sposare 
+con sua figlia per averlo vicino. Nanni, combattuto tra desiderio e senso morale, finisce per 
+ucciderla per liberarsi dalla sua ossessione.''',
+            'analisi': '''La Lupa è una delle novelle più intense di Verga, che esplora i temi della 
+passione irrefrenabile e della lotta tra istinto e morale. Il personaggio della Lupa è diventato 
+un archetipo della letteratura italiana, simbolo di una forza vitale primitiva e indomabile.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/La_Lupa_(Verga)',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Rosso Malpelo',
+            'slug': 'rosso-malpelo',
+            'anno_pubblicazione': 1878,
+            'trama': '''Novella che narra la triste storia di un ragazzo dai capelli rossi, considerato 
+malvagio per superstizione. Malpelo lavora in una cava e assiste alla morte del padre, seppellito 
+da una frana. Il ragazzo cresce solo e disprezzato, finché un giorno scompare nella cava, probabilmente 
+morto mentre esplorava un passaggio pericoloso.''',
+            'analisi': '''Rosso Malpelo è una delle novelle più crudeli e toccanti di Verga. L'opera 
+denuncia le condizioni disumane del lavoro minorile e le superstizioni popolari. Il determinismo 
+sociale e ambientale schiaccia il protagonista, vittima innocente di un destino crudele. Lo stile 
+è essenziale e l'autore si eclissa completamente.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Rosso_Malpelo',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'La roba',
+            'slug': 'la-roba',
+            'anno_pubblicazione': 1883,
+            'trama': '''Novella che racconta l'ascesa di Mazzarò, un contadino che attraverso il lavoro 
+incessante e l'avarizia diventa proprietario di immense terre. Ossessionato dalla sua "roba", Mazzarò 
+vive solo per accumulare ricchezze. Sul letto di morte, impazzisce all'idea di dover lasciare tutto.''',
+            'analisi': '''La roba è una delle più potenti analisi verghiane dell'ossessione per la 
+proprietà. Mazzarò rappresenta la figura del self-made man siciliano, ma la sua vittoria economica 
+si rivela una sconfitta umana. L'opera critica implicitamente il capitalismo e l'individualismo 
+esasperato.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/La_roba',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Libertà',
+            'slug': 'liberta-novella',
+            'anno_pubblicazione': 1883,
+            'trama': '''Novella basata sui fatti storici della rivolta di Bronte del 1860. I contadini, 
+illusi dall'arrivo di Garibaldi che dovrebbe portare "libertà", insorgono contro i nobili locali, 
+compiendo una strage indiscriminata. La repressione è feroce e i rivoltosi vengono condannati e fucilati.''',
+            'analisi': '''Libertà è una cronaca spietata dell'illusione del cambiamento sociale. 
+Verga mostra come la rivolta popolare si trasformi in violenza cieca e come la "libertà" promessa 
+si riveli un inganno. L'opera è un atto d'accusa contro le false promesse del Risorgimento e 
+l'eterno sfruttamento delle masse.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Libert%C3%A0_(Verga)',
+            'copertina_path': None
         },
     ]
     
@@ -347,7 +546,86 @@ da un tono moraleggiante e didattico.''',
             'analisi': '''Homobonus appartiene al periodo più giovanile di Capuana, quando l'autore 
 era ancora influenzato dalle tendenze moraleggianti del romanzo sociale dell'epoca. L'opera è 
 lontana dal verismo maturo dello scrittore.''',
-            'link_wikisource': 'https://it.wikisource.org/wiki/Homobonus'
+            'link_wikisource': 'https://it.wikisource.org/wiki/Homobonus',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Le paesane',
+            'slug': 'le-paesane',
+            'anno_pubblicazione': 1894,
+            'trama': '''Raccolta di novelle che descrivono la vita delle donne di campagna siciliane, 
+i loro amori, le loro fatiche e le loro speranze. Capuana ritratta con sensibilità il mondo femminile 
+rurale, con particolare attenzione alle emozioni e ai sentimenti.''',
+            'analisi': '''Le paesane mostra l'applicazione dei principi veristi al mondo femminile 
+contadino. Capuana unisce il realismo nella descrizione degli ambienti con l'analisi psicologica 
+dei personaggi, creando ritratti complessi e sfumati.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Le_paesane',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Le appassionate',
+            'slug': 'le-appassionate',
+            'anno_pubblicazione': 1893,
+            'trama': '''Raccolta di novelle che esplorano le passioni amorose femminili in diverse 
+situazioni e contesti sociali. Le storie analizzano l'amore, la gelosia, il tradimento e la 
+vendetta con profondità psicologica.''',
+            'analisi': '''Le appassionate dimostra la maestria di Capuana nell'analisi delle passioni 
+umane. L'autore esplora le sfumature dell'animo femminile con sensibilità e acutezza, creando 
+personaggi memorabili e situazioni drammatiche.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Le_appassionate',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Il dottor Cymbalus',
+            'slug': 'il-dottor-cymbalus',
+            'anno_pubblicazione': 1905,
+            'trama': '''Romanzo fantastico che narra le vicende di un medico che scopre un modo per 
+trasferire la vita da un corpo all'altro. L'opera mescola elementi veristi con tematiche fantastiche 
+e scientifiche, in un esperimento narrativo audace per l'epoca.''',
+            'analisi': '''Il dottor Cymbalus rappresenta un'apertura di Capuana verso la narrativa 
+fantastica e fantascientifica. L'opera mostra la versatilità dello scrittore e la sua capacità 
+di sperimentare con diversi generi letterari, pur mantenendo un'attenzione alla psicologia dei personaggi.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Il_dottor_Cymbalus',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'C\'era una volta',
+            'slug': 'cera-una-volta',
+            'anno_pubblicazione': 1882,
+            'trama': '''Raccolta di fiabe popolari siciliane rielaborate da Capuana con stile letterario. 
+Le storie mantengono il sapore della tradizione orale ma sono arricchite dalla sensibilità narrativa 
+dell'autore. Contiene fiabe come "Bella-di-notte", "La volpe e la stella" e molte altre.''',
+            'analisi': '''C'era una volta mostra l'interesse di Capuana per il folklore siciliano e 
+la cultura popolare. L'opera anticipa il lavoro di raccolta di fiabe di autori successivi e dimostra 
+come la tradizione orale possa essere trasformata in alta letteratura.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/C%27era_una_volta..._(Capuana)',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Il benefattore',
+            'slug': 'il-benefattore',
+            'anno_pubblicazione': 1883,
+            'trama': '''Romanzo che narra la storia di un uomo che decide di dedicare la sua vita ad 
+aiutare i poveri e gli emarginati. L'opera esplora le contraddizioni dell'altruismo e le difficoltà 
+di vivere secondo principi morali elevati in una società corrotta.''',
+            'analisi': '''Il benefattore mostra l'interesse di Capuana per i temi morali e sociali. 
+L'opera utilizza il realismo verista per esplorare le contraddizioni tra ideali e realtà, tra 
+buone intenzioni e risultati concreti.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Il_benefattore',
+            'copertina_path': None
+        },
+        {
+            'titolo': 'Ribrezzo',
+            'slug': 'ribrezzo',
+            'anno_pubblicazione': 1885,
+            'trama': '''Raccolta di novelle che esplorano gli aspetti più oscuri e disturbanti della 
+natura umana. Le storie trattano temi come la crudeltà, la follia, l'ossessione, con un realismo 
+che non risparmia i dettagli più crudi.''',
+            'analisi': '''Ribrezzo rappresenta l'aspetto più inquietante del verismo di Capuana. 
+L'autore esplora le zone d'ombra della psiche umana con un'audacia che anticipò la letteratura 
+decadente e simbolista.''',
+            'link_wikisource': 'https://it.wikisource.org/wiki/Ribrezzo',
+            'copertina_path': None
         },
     ]
     
@@ -754,6 +1032,179 @@ raccontate dai grandi autori del verismo.''',
             ordine += 1
     
     # ========================================================================
+    # ITINERARI VERGHIANI E CAPUANIANI
+    # ========================================================================
+    print("\n" + "="*70)
+    print("AGGIUNTA ITINERARI")
+    print("="*70)
+    
+    itinerari_data = [
+        {
+            'titolo': 'Sulle tracce de I Malavoglia',
+            'slug': 'itinerario-malavoglia',
+            'descrizione': '''Un percorso affascinante che ripercorre i luoghi narrati nel capolavoro 
+verghiano "I Malavoglia". Il percorso parte da Aci Trezza, dove si può ammirare la casa del Nespolo 
+e i Faraglioni dei Ciclopi, teatro delle vicende della famiglia Toscano. Il percorso si snoda tra 
+le vie del borgo marinaro, toccando i luoghi dove Verga ambientò le sue storie più celebri.''',
+            'tipo': 'verghiano',
+            'ordine': 1,
+            'immagine_path': 'vizzini/centrostorico.jpg',
+            'durata_stimata': '2-3 ore',
+            'difficolta': 'facile',
+            'is_active': True
+        },
+        {
+            'titolo': 'Il mondo di Mastro-don Gesualdo',
+            'slug': 'itinerario-mastro-don-gesualdo',
+            'descrizione': '''Questo itinerario vi porta alla scoperta di Vizzini, città natale di Giovanni Verga 
+e scenario principale del romanzo "Mastro-don Gesualdo". Si visiterà il palazzo nobiliare che ispirò 
+lo scrittore, il centro storico con le sue chiese barocche e i luoghi che hanno fatto da sfondo alle 
+vicende del protagonista. Un viaggio nella stratificazione sociale della Sicilia dell'Ottocento.''',
+            'tipo': 'verghiano',
+            'ordine': 2,
+            'immagine_path': 'vizzini/borgo.jpg',
+            'durata_stimata': '3-4 ore',
+            'difficolta': 'facile',
+            'is_active': True
+        },
+        {
+            'titolo': 'I luoghi di Vita dei campi',
+            'slug': 'itinerario-vita-dei-campi',
+            'descrizione': '''Un percorso attraverso le campagne siciliane che hanno ispirato le novelle 
+di "Vita dei campi". Si attraversano campi coltivati, antiche masserie e paesaggi rurali immutati 
+nel tempo, gli stessi che Verga descrisse con crudo realismo nelle sue opere. Un'immersione nella 
+Sicilia contadina dell'Ottocento, tra tradizioni e fatiche quotidiane.''',
+            'tipo': 'verghiano',
+            'ordine': 3,
+            'immagine_path': 'vizzini/bosco.jpeg',
+            'durata_stimata': 'Mezza giornata',
+            'difficolta': 'media',
+            'is_active': True
+        },
+        {
+            'titolo': 'Da Vizzini ad Aci Trezza',
+            'slug': 'itinerario-vizzini-aci-trezza',
+            'descrizione': '''Un percorso completo che collega Vizzini, città natale di Verga, ad Aci Trezza, 
+scenario de "I Malavoglia". Un viaggio attraverso i paesaggi che hanno ispirato lo scrittore, toccando 
+borghi storici, campagne e il mare. Questo itinerario offre una panoramica completa dei luoghi verghiani, 
+dalle colline dell'entroterra fino alle coste del Mar Ionio.''',
+            'tipo': 'verghiano',
+            'ordine': 4,
+            'immagine_path': 'vizzini/casaVerga.jpg',
+            'durata_stimata': 'Intera giornata',
+            'difficolta': 'media',
+            'is_active': True
+        },
+        {
+            'titolo': 'La Cunziria e il centro storico di Vizzini',
+            'slug': 'itinerario-cunziria',
+            'descrizione': '''Un itinerario urbano attraverso il centro storico di Vizzini, con particolare 
+attenzione alla Cunziria, l'antica conceria che rappresenta uno dei luoghi più caratteristici del paese. 
+Il percorso tocca anche il Palazzo Verga, il Duomo e le vie che Verga percorreva quotidianamente. 
+Un viaggio nella memoria dello scrittore e nella storia del borgo.''',
+            'tipo': 'verghiano',
+            'ordine': 5,
+            'immagine_path': 'vizzini/cunziria.jpg',
+            'durata_stimata': '2 ore',
+            'difficolta': 'facile',
+            'is_active': True
+        },
+        {
+            'titolo': 'Mineo: sulle tracce di Luigi Capuana',
+            'slug': 'itinerario-capuana-mineo',
+            'descrizione': '''Alla scoperta di Mineo, città natale di Luigi Capuana. L'itinerario include 
+la visita alla casa natale dello scrittore, oggi museo, il centro storico con le sue chiese e palazzi 
+nobiliari, e i luoghi che ispirarono le sue opere. Un percorso per conoscere il secondo grande autore 
+del verismo siciliano.''',
+            'tipo': 'capuaniano',
+            'ordine': 6,
+            'immagine_path': 'mineo/premio-luigi.jpg',
+            'durata_stimata': '2-3 ore',
+            'difficolta': 'facile',
+            'is_active': True
+        },
+        {
+            'titolo': 'I luoghi de Il marchese di Roccaverdina',
+            'slug': 'itinerario-roccaverdina',
+            'descrizione': '''Un percorso attraverso i luoghi che ispirarono "Il marchese di Roccaverdina", 
+capolavoro di Luigi Capuana. L'itinerario tocca antichi feudi, masserie e paesaggi che fanno da sfondo 
+al dramma del marchese tormentato dal rimorso. Un viaggio nella Sicilia rurale dell'800.''',
+            'tipo': 'capuaniano',
+            'ordine': 7,
+            'immagine_path': 'licodia/panorama.jpg',
+            'durata_stimata': 'Mezza giornata',
+            'difficolta': 'media',
+            'is_active': True
+        },
+        {
+            'titolo': 'Licodia Eubea: tradizioni e letteratura',
+            'slug': 'itinerario-licodia-tradizioni',
+            'descrizione': '''Un itinerario che unisce letteratura e tradizioni popolari a Licodia Eubea. 
+Il percorso include la visita al centro storico, le chiese barocche, i luoghi legati alle tradizioni 
+della Settimana Santa e i paesaggi che ispirarono diversi autori veristi.''',
+            'tipo': 'tematico',
+            'ordine': 8,
+            'immagine_path': 'licodia/panorama.jpg',
+            'durata_stimata': '2-3 ore',
+            'difficolta': 'facile',
+            'is_active': True
+        },
+    ]
+    
+    for itinerario_data in itinerari_data:
+        itinerario, created = Itinerario.objects.get_or_create(
+            slug=itinerario_data['slug'],
+            defaults={
+                'tipo': itinerario_data.get('tipo', 'verghiano'),
+                'ordine': itinerario_data.get('ordine', 1),
+                'durata_stimata': itinerario_data.get('durata_stimata', ''),
+                'difficolta': itinerario_data.get('difficolta', 'facile'),
+                'link_maps': itinerario_data.get('link_maps', ''),
+                'is_active': itinerario_data.get('is_active', True)
+            }
+        )
+        
+        if not created:
+            itinerario.tipo = itinerario_data.get('tipo', 'verghiano')
+            itinerario.ordine = itinerario_data.get('ordine', 1)
+            itinerario.durata_stimata = itinerario_data.get('durata_stimata', '')
+            itinerario.difficolta = itinerario_data.get('difficolta', 'facile')
+            itinerario.link_maps = itinerario_data.get('link_maps', '')
+            itinerario.is_active = itinerario_data.get('is_active', True)
+        
+        # Copia l'immagine se specificata e non esiste già
+        if 'immagine_path' in itinerario_data and itinerario_data['immagine_path'] and not itinerario.immagine:
+            image_path = copy_static_to_media(
+                itinerario_data['immagine_path'], 
+                f"itinerari/{itinerario_data['slug']}.jpg"
+            )
+            if image_path:
+                try:
+                    media_path = os.path.join(settings.MEDIA_ROOT, image_path)
+                    with open(media_path, 'rb') as f:
+                        itinerario.immagine.save(f"{itinerario_data['slug']}.jpg", File(f), save=False)
+                except Exception as e:
+                    print(f"  ⚠️  Errore salvataggio immagine itinerario {itinerario_data['slug']}: {e}")
+        
+        # Imposta i campi traducibili italiano
+        itinerario.set_current_language('it')
+        itinerario.titolo = itinerario_data['titolo']
+        itinerario.descrizione = itinerario_data['descrizione']
+        itinerario.save()
+        
+        # Imposta traduzioni inglese se disponibili
+        if 'traduzioni' in itinerario_data and 'en' in itinerario_data['traduzioni']:
+            itinerario.set_current_language('en')
+            itinerario.titolo = itinerario_data['traduzioni']['en']['titolo']
+            itinerario.descrizione = itinerario_data['traduzioni']['en']['descrizione']
+            itinerario.save()
+        
+        if created:
+            print(f"✓ Creato itinerario: {itinerario_data['titolo']}")
+        else:
+            print(f"• Itinerario aggiornato: {itinerario_data['titolo']}")
+    
+    # ========================================================================
     # RIEPILOGO FINALE
     # ========================================================================
     print("\n" + "="*70)
@@ -766,6 +1217,10 @@ raccontate dai grandi autori del verismo.''',
     print(f"Totale eventi: {Evento.objects.count()}")
     print(f"Totale notizie: {Notizia.objects.count()}")
     print(f"Totale foto archivio: {FotoArchivio.objects.count()}")
+    print(f"Totale itinerari: {Itinerario.objects.count()}")
+    print(f"  - Itinerari verghiani: {Itinerario.objects.filter(tipo='verghiano').count()}")
+    print(f"  - Itinerari capuaniani: {Itinerario.objects.filter(tipo='capuaniano').count()}")
+    print(f"  - Itinerari tematici: {Itinerario.objects.filter(tipo='tematico').count()}")
     print(f"\nPuoi ora avviare il server con:")
     print("  python manage.py runserver")
     print("\nE visitare:")
@@ -774,7 +1229,252 @@ raccontate dai grandi autori del verismo.''',
     print("  - Calendario: http://127.0.0.1:8000/calendario/")
     print("  - Notizie: http://127.0.0.1:8000/notizie/")
     print("  - Archivio Fotografico: http://127.0.0.1:8000/archivio/")
+    print("  - Itinerari: http://127.0.0.1:8000/itinerari-verghiani/")
+
+
+def update_itinerari_coordinates():
+    """Aggiorna le coordinate GPS degli itinerari per la mappa interattiva"""
+    print("\n" + "="*70)
+    print("AGGIORNAMENTO COORDINATE ITINERARI")
+    print("="*70)
+    
+    # Itinerario "Sulle tracce de I Malavoglia"
+    try:
+        itinerario = Itinerario.objects.get(slug='itinerario-malavoglia')
+        itinerario.coordinate_tappe = [
+            {
+                "nome": "Aci Trezza - Casa del Nespolo",
+                "coords": [37.5614, 15.1595],
+                "descrizione": "La casa della famiglia Malavoglia, protagonista del romanzo",
+                "order": 1
+            },
+            {
+                "nome": "Faraglioni dei Ciclopi",
+                "coords": [37.5589, 15.1642],
+                "descrizione": "Gli iconici scogli di basalto, teatro delle vicende marinare",
+                "order": 2
+            },
+            {
+                "nome": "Chiesa di San Giovanni Battista",
+                "coords": [37.5625, 15.1580],
+                "descrizione": "La chiesa del paese dove la famiglia partecipava alle funzioni",
+                "order": 3
+            }
+        ]
+        itinerario.colore_percorso = '#1976D2'
+        itinerario.icona_percorso = '🌊'
+        itinerario.save()
+        print(f"✓ Aggiornato: {itinerario.titolo}")
+    except Itinerario.DoesNotExist:
+        print("✗ Itinerario 'itinerario-malavoglia' non trovato")
+    
+    # Itinerario "Il mondo di Mastro-don Gesualdo"
+    try:
+        itinerario = Itinerario.objects.get(slug='itinerario-mastro-don-gesualdo')
+        itinerario.coordinate_tappe = [
+            {
+                "nome": "Vizzini - Piazza Umberto I",
+                "coords": [37.1584, 14.7443],
+                "descrizione": "Il cuore del paese, scenario del romanzo",
+                "order": 1
+            },
+            {
+                "nome": "Palazzo Verga",
+                "coords": [37.1578, 14.7438],
+                "descrizione": "Dimora storica che ispirò lo scrittore",
+                "order": 2
+            },
+            {
+                "nome": "Chiesa di San Giovanni Battista",
+                "coords": [37.1590, 14.7450],
+                "descrizione": "Chiesa barocca frequentata dalla nobiltà locale",
+                "order": 3
+            },
+            {
+                "nome": "La Cunziria",
+                "coords": [37.1570, 14.7445],
+                "descrizione": "L'antica conceria, simbolo della Vizzini dell'800",
+                "order": 4
+            }
+        ]
+        itinerario.colore_percorso = '#8B4513'
+        itinerario.icona_percorso = '🏛️'
+        itinerario.save()
+        print(f"✓ Aggiornato: {itinerario.titolo}")
+    except Itinerario.DoesNotExist:
+        print("✗ Itinerario 'itinerario-mastro-don-gesualdo' non trovato")
+    
+    # Itinerario "I luoghi di Vita dei campi"
+    try:
+        itinerario = Itinerario.objects.get(slug='itinerario-vita-dei-campi')
+        itinerario.coordinate_tappe = [
+            {
+                "nome": "Campagne di Vizzini",
+                "coords": [37.1700, 14.7500],
+                "descrizione": "Paesaggi rurali immutati nel tempo",
+                "order": 1
+            },
+            {
+                "nome": "Antica Masseria",
+                "coords": [37.1650, 14.7600],
+                "descrizione": "Esempio di architettura rurale siciliana",
+                "order": 2
+            },
+            {
+                "nome": "Bosco di Santo Pietro",
+                "coords": [37.1550, 14.7700],
+                "descrizione": "Area boschiva che fa da sfondo alle novelle",
+                "order": 3
+            }
+        ]
+        itinerario.colore_percorso = '#388E3C'
+        itinerario.icona_percorso = '🌾'
+        itinerario.save()
+        print(f"✓ Aggiornato: {itinerario.titolo}")
+    except Itinerario.DoesNotExist:
+        print("✗ Itinerario 'itinerario-vita-dei-campi' non trovato")
+    
+    # Itinerario "La Cunziria e il centro storico di Vizzini"
+    try:
+        itinerario = Itinerario.objects.get(slug='itinerario-cunziria')
+        itinerario.coordinate_tappe = [
+            {
+                "nome": "La Cunziria",
+                "coords": [37.1570, 14.7445],
+                "descrizione": "L'antica conceria di Vizzini",
+                "order": 1
+            },
+            {
+                "nome": "Casa Museo Giovanni Verga",
+                "coords": [37.1578, 14.7438],
+                "descrizione": "La casa dello scrittore",
+                "order": 2
+            },
+            {
+                "nome": "Duomo di Vizzini",
+                "coords": [37.1590, 14.7450],
+                "descrizione": "La cattedrale del paese",
+                "order": 3
+            },
+            {
+                "nome": "Piazza Umberto I",
+                "coords": [37.1584, 14.7443],
+                "descrizione": "La piazza principale",
+                "order": 4
+            }
+        ]
+        itinerario.colore_percorso = '#D32F2F'
+        itinerario.icona_percorso = '🏺'
+        itinerario.save()
+        print(f"✓ Aggiornato: {itinerario.titolo}")
+    except Itinerario.DoesNotExist:
+        print("✗ Itinerario 'itinerario-cunziria' non trovato")
+    
+    # Itinerario Mineo - Capuana
+    try:
+        itinerario = Itinerario.objects.get(slug='itinerario-capuana-mineo')
+        itinerario.coordinate_tappe = [
+            {
+                "nome": "Casa Natale Luigi Capuana",
+                "coords": [37.2667, 14.6833],
+                "descrizione": "Museo dedicato allo scrittore",
+                "order": 1
+            },
+            {
+                "nome": "Centro Storico di Mineo",
+                "coords": [37.2670, 14.6840],
+                "descrizione": "Il cuore della città di Capuana",
+                "order": 2
+            },
+            {
+                "nome": "Chiesa Madre",
+                "coords": [37.2665, 14.6835],
+                "descrizione": "Importante chiesa del paese",
+                "order": 3
+            }
+        ]
+        itinerario.colore_percorso = '#7B1FA2'
+        itinerario.icona_percorso = '📖'
+        itinerario.save()
+        print(f"✓ Aggiornato: {itinerario.titolo}")
+    except Itinerario.DoesNotExist:
+        print("✗ Itinerario 'itinerario-capuana-mineo' non trovato")
+    
+    print("\n" + "="*70)
+    print("AGGIORNAMENTO COORDINATE COMPLETATO!")
+    print("="*70)
+
+
+def check_database():
+    """Verifica lo stato del database e mostra statistiche"""
+    print("\n" + "="*70)
+    print("VERIFICA DATABASE")
+    print("="*70)
+    
+    # Autori
+    print("\n--- AUTORI ---")
+    autori = Autore.objects.all()
+    if autori.exists():
+        for autore in autori:
+            opere_count = Opera.objects.filter(autore=autore).count()
+            print(f"  • {autore.nome} (slug: {autore.slug}) - {opere_count} opere")
+    else:
+        print("  Nessun autore trovato")
+    
+    # Opere
+    print("\n--- OPERE ---")
+    print(f"  Totale opere: {Opera.objects.count()}")
+    opere_senza_link = Opera.objects.filter(link_wikisource='').count()
+    if opere_senza_link > 0:
+        print(f"  ⚠️  {opere_senza_link} opere senza link Wikisource")
+    opere_senza_copertina = Opera.objects.filter(copertina='').count()
+    if opere_senza_copertina > 0:
+        print(f"  ℹ️  {opere_senza_copertina} opere senza copertina")
+    
+    # Eventi
+    print("\n--- EVENTI ---")
+    print(f"  Totale eventi: {Evento.objects.count()}")
+    print(f"  Eventi attivi: {Evento.objects.filter(is_active=True).count()}")
+    eventi_futuri = Evento.objects.filter(data_inizio__gte=datetime.now()).count()
+    print(f"  Eventi futuri: {eventi_futuri}")
+    
+    # Notizie
+    print("\n--- NOTIZIE ---")
+    print(f"  Totale notizie: {Notizia.objects.count()}")
+    print(f"  Notizie attive: {Notizia.objects.filter(is_active=True).count()}")
+    
+    # Archivio Fotografico
+    print("\n--- ARCHIVIO FOTOGRAFICO ---")
+    print(f"  Totale foto: {FotoArchivio.objects.count()}")
+    print(f"  Foto attive: {FotoArchivio.objects.filter(is_active=True).count()}")
+    
+    # Itinerari
+    print("\n--- ITINERARI ---")
+    print(f"  Totale itinerari: {Itinerario.objects.count()}")
+    print(f"  Itinerari attivi: {Itinerario.objects.filter(is_active=True).count()}")
+    print(f"  Itinerari verghiani: {Itinerario.objects.filter(tipo='verghiano').count()}")
+    print(f"  Itinerari capuaniani: {Itinerario.objects.filter(tipo='capuaniano').count()}")
+    itinerari_senza_coords = Itinerario.objects.filter(coordinate_tappe__isnull=True).count()
+    if itinerari_senza_coords > 0:
+        print(f"  ⚠️  {itinerari_senza_coords} itinerari senza coordinate GPS")
+        print(f"     Esegui: python populate_db_complete.py --update-coords")
+    
+    print("\n" + "="*70)
+    print("VERIFICA COMPLETATA")
+    print("="*70)
+
 
 if __name__ == '__main__':
-    populate()
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '--update-coords':
+            update_itinerari_coordinates()
+        elif sys.argv[1] == '--check':
+            check_database()
+        elif sys.argv[1] == '--help':
+            print(__doc__)
+        else:
+            print(f"Opzione sconosciuta: {sys.argv[1]}")
+            print("Usa --help per vedere le opzioni disponibili")
+    else:
+        populate()
 
