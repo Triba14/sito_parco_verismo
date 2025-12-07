@@ -19,7 +19,23 @@ from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.sitemaps.views import sitemap
 from parco_verismo.admin_prenotazioni import richieste_admin_site
+from parco_verismo.sitemaps import (
+    StaticViewSitemap, OperaSitemap, AutoreSitemap,
+    EventoSitemap, NotiziaSitemap, DocumentoSitemap, ItinerarioSitemap
+)
+
+# Configurazione Sitemap per SEO
+sitemaps = {
+    'static': StaticViewSitemap,
+    'opere': OperaSitemap,
+    'autori': AutoreSitemap,
+    'eventi': EventoSitemap,
+    'notizie': NotiziaSitemap,
+    'documenti': DocumentoSitemap,
+    'itinerari': ItinerarioSitemap,
+}
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -35,6 +51,7 @@ urlpatterns += i18n_patterns(
 urlpatterns += [
     path('richieste/', richieste_admin_site.urls),  # Admin dedicato alle richieste
     path('admin/', admin.site.urls),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 
 # Serve media files in development

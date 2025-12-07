@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',  # Sitemap per SEO
     'parler',
     'parco_verismo.apps.ParcoVerismoConfig',  # App principale
 ]
@@ -52,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'parco_verismo.middleware.SimpleRateLimitMiddleware',  # Rate limiting
+    'parco_verismo.middleware.SecurityHeadersMiddleware',  # Security headers
 ]
 
 ROOT_URLCONF = 'mysite.urls'
