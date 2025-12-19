@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Inizializza mappa centrata su Vizzini
-  var map = L.map(document.querySelector(".map-container"), { zoomControl: false }).setView([37.1607, 14.7490], 16);
+  var map = L.map(document.querySelector(".map-container"), { zoomControl: false }).setView([37.1607, 14.7490], 17);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     m.addTo(map);
   });
 
-  // Filtri
+  // Filtri con centratura automatica
   function filterMarkers(type){
     markers.forEach(m => {
       if(type === "all" || m.type === type){
@@ -84,6 +84,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if(map.hasLayer(m)) map.removeLayer(m);
       }
     });
+
+    // Centra sui marker visibili
+    var visibleMarkers = markers.filter(m => map.hasLayer(m));
+    if(visibleMarkers.length > 0){
+      var group = new L.featureGroup(visibleMarkers);
+      map.fitBounds(group.getBounds().pad(0.1));
+    }
   }
 
   const filterItems = document.querySelectorAll(".filter-item");
@@ -102,37 +109,64 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchBox = document.querySelector(".search-box");
   const searchResults = document.querySelector(".search-results");
 
-  searchBox.addEventListener("input", function(){
-    const q = this.value.toLowerCase().trim();
-    searchResults.innerHTML = "";
-    if(q.length < 2){
-      searchResults.style.display = "none";
-      return;
-    }
-
-    const filtered = allPointsData.filter(p => p.name.toLowerCase().includes(q));
-
-    filtered.forEach(p => {
-      const div = document.createElement("div");
-      div.className = "search-result-item";
-      div.textContent = p.name;
-      div.addEventListener("click", function(){
-        if(p.coords) map.setView(p.coords, 18);
-        const m = markers.find(m => m.name === p.name);
-        if(m) m.openPopup();
-
-        searchBox.value = "";
+  if(searchBox && searchResults) {
+    searchBox.addEventListener("input", function(){
+      const q = this.value.toLowerCase().trim();
+      searchResults.innerHTML = "";
+      if(q.length < 2){
         searchResults.style.display = "none";
+        return;
+      }
+
+      const filtered = allPointsData.filter(p => p.name.toLowerCase().includes(q));
+
+      filtered.forEach(p => {
+        const div = document.createElement("div");
+        div.className = "search-result-item";
+        div.textContent = p.name;
+        div.addEventListener("click", function(){
+          if(p.coords) map.setView(p.coords, 18);
+          const m = markers.find(m => m.name === p.name);
+          if(m) m.openPopup();
+
+          searchBox.value = "";
+          searchResults.style.display = "none";
+        });
+        searchResults.appendChild(div);
       });
-      searchResults.appendChild(div);
+
+      searchResults.style.display = filtered.length ? "block" : "none";
     });
 
-    searchResults.style.display = filtered.length ? "block" : "none";
+    document.addEventListener("click", function(e){
+      if(!e.target.closest(".search-container")){
+        searchResults.style.display = "none";
+      }
+    });
+  }
+
+  // Click su marker centra e zoom
+  markers.forEach(m => {
+    m.on('click', function(e) {
+      map.setView(e.latlng, 17);
+    });
   });
 
-  document.addEventListener("click", function(e){
-    if(!e.target.closest(".search-container")){
-      searchResults.style.display = "none";
-    }
-  });
+  // Fix per rendering della mappa quando diventa visibile
+  setTimeout(function() {
+    map.invalidateSize();
+  }, 100);
+
+  // Observer per quando la sezione mappa diventa visibile
+  var mapSection = document.querySelector('.pages-mappa');
+  if (mapSection) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          map.invalidateSize();
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(mapSection);
+  }
 });

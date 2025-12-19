@@ -1,394 +1,464 @@
-{% extends "parco_verismo/base.html" %}
+{% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans 'Mineo' %} - {% trans 'Parco Letterario Verismo' %}{% endblock %}
-
-{% block extra_head %}
-<link rel="stylesheet" href="{% static 'css/mineo.css' %}">
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+{% block title %}
+  {% trans 'Mineo' %}-{% trans 'Parco Letterario Verismo' %}
 {% endblock %}
 
-{% block body_class %}mineo-page transparent-nav{% endblock %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/mineo.css' %}" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+{% endblock %}
+
+{% block body_class %}
+  mineo-page transparent-nav
+{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="pages-hero mineo-hero">
+  <!-- Hero Section -->
+  <section class="pages-hero mineo-hero">
     <div class="pages-hero-overlay"></div>
     <div class="container-fluid h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
-                <div class="pages-hero-content">
-                    <span class="pages-badge">{% trans 'Territorio' %}</span>
-                    <h1 class="pages-hero-title display-3 fw-bold mb-4">Mineo</h1>
-                    <p class="pages-hero-subtitle lead">{% trans 'Patria di Luigi Capuana, culla del Verismo siciliano' %}</p>
-                </div>
-            </div>
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
+          <div class="pages-hero-content">
+            <span class="pages-badge">{% trans 'Territorio' %}</span>
+            <h1 class="pages-hero-title display-3 fw-bold mb-4">Mineo</h1>
+            <p class="pages-hero-subtitle lead">
+              {% trans 'La città natale di Luigi Capuana' %}
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Introduzione -->
-<section class="pages-section pages-intro py-5 py-lg-6">
+  <!-- Introduzione -->
+  <section class="pages-section pages-intro py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">Mineo sorge a 500 metri sul livello del mare, nel cuore degli Iblei, dominando la piana di Catania. Città di antichissime origini, identificata con l'antica <strong>Menai</strong> o <strong>Menaion</strong> citata dalle fonti classiche.</p>
-                <p class="text-secondary">Conserva tracce di insediamenti che risalgono all'età del bronzo. Nel corso dei secoli Mineo è stata teatro di dominazioni greche, romane, bizantine, arabe e normanne. È universalmente nota per aver dato i natali a <strong>Luigi Capuana</strong> (1839-1915), uno dei padri fondatori del <strong>Verismo italiano</strong>, narratore e teorico della letteratura che ha immortalato nei suoi racconti la vita e le tradizioni del popolo siciliano.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/mineo/bg-hero.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Panorama di Mineo" />
-                </div>
-            </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
+          {% blocktrans %}
+          <p class="lead mb-3">Mineo è un luogo cardinale nella storia della letteratura italiana. Qui, il 28 maggio 1839, nacque Luigi Capuana, scrittore, critico, teorico del Verismo e tra le figure più originali della cultura europea dell’Ottocento. Il borgo conserva ancora oggi l’atmosfera, i paesaggi e l’architettura sociale che plasmarono l’immaginario dello scrittore, rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, le sue piazze, le sue case, i suoi quartieri popolari ricorrono in molte opere capuaniane, spesso trasformati in teatro poetico o fantastico.</p>
+          {% endblocktrans %}
         </div>
+        <div class="col-lg-6">
+          <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+            <img src="{% static 'assets/img/mineo/bg-hero.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Panorama di Mineo" />
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Casa Natale di Luigi Capuana -->
-<section class="pages-section pages-natura py-5 py-lg-6">
+  <!-- Casa Natale di Luigi Capuana -->
+  <section class="pages-section pages-natura py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 order-lg-2">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Casa Natale di Luigi Capuana' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">Nel cuore del centro storico di Mineo si trova la <strong>Casa Natale di Luigi Capuana</strong>, oggi trasformata in <strong>museo letterario</strong> dedicato alla vita e all'opera dello scrittore verista.</p>
-                <p class="text-secondary">L'edificio, risalente al XVIII secolo, conserva arredi d'epoca, manoscritti originali, prime edizioni delle sue opere e oggetti personali. La casa rappresenta un luogo imprescindibile per comprendere il contesto culturale che ha ispirato capolavori come <em>Giacinta</em>, <em>Il Marchese di Roccaverdina</em> e le celebri novelle per l'infanzia.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/mineo/Casa-Luigi-Capuana.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Casa Natale Luigi Capuana" />
-                </div>
-            </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Mineo nella vita di Luigi Capuana' %}</h2>
+          {% blocktrans %}
+          <p class="lead mb-3">La formazione di Capuana avvenne interamente tra le strade e le campagne di Mineo, in una realtà ricca di contrasti: borghesia agraria, mondo contadino, tradizioni popolari, spiritualità, paesaggi aspri e luminosi. Questi elementi costituirono la matrice del suo sguardo critico e antropologico sul reale, ma anche del suo interesse per il mistero, l’occulto, il fiabesco. Mineo non fu solo un paese d’origine, ma una lente attraverso cui Capuana osservò e interpretò il mondo.</p>
+          {% endblocktrans %}
         </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+            <img src="{% static 'assets/img/mineo/Casa-Luigi-Capuana.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Casa Natale Luigi Capuana" />
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Castello di Mineo -->
-<section class="pages-section pages-lago py-5 py-lg-6">
+  <!-- Tradizioni e Feste -->
+  <section class="pages-section pages-tradizioni py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Castello di Mineo' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">Il <strong>Castello di Mineo</strong>, o <strong>Castello dei Palagonia</strong>, domina dall'alto il profilo della città ed è uno dei simboli architettonici più significativi del territorio.</p>
-                <p class="text-secondary">Eretto in epoca medievale e più volte rimaneggiato, il castello fu residenza della nobile famiglia Palagonia. Nonostante i segni del tempo, il complesso conserva ancora imponenti mura, torri e strutture murarie che testimoniano l'importanza strategica e difensiva del sito. Dalle sue terrazze si gode di un panorama spettacolare sulla vallata circostante e sui monti Iblei.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/mineo/castello.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Castello di Mineo" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Tradizioni e Feste' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità mineota' %}
+        </p>
+      </div>
 
-<!-- Tradizioni e Feste -->
-<section class="pages-section pages-tradizioni py-5 py-lg-6">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-brightness-high"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Marzo/Aprile' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Processioni solenni, rappresentazioni della Passione e antichi riti accompagnano i fedeli in un'atmosfera di <strong>intensa partecipazione popolare</strong>.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans "Festa di Sant'Agrippina" %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Agosto' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}La celebrazione più importante dell'anno, con <strong>processioni, luminarie</strong>, concerti bandistici e spettacoli pirotecnici.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-book"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans 'Premio Luigi Capuana' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Ottobre' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Riconoscimento nazionale dedicato alla letteratura, con scrittori e critici che celebrano l'eredità del <strong>grande verista</strong>.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-cup-straw"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans "Sagra dell'Arancia" %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Febbraio/Marzo' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Celebrazione dell'<strong>arancia rossa di Sicilia</strong>, con degustazioni, stand gastronomici e attività culturali.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patrimonio Storico -->
+  <section class="pages-section pages-monumenti py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Tradizioni e Feste' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità mineota' %}</p>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Scopri i monumenti e i luoghi simbolo di Mineo' %}
+        </p>
+      </div>
+
+      <!-- Palazzo Comunale - In evidenza -->
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="pages-highlight-text">
+            <span class="pages-badge mb-3">{% trans 'Centro Storico' %}</span>
+            <h3 class="h4 fw-bold mb-3">Palazzo Comunale</h3>
+            <p class="lead">Elegante edificio storico con facciata neoclassica, cuore dell'amministrazione cittadina.</p>
+            <p class="text-secondary">Situato nella piazza principale, testimonia l'importanza civile e politica assunta da Mineo nel corso dell'Ottocento, quando la città conobbe un periodo di rinnovamento urbanistico e istituzionale.</p>
+          </div>
         </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-brightness-high"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
-                    <p><small class="text-muted">{% trans 'Marzo/Aprile' %}</small></p>
-                    <p>{% blocktrans %}Processioni solenni, rappresentazioni della Passione e antichi riti accompagnano i fedeli in un'atmosfera di <strong>intensa partecipazione popolare</strong>.{% endblocktrans %}</p>
-                </div>
+        <div class="col-lg-6">
+          <div class="pages-points">
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Porta Adinolfo</h4>
+                <p>
+                  Antica porta d'accesso al centro storico, <strong>testimonianza medievale</strong> delle mura difensive.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans "Festa di Sant'Agrippina" %}</h4>
-                    <p><small class="text-muted">{% trans 'Agosto' %}</small></p>
-                    <p>{% blocktrans %}La celebrazione più importante dell'anno, con <strong>processioni, luminarie</strong>, concerti bandistici e spettacoli pirotecnici.{% endblocktrans %}</p>
-                </div>
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-tree"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Villa Comunale</h4>
+                <p>
+                  Principale spazio verde con <strong>aiuole fiorite</strong>, viali alberati e fontane.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-book"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans 'Premio Luigi Capuana' %}</h4>
-                    <p><small class="text-muted">{% trans 'Ottobre' %}</small></p>
-                    <p>{% blocktrans %}Riconoscimento nazionale dedicato alla letteratura, con scrittori e critici che celebrano l'eredità del <strong>grande verista</strong>.{% endblocktrans %}</p>
-                </div>
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-eye"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Belvedere Panoramico</h4>
+                <p>
+                  Vista mozzafiato sulla <strong>piana di Catania</strong>, l'Etna e i monti Iblei.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-cup-straw"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans "Sagra dell'Arancia" %}</h4>
-                    <p><small class="text-muted">{% trans 'Febbraio/Marzo' %}</small></p>
-                    <p>{% blocktrans %}Celebrazione dell'<strong>arancia rossa di Sicilia</strong>, con degustazioni, stand gastronomici e attività culturali.{% endblocktrans %}</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Patrimonio Storico -->
-<section class="pages-section pages-monumenti py-5 py-lg-6">
+  <!-- Chiese e Luoghi di Culto -->
+  <section class="pages-section pages-chiese py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri i monumenti e i luoghi simbolo di Mineo' %}</p>
-        </div>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}
+        </p>
+      </div>
 
-        <!-- Palazzo Comunale - In evidenza -->
-        <div class="row g-5 align-items-center mb-5">
-            <div class="col-lg-6">
-                <div class="pages-highlight-text">
-                    <span class="pages-badge mb-3">{% trans 'Centro Storico' %}</span>
-                    <h3 class="h4 fw-bold mb-3">Palazzo Comunale</h3>
-                    <p class="lead">Elegante edificio storico con facciata neoclassica, cuore dell'amministrazione cittadina.</p>
-                    <p class="text-secondary">Situato nella piazza principale, testimonia l'importanza civile e politica assunta da Mineo nel corso dell'Ottocento, quando la città conobbe un periodo di rinnovamento urbanistico e istituzionale.</p>
-                </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
             </div>
-            <div class="col-lg-6">
-                <div class="pages-points">
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-geo-alt"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Porta Adinolfo</h4>
-                            <p>Antica porta d'accesso al centro storico, <strong>testimonianza medievale</strong> delle mura difensive.</p>
-                        </div>
-                    </div>
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-tree"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Villa Comunale</h4>
-                            <p>Principale spazio verde con <strong>aiuole fiorite</strong>, viali alberati e fontane.</p>
-                        </div>
-                    </div>
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-eye"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Belvedere Panoramico</h4>
-                            <p>Vista mozzafiato sulla <strong>piana di Catania</strong>, l'Etna e i monti Iblei.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h4 class="pages-value-title">Chiesa Madre di Sant'Agrippina</h4>
+            <p>
+              Principale edificio religioso di Mineo, custodisce pregevoli opere d'arte sacra e la <strong>statua della patrona</strong>.
+            </p>
+          </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa di San Pietro</h4>
+            <p>
+              Edificio religioso più antico, con architettura medievale e <strong>affreschi e stucchi barocchi</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa di Sant'Antonio Abate</h4>
+            <p>
+              Piccolo gioiello barocco con decorazioni in stucco e <strong>altare dedicato al santo eremita</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Convento dei Cappuccini</h4>
+            <p>
+              Fondato nel XVI secolo, conserva chiostri, celle monastiche e una <strong>preziosa biblioteca</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa di Santa Maria</h4>
+            <p>
+              Edificio di culto con facciata settecentesca e <strong>opere d'arte sacra</strong> di pregio.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa del Carmine</h4>
+            <p>
+              Sorta tra XVI e XVII secolo, conserva l'<strong>urna con l'Adorazione dei Santi</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Chiese e Luoghi di Culto -->
-<section class="pages-section pages-chiese py-5 py-lg-6">
+  <!-- Musei e Cultura -->
+  <section class="pages-section pages-musei py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}</p>
+      <div class="text-center mb-5">
+        <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Testimonianze della storia letteraria e archeologica del territorio' %}
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Casa Museo Capuana -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-book-half"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+            </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Casa Museo Capuana</h3>
+              <p class="cultura-card-text">
+                La <strong>casa natale dello scrittore</strong>, oggi museo dedicato alla sua vita e alle sue opere letterarie.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-pen"></i> Manoscritti originali
+                </li>
+                <li>
+                  <i class="bi bi-book"></i> Prime edizioni
+                </li>
+                <li>
+                  <i class="bi bi-house"></i> Arredi d'epoca
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa Madre di Sant'Agrippina</h4>
-                    <p>Principale edificio religioso di Mineo, custodisce pregevoli opere d'arte sacra e la <strong>statua della patrona</strong>.</p>
-                </div>
+        <!-- Museo Civico -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-columns-gap"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa di San Pietro</h4>
-                    <p>Edificio religioso più antico, con architettura medievale e <strong>affreschi e stucchi barocchi</strong>.</p>
-                </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Museo Civico Tamburino Merlini</h3>
+              <p class="cultura-card-text">
+                Raccoglie reperti archeologici dall'età <strong>preistorica all'epoca romana</strong>.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-gem"></i> Ceramiche antiche
+                </li>
+                <li>
+                  <i class="bi bi-coin"></i> Monete e utensili
+                </li>
+                <li>
+                  <i class="bi bi-urn"></i> Corredi funerari
+                </li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa di Sant'Antonio Abate</h4>
-                    <p>Piccolo gioiello barocco con decorazioni in stucco e <strong>altare dedicato al santo eremita</strong>.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Convento dei Cappuccini</h4>
-                    <p>Fondato nel XVI secolo, conserva chiostri, celle monastiche e una <strong>preziosa biblioteca</strong>.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa di Santa Maria</h4>
-                    <p>Edificio di culto con facciata settecentesca e <strong>opere d'arte sacra</strong> di pregio.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa del Carmine</h4>
-                    <p>Sorta tra XVI e XVII secolo, conserva l'<strong>urna con l'Adorazione dei Santi</strong>.</p>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Biblioteca Comunale -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-journal-richtext"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Biblioteca' %}</span>
+            </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Biblioteca Luigi Capuana</h3>
+              <p class="cultura-card-text">
+                Patrimonio librario con <strong>fondi antichi e opere veriste</strong>.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-collection"></i> Testi di storia locale
+                </li>
+                <li>
+                  <i class="bi bi-people"></i> Laboratori didattici
+                </li>
+                <li>
+                  <i class="bi bi-book"></i> Manoscritti
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Musei e Cultura -->
-<section class="pages-section pages-musei py-5 py-lg-6">
+  <!-- Mappa Interattiva -->
+  <section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Testimonianze della storia letteraria e archeologica del territorio' %}</p>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Esplora Mineo' %}</h2>
+        <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
+          {% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}
+        </p>
+      </div>
+
+      <div class="map-layout">
+        <!-- Pannello Laterale Filtri -->
+        <div class="map-sidebar">
+          <div class="map-sidebar-header">
+            <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
+          </div>
+          <div class="map-sidebar-content">
+            <!-- Barra di ricerca -->
+            <div class="search-container">
+              <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
+              <div class="search-results"></div>
+            </div>
+
+            <!-- Filtri come lista -->
+            <div class="filters-list">
+              <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-building-fill text-primary"></i>
+                <span>{% trans 'Servizi Pubblici' %}</span>
+              </div>
+              <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-bank2 text-primary"></i>
+                <span>{% trans 'Servizi Culturali' %}</span>
+              </div>
+              <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-basket2-fill text-primary"></i>
+                <span>{% trans 'Prodotti Tipici' %}</span>
+              </div>
+              <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-house-heart-fill text-primary"></i>
+                <span>{% trans 'Ospitalità' %}</span>
+              </div>
+              <div data-type="Luoghi Capuaniani" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-book-fill text-primary"></i>
+                <span>{% trans 'Luoghi Capuaniani' %}</span>
+              </div>
+              <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-cup-hot-fill text-primary"></i>
+                <span>{% trans 'Ristorazione' %}</span>
+              </div>
+              <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
+                <i class="bi bi-arrow-clockwise text-primary"></i>
+                <span>{% trans 'Mostra tutti' %}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-4">
-            <!-- Casa Museo Capuana -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-book-half"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Museo' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Casa Museo Capuana</h3>
-                        <p class="cultura-card-text">La <strong>casa natale dello scrittore</strong>, oggi museo dedicato alla sua vita e alle sue opere letterarie.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-pen"></i> Manoscritti originali</li>
-                            <li><i class="bi bi-book"></i> Prime edizioni</li>
-                            <li><i class="bi bi-house"></i> Arredi d'epoca</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Museo Civico -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-columns-gap"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Museo' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Museo Civico Tamburino Merlini</h3>
-                        <p class="cultura-card-text">Raccoglie reperti archeologici dall'età <strong>preistorica all'epoca romana</strong>.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-gem"></i> Ceramiche antiche</li>
-                            <li><i class="bi bi-coin"></i> Monete e utensili</li>
-                            <li><i class="bi bi-urn"></i> Corredi funerari</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Biblioteca Comunale -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-journal-richtext"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Biblioteca' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Biblioteca Luigi Capuana</h3>
-                        <p class="cultura-card-text">Patrimonio librario con <strong>fondi antichi e opere veriste</strong>.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-collection"></i> Testi di storia locale</li>
-                            <li><i class="bi bi-people"></i> Laboratori didattici</li>
-                            <li><i class="bi bi-book"></i> Manoscritti</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <!-- Mappa -->
+        <div class="map-main">
+          <div id="map" class="map-container rounded shadow"></div>
         </div>
+      </div>
     </div>
-</section>
-
-<!-- Mappa Interattiva -->
-<section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
-    <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Esplora Mineo' %}</h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">{% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}</p>
-        </div>
-        
-        <div class="map-layout">
-            <!-- Pannello Laterale Filtri -->
-            <div class="map-sidebar">
-                <div class="map-sidebar-header">
-                    <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
-                </div>
-                <div class="map-sidebar-content">
-                    <!-- Barra di ricerca -->
-                    <div class="search-container">
-                        <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
-                        <div class="search-results"></div>
-                    </div>
-                    
-                    <!-- Filtri come lista -->
-                    <div class="filters-list">
-                        <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-building-fill text-primary"></i>
-                            <span>{% trans 'Servizi Pubblici' %}</span>
-                        </div>
-                        <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-bank2 text-primary"></i>
-                            <span>{% trans 'Servizi Culturali' %}</span>
-                        </div>
-                        <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-basket2-fill text-primary"></i>
-                            <span>{% trans 'Prodotti Tipici' %}</span>
-                        </div>
-                        <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-house-heart-fill text-primary"></i>
-                            <span>{% trans 'Ospitalità' %}</span>
-                        </div>
-                        <div data-type="Luoghi Capuaniani" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-book-fill text-primary"></i>
-                            <span>{% trans 'Luoghi Capuaniani' %}</span>
-                        </div>
-                        <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-cup-hot-fill text-primary"></i>
-                            <span>{% trans 'Ristorazione' %}</span>
-                        </div>
-                        <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
-                            <i class="bi bi-arrow-clockwise text-primary"></i>
-                            <span>{% trans 'Mostra tutti' %}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mappa -->
-            <div class="map-main">
-                <div id="map" class="map-container rounded shadow"></div>
-            </div>
-        </div>
-    </div>
-</section>
+  </section>
 {% endblock %}
 
 {% block extra_scripts %}
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- Map Scripts -->
-<script src="{% static 'js/map/points_mineo.js' %}"></script>
-<script src="{% static 'js/map/script_mineo.js' %}"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Map Scripts -->
+  <script src="{% static 'js/map/points_mineo.js' %}"></script>
+  <script src="{% static 'js/map/script_mineo.js' %}"></script>
 {% endblock %}

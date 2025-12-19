@@ -1,395 +1,468 @@
-{% extends "parco_verismo/base.html" %}
+{% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans 'Licodia Eubea' %} - {% trans 'Parco Letterario Verismo' %}{% endblock %}
-
-{% block extra_head %}
-<link rel="stylesheet" href="{% static 'css/licodia.css' %}">
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+{% block title %}
+  {% trans 'Licodia Eubea' %}-{% trans 'Parco Letterario Verismo' %}
 {% endblock %}
 
-{% block body_class %}licodia-page transparent-nav{% endblock %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/licodia.css' %}" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+{% endblock %}
+
+{% block body_class %}
+  licodia-page transparent-nav
+{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="pages-hero licodia-hero">
+  <!-- Hero Section -->
+  <section class="pages-hero licodia-hero">
     <div class="pages-hero-overlay"></div>
     <div class="container-fluid h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
-                <div class="pages-hero-content">
-                    <span class="pages-badge">{% trans 'Territorio' %}</span>
-                    <h1 class="pages-hero-title display-3 fw-bold mb-4">Licodia Eubea</h1>
-                    <p class="pages-hero-subtitle lead">{% trans 'Tra storia, natura e tradizione nel cuore degli Iblei' %}</p>
-                </div>
-            </div>
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
+          <div class="pages-hero-content">
+            <span class="pages-badge">{% trans 'Territorio' %}</span>
+            <h1 class="pages-hero-title display-3 fw-bold mb-4">Licodia Eubea</h1>
+            <p class="pages-hero-subtitle lead">
+              {% trans 'Comunità, paesaggi e memoria del Verismo' %}
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Introduzione -->
-<section class="pages-section pages-intro py-5 py-lg-6">
+  <!-- Introduzione -->
+  <section class="pages-section pages-intro py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">A 600 metri sul livello del mare, sul versante nord occidentale degli Iblei, sorge Licodia Eubea. Il significato del toponimo è incerto, ma gli studi concordano nel riconoscere nel fondovalle la presenza di un'antica civiltà, documentata da una vasta rete di necropoli.</p>
-                <p class="text-secondary">In epoca moderna il luogo venne identificato con la <strong>subcolonia greca Lentini Subcensueta</strong> e successivamente con <strong>La Ciura</strong>, fino ad assumere nel <strong>1872</strong> il nome attuale. Le ricerche archeologiche di <strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</strong> hanno confermato l'esistenza di una rilevante borgata sicula, con una necropoli estesa e strutturata, databile all'<strong>VIII secolo a.C.</strong> Il Borgo rappresenta ancora oggi il nucleo più antico dell'abitato, sopravvissuto al terremoto del 1693.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/licodia/panorama.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Panorama di Licodia Eubea" />
-                </div>
-            </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
+          {% blocktrans %}
+          <p class="lead mb-3">Licodia Eubea è un borgo antico e ricco di stratificazioni culturali, situato tra le colline che uniscono idealmente Vizzini e Mineo. La sua identità agricola, il rapporto profondo con il paesaggio, la forte coesione comunitaria e la ricchezza delle tradizioni popolari ne fanno uno dei luoghi più rappresentativi per comprendere il contesto umano e sociale da cui nasce il Verismo.</p>
+          {% endblocktrans %}
         </div>
+        <div class="col-lg-6">
+          <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+            <img src="{% static 'assets/img/licodia/panorama.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Panorama di Licodia Eubea" />
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Natura - Bosco Vaito -->
-<section class="pages-section pages-natura py-5 py-lg-6">
+  <!-- Natura - Bosco Vaito -->
+  <section class="pages-section pages-natura py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 order-lg-2">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Bosco Vaito' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">Bosco sporadico di circa <strong>84 ettari</strong>, caratterizzato dalla presenza della <em>sughera (Quercus suber)</em>, specie arborea tipica della macchia mediterranea e particolarmente rara in questa zona degli Iblei.</p>
-                <p class="text-secondary">Rappresenta una continuità naturale con il più esteso <strong>Bosco di Santo Pietro</strong>, situato verso sud, formando un corridoio ecologico di notevole interesse botanico e faunistico. L'area è ideale per escursioni naturalistiche, birdwatching e fotografia paesaggistica, offrendo ai visitatori sentieri immersi nella vegetazione spontanea e panorami suggestivi sul territorio circostante. Il bosco conserva un ecosistema prezioso che testimonia l'antico rapporto tra l'uomo e l'ambiente ibleo.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/licodia/bosco_vaito.jpeg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Bosco Vaito" />
-                </div>
-            </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Un territorio che riflette il mondo verista' %}</h2>
+          {% blocktrans %}
+          <p class="lead mb-3">Le campagne licodiane, le vie del centro storico, la pietra bianca delle case, i ritmi del lavoro e della vita comunitaria sono elementi che evocano da vicino le atmosfere della narrativa verista. In questo territorio prendono forma molte delle dinamiche sociali raccontate da Verga e Capuana: la famiglia, il ruolo delle donne, la fede religiosa, la dimensione del lavoro agricolo, la fragilità e la forza delle comunità rurali. Anche se Licodia non viene citata esplicitamente nelle opere, ne incarna pienamente lo spirito: è un luogo in cui i meccanismi narrativi del Verismo si percepiscono nella realtà quotidiana.</p>
+          {% endblocktrans %}
         </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+            <img src="{% static 'assets/img/licodia/bosco_vaito.jpeg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Bosco Vaito" />
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Natura - Lago Dirillo -->
-<section class="pages-section pages-lago py-5 py-lg-6">
+  <!-- Tradizioni e Feste -->
+  <section class="pages-section pages-tradizioni py-5 py-lg-6">
     <div class="container-xl">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Lago Dirillo' %}</h2>
-                {% blocktrans %}
-                <p class="lead mb-3">Bacino artificiale originato dalla <strong>diga Ragoleto (1961)</strong>, alimentato dal fiume Dirillo, uno dei principali corsi d'acqua del territorio ibleo. L'invaso, nato per scopi irrigui e di approvvigionamento idrico, ha trasformato il paesaggio creando un ambiente lacustre di grande suggestione.</p>
-                <p class="text-secondary">Nelle aree circostanti sono stati individuati <strong>sepolcreti e strutture di epoca tardo romana</strong> (IV secolo d.C.), testimonianza dell'antica presenza umana lungo le sponde del fiume. Il lago offre un paesaggio ideale per passeggiate rilassanti, birdwatching e fotografia naturalistica, attirando numerose specie di avifauna stanziale e migratoria. Le sue acque tranquille e il contesto naturale incontaminato lo rendono meta privilegiata per gli amanti della natura e della storia.</p>
-                {% endblocktrans %}
-            </div>
-            <div class="col-lg-6">
-                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
-                    <img src="{% static 'assets/img/licodia/lago_dirillo.jpeg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Lago Dirillo" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Tradizioni e Feste' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità licodiana' %}
+        </p>
+      </div>
 
-<!-- Tradizioni e Feste -->
-<section class="pages-section pages-tradizioni py-5 py-lg-6">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-brightness-high"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Marzo/Aprile' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}L'evento religioso più sentito. Le celebrazioni culminano nel <strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale "Giunta" pasquale.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-cup-straw"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans "Festa dell'Uva" %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Prima domenica di settembre' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Antica ricorrenza agricola con degustazioni, iniziative culturali e la tradizionale <strong>pigiatura dell'uva nel tino</strong>.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-film"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans 'Rassegna Archeologica' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Ottobre' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Festival cinematografico tra i principali eventi italiani dedicati alla <strong>divulgazione archeologica</strong>.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-egg-fried"></i>
+            </div>
+            <h4 class="pages-value-title">{% trans 'Sagra della Patacò' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Dicembre' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Evento dedicato alla <strong>farina di fave secche</strong>, pietanza tradizionale licodiana.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monumenti e Luoghi di Interesse -->
+  <section class="pages-section pages-monumenti py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Tradizioni e Feste' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità licodiana' %}</p>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Scopri i monumenti e i luoghi simbolo di Licodia Eubea' %}
+        </p>
+      </div>
+
+      <!-- Colle Castello - In evidenza -->
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="pages-highlight-text">
+            <span class="pages-badge mb-3">{% trans 'Sito Storico Principale' %}</span>
+            <h3 class="h4 fw-bold mb-3">Colle Castello</h3>
+            <p class="lead">
+              Identificato da <strong>Paolo Orsi</strong> come acropoli di un'antica borgata sicula, ospita diverse <strong>necropoli paleocristiane</strong>.
+            </p>
+            <p class="text-secondary">
+              Il castello fu residenza dei <strong>Santapaola</strong> dal XIV secolo fino all'abolizione del feudalesimo. Gravemente danneggiato dal terremoto del 1693, conserva <strong>resti murari bizantini dell'VIII-IX secolo</strong>.
+            </p>
+          </div>
         </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-brightness-high"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
-                    <p><small class="text-muted">{% trans 'Marzo/Aprile' %}</small></p>
-                    <p>{% blocktrans %}L'evento religioso più sentito. Le celebrazioni culminano nel <strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale "Giunta" pasquale.{% endblocktrans %}</p>
-                </div>
+        <div class="col-lg-6">
+          <div class="pages-points">
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Piazza Margherita</h4>
+                <p>
+                  Centro nevralgico del paese con la <strong>vasca ovoidale e la statua dell'Immacolata</strong>.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-cup-straw"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans "Festa dell'Uva" %}</h4>
-                    <p><small class="text-muted">{% trans 'Prima domenica di settembre' %}</small></p>
-                    <p>{% blocktrans %}Antica ricorrenza agricola con degustazioni, iniziative culturali e la tradizionale <strong>pigiatura dell'uva nel tino</strong>.{% endblocktrans %}</p>
-                </div>
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Palazzo Municipale</h4>
+                <p>
+                  Edificio <strong>ottocentesco</strong> con elementi eclettici, cortile decorato e <strong>stucchi policromi</strong>.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-film"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans 'Rassegna Archeologica' %}</h4>
-                    <p><small class="text-muted">{% trans 'Ottobre' %}</small></p>
-                    <p>{% blocktrans %}Festival cinematografico tra i principali eventi italiani dedicati alla <strong>divulgazione archeologica</strong>.{% endblocktrans %}</p>
-                </div>
+            <div class="pages-point">
+              <div class="pages-point-icon">
+                <i class="bi bi-bank"></i>
+              </div>
+              <div class="pages-point-content">
+                <h4>Palazzo Mugnos</h4>
+                <p>
+                  Unico esempio <strong>barocco</strong> della città, acquistato nel 1782 dal <strong>barone Vassallo</strong>.
+                </p>
+              </div>
             </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon">
-                        <i class="bi bi-egg-fried"></i>
-                    </div>
-                    <h4 class="pages-value-title">{% trans 'Sagra della Patacò' %}</h4>
-                    <p><small class="text-muted">{% trans 'Dicembre' %}</small></p>
-                    <p>{% blocktrans %}Evento dedicato alla <strong>farina di fave secche</strong>, pietanza tradizionale licodiana.{% endblocktrans %}</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Monumenti e Luoghi di Interesse -->
-<section class="pages-section pages-monumenti py-5 py-lg-6">
+  <!-- Chiese e Luoghi di Culto -->
+  <section class="pages-section pages-chiese py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri i monumenti e i luoghi simbolo di Licodia Eubea' %}</p>
-        </div>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}
+        </p>
+      </div>
 
-        <!-- Colle Castello - In evidenza -->
-        <div class="row g-5 align-items-center mb-5">
-            <div class="col-lg-6">
-                <div class="pages-highlight-text">
-                    <span class="pages-badge mb-3">{% trans 'Sito Storico Principale' %}</span>
-                    <h3 class="h4 fw-bold mb-3">Colle Castello</h3>
-                    <p class="lead">Identificato da <strong>Paolo Orsi</strong> come acropoli di un'antica borgata sicula, ospita diverse <strong>necropoli paleocristiane</strong>.</p>
-                    <p class="text-secondary">Il castello fu residenza dei <strong>Santapaola</strong> dal XIV secolo fino all'abolizione del feudalesimo. Gravemente danneggiato dal terremoto del 1693, conserva <strong>resti murari bizantini dell'VIII-IX secolo</strong>.</p>
-                </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
             </div>
-            <div class="col-lg-6">
-                <div class="pages-points">
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-geo-alt"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Piazza Margherita</h4>
-                            <p>Centro nevralgico del paese con la <strong>vasca ovoidale e la statua dell'Immacolata</strong>.</p>
-                        </div>
-                    </div>
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-building"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Palazzo Municipale</h4>
-                            <p>Edificio <strong>ottocentesco</strong> con elementi eclettici, cortile decorato e <strong>stucchi policromi</strong>.</p>
-                        </div>
-                    </div>
-                    <div class="pages-point">
-                        <div class="pages-point-icon"><i class="bi bi-bank"></i></div>
-                        <div class="pages-point-content">
-                            <h4>Palazzo Mugnos</h4>
-                            <p>Unico esempio <strong>barocco</strong> della città, acquistato nel 1782 dal <strong>barone Vassallo</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h4 class="pages-value-title">Chiesa di Santa Margherita</h4>
+            <p>
+              Cappella ampliata nel <strong>XVI secolo</strong>, ricostruita dopo il 1693. Custodisce la <strong>scultura lignea di Sant'Antonio Abate</strong> (1617).
+            </p>
+          </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa di Santa Lucia</h4>
+            <p>
+              Nel Borgo, fu la <strong>chiesa di San Giovanni</strong> nel XIV secolo. Parrocchia dal <strong>1945</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa del Carmine</h4>
+            <p>
+              Sorta tra <strong>XVI e XVII secolo</strong>, conserva l'<strong>urna con l'Adorazione dei Santi Cosma e Damiano</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa del SS. Salvatore</h4>
+            <p>
+              Ricostruita tra il <strong>1713 e il 1721</strong> in stile barocco con <strong>stucchi novecenteschi</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Chiesa del SS. Rosario</h4>
+            <p>
+              Del <strong>Settecento</strong>, conserva un <strong>fonte battesimale seicentesco</strong> e un <strong>paliotto marmoreo del 1754</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="pages-value-title">Madonna delle Grazie</h4>
+            <p>
+              Fondata nel <strong>1539</strong>, sorge su un'area archeologica oggi parte del <strong>Museo Civico</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Chiese e Luoghi di Culto -->
-<section class="pages-section pages-chiese py-5 py-lg-6">
+  <!-- Musei e Cultura -->
+  <section class="pages-section pages-musei py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}</p>
+      <div class="text-center mb-5">
+        <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
+        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
+          {% trans 'Testimonianze della storia millenaria del territorio' %}
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Museo Archeologico -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-columns-gap"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+            </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Museo Archeologico</h3>
+              <p class="cultura-card-text">
+                Ospita reperti dalle aree <strong>preistoriche, greche, romane e tardo antiche</strong> del territorio licodiano.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-gem"></i> Dolmen e vasi dell'età del Bronzo
+                </li>
+                <li>
+                  <i class="bi bi-urn"></i> Ossuari a palmette IV-III a.C.
+                </li>
+                <li>
+                  <i class="bi bi-cup"></i> Ceramiche e lucerne romane
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa di Santa Margherita</h4>
-                    <p>Cappella ampliata nel <strong>XVI secolo</strong>, ricostruita dopo il 1693. Custodisce la <strong>scultura lignea di Sant'Antonio Abate</strong> (1617).</p>
-                </div>
+        <!-- Museo Etnografico -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-house-heart"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa di Santa Lucia</h4>
-                    <p>Nel Borgo, fu la <strong>chiesa di San Giovanni</strong> nel XIV secolo. Parrocchia dal <strong>1945</strong>.</p>
-                </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Museo Etnografico</h3>
+              <p class="cultura-card-text">
+                Intitolato a <strong>"Padre A. Coniglione"</strong>, allestito nei locali dell'ex Ospedale Civico.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-tools"></i> Strumenti del lavoro agricolo
+                </li>
+                <li>
+                  <i class="bi bi-basket"></i> Oggetti artigianali tradizionali
+                </li>
+                <li>
+                  <i class="bi bi-house"></i> Testimonianze vita rurale
+                </li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa del Carmine</h4>
-                    <p>Sorta tra <strong>XVI e XVII secolo</strong>, conserva l'<strong>urna con l'Adorazione dei Santi Cosma e Damiano</strong>.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa del SS. Salvatore</h4>
-                    <p>Ricostruita tra il <strong>1713 e il 1721</strong> in stile barocco con <strong>stucchi novecenteschi</strong>.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Chiesa del SS. Rosario</h4>
-                    <p>Del <strong>Settecento</strong>, conserva un <strong>fonte battesimale seicentesco</strong> e un <strong>paliotto marmoreo del 1754</strong>.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pages-value-card h-100">
-                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
-                    <h4 class="pages-value-title">Madonna delle Grazie</h4>
-                    <p>Fondata nel <strong>1539</strong>, sorge su un'area archeologica oggi parte del <strong>Museo Civico</strong>.</p>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Monumento ai Caduti -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <span class="cultura-card-badge">{% trans 'Monumento' %}</span>
+            </div>
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">Monumento ai Caduti</h3>
+              <p class="cultura-card-text">
+                Opera commemorativa realizzata tra il <strong>1925-1926</strong> dallo scultore <em>Salvatore Juvara</em>.
+              </p>
+              <ul class="cultura-card-list">
+                <li>
+                  <i class="bi bi-geo-alt"></i> "Chianu cimientu"
+                </li>
+                <li>
+                  <i class="bi bi-people"></i> Cuore della vita cittadina
+                </li>
+                <li>
+                  <i class="bi bi-star"></i> Scultura monumentale
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Musei e Cultura -->
-<section class="pages-section pages-musei py-5 py-lg-6">
+  <!-- Mappa Interattiva -->
+  <section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
     <div class="container-xl">
-        <div class="text-center mb-5">
-            <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Testimonianze della storia millenaria del territorio' %}</p>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Esplora Licodia Eubea' %}</h2>
+        <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
+          {% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}
+        </p>
+      </div>
+
+      <div class="map-layout">
+        <!-- Pannello Laterale Filtri -->
+        <div class="map-sidebar">
+          <div class="map-sidebar-header">
+            <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
+          </div>
+          <div class="map-sidebar-content">
+            <!-- Barra di ricerca -->
+            <div class="search-container">
+              <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
+              <div class="search-results"></div>
+            </div>
+
+            <!-- Filtri come lista -->
+            <div class="filters-list">
+              <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-building-fill text-primary"></i>
+                <span>{% trans 'Servizi Pubblici' %}</span>
+              </div>
+              <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-bank2 text-primary"></i>
+                <span>{% trans 'Servizi Culturali' %}</span>
+              </div>
+              <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-basket2-fill text-primary"></i>
+                <span>{% trans 'Prodotti Tipici' %}</span>
+              </div>
+              <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-house-heart-fill text-primary"></i>
+                <span>{% trans 'Ospitalità' %}</span>
+              </div>
+              <div data-type="Luoghi Verghiani" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-book-fill text-primary"></i>
+                <span>{% trans 'Luoghi Verghiani' %}</span>
+              </div>
+              <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
+                <i class="bi bi-cup-hot-fill text-primary"></i>
+                <span>{% trans 'Ristorazione' %}</span>
+              </div>
+              <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
+                <i class="bi bi-arrow-clockwise text-primary"></i>
+                <span>{% trans 'Mostra tutti' %}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-4">
-            <!-- Museo Archeologico -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-columns-gap"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Museo' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Museo Archeologico</h3>
-                        <p class="cultura-card-text">Ospita reperti dalle aree <strong>preistoriche, greche, romane e tardo antiche</strong> del territorio licodiano.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-gem"></i> Dolmen e vasi dell'età del Bronzo</li>
-                            <li><i class="bi bi-urn"></i> Ossuari a palmette IV-III a.C.</li>
-                            <li><i class="bi bi-cup"></i> Ceramiche e lucerne romane</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Museo Etnografico -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-house-heart"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Museo' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Museo Etnografico</h3>
-                        <p class="cultura-card-text">Intitolato a <strong>"Padre A. Coniglione"</strong>, allestito nei locali dell'ex Ospedale Civico.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-tools"></i> Strumenti del lavoro agricolo</li>
-                            <li><i class="bi bi-basket"></i> Oggetti artigianali tradizionali</li>
-                            <li><i class="bi bi-house"></i> Testimonianze vita rurale</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Monumento ai Caduti -->
-            <div class="col-lg-4">
-                <div class="cultura-card h-100">
-                    <div class="cultura-card-header">
-                        <div class="cultura-card-icon">
-                            <i class="bi bi-award"></i>
-                        </div>
-                        <span class="cultura-card-badge">{% trans 'Monumento' %}</span>
-                    </div>
-                    <div class="cultura-card-body">
-                        <h3 class="cultura-card-title">Monumento ai Caduti</h3>
-                        <p class="cultura-card-text">Opera commemorativa realizzata tra il <strong>1925-1926</strong> dallo scultore <em>Salvatore Juvara</em>.</p>
-                        <ul class="cultura-card-list">
-                            <li><i class="bi bi-geo-alt"></i> "Chianu cimientu"</li>
-                            <li><i class="bi bi-people"></i> Cuore della vita cittadina</li>
-                            <li><i class="bi bi-star"></i> Scultura monumentale</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <!-- Mappa -->
+        <div class="map-main">
+          <div id="map" class="map-container rounded shadow"></div>
         </div>
+      </div>
     </div>
-</section>
-
-<!-- Mappa Interattiva -->
-<section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
-    <div class="container-xl">
-        <div class="text-center mb-5">
-            <h2 class="pages-section-title h2 fw-bold">{% trans 'Esplora Licodia Eubea' %}</h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">{% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}</p>
-        </div>
-        
-        <div class="map-layout">
-            <!-- Pannello Laterale Filtri -->
-            <div class="map-sidebar">
-                <div class="map-sidebar-header">
-                    <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
-                </div>
-                <div class="map-sidebar-content">
-                    <!-- Barra di ricerca -->
-                    <div class="search-container">
-                        <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
-                        <div class="search-results"></div>
-                    </div>
-                    
-                    <!-- Filtri come lista -->
-                    <div class="filters-list">
-                        <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-building-fill text-primary"></i>
-                            <span>{% trans 'Servizi Pubblici' %}</span>
-                        </div>
-                        <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-bank2 text-primary"></i>
-                            <span>{% trans 'Servizi Culturali' %}</span>
-                        </div>
-                        <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-basket2-fill text-primary"></i>
-                            <span>{% trans 'Prodotti Tipici' %}</span>
-                        </div>
-                        <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-house-heart-fill text-primary"></i>
-                            <span>{% trans 'Ospitalità' %}</span>
-                        </div>
-                        <div data-type="Luoghi Verghiani" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-book-fill text-primary"></i>
-                            <span>{% trans 'Luoghi Verghiani' %}</span>
-                        </div>
-                        <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
-                            <i class="bi bi-cup-hot-fill text-primary"></i>
-                            <span>{% trans 'Ristorazione' %}</span>
-                        </div>
-                        <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
-                            <i class="bi bi-arrow-clockwise text-primary"></i>
-                            <span>{% trans 'Mostra tutti' %}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mappa -->
-            <div class="map-main">
-                <div id="map" class="map-container rounded shadow"></div>
-            </div>
-        </div>
-    </div>
-</section>
+  </section>
 {% endblock %}
 
 {% block extra_scripts %}
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- Map Scripts -->
-<script src="{% static 'js/map/points_licodia.js' %}"></script>
-<script src="{% static 'js/map/script_licodia.js' %}"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Map Scripts -->
+  <script src="{% static 'js/map/points_licodia.js' %}"></script>
+  <script src="{% static 'js/map/script_licodia.js' %}"></script>
 {% endblock %}
-

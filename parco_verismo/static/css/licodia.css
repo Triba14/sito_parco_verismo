@@ -1,6 +1,6 @@
 /* ===========================
    LICODIA PAGE - CUSTOM STYLES
-   Utilizza le variabili globali da styles.css
+   Utilizza le variabili globali da styles.css (TEMA VERDE SICILIA)
    =========================== */
 
 /* ===========================
@@ -8,7 +8,7 @@
    =========================== */
 
 .licodia-page .pages-hero.licodia-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    background-image: linear-gradient(var(--overlay-hero-start), var(--overlay-hero-end)), 
                       url("/static/assets/img/licodia/hero-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -16,18 +16,35 @@
 
 .licodia-page .pages-hero.licodia-hero .pages-hero-title {
     font-family: 'Perandory', sans-serif;
-    color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: var(--color-text-inverse);
+    word-spacing: 0.15em;
+    letter-spacing: 0.04em;
 } 
 
 .licodia-page .pages-hero.licodia-hero .pages-hero-subtitle {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-text-inverse);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-shadow: none;
 }
 
 .licodia-page .pages-hero.licodia-hero .pages-badge {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    background: var(--color-inverse-tint);
+    border: 1px solid var(--color-inverse-faint);
+    color: var(--color-text-inverse);
+}
+
+/* ===========================
+   TYPOGRAPHY - PERANDORY FONT
+   =========================== */
+
+.licodia-page h2,
+.licodia-page .pages-section-title {
+    font-family: 'Perandory', sans-serif;
+    font-weight: 400;
+    word-spacing: 0.15em;
+    letter-spacing: 0.04em;
 }
 
 /* ===========================
@@ -42,7 +59,7 @@
 .pages-section.pages-natura {
     background: linear-gradient(135deg, 
         var(--color-surface) 0%,
-        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface)) 100%);
+        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
 }
 
 .pages-section.pages-lago {
@@ -61,7 +78,7 @@
 .pages-section.pages-chiese {
     background: linear-gradient(135deg, 
         var(--color-surface) 0%,
-        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface)) 100%);
+        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
 }
 
 .pages-section.pages-musei {
@@ -106,8 +123,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.15) 0%,
-        rgba(192, 140, 59, 0.15) 100%);
+        color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 12%, transparent) 100%);
     border-radius: 50%;
     margin: 0 auto;
     color: var(--color-primary);
@@ -117,7 +134,7 @@
 
 .pages-value-card:hover .pages-value-icon {
     background: var(--gradient-primary);
-    color: white;
+    color: var(--color-text-inverse);
     transform: scale(1.1);
 }
 
@@ -199,8 +216,8 @@
 
 .pages-accordion .accordion-button:not(.collapsed) {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.08) 0%,
-        rgba(192, 140, 59, 0.05) 100%);
+        color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
     color: var(--color-primary);
 }
 
@@ -210,7 +227,7 @@
 }
 
 .pages-accordion .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23823228'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234A6741'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .pages-accordion .accordion-button i {
@@ -238,8 +255,8 @@
 
 .chiese-tabs .nav-tabs {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.05) 0%,
-        rgba(192, 140, 59, 0.03) 100%);
+        color-mix(in srgb, var(--color-primary) 5%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 3%, transparent) 100%);
     border-bottom: 1px solid var(--color-border);
     padding: 1rem 1rem 0;
     flex-wrap: wrap;
@@ -263,7 +280,7 @@
 
 .chiese-tabs .nav-tabs .nav-link:hover {
     color: var(--color-primary);
-    background: rgba(199, 106, 82, 0.08);
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
 }
 
 .chiese-tabs .nav-tabs .nav-link.active {
@@ -390,8 +407,8 @@
 
 .cultura-card-header {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.08) 0%,
-        rgba(192, 140, 59, 0.05) 100%);
+        color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -407,7 +424,7 @@
     justify-content: center;
     background: var(--gradient-primary);
     border-radius: 50%;
-    color: white;
+    color: var(--color-text-inverse);
     font-size: 1.5rem;
     box-shadow: var(--shadow-md);
 }
@@ -481,7 +498,7 @@
 .map-layout {
     display: flex;
     gap: 1.5rem;
-    min-height: 500px;
+    align-items: stretch;
 }
 
 /* Sidebar */
@@ -499,8 +516,8 @@
 
 .map-sidebar-header {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.1) 0%,
-        rgba(192, 140, 59, 0.08) 100%);
+        color-mix(in srgb, var(--color-primary) 10%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
     padding: 1rem 1.25rem;
     border-bottom: 1px solid var(--color-border);
 }
@@ -545,7 +562,7 @@
 .map-sidebar .search-box:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(130, 50, 40, 0.1);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 10%, transparent);
 }
 
 .map-sidebar .search-results {
@@ -593,8 +610,8 @@
 
 .filters-list .filter-item.active {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.12) 0%,
-        rgba(192, 140, 59, 0.08) 100%);
+        color-mix(in srgb, var(--color-primary) 12%, transparent) 0%,
+        color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
     color: var(--color-primary);
     font-weight: 600;
     border-color: var(--color-primary-light);
@@ -621,11 +638,13 @@
 .map-main {
     flex: 1;
     min-width: 0;
+    display: flex;
 }
 
 .map-main .map-container {
     width: 100%;
-    height: 500px;
+    height: 100%;
+    min-height: 500px;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
@@ -677,20 +696,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-    border: 2px solid white;
+    box-shadow: 0 3px 10px rgba(26, 36, 22, 0.3);
+    border: 2px solid var(--color-text-inverse);
 }
 
 .marker-pin i {
     transform: rotate(45deg);
-    color: white;
+    color: var(--color-text-inverse);
     font-size: 1rem;
 }
 
 /* Legacy markers fallback */
 .leaflet-marker-icon:not(.custom-marker) {
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid var(--color-text-inverse);
     box-shadow: var(--shadow-md);
 }
 
