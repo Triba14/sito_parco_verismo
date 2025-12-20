@@ -1,4 +1,5 @@
-@import url('index.css'); /* import variables and base rules from index */
+@import url('index.css');
+/* import variables and base rules from index */
 /* ========================================================
    MISSIONE E VISIONE - STILI PERSONALIZZATI
    Tutte le variabili colore sono ora in styles.css globale
@@ -14,15 +15,15 @@
 /* ========================================================
    MISSION & VISION SECTIONS
    ======================================================== */
-   .pages-section.pages-mission {
+.pages-section.pages-mission {
     background: var(--pages-background);
     border-bottom: 1px solid var(--pages-border);
 }
 
 .pages-section.pages-vision {
-    background: linear-gradient(135deg, 
-        var(--pages-surface) 0%,
-        color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface)) 100%);
+    background: linear-gradient(135deg,
+            var(--pages-surface) 0%,
+            color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface)) 100%);
 }
 
 .pages-section.pages-recognition {
@@ -61,8 +62,8 @@
 .pages-highlight-text {
     padding: 1.5rem;
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.08) 0%,
-        rgba(192, 140, 59, 0.05) 100%);
+            rgba(199, 106, 82, 0.08) 0%,
+            rgba(192, 140, 59, 0.05) 100%);
     border-left: 4px solid var(--pages-primary-light);
     border-radius: 0.5rem;
 }
@@ -109,9 +110,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, 
-        rgba(131, 50, 40, 0.1) 0%,
-        rgba(192, 140, 59, 0.1) 100%);
+    background: linear-gradient(135deg,
+            rgba(131, 50, 40, 0.1) 0%,
+            rgba(192, 140, 59, 0.1) 100%);
     border-radius: 0.5rem;
     color: var(--pages-primary);
     font-size: 1.5rem;
@@ -243,8 +244,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.15) 0%,
-        rgba(192, 140, 59, 0.15) 100%);
+            rgba(199, 106, 82, 0.15) 0%,
+            rgba(192, 140, 59, 0.15) 100%);
     border-radius: 50%;
     margin: 0 auto;
     color: var(--pages-primary);
@@ -297,23 +298,23 @@
     .pages-hero {
         min-height: 70vh;
     }
-    
+
     .pages-hero-title {
         font-size: 2rem;
     }
-    
+
     .pages-hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .pages-section {
         padding: 3rem 0;
     }
-    
+
     .pages-recognition-card {
         text-align: center;
     }
-    
+
     .pages-badge-large {
         margin: 0 auto 1rem;
     }
@@ -323,39 +324,39 @@
     .pages-hero {
         min-height: 60vh;
     }
-    
+
     .pages-hero-title {
         font-size: 1.75rem;
     }
-    
+
     .pages-hero-content {
         text-align: center;
     }
-    
+
     .pages-hero-subtitle {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .pages-hero-image {
         min-height: 350px;
         margin-top: 2rem;
     }
-    
+
     .pages-section-title {
         font-size: 1.5rem;
     }
-    
+
     .pages-point {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .pages-point-icon {
         margin: 0 auto;
     }
-    
+
     .pages-value-card {
         padding: 1.5rem;
     }
@@ -371,12 +372,12 @@
         color: var(--pages-text-primary);
         min-height: auto;
     }
-    
+
     .pages-badge {
         border: 1px solid var(--pages-text-primary);
         background: none;
     }
-    
+
     .pages-value-card:hover {
         transform: none;
         box-shadow: none;
@@ -384,6 +385,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .placeholder-image,
     .placeholder-image-secondary,
     .pages-point,
@@ -401,22 +403,51 @@
    Keeping them here keeps styles centralized with missione styles.
    ======================================================== */
 
-.pages-composition .pages-member-card{
+.pages-composition .pages-member-card {
     background: var(--color-surface);
-    border:1px solid var(--color-border);
-    padding:1.05rem;
-    border-radius:10px;
+    border: 1px solid var(--color-border);
+    padding: 1.05rem;
+    border-radius: 10px;
     box-shadow: var(--color-shadow-md);
 }
-.pages-composition .pages-member-icon{
-    width:56px;height:56px;border-radius:10px;
+
+.pages-composition .pages-member-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
     background: var(--color-gradient-primary);
-    display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.25rem;margin-bottom:.75rem
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: .75rem
 }
-.pages-composition .pages-member-card h4{margin-bottom:.25rem;color:var(--color-text-primary)}
-.pages-separator{border:0;border-top:1px solid var(--color-border);margin:1rem 0 1.5rem;width:100%;max-width:900px;margin-left:auto;margin-right:auto}
-.pages-composition .pages-member-card-highlight{background: linear-gradient(180deg, var(--color-surface-elevated), var(--color-surface));border-color:var(--color-border)}
-.pages-composition .pages-group-title{margin-bottom:.75rem;color:var(--color-text-primary)}
+
+.pages-composition .pages-member-card h4 {
+    margin-bottom: .25rem;
+    color: var(--color-text-primary)
+}
+
+.pages-separator {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin: 1rem 0 1.5rem;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.pages-composition .pages-member-card-highlight {
+    background: linear-gradient(180deg, var(--color-surface-elevated), var(--color-surface));
+    border-color: var(--color-border)
+}
+
+.pages-composition .pages-group-title {
+    margin-bottom: .75rem;
+    color: var(--color-text-primary)
+}
 
 /* Alternate section backgrounds (copied from index.css) */
 /* Apply alternating background colors to .pages-section elements */
@@ -427,4 +458,3 @@ section.pages-section:nth-of-type(odd) {
 section.pages-section:nth-of-type(even) {
     background: var(--color-background) !important;
 }
-
