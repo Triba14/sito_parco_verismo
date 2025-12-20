@@ -34,6 +34,8 @@ from parco_verismo.sitemaps import (
     DocumentoSitemap,
     ItinerarioSitemap,
 )
+# Custom admin site for public richieste dashboard
+from parco_verismo.admin_richieste import richieste_admin_site
 
 # Configurazione Sitemap per SEO
 sitemaps = {
@@ -59,6 +61,8 @@ urlpatterns += i18n_patterns(
 # Admin senza prefisso lingua
 urlpatterns += [
     path("admin/", admin.site.urls),
+    # Dashboard per la gestione delle richieste (admin semplificato)
+    path("richieste/", richieste_admin_site.urls),
     path(
         "sitemap.xml",
         sitemap,
