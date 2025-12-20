@@ -100,3 +100,81 @@
     color: var(--color-text-inverse);
     border-color: var(--color-primary);
 }
+
+/* Improved responsive layout for footer */
+/* - wrap logos on small viewports and cap their size (overrides inline height) */
+.footer-logos {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-logo {
+    height: auto !important;
+    max-height: 120px !important;
+    max-width: 22% !important;
+}
+
+/* Reduce logo sizes on narrow screens */
+@media (max-width: 768px) {
+    .footer-logo {
+        max-height: 90px !important;
+        max-width: 28% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        max-height: 64px !important;
+        max-width: 34% !important;
+    }
+}
+
+/* Navigation and contact columns: better spacing and centering on small screens */
+.site-footer .footer-subheading,
+.site-footer .footer-heading {
+    margin-bottom: 0.5rem;
+}
+
+.site-footer .list-unstyled {
+    padding-left: 0;
+}
+
+.site-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.site-footer .footer-link {
+    padding: 4px 6px;
+    display: inline-block;
+}
+
+/* Make contact list items readable and avoid cramped layout on mobile */
+@media (max-width: 576px) {
+    .site-footer .row.g-4 > [class*="col-"] {
+        margin-bottom: 0.5rem;
+    }
+    .site-footer .footer-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small improvement for social icons: bigger hit area */
+.site-footer .social-links .footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+/* Ensure the large inline-styled logo never breaks the layout */
+.footer-logo[style] {
+    max-height: 120px !important;
+    max-width: 22% !important;
+}
