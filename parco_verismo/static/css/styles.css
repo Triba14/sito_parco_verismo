@@ -106,7 +106,8 @@ a:focus {
     --color-divider: rgba(26, 36, 22, 0.12);
     
     /* Stati */
-    --color-success: #52A770;
+    /* Success color should match the darker primary variant used for buttons */
+    --color-success: var(--color-primary-dark);
     --color-warning: #D89020;
     --color-warning-dark: #A86D15;
     --color-error: #B44033;
