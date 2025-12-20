@@ -39,6 +39,11 @@ def accrediti_finanziamenti_view(request):
     return render(request, 'parco_verismo/accrediti_finanziamenti.html')
 
 
+def contatti_view(request):
+    """Pagina Contatti del Parco Letterario."""
+    return render(request, 'parco_verismo/contatti.html')
+
+
 # =============================================================================
 # VIEWS PER CONFORMITÀ GDPR E PA
 # =============================================================================

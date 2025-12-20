@@ -1,0 +1,390 @@
+-{% extends "parco_verismo/base.html" %}
+{% load static i18n %}
+
+{% block title %}Contatti - Parco Letterario Verismo{% endblock %}
+
+{% block meta_description %}Contatti del Parco Letterario Giovanni Verga e Luigi Capuana. Centro Studi C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattiche.{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/contatti.css' %}">
+{% endblock %}
+
+{% block body_class %}contatti-page transparent-nav{% endblock %}
+
+{% block content %}
+
+<!-- Hero / Introduzione -->
+<section class="pages-hero">
+    <div class="pages-hero-overlay"></div>
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6 offset-lg-1 z-index-10 py-5 py-lg-0">
+                <div class="pages-hero-content">
+                    <span class="pages-badge">{% trans 'Contatti' %}</span>
+                    <h1 class="pages-hero-title display-3 fw-bold mb-4">
+                        {% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}
+                    </h1>
+                    <p class="pages-hero-subtitle lead">
+                        {% trans 'Il Parco Letterario Giovanni Verga e Luigi Capuana è un progetto culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A.' %}
+                    </p>
+                    <p class="pages-hero-subtitle">
+                        {% trans 'Per informazioni, richieste di collaborazione, attività didattiche, eventi e itinerari è possibile fare riferimento ai contatti istituzionali riportati di seguito.' %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="pages-hero-image">
+                    <div class="placeholder-image">
+                        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" class="hero-svg-contatti">
+                            <defs>
+                                <linearGradient id="contattiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" class="svg-gradient-start" />
+                                    <stop offset="100%" class="svg-gradient-end" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Background -->
+                            <rect width="600" height="700" fill="url(#contattiGradient)"/>
+                            
+                            <!-- Decorative shapes -->
+                            <circle cx="150" cy="100" r="80" class="svg-circle-primary" opacity="0.2"/>
+                            <circle cx="500" cy="600" r="120" class="svg-circle-dark" opacity="0.15"/>
+                            
+                            <!-- Envelope icon (contatti) -->
+                            <g transform="translate(200, 250)">
+                                <rect x="0" y="20" width="200" height="150" fill="none" class="svg-stroke-primary" stroke-width="3" rx="8"/>
+                                <path d="M 0 20 L 100 120 L 200 20" fill="none" class="svg-stroke-primary" stroke-width="3" stroke-linejoin="round"/>
+                                <line x1="0" y1="170" x2="60" y2="110" class="svg-stroke-primary" stroke-width="3"/>
+                                <line x1="200" y1="170" x2="140" y2="110" class="svg-stroke-primary" stroke-width="3"/>
+                            </g>
+                            
+                            <!-- Location pins -->
+                            <g transform="translate(100, 480)">
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                            </g>
+                            <g transform="translate(180, 450)">
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                            </g>
+                            <g transform="translate(260, 490)">
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                            </g>
+                            
+                            <!-- Text placeholder -->
+                            <text x="300" y="600" font-family="serif" font-size="28" font-weight="bold" class="svg-text-dark" opacity="0.4" text-anchor="middle">
+                                Vizzini • Mineo • Licodia
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coordinamento del Parco – Centro Studi C.E.S.T.A. -->
+<section class="contatti-section contatti-cesta">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="contatti-section-title">{% trans 'Coordinamento del' %} <span class="contatti-title-accent">{% trans 'Parco' %}</span></h2>
+                
+                <div class="contatti-cesta-card">
+                    <h3 class="contatti-cesta-title">{% trans 'Centro Studi C.E.S.T.A.' %}</h3>
+                    
+                    <p class="contatti-cesta-subtitle">
+                        {% trans 'Centro Studi, Ricerca e Promozione Culturale' %}<br>
+                        <em>{% trans 'Cultura, Economia, Società, Territorio, Asilo' %}</em>
+                    </p>
+                    
+                    <div class="contatti-cesta-description">
+                        <p>
+                            {% trans 'Il Centro Studi C.E.S.T.A. è un Ente del Terzo Settore che cura il coordinamento scientifico, organizzativo e comunicativo delle attività del Parco Letterario Giovanni Verga e Luigi Capuana, in raccordo con i Comuni partner e con gli enti coinvolti.' %}
+                        </p>
+                        <p>
+                            {% trans 'Fondato nel territorio del Calatino Sud, il Centro Studi opera nelle aree della ricerca culturale, della promozione territoriale, della formazione e dei servizi alla persona, con particolare attenzione alla valorizzazione del patrimonio letterario e alla tutela delle comunità locali.' %}
+                        </p>
+                    </div>
+                    
+                    <div class="contatti-info-grid">
+                        <div class="contatti-info-item">
+                            <div class="contatti-info-label">{% trans 'Sede legale:' %}</div>
+                            <div class="contatti-info-value">
+                                Viale Regina Margherita, 6<br>
+                                95049 Vizzini (CT)
+                            </div>
+                        </div>
+                        
+                        <div class="contatti-info-item">
+                            <div class="contatti-info-label">{% trans 'Tel:' %}</div>
+                            <div class="contatti-info-value">
+                                <a href="tel:+390933981792">+39 0933 981792</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contatti-info-item">
+                            <div class="contatti-info-label">{% trans 'Email:' %}</div>
+                            <div class="contatti-info-value">
+                                <a href="mailto:segreteria@centrostudicesta.it">segreteria@centrostudicesta.it</a><br>
+                                <a href="mailto:info@centrostudicesta.it">info@centrostudicesta.it</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contatti-info-item">
+                            <div class="contatti-info-label">{% trans 'Web:' %}</div>
+                            <div class="contatti-info-value">
+                                <a href="https://www.centrostudicesta.it/" target="_blank" rel="noopener noreferrer">
+                                    www.centrostudicesta.it
+                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comuni partner del Parco Letterario -->
+<section class="contatti-section contatti-comuni">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="contatti-section-title">{% trans 'Comuni partner del' %} <span class="contatti-title-accent">{% trans 'Parco Letterario' %}</span></h2>
+                
+                <div class="comuni-grid">
+                    <!-- Comune di Vizzini -->
+                    <div class="comune-card">
+                        <h3 class="comune-name">{% trans 'Comune di Vizzini (CT)' %}</h3>
+                        <p class="comune-description">
+                            {% trans 'Luogo natale di Giovanni Verga e cuore narrativo del Verismo. Sede di luoghi iconici come la Cunziria e di itinerari verghiani.' %}
+                        </p>
+                        <div class="comune-contatti">
+                            <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
+                            <div class="comune-info">
+                                <div class="comune-info-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>Piazza Umberto I, 1 - 95049 Vizzini (CT)</span>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <a href="tel:0933965411">0933 965411</a>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-globe"></i>
+                                    <a href="http://www.comune.vizzini.ct.it/" target="_blank" rel="noopener noreferrer">
+                                        www.comune.vizzini.ct.it
+                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comune di Mineo -->
+                    <div class="comune-card">
+                        <h3 class="comune-name">{% trans 'Comune di Mineo (CT)' %}</h3>
+                        <p class="comune-description">
+                            {% trans 'Città natale di Luigi Capuana. Centro di riferimento per gli studi capuaniani e sede di attività culturali e giornate di studio.' %}
+                        </p>
+                        <div class="comune-contatti">
+                            <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
+                            <div class="comune-info">
+                                <div class="comune-info-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>Piazza Buglio, 10 - 95044 Mineo (CT)</span>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <a href="tel:0933989411">0933 989411</a>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-globe"></i>
+                                    <a href="http://www.comune.mineo.ct.it/" target="_blank" rel="noopener noreferrer">
+                                        www.comune.mineo.ct.it
+                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comune di Licodia Eubea -->
+                    <div class="comune-card">
+                        <h3 class="comune-name">{% trans 'Comune di Licodia Eubea (CT)' %}</h3>
+                        <p class="comune-description">
+                            {% trans 'Comune partner del Parco. Sede di iniziative culturali e del Polo Culturale della Badia, spazio di eventi e cerimonie ufficiali.' %}
+                        </p>
+                        <div class="comune-contatti">
+                            <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
+                            <div class="comune-info">
+                                <div class="comune-info-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>Via Vittorio Emanuele, 205 - 95040 Licodia Eubea (CT)</span>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <a href="tel:0933961029">0933 961029</a>
+                                </div>
+                                <div class="comune-info-item">
+                                    <i class="bi bi-globe"></i>
+                                    <a href="http://www.comune.licodiaeubea.ct.it/" target="_blank" rel="noopener noreferrer">
+                                        www.comune.licodiaeubea.ct.it
+                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modulo di contatto -->
+<section class="contatti-section contatti-form-section">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center mb-4">
+                    <h2 class="contatti-section-title d-inline-block">{% trans 'Modulo di' %} <span class="contatti-title-accent">{% trans 'contatto' %}</span></h2>
+                    <p class="lead text-secondary mt-3" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+                        {% trans 'Per richieste di informazioni generali, proposte di collaborazione, attività didattiche, visite guidate, eventi o comunicazioni istituzionali, è possibile utilizzare il modulo di contatto sottostante.' %}
+                    </p>
+                    <p class="text-secondary">
+                        {% trans 'Il messaggio sarà indirizzato all\'email ufficiale del Parco Letterario.' %}
+                    </p>
+                </div>
+
+                <div class="contatti-form-center">
+                    <div class="contatti-form-column d-flex justify-content-center">
+                        <div class="contatti-form-card">
+                            <form class="contatti-form" method="post" action="">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="nome" class="form-label">
+                                            {% trans 'Nome e cognome' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nome" 
+                                            name="nome" 
+                                            placeholder="{% trans 'Inserisci nome e cognome' %}"
+                                            required
+                                            aria-required="true">
+                                    </div>
+                                    
+                                    <div class="col-md-6 form-group">
+                                        <label for="ente" class="form-label">
+                                            {% trans 'Ente / Istituzione' %} <span class="optional">({% trans 'facoltativo' %})</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="ente" 
+                                            name="ente"
+                                            placeholder="{% trans 'Nome ente o istituzione' %}">
+                                    </div>
+                                    
+                                    <div class="col-md-6 form-group">
+                                        <label for="email" class="form-label">
+                                            {% trans 'Indirizzo email' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="email" 
+                                            class="form-control" 
+                                            id="email" 
+                                            name="email"
+                                            placeholder="{% trans 'La tua email' %}" 
+                                            required
+                                            aria-required="true">
+                                    </div>
+                                    
+                                    <div class="col-md-6 form-group">
+                                        <label for="oggetto" class="form-label">
+                                            {% trans 'Oggetto' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="oggetto" 
+                                            name="oggetto"
+                                            placeholder="{% trans 'Oggetto del messaggio' %}" 
+                                            required
+                                            aria-required="true">
+                                    </div>
+                                    
+                                    <div class="col-12 form-group">
+                                        <label for="messaggio" class="form-label">
+                                            {% trans 'Messaggio' %} <span class="required">*</span>
+                                        </label>
+                                        <textarea 
+                                            class="form-control" 
+                                            id="messaggio" 
+                                            name="messaggio" 
+                                            rows="5"
+                                            placeholder="{% trans 'Scrivi qui il tuo messaggio...' %}" 
+                                            required
+                                            aria-required="true"></textarea>
+                                    </div>
+                                    
+                                    <div class="col-12 text-center mt-3">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="bi bi-send me-2"></i>
+                                            {% trans 'Invia messaggio' %}
+                                        </button>
+                                        <div class="form-note mt-2">
+                                            {% trans 'I campi contrassegnati con' %} <span class="required">*</span> {% trans 'sono obbligatori.' %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nota sulla privacy -->
+<section id="privacy" class="contatti-section contatti-privacy">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="contatti-section-title">{% trans 'Nota sulla' %} <span class="contatti-title-accent">{% trans 'privacy' %}</span></h2>
+                <p>
+                    {% trans 'I dati inviati tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alla richiesta, nel rispetto della normativa vigente in materia di protezione dei dati personali (Regolamento UE 2016/679 - GDPR).' %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seguici -->
+<section class="contatti-section contatti-social">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="contatti-section-title">{% trans 'Seguici' %}</h2>
+                <p class="contatti-social-intro">
+                    {% trans 'Per rimanere aggiornato sulle attività, gli eventi e le iniziative del Parco Letterario Giovanni Verga e Luigi Capuana, seguici sui canali social ufficiali.' %}
+                </p>
+                
+                <div class="contatti-social-links">
+                    <a href="https://www.facebook.com/versoilparcoletterariodelverismo" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="social-link social-link-facebook">
+                        <i class="bi bi-facebook"></i>
+                        <span>{% trans 'Pagina Facebook' %}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

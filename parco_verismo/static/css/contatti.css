@@ -1,0 +1,496 @@
+/* ========================================================
+   PAGINA CONTATTI - PARCO LETTERARIO VERISMO
+   ======================================================== */
+
+/* ========================================================
+   Hero Section
+   Gli stili della hero sono definiti globalmente in styles.css
+   come .pages-hero e classi correlate
+   ======================================================== */
+
+/* Stili SVG Hero - Utilizzo variabili CSS globali */
+.hero-svg-contatti .svg-gradient-start {
+    stop-color: var(--color-primary);
+    stop-opacity: 0.3;
+}
+
+.hero-svg-contatti .svg-gradient-end {
+    stop-color: var(--color-primary-dark);
+    stop-opacity: 0.5;
+}
+
+.hero-svg-contatti .svg-circle-primary {
+    fill: var(--color-primary);
+}
+
+.hero-svg-contatti .svg-circle-dark {
+    fill: var(--color-primary-dark);
+}
+
+.hero-svg-contatti .svg-stroke-primary {
+    stroke: var(--color-primary);
+}
+
+.hero-svg-contatti .svg-fill-secondary {
+    fill: var(--color-secondary);
+}
+
+.hero-svg-contatti .svg-text-dark {
+    fill: var(--color-primary-dark);
+}
+
+/* ========================================================
+   Sezioni generali
+   ======================================================== */
+
+.contatti-section {
+    padding: calc(var(--space-xl) * 2.5) 0;
+}
+
+.contatti-section-title {
+    font-family: 'TeX Gyre Termes', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-heading);
+    letter-spacing: -0.01em;
+    margin-bottom: calc(var(--space-xl) * 1.5);
+}
+
+.contatti-title-accent {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contatti-section {
+        padding: calc(var(--space-xl) * 1.5) 0;
+    }
+    
+    .contatti-section-title {
+        font-size: 1.625rem;
+        margin-bottom: var(--space-xl);
+    }
+}
+
+/* ========================================================
+   Coordinamento del Parco - Centro Studi C.E.S.T.A.
+   ======================================================== */
+
+.contatti-cesta {
+    background: var(--color-surface);
+}
+
+.contatti-cesta-card {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: calc(var(--space-xl) * 1.5);
+    box-shadow: var(--shadow-md);
+}
+
+.contatti-cesta-title {
+    font-family: 'TeX Gyre Termes', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.contatti-cesta-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
+.contatti-cesta-subtitle em {
+    color: var(--color-secondary-dark);
+    font-style: italic;
+}
+
+.contatti-cesta-description {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: calc(var(--space-xl) * 1.5);
+}
+
+.contatti-cesta-description p {
+    margin-bottom: var(--space-lg);
+}
+
+.contatti-cesta-description p:last-child {
+    margin-bottom: 0;
+}
+
+.contatti-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.contatti-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.contatti-info-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contatti-info-value {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    line-height: 1.6;
+}
+
+.contatti-info-value a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+.contatti-info-value a:hover,
+.contatti-info-value a:focus {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contatti-cesta-card {
+        padding: var(--space-xl);
+    }
+    
+    .contatti-cesta-title {
+        font-size: 1.5rem;
+    }
+    
+    .contatti-info-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+/* ========================================================
+   Comuni partner del Parco Letterario
+   ======================================================== */
+
+.contatti-comuni {
+    background: var(--color-background);
+}
+
+.comuni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+
+.comune-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: calc(var(--space-xl) * 1.25);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.comune-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.comune-name {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.comune-description {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-xl);
+    flex-grow: 1;
+}
+
+.comune-contatti {
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.comune-contatti-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-md);
+}
+
+.comune-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.comune-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+}
+
+.comune-info-item i {
+    color: var(--color-secondary);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.comune-info-item a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+.comune-info-item a:hover,
+.comune-info-item a:focus {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .comuni-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .comune-card {
+        padding: var(--space-xl);
+    }
+}
+
+/* ========================================================
+   Modulo di contatto
+   Stili propri della pagina contatti (ispirato al form homepage)
+   ======================================================== */
+
+.contatti-form-section {
+    background: var(--color-surface);
+}
+
+.contatti-form-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contatti-form-column {
+    min-width: 0;
+    width: 100%;
+}
+
+.contatti-form-card {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-elevated) 60%, var(--color-surface)) 0%, var(--color-surface) 100%);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 700px;
+}
+
+.contatti-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.contatti-form .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 0.9375rem;
+}
+
+.contatti-form .form-label .required {
+    color: var(--color-error);
+    font-weight: 700;
+}
+
+.contatti-form .form-label .optional {
+    color: var(--color-text-tertiary);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.contatti-form .form-control {
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contatti-form .form-control:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 6px 18px rgba(130, 50, 40, 0.06);
+}
+
+.contatti-form .form-control::placeholder {
+    color: var(--color-text-tertiary);
+}
+
+.contatti-form textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+    height: auto;
+}
+
+.contatti-form .btn-lg {
+    font-size: 1.125rem;
+    padding: 0.75rem 2rem;
+}
+
+.contatti-form .form-note {
+    font-size: 0.875rem;
+    color: var(--color-text-tertiary);
+}
+
+.contatti-form .form-note .required {
+    color: var(--color-error);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .contatti-form-card {
+        padding: 1.5rem;
+    }
+    
+    .contatti-form .btn-lg {
+        width: 100%;
+    }
+}
+
+/* ========================================================
+   Nota sulla privacy
+   ======================================================== */
+
+.contatti-privacy {
+    background: var(--color-neutral-100);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--space-xl) * 2.5) 0;
+}
+
+.contatti-privacy p {
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+    font-size: 1.0625rem;
+    margin-bottom: var(--space-lg);
+}
+
+/* ========================================================
+   Seguici (Social)
+   ======================================================== */
+
+.contatti-social {
+    background: var(--color-surface);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--space-xl) * 2.5) 0;
+}
+
+.contatti-social-intro {
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+    margin-bottom: calc(var(--space-xl) * 1.5);
+    font-size: 1.0625rem;
+}
+
+.contatti-social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) calc(var(--space-xl) * 1.25);
+    background: var(--color-background);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.social-link i {
+    font-size: 1.5rem;
+}
+
+.social-link-facebook {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.social-link-facebook:hover,
+.social-link-facebook:focus {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+    .contatti-social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+/* ========================================================
+   Utility e Override Bootstrap
+   ======================================================== */
+
+.contatti-page .page-content {
+    padding: 0;
+}
+
+/* Miglioramenti accessibilità - validazione visiva solo dopo interazione */
+.contatti-form input:user-invalid,
+.contatti-form textarea:user-invalid {
+    border-color: var(--color-error);
+    border-left-width: 3px;
+}
+
+.contatti-form input:user-valid,
+.contatti-form textarea:user-valid {
+    border-left: 3px solid var(--color-success);
+}

@@ -14,6 +14,7 @@ from .views import (
     missione_visione_view, comitato_tecnico_scientifico_view,
     comitato_regolamento_view, regolamenti_documenti_view,
     partner_rete_territoriale_view, accrediti_finanziamenti_view,
+    contatti_view,
     privacy_policy_view, note_legali_view, cookie_policy_view,
 )
 
@@ -64,6 +65,9 @@ urlpatterns = [
 
     # Accrediti e Finanziamenti
     path('finanziamenti/', accrediti_finanziamenti_view, name='accrediti_finanziamenti'),
+    
+    # Contatti
+    path('contatti/', contatti_view, name='contatti'),
     
     # Itinerari (liste e dettaglio)
     path('itinerari/verghiani/', itinerari_verghiani_view, name='itinerari_verghiani'),

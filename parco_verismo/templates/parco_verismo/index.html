@@ -352,65 +352,88 @@
                                 {% csrf_token %}
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="nome">{% trans 'Nome' %} *</label>
-                                        <input id="nome" name="nome" type="text" class="form-control" placeholder="{% trans 'Inserisci il tuo nome' %}" required>
+                                        <label for="nome" class="form-label">
+                                            {% trans 'Nome e cognome' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nome" 
+                                            name="nome" 
+                                            placeholder="{% trans 'Inserisci nome e cognome' %}"
+                                            required
+                                            aria-required="true">
                                     </div>
-
+                                    
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="cognome">{% trans 'Cognome' %} *</label>
-                                        <input id="cognome" name="cognome" type="text" class="form-control" placeholder="{% trans 'Inserisci il tuo cognome' %}" required>
+                                        <label for="ente" class="form-label">
+                                            {% trans 'Ente / Istituzione' %} <span class="optional">({% trans 'facoltativo' %})</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="ente" 
+                                            name="ente"
+                                            placeholder="{% trans 'Nome ente o istituzione' %}">
                                     </div>
-
+                                    
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="email">{% trans 'Email' %} *</label>
-                                        <input id="email" name="email" type="email" class="form-control" placeholder="{% trans 'Inserisci la tua email' %}" required>
+                                        <label for="email" class="form-label">
+                                            {% trans 'Indirizzo email' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="email" 
+                                            class="form-control" 
+                                            id="email" 
+                                            name="email"
+                                            placeholder="{% trans 'La tua email' %}"
+                                            required
+                                            aria-required="true">
                                     </div>
-
+                                    
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="telefono">{% trans 'Telefono' %}</label>
-                                        <input id="telefono" name="telefono" type="tel" class="form-control" placeholder="{% trans 'Numero di telefono (opzionale)' %}">
+                                        <label for="oggetto" class="form-label">
+                                            {% trans 'Oggetto' %} <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="oggetto" 
+                                            name="oggetto"
+                                            placeholder="{% trans 'Oggetto del messaggio' %}"
+                                            required
+                                            aria-required="true">
                                     </div>
-
-                                    <div class="col-md-4 form-group">
-                                        <label class="form-label" for="luogo">{% trans 'Luogo' %} *</label>
-                                        <select id="luogo" name="luogo" class="form-control" required>
-                                            <option value="">{% trans 'Seleziona...' %}</option>
-                                            <option value="vizzini">Vizzini</option>
-                                            <option value="mineo">Mineo</option>
-                                            <option value="licodia">Licodia Eubea</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-8 form-group">
-                                        <label class="form-label" for="itinerario">{% trans 'Tipologia itinerario' %}</label>
-                                        <select id="itinerario" name="itinerario" class="form-control">
-                                            <option value="">{% trans 'Seleziona...' %}</option>
-                                            <option value="verghiani">{% trans 'Itinerari verghiani' %}</option>
-                                            <option value="capuaniani">{% trans 'Itinerari capuaniani' %}</option>
-                                            <option value="tematici">{% trans 'Itinerari tematici' %}</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-6 form-group">
-                                        <label class="form-label" for="data_preferita">{% trans 'Data preferita visita' %}</label>
-                                        <input id="data_preferita" name="data_preferita" type="date" class="form-control" min="{{ oggi }}">
-                                    </div>
-
-                                    <div class="col-md-6 form-group">
-                                        <label class="form-label" for="numero_partecipanti">{% trans 'Numero partecipanti' %} *</label>
-                                        <input id="numero_partecipanti" name="numero_partecipanti" type="number" class="form-control" min="1" max="100" value="1" required>
-                                    </div>
-
+                                    
                                     <div class="col-12 form-group">
-                                        <label class="form-label" for="messaggio">{% trans 'Messaggio o richieste particolari' %}</label>
-                                        <textarea id="messaggio" name="messaggio" class="form-control" rows="3" placeholder="{% trans 'Eventuali richieste o informazioni aggiuntive...' %}"></textarea>
+                                        <label for="messaggio" class="form-label">
+                                            {% trans 'Messaggio' %} <span class="required">*</span>
+                                        </label>
+                                        <textarea 
+                                            class="form-control" 
+                                            id="messaggio" 
+                                            name="messaggio" 
+                                            rows="5"
+                                            placeholder="{% trans 'Scrivi qui il tuo messaggio...' %}"
+                                            required
+                                            aria-required="true"></textarea>
                                     </div>
-
+                                    
                                     <div class="col-12 text-center mt-3">
                                         <button type="submit" class="btn btn-primary btn-lg">
-                                            <i class="bi bi-envelope-paper"></i> {% trans 'Invia richiesta' %}
+                                            <i class="bi bi-send me-2"></i>
+                                            {% trans 'Invia messaggio' %}
                                         </button>
-                                        <div class="form-note mt-2">{% trans 'Ti risponderemo via email per confermare la tua richiesta.' %}</div>
+                                        <div class="form-note mt-2">
+                                            {% trans 'I campi contrassegnati con' %} <span class="required">*</span> {% trans 'sono obbligatori.' %}
+                                        </div>
+                                        <div class="form-note mt-1">
+                                            <small>
+                                                <a href="{% url 'contatti' %}#privacy" class="text-muted">
+                                                    {% trans 'Informativa sulla privacy' %}
+                                                </a>
+                                            </small>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
