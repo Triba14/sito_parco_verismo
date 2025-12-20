@@ -31,6 +31,7 @@ from parco_verismo.models import (
     Notizia,
     FotoArchivio,
     Itinerario,
+    Richiesta,
 )
 from django.conf import settings
 from django.contrib.auth import get_user_model
@@ -1641,6 +1642,52 @@ def check_database():
     if itinerari_senza_coords > 0:
         print(f"  ⚠️  {itinerari_senza_coords} itinerari senza coordinate GPS")
         print(f"     Esegui: python populate_db_complete.py --update-coords")
+
+    # ========================================================================
+    # ESEMPIO: CREAZIONE RICHIESTE DI CONTATTO (ES. MODULO PUBBLICO)
+    # ========================================================================
+    print("\n--- RICHIESTE DI CONTATTO DI ESEMPIO ---")
+    sample_richieste = [
+        {
+            "nome": "Mario",
+            "cognome": "Rossi",
+            "email": "mario.rossi@example.com",
+            "ente": "",
+            "oggetto": "Informazioni visite guidate",
+            "messaggio": "Vorrei informazioni sulle date disponibili per visite guidate in gruppo.",
+            "stato": "nuova",
+            "priorita": "media",
+        },
+        {
+            "nome": "Giulia",
+            "cognome": "Bianchi",
+            "email": "giulia.bianchi@example.com",
+            "ente": "Istituto Comprensivo Mineo",
+            "oggetto": "Richiesta visita scolastica",
+            "messaggio": "Siamo un gruppo scolastico e vorremmo prenotare una visita il prossimo mese.",
+            "stato": "nuova",
+            "priorita": "alta",
+        },
+        {
+            "nome": "Luca",
+            "cognome": "Verdi",
+            "email": "luca.verdi@example.com",
+            "ente": "Associazione Amici del Museo",
+            "oggetto": "Collaborazione eventi",
+            "messaggio": "Proponiamo una collaborazione per organizzare un evento culturale in estate.",
+            "stato": "nuova",
+            "priorita": "bassa",
+        },
+    ]
+
+    for rdata in sample_richieste:
+        r, created = Richiesta.objects.get_or_create(
+            email=rdata["email"], defaults=rdata
+        )
+        if created:
+            print(f"✓ Creata richiesta: {r.nome} {r.cognome} - {r.email}")
+        else:
+            print(f"• Richiesta esistente: {r.nome} {r.cognome} - {r.email}")
 
     print("\n" + "=" * 70)
     print("VERIFICA COMPLETATA")

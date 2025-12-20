@@ -24,7 +24,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
 
 # Local imports
-from parco_verismo.admin_richieste import richieste_admin_site
+
 from parco_verismo.sitemaps import (
     StaticViewSitemap,
     OperaSitemap,
@@ -58,7 +58,6 @@ urlpatterns += i18n_patterns(
 
 # Admin senza prefisso lingua
 urlpatterns += [
-    path("richieste/", richieste_admin_site.urls),  # Admin dedicato alle richieste
     path("admin/", admin.site.urls),
     path(
         "sitemap.xml",
