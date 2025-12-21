@@ -6,12 +6,26 @@
 {% block hero_section %}{% endblock %}
 
 {% block content %}
-<section class="container my-5 pt-5">
-  <h1 class="text-center mb-4">{% trans 'Documenti e Studi' %}</h1>
-  <p class="text-center mb-5">{% trans 'Esplora i documenti e gli studi pubblicati dal Parco Letterario del Verismo' %}</p>
+<section class="container my-5 pt-5 px-4">
+  <h1 class="text-center mt-5 mb-5">{% trans 'Documenti e Studi' %}</h1>
+  
+  <!-- Introduzione -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <p class="lead text-center mb-4">
+        Atti, pubblicazioni e materiali ufficiali del Parco Letterario Giovanni Verga e Luigi Capuana
+      </p>
+      <p class="text-justify mb-4">
+        Questa sezione raccoglie i documenti ufficiali prodotti nell'ambito delle attività scientifiche, culturali e istituzionali del Parco Letterario Giovanni Verga e Luigi Capuana – I luoghi del Verismo. Gli atti, le pubblicazioni e i materiali qui archiviati costituiscono una memoria condivisa del lavoro di ricerca, divulgazione e valorizzazione del patrimonio letterario e territoriale del Parco.
+      </p>
+      <p class="text-justify text-secondary mb-5">
+        Il Parco Letterario organizza annualmente Giornate di Studi dedicate agli autori del Verismo e ai temi della letteratura siciliana dell'Ottocento. Gli Atti di ciascuna edizione verranno pubblicati e resi disponibili in questa sezione.
+      </p>
+    </div>
+  </div>
 
   <!-- Filtri e ricerca -->
-  <div class="row mb-4">
+  <div class="row mb-5">
     <div class="col-md-8">
       <form method="get" action="{% url 'documenti' %}" class="d-flex">
         <input type="text" 
