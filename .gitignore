@@ -24,6 +24,8 @@ db.sqlite3-journal
 /static_root/
 .env
 .env.local
+.env.production
+.env.production.local
 .env.*.local
 *.mo
 !locale/*/LC_MESSAGES/django.mo

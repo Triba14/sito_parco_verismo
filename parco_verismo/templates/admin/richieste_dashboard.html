@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 {% load static %}
 
-{% block title %}Dashboard Prenotazioni - {{ site_title }}{% endblock %}
+{% block title %}Dashboard Richieste di contatto - {{ site_title }}{% endblock %}
 
 {% block extrastyle %}
 <style>
@@ -394,16 +394,16 @@
 
 {% block content %}
 <div class="dashboard-container">
-    <h1>Dashboard Prenotazioni</h1>
+    <h1>Dashboard Richieste di contatto</h1>
     
     <div class="quick-actions">
         <h3>Azioni Rapide</h3>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}">Vedi tutte</a>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}?stato__exact=nuova">Nuove</a>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}?stato__exact=in_lavorazione">In lavorazione</a>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}?stato__exact=confermata">Confermate</a>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}?stato__exact=cancellata">Cancellate</a>
-        <a href="{% url 'richieste_admin:parco_verismo_prenotazione_changelist' %}?priorita__exact=alta">Priorità ALTA</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}">Vedi tutte</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}?stato__exact=nuova">Nuove</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}?stato__exact=in_lavorazione">In lavorazione</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}?stato__exact=confermata">Confermate</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}?stato__exact=cancellata">Cancellate</a>
+        <a href="{% url 'richieste_admin:parco_verismo_richiesta_changelist' %}?priorita__exact=alta">Priorità ALTA</a>
     </div>
     
     <div class="section-title">Panoramica</div>
@@ -443,7 +443,7 @@
     </div>
     
     {% if richieste_urgenti %}
-    <div class="section-title">Prenotazioni Urgenti (Priorità Alta)</div>
+    <div class="section-title">Richieste Urgenti (Priorità Alta)</div>
     {% for richiesta in richieste_urgenti %}
     <div class="richiesta-card priorita-alta">
         <div class="richiesta-header">
@@ -451,14 +451,13 @@
             <span class="badge badge-alta">PRIORITÀ ALTA</span>
         </div>
         <div class="richiesta-info">
-            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a> {% if richiesta.telefono %}| <strong>Tel:</strong> {{ richiesta.telefono }}{% endif %}</div>
-            <div><strong>Luogo:</strong> {{ richiesta.get_luogo_display }} | <strong>Itinerario:</strong> {{ richiesta.get_itinerario_display }}</div>
-            <div><strong>Partecipanti:</strong> {{ richiesta.numero_partecipanti }} {% if richiesta.data_preferita %}| <strong>Data preferita:</strong> {{ richiesta.data_preferita|date:"d/m/Y" }}{% endif %}</div>
+            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a>{% if richiesta.ente %} | <strong>Ente:</strong> {{ richiesta.ente }}{% endif %}</div>
+            <div><strong>Oggetto:</strong> {{ richiesta.oggetto }}</div>
+            <div>{% if richiesta.messaggio %}<strong>Messaggio:</strong> {{ richiesta.messaggio|truncatewords:20 }}</div>{% endif %}
             <div><strong>Stato:</strong> {{ richiesta.get_stato_display }} | <strong>Richiesta il:</strong> {{ richiesta.data_richiesta|date:"d/m/Y H:i" }}</div>
-            {% if richiesta.messaggio %}<div><strong>Messaggio:</strong> {{ richiesta.messaggio|truncatewords:20 }}</div>{% endif %}
         </div>
         <div class="richiesta-actions">
-            <a href="{% url 'richieste_admin:parco_verismo_prenotazione_change' richiesta.id %}" class="btn-small">Gestisci</a>
+            <a href="{% url 'richieste_admin:parco_verismo_richiesta_change' richiesta.id %}" class="btn-small">Gestisci</a>
             <a href="mailto:{{ richiesta.email }}" class="btn-small">Invia Email</a>
         </div>
     </div>
@@ -466,7 +465,7 @@
     {% endif %}
     
     {% if in_ritardo %}
-    <div class="section-title">Prenotazioni in Ritardo (Data Preferita Passata)</div>
+    <div class="section-title">Richieste in Ritardo (Data Preferita Passata)</div>
     {% for richiesta in in_ritardo %}
     <div class="richiesta-card in-ritardo">
         <div class="richiesta-header">
@@ -474,18 +473,18 @@
             <span class="badge" style="background: #e83e8c;">RITARDO</span>
         </div>
         <div class="richiesta-info">
-            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a> {% if richiesta.telefono %}| <strong>Tel:</strong> {{ richiesta.telefono }}{% endif %}</div>
-            <div><strong>Luogo:</strong> {{ richiesta.get_luogo_display }} | <strong>Itinerario:</strong> {{ richiesta.get_itinerario_display }}</div>
-            <div><strong>Data preferita:</strong> <span style="color: var(--delete-button-bg); font-weight: bold;">{{ richiesta.data_preferita|date:"d/m/Y" }}</span> | <strong>Stato:</strong> {{ richiesta.get_stato_display }}</div>
+            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a>{% if richiesta.ente %} | <strong>Ente:</strong> {{ richiesta.ente }}{% endif %}</div>
+            <div><strong>Oggetto:</strong> {{ richiesta.oggetto }}</div>
+            <div><strong>Stato:</strong> {{ richiesta.get_stato_display }}</div>
         </div>
         <div class="richiesta-actions">
-            <a href="{% url 'richieste_admin:parco_verismo_prenotazione_change' richiesta.id %}" class="btn-small">Gestisci</a>
+            <a href="{% url 'richieste_admin:parco_verismo_richiesta_change' richiesta.id %}" class="btn-small">Gestisci</a>
         </div>
     </div>
     {% endfor %}
     {% endif %}
     
-    <div class="section-title">Ultime Prenotazioni Attive</div>
+    <div class="section-title">Ultime Richieste Attive</div>
     {% for richiesta in richieste_recenti %}
     <div class="richiesta-card priorita-{{ richiesta.priorita }}">
         <div class="richiesta-header">
@@ -496,21 +495,21 @@
             </div>
         </div>
         <div class="richiesta-info">
-            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a> {% if richiesta.telefono %}| <strong>Tel:</strong> {{ richiesta.telefono }}{% endif %}</div>
-            <div><strong>Luogo:</strong> {{ richiesta.get_luogo_display }} | <strong>Itinerario:</strong> {{ richiesta.get_itinerario_display }} | <strong>Partecipanti:</strong> {{ richiesta.numero_partecipanti }}</div>
-            <div><strong>Richiesta il:</strong> {{ richiesta.data_richiesta|date:"d/m/Y H:i" }} {% if richiesta.data_preferita %}| <strong>Data preferita:</strong> {{ richiesta.data_preferita|date:"d/m/Y" }}{% endif %}</div>
+            <div><strong>Email:</strong> <a href="mailto:{{ richiesta.email }}">{{ richiesta.email }}</a>{% if richiesta.ente %} | <strong>Ente:</strong> {{ richiesta.ente }}{% endif %}</div>
+            <div><strong>Oggetto:</strong> {{ richiesta.oggetto }}</div>
+            <div><strong>Richiesta il:</strong> {{ richiesta.data_richiesta|date:"d/m/Y H:i" }}</div>
             {% if richiesta.responsabile or richiesta.guida_assegnata %}<div>{% if richiesta.responsabile %}<strong>Responsabile:</strong> {{ richiesta.responsabile }}{% endif %}{% if richiesta.guida_assegnata %} | <strong>Guida:</strong> {{ richiesta.guida_assegnata }}{% endif %}</div>{% endif %}
         </div>
         <div class="richiesta-actions">
-            <a href="{% url 'richieste_admin:parco_verismo_prenotazione_change' richiesta.id %}" class="btn-small">Gestisci</a>
+            <a href="{% url 'richieste_admin:parco_verismo_richiesta_change' richiesta.id %}" class="btn-small">Gestisci</a>
         </div>
     </div>
     {% empty %}
-    <p>Nessuna prenotazione attiva. Ottimo lavoro!</p>
+    <p>Nessuna richiesta attiva. Ottimo lavoro!</p>
     {% endfor %}
     
     {% if richieste_cancellate %}
-    <div class="section-title" style="margin-top: 40px;">Prenotazioni Cancellate</div>
+    <div class="section-title" style="margin-top: 40px;">Richieste Cancellate</div>
     {% for richiesta in richieste_cancellate %}
     <div class="richiesta-card" style="border-left-color: #dc3545; border-left-width: 4px;">
         <div class="richiesta-header">
@@ -525,7 +524,7 @@
             {% if richiesta.note_admin %}<div><strong>Motivo:</strong> {{ richiesta.note_admin|truncatewords:20 }}</div>{% endif %}
         </div>
         <div class="richiesta-actions">
-            <a href="{% url 'richieste_admin:parco_verismo_prenotazione_change' richiesta.id %}" class="btn-small">Visualizza</a>
+            <a href="{% url 'richieste_admin:parco_verismo_richiesta_change' richiesta.id %}" class="btn-small">Visualizza</a>
             <a href="mailto:{{ richiesta.email }}" class="btn-small">Invia Email</a>
         </div>
     </div>

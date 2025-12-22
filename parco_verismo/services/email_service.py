@@ -1,106 +1,108 @@
 """
-Servizi per la gestione delle email.
+Servizi per la gestione delle email relative alle richieste.
 """
+
+import logging
 from django.core.mail import send_mail
-from django.template.loader import render_to_string
 from django.conf import settings
 
 
-def invia_email_prenotazione_confermata(prenotazione):
+def invia_email_richiesta_confermata(richiesta):
     """
-    Invia email di conferma al cliente dopo aver ricevuto la prenotazione.
-    
+    Invia email di conferma al cliente dopo aver ricevuto la richiesta.
+
     Args:
-        prenotazione: Oggetto Prenotazione
-    
+        richiesta: Oggetto Richiesta
+
     Returns:
         True se l'email è stata inviata con successo, False altrimenti
     """
     try:
-        subject = f'Prenotazione ricevuta - {prenotazione.get_luogo_display()}'
-        
+        subject = f"Richiesta ricevuta - {richiesta.oggetto or 'Richiesta contatto'}"
+
         # Crea il messaggio email
-        context = {
-            'prenotazione': prenotazione,
-        }
-        
         # TODO: Creare template email quando necessario
-        # message = render_to_string('emails/prenotazione_confermata.html', context)
-        
+        # message = render_to_string('emails/richiesta_confermata.html', {"richiesta": richiesta})
+
         message = f"""
-        Gentile {prenotazione.nome} {prenotazione.cognome},
+        Gentile {richiesta.nome} {richiesta.cognome},
 
-        Abbiamo ricevuto la tua richiesta di prenotazione per:
-        - Luogo: {prenotazione.get_luogo_display()}
-        - Itinerario: {prenotazione.get_itinerario_display()}
-        - Numero partecipanti: {prenotazione.numero_partecipanti}
-        {f'- Data preferita: {prenotazione.data_preferita.strftime("%d/%m/%Y")}' if prenotazione.data_preferita else ''}
+        Abbiamo ricevuto la tua richiesta.
+        {f'- Ente: {richiesta.ente}' if richiesta.ente else ''}
+        {f'- Oggetto: {richiesta.oggetto}' if richiesta.oggetto else ''}
 
-        Ti contatteremo presto per confermare i dettagli.
+        Ti contatteremo presto per rispondere alla tua richiesta.
 
         Cordiali saluti,
         Il Team del Parco Letterario del Verismo
         """
-        
+
         send_mail(
             subject,
             message,
-            settings.DEFAULT_FROM_EMAIL if hasattr(settings, 'DEFAULT_FROM_EMAIL') else 'noreply@parcolettverismo.it',
-            [prenotazione.email],
+            (
+                settings.DEFAULT_FROM_EMAIL
+                if hasattr(settings, "DEFAULT_FROM_EMAIL")
+                else "noreply@parcolettverismo.it"
+            ),
+            [richiesta.email],
             fail_silently=False,
         )
-        
+
         return True
-    except Exception as e:
-        # Log l'errore
-        print(f"Errore nell'invio email: {e}")
+    except Exception:
+        logging.exception(
+            "Errore nell'invio email per richiesta id=%s",
+            getattr(richiesta, "id", "unknown"),
+        )
         return False
 
 
-def invia_notifica_admin_nuova_prenotazione(prenotazione):
+def invia_notifica_admin_nuova_richiesta(richiesta):
     """
-    Invia una notifica agli amministratori quando arriva una nuova prenotazione.
-    
+    Invia una notifica agli amministratori quando arriva una nuova richiesta.
+
     Args:
-        prenotazione: Oggetto Prenotazione
-    
+        richiesta: Oggetto Richiesta
+
     Returns:
         True se l'email è stata inviata con successo, False altrimenti
     """
     try:
-        subject = f'Nuova prenotazione: {prenotazione.nome} {prenotazione.cognome}'
-        
-        message = f"""
-        Nuova prenotazione ricevuta:
+        subject = f"Nuova richiesta: {richiesta.nome} {richiesta.cognome} - {richiesta.oggetto or ''}"
 
-        Cliente: {prenotazione.nome} {prenotazione.cognome}
-        Email: {prenotazione.email}
-        Telefono: {prenotazione.telefono or 'Non fornito'}
-        
-        Dettagli:
-        - Luogo: {prenotazione.get_luogo_display()}
-        - Itinerario: {prenotazione.get_itinerario_display()}
-        - Numero partecipanti: {prenotazione.numero_partecipanti}
-        {f'- Data preferita: {prenotazione.data_preferita.strftime("%d/%m/%Y")}' if prenotazione.data_preferita else ''}
-        
-        {f'Messaggio: {prenotazione.messaggio}' if prenotazione.messaggio else ''}
-        
-        Gestisci la prenotazione dall'admin.
+        message = f"""
+        Nuova richiesta ricevuta:
+
+        Cliente: {richiesta.nome} {richiesta.cognome}
+        Email: {richiesta.email}
+        {f'Ente: {richiesta.ente}' if richiesta.ente else ''}
+        {f'Oggetto: {richiesta.oggetto}' if richiesta.oggetto else ''}
+
+        {f'Messaggio: {richiesta.messaggio}' if richiesta.messaggio else ''}
+
+        Gestisci la richiesta dall'admin.
         """
-        
+
         # TODO: Configurare ADMIN_EMAIL in settings
-        admin_email = getattr(settings, 'ADMIN_EMAIL', 'admin@parcolettverismo.it')
-        
+        admin_email = getattr(settings, "ADMIN_EMAIL", "admin@parcolettverismo.it")
+
         send_mail(
             subject,
             message,
-            settings.DEFAULT_FROM_EMAIL if hasattr(settings, 'DEFAULT_FROM_EMAIL') else 'noreply@parcolettverismo.it',
+            (
+                settings.DEFAULT_FROM_EMAIL
+                if hasattr(settings, "DEFAULT_FROM_EMAIL")
+                else "noreply@parcolettverismo.it"
+            ),
             [admin_email],
             fail_silently=False,
         )
-        
+
         return True
-    except Exception as e:
-        # Log l'errore
-        print(f"Errore nell'invio notifica admin: {e}")
+    except Exception:
+        logging.exception(
+            "Errore nell'invio notifica admin per richiesta id=%s",
+            getattr(richiesta, "id", "unknown"),
+        )
         return False

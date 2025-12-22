@@ -9,7 +9,7 @@ Piattaforma web moderna per la promozione e valorizzazione del patrimonio letter
 -  **Itinerari Turistici** - Percorsi letterari interattivi
 -  **Eventi e Notizie** - Calendario eventi e ultime notizie
 -  **Archivio Documentale** - Studi, ricerche e documenti
--  **Sistema Prenotazioni** - Gestione prenotazioni itinerari guidati
+-  **Sistema Richieste** - Gestione richieste e contatti
 -  **Archivio Fotografico** - Galleria fotografica organizzata
 -  **Accessibilità** - Conforme AGID e GDPR
 
@@ -28,7 +28,7 @@ Piattaforma web moderna per la promozione e valorizzazione del patrimonio letter
 parco_verismo/
 ├── models/          # Modelli database organizzati per dominio
 │   ├── autori_opere.py, eventi.py, documenti.py
-│   ├── itinerari.py, prenotazioni.py
+│   ├── itinerari.py, richieste.py
 ├── views/           # Views organizzate per funzionalità
 ├── admin/           # Admin Django separati per tipo
 ├── forms/           # Forms con validazioni
@@ -123,7 +123,7 @@ models/
 ├── eventi.py          # Evento, Notizia
 ├── documenti.py       # Documento, FotoArchivio
 ├── itinerari.py       # Itinerario, TappaItinerario
-└── prenotazioni.py    # Prenotazione
+└── richieste.py    # Richiesta
 ```
 
 ### Views (Funzionalità)
@@ -143,7 +143,7 @@ views/
 
 ```python
 services/
-├── email_service.py   # Invio email prenotazioni
+├── email_service.py   # Invio email richieste
 ├── search_service.py  # Ricerca full-text opere
 └── stats_service.py   # Statistiche admin
 ```
@@ -167,7 +167,7 @@ services/
 - **TappaItinerario** - Punti di interesse
 
 ### Sistema
-- **Prenotazione** - Gestione prenotazioni guidate
+- **Richiesta** - Gestione richieste e contatti
 
 ##  Funzionalità
 
@@ -198,10 +198,10 @@ services/
 ### Itinerari Letterari
 - Mappe interattive
 - Punti di interesse georeferenziati
-- Sistema prenotazioni
+- Sistema richieste
 - Link a mappe esterne
 
-### Sistema Prenotazioni
+### Sistema Richieste
 - Form validazione completa
 - Email automatiche
 - Admin panel dedicato

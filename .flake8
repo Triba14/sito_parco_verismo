@@ -1,0 +1,7 @@
+[flake8]
+max-line-length = 120
+exclude = .venv, node_modules, static, media, migrations
+
+# Per-file ignores for large auto-generated or data files
+per-file-ignores =
+    populate_db_complete.py: E501,W291,F541,F841,E402,F401

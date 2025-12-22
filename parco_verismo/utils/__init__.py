@@ -21,14 +21,14 @@ from .mixins import (
 
 __all__ = [
     # Helpers
-    'truncate_text',
-    'slugify_italian',
-    'format_phone_number',
-    'get_client_ip',
+    "truncate_text",
+    "slugify_italian",
+    "format_phone_number",
+    "get_client_ip",
     # Decorators
-    'cache_page_custom',
-    'require_ajax',
+    "cache_page_custom",
+    "require_ajax",
     # Mixins
-    'FormSuccessMessageMixin',
-    'ActiveOnlyMixin',
+    "FormSuccessMessageMixin",
+    "ActiveOnlyMixin",
 ]

@@ -6,13 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parco_verismo', '0002_alter_prenotazione_itinerario'),
+        ("parco_verismo", "0002_alter_prenotazione_itinerario"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='fotoarchivio',
-            name='autore',
-            field=models.CharField(choices=[('VERGA', 'Giovanni Verga'), ('CAPUANA', 'Luigi Capuana'), ('ALTRO', 'Altro/Generico')], default='ALTRO', help_text="Seleziona l'autore a cui appartiene questa foto.", max_length=20),
+            model_name="fotoarchivio",
+            name="autore",
+            field=models.CharField(
+                choices=[
+                    ("VERGA", "Giovanni Verga"),
+                    ("CAPUANA", "Luigi Capuana"),
+                    ("ALTRO", "Altro/Generico"),
+                ],
+                default="ALTRO",
+                help_text="Seleziona l'autore a cui appartiene questa foto.",
+                max_length=20,
+            ),
         ),
     ]

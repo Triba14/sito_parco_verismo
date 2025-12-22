@@ -2,8 +2,8 @@
 Forms del Parco Letterario del Verismo.
 """
 
-from .prenotazione import PrenotazioneForm
+from .richiesta import RichiestaForm
 
 __all__ = [
-    'PrenotazioneForm',
+    "RichiestaForm",
 ]

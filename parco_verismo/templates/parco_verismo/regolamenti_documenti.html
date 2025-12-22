@@ -50,7 +50,92 @@
         </div>
     </div>
 </section>
+<!-- Sezione: Comitato Tecnico-Scientifico -->
+<section class="hp-section hp-archivi py-6">
+    <div class="container-xl">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="hp-section-title mb-4">
+                    <span class="hp-accent">{% trans 'Comitato' %}</span> {% trans 'Tecnico-Scientifico' %}
+                </h2>
+                <p class="lead mb-4">
+                    {% trans "Il Comitato Tecnico-Scientifico è l'organo consultivo del Parco Letterario del Verismo, composto da esperti di letteratura, storia e cultura siciliana." %}
+                </p>
+                <p class="mb-4">
+                    {% trans "Il Comitato fornisce supporto scientifico alle attività del Parco, valuta i progetti culturali, collabora alla definizione dei programmi didattici e contribuisce alla valorizzazione del patrimonio letterario verista." %}
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="{% url 'comitato_tecnico_scientifico' %}" class="btn btn-primary">
+                        <i class="bi bi-people me-2"></i>{% trans 'Scopri il Comitato' %}
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hp-card">
+                    <div class="hp-card-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                    <h3 class="h5">{% trans 'Documenti Ufficiali' %}</h3>
+                    <p class="mb-3">{% trans 'Scarica i documenti costitutivi del Comitato Tecnico-Scientifico' %}</p>
+                    <ul class="doc-list">
+                        <li>
+                            <a href="/media/documenti/Regolamento_Comitato_Tecnico_Scientifico.pdf" target="_blank">
+                                <i class="bi bi-file-pdf me-2"></i>{% trans 'Regolamento del Comitato' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/media/documenti/OMISSIS_Determina_Sindacale_2025-50.pdf" target="_blank">
+                                <i class="bi bi-file-pdf me-2"></i>{% trans 'Determina Sindacale n. 50' %}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Sezione: Premio Nazionale Verga-Capuana -->
+<section class="hp-section hp-biblioteca py-6">
+    <div class="container-xl">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="hp-section-title mb-4">
+                    {% trans 'Premio Nazionale' %} <span class="hp-accent">{% trans '"Verga - Capuana"' %}</span>
+                </h2>
+                <p class="lead mb-4">
+                    {% trans "Il Premio Nazionale 'Verga - Capuana' è un riconoscimento dedicato alle scuole che si distinguono nella promozione della letteratura verista e nella valorizzazione del patrimonio culturale siciliano." %}
+                </p>
+                <p class="mb-4">
+                    {% trans "Il concorso è rivolto agli studenti delle scuole primarie e secondarie di I e II grado e prevede diverse categorie di partecipazione: elaborati scritti, ricerche storiche, produzioni multimediali e progetti di valorizzazione territoriale." %}
+                </p>
+                <a href="/media/documenti/Bando_Premio_Verga_Capuana.pdf" download class="btn btn-primary">
+                    <i class="bi bi-download me-2"></i>{% trans 'Scarica il Bando' %}
+                </a>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="hp-card">
+                    <div class="hp-card-icon"><i class="bi bi-trophy"></i></div>
+                    <h3 class="h5">{% trans 'Informazioni sul Premio' %}</h3>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>{% trans 'Destinatari:' %}</strong></p>
+                        <p class="small text-muted">{% trans 'Scuole primarie e secondarie di I e II grado' %}</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>{% trans 'Categorie:' %}</strong></p>
+                        <ul class="small text-muted mb-0">
+                            <li>{% trans 'Elaborati scritti e poetici' %}</li>
+                            <li>{% trans 'Ricerche storiche e letterarie' %}</li>
+                            <li>{% trans 'Produzioni multimediali' %}</li>
+                            <li>{% trans 'Progetti di valorizzazione' %}</li>
+                        </ul>
+                    </div>
+                    <a href="/media/documenti/Bando_Premio_Verga_Capuana.pdf" target="_blank" class="hp-card-link">
+                        <i class="bi bi-file-pdf me-2"></i>{% trans 'Leggi il Bando Completo' %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Sezione: Regolamenti (layout like index cards) -->
 <section class="hp-section hp-archivi py-6">
     <div class="container-xl">
@@ -155,7 +240,7 @@
 </section>
 
 <!-- Sezione: Scarichi Rapidi -->
-<section class="page-section documenti-quick py-6">
+<section class="page-section documenti-quick py-6 my-5 my-lg-6">
     <div class="container-xl">
         <div class="text-center mb-5 mb-lg-6">
             <h2 class="page-section-title">
@@ -205,23 +290,19 @@
 </section>
 
 <!-- Sezione: CTA -->
-<section class="page-section regolamenti-cta py-6">
+<section class="page-section regolamenti-cta py-5 py-lg-6">
     <div class="container-xl">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="reg-cta-card">
-                    <div class="text-center">
-                        <h2 class="h2 fw-bold mb-3">
-                            {% trans 'Trasparenza e Responsabilità' %}
-                        </h2>
-                        <p class="lead mb-5">
-                            {% trans 'Il Parco Letterario si impegna per la massima trasparenza amministrativa e il rispetto della normativa vigente in materia di privacy e protezione dei dati.' %}
-                        </p>
-                        <a href="mailto:info@parcoverismo.it" class="btn btn-primary btn-lg">
-                            <i class="bi bi-envelope"></i> {% trans 'Contattaci per Info' %}
-                        </a>
-                    </div>
-                </div>
+            <div class="col-lg-10 mx-auto text-center">
+                <h2 class="h2 fw-bold mb-3">
+                    {% trans 'Trasparenza e Responsabilità' %}
+                </h2>
+                <p class="lead mb-4">
+                    {% trans 'Il Parco Letterario si impegna per la massima trasparenza amministrativa e il rispetto della normativa vigente in materia di privacy e protezione dei dati.' %}
+                </p>
+                <a href="mailto:info@parcoverismo.it" class="btn btn-primary btn-lg">
+                    <i class="bi bi-envelope me-2"></i>{% trans 'Contattaci per Info' %}
+                </a>
             </div>
         </div>
     </div>

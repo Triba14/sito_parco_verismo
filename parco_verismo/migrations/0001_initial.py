@@ -10,311 +10,978 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies: list[tuple] = []
 
     operations = [
         migrations.CreateModel(
-            name='Autore',
+            name="Autore",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nome', models.CharField(max_length=100, unique=True)),
-                ('slug', models.SlugField(max_length=100, unique=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("nome", models.CharField(max_length=100, unique=True)),
+                ("slug", models.SlugField(max_length=100, unique=True)),
             ],
             options={
-                'verbose_name': 'Autore',
-                'verbose_name_plural': 'Autori',
+                "verbose_name": "Autore",
+                "verbose_name_plural": "Autori",
             },
         ),
         migrations.CreateModel(
-            name='Documento',
+            name="Documento",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('data_pubblicazione', models.DateTimeField(auto_now_add=True)),
-                ('anno_pubblicazione', models.IntegerField(blank=True, help_text='Anno di pubblicazione del documento/studio.', null=True)),
-                ('pdf_file', models.FileField(help_text='File PDF del documento o studio.', upload_to='documenti/pdf/')),
-                ('anteprima', models.ImageField(blank=True, help_text='Immagine di anteprima del documento (copertina o prima pagina).', null=True, upload_to='documenti/anteprime/')),
-                ('is_active', models.BooleanField(default=True, help_text='Se il documento è attivo e visibile.')),
-                ('tipo', models.CharField(choices=[('documento', 'Documento'), ('studio', 'Studio'), ('ricerca', 'Ricerca'), ('saggio', 'Saggio')], default='documento', help_text='Tipo di documento/studio.', max_length=50)),
-                ('autori', models.CharField(blank=True, help_text="Autori del documento/studio (es: 'Mario Rossi, Luigi Bianchi').", max_length=300, null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("data_pubblicazione", models.DateTimeField(auto_now_add=True)),
+                (
+                    "anno_pubblicazione",
+                    models.IntegerField(
+                        blank=True,
+                        help_text="Anno di pubblicazione del documento/studio.",
+                        null=True,
+                    ),
+                ),
+                (
+                    "pdf_file",
+                    models.FileField(
+                        help_text="File PDF del documento o studio.",
+                        upload_to="documenti/pdf/",
+                    ),
+                ),
+                (
+                    "anteprima",
+                    models.ImageField(
+                        blank=True,
+                        help_text="Immagine di anteprima del documento (copertina o prima pagina).",
+                        null=True,
+                        upload_to="documenti/anteprime/",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True, help_text="Se il documento è attivo e visibile."
+                    ),
+                ),
+                (
+                    "tipo",
+                    models.CharField(
+                        choices=[
+                            ("documento", "Documento"),
+                            ("studio", "Studio"),
+                            ("ricerca", "Ricerca"),
+                            ("saggio", "Saggio"),
+                        ],
+                        default="documento",
+                        help_text="Tipo di documento/studio.",
+                        max_length=50,
+                    ),
+                ),
+                (
+                    "autori",
+                    models.CharField(
+                        blank=True,
+                        help_text="Autori del documento/studio (es: 'Mario Rossi, Luigi Bianchi').",
+                        max_length=300,
+                        null=True,
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Documento',
-                'verbose_name_plural': 'Documenti e Studi',
-                'ordering': ['-data_pubblicazione'],
-            },
-            bases=(parler.models.TranslatableModelMixin, models.Model),
-        ),
-        migrations.CreateModel(
-            name='Evento',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('data_inizio', models.DateTimeField(help_text="Data e ora di inizio dell'evento.")),
-                ('data_fine', models.DateTimeField(blank=True, help_text="Data e ora di fine dell'evento (opzionale).", null=True)),
-                ('immagine', models.ImageField(blank=True, help_text="Immagine rappresentativa dell'evento.", null=True, upload_to='eventi/')),
-                ('is_active', models.BooleanField(default=True, help_text="Se l'evento è attivo e visibile.")),
-            ],
-            options={
-                'verbose_name': 'Evento',
-                'verbose_name_plural': 'Eventi',
-                'ordering': ['-data_inizio'],
-            },
-            bases=(parler.models.TranslatableModelMixin, models.Model),
-        ),
-        migrations.CreateModel(
-            name='FotoArchivio',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('immagine', models.ImageField(help_text="Carica la foto per l'archivio.", upload_to='archivio_fotografico/')),
-                ('data_aggiunta', models.DateTimeField(auto_now_add=True)),
-                ('ordine', models.IntegerField(default=0, help_text='Ordine di visualizzazione (numero più basso = prima).')),
-                ('is_active', models.BooleanField(default=True, help_text='Se la foto è attiva e visibile.')),
-                ('categoria', models.CharField(blank=True, help_text="Categoria della foto (es: 'Luoghi', 'Eventi', 'Personaggi').", max_length=100, null=True)),
-            ],
-            options={
-                'verbose_name': 'Foto Archivio',
-                'verbose_name_plural': 'Archivio Fotografico',
-                'ordering': ['ordine', '-data_aggiunta'],
-            },
-            bases=(parler.models.TranslatableModelMixin, models.Model),
-        ),
-        migrations.CreateModel(
-            name='Itinerario',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('immagine', models.ImageField(help_text="Immagine rappresentativa dell'itinerario.", upload_to='itinerari/immagini/')),
-                ('link_maps', models.URLField(blank=True, help_text='Link al percorso su Google Maps (opzionale)', max_length=500, null=True)),
-                ('coordinate_tappe', models.JSONField(blank=True, help_text="JSON con le coordinate delle tappe: [{'nome': 'Tappa 1', 'coords': [lat, lng], 'descrizione': '...', 'order': 1}, ...]", null=True)),
-                ('colore_percorso', models.CharField(default='#2E7D32', help_text='Colore del percorso sulla mappa (formato hex, es: #2E7D32)', max_length=7)),
-                ('icona_percorso', models.CharField(default='📖', help_text='Emoji/icona per il percorso (es: 📖, 🏛️, 🍷)', max_length=10)),
-                ('durata_stimata', models.CharField(blank=True, help_text="Durata stimata (es: '2-3 ore', 'Mezza giornata')", max_length=50, null=True)),
-                ('difficolta', models.CharField(choices=[('facile', 'Facile'), ('media', 'Media'), ('difficile', 'Difficile')], default='facile', help_text='Difficoltà del percorso', max_length=50)),
-                ('ordine', models.IntegerField(default=0, help_text='Ordine di visualizzazione (numero più basso = prima).')),
-                ('is_active', models.BooleanField(default=True, help_text="Se l'itinerario è attivo e visibile.")),
-                ('tipo', models.CharField(choices=[('verghiano', 'Itinerario Verghiano'), ('capuaniano', 'Itinerario Capuaniano'), ('tematico', 'Itinerario Tematico')], default='verghiano', help_text='Tipo di itinerario.', max_length=50)),
-            ],
-            options={
-                'verbose_name': 'Itinerario',
-                'verbose_name_plural': 'Itinerari',
-                'ordering': ['ordine', 'slug'],
-            },
-            bases=(parler.models.TranslatableModelMixin, models.Model),
-        ),
-        migrations.CreateModel(
-            name='Notizia',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('data_pubblicazione', models.DateTimeField(auto_now_add=True)),
-                ('immagine', models.ImageField(blank=True, help_text='Immagine principale della notizia.', null=True, upload_to='notizie/')),
-                ('is_active', models.BooleanField(default=True, help_text='Se la notizia è attiva e visibile.')),
-            ],
-            options={
-                'verbose_name': 'Notizia',
-                'verbose_name_plural': 'Notizie',
-                'ordering': ['-data_pubblicazione'],
+                "verbose_name": "Documento",
+                "verbose_name_plural": "Documenti e Studi",
+                "ordering": ["-data_pubblicazione"],
             },
             bases=(parler.models.TranslatableModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='Prenotazione',
+            name="Evento",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nome', models.CharField(max_length=100, verbose_name='Nome')),
-                ('cognome', models.CharField(max_length=100, verbose_name='Cognome')),
-                ('email', models.EmailField(max_length=254, verbose_name='Email')),
-                ('telefono', models.CharField(blank=True, help_text='Opzionale ma consigliato per contatto rapido', max_length=20, verbose_name='Telefono')),
-                ('luogo', models.CharField(choices=[('vizzini', 'Vizzini'), ('mineo', 'Mineo'), ('licodia', 'Licodia Eubea')], max_length=20, verbose_name='Luogo')),
-                ('itinerario', models.CharField(blank=True, choices=[('verghiani', 'Itinerari verghiani'), ('capuaniani', 'Itinerari capuaniani'), ('tematici', 'Itinerari tematici')], help_text='Opzionale - sarà suggerito in base al luogo scelto', max_length=20, verbose_name='Tipologia itinerario')),
-                ('data_preferita', models.DateField(blank=True, help_text='Opzionale', null=True, verbose_name='Data preferita visita')),
-                ('numero_partecipanti', models.PositiveIntegerField(default=1, help_text='Numero persone che parteciperanno', verbose_name='Numero partecipanti')),
-                ('messaggio', models.TextField(blank=True, help_text='Eventuali richieste o informazioni aggiuntive', verbose_name='Messaggio/Richieste particolari')),
-                ('data_richiesta', models.DateTimeField(auto_now_add=True, verbose_name='Data richiesta')),
-                ('stato', models.CharField(choices=[('nuova', 'Nuova richiesta'), ('in_lavorazione', 'In lavorazione'), ('confermata', 'Confermata'), ('completata', 'Completata'), ('cancellata', 'Cancellata')], db_index=True, default='nuova', max_length=20, verbose_name='Stato')),
-                ('priorita', models.CharField(choices=[('bassa', 'Bassa'), ('media', 'Media'), ('alta', 'Alta')], db_index=True, default='media', max_length=10, verbose_name='Priorità')),
-                ('data_completamento', models.DateTimeField(blank=True, help_text='Quando il servizio è stato erogato', null=True, verbose_name='Data completamento')),
-                ('responsabile', models.CharField(blank=True, help_text='Chi ha gestito la richiesta', max_length=100, verbose_name='Responsabile')),
-                ('guida_assegnata', models.CharField(blank=True, help_text='Nome della guida turistica assegnata', max_length=100, verbose_name='Guida assegnata')),
-                ('note_admin', models.TextField(blank=True, help_text='Note interne per il follow-up', verbose_name='Note amministratore')),
-                ('ultima_modifica', models.DateTimeField(auto_now=True, verbose_name='Ultima modifica')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                (
+                    "data_inizio",
+                    models.DateTimeField(help_text="Data e ora di inizio dell'evento."),
+                ),
+                (
+                    "data_fine",
+                    models.DateTimeField(
+                        blank=True,
+                        help_text="Data e ora di fine dell'evento (opzionale).",
+                        null=True,
+                    ),
+                ),
+                (
+                    "immagine",
+                    models.ImageField(
+                        blank=True,
+                        help_text="Immagine rappresentativa dell'evento.",
+                        null=True,
+                        upload_to="eventi/",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True, help_text="Se l'evento è attivo e visibile."
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Prenotazione',
-                'verbose_name_plural': 'Prenotazioni',
-                'ordering': ['-data_richiesta'],
-            },
-        ),
-        migrations.CreateModel(
-            name='Opera',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('anno_pubblicazione', models.IntegerField(blank=True, null=True)),
-                ('link_wikisource', models.URLField(help_text="Link alla pagina dell'opera su Wikisource.", max_length=500)),
-                ('copertina', models.ImageField(blank=True, help_text="Carica la copertina dell'opera.", null=True, upload_to='opere/copertine/')),
-                ('autore', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='opere', to='parco_verismo.autore')),
-            ],
-            options={
-                'verbose_name': 'Opera',
-                'verbose_name_plural': 'Opere',
-                'ordering': ['anno_pubblicazione', 'slug'],
-            },
-            bases=(parler.models.TranslatableModelMixin, models.Model),
-        ),
-        migrations.CreateModel(
-            name='TappaItinerario',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('ordine', models.IntegerField(default=0, help_text="Ordine della tappa nell'itinerario (numero più basso = prima).")),
-                ('immagine', models.ImageField(blank=True, help_text='Immagine rappresentativa della tappa (opzionale).', null=True, upload_to='itinerari/tappe/')),
-                ('itinerario', models.ForeignKey(help_text='Itinerario a cui appartiene questa tappa.', on_delete=django.db.models.deletion.CASCADE, related_name='tappe', to='parco_verismo.itinerario')),
-            ],
-            options={
-                'verbose_name': 'Tappa Itinerario',
-                'verbose_name_plural': 'Tappe Itinerari',
-                'ordering': ['ordine'],
+                "verbose_name": "Evento",
+                "verbose_name_plural": "Eventi",
+                "ordering": ["-data_inizio"],
             },
             bases=(parler.models.TranslatableModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='DocumentoTranslation',
+            name="FotoArchivio",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(help_text='Titolo del documento o studio.', max_length=200)),
-                ('descrizione', models.TextField(help_text='Descrizione dettagliata del contenuto del documento.')),
-                ('riassunto', models.TextField(blank=True, help_text='Riassunto breve per le liste (opzionale).', null=True)),
-                ('parole_chiave', models.CharField(blank=True, help_text='Parole chiave separate da virgola (opzionale).', max_length=300, null=True)),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.documento')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "immagine",
+                    models.ImageField(
+                        help_text="Carica la foto per l'archivio.",
+                        upload_to="archivio_fotografico/",
+                    ),
+                ),
+                ("data_aggiunta", models.DateTimeField(auto_now_add=True)),
+                (
+                    "ordine",
+                    models.IntegerField(
+                        default=0,
+                        help_text="Ordine di visualizzazione (numero più basso = prima).",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True, help_text="Se la foto è attiva e visibile."
+                    ),
+                ),
+                (
+                    "categoria",
+                    models.CharField(
+                        blank=True,
+                        help_text="Categoria della foto (es: 'Luoghi', 'Eventi', 'Personaggi').",
+                        max_length=100,
+                        null=True,
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Documento Translation',
-                'db_table': 'parco_verismo_documento_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Foto Archivio",
+                "verbose_name_plural": "Archivio Fotografico",
+                "ordering": ["ordine", "-data_aggiunta"],
+            },
+            bases=(parler.models.TranslatableModelMixin, models.Model),
+        ),
+        migrations.CreateModel(
+            name="Itinerario",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                (
+                    "immagine",
+                    models.ImageField(
+                        help_text="Immagine rappresentativa dell'itinerario.",
+                        upload_to="itinerari/immagini/",
+                    ),
+                ),
+                (
+                    "link_maps",
+                    models.URLField(
+                        blank=True,
+                        help_text="Link al percorso su Google Maps (opzionale)",
+                        max_length=500,
+                        null=True,
+                    ),
+                ),
+                (
+                    "coordinate_tappe",
+                    models.JSONField(
+                        blank=True,
+                        help_text="JSON con le coordinate delle tappe: [{'nome': 'Tappa 1', 'coords': [lat, lng], 'descrizione': '...', 'order': 1}, ...]",
+                        null=True,
+                    ),
+                ),
+                (
+                    "colore_percorso",
+                    models.CharField(
+                        default="#2E7D32",
+                        help_text="Colore del percorso sulla mappa (formato hex, es: #2E7D32)",
+                        max_length=7,
+                    ),
+                ),
+                (
+                    "icona_percorso",
+                    models.CharField(
+                        default="📖",
+                        help_text="Emoji/icona per il percorso (es: 📖, 🏛️, 🍷)",
+                        max_length=10,
+                    ),
+                ),
+                (
+                    "durata_stimata",
+                    models.CharField(
+                        blank=True,
+                        help_text="Durata stimata (es: '2-3 ore', 'Mezza giornata')",
+                        max_length=50,
+                        null=True,
+                    ),
+                ),
+                (
+                    "difficolta",
+                    models.CharField(
+                        choices=[
+                            ("facile", "Facile"),
+                            ("media", "Media"),
+                            ("difficile", "Difficile"),
+                        ],
+                        default="facile",
+                        help_text="Difficoltà del percorso",
+                        max_length=50,
+                    ),
+                ),
+                (
+                    "ordine",
+                    models.IntegerField(
+                        default=0,
+                        help_text="Ordine di visualizzazione (numero più basso = prima).",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True, help_text="Se l'itinerario è attivo e visibile."
+                    ),
+                ),
+                (
+                    "tipo",
+                    models.CharField(
+                        choices=[
+                            ("verghiano", "Itinerario Verghiano"),
+                            ("capuaniano", "Itinerario Capuaniano"),
+                            ("tematico", "Itinerario Tematico"),
+                        ],
+                        default="verghiano",
+                        help_text="Tipo di itinerario.",
+                        max_length=50,
+                    ),
+                ),
+            ],
+            options={
+                "verbose_name": "Itinerario",
+                "verbose_name_plural": "Itinerari",
+                "ordering": ["ordine", "slug"],
+            },
+            bases=(parler.models.TranslatableModelMixin, models.Model),
+        ),
+        migrations.CreateModel(
+            name="Notizia",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("data_pubblicazione", models.DateTimeField(auto_now_add=True)),
+                (
+                    "immagine",
+                    models.ImageField(
+                        blank=True,
+                        help_text="Immagine principale della notizia.",
+                        null=True,
+                        upload_to="notizie/",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True, help_text="Se la notizia è attiva e visibile."
+                    ),
+                ),
+            ],
+            options={
+                "verbose_name": "Notizia",
+                "verbose_name_plural": "Notizie",
+                "ordering": ["-data_pubblicazione"],
+            },
+            bases=(parler.models.TranslatableModelMixin, models.Model),
+        ),
+        migrations.CreateModel(
+            name="Prenotazione",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("nome", models.CharField(max_length=100, verbose_name="Nome")),
+                ("cognome", models.CharField(max_length=100, verbose_name="Cognome")),
+                ("email", models.EmailField(max_length=254, verbose_name="Email")),
+                (
+                    "telefono",
+                    models.CharField(
+                        blank=True,
+                        help_text="Opzionale ma consigliato per contatto rapido",
+                        max_length=20,
+                        verbose_name="Telefono",
+                    ),
+                ),
+                (
+                    "luogo",
+                    models.CharField(
+                        choices=[
+                            ("vizzini", "Vizzini"),
+                            ("mineo", "Mineo"),
+                            ("licodia", "Licodia Eubea"),
+                        ],
+                        max_length=20,
+                        verbose_name="Luogo",
+                    ),
+                ),
+                (
+                    "itinerario",
+                    models.CharField(
+                        blank=True,
+                        choices=[
+                            ("verghiani", "Itinerari verghiani"),
+                            ("capuaniani", "Itinerari capuaniani"),
+                            ("tematici", "Itinerari tematici"),
+                        ],
+                        help_text="Opzionale - sarà suggerito in base al luogo scelto",
+                        max_length=20,
+                        verbose_name="Tipologia itinerario",
+                    ),
+                ),
+                (
+                    "data_preferita",
+                    models.DateField(
+                        blank=True,
+                        help_text="Opzionale",
+                        null=True,
+                        verbose_name="Data preferita visita",
+                    ),
+                ),
+                (
+                    "numero_partecipanti",
+                    models.PositiveIntegerField(
+                        default=1,
+                        help_text="Numero persone che parteciperanno",
+                        verbose_name="Numero partecipanti",
+                    ),
+                ),
+                (
+                    "messaggio",
+                    models.TextField(
+                        blank=True,
+                        help_text="Eventuali richieste o informazioni aggiuntive",
+                        verbose_name="Messaggio/Richieste particolari",
+                    ),
+                ),
+                (
+                    "data_richiesta",
+                    models.DateTimeField(
+                        auto_now_add=True, verbose_name="Data richiesta"
+                    ),
+                ),
+                (
+                    "stato",
+                    models.CharField(
+                        choices=[
+                            ("nuova", "Nuova richiesta"),
+                            ("in_lavorazione", "In lavorazione"),
+                            ("confermata", "Confermata"),
+                            ("completata", "Completata"),
+                            ("cancellata", "Cancellata"),
+                        ],
+                        db_index=True,
+                        default="nuova",
+                        max_length=20,
+                        verbose_name="Stato",
+                    ),
+                ),
+                (
+                    "priorita",
+                    models.CharField(
+                        choices=[
+                            ("bassa", "Bassa"),
+                            ("media", "Media"),
+                            ("alta", "Alta"),
+                        ],
+                        db_index=True,
+                        default="media",
+                        max_length=10,
+                        verbose_name="Priorità",
+                    ),
+                ),
+                (
+                    "data_completamento",
+                    models.DateTimeField(
+                        blank=True,
+                        help_text="Quando il servizio è stato erogato",
+                        null=True,
+                        verbose_name="Data completamento",
+                    ),
+                ),
+                (
+                    "responsabile",
+                    models.CharField(
+                        blank=True,
+                        help_text="Chi ha gestito la richiesta",
+                        max_length=100,
+                        verbose_name="Responsabile",
+                    ),
+                ),
+                (
+                    "guida_assegnata",
+                    models.CharField(
+                        blank=True,
+                        help_text="Nome della guida turistica assegnata",
+                        max_length=100,
+                        verbose_name="Guida assegnata",
+                    ),
+                ),
+                (
+                    "note_admin",
+                    models.TextField(
+                        blank=True,
+                        help_text="Note interne per il follow-up",
+                        verbose_name="Note amministratore",
+                    ),
+                ),
+                (
+                    "ultima_modifica",
+                    models.DateTimeField(auto_now=True, verbose_name="Ultima modifica"),
+                ),
+            ],
+            options={
+                "verbose_name": "Prenotazione",
+                "verbose_name_plural": "Prenotazioni",
+                "ordering": ["-data_richiesta"],
+            },
+        ),
+        migrations.CreateModel(
+            name="Opera",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("anno_pubblicazione", models.IntegerField(blank=True, null=True)),
+                (
+                    "link_wikisource",
+                    models.URLField(
+                        help_text="Link alla pagina dell'opera su Wikisource.",
+                        max_length=500,
+                    ),
+                ),
+                (
+                    "copertina",
+                    models.ImageField(
+                        blank=True,
+                        help_text="Carica la copertina dell'opera.",
+                        null=True,
+                        upload_to="opere/copertine/",
+                    ),
+                ),
+                (
+                    "autore",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="opere",
+                        to="parco_verismo.autore",
+                    ),
+                ),
+            ],
+            options={
+                "verbose_name": "Opera",
+                "verbose_name_plural": "Opere",
+                "ordering": ["anno_pubblicazione", "slug"],
+            },
+            bases=(parler.models.TranslatableModelMixin, models.Model),
+        ),
+        migrations.CreateModel(
+            name="TappaItinerario",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "ordine",
+                    models.IntegerField(
+                        default=0,
+                        help_text="Ordine della tappa nell'itinerario (numero più basso = prima).",
+                    ),
+                ),
+                (
+                    "immagine",
+                    models.ImageField(
+                        blank=True,
+                        help_text="Immagine rappresentativa della tappa (opzionale).",
+                        null=True,
+                        upload_to="itinerari/tappe/",
+                    ),
+                ),
+                (
+                    "itinerario",
+                    models.ForeignKey(
+                        help_text="Itinerario a cui appartiene questa tappa.",
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="tappe",
+                        to="parco_verismo.itinerario",
+                    ),
+                ),
+            ],
+            options={
+                "verbose_name": "Tappa Itinerario",
+                "verbose_name_plural": "Tappe Itinerari",
+                "ordering": ["ordine"],
+            },
+            bases=(parler.models.TranslatableModelMixin, models.Model),
+        ),
+        migrations.CreateModel(
+            name="DocumentoTranslation",
+            fields=[
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                (
+                    "titolo",
+                    models.CharField(
+                        help_text="Titolo del documento o studio.", max_length=200
+                    ),
+                ),
+                (
+                    "descrizione",
+                    models.TextField(
+                        help_text="Descrizione dettagliata del contenuto del documento."
+                    ),
+                ),
+                (
+                    "riassunto",
+                    models.TextField(
+                        blank=True,
+                        help_text="Riassunto breve per le liste (opzionale).",
+                        null=True,
+                    ),
+                ),
+                (
+                    "parole_chiave",
+                    models.CharField(
+                        blank=True,
+                        help_text="Parole chiave separate da virgola (opzionale).",
+                        max_length=300,
+                        null=True,
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.documento",
+                    ),
+                ),
+            ],
+            options={
+                "verbose_name": "Documento Translation",
+                "db_table": "parco_verismo_documento_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='EventoTranslation',
+            name="EventoTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(max_length=200)),
-                ('descrizione', models.TextField(help_text="Descrizione dettagliata dell'evento.")),
-                ('luogo', models.CharField(help_text="Luogo dove si svolge l'evento.", max_length=200)),
-                ('indirizzo', models.TextField(blank=True, help_text='Indirizzo completo del luogo.', null=True)),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.evento')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                ("titolo", models.CharField(max_length=200)),
+                (
+                    "descrizione",
+                    models.TextField(help_text="Descrizione dettagliata dell'evento."),
+                ),
+                (
+                    "luogo",
+                    models.CharField(
+                        help_text="Luogo dove si svolge l'evento.", max_length=200
+                    ),
+                ),
+                (
+                    "indirizzo",
+                    models.TextField(
+                        blank=True, help_text="Indirizzo completo del luogo.", null=True
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.evento",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Evento Translation',
-                'db_table': 'parco_verismo_evento_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Evento Translation",
+                "db_table": "parco_verismo_evento_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='FotoArchivioTranslation',
+            name="FotoArchivioTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(blank=True, help_text='Titolo della foto (opzionale).', max_length=200, null=True)),
-                ('descrizione', models.TextField(blank=True, help_text='Descrizione della foto (opzionale).', null=True)),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.fotoarchivio')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                (
+                    "titolo",
+                    models.CharField(
+                        blank=True,
+                        help_text="Titolo della foto (opzionale).",
+                        max_length=200,
+                        null=True,
+                    ),
+                ),
+                (
+                    "descrizione",
+                    models.TextField(
+                        blank=True,
+                        help_text="Descrizione della foto (opzionale).",
+                        null=True,
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.fotoarchivio",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Foto Archivio Translation',
-                'db_table': 'parco_verismo_fotoarchivio_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Foto Archivio Translation",
+                "db_table": "parco_verismo_fotoarchivio_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='ItinerarioTranslation',
+            name="ItinerarioTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(help_text="Titolo dell'itinerario.", max_length=200)),
-                ('descrizione', models.TextField(help_text="Descrizione dettagliata dell'itinerario.")),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.itinerario')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                (
+                    "titolo",
+                    models.CharField(
+                        help_text="Titolo dell'itinerario.", max_length=200
+                    ),
+                ),
+                (
+                    "descrizione",
+                    models.TextField(
+                        help_text="Descrizione dettagliata dell'itinerario."
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.itinerario",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Itinerario Translation',
-                'db_table': 'parco_verismo_itinerario_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Itinerario Translation",
+                "db_table": "parco_verismo_itinerario_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='NotiziaTranslation',
+            name="NotiziaTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(max_length=200)),
-                ('contenuto', models.TextField(help_text='Contenuto completo della notizia.')),
-                ('riassunto', models.TextField(blank=True, help_text='Riassunto breve per le liste (opzionale).', null=True)),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.notizia')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                ("titolo", models.CharField(max_length=200)),
+                (
+                    "contenuto",
+                    models.TextField(help_text="Contenuto completo della notizia."),
+                ),
+                (
+                    "riassunto",
+                    models.TextField(
+                        blank=True,
+                        help_text="Riassunto breve per le liste (opzionale).",
+                        null=True,
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.notizia",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Notizia Translation',
-                'db_table': 'parco_verismo_notizia_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Notizia Translation",
+                "db_table": "parco_verismo_notizia_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='OperaTranslation',
+            name="OperaTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('titolo', models.CharField(max_length=200)),
-                ('trama', models.TextField(help_text="Breve trama o descrizione dell'opera.")),
-                ('analisi', models.TextField(blank=True, help_text='Spunti di analisi o contesto storico.', null=True)),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.opera')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                ("titolo", models.CharField(max_length=200)),
+                (
+                    "trama",
+                    models.TextField(help_text="Breve trama o descrizione dell'opera."),
+                ),
+                (
+                    "analisi",
+                    models.TextField(
+                        blank=True,
+                        help_text="Spunti di analisi o contesto storico.",
+                        null=True,
+                    ),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.opera",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Opera Translation',
-                'db_table': 'parco_verismo_opera_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Opera Translation",
+                "db_table": "parco_verismo_opera_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),
         migrations.CreateModel(
-            name='TappaItinerarioTranslation',
+            name="TappaItinerarioTranslation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language_code', models.CharField(db_index=True, max_length=15, verbose_name='Language')),
-                ('nome', models.CharField(help_text="Nome della tappa (es. 'Tappa 1: Chiesa di Santa Margherita')", max_length=200)),
-                ('descrizione', models.TextField(help_text='Descrizione dettagliata della tappa.')),
-                ('master', parler.fields.TranslationsForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='parco_verismo.tappaitinerario')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "language_code",
+                    models.CharField(
+                        db_index=True, max_length=15, verbose_name="Language"
+                    ),
+                ),
+                (
+                    "nome",
+                    models.CharField(
+                        help_text="Nome della tappa (es. 'Tappa 1: Chiesa di Santa Margherita')",
+                        max_length=200,
+                    ),
+                ),
+                (
+                    "descrizione",
+                    models.TextField(help_text="Descrizione dettagliata della tappa."),
+                ),
+                (
+                    "master",
+                    parler.fields.TranslationsForeignKey(
+                        editable=False,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="translations",
+                        to="parco_verismo.tappaitinerario",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Tappa Itinerario Translation',
-                'db_table': 'parco_verismo_tappaitinerario_translation',
-                'db_tablespace': '',
-                'managed': True,
-                'default_permissions': (),
-                'unique_together': {('language_code', 'master')},
+                "verbose_name": "Tappa Itinerario Translation",
+                "db_table": "parco_verismo_tappaitinerario_translation",
+                "db_tablespace": "",
+                "managed": True,
+                "default_permissions": (),
+                "unique_together": {("language_code", "master")},
             },
             bases=(parler.models.TranslatedFieldsModelMixin, models.Model),
         ),

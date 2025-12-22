@@ -326,8 +326,8 @@
     </div>
 </section>
 
-<!-- Sezione: Contatto / Prenotazione Itinerario (split: form a sinistra, info a destra) -->
-<section id="prenota-itinerario" class="hp-section hp-cta-final py-6">
+<!-- Sezione: Contatto / Richiesta (split: form a sinistra, info a destra) -->
+<section id="richiesta-contatto" class="hp-section hp-cta-final py-6">
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -335,8 +335,8 @@
                     <div class="hp-contact-column d-flex justify-content-center">
                         <div class="hp-contact-card">
                             <div class="mb-3 d-flex flex-column align-items-center justify-content-center">
-                                <h2 class="h2 fw-bold mb-1">{% trans 'Prenota il tuo itinerario' %}</h2>
-                                <p class="text-secondary mb-0">{% trans "Compila i tuoi dati e scegli luogo e tipologia d'itinerario. Ti contatteremo al più presto." %}</p>
+                                <h2 class="h2 fw-bold mb-1">Modulo di contatto</h2>
+                                <p class="text-secondary mb-0">Per richieste di informazioni generali, proposte di collaborazione, attività didattiche, visite guidate, eventi o comunicazioni istituzionali, è possibile utilizzare il modulo di contatto sottostante. Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario.</p>
                             </div>
 
                             {% if messages %}
@@ -350,67 +350,60 @@
 
                             <form class="hp-contact-form" method="post">
                                 {% csrf_token %}
+                                {% if form.non_field_errors %}
+                                    <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+                                {% endif %}
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="nome">{% trans 'Nome' %} *</label>
-                                        <input id="nome" name="nome" type="text" class="form-control" placeholder="{% trans 'Inserisci il tuo nome' %}" required>
+                                        {{ form.nome.label_tag }} {% if form.nome.field.required %}<span class="required">*</span>{% endif %}
+                                        {{ form.nome }}
+                                        {% for err in form.nome.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        {{ form.cognome.label_tag }} {% if form.cognome.field.required %}<span class="required">*</span>{% endif %}
+                                        {{ form.cognome }}
+                                        {% for err in form.cognome.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
                                     </div>
 
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="cognome">{% trans 'Cognome' %} *</label>
-                                        <input id="cognome" name="cognome" type="text" class="form-control" placeholder="{% trans 'Inserisci il tuo cognome' %}" required>
+                                        {{ form.ente.label_tag }} <span class="optional">({% trans 'facoltativo' %})</span>
+                                        {{ form.ente }}
+                                        {% for err in form.ente.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
                                     </div>
 
                                     <div class="col-md-6 form-group">
-                                        <label class="form-label" for="email">{% trans 'Email' %} *</label>
-                                        <input id="email" name="email" type="email" class="form-control" placeholder="{% trans 'Inserisci la tua email' %}" required>
-                                    </div>
-
-                                    <div class="col-md-6 form-group">
-                                        <label class="form-label" for="telefono">{% trans 'Telefono' %}</label>
-                                        <input id="telefono" name="telefono" type="tel" class="form-control" placeholder="{% trans 'Numero di telefono (opzionale)' %}">
-                                    </div>
-
-                                    <div class="col-md-4 form-group">
-                                        <label class="form-label" for="luogo">{% trans 'Luogo' %} *</label>
-                                        <select id="luogo" name="luogo" class="form-control" required>
-                                            <option value="">{% trans 'Seleziona...' %}</option>
-                                            <option value="vizzini">Vizzini</option>
-                                            <option value="mineo">Mineo</option>
-                                            <option value="licodia">Licodia Eubea</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-8 form-group">
-                                        <label class="form-label" for="itinerario">{% trans 'Tipologia itinerario' %}</label>
-                                        <select id="itinerario" name="itinerario" class="form-control">
-                                            <option value="">{% trans 'Seleziona...' %}</option>
-                                            <option value="verghiani">{% trans 'Itinerari verghiani' %}</option>
-                                            <option value="capuaniani">{% trans 'Itinerari capuaniani' %}</option>
-                                            <option value="tematici">{% trans 'Itinerari tematici' %}</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-6 form-group">
-                                        <label class="form-label" for="data_preferita">{% trans 'Data preferita visita' %}</label>
-                                        <input id="data_preferita" name="data_preferita" type="date" class="form-control" min="{{ oggi }}">
-                                    </div>
-
-                                    <div class="col-md-6 form-group">
-                                        <label class="form-label" for="numero_partecipanti">{% trans 'Numero partecipanti' %} *</label>
-                                        <input id="numero_partecipanti" name="numero_partecipanti" type="number" class="form-control" min="1" max="100" value="1" required>
+                                        {{ form.email.label_tag }} {% if form.email.field.required %}<span class="required">*</span>{% endif %}
+                                        {{ form.email }}
+                                        {% for err in form.email.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
                                     </div>
 
                                     <div class="col-12 form-group">
-                                        <label class="form-label" for="messaggio">{% trans 'Messaggio o richieste particolari' %}</label>
-                                        <textarea id="messaggio" name="messaggio" class="form-control" rows="3" placeholder="{% trans 'Eventuali richieste o informazioni aggiuntive...' %}"></textarea>
+                                        {{ form.oggetto.label_tag }} {% if form.oggetto.field.required %}<span class="required">*</span>{% endif %}
+                                        {{ form.oggetto }}
+                                        {% for err in form.oggetto.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                    </div>
+
+                                    <div class="col-12 form-group">
+                                        {{ form.messaggio.label_tag }} {% if form.messaggio.field.required %}<span class="required">*</span>{% endif %}
+                                        {{ form.messaggio }}
+                                        {% for err in form.messaggio.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
                                     </div>
 
                                     <div class="col-12 text-center mt-3">
                                         <button type="submit" class="btn btn-primary btn-lg">
-                                            <i class="bi bi-envelope-paper"></i> {% trans 'Invia richiesta' %}
+                                            <i class="bi bi-send me-2"></i>
+                                            {% trans 'Invia messaggio' %}
                                         </button>
-                                        <div class="form-note mt-2">{% trans 'Ti risponderemo via email per confermare la tua richiesta.' %}</div>
+                                        <div class="form-note mt-2">
+                                            {% trans 'I campi contrassegnati con' %} <span class="required">*</span> {% trans 'sono obbligatori.' %}
+                                        </div>
+                                        <div class="form-note mt-1">
+                                            <small>
+                                                <a href="{% url 'contatti' %}#privacy" class="text-muted">
+                                                    {% trans 'Informativa sulla privacy' %}
+                                                </a>
+                                            </small>
+                                        </div>
                                     </div>
                                 </div>
                             </form>

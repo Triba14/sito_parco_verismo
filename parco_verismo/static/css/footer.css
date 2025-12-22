@@ -1,22 +1,202 @@
-/* Footer Logos */
-.footer-logos {
+/* Professional compact footer styles (mobile-first) */
+
+.site-footer.compact-footer {
+    /* Use the canonical color tokens from the design system; provide fallbacks matching the previous palette */
+    background: var(--color-surface-elevated, #f8f9fa);
+    color: var(--color-text-primary, #212529);
+    border-top: 1px solid var(--color-border, #e9ecef);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-top: 1rem;
+}
+
+/* Explicit color bindings mirroring previous footer palette */
+.site-footer.compact-footer .footer-heading {
+    color: var(--color-text-primary, #212529);
+}
+
+.site-footer.compact-footer .footer-subheading {
+    color: var(--color-text-secondary, #6c757d);
+}
+
+.site-footer.compact-footer .footer-text {
+    color: var(--color-text-secondary, #6c757d);
+}
+
+.site-footer.compact-footer .footer-link {
+    color: var(--color-text-secondary, #6c757d);
+}
+
+.site-footer.compact-footer .footer-link:hover {
+    color: var(--color-primary, #0d6efd);
+}
+
+/* Footer contact icons keep the original secondary color */
+.site-footer.compact-footer .footer-icon {
+    color: var(--color-secondary-light, #6c757d) !important;
+}
+
+.site-footer.compact-footer .footer-bottom .footer-text {
+    color: var(--color-text-secondary, #6c757d);
+}
+
+.site-footer.compact-footer .footer-bottom {
+    border-top-color: var(--color-border-strong, #dee2e6);
+}
+
+/* Grid layout: stack on mobile, 3 columns on larger screens */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem 1.25rem;
+    align-items: start;
+}
+
+.footer-brand .footer-heading {
+    margin: 0 0 0.35rem 0;
+    font-size: 1rem;
+}
+
+.footer-text {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.25;
+}
+
+.social-links {
     display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.footer-social-link {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: nowrap;
-    padding: 0;
-    max-width: 100%;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    /* Social icons use primary (green) color (match site token) */
+    color: var(--color-primary);
+    transition: background .15s ease, transform .15s ease, color .15s ease;
+}
+
+.footer-social-link .bi,
+.footer-social-link svg {
+    /* ensure icon elements inherit the anchor color */
+    color: inherit;
+    fill: currentColor;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+    transform: translateY(-2px);
+}
+
+.footer-social-link:focus .bi,
+.footer-social-link:hover .bi,
+.footer-social-link:focus svg,
+.footer-social-link:hover svg {
+    color: var(--color-text-inverse, #ffffff);
+    fill: currentColor;
+}
+
+/* High-specificity override for theme-level rules (ensure green icons regardless of earlier site-wide styles) */
+.site-footer.compact-footer .social-links .footer-social-link,
+.site-footer.compact-footer .social-links .footer-social-link .bi,
+.site-footer.compact-footer .social-links .footer-social-link svg {
+    color: var(--color-primary) !important;
+    background: transparent !important;
+}
+
+.site-footer.compact-footer .social-links .footer-social-link:hover,
+.site-footer.compact-footer .social-links .footer-social-link:focus {
+    background: var(--color-primary) !important;
+    color: var(--color-text-inverse) !important;
+}
+
+.site-footer.compact-footer .social-links .footer-social-link:hover .bi,
+.site-footer.compact-footer .social-links .footer-social-link:focus .bi,
+.site-footer.compact-footer .social-links .footer-social-link:hover svg,
+.site-footer.compact-footer .social-links .footer-social-link:focus svg {
+    color: var(--color-text-inverse, #ffffff) !important;
+    fill: currentColor !important;
+}
+
+/* Navigation */
+.footer-nav-list {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0;
+}
+
+.footer-subheading {
+    margin-bottom: 0.35rem;
+    color: var(--color-text-primary);
+}
+
+.footer-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* Contact list */
+.footer-contact-list {
+    display: grid;
+    gap: 0.35rem;
+    margin: 0;
+}
+
+.footer-icon {
+    /* contact icons: use primary color to match social icons */
+    color: var(--color-primary);
+    margin-right: 0.4rem;
+}
+
+.footer-icon .bi,
+.footer-icon svg {
+    color: inherit;
+    fill: currentColor;
+}
+
+/* High-specificity override to ensure the footer's local scheme wins over site defaults */
+.site-footer.compact-footer .footer-icon {
+    color: var(--color-primary, #28a745) !important;
+}
+
+/* Logos */
+.footer-logos-wrap {
+    margin-top: 0.6rem;
+    margin-bottom: 0.45rem;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
-    height: 100px !important;
-    max-height: 100px !important;
-    max-width: 260px !important;
+    height: auto !important;
+    max-height: 56px !important;
+    max-width: 22% !important;
     width: auto !important;
     object-fit: contain;
-    transition: all 0.3s ease;
-    opacity: 0.9;
+    opacity: 0.95;
+    transition: opacity .15s ease, transform .15s ease, filter .15s ease;
+    /* Logos should render normally (no forced color) */
 }
 
 .footer-logo:hover {
@@ -24,79 +204,232 @@
     transform: translateY(-2px);
 }
 
-/* Responsive */
+.footer-logo-large {
+    max-height: 72px !important;
+}
+
+/* Cesta logo: increase size while keeping responsive caps */
+img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+    max-height: 130px !important;
+    max-width: 35% !important;
+    width: auto !important;
+}
+
 @media (max-width: 768px) {
-    .footer-logos {
-        gap: 1.5rem;
+    img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+        max-height: 100px !important;
+        max-width: 45% !important;
     }
-    
+}
+
+@media (max-width: 576px) {
+    img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+        max-height: 80px !important;
+        max-width: 55% !important;
+    }
+}
+
+/* For inline SVGs prefer original colors; don't override */
+.footer-logo svg {
+    fill: inherit !important;
+    color: inherit !important;
+}
+
+/* Make social icons use the primary color (non-hardcoded) */
+.footer-social-link {
+    color: var(--color-primary);
+    border-color: transparent;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+    transform: translateY(-2px);
+}
+
+/* Bottom bar */
+.footer-bottom {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0.25rem;
+    border-top: 1px solid var(--color-border-strong);
+    margin-top: 0.5rem;
+}
+
+.footer-bottom .footer-links {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+/* Responsive rules */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr 220px 260px;
+    }
+
     .footer-logo {
-        height: 65px !important;
-        max-width: 150px !important;
+        max-height: 64px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 240px 300px;
+    }
+
+    .footer-logos {
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-footer.compact-footer {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .footer-logo {
+        max-height: 48px !important;
+        max-width: 36% !important;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Improved responsive layout for footer (slim variant) */
+/* - wrap logos on small viewports and cap their size (overrides inline height)
+   - reduce gaps and vertical spacing to lower overall footer height */
+.footer-logos {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.footer-logo {
+    height: auto !important;
+    max-height: 80px !important;
+    max-width: 18% !important;
+}
+
+/* Reduce logo sizes on narrower screens */
+@media (max-width: 768px) {
+    .footer-logo {
+        max-height: 64px !important;
+        max-width: 24% !important;
     }
 }
 
 @media (max-width: 576px) {
     .footer-logos {
-        gap: 1rem;
+        gap: 0.5rem;
     }
-    
+
     .footer-logo {
-        height: 50px !important;
-        max-width: 120px !important;
-    }
-    
-    /* Margini ridotti per dispositivi mobili */
-    .site-footer {
-        padding-top: 0.75rem !important;
-        padding-bottom: 0.75rem !important;
-        margin-top: 1rem !important;
-    }
-    
-    .footer-divider {
-        margin-top: 0.25rem !important;
-        margin-bottom: 1rem !important;
+        max-height: 48px !important;
+        max-width: 40% !important;
     }
 }
 
-/* Footer Background Override */
-.site-footer {
-    background: var(--color-surface-elevated);
-    color: var(--color-text-primary);
-    border-top: 1px solid var(--color-border);
+/* Reduce vertical paddings to keep footer compact */
+.site-footer.py-3 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
+/* Slightly reduce divider spacing */
+.footer-divider {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+/* Navigation and contact columns: tighter spacing */
+.site-footer .footer-subheading,
 .site-footer .footer-heading {
-    color: var(--color-text-primary);
+    margin-bottom: 0.35rem;
 }
 
-.site-footer .footer-subheading {
-    color: var(--color-text-secondary);
+.site-footer .list-unstyled {
+    padding-left: 0;
 }
 
-.site-footer .footer-text {
-    color: var(--color-text-secondary);
+.site-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .site-footer .footer-link {
-    color: var(--color-text-secondary);
+    padding: 3px 6px;
+    display: inline-block;
 }
 
-.site-footer .footer-link:hover {
-    color: var(--color-primary);
+/* Make contact list items readable and avoid cramped layout on mobile */
+@media (max-width: 576px) {
+    .site-footer .row.g-4>[class*="col-"] {
+        margin-bottom: 0.25rem;
+    }
+
+    .site-footer .footer-text {
+        font-size: 0.95rem;
+        line-height: 1.2;
+    }
 }
 
-.site-footer .footer-icon {
-    color: var(--color-primary);
-}
-
+/* Social icons slightly smaller but still touch-friendly */
 .site-footer .social-links .footer-social-link {
-    color: var(--color-text-primary);
-    border-color: var(--color-border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid transparent;
 }
 
-.site-footer .social-links .footer-social-link:hover {
-    background: var(--color-primary);
-    color: var(--color-text-inverse);
-    border-color: var(--color-primary);
+/* Ensure inline-styled logo doesn't break the compact layout */
+.footer-logo[style] {
+    max-height: 80px !important;
+    max-width: 18% !important;
+}
+
+/* High-specificity enforcement: force contact icons and social icons to use the footer action color token
+   (maps to primary) and ensure icon elements inherit the color and switch to white on hover/focus.
+   This overrides theme-level rules that set social icons to inverse colors. */
+.site-footer.compact-footer .footer-icon,
+.site-footer.compact-footer .footer-icon .bi,
+.site-footer.compact-footer .footer-icon svg,
+.site-footer.compact-footer .social-links .footer-social-link,
+.site-footer.compact-footer .social-links .footer-social-link .bi,
+.site-footer.compact-footer .social-links .footer-social-link svg {
+    color: var(--color-primary) !important;
+    fill: currentColor !important;
+}
+
+.site-footer.compact-footer .social-links .footer-social-link:hover,
+.site-footer.compact-footer .social-links .footer-social-link:focus {
+    background: var(--color-primary, #28a745) !important;
+    color: var(--color-text-inverse, #ffffff) !important;
+}
+
+.site-footer.compact-footer .social-links .footer-social-link:hover .bi,
+.site-footer.compact-footer .social-links .footer-social-link:focus .bi,
+.site-footer.compact-footer .social-links .footer-social-link:hover svg,
+.site-footer.compact-footer .social-links .footer-social-link:focus svg,
+.site-footer.compact-footer .footer-icon .bi,
+.site-footer.compact-footer .footer-icon svg {
+    color: var(--color-text-inverse, #ffffff) !important;
+    fill: currentColor !important;
 }

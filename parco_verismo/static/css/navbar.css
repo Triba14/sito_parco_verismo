@@ -23,7 +23,7 @@ body.transparent-nav #mainNav .navbar-toggler-icon::after {
 
 /* Navbar nelle pagine non-homepage: sempre scura */
 #mainNav.navbar-dark-pages {
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-elevated, #f8f9fa);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-sm) 0;
@@ -31,7 +31,7 @@ body.transparent-nav #mainNav .navbar-toggler-icon::after {
 }
 
 #mainNav.navbar-scrolled {
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-elevated, #f8f9fa);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-sm) 0;
@@ -41,7 +41,7 @@ body.transparent-nav #mainNav .navbar-toggler-icon::after {
 /* When a page requests a transparent nav but the scrolled state is active,
    ensure the scrolled styles take precedence so the navbar becomes solid. */
 body.transparent-nav #mainNav.navbar-scrolled {
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-elevated, #f8f9fa);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-sm) 0;
@@ -96,7 +96,8 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
     padding: var(--space-sm) var(--space-md);
     transition: color var(--transition-fast);
     position: relative;
-    opacity: 1; /* Forza visibilità piena */
+    opacity: 1;
+    /* Forza visibilità piena */
 }
 
 /* Override stili Bootstrap navbar-dark che impostano opacità ridotta */
@@ -189,7 +190,7 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 }
 
 #mainNav .navbar-nav .dropdown-menu {
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-elevated, #f8f9fa);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
@@ -319,37 +320,37 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 /* Responsive */
 @media (max-width: 991px) {
     #mainNav .navbar-collapse {
-        background-color: var(--color-surface);
+        background-color: var(--color-surface-elevated, #f8f9fa);
         border-radius: var(--radius-md);
         padding: var(--space-md);
         margin-top: var(--space-md);
         box-shadow: var(--shadow-lg);
     }
-    
+
     /* Centra il testo nel menu mobile */
     #mainNav .navbar-nav {
         text-align: center;
     }
-    
+
     #mainNav .navbar-nav .nav-link {
         justify-content: center;
     }
-    
+
     #mainNav .navbar-nav .dropdown-menu {
         text-align: center;
     }
-    
+
     /* Fix: testo scuro nel menu mobile anche quando navbar è trasparente */
     #mainNav.navbar-dark .navbar-nav .nav-link,
     #mainNav.navbar-dark .dropdown-item {
         color: var(--color-text-primary);
     }
-    
+
     #mainNav.navbar-dark .navbar-nav .nav-link:hover,
     #mainNav.navbar-dark .navbar-nav .nav-link.active {
         color: var(--color-primary);
     }
-    
+
     #mainNav .navbar-nav .nav-item .btn {
         margin-left: auto;
         margin-right: auto;
@@ -360,7 +361,7 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
         justify-content: center;
         align-items: center;
     }
-    
+
     #mainNav .navbar-nav .nav-link::after {
         display: none;
     }

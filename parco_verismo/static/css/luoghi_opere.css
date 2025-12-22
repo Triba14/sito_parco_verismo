@@ -1,0 +1,422 @@
+/* Importazione font */
+@import url('fonts.css');
+
+/* ========================================
+   LUOGHI OPERE - CUSTOM STYLES
+======================================== */
+
+/* Intro Section */
+.lo-intro {
+    background-color: var(--color-surface);
+}
+
+.lo-intro-content {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.lo-intro-content .lead {
+    font-size: 1.15rem;
+    color: var(--color-text-light);
+}
+
+/* Verga Section */
+.lo-verga {
+    background-color: var(--color-background);
+}
+
+/* Capuana Section */
+.lo-capuana {
+    background-color: var(--color-surface);
+}
+
+/* Licodia Section */
+.lo-licodia {
+    background-color: var(--color-background);
+}
+
+/* Paesaggi Section */
+.lo-paesaggi {
+    background-color: var(--color-surface);
+}
+
+/* Triangolo Section */
+.lo-triangolo {
+    background-color: var(--color-background);
+}
+
+/* Conclusione Section */
+.lo-conclusione {
+    background-color: var(--color-surface);
+}
+
+/* ========================================
+   PLACE BLOCK - Layout luoghi letterari
+======================================== */
+
+.lo-place-block {
+    position: relative;
+}
+
+.lo-place-block:not(:last-child) {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(74, 103, 65, 0.15);
+}
+
+/* Place Header (colonna sinistra) */
+.lo-place-header {
+    position: sticky;
+    top: 100px;
+    padding: 1.5rem;
+    background-color: var(--color-background);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lo-place-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lo-place-image svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery of mini images */
+.lo-place-gallery {
+    width: 100%;
+}
+
+.lo-mini-image {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lo-mini-image:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lo-mini-image svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lo-place-name {
+    font-family: var(--font-title);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.lo-place-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.lo-place-opere {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(74, 103, 65, 0.2);
+}
+
+.lo-place-opere em {
+    font-weight: 500;
+}
+
+/* Place Content (colonna destra) */
+.lo-place-content {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.lo-place-content p {
+    text-align: justify;
+}
+
+/* Subsection Titles */
+.lo-subsection-title {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+/* Highlight Box - evidenziare informazioni chiave */
+.lo-highlight-box {
+    background: linear-gradient(135deg, rgba(74, 103, 65, 0.08), rgba(122, 154, 111, 0.05));
+    border-left: 4px solid var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.lo-highlight-box h5 {
+    font-family: var(--font-title);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.lo-highlight-box p {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.lo-highlight-box i {
+    color: var(--color-primary);
+}
+
+/* ========================================
+   LICODIA CONTENT
+======================================== */
+
+.lo-licodia-content {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.lo-licodia-content p {
+    text-align: justify;
+}
+
+/* ========================================
+   PAESAGGI CARDS
+======================================== */
+
+.lo-paesaggio-card {
+    background-color: var(--color-background);
+    border: 1px solid rgba(74, 103, 65, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.lo-paesaggio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), rgba(122, 154, 111, 0.8));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.lo-paesaggio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-primary);
+}
+
+.lo-paesaggio-card:hover::before {
+    transform: scaleX(1);
+}
+
+.lo-paesaggio-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--color-primary), #5d7d52);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.lo-paesaggio-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.lo-paesaggio-title {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.lo-paesaggio-desc {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   TRIANGOLO GEOGRAFIA
+======================================== */
+
+.lo-triangolo-content {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.lo-triangolo-content p {
+    text-align: justify;
+}
+
+.lo-triangolo-item {
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    padding: 1.75rem;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.lo-triangolo-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(74, 103, 65, 0.2);
+}
+
+.lo-triangolo-place {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.lo-triangolo-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5d7d52;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(74, 103, 65, 0.2);
+}
+
+.lo-triangolo-item p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* ========================================
+   FINAL CONTENT - Conclusione
+======================================== */
+
+.lo-final-content {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.lo-final-content p {
+    text-align: justify;
+}
+
+.lo-final-content .lead {
+    font-size: 1.15rem;
+    color: var(--color-text-light);
+}
+
+/* Rimuove margine dal footer per evitare stacco di colore */
+.luoghi-opere-page .site-footer {
+    margin-top: 0 !important;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+    .lo-place-header {
+        position: static;
+        margin-bottom: 2rem;
+    }
+    
+    .lo-place-name {
+        font-size: 1.5rem;
+    }
+    
+    .lo-subsection-title {
+        font-size: 1rem;
+    }
+    
+    .lo-paesaggio-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .lo-paesaggio-icon i {
+        font-size: 1.75rem;
+    }
+    
+    .lo-triangolo-place {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .lo-place-content p,
+    .lo-licodia-content p,
+    .lo-triangolo-content p,
+    .lo-final-content p {
+        text-align: left;
+    }
+    
+    .lo-highlight-box {
+        padding: 1.25rem;
+    }
+    
+    .lo-paesaggio-card {
+        padding: 1.5rem;
+    }
+    
+    .lo-triangolo-item {
+        padding: 1.5rem;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .lo-paesaggio-card,
+    .lo-paesaggio-card::before,
+    .lo-triangolo-item {
+        transition: none;
+    }
+    
+    .lo-paesaggio-card:hover,
+    .lo-triangolo-item:hover {
+        transform: none;
+    }
+}
+
+/* Focus visible per accessibilità */
+.lo-paesaggio-card:focus-visible,
+.lo-triangolo-item:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}

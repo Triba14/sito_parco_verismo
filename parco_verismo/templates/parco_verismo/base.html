@@ -95,6 +95,13 @@
     <!-- Bootstrap JS -->
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 
+    <!-- Google Analytics Configuration -->
+    {% if GA_MEASUREMENT_ID %}
+    <script>
+        window.GA_MEASUREMENT_ID = "{{ GA_MEASUREMENT_ID }}";
+    </script>
+    {% endif %}
+
     <!-- Cookie Banner Script -->
     <script src="{% static 'js/cookie_banner.js' %}"></script>
 

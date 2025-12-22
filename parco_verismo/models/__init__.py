@@ -8,22 +8,22 @@ from .autori_opere import Autore, Opera
 from .eventi import Evento, Notizia
 from .documenti import Documento, FotoArchivio
 from .itinerari import Itinerario, TappaItinerario
-from .prenotazioni import Prenotazione
+from .richieste import Richiesta
 
 # Esporta tutti i modelli
 __all__ = [
     # Biblioteca
-    'Autore',
-    'Opera',
+    "Autore",
+    "Opera",
     # Eventi e Notizie
-    'Evento',
-    'Notizia',
+    "Evento",
+    "Notizia",
     # Documenti e Archivio
-    'Documento',
-    'FotoArchivio',
+    "Documento",
+    "FotoArchivio",
     # Itinerari
-    'Itinerario',
-    'TappaItinerario',
-    # Prenotazioni
-    'Prenotazione',
+    "Itinerario",
+    "TappaItinerario",
+    # Richieste di contatto
+    "Richiesta",
 ]

@@ -6,13 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parco_verismo', '0001_initial'),
+        ("parco_verismo", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='prenotazione',
-            name='itinerario',
-            field=models.CharField(blank=True, choices=[('verghiani', 'Itinerari verghiani'), ('capuaniani', 'Itinerari capuaniani'), ('tematici', 'Itinerari tematici')], help_text='Opzionale - sarà suggerito in base al luogo scelto', max_length=20, verbose_name='Tipologia itinerario'),
+            model_name="prenotazione",
+            name="itinerario",
+            field=models.CharField(
+                blank=True,
+                choices=[
+                    ("verghiani", "Itinerari verghiani"),
+                    ("capuaniani", "Itinerari capuaniani"),
+                    ("tematici", "Itinerari tematici"),
+                ],
+                help_text="Opzionale - sarà suggerito in base al luogo scelto",
+                max_length=20,
+                verbose_name="Tipologia itinerario",
+            ),
         ),
     ]

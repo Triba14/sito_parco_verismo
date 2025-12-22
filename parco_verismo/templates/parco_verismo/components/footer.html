@@ -1,78 +1,82 @@
 {% load static i18n %}
-<!-- Footer -->
-<footer class="site-footer py-3 mt-3">
+<!-- Professional compact footer (mobile-first layout) -->
+<footer class="site-footer compact-footer">
     <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-5">
-                <h5 class="footer-heading mb-3">{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}</h5>
-                <p class="footer-text mb-3">{% trans 'I luoghi del Verismo: un viaggio nei paesaggi e nelle comunità che hanno ispirato i capolavori di Giovanni Verga e Luigi Capuana' %}</p>
-                <div class="social-links d-flex">
-                    <a href="https://www.facebook.com/versoilparcoletterariodelverismo/" target="_blank" rel="noopener noreferrer" class="footer-social-link me-3" title="Facebook">
-                        <i class="bi bi-facebook"></i>
+        <!-- Top: Brand + Navigation + Contact (stack on mobile, three columns on desktop) -->
+        <div class="footer-grid">
+            <div class="footer-brand" aria-labelledby="footer-brand-title">
+                <h5 id="footer-brand-title" class="footer-heading">{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}</h5>
+                <p class="footer-text">{% trans 'I luoghi del Verismo: un viaggio nei paesaggi e nelle comunità che hanno ispirato i capolavori di Giovanni Verga e Luigi Capuana' %}</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://www.facebook.com/versoilparcoletterariodelverismo/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook">
+                        <i class="bi bi-facebook" aria-hidden="true"></i>
+                        <span class="visually-hidden">Facebook</span>
                     </a>
-                    <a href="#" class="footer-social-link me-3" title="Instagram">
-                        <i class="bi bi-instagram"></i>
+                    <a href="#" class="footer-social-link" title="Instagram">
+                        <i class="bi bi-instagram" aria-hidden="true"></i>
+                        <span class="visually-hidden">Instagram</span>
                     </a>
-                    <a href="#" class="footer-social-link me-3" title="Twitter/X">
-                        <i class="bi bi-twitter-x"></i>
+                    <a href="#" class="footer-social-link" title="Twitter/X">
+                        <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        <span class="visually-hidden">Twitter</span>
                     </a>
                     <a href="#" class="footer-social-link" title="YouTube">
-                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-youtube" aria-hidden="true"></i>
+                        <span class="visually-hidden">YouTube</span>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h6 class="footer-subheading mb-3">{% trans 'Navigazione' %}</h6>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="{% url 'home' %}" class="footer-link">{% trans 'Home' %}</a></li>
-                    <li class="mb-2"><a href="{% url 'biblioteca' %}" class="footer-link">{% trans 'Biblioteca' %}</a></li>
-                    <li class="mb-2"><a href="{% url 'eventi' %}" class="footer-link">{% trans 'Eventi' %}</a></li>
-                    <li class="mb-2"><a href="{% url 'notizie' %}" class="footer-link">{% trans 'Notizie' %}</a></li>
-                    <li class="mb-2"><a href="{% url 'documenti' %}" class="footer-link">{% trans 'Documenti & Studi' %}</a></li>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <h6 class="footer-subheading">{% trans 'Navigazione' %}</h6>
+                <ul class="footer-nav-list list-unstyled">
+                    <li><a href="{% url 'home' %}" class="footer-link">{% trans 'Home' %}</a></li>
+                    <li><a href="{% url 'biblioteca' %}" class="footer-link">{% trans 'Biblioteca' %}</a></li>
+                    <li><a href="{% url 'eventi' %}" class="footer-link">{% trans 'Eventi' %}</a></li>
+                    <li><a href="{% url 'notizie' %}" class="footer-link">{% trans 'Notizie' %}</a></li>
+                    <li><a href="{% url 'documenti' %}" class="footer-link">{% trans 'Documenti & Studi' %}</a></li>
                 </ul>
-            </div>
-            <div class="col-lg-4 col-md-6" id="contatti">
-                <h6 class="footer-subheading mb-3">{% trans 'Contatti' %}</h6>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <i class="bi bi-geo-alt-fill me-2 footer-icon"></i>
-                        Sicilia, Italia
-                    </li>
-                    <li class="mb-2">
-                        <i class="bi bi-envelope-fill me-2 footer-icon"></i>
-                        info@parcoverismo.it
-                    </li>
-                    <li class="mb-2">
-                        <i class="bi bi-telephone-fill me-2 footer-icon"></i>
-                        +39 091 123 4567
-                    </li>
-                </ul>
+            </nav>
+
+            <div class="footer-contact" id="contatti">
+                <h6 class="footer-subheading">{% trans 'Contatti' %}</h6>
+                <address class="footer-contact-list">
+                    <div>
+                        <i class="bi bi-geo-alt-fill footer-icon" aria-hidden="true"></i>
+                        <span class="d-inline-block">Sicilia, Italia</span>
+                    </div>
+                    <div>
+                        <i class="bi bi-envelope-fill footer-icon" aria-hidden="true"></i>
+                        <a href="mailto:info@parcoverismo.it" class="footer-link">info@parcoverismo.it</a>
+                    </div>
+                    <div>
+                        <i class="bi bi-telephone-fill footer-icon" aria-hidden="true"></i>
+                        <a href="tel:+390911234567" class="footer-link">+39 091 123 4567</a>
+                    </div>
+                </address>
             </div>
         </div>
-        <hr class="footer-divider mt-2 mb-4">
-        <!-- Sezione loghi -->
-        <div class="row justify-content-center mb-2">
-            <div class="col-12">
-                <div class="footer-logos text-center">
-                    <img src="{% static 'assets/img/logo-header.png' %}" alt="Logo Parco Verismo" class="footer-logo">
-                    <img src="{% static 'assets/img/loghi/LogoRegione2.png' %}" alt="Logo Regione" class="footer-logo">
-                    <img src="{% static 'assets/img/loghi/LogoVizzini3.png' %}" alt="Logo Vizzini" class="footer-logo">
-                    <img src="{% static 'assets/img/loghi/LogoMineo4.png' %}" alt="Logo Mineo" class="footer-logo">
-                    <img src="{% static 'assets/img/loghi/LogoLicodiaEubea5.png' %}" alt="Logo Licodia Eubea" class="footer-logo">
-                    <img src="{% static 'assets/img/loghi/LogoCesta6.png' %}" alt="Logo Cesta" class="footer-logo" style="height: 180px !important; max-height: 180px !important;">
-                </div>
+
+        <!-- Logos row (compact, wraps as needed) -->
+        <div class="footer-logos-wrap">
+            <div class="footer-logos" role="group" aria-label="Partner logos">
+                <img src="{% static 'assets/img/logo-header.png' %}" alt="Logo Parco Verismo" class="footer-logo">
+                <img src="{% static 'assets/img/loghi/LogoRegione2.png' %}" alt="Logo Regione" class="footer-logo">
+                <img src="{% static 'assets/img/loghi/LogoVizzini3.png' %}" alt="Logo Vizzini" class="footer-logo">
+                <img src="{% static 'assets/img/loghi/LogoMineo4.png' %}" alt="Logo Mineo" class="footer-logo">
+                <img src="{% static 'assets/img/loghi/LogoLicodiaEubea5.png' %}" alt="Logo Licodia Eubea" class="footer-logo">
+                <img src="{% static 'assets/img/loghi/LogoCesta6.png' %}" alt="Logo Cesta" class="footer-logo footer-logo-large">
             </div>
         </div>
-        <!-- Sezione copyright e link -->
-        <div class="row align-items-center justify-content-center g-3">
-            <div class="col-12 text-center">
-                <p class="mb-1 small footer-text">&copy; {% now "Y" %} {% trans 'Parco Letterario Verismo. Tutti i diritti riservati.' %}</p>
-                <div class="footer-links">
-                    <a href="{% url 'privacy_policy' %}" class="footer-link small me-3">{% trans 'Privacy' %}</a>
-                    <a href="{% url 'cookie_policy' %}" class="footer-link small me-3">{% trans 'Cookie' %}</a>
-                    <a href="javascript:void(0)" class="footer-link small me-3" data-cookie-preferences style="cursor: pointer;">{% trans 'Gestisci Cookie' %}</a>
-                    <a href="{% url 'note_legali' %}" class="footer-link small">{% trans 'Note Legali' %}</a>
-                </div>
+
+        <!-- Bottom bar: small and compact -->
+        <div class="footer-bottom">
+            <p class="mb-0 small footer-text">&copy; {% now "Y" %} {% trans 'Parco Letterario Verismo. Tutti i diritti riservati.' %}</p>
+            <div class="footer-links small">
+                <a href="{% url 'privacy_policy' %}" class="footer-link">{% trans 'Privacy' %}</a>
+                <a href="{% url 'cookie_policy' %}" class="footer-link">{% trans 'Cookie' %}</a>
+                <a href="javascript:void(0)" class="footer-link" data-cookie-preferences style="cursor: pointer;">{% trans 'Gestisci Cookie' %}</a>
+                <a href="{% url 'note_legali' %}" class="footer-link">{% trans 'Note Legali' %}</a>
             </div>
         </div>
     </div>

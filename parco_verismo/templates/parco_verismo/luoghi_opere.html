@@ -1,0 +1,687 @@
+{% extends "parco_verismo/base.html" %}
+{% load static i18n %}
+
+{% block title %}{% trans 'Luoghi delle Opere' %} - {% trans 'Parco Letterario Verismo' %}{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/luoghi_opere.css' %}">
+{% endblock %}
+
+{% block body_class %}luoghi-opere-page transparent-nav{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="pages-hero">
+    <div class="pages-hero-overlay"></div>
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6 offset-lg-1 z-index-10 py-5 py-lg-0">
+                <div class="pages-hero-content">
+                    <span class="pages-badge">{% trans 'Geografia Letteraria' %}</span>
+                    <h1 class="pages-hero-title display-3 fw-bold mb-4">
+                        {% trans 'Luoghi delle Opere' %}
+                    </h1>
+                    <p class="pages-hero-subtitle lead">
+                        {% trans 'Nel Verismo il luogo non è uno sfondo, ma una forza narrativa' %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="pages-hero-image">
+                    <div class="placeholder-image">
+                        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione luoghi">
+                            <defs>
+                                <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4A6741;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#7A9A6F;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="600" height="700" fill="url(#heroGradient)"/>
+                            <circle cx="100" cy="100" r="60" fill="#4A6741" opacity="0.15"/>
+                            <circle cx="520" cy="620" r="80" fill="#BF9B30" opacity="0.12"/>
+                            
+                            <!-- Stylized landscape -->
+                            <g transform="translate(50, 250)" opacity="0.7">
+                                <!-- Hills -->
+                                <path d="M 0 150 Q 100 80 200 120 Q 300 90 400 130 Q 500 100 600 140 L 600 200 L 0 200 Z" fill="#4A6741" opacity="0.2"/>
+                                <path d="M 0 170 Q 80 130 180 150 Q 280 140 380 160 Q 480 145 600 165 L 600 200 L 0 200 Z" fill="#7A9A6F" opacity="0.25"/>
+                                
+                                <!-- Buildings silhouette -->
+                                <rect x="200" y="130" width="30" height="50" fill="#4A6741" opacity="0.3"/>
+                                <rect x="240" y="120" width="25" height="60" fill="#4A6741" opacity="0.35"/>
+                                <rect x="270" y="135" width="20" height="45" fill="#4A6741" opacity="0.3"/>
+                            </g>
+                            
+                            <text x="300" y="550" font-family="serif" font-size="24" font-weight="600" fill="#4A6741" opacity="0.4" text-anchor="middle">
+                                Vizzini • Mineo • Licodia
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Introduzione -->
+<section class="pages-section lo-intro py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="lo-intro-content">
+                    <p class="lead mb-4">
+                        Nel Verismo il luogo non è uno sfondo, ma una forza narrativa. Paesi, campagne, miniere, case e quartieri determinano il destino dei personaggi e orientano le loro scelte. La pietra, la polvere, il calore, i vicoli stretti, le distese aride: tutto questo entra nei corpi, condiziona i pensieri, definisce i limiti del possibile.
+                    </p>
+                    <p class="mb-0">
+                        Il Parco Letterario Giovanni Verga e Luigi Capuana nasce per restituire questi spazi alla lettura e all'esperienza, per far dialogare letteratura e territorio, parola scritta e geografia vissuta. Camminare nei luoghi del Verismo significa entrare nelle pagine, riconoscere le case, sentire la luce che hanno sentito i personaggi, comprendere come il paesaggio abbia generato quella particolare forma di narrazione.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- I luoghi delle opere di Giovanni Verga -->
+<section class="pages-section lo-verga py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">
+                I luoghi delle opere di <span class="pages-title-accent">Giovanni Verga</span>
+            </h2>
+        </div>
+
+        <!-- Vizzini -->
+        <div class="lo-place-block mb-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="vizziniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4A6741;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#7A9A6F;stop-opacity:0.4" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#vizziniGrad)"/>
+                                <path d="M 0 180 Q 100 140 200 160 Q 300 150 400 170 L 400 280 L 0 280 Z" fill="#4A6741" opacity="0.25"/>
+                                <circle cx="200" cy="100" r="30" fill="white" opacity="0.3"/>
+                                <text x="200" y="145" font-family="serif" font-size="16" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Vizzini</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Vizzini</h3>
+                        <p class="lo-place-subtitle">La scena delle passioni elementari</p>
+                        <p class="lo-place-opere"><em>Cavalleria rusticana • La lupa • Jeli il pastore</em></p>
+                    </div>
+                    <div class="lo-place-header mt-4">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="cunziriaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2a3a25;stop-opacity:0.5" />
+                                        <stop offset="100%" style="stop-color:#4A6741;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#cunziriaGrad)"/>
+                                <path d="M 0 200 Q 200 190 400 200 L 400 280 L 0 280 Z" fill="#4A6741" opacity="0.2"/>
+                                <rect x="80" y="90" width="70" height="130" fill="#5d7d52" opacity="0.35"/>
+                                <rect x="170" y="110" width="90" height="110" fill="#5d7d52" opacity="0.3"/>
+                                <rect x="280" y="100" width="70" height="120" fill="#5d7d52" opacity="0.35"/>
+                                <text x="200" y="260" font-family="serif" font-size="16" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">La Cunziria</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">La Cunziria</h3>
+                        <p class="lo-place-subtitle">Teatro del duello fatale</p>
+                        <p class="lo-place-opere"><em>Cavalleria rusticana</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            Vizzini è uno dei luoghi simbolo del Verismo italiano, il paese dove la tragedia nasce dalla vita quotidiana. Arroccato sui monti Iblei, a 586 metri sul livello del mare, il borgo domina un paesaggio di colline brulle, vallate profonde e campi di grano che si estendono fino all'orizzonte. È un paese di pietra bianca, di luce accecante d'estate, di vicoli che si arrampicano verso la chiesa madre e la piazza centrale.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Il tessuto urbano e sociale</h4>
+                        <p class="mb-3">
+                            Vizzini è strutturato come un organismo compatto, dove ogni quartiere ha una sua identità sociale precisa. I quartieri popolari - le "vanelle" strette e ombrose - sono il cuore pulsante della narrazione verghiana: qui vivono contadini, braccianti, artigiani, donne che tessono e cuciono nelle case basse. Qui nascono le storie di Cavalleria rusticana e de La lupa, storie dove il codice dell'onore regola ogni gesto, dove l'amore si intreccia alla gelosia, dove il sangue lava l'offesa.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">La Cunziria: luogo iconico della tragedia</h4>
+                        <p class="mb-3">
+                            La Cunziria - antica conceria situata nella parte bassa del paese, lungo il torrente - è il luogo dove si consuma il dramma di Cavalleria rusticana. Qui Turiddu e Compare Alfio si affrontano nel duello finale, all'alba, quando il paese dorme ancora e il sole non è ancora sorto. È uno spazio liminale: non più paese ma non ancora campagna, luogo di lavoro maleodorante e insieme teatro rituale della violenza necessaria.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Le campagne vizzinesi</h4>
+                        <p class="mb-3">
+                            Intorno al centro abitato si estendono le campagne che Verga descrive ne La lupa e in Jeli il pastore: distese di grano duro che ondeggiano al vento, mandrie che pascolano nelle vallate, masserie isolate dove i contadini vivono per settimane durante i raccolti. È un paesaggio aspro, assolato, dove il lavoro consuma i corpi e le distanze sono enormi.
+                        </p>
+                        
+                        <div class="lo-highlight-box mt-4">
+                            <h5 class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Vizzini oggi: tracce letterarie</h5>
+                            <p class="mb-0">
+                                Ancora oggi, camminando per Vizzini, è possibile riconoscere i luoghi verghiani. La chiesa di San Vito, dove Turiddu sente l'ultima messa prima del duello. La salita che porta al Calvario, percorsa dalla Lupa. I vicoli della città vecchia, dove le donne si affacciano dalle finestre. Il paese conserva anche la memoria materiale del mondo rurale: gli antichi palmenti, i cortili interni, le fontane pubbliche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aci Trezza -->
+        <div class="lo-place-block mb-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="acitrezzaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#7A9A6F;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#4A6741;stop-opacity:0.5" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#acitrezzaGrad)"/>
+                                <rect y="180" width="400" height="100" fill="#4A6741" opacity="0.2"/>
+                                <rect x="80" y="160" width="40" height="80" rx="20" fill="#5d7d52" opacity="0.4"/>
+                                <rect x="200" y="140" width="50" height="100" rx="25" fill="#5d7d52" opacity="0.5"/>
+                                <rect x="320" y="170" width="35" height="70" rx="17" fill="#5d7d52" opacity="0.4"/>
+                                <text x="200" y="100" font-family="serif" font-size="16" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Aci Trezza</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Aci Trezza</h3>
+                        <p class="lo-place-subtitle">Il borgo del mare e della tradizione</p>
+                        <p class="lo-place-opere"><em>I Malavoglia</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            Aci Trezza è il cuore geografico e simbolico del capolavoro verghiano. Piccolo borgo marinaro sulla costa orientale della Sicilia, a pochi chilometri da Catania, è dominato dalla presenza fisica dell'Etna che incombe dall'interno e dai faraglioni che emergono dal mare: blocchi di lava nera che la leggenda dice scagliati da Polifemo contro Ulisse.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Geografia e identità</h4>
+                        <p class="mb-3">
+                            Il paese è stretto tra il mare e la ferrovia. Le case si affacciano direttamente sulla spiaggia di ciottoli neri, dove vengono tirate in secco le barche. Il mare qui è insieme risorsa e minaccia: dà il pesce ma può togliere la vita, come accade a Bastianazzo nella tempesta che è il punto di svolta del romanzo.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">La casa del nespolo</h4>
+                        <p class="mb-3">
+                            Al centro del romanzo sta la casa del nespolo, l'abitazione dei Malavoglia che diventa simbolo di stabilità, tradizione, appartenenza. Perdere la casa significa perdere l'identità sociale, la memoria familiare, il posto nel mondo. È un edificio modesto, con il cortile dove si rattoppano le reti, la cucina dove si consuma il pasto comune, le camere dove dormono ammassati.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">La Provvidenza</h4>
+                        <p class="mb-0">
+                            La barca è l'altro elemento fondamentale: la Provvidenza non è un oggetto ma un membro della famiglia, il mezzo di sostentamento, il legame con il mare e con la tradizione del mestiere. Perderla nel naufragio significa perdere il modo di vivere, cadere nel debito, dipendere da altri.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Le campagne siciliane -->
+        <div class="lo-place-block mb-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="campagneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#7A9A6F;stop-opacity:0.4" />
+                                        <stop offset="100%" style="stop-color:#5d7d52;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#campagneGrad)"/>
+                                <path d="M 0 200 Q 100 180 200 190 Q 300 185 400 195 L 400 280 L 0 280 Z" fill="#4A6741" opacity="0.2"/>
+                                <path d="M 0 220 Q 80 210 160 215 Q 240 212 320 218 Q 360 220 400 222 L 400 280 L 0 280 Z" fill="#4A6741" opacity="0.25"/>
+                                <circle cx="320" cy="80" r="35" fill="white" opacity="0.25"/>
+                                <text x="200" y="140" font-family="serif" font-size="14" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Campagne</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Le campagne siciliane</h3>
+                        <p class="lo-place-subtitle">Terra di possesso e fatica</p>
+                        <p class="lo-place-opere"><em>La roba • Jeli il pastore • Nedda • Mastro-don Gesualdo</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            La campagna verghiana attraversa tutta la Sicilia interna: dai feudi dell'entroterra catanese alle terre di Vizzini, dalle masserie isolate ai latifondi dove centinaia di braccianti lavorano durante i raccolti. Non è mai paesaggio idilliaco o bucolico, ma spazio economico, luogo di rapporti di forza, teatro di sopravvivenza quotidiana.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Il latifondo e la proprietà</h4>
+                        <p class="mb-3">
+                            La roba mette in scena il latifondo siciliano in tutta la sua estensione: "...terre a perdita d'occhio, vigneti, uliveti, seminativi...". Mazzarò percorre i suoi possedimenti come un generale che ispeziona un esercito: conta le mandrie, controlla i raccolti, sorveglia i contadini. La terra qui non è madre, ma proprietà da difendere, da far fruttare, da moltiplicare.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">La vita dei braccianti</h4>
+                        <p class="mb-0">
+                            Verga descrive il lavoro agricolo con precisione quasi documentaria. In Nedda seguiamo i raccoglitori di olive che si spostano da una tenuta all'altra, dormendo nei pagliai, lavorando dall'alba al tramonto per pochi soldi. In Jeli il pastore vediamo la vita dei pastori: mesi passati in solitudine con le greggi, in rifugi di pietra o grotte naturali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- La miniera -->
+        <div class="lo-place-block">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="minieraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2a3a25;stop-opacity:0.6" />
+                                        <stop offset="100%" style="stop-color:#4A6741;stop-opacity:0.4" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#minieraGrad)"/>
+                                <rect x="150" y="80" width="100" height="120" rx="5" fill="#1a2a15" opacity="0.5"/>
+                                <path d="M 150 200 L 180 280 L 220 280 L 250 200 Z" fill="#1a2a15" opacity="0.4"/>
+                                <circle cx="200" cy="140" r="15" fill="#7A9A6F" opacity="0.3"/>
+                                <text x="200" y="250" font-family="serif" font-size="14" font-weight="600" fill="#7A9A6F" opacity="0.6" text-anchor="middle">La Miniera</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">La miniera</h3>
+                        <p class="lo-place-subtitle">Spazio della disumanizzazione</p>
+                        <p class="lo-place-opere"><em>Rosso Malpelo</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            La cava di sabbia rossa dove lavora Malpelo è uno dei luoghi più potenti e inquietanti del Verismo italiano. Non è un luogo preciso geograficamente - potrebbe essere una qualunque delle cave che circondavano i paesi siciliani - ma è uno spazio archetipico: chiuso, oscuro, senza tempo, letteralmente sotterraneo.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">L'ambiente fisico</h4>
+                        <p class="mb-3">
+                            Verga descrive la cava come un labirinto di cunicoli scavati nella roccia. L'aria è irrespirabile, carica di polvere che entra nei polmoni e li consuma. La luce del sole non arriva: si lavora a lume di lanterna, in un'oscurità perenne. È uno spazio claustrofobico dove i movimenti sono limitati: ci si muove curvi, strisciando nei passaggi più stretti.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Spazio simbolico</h4>
+                        <p class="mb-0">
+                            La cava rappresenta l'inferno sociale: uno spazio dal quale non si esce, una condanna senza scampo. Chi nasce nella cava (o chi ci è costretto dalla povertà) è destinato a morirvi. Non c'è mobilità, non c'è redenzione, non c'è speranza. È il grado zero del determinismo verista: il luogo che uccide lentamente, che consuma i corpi e cancella le individualità.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- I luoghi delle opere di Luigi Capuana -->
+<section class="pages-section lo-capuana py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">
+                I luoghi delle opere di <span class="pages-title-accent">Luigi Capuana</span>
+            </h2>
+        </div>
+
+        <!-- Mineo -->
+        <div class="lo-place-block mb-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="mineoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5d7d52;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#4A6741;stop-opacity:0.5" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#mineoGrad)"/>
+                                <path d="M 0 190 Q 100 160 200 175 Q 300 165 400 180 L 400 280 L 0 280 Z" fill="#4A6741" opacity="0.3"/>
+                                <rect x="160" y="120" width="80" height="100" fill="#5d7d52" opacity="0.4"/>
+                                <circle cx="200" cy="85" r="25" fill="white" opacity="0.3"/>
+                                <text x="200" y="250" font-family="serif" font-size="16" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Mineo</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Mineo</h3>
+                        <p class="lo-place-subtitle">Laboratorio di osservazione psicologica</p>
+                        <p class="lo-place-opere"><em>Giacinta • Il marchese di Roccaverdina • Le paesane</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            Mineo è il centro geografico e immaginativo dell'opera capuaniana, il paese che Capuana conosce dall'infanzia e che trasforma in laboratorio narrativo. Situato a 510 metri sul livello del mare, nell'entroterra calatino, Mineo domina una valle fertile circondata da colline. È un paese più grande di Vizzini, con una struttura urbana più articolata e una stratificazione sociale più complessa.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Storia e stratificazione urbana</h4>
+                        <p class="mb-3">
+                            Mineo ha origini antichissime (si identifica con l'antica Mene, città sicana), e questo passato è visibile nella struttura del paese. Il centro storico si sviluppa intorno al castello e alla chiesa madre, con vicoli medievali, palazzi nobiliari, conventi e chiese. I quartieri popolari si estendono verso valle, con case più modeste, cortili comuni, spazi condivisi.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Il tessuto sociale</h4>
+                        <p class="mb-3">
+                            A differenza di Vizzini - paese prevalentemente contadino e pastorale - Mineo ha una società più stratificata. C'è una borghesia terriera che gestisce i feudi dell'entroterra ma vive in paese. C'è una borghesia professionale che legge giornali, discute di politica, segue i dibattiti culturali. C'è un'aristocrazia in declino economico ma ancora potente simbolicamente.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Il paesaggio circostante</h4>
+                        <p class="mb-0">
+                            Intorno a Mineo si estendono le campagne del calatino: terre fertili coltivate a grano, mandorleti, vigneti, oliveti. È un paesaggio più dolce rispetto alle aspre colline vizzinesi, con una maggiore presenza d'acqua e una vegetazione più ricca. Nelle novelle de Le paesane, Capuana segue le donne che vanno a lavorare nei campi durante i raccolti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Le case borghesi -->
+        <div class="lo-place-block mb-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="caseBorghesiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#4A6741;stop-opacity:0.2" />
+                                        <stop offset="100%" style="stop-color:#5d7d52;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#caseBorghesiGrad)"/>
+                                <rect x="100" y="60" width="200" height="180" fill="#4A6741" opacity="0.3"/>
+                                <rect x="120" y="80" width="50" height="60" fill="#5d7d52" opacity="0.3"/>
+                                <rect x="230" y="80" width="50" height="60" fill="#5d7d52" opacity="0.3"/>
+                                <rect x="175" y="170" width="50" height="70" fill="#2a3a25" opacity="0.4"/>
+                                <text x="200" y="260" font-family="serif" font-size="13" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Case Borghesi</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Le case borghesi</h3>
+                        <p class="lo-place-subtitle">Interni dell'inquietudine</p>
+                        <p class="lo-place-opere"><em>Giacinta • Il marchese di Roccaverdina</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            Gli interni domestici nei romanzi di Capuana sono spazi carichi di tensione psicologica. A differenza di Verga - che descrive case popolari aperte, attraversate, collettive - Capuana si concentra sulle case borghesi: palazzi con stanze numerose, corridoi, salotti, studioli privati.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Architettura della psiche</h4>
+                        <p class="mb-3">
+                            In Giacinta, la casa diventa specchio della psiche della protagonista. Le stanze sono troppo grandi e vuote, i corridoi troppo lunghi, gli specchi riflettono un'immagine che Giacinta non riconosce. La casa è prigione e rifugio insieme: protegge dal mondo esterno ma intrappola in un'interiorità malata.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Il palazzo del marchese</h4>
+                        <p class="mb-0">
+                            In Il marchese di Roccaverdina, il palazzo nobiliare è insieme dimora e labirinto mentale. Il marchese vive circondato da stanze che non usa, da mobili che ricordano antenati morti, da ritratti che lo guardano. Dopo il delitto, la casa diventa teatro delle allucinazioni: ombre che si muovono, rumori notturni, presenze invisibili.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Il paese -->
+        <div class="lo-place-block">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="lo-place-header">
+                        <div class="lo-place-image mb-3">
+                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="paeseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#7A9A6F;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#4A6741;stop-opacity:0.4" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="280" fill="url(#paeseGrad)"/>
+                                <rect x="80" y="140" width="60" height="100" fill="#4A6741" opacity="0.3"/>
+                                <rect x="160" y="120" width="70" height="120" fill="#4A6741" opacity="0.35"/>
+                                <rect x="250" y="150" width="55" height="90" fill="#4A6741" opacity="0.3"/>
+                                <circle cx="200" cy="80" r="20" fill="white" opacity="0.25"/>
+                                <text x="200" y="260" font-family="serif" font-size="15" font-weight="600" fill="#4A6741" opacity="0.5" text-anchor="middle">Il Paese</text>
+                            </svg>
+                        </div>
+                        <h3 class="lo-place-name">Il paese</h3>
+                        <p class="lo-place-subtitle">Organismo del giudizio collettivo</p>
+                        <p class="lo-place-opere"><em>Le paesane • Il benefattore</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="lo-place-content">
+                        <p class="mb-3">
+                            Il paese capuaniano funziona come organismo compatto che osserva, controlla, giudica. È più articolato socialmente rispetto al paese verghiano ma altrettanto oppressivo. Ogni deviazione viene notata, ogni scandalo alimenta il pettegolezzo per settimane.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">Spazi della socialità femminile</h4>
+                        <p class="mb-3">
+                            Capuana dedica attenzione particolare agli spazi dove le donne si incontrano: le chiese, le fontane pubbliche dove si prende l'acqua, i lavatoi comuni, i mercati. Sono momenti e luoghi dove le donne possono parlare, scambiarsi informazioni, creare reti di solidarietà ma anche di controllo reciproco.
+                        </p>
+                        
+                        <h4 class="lo-subsection-title">I luoghi del potere maschile</h4>
+                        <p class="mb-0">
+                            Il municipio, il caffè, la piazza sono spazi riservati agli uomini. Qui si fa politica locale, si decidono le elezioni, si stringono alleanze. Capuana descrive questo mondo con ironia e cinismo: i notabili locali, i clientelismi, le rivalità tra famiglie che si perpetuano per generazioni.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Licodia Eubea -->
+<section class="pages-section lo-licodia py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">
+                <span class="pages-title-accent">Licodia Eubea:</span> tra Verga e Capuana
+            </h2>
+        </div>
+
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+                <div class="lo-licodia-content">
+                    <p class="mb-3">
+                        Licodia Eubea, pur non essendo il paese natale di Verga o Capuana, è un luogo chiave nel territorio del Verismo e fa parte del triangolo geografico-letterario insieme a Vizzini e Mineo. Situata a 630 metri sul livello del mare, domina un vasto territorio collinare tra il fiume Dirillo e il fiume San Leonardo.
+                    </p>
+                    
+                    <h4 class="lo-subsection-title">Geografia e identità territoriale</h4>
+                    <p class="mb-3">
+                        Licodia occupa una posizione strategica nell'entroterra ibleo, in un paesaggio di colline tondeggianti coltivate a cereali e ulivi. Il paese ha una struttura urbana compatta, con il centro storico che si sviluppa intorno alla chiesa madre e alla piazza principale.
+                    </p>
+                    
+                    <h4 class="lo-subsection-title">Il paesaggio del grano</h4>
+                    <p class="mb-0">
+                        Il territorio licodiese è dominato dalla coltivazione cerealicola. A giugno, durante la mietitura, le colline si trasformano in un mare dorato. È il momento di maggiore attività: centinaia di braccianti si spostano da un feudo all'altro, seguendo i raccolti.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="lo-highlight-box h-100">
+                    <h4 class="mb-3"><i class="bi bi-book me-2"></i>Connessioni letterarie</h4>
+                    <p class="mb-3">
+                        Licodia Eubea rappresenta l'archetipo del paese agricolo dell'interno, quello descritto nelle novelle verghiane ambientate "nelle campagne" senza indicazione geografica precisa. È il tipo di paese dove potrebbe svolgersi La roba, dove Mazzarò avrebbe potuto accumulare le sue terre.
+                    </p>
+                    <p class="mb-3">
+                        Come Vizzini e Mineo, anche Licodia ha una struttura sociale stratificata. I proprietari terrieri vivono nei palazzi del centro, gestiscono i feudi, controllano il lavoro di centinaia di persone. I contadini vivono nei quartieri popolari o direttamente nelle campagne.
+                    </p>
+                    <p class="mb-0">
+                        Ancora oggi, Licodia conserva tracce visibili del mondo rurale descritto dal Verismo. Le antiche masserie, alcune restaurate e altre in rovina, testimoniano dell'organizzazione del lavoro agricolo. I palmenti ricordano i cicli produttivi che scandivano l'anno.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- I paesaggi del Verismo: elementi ricorrenti -->
+<section class="pages-section lo-paesaggi py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">
+                I paesaggi del Verismo: <span class="pages-title-accent">elementi ricorrenti</span>
+            </h2>
+            <p class="lead text-secondary" style="max-width: 800px; margin: 0 auto;">
+                Oltre ai luoghi specifici, il Verismo è fatto di paesaggi ricorrenti che attraversano le opere di Verga e Capuana
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="lo-paesaggio-card">
+                    <div class="lo-paesaggio-icon">
+                        <i class="bi bi-tree-fill"></i>
+                    </div>
+                    <h3 class="lo-paesaggio-title">La campagna</h3>
+                    <p class="lo-paesaggio-desc">
+                        Spazio economico e esistenziale. Non è mai idilliaca: è lo spazio del lavoro estenuante, della proprietà contesa, della sopravvivenza precaria. D'estate è arida, polverosa, bruciata dal sole. D'inverno è fangosa, battuta dal vento, inospitale. È anche lo spazio della solitudine esistenziale: pastori, braccianti, donne che camminano per ore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="lo-paesaggio-card">
+                    <div class="lo-paesaggio-icon">
+                        <i class="bi bi-water"></i>
+                    </div>
+                    <h3 class="lo-paesaggio-title">Il mare</h3>
+                    <p class="lo-paesaggio-desc">
+                        Risorsa e minaccia. Il mare di Aci Trezza non è romantico né avventuroso. È lo spazio del lavoro quotidiano, della pesca notturna, del pericolo costante. Dà il sostentamento ma può togliere la vita in un istante. Non è controllabile né prevedibile. I personaggi hanno con il mare un rapporto pragmatico, quasi rituale.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="lo-paesaggio-card">
+                    <div class="lo-paesaggio-icon">
+                        <i class="bi bi-buildings-fill"></i>
+                    </div>
+                    <h3 class="lo-paesaggio-title">Il paese</h3>
+                    <p class="lo-paesaggio-desc">
+                        Spazio del controllo sociale. Funziona sempre come organismo che osserva e giudica. È uno spazio trasparente, senza privacy, dove ogni gesto è pubblico. Le donne si affacciano dalle finestre e vedono tutto. Gli uomini si fermano in piazza e commentano. Niente può rimanere segreto. È anche spazio della memoria collettiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="lo-paesaggio-card">
+                    <div class="lo-paesaggio-icon">
+                        <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <h3 class="lo-paesaggio-title">La casa</h3>
+                    <p class="lo-paesaggio-desc">
+                        Radice e condanna. Non è solo abitazione ma simbolo di appartenenza, memoria, continuità. Perdere la casa significa perdere il proprio posto nel mondo. Si eredita, si trasmette, si difende. Ma è anche prigione, soprattutto per le donne. Gli interni domestici sono spazi di lavoro continuo, di sorveglianza, di reclusione.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Geografia letteraria: il triangolo -->
+<section class="pages-section lo-triangolo py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <h2 class="pages-section-title h2 fw-bold mb-4 text-center">
+                    Geografia letteraria: <span class="pages-title-accent">il triangolo Vizzini-Mineo-Licodia</span>
+                </h2>
+                
+                <div class="lo-triangolo-content">
+                    <p class="lead mb-4">
+                        I tre paesi formano un sistema geografico e letterario integrato. Distano pochi chilometri l'uno dall'altro, condividono lo stesso paesaggio ibleo, appartengono alla stessa area culturale. Ma ognuno ha una sua specificità che si riflette nella letteratura.
+                    </p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <div class="lo-triangolo-item">
+                                <h4 class="lo-triangolo-place">Vizzini</h4>
+                                <p class="lo-triangolo-role">Il paese della tragedia popolare</p>
+                                <p class="mb-0">
+                                    Luogo delle passioni elementari, dei codici d'onore assoluti, delle violenze rituali. Il suo paesaggio aspro rispecchia la durezza delle relazioni sociali. Qui tutto è più netto, più violento, più visibile.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="lo-triangolo-item">
+                                <h4 class="lo-triangolo-place">Mineo</h4>
+                                <p class="lo-triangolo-role">Il paese dell'analisi psicologica</p>
+                                <p class="mb-0">
+                                    Più complesso socialmente. Capuana vi trova una stratificazione che permette l'osservazione psicologica fine, l'analisi dei caratteri borghesi, lo studio delle nevrosi e delle ossessioni.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="lo-triangolo-item">
+                                <h4 class="lo-triangolo-place">Licodia Eubea</h4>
+                                <p class="lo-triangolo-role">Il paese della campagna</p>
+                                <p class="mb-0">
+                                    Archetipo del paese agricolo, quello più legato ai ritmi della terra. Qui si vedono in modo più chiaro i meccanismi dello sfruttamento, i rapporti di proprietà, le dinamiche del lavoro agricolo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-4">
+                        I tre paesi sono collegati da antiche trazzere, sentieri che attraversano le campagne. I personaggi veristi si muovono da un paese all'altro: per i mercati settimanali, per le feste religiose, per cercare lavoro stagionale. Le famiglie sono imparentate attraverso matrimoni che uniscono proprietà. Le notizie circolano, portate da viandanti, commercianti, mendicanti.
+                    </p>
+                    
+                    <p class="mb-0">
+                        Questa rete di connessioni crea un territorio letterario unitario: il paese del Verismo non è un singolo luogo ma un sistema di luoghi che si rispecchiano, si completano, dialogano. Attraversare questo territorio significa leggere la geografia come testo, riconoscere nei paesaggi le strutture narrative, vedere nelle pietre e nelle strade la materia di cui sono fatte le storie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conclusione -->
+<section class="pages-section lo-conclusione py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="lo-final-content">
+                    <p class="lead mb-4">
+                        Nel Verismo, i luoghi non sono sfondi intercambiabili ma personaggi veri e propri. La Cunziria è personaggio quanto Turiddu, la casa del nespolo quanto Padron 'Ntoni, il palazzo nobiliare quanto il marchese di Roccaverdina. I luoghi agiscono, determinano, condizionano.
+                    </p>
+                    
+                    <p class="mb-4">
+                        Questa qualità attiva dei luoghi è ciò che rende possibile il Parco Letterario: non si visitano semplici ambientazioni, ma si incontrano presenze narrative. Ogni pietra, ogni vicolo, ogni orizzonte porta in sé una storia. Il territorio diventa testo che si può leggere camminando, toccando, guardando.
+                    </p>
+                    
+                    <p class="mb-4">
+                        Il Verismo ha trasformato la Sicilia interna in geografia letteraria universale. Vizzini, Mineo e Licodia Eubea sono insieme luoghi precisi sulla carta geografica e luoghi dell'immaginario, paesi siciliani e metafore della condizione umana. Visitarli significa oscillare continuamente tra il particolare e l'universale, tra il documento e il simbolo, tra la storia locale e la letteratura mondiale.
+                    </p>
+                    
+                    <p class="mb-0">
+                        È questa tensione - tra radice geografica e valore universale - che rende i luoghi del Verismo ancora vivi, ancora capaci di parlare a chi li attraversa con lo sguardo educato dalla letteratura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="pages-section pages-cta py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <h2 class="h2 fw-bold mb-3">Scopri il territorio del Verismo</h2>
+                <p class="lead mb-4">
+                    Visita Vizzini, Mineo e Licodia Eubea: cammina nei paesi dove le storie hanno preso forma e il paesaggio è diventato letteratura
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="{% url 'vizzini' %}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-geo-alt me-2"></i>Vizzini
+                    </a>
+                    <a href="{% url 'mineo' %}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-geo-alt me-2"></i>Mineo
+                    </a>
+                    <a href="{% url 'licodia' %}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-geo-alt me-2"></i>Licodia Eubea
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

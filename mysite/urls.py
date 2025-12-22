@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('parco_verismo/', include('parco_verismo.urls'))
 """
+
 # Django imports
 from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
@@ -23,38 +24,51 @@ from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
 
 # Local imports
-from parco_verismo.admin_prenotazioni import richieste_admin_site
+
 from parco_verismo.sitemaps import (
-    StaticViewSitemap, OperaSitemap, AutoreSitemap,
-    EventoSitemap, NotiziaSitemap, DocumentoSitemap, ItinerarioSitemap
+    StaticViewSitemap,
+    OperaSitemap,
+    AutoreSitemap,
+    EventoSitemap,
+    NotiziaSitemap,
+    DocumentoSitemap,
+    ItinerarioSitemap,
 )
+# Custom admin site for public richieste dashboard
+from parco_verismo.admin_richieste import richieste_admin_site
 
 # Configurazione Sitemap per SEO
 sitemaps = {
-    'static': StaticViewSitemap,
-    'opere': OperaSitemap,
-    'autori': AutoreSitemap,
-    'eventi': EventoSitemap,
-    'notizie': NotiziaSitemap,
-    'documenti': DocumentoSitemap,
-    'itinerari': ItinerarioSitemap,
+    "static": StaticViewSitemap,
+    "opere": OperaSitemap,
+    "autori": AutoreSitemap,
+    "eventi": EventoSitemap,
+    "notizie": NotiziaSitemap,
+    "documenti": DocumentoSitemap,
+    "itinerari": ItinerarioSitemap,
 }
 
 urlpatterns = [
-    path('i18n/', include('django.conf.urls.i18n')),
+    path("i18n/", include("django.conf.urls.i18n")),
 ]
 
 # URL con prefisso lingua (it/en)
 urlpatterns += i18n_patterns(
-    path('', include('parco_verismo.urls')),
+    path("", include("parco_verismo.urls")),
     prefix_default_language=False,
 )
 
 # Admin senza prefisso lingua
 urlpatterns += [
-    path('richieste/', richieste_admin_site.urls),  # Admin dedicato alle richieste
-    path('admin/', admin.site.urls),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path("admin/", admin.site.urls),
+    # Dashboard per la gestione delle richieste (admin semplificato)
+    path("richieste/", richieste_admin_site.urls),
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
 ]
 
 # Serve media files in development

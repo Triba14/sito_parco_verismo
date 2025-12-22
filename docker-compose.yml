@@ -1,0 +1,115 @@
+# =============================================================================
+# Docker Compose - Parco Letterario del Verismo (Production)
+# =============================================================================
+# Usage:
+#   docker-compose up -d              # Avvia in background
+#   docker-compose logs -f            # Visualizza logs
+#   docker-compose down               # Ferma servizi
+#   docker-compose up -d --build      # Ricostruisce e avvia
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Django Application (Gunicorn)
+  # ---------------------------------------------------------------------------
+  web:
+    build: .
+    container_name: parco_verismo_web
+    restart: unless-stopped
+    expose:
+      - "8000"
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+      - sqlite_data:/app/data
+    env_file:
+      - .env.production
+    environment:
+      - DJANGO_SETTINGS_MODULE=mysite.settings
+    depends_on:
+      - init
+    networks:
+      - parco_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health/" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # ---------------------------------------------------------------------------
+  # Init Container (migrations, collectstatic)
+  # ---------------------------------------------------------------------------
+  init:
+    build: .
+    container_name: parco_verismo_init
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+      - sqlite_data:/app/data
+    env_file:
+      - .env.production
+    command: >
+      sh -c "
+        python manage.py migrate --noinput &&
+        python manage.py collectstatic --noinput &&
+        echo 'Init completed successfully'
+      "
+    networks:
+      - parco_network
+
+  # ---------------------------------------------------------------------------
+  # Nginx Reverse Proxy
+  # ---------------------------------------------------------------------------
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: parco_verismo_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - static_volume:/app/staticfiles:ro
+      - media_volume:/app/media:ro
+      - certbot_www:/var/www/certbot:ro
+      - certbot_conf:/etc/letsencrypt:ro
+    depends_on:
+      - web
+    networks:
+      - parco_network
+
+  # ---------------------------------------------------------------------------
+  # Certbot (Let's Encrypt SSL)
+  # ---------------------------------------------------------------------------
+  certbot:
+    image: certbot/certbot:latest
+    container_name: parco_verismo_certbot
+    volumes:
+      - certbot_www:/var/www/certbot
+      - certbot_conf:/etc/letsencrypt
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+# =============================================================================
+# Volumes
+# =============================================================================
+volumes:
+  static_volume:
+    name: parco_verismo_static
+  media_volume:
+    name: parco_verismo_media
+  sqlite_data:
+    name: parco_verismo_sqlite
+  certbot_www:
+    name: parco_verismo_certbot_www
+  certbot_conf:
+    name: parco_verismo_certbot_conf
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  parco_network:
+    name: parco_verismo_network
+    driver: bridge

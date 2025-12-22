@@ -1,7 +1,7 @@
 // Cookie Banner GDPR - Parco Letterario del Verismo
 // Gestione consenso cookie conforme normativa italiana
 
-(function() {
+(function () {
     'use strict';
 
     const COOKIE_NAME = 'cookie_consent';
@@ -18,7 +18,7 @@
     function getCookie(name) {
         const nameEQ = name + "=";
         const ca = document.cookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
+        for (let i = 0; i < ca.length; i++) {
             let c = ca[i];
             while (c.charAt(0) === ' ') c = c.substring(1, c.length);
             if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
@@ -45,14 +45,14 @@
     function saveConsent(preferences) {
         const consent = JSON.stringify(preferences);
         setCookie(COOKIE_NAME, consent, COOKIE_DURATION);
-        
+
         // Applica le preferenze
         applyConsent(preferences);
-        
+
         // Nascondi banner e modal
         hideBanner();
         hidePreferencesModal();
-        
+
         // Dispatch evento per notificare altri script
         window.dispatchEvent(new CustomEvent('cookieConsentUpdated', { detail: preferences }));
     }
@@ -78,11 +78,49 @@
     function enableAnalytics() {
         console.log('Analytics cookies enabled');
         document.body.classList.add('analytics-enabled');
+
+        // Carica Google Analytics GA4
+        const gaMeasurementId = window.GA_MEASUREMENT_ID;
+        if (gaMeasurementId && !window.gtag) {
+            // Carica gtag.js
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaMeasurementId;
+            document.head.appendChild(script);
+
+            // Inizializza gtag
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { dataLayer.push(arguments); };
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId, {
+                'anonymize_ip': true,  // Anonimizza IP per GDPR
+                'cookie_flags': 'SameSite=None;Secure'
+            });
+
+            console.log('Google Analytics loaded:', gaMeasurementId);
+        }
     }
 
     function disableAnalytics() {
         console.log('Analytics cookies disabled');
         document.body.classList.remove('analytics-enabled');
+
+        // Disabilita Google Analytics
+        const gaMeasurementId = window.GA_MEASUREMENT_ID;
+        if (gaMeasurementId) {
+            window['ga-disable-' + gaMeasurementId] = true;
+        }
+
+        // Rimuovi cookie GA esistenti
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.startsWith('_ga') || cookie.startsWith('_gid') || cookie.startsWith('_gat')) {
+                const name = cookie.split('=')[0];
+                document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
+                document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;domain=.' + window.location.hostname;
+            }
+        }
     }
 
     function enableMarketing() {
@@ -116,10 +154,10 @@
         if (modal) {
             // Carica preferenze salvate nei toggle
             loadPreferencesIntoModal();
-            
+
             modal.classList.add('show');
             modal.setAttribute('aria-hidden', 'false');
-            
+
             // Focus trap per accessibilità
             const firstFocusable = modal.querySelector('button, input:not([disabled])');
             if (firstFocusable) {
@@ -142,10 +180,10 @@
             analytics: false,
             marketing: false
         };
-        
+
         const analyticsCheckbox = document.getElementById('analytics-cookies');
         const marketingCheckbox = document.getElementById('marketing-cookies');
-        
+
         if (analyticsCheckbox) {
             analyticsCheckbox.checked = preferences.analytics || false;
         }
@@ -157,7 +195,7 @@
     function getPreferencesFromModal() {
         const analyticsCheckbox = document.getElementById('analytics-cookies');
         const marketingCheckbox = document.getElementById('marketing-cookies');
-        
+
         return {
             necessary: true,
             analytics: analyticsCheckbox ? analyticsCheckbox.checked : false,
@@ -175,7 +213,7 @@
     // Inizializzazione
     function init() {
         const preferences = getStoredPreferences();
-        
+
         if (!preferences) {
             showBanner();
         } else {
@@ -186,9 +224,9 @@
         const acceptAllBtn = document.getElementById('accept-all-cookies');
         const acceptNecessaryBtn = document.getElementById('accept-necessary-cookies');
         const customizeBtn = document.getElementById('customize-cookies');
-        
+
         if (acceptAllBtn) {
-            acceptAllBtn.addEventListener('click', function() {
+            acceptAllBtn.addEventListener('click', function () {
                 saveConsent({
                     necessary: true,
                     analytics: true,
@@ -199,7 +237,7 @@
         }
 
         if (acceptNecessaryBtn) {
-            acceptNecessaryBtn.addEventListener('click', function() {
+            acceptNecessaryBtn.addEventListener('click', function () {
                 saveConsent({
                     necessary: true,
                     analytics: false,
@@ -210,7 +248,7 @@
         }
 
         if (customizeBtn) {
-            customizeBtn.addEventListener('click', function() {
+            customizeBtn.addEventListener('click', function () {
                 showPreferencesModal();
             });
         }
@@ -220,14 +258,14 @@
         const closeModalBtn = document.querySelector('.cookie-modal-close');
 
         if (savePreferencesBtn) {
-            savePreferencesBtn.addEventListener('click', function() {
+            savePreferencesBtn.addEventListener('click', function () {
                 const preferences = getPreferencesFromModal();
                 saveConsent(preferences);
             });
         }
 
         if (closeModalBtn) {
-            closeModalBtn.addEventListener('click', function() {
+            closeModalBtn.addEventListener('click', function () {
                 hidePreferencesModal();
             });
         }
@@ -235,30 +273,30 @@
         // Chiudi modal cliccando fuori o premendo ESC
         const modal = document.getElementById('cookie-preferences-modal');
         if (modal) {
-            modal.addEventListener('click', function(e) {
+            modal.addEventListener('click', function (e) {
                 if (e.target === modal) {
                     hidePreferencesModal();
                 }
             });
         }
 
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
                 hidePreferencesModal();
             }
         });
 
         // Link "Gestisci cookie" nel footer o altrove
-        document.querySelectorAll('[data-cookie-preferences]').forEach(function(el) {
-            el.addEventListener('click', function(e) {
+        document.querySelectorAll('[data-cookie-preferences]').forEach(function (el) {
+            el.addEventListener('click', function (e) {
                 e.preventDefault();
                 showPreferencesModal();
             });
         });
 
         // Link "Revoca consenso"
-        document.querySelectorAll('[data-cookie-revoke]').forEach(function(el) {
-            el.addEventListener('click', function(e) {
+        document.querySelectorAll('[data-cookie-revoke]').forEach(function (el) {
+            el.addEventListener('click', function (e) {
                 e.preventDefault();
                 revokeConsent();
             });
