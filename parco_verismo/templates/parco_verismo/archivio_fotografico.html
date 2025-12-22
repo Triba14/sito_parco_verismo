@@ -5,6 +5,18 @@
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/archivio.css' %}">
+<style>
+  @media (min-width: 992px) {
+    .separator-verga-capuana {
+      border-right: 1px solid #dee2e6;
+      position: relative;
+      padding-right: 2rem;
+    }
+    .col-lg-6:last-child {
+      padding-left: 2rem;
+    }
+  }
+</style>
 {% endblock %}
 
 {% block hero_section %}{% endblock %}
@@ -21,109 +33,107 @@
 
     {% if foto_verga or foto_capuana or foto_altro %}
       
-      <!-- Sezione Giovanni Verga -->
-      {% if foto_verga %}
       <div class="row mb-5">
-        <div class="col-12">
-          <h2 class="text-center mb-4 section-title">Giovanni Verga</h2>
-          <div id="carouselVerga" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
-            <div class="carousel-indicators">
-              {% for foto_item in foto_verga %}
-                <button type="button" data-bs-target="#carouselVerga" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
-              {% endfor %}
-            </div>
-            <div class="carousel-inner">
-              {% for foto_item in foto_verga %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}" 
-                     data-foto-index="{{ forloop.counter0 }}"
-                     data-foto-url="{{ foto_item.immagine.url }}"
-                     data-foto-titolo="{{ foto_item.titolo|default:'' }}"
-                     data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
-                     data-foto-categoria="{{ foto_item.categoria|default:'' }}">
-                  <div class="carousel-image-wrapper">
-                    <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0 }}">
-                    <div class="carousel-overlay"></div>
-                    <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0 }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
-                  </div>
-                  {% if foto_item.titolo or foto_item.descrizione %}
-                    <div class="carousel-caption"><div class="carousel-caption-content">
-                        {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
-                        {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
-                        {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
-                    </div></div>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVerga" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselVerga" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
-          </div>
-          
-          <div class="archivio-thumbnails mt-4">
-            {% for foto_item in foto_verga %}
-              <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0 }}">
-                <div class="thumbnail-wrapper">
-                  <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0 }}">
-                  <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
-                </div>
+        <!-- Sezione Giovanni Verga -->
+        <div class="col-lg-6 mb-5 mb-lg-0 separator-verga-capuana">
+          {% if foto_verga %}
+            <h2 class="text-center mb-4 section-title">Giovanni Verga</h2>
+            <div id="carouselVerga" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+              <div class="carousel-indicators">
+                {% for foto_item in foto_verga %}
+                  <button type="button" data-bs-target="#carouselVerga" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
+                {% endfor %}
               </div>
-            {% endfor %}
-          </div>
+              <div class="carousel-inner">
+                {% for foto_item in foto_verga %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}" 
+                       data-foto-index="{{ forloop.counter0 }}"
+                       data-foto-url="{{ foto_item.immagine.url }}"
+                       data-foto-titolo="{{ foto_item.titolo|default:'' }}"
+                       data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
+                       data-foto-categoria="{{ foto_item.categoria|default:'' }}">
+                    <div class="carousel-image-wrapper">
+                      <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0 }}">
+                      <div class="carousel-overlay"></div>
+                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0 }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                    {% if foto_item.titolo or foto_item.descrizione %}
+                      <div class="carousel-caption"><div class="carousel-caption-content">
+                          {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
+                          {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
+                          {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
+                      </div></div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselVerga" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselVerga" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
+            </div>
+            
+            <div class="archivio-thumbnails mt-4">
+              {% for foto_item in foto_verga %}
+                <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0 }}">
+                  <div class="thumbnail-wrapper">
+                    <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0 }}">
+                    <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
-      </div>
-      {% endif %}
 
-      <!-- Sezione Luigi Capuana -->
-      {% if foto_capuana %}
-      <div class="row mb-5">
-        <div class="col-12">
-          <h2 class="text-center mb-4 section-title">Luigi Capuana</h2>
-          <div id="carouselCapuana" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
-            <div class="carousel-indicators">
-              {% for foto_item in foto_capuana %}
-                <button type="button" data-bs-target="#carouselCapuana" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
-              {% endfor %}
-            </div>
-            <div class="carousel-inner">
-              {% for foto_item in foto_capuana %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}" 
-                     data-foto-index="{{ forloop.counter0|add:foto_verga.count }}"
-                     data-foto-url="{{ foto_item.immagine.url }}"
-                     data-foto-titolo="{{ foto_item.titolo|default:'' }}"
-                     data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
-                     data-foto-categoria="{{ foto_item.categoria|default:'' }}">
-                  <div class="carousel-image-wrapper">
-                    <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                    <div class="carousel-overlay"></div>
-                    <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
-                  </div>
-                  {% if foto_item.titolo or foto_item.descrizione %}
-                    <div class="carousel-caption"><div class="carousel-caption-content">
-                        {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
-                        {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
-                        {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
-                    </div></div>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapuana" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCapuana" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
-          </div>
-          
-          <div class="archivio-thumbnails mt-4">
-            {% for foto_item in foto_capuana %}
-              <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                <div class="thumbnail-wrapper">
-                  <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                  <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
-                </div>
+        <!-- Sezione Luigi Capuana -->
+        <div class="col-lg-6">
+          {% if foto_capuana %}
+            <h2 class="text-center mb-4 section-title">Luigi Capuana</h2>
+            <div id="carouselCapuana" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+              <div class="carousel-indicators">
+                {% for foto_item in foto_capuana %}
+                  <button type="button" data-bs-target="#carouselCapuana" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
+                {% endfor %}
               </div>
-            {% endfor %}
-          </div>
+              <div class="carousel-inner">
+                {% for foto_item in foto_capuana %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}" 
+                       data-foto-index="{{ forloop.counter0|add:foto_verga.count }}"
+                       data-foto-url="{{ foto_item.immagine.url }}"
+                       data-foto-titolo="{{ foto_item.titolo|default:'' }}"
+                       data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
+                       data-foto-categoria="{{ foto_item.categoria|default:'' }}">
+                    <div class="carousel-image-wrapper">
+                      <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                      <div class="carousel-overlay"></div>
+                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                    {% if foto_item.titolo or foto_item.descrizione %}
+                      <div class="carousel-caption"><div class="carousel-caption-content">
+                          {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
+                          {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
+                          {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
+                      </div></div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapuana" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCapuana" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
+            </div>
+            
+            <div class="archivio-thumbnails mt-4">
+              {% for foto_item in foto_capuana %}
+                <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                  <div class="thumbnail-wrapper">
+                    <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                    <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
       </div>
-      {% endif %}
 
       <!-- Sezione Altro -->
       {% if foto_altro %}
@@ -386,5 +396,3 @@
   });
 </script>
 {% endblock %}
-
-
