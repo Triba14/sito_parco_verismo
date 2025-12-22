@@ -19,7 +19,7 @@ class StaticViewSitemap(Sitemap):
             'calendario',
             'notizie',
             'documenti',
-            'archivio_fotografico',
+            'verga_capuana_fotografi',
             'itinerari_verghiani',
             'itinerari_capuaniani',
             'itinerari_tematici',

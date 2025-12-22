@@ -7,7 +7,7 @@ from .views import (
     biblioteca_view, opere_per_autore_view, opera_detail_view,
     eventi_view, calendario_view, evento_detail_view,
     notizie_view, notizia_detail_view,
-    documenti_view, documento_detail_view, archivio_fotografico_view,
+    documenti_view, documento_detail_view, verga_capuana_fotografi_view,
     itinerari_verghiani_view, itinerari_capuaniani_view, 
     itinerari_tematici_view, itinerario_detail_view,
     licodia_view, mineo_view, vizzini_view,
@@ -41,8 +41,8 @@ urlpatterns = [
     path('documenti/', documenti_view, name='documenti'),
     path('documento/<slug:slug>/', documento_detail_view, name='documento_detail'),
 
-    # Archivio Fotografico
-    path('archivio/', archivio_fotografico_view, name='archivio_fotografico'),
+    # Verga e Capuana Fotografi
+    path('verga-capuana-fotografi/', verga_capuana_fotografi_view, name='verga_capuana_fotografi'),
 
     # Pagine statiche per i comuni del Parco
     path('licodia/', licodia_view, name='licodia'),

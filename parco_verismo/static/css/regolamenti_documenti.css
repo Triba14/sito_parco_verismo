@@ -428,7 +428,6 @@ section.page-section:nth-of-type(even) {
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
     color: var(--color-primary);
 }
@@ -439,7 +438,6 @@ section.page-section:nth-of-type(even) {
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     max-width: 90%;
-    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .mv-hero-image {

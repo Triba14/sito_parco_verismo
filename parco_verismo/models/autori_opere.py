@@ -25,14 +25,15 @@ class Autore(models.Model):
 class Opera(TranslatableModel):
     autore = models.ForeignKey(Autore, on_delete=models.PROTECT, related_name='opere')
     slug = models.SlugField(max_length=200, unique=True)
-    anno_pubblicazione = models.IntegerField(null=True, blank=True)
+    anno_pubblicazione = models.IntegerField(null=True, blank=True, verbose_name="Anno di pubblicazione")
     link_wikisource = models.URLField(max_length=500, help_text="Link alla pagina dell'opera su Wikisource.")
-    copertina = models.ImageField(upload_to="opere/copertine/", blank=True, null=True, help_text="Carica la copertina dell'opera.")
+    copertina = models.ImageField(upload_to="copertine/", blank=True, null=True, help_text="Carica la copertina dell'opera.")
 
     translations = TranslatedFields(
         titolo=models.CharField(max_length=200),
-        trama=models.TextField(help_text="Breve trama o descrizione dell'opera."),
-        analisi=models.TextField(blank=True, null=True, help_text="Spunti di analisi o contesto storico."),
+        breve_descrizione=models.TextField(blank=True, null=True, verbose_name="Breve descrizione"),
+        trama=models.TextField(help_text="Breve trama o descrizione dell'opera.", verbose_name="Trama"),
+        analisi=models.TextField(blank=True, null=True, help_text="Spunti di analisi o contesto storico.", verbose_name="Analisi e contesto"),
     )
 
     class Meta:

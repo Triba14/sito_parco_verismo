@@ -15,22 +15,28 @@
     {% for opera in opere %}
       <div class="col-md-12 mb-4">
         <div class="card">
-          <div class="row g-0">
+          <div class="row g-0 align-items-center">
             {% if opera.copertina %}
-              <div class="col-md-3">
-                <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="Copertina di {{ opera.titolo }}" style="max-height: 180px; object-fit: cover;">
+              <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
+                <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="Copertina di {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
               </div>
             {% endif %}
-            <div class="col-md-9">
-              <div class="card-body">
-                <h3 class="card-title">
+            <div class="col-md-10">
+              <div class="card-body py-2">
+                <h3 class="card-title h5 mb-1">
                   <a href="{{ opera.get_absolute_url }}" class="text-decoration-none">{{ opera.titolo }}</a>
                 </h3>
                 {% if opera.anno_pubblicazione %}
-                  <p class="text-muted"><strong>{% trans 'Anno di pubblicazione:' %}</strong> {{ opera.anno_pubblicazione }}</p>
+                  <p class="text-muted small mb-1"><strong>{% trans 'Anno:' %}</strong> {{ opera.anno_pubblicazione }}</p>
                 {% endif %}
-                <p class="card-text">{{ opera.trama|truncatewords:50 }}</p>
-                <a href="{{ opera.get_absolute_url }}" class="btn btn-primary">{% trans 'Scopri di più' %}</a>
+                
+                {% if opera.breve_descrizione %}
+                  <p class="card-text mb-0"><em>{{ opera.breve_descrizione }}</em></p>
+                {% endif %}
+                
+                <div class="mt-2">
+                  <a href="{{ opera.get_absolute_url }}" class="btn btn-sm btn-primary">{% trans 'Scopri di più' %}</a>
+                </div>
               </div>
             </div>
           </div>

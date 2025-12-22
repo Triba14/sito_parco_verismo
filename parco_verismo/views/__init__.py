@@ -26,7 +26,7 @@ from .eventi import (
 from .documenti import (
     documenti_view,
     documento_detail_view,
-    archivio_fotografico_view,
+    verga_capuana_fotografi_view,
 )
 
 # Itinerari
@@ -73,7 +73,7 @@ __all__ = [
     # Documenti
     'documenti_view',
     'documento_detail_view',
-    'archivio_fotografico_view',
+    'verga_capuana_fotografi_view',
     # Itinerari
     'itinerari_verghiani_view',
     'itinerari_capuaniani_view',

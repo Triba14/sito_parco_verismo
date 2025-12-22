@@ -45,7 +45,7 @@ def documento_detail_view(request, slug):
     return render(request, 'parco_verismo/documento_detail.html', context)
 
 
-def archivio_fotografico_view(request):
+def verga_capuana_fotografi_view(request):
     """Pagina dell'archivio fotografico con carosello e categorie."""
     foto_verga = FotoArchivio.objects.filter(is_active=True, autore='VERGA').order_by('ordine', '-data_aggiunta')
     foto_capuana = FotoArchivio.objects.filter(is_active=True, autore='CAPUANA').order_by('ordine', '-data_aggiunta')
@@ -58,4 +58,4 @@ def archivio_fotografico_view(request):
         'foto_capuana': foto_capuana,
         'foto_altro': foto_altro,
     }
-    return render(request, 'parco_verismo/archivio_fotografico.html', context)
+    return render(request, 'parco_verismo/verga_capuana_fotografi.html', context)

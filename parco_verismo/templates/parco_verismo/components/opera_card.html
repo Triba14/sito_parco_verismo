@@ -20,8 +20,13 @@ Uso: {% include 'parco_verismo/components/opera_card.html' with opera=opera %}
       <p class="card-text text-muted mb-2">di {{ autore }}</p>
       {% endblocktrans %}
       {% if opera.anno_pubblicazione %}
-        <p class="card-text"><small class="text-muted">{% trans 'Anno:' %} {{ opera.anno_pubblicazione }}</small></p>
+        <p class="card-text mb-2"><small class="text-muted">{% trans 'Anno:' %} {{ opera.anno_pubblicazione }}</small></p>
       {% endif %}
+      
+      {% if opera.breve_descrizione %}
+        <p class="card-text small mb-3">{{ opera.breve_descrizione|truncatewords:25 }}</p>
+      {% endif %}
+      
       <div class="mt-auto">
         <a href="{{ opera.get_absolute_url }}" class="btn btn-sm btn-outline-primary">
           <i class="bi bi-info-circle me-1"></i>{% trans 'Scopri di più' %}

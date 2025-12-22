@@ -64,7 +64,6 @@ header::after {
     font-weight: 400;
     margin-bottom: var(--space-lg);
     color: var(--color-text-inverse);
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
 } 
 
@@ -72,7 +71,6 @@ header::after {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-text-inverse);
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 0;
     opacity: 0.95;
 }
@@ -176,7 +174,6 @@ header::after {
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-shadow: 3px 6px 16px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
 } 
 
@@ -185,7 +182,6 @@ header::after {
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.95);
-    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
 }
 
@@ -194,7 +190,6 @@ header::after {
     font-weight: 300;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
     max-width: 600px;
 }
 
