@@ -20,6 +20,8 @@ db.sqlite3-journal
 /media/
 !/media/README.md
 !/media/.gitkeep
+!/media/copertine/
+!/media/copertine/**
 /staticfiles/
 /static_root/
 .env
