@@ -39,7 +39,6 @@
                     <div class="carousel-image-wrapper">
                       <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0 }}">
                       <div class="carousel-overlay"></div>
-                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0 }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                     {% if foto_item.titolo or foto_item.descrizione %}
                       <div class="carousel-caption"><div class="carousel-caption-content">
@@ -85,7 +84,6 @@
                     <div class="carousel-image-wrapper">
                       <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
                       <div class="carousel-overlay"></div>
-                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                     {% if foto_item.titolo or foto_item.descrizione %}
                       <div class="carousel-caption"><div class="carousel-caption-content">
@@ -394,53 +392,55 @@
     });
   });
 
-  // Inizializza il carosello con autoplay
-  const carousel = document.getElementById('archivioCarousel');
-  if (carousel) {
-    const carouselInstance = new bootstrap.Carousel(carousel, {
-      interval: 6000,
-      ride: 'carousel',
-      pause: 'hover',
-      wrap: true
-    });
+  // Inizializza i caroselli con autoplay
+  ['carouselVerga', 'carouselCapuana'].forEach(carouselId => {
+    const carousel = document.getElementById(carouselId);
+    if (carousel) {
+      new bootstrap.Carousel(carousel, {
+        interval: 6000,
+        ride: 'carousel',
+        pause: 'hover',
+        wrap: true
+      });
 
-    // Animazione al cambio slide
-    carousel.addEventListener('slide.bs.carousel', function (e) {
-      const activeItem = e.relatedTarget;
-      const caption = activeItem.querySelector('.carousel-caption-content');
-      const image = activeItem.querySelector('.carousel-image');
-      
-      if (caption) {
-        caption.style.opacity = '0';
-        caption.style.transform = 'translateY(20px)';
-      }
-      
-      // Reset animazione zoom
-      if (image) {
-        image.style.animation = 'none';
-      }
-    });
-
-    carousel.addEventListener('slid.bs.carousel', function (e) {
-      const activeItem = e.relatedTarget;
-      const caption = activeItem.querySelector('.carousel-caption-content');
-      const image = activeItem.querySelector('.carousel-image');
-      
-      if (caption) {
-        setTimeout(() => {
-          caption.style.opacity = '1';
-          caption.style.transform = 'translateY(0)';
-        }, 100);
-      }
-      
-      // Riavvia animazione zoom
-      if (image) {
-        setTimeout(() => {
+      // Animazione al cambio slide
+      carousel.addEventListener('slide.bs.carousel', function (e) {
+        const activeItem = e.relatedTarget;
+        const caption = activeItem.querySelector('.carousel-caption-content');
+        const image = activeItem.querySelector('.carousel-image');
+        
+        if (caption) {
+          caption.style.opacity = '0';
+          caption.style.transform = 'translateY(20px)';
+        }
+        
+        // Reset animazione zoom
+        if (image) {
           image.style.animation = 'none';
-        }, 50);
-      }
-    });
-  }
+        }
+      });
+
+      carousel.addEventListener('slid.bs.carousel', function (e) {
+        const activeItem = e.relatedTarget;
+        const caption = activeItem.querySelector('.carousel-caption-content');
+        const image = activeItem.querySelector('.carousel-image');
+        
+        if (caption) {
+          setTimeout(() => {
+            caption.style.opacity = '1';
+            caption.style.transform = 'translateY(0)';
+          }, 100);
+        }
+        
+        // Riavvia animazione zoom
+        if (image) {
+          setTimeout(() => {
+            image.style.animation = 'none';
+          }, 50);
+        }
+      });
+    }
+  });
 
   // Gestione modal per visualizzazione a schermo intero
   const imageModal = document.getElementById('imageModal');

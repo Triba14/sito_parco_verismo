@@ -830,6 +830,9 @@ raccontate dai grandi autori del verismo.''',
     print("\n--- Caricamento foto Capuana ---")
     add_photos_from_dir(path_capuana, 'CAPUANA')
     
+    print(f"DEBUG: Foto Verga nel DB: {FotoArchivio.objects.filter(autore='VERGA').count()}")
+    print(f"DEBUG: Foto Capuana nel DB: {FotoArchivio.objects.filter(autore='CAPUANA').count()}")
+
     # ========================================================================
     # ITINERARI VERGHIANI E CAPUANIANI
     # ========================================================================
