@@ -124,38 +124,6 @@ mkdir -p ~/backups
 
 ---
 
-## 🔄 GitHub Actions (Deploy Automatico)
-
-Per aggiornare il sito da GitHub senza accedere alla VPS:
-
-### 1. Genera chiave SSH sulla VPS
-
-```bash
-ssh-keygen -t ed25519 -C "github-actions" -f ~/.ssh/github_actions -N ""
-cat ~/.ssh/github_actions.pub >> ~/.ssh/authorized_keys
-cat ~/.ssh/github_actions  # Copia questa chiave privata
-```
-
-### 2. Configura GitHub Secrets
-
-Vai su **GitHub → Repository → Settings → Secrets → Actions**
-
-| Secret | Valore |
-|--------|--------|
-| `VPS_HOST` | IP della VPS (es. `93.186.254.13`) |
-| `VPS_USER` | `deploy` |
-| `VPS_SSH_KEY` | Chiave privata copiata sopra |
-| `VPS_PATH` | `/home/deploy/sito_parco_verismo` |
-
-### 3. Come fare deploy
-
-1. Vai su **GitHub → Actions → Deploy to Production**
-2. Clicca **"Run workflow"**
-3. Scrivi `deploy` nel campo conferma
-4. Clicca **"Run workflow"**
-
----
-
 ## 📊 Comandi Utili
 
 ```bash
@@ -219,12 +187,10 @@ sito_parco_verismo/
 ├── Dockerfile               # 🐳 Build Django
 ├── nginx/
 │   └── conf.d/default.conf  # 🌐 Config Nginx + SSL
-├── scripts/
-│   ├── first-deploy.sh      # 🚀 Setup automatico VPS
-│   ├── ssl-setup.sh         # 🔐 Setup Let's Encrypt
-│   └── backup.sh            # 💾 Backup automatico
-└── .github/workflows/
-    └── deploy.yml           # 🔄 CI/CD GitHub Actions
+└── scripts/
+    ├── first-deploy.sh      # 🚀 Setup automatico VPS
+    ├── ssl-setup.sh         # 🔐 Setup Let's Encrypt
+    └── backup.sh            # 💾 Backup automatico
 ```
 
 ---
