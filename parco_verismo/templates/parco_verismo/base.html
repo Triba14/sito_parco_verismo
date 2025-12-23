@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="{% block meta_description %}{% trans 'Parco Letterario Verismo - Un viaggio nella letteratura verista siciliana attraverso i luoghi di Verga e Capuana' %}{% endblock %}">
+    <meta name="description" content="{% block meta_description %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana - Un viaggio nella letteratura verista siciliana attraverso i luoghi di Verga e Capuana' %}{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}parco letterario, verismo, Giovanni Verga, Luigi Capuana, Sicilia, letteratura, Vizzini, Mineo, Licodia Eubea{% endblock %}">
-    <meta name="author" content="Parco Letterario del Verismo">
+    <meta name="author" content="Parco Letterario Giovanni Verga e Luigi Capuana">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% block og_type %}website{% endblock %}">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <meta property="og:title" content="{% block og_title %}{% trans 'Parco Letterario Verismo' %}{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}{% trans 'Scopri il Parco Letterario del Verismo: itinerari, eventi e cultura nei luoghi di Verga e Capuana' %}{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{% trans 'Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi e cultura nei luoghi di Verga e Capuana' %}{% endblock %}">
     <meta property="og:image" content="{% block og_image %}{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}{% endblock %}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -27,8 +27,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ request.build_absolute_uri }}">
-    <meta name="twitter:title" content="{% block twitter_title %}{% trans 'Parco Letterario Verismo' %}{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Scopri il Parco Letterario del Verismo in Sicilia' %}{% endblock %}">
+    <meta name="twitter:title" content="{% block twitter_title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia' %}{% endblock %}">
     <meta name="twitter:image" content="{% block twitter_image %}{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}{% endblock %}">
     
     <!-- Structured Data - Schema.org -->
@@ -36,7 +36,7 @@
     {
       "@context": "https://schema.org",
       "@type": "{% block schema_type %}TouristAttraction{% endblock %}",
-      "name": "Parco Letterario del Verismo",
+      "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
       "description": "{% trans 'Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i luoghi di Giovanni Verga e Luigi Capuana' %}",
       "url": "{{ request.scheme }}://{{ request.get_host }}",
       "address": {

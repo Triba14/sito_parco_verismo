@@ -1,5 +1,5 @@
 """
-Views del Parco Letterario del Verismo.
+Views del Parco Letterario Giovanni Verga e Luigi Capuana.
 Organizzate per funzionalità e dominio.
 """
 
@@ -11,6 +11,8 @@ from .biblioteca import (
     biblioteca_view,
     opere_per_autore_view,
     opera_detail_view,
+    personaggi_lessico_view,
+    luoghi_opere_view,
 )
 
 # Eventi e Notizie
@@ -52,6 +54,7 @@ from .istituzionale import (
     regolamenti_documenti_view,
     partner_rete_territoriale_view,
     accrediti_finanziamenti_view,
+    contatti_view,
     privacy_policy_view,
     note_legali_view,
     cookie_policy_view,
@@ -90,6 +93,7 @@ __all__ = [
     'regolamenti_documenti_view',
     'partner_rete_territoriale_view',
     'accrediti_finanziamenti_view',
+    'contatti_view',
     'privacy_policy_view',
     'note_legali_view',
     'cookie_policy_view',

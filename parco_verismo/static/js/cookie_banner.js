@@ -1,4 +1,4 @@
-// Cookie Banner GDPR - Parco Letterario del Verismo
+// Cookie Banner GDPR - Parco Letterario Giovanni Verga e Luigi Capuana
 // Gestione consenso cookie conforme normativa italiana
 
 (function () {

@@ -1,6 +1,6 @@
 # 🚀 Guida al Deployment su VPS Aruba Cloud
 
-Questa guida ti accompagna nel deployment del **Parco Letterario del Verismo** su una VPS Aruba Cloud.
+Questa guida ti accompagna nel deployment del **Parco Letterario Giovanni Verga e Luigi Capuana** su una VPS Aruba Cloud.
 
 > [!TIP]
 > La maggior parte del processo è **automatizzato** dallo script `first-deploy.sh`. Questa guida spiega i passaggi manuali rimanenti.

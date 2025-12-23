@@ -341,7 +341,7 @@
       ora = ora || '';
       luogo = luogo || '';
       
-      const messaggio = `🎭 *${titolo}*\n📅 ${data} {% trans 'alle' %} ${ora}\n📍 ${luogo}\n\n{% trans 'Scopri di più sul sito del Parco Letterario del Verismo!' %}`;
+      const messaggio = `🎭 *${titolo}*\n📅 ${data} {% trans 'alle' %} ${ora}\n📍 ${luogo}\n\n{% trans 'Scopri di più sul sito del Parco Letterario Giovanni Verga e Luigi Capuana!' %}`;
       window.open(`https://wa.me/?text=${encodeURIComponent(messaggio)}`, '_blank');
       mostraSuccesso("{% trans 'Evento condiviso su WhatsApp!' %}");
     } catch (error) {

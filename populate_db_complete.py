@@ -767,91 +767,68 @@ raccontate dai grandi autori del verismo.''',
     print("POPOLAMENTO ARCHIVIO FOTOGRAFICO")
     print("="*70)
     
-    # Foto di Vizzini
-    foto_vizzini = [
-        # ('vizzini/casaVerga.jpg', 'Casa di Giovanni Verga', 'La casa natale di Giovanni Verga a Vizzini, oggi museo dedicato allo scrittore.', 'Luoghi'),
-        # ('vizzini/centrostorico.jpg', 'Centro Storico di Vizzini', 'Il suggestivo centro storico di Vizzini con le sue caratteristiche vie.', 'Luoghi'),
-        # ('vizzini/duomo.jpg', 'Duomo di Vizzini', 'Il Duomo di Vizzini, uno dei principali monumenti storici della città.', 'Luoghi'),
-        # ('vizzini/borgo.jpg', 'Borgo di Vizzini', 'Il caratteristico borgo di Vizzini che ha ispirato molte opere di Verga.', 'Luoghi'),
-        # ('vizzini/cunziria.jpg', 'La Cunziria', 'L\'antica conceria di Vizzini, luogo caratteristico del paese.', 'Luoghi'),
-        # ('vizzini/festa.jpeg', 'Festa a Vizzini', 'Una festa tradizionale a Vizzini durante le celebrazioni estive.', 'Eventi'),
-        # ('vizzini/festaRicotta.jpg', 'Festa della Ricotta', 'La tradizionale festa della ricotta di Vizzini.', 'Eventi'),
-        # ('vizzini/processione.jpg', 'Processione religiosa', 'Una processione religiosa per le vie di Vizzini.', 'Eventi'),
-        # ('vizzini/verga.jpeg', 'Giovanni Verga', 'Ritratto di Giovanni Verga, il grande scrittore verista.', 'Personaggi'),
-        # ('vizzini/bosco.jpeg', 'Bosco di Vizzini', 'Il paesaggio naturale intorno a Vizzini.', 'Luoghi'),
-    ]
-    
-    # Foto di Mineo
-    foto_mineo = [
-        # ('mineo/Casa-Luigi-Capuana.jpg', 'Casa di Luigi Capuana', 'La casa natale di Luigi Capuana a Mineo.', 'Luoghi'),
-        # ('mineo/centro-storico.jpg', 'Centro Storico di Mineo', 'Il centro storico di Mineo con i suoi vicoli caratteristici.', 'Luoghi'),
-        # ('mineo/castello.jpg', 'Castello di Mineo', 'L\'antico castello di Mineo, simbolo della città.', 'Luoghi'),
-        # ('mineo/panorama.jpg', 'Panorama di Mineo', 'Il suggestivo panorama dai colli di Mineo.', 'Luoghi'),
-        # ('mineo/chiesa.jpg', 'Chiesa di Mineo', 'Una delle chiese storiche di Mineo.', 'Luoghi'),
-        # ('mineo/premio-luigi.jpg', 'Premio Luigi Capuana', 'La cerimonia del Premio letterario intitolato a Luigi Capuana.', 'Eventi'),
-        # ('mineo/santa-agrippina.jpg', 'Chiesa di Santa Agrippina', 'La chiesa dedicata a Santa Agrippina, patrona di Mineo.', 'Luoghi'),
-    ]
-    
-    # Foto di Licodia Eubea
-    foto_licodia = [
-        # ('licodia/hero-bg.jpg', 'Licodia Eubea', 'Veduta panoramica di Licodia Eubea.', 'Luoghi'),
-        # ('licodia/chiesa_santa_margherita.jpg', 'Chiesa di Santa Margherita', 'La chiesa di Santa Margherita a Licodia Eubea.', 'Luoghi'),
-        # ('licodia/colle_castello.jpg', 'Colle del Castello', 'Il colle del castello di Licodia Eubea.', 'Luoghi'),
-        # ('licodia/panorama.jpg', 'Panorama di Licodia', 'Il suggestivo panorama dai colli di Licodia Eubea.', 'Luoghi'),
-        # ('licodia/settimana_santa.jpg', 'Settimana Santa', 'Le celebrazioni della Settimana Santa a Licodia Eubea.', 'Eventi'),
-        # ('licodia/festa_dell_uva.jpeg', 'Festa dell\'Uva', 'La tradizionale festa dell\'uva a Licodia Eubea.', 'Eventi'),
-        # ('licodia/sagra.jpg', 'Sagra locale', 'Una sagra tradizionale a Licodia Eubea.', 'Eventi'),
-    ]
-    
-    ordine = 0
-    tutte_le_foto = [
-        ('Vizzini', foto_vizzini),
-        ('Mineo', foto_mineo),
-        ('Licodia Eubea', foto_licodia),
-    ]
-    
-    for comune, foto_list in tutte_le_foto:
-        for immagine_path, titolo, descrizione, categoria in foto_list:
-            # Controlla se la foto esiste già
-            static_path = os.path.join(settings.BASE_DIR, 'parco_verismo', 'static', 'assets', 'img', immagine_path)
-            if not os.path.exists(static_path):
-                print(f"⚠ Immagine non trovata: {immagine_path}")
-                continue
+    # Pulisce le foto esistenti per evitare duplicati o dati sporchi
+    FotoArchivio.objects.all().delete()
+    print("• Archivio fotografico resettato")
+
+    # Configurazione cartelle sorgente (percorso assoluto)
+    base_media_path = os.path.join(settings.MEDIA_ROOT, 'archivio_fotografico')
+    path_verga = os.path.join(base_media_path, 'foto_Verga')
+    path_capuana = os.path.join(base_media_path, 'foto_Capuana')
+
+    # Pulizia file fisici nella cartella archivio_fotografico (escludendo le sottocartelle sorgente)
+    if os.path.exists(base_media_path):
+        print("• Pulizia file fisici duplicati...")
+        for filename in os.listdir(base_media_path):
+            file_path = os.path.join(base_media_path, filename)
+            # Se è un file e non è una directory (quindi preserva foto_Verga e foto_Capuana)
+            if os.path.isfile(file_path):
+                try:
+                    os.remove(file_path)
+                except Exception as e:
+                    print(f"  ⚠️ Impossibile eliminare {filename}: {e}")
+
+    def add_photos_from_dir(directory, autore_code):
+        if not os.path.exists(directory):
+            print(f"⚠ Directory non trovata: {directory}")
+            return
+        
+        files = [f for f in os.listdir(directory) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))]
+        ordine = 0
+        
+        for filename in files:
+            source_path = os.path.join(directory, filename)
             
-            # Crea il nome unico per la foto
-            foto_slug = os.path.splitext(os.path.basename(immagine_path))[0]
-            foto_id = f"{comune.lower()}_{foto_slug}"
+            # Crea l'oggetto FotoArchivio
+            foto = FotoArchivio()
             
-            # Verifica se la foto esiste già nel database basandosi sul titolo
-            foto = FotoArchivio.objects.filter(translations__titolo=titolo).first()
-            if not foto:
-                foto = FotoArchivio()
-                created = True
-            else:
-                created = False
-            
-            if not foto.immagine:
-                # Copia l'immagine
-                image_path_rel = copy_static_to_media(immagine_path, f"archivio_fotografico/{comune.lower()}_{foto_slug}.jpg")
-                if image_path_rel:
-                    media_path = os.path.join(settings.MEDIA_ROOT, image_path_rel)
-                    with open(media_path, 'rb') as f:
-                        foto.immagine.save(f"{foto_slug}.jpg", File(f), save=False)
+            # Apri il file e salvalo nel campo immagine
+            with open(source_path, 'rb') as f:
+                # Il nome del file nel database sarà lo stesso dell'originale
+                foto.immagine.save(filename, File(f), save=False)
             
             foto.ordine = ordine
-            foto.categoria = categoria
+            foto.autore = autore_code
             foto.is_active = True
+            
+            # Imposta titolo e descrizione (usando il nome del file come base)
+            titolo_base = os.path.splitext(filename)[0].replace('_', ' ').replace('-', ' ')
+            
             foto.set_current_language('it')
-            foto.titolo = titolo
-            foto.descrizione = descrizione
+            foto.titolo = titolo_base
+            foto.descrizione = f"Foto d'archivio di {autore_code.capitalize()}: {titolo_base}"
+            foto.categoria = 'Archivio Storico'
             foto.save()
             
-            if created:
-                print(f"✓ Aggiunta foto: {foto.titolo} ({comune})")
-            else:
-                print(f"• Foto aggiornata: {foto.titolo}")
-            
+            print(f"✓ Aggiunta foto {autore_code}: {filename}")
             ordine += 1
+
+    # Popola dalle due cartelle specifiche
+    print("\n--- Caricamento foto Verga ---")
+    add_photos_from_dir(path_verga, 'VERGA')
+    
+    print("\n--- Caricamento foto Capuana ---")
+    add_photos_from_dir(path_capuana, 'CAPUANA')
     
     # ========================================================================
     # ITINERARI VERGHIANI E CAPUANIANI
@@ -884,7 +861,7 @@ raccontate dai grandi autori del verismo.''',
                 'durata_stimata': itinerario_data.get('durata_stimata', ''),
                 'difficolta': itinerario_data.get('difficolta', 'facile'),
                 'link_maps': itinerario_data.get('link_maps', ''),
-                'is_active': itinerario_data.get('is_active', True)
+                'is_active': itinerario_data.get('is_active', True),
             }
         )
         

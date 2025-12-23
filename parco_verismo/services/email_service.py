@@ -34,7 +34,7 @@ def invia_email_richiesta_confermata(richiesta):
         Ti contatteremo presto per rispondere alla tua richiesta.
 
         Cordiali saluti,
-        Il Team del Parco Letterario del Verismo
+        Il Team del Parco Letterario Giovanni Verga e Luigi Capuana
         """
 
         send_mail(

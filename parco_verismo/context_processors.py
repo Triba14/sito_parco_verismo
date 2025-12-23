@@ -1,5 +1,5 @@
 """
-Context processors per il Parco Letterario del Verismo.
+Context processors per il Parco Letterario Giovanni Verga e Luigi Capuana.
 Rendono disponibili variabili globali in tutti i template.
 """
 

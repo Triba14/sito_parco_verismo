@@ -1,5 +1,5 @@
 # =============================================================================
-# Dockerfile - Parco Letterario del Verismo (Production)
+# Dockerfile - Parco Letterario Giovanni Verga e Luigi Capuana (Production)
 # =============================================================================
 
 # 1. Immagine base con Python

@@ -1,5 +1,5 @@
 """
-Servizi business logic del Parco Letterario del Verismo.
+Servizi business logic del Parco Letterario Giovanni Verga e Luigi Capuana.
 """
 
 from .email_service import (

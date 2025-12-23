@@ -1,5 +1,5 @@
 # =============================================================================
-# Docker Compose - Parco Letterario del Verismo (Production)
+# Docker Compose - Parco Letterario Giovanni Verga e Luigi Capuana (Production)
 # =============================================================================
 # Usage:
 #   docker-compose up -d              # Avvia in background

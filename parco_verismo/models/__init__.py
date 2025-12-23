@@ -1,5 +1,5 @@
 """
-Modelli del Parco Letterario del Verismo.
+Modelli del Parco Letterario Giovanni Verga e Luigi Capuana.
 Organizzati per funzionalità e dominio.
 """
 

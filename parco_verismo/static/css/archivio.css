@@ -566,3 +566,40 @@
   }
 }
 
+/* Text Content Styles */
+.text-content {
+  color: var(--color-text-primary);
+  line-height: 1.8;
+}
+
+.text-content h2 {
+  color: var(--color-primary);
+  margin-top: 3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.text-content h3 {
+  color: var(--color-primary-dark);
+  margin-top: 2.5rem;
+}
+
+.text-content h4 {
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.text-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.text-content ol, .text-content ul {
+  margin-bottom: 1.5rem;
+}
+
+.text-content li {
+  margin-bottom: 1rem;
+}
+

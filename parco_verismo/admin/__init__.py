@@ -1,5 +1,5 @@
 """
-Admin del Parco Letterario del Verismo.
+Admin del Parco Letterario Giovanni Verga e Luigi Capuana.
 Importa e registra tutti gli admin organizzati.
 """
 

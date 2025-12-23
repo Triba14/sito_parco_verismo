@@ -136,7 +136,7 @@ check_requirements() {
 # ================================
 # VERIFICA CONFIGURAZIONE
 # ================================
-print_header "🚀 FIRST DEPLOY - Parco Letterario del Verismo"
+print_header "🚀 FIRST DEPLOY - Parco Letterario Giovanni Verga e Luigi Capuana"
 
 # Modalità check
 if [[ "$1" == "--check" ]]; then

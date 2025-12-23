@@ -21,161 +21,107 @@
 
     {% if foto_verga or foto_capuana or foto_altro %}
       
-      <!-- Sezione Giovanni Verga -->
-      {% if foto_verga %}
-      <div class="row mb-5">
-        <div class="col-12">
-          <h2 class="text-center mb-4 section-title">Giovanni Verga</h2>
-          <div id="carouselVerga" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
-            <div class="carousel-indicators">
+      <div class="row mb-5 gx-5">
+        <!-- Colonna Giovanni Verga -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          {% if foto_verga %}
+            <h2 class="text-center mb-4 section-title">Giovanni Verga</h2>
+            <div id="carouselVerga" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+              <div class="carousel-indicators">
+                {% for foto_item in foto_verga %}
+                  <button type="button" data-bs-target="#carouselVerga" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
+                {% endfor %}
+              </div>
+              <div class="carousel-inner">
+                {% for foto_item in foto_verga %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}" 
+                       data-foto-index="{{ forloop.counter0 }}"
+                       data-foto-url="{{ foto_item.immagine.url }}"
+                       data-foto-titolo="{{ foto_item.titolo|default:'' }}"
+                       data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
+                       data-foto-categoria="{{ foto_item.categoria|default:'' }}">
+                    <div class="carousel-image-wrapper">
+                      <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0 }}">
+                      <div class="carousel-overlay"></div>
+                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0 }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                    {% if foto_item.titolo or foto_item.descrizione %}
+                      <div class="carousel-caption"><div class="carousel-caption-content">
+                          {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
+                          {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
+                          {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
+                      </div></div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselVerga" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselVerga" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
+            </div>
+            
+            <div class="archivio-thumbnails mt-4">
               {% for foto_item in foto_verga %}
-                <button type="button" data-bs-target="#carouselVerga" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
-              {% endfor %}
-            </div>
-            <div class="carousel-inner">
-              {% for foto_item in foto_verga %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}" 
-                     data-foto-index="{{ forloop.counter0 }}"
-                     data-foto-url="{{ foto_item.immagine.url }}"
-                     data-foto-titolo="{{ foto_item.titolo|default:'' }}"
-                     data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
-                     data-foto-categoria="{{ foto_item.categoria|default:'' }}">
-                  <div class="carousel-image-wrapper">
-                    <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0 }}">
-                    <div class="carousel-overlay"></div>
-                    <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0 }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
+                <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0 }}">
+                  <div class="thumbnail-wrapper">
+                    <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0 }}">
+                    <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
                   </div>
-                  {% if foto_item.titolo or foto_item.descrizione %}
-                    <div class="carousel-caption"><div class="carousel-caption-content">
-                        {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
-                        {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
-                        {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
-                    </div></div>
-                  {% endif %}
                 </div>
               {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVerga" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselVerga" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
-          </div>
-          
-          <div class="archivio-thumbnails mt-4">
-            {% for foto_item in foto_verga %}
-              <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0 }}">
-                <div class="thumbnail-wrapper">
-                  <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0 }}">
-                  <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
+          {% endif %}
         </div>
-      </div>
-      {% endif %}
 
-      <!-- Sezione Luigi Capuana -->
-      {% if foto_capuana %}
-      <div class="row mb-5">
-        <div class="col-12">
-          <h2 class="text-center mb-4 section-title">Luigi Capuana</h2>
-          <div id="carouselCapuana" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
-            <div class="carousel-indicators">
-              {% for foto_item in foto_capuana %}
-                <button type="button" data-bs-target="#carouselCapuana" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
-              {% endfor %}
-            </div>
-            <div class="carousel-inner">
-              {% for foto_item in foto_capuana %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}" 
-                     data-foto-index="{{ forloop.counter0|add:foto_verga.count }}"
-                     data-foto-url="{{ foto_item.immagine.url }}"
-                     data-foto-titolo="{{ foto_item.titolo|default:'' }}"
-                     data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
-                     data-foto-categoria="{{ foto_item.categoria|default:'' }}">
-                  <div class="carousel-image-wrapper">
-                    <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                    <div class="carousel-overlay"></div>
-                    <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
-                  </div>
-                  {% if foto_item.titolo or foto_item.descrizione %}
-                    <div class="carousel-caption"><div class="carousel-caption-content">
-                        {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
-                        {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
-                        {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
-                    </div></div>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapuana" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCapuana" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
-          </div>
-          
-          <div class="archivio-thumbnails mt-4">
-            {% for foto_item in foto_capuana %}
-              <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                <div class="thumbnail-wrapper">
-                  <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
-                  <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
-                </div>
+        <!-- Colonna Luigi Capuana -->
+        <div class="col-lg-6">
+          {% if foto_capuana %}
+            <h2 class="text-center mb-4 section-title">Luigi Capuana</h2>
+            <div id="carouselCapuana" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+              <div class="carousel-indicators">
+                {% for foto_item in foto_capuana %}
+                  <button type="button" data-bs-target="#carouselCapuana" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
+                {% endfor %}
               </div>
-            {% endfor %}
-          </div>
+              <div class="carousel-inner">
+                {% for foto_item in foto_capuana %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}" 
+                       data-foto-index="{{ forloop.counter0|add:foto_verga.count }}"
+                       data-foto-url="{{ foto_item.immagine.url }}"
+                       data-foto-titolo="{{ foto_item.titolo|default:'' }}"
+                       data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
+                       data-foto-categoria="{{ foto_item.categoria|default:'' }}">
+                    <div class="carousel-image-wrapper">
+                      <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                      <div class="carousel-overlay"></div>
+                      <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                    {% if foto_item.titolo or foto_item.descrizione %}
+                      <div class="carousel-caption"><div class="carousel-caption-content">
+                          {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
+                          {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
+                          {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
+                      </div></div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapuana" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCapuana" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
+            </div>
+            
+            <div class="archivio-thumbnails mt-4">
+              {% for foto_item in foto_capuana %}
+                <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                  <div class="thumbnail-wrapper">
+                    <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0|add:foto_verga.count }}">
+                    <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
       </div>
-      {% endif %}
-
-      <!-- Sezione Altro -->
-      {% if foto_altro %}
-      <div class="row mb-5">
-        <div class="col-12">
-          <h2 class="text-center mb-4 section-title">Altro</h2>
-          <div id="carouselAltro" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
-            <div class="carousel-indicators">
-              {% for foto_item in foto_altro %}
-                <button type="button" data-bs-target="#carouselAltro" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
-              {% endfor %}
-            </div>
-            <div class="carousel-inner">
-              {% for foto_item in foto_altro %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}" 
-                     data-foto-index="{{ forloop.counter0|add:foto_verga.count|add:foto_capuana.count }}"
-                     data-foto-url="{{ foto_item.immagine.url }}"
-                     data-foto-titolo="{{ foto_item.titolo|default:'' }}"
-                     data-foto-descrizione="{{ foto_item.descrizione|default:'' }}"
-                     data-foto-categoria="{{ foto_item.categoria|default:'' }}">
-                  <div class="carousel-image-wrapper">
-                    <img src="{{ foto_item.immagine.url }}" class="d-block w-100 carousel-image" alt="{{ foto_item.titolo|default:'Foto archivio' }}" data-foto-index="{{ forloop.counter0|add:foto_verga.count|add:foto_capuana.count }}">
-                    <div class="carousel-overlay"></div>
-                    <button class="carousel-expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-foto-index="{{ forloop.counter0|add:foto_verga.count|add:foto_capuana.count }}" title="{% trans 'Visualizza a schermo intero' %}"><i class="bi bi-arrows-fullscreen"></i></button>
-                  </div>
-                  {% if foto_item.titolo or foto_item.descrizione %}
-                    <div class="carousel-caption"><div class="carousel-caption-content">
-                        {% if foto_item.categoria %}<span class="carousel-category">{{ foto_item.categoria }}</span>{% endif %}
-                        {% if foto_item.titolo %}<h3 class="carousel-title">{{ foto_item.titolo }}</h3>{% endif %}
-                        {% if foto_item.descrizione %}<p class="carousel-description">{{ foto_item.descrizione }}</p>{% endif %}
-                    </div></div>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAltro" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Precedente' %}</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAltro" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{% trans 'Successivo' %}</span></button>
-          </div>
-          
-          <div class="archivio-thumbnails mt-4">
-            {% for foto_item in foto_altro %}
-              <div class="thumbnail-item fade-in-up" data-foto-index="{{ forloop.counter0|add:foto_verga.count|add:foto_capuana.count }}">
-                <div class="thumbnail-wrapper">
-                  <img src="{{ foto_item.immagine.url }}" alt="{{ foto_item.titolo|default:'Foto archivio' }}" class="thumbnail-image" data-foto-index="{{ forloop.counter0|add:foto_verga.count|add:foto_capuana.count }}">
-                  <div class="thumbnail-overlay">{% if foto_item.titolo %}<span class="thumbnail-title">{{ foto_item.titolo }}</span>{% endif %}<i class="bi bi-zoom-in thumbnail-icon"></i></div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      {% endif %}
 
     {% else %}
       <div class="row">
@@ -187,7 +133,166 @@
         </div>
       </div>
     {% endif %}
+
   </div>
+</section>
+
+<section class="pages-section py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="pages-section-title h2 fw-bold mb-4 text-center">
+                    <span class="pages-title-accent">{% trans 'Verga e Capuana' %}</span> {% trans 'Fotografi' %}
+                </h2>
+                
+                <h4 class="text-center mb-5 text-muted fst-italic">{% trans 'L\'occhio del Verismo: quando la letteratura guarda attraverso l\'obiettivo' %}</h4>
+
+                <div class="lead mb-5 text-secondary">
+                    <p>{% trans "La fotografia non fu per Giovanni Verga e Luigi Capuana un semplice passatempo, ma una vera e propria forma di indagine sulla realtà. Entrambi, pur con approcci e intensità diverse, esplorarono attraverso l'obiettivo la vita quotidiana, i paesaggi e le persone che animavano la Sicilia del Verismo." %}</p>
+                    <p>{% trans "Le loro immagini, dimenticate per decenni e riscoperte solo nella seconda metà del Novecento, offrono uno sguardo complementare alla narrativa: un modo visivo di \"fotografare\" la realtà, perfettamente coerente con le istanze veriste di rappresentazione oggettiva del mondo. Letteratura e fotografia si intrecciano, si illuminano reciprocamente, creano un'esperienza conoscitiva stratificata." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "L'archivio fotografico del Parco" %}</h3>
+                  <p>{% trans "Le fotografie presenti nell'archivio del Parco Letterario Giovanni Verga e Luigi Capuana sono state gentilmente concesse da Casa Museo Luigi Capuana di Mineo e Fondazione 3M, che hanno reso possibile la creazione di un percorso visivo integrato con gli itinerari letterari del territorio." %}</p>
+                  <p>{% trans "Questa collaborazione permette ai visitatori di accedere a un patrimonio altrimenti disperso o custodito in sedi diverse, creando un'esperienza unitaria dove le immagini di entrambi gli autori dialogano con i luoghi reali, con i testi letterari, con la memoria storica del territorio. L'archivio fotografico del Parco diventa così memoria viva, strumento di conoscenza, ponte tra passato e presente, tra l'occhio che ha guardato e l'occhio che guarda, tra la Sicilia narrata e la Sicilia vissuta." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h2 class="pages-section-title h3 fw-bold mb-4 mt-5">{% trans "Giovanni Verga fotografo: \"la segreta mania\"" %}</h2>
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "La scoperta di un archivio nascosto" %}</h4>
+                  <p>{% trans "Era il 1966 quando, nell'abitazione di campagna di Giovanni Verga a Vizzini, un letterato di nome Garra Agosta fece una scoperta straordinaria. Rovistando in un vecchio armadio chiuso da decenni, trovò più di 400 negativi fotografici: 327 su lastre di vetro e altri 121 su pellicola in celluloide, arrotolati \"a forma di sigaretta\". Erano passati oltre quarant'anni dalla morte dello scrittore, e le sue fotografie - scattate tra il 1878 e il 1911 - erano state completamente dimenticate." %}</p>
+                  <p>{% trans "Questa scoperta rivelò un aspetto fino ad allora sconosciuto di uno dei padri del Verismo: la sua intensa passione per la fotografia, un'arte che aveva praticato parallelamente all'attività letteraria per oltre trent'anni. Verga stesso, in una lettera all'amico Capuana, aveva definito la fotografia \"la mia segreta mania\", un'espressione che rivela quanto profondo fosse il suo legame con questo mezzo espressivo." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Gli inizi: infanzia e influenze" %}</h4>
+                  <p>{% trans "Giovanni Verga nasce nel 1840, esattamente un anno dopo la presentazione ufficiale della fotografia a Parigi. La sua passione per questo medium ha radici precoci: già a nove anni osserva lo zio paterno Salvatore Verga Catalano scattare fotografie, rimanendone affascinato. Da giovanissimo si serve di uno dei più rudimentali prototipi di macchina fotografica per le sue prime esperienze." %}</p>
+                  <p>{% trans "Come la maggior parte degli intellettuali del suo tempo, Verga viene rapito dalla nuova tecnica. Durante i suoi soggiorni a Milano e Firenze - città all'avanguardia per la fotografia italiana - entra in contatto con modelli sempre più sofisticati di apparecchi fotografici e perfeziona la sua tecnica. Ma è l'amicizia con Luigi Capuana a trasformare un interesse giovanile in passione matura: Capuana gli insegna il procedimento di sviluppo dei negativi e lo incoraggia a sperimentare." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "La produzione fotografica: tre mondi" %}</h4>
+                  <p>{% trans "La produzione fotografica di Verga, pur frammentaria (buona parte deve essere andata perduta), si può suddividere in tre gruppi tematici principali:" %}</p>
+                  <ol>
+                    <li><strong>{% trans "Il mondo familiare e degli affetti" %}</strong> {% trans "Ritratti di parenti e amici, spesso realizzati nel terrazzino della sua casa catanese in via Sant'Anna. In queste immagini compaiono figure intime: Luigi Capuana, Federico De Roberto (con cui formava \"La Triade di Catania\"), familiari. Sono pose spesso statiche e rigide, secondo la convenzione dell'epoca, ma rivelano l'affetto e la quotidianità di relazioni profonde." %}
+                    <p>{% trans "Un'immagine particolarmente significativa è l'autoscatto del 4 dicembre 1887, in cui Verga si ritrae con le mani abbandonate, intrecciate: mani grandi, vigorose, \"da lavoratore\", che contrastano con la posa formale. Davanti all'obiettivo Verga si contrae, chiuso in una fissità espressiva che rivela il suo carattere riservato e la sua gelosa solitudine." %}</p></li>
+                    <li><strong>{% trans "L'ambiente siciliano: il Verismo in immagine" %}</strong> {% trans "Qui emergono le fotografie più riuscite e significative: fattori, contadini, massari, cameriere, donne e bambini ripresi nella loro semplicità, inseriti nel loro ambiente quotidiano. Sono i personaggi delle sue novelle e dei suoi romanzi che prendono vita fisica davanti all'obiettivo." %}
+                    <p>{% trans "Particolarmente importanti sono le tre donne di Vizzini fotografate nel 1892 con i costumi di Cavalleria rusticana: un documento etnografico e insieme una preparazione scenica, una verifica visiva di ciò che la parola scritta avrebbe raccontato. Verga chiede esplicitamente a Capuana di procurargli fotografie di paesaggi e costumi per le sue opere siciliane, dimostrando come la fotografia fosse per lui strumento preparatorio alla scrittura." %}</p>
+                    <p>{% trans "Le vedute urbane di Catania - quella \"non aristocratica\", popolare - e le campagne circostanti mostrano una continuità evidente con il Verga scrittore. Sono immagini che documentano mestieri, posture, abiti, modi di vita: indizi preziosi dello stile di vita, dell'estetica e della storia del tempo." %}</p></li>
+                    <li><strong>{% trans "I paesaggi del Nord" %}</strong> {% trans "Più inaspettati sono gli scatti dei laghi lombardi, della Svizzera, di Bormio e dei suoi dintorni. Verga visita questi luoghi partendo da Milano, dove vive a lungo, e li documenta con lo stesso occhio attento che dedica alla Sicilia. Sono paesaggi che rivelano un Verga viaggiatore, curioso, capace di guardare oltre il mondo siciliano." %}</li>
+                  </ol>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Lo stile fotografico verghiano" %}</h4>
+                  <p>{% trans "Il linguaggio fotografico di Verga è ridotto all'osso, senza contaminazioni esterne. Non cerca la perfezione tecnica né l'effetto artistico: alcuni soggetti non sono perfettamente a fuoco, alcune inquadrature sono leggermente sbilanciate. Ma questo \"difetto\" è in realtà coerenza: Verga fotografo è sostanza, non forma." %}</p>
+                  <p>{% trans "Come nella scrittura usa i colori con estrema parsimonia (in Cavalleria rusticana solo bianco, nero e raramente il rosso; ne I Malavoglia il termine \"azzurro\" compare una sola volta), così nelle fotografie cerca l'essenziale, il momento colto senza artifici. L'obiettivo è ridurre tutto all'essenzialità, cogliere l'attimo, fermare il momento e il movimento nella sua bellezza nuda e cruda." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Fotografia e impersonalità" %}</h4>
+                  <p>{% trans "C'è un dibattito critico sul rapporto tra l'attività fotografica e quella letteraria di Verga. Per molto tempo si è pensato che le due attività procedessero parallelamente ma separate. In una lettera a Capuana, Verga afferma che la fotografia è \"rimasta\" la sua grande passione, suggerendo che avesse resistito alle crisi dell'attività letteraria." %}</p>
+                  <p>{% trans "Tuttavia, le analogie sono profonde. La tecnica dell'impersonalità che caratterizza la narrativa verghiana - lo scrittore che sembra scomparire dietro la storia, che mostra senza giudicare - ha molto a che fare con l'atto fotografico: immortalare la realtà in modo oggettivo, senza fini morali espliciti, senza interventi soggettivi evidenti." %}</p>
+                  <p>{% trans "La fotografia offre a Verga un modo di vedere: uno sguardo che cerca il documento, la testimonianza diretta, la vita colta nel suo svolgersi quotidiano. Questo sguardo fotografico permea la sua scrittura, contribuendo a quella sensazione di \"realtà fotografata\" che è caratteristica del suo stile maturo." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h2 class="pages-section-title h3 fw-bold mb-4 mt-5">{% trans "Luigi Capuana fotografo: il Grande Atelier e la ricerca dell'invisibile" %}</h2>
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Un fotografo quasi professionista" %}</h4>
+                  <p>{% trans "Se Verga fu fotografo appassionato ma sostanzialmente amatoriale, Luigi Capuana raggiunse una competenza tecnica quasi professionale. Il suo interesse per la fotografia è testimoniato fin dal 1862, durante il soggiorno fiorentino nella città degli Alinari, pionieri della fotografia italiana." %}</p>
+                  <p>{% trans "La fotografia divenne per Capuana una \"passione sviscerata\" a cui dedicò tempo, denaro ed energie creative. Si diede alla rudimentale e ingegnosa fabbricazione di macchine fotografiche, sperimentò con i materiali, costruì attrezzature personalizzate. Si autodefiniva un \"maniaco della camera oscura\" e passava ore nel suo laboratorio a sviluppare lastre e perfezionare stampe, tanto da compromettere la vista a causa dell'uso degli acidi." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Il Grande Atelier Fotografico di Mineo (1880)" %}</h4>
+                  <p>{% trans "Nel 1880, tornato in Sicilia da Firenze, Capuana compie un passo decisivo: mette su a Mineo un laboratorio fotografico sistematicamente attrezzato, il \"Grande Atelier Fotografico in Mineo diretto dal Professor Luigi Capuana\". Il nome, enfatico e solenne, rivela l'ambizione del progetto ma anche un carattere romanzesco e teatrale." %}</p>
+                  <p>{% trans "L'Atelier diventa il suo rifugio, il luogo dove può sperimentare lontano dalle tensioni letterarie. Qui sviluppa lastre, stampa immagini, cataloga le fotografie con grande accuratezza annotando dati sul retro e in registri. Questa meticolosità rivela l'importance che attribuisce alla pratica fotografica, considerata non semplice hobby ma attività seria, quasi scientifica." %}</p>
+                  <p>{% trans "Il laboratorio è attrezzato per tutte le fasi del processo fotografico: dalla preparazione delle lastre allo scatto, dallo sviluppo dei negativi alla stampa finale. Capuana sperimenta tecniche avanzate, costruisce un ingranditore per la stampa delle lastre negative, perfeziona procedimenti chimici per ottenere tonalità particolari." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "La produzione fotografica: varietà e sperimentazione" %}</h4>
+                  <p>{% trans "L'archivio fotografico di Capuana, conservato nella Casa Museo Luigi Capuana e nella Biblioteca Comunale di Mineo, comprende 184 fotografie positive e 3 lastre, di cui circa la metà attribuibili con certezza allo scrittore. Tuttavia, molte fotografie autografe sono disperse in collezioni private. Capuana stesso, nel suo \"Catalogo delle negative fotografiche di L.C.\", riferiva di oltre 353 negativi e 100 positivi." %}</p>
+
+                  <h5 class="h6 fw-bold mt-3 mb-2">{% trans "I ritratti: psicologia e naturalezza" %}</h5>
+                  <p>{% trans "Capuana eccelleva nella ritrattistica. I suoi ritratti femminili sono particolarmente notevoli per l'espressività e la capacità di cogliere espressioni naturali, senza pose artificiose. Il ritratto della moglie Adelaide Bernardini del 1903 - parzialmente di spalle, a mezza figura, intensamente sensuale - è uno dei più riusciti." %}</p>
+                  <p>{% trans "Ma il capolavoro è il ritratto del giovane Luigi Pirandello fotografato nel 1884: uno degli scatti più intensi e originali della fotografia italiana ottocentesca. Pirandello ha lo sguardo penetrante, l'espressione concentrata: Capuana riesce a catturare non solo le fattezze fisiche ma qualcosa della personalità complessa del futuro drammaturgo." %}</p>
+                  <p>{% trans "Straordinario anche il ritratto della madre sul letto di morte: il viso appoggiato al guanciale, le palpebre abbassate, le labbra leggermente aperte negli ultimi respiri. Tutto è naturale e delicato, ma l'immagine nasconde anche un intento più profondo, legato all'interesse di Capuana per l'occulto e lo spiritismo." %}</p>
+
+                  <h5 class="h6 fw-bold mt-3 mb-2">{% trans "Le vedute di Mineo: documentazione urbana" %}</h5>
+                  <p>{% trans "Capuana fotografa sistematicamente il suo paese natale: il campanile di Santa Maria, il piano di San Pietro, la discesa dell'Orfanotrofio, la veduta dalla casa paterna, la Chiesa di Santa Agrippina, la Villa di Santa Margherita con il viale di rose, il panorama dal Monastero di Santa Maria degli Angeli." %}</p>
+                  <p>{% trans "Le vedute, stampate in formato cartolina, Capuana ama inviarle ad amici e conoscenti. Non perde occasione di chiedere giudizi sul suo lavoro fotografico o di procurarsi nuovi soggetti da ritrarre. Quando diventa sindaco di Mineo, utilizza la fotografia anche per documentare ufficialmente le attività amministrative, creando un archivio fotografico della città che aveva anche valenza politica e di memoria collettiva." %}</p>
+
+                  <h5 class="h6 fw-bold mt-3 mb-2">{% trans "Le scene rurali e la documentazione etnografica" %}</h5>
+                  <p>{% trans "Importanti sono le fotografie realizzate nel 1902 nell'allevamento di cavalli del barone Grimaldi a Niscima, accuratamente didascalizzate. Come Verga, anche Capuana documenta il mondo rurale, i personaggi popolari, i costumi tradizionali. Questi soggetti diventano poi figure chiave del suo teatro dialettale e delle sue novelle." %}</p>
+
+                  <h5 class="h6 fw-bold mt-3 mb-2">{% trans "La stereoscopia e le sperimentazioni tecniche" %}</h5>
+                  <p>{% trans "Capuana amava cimentarsi nello sperimentare tutte le novità tecniche, e non poteva non restare affascinato dalla stereoscopia. Questa tecnica, arrivata in Italia intorno al 1855, permetteva di ottenere immagini tridimensionali attraverso un visore binoculare." %}</p>
+                  <p>{% trans "Capuana sperimenta la stereoscopia per realizzare cartoline del paese che mostrassero feste popolari e aspetti tradizionali. Costruisce anche una macchina fotografica rudimentale usando una semplice scatola di cartone e una lente di binocolo, dimostrando inventiva tecnica e curiosità sperimentale." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Fotografia e spiritismo: alla ricerca dell'invisibile" %}</h4>
+                  <p>{% trans "Un aspetto peculiare e affascinante della fotografia capuaniana è il legame con l'occulto e lo spiritismo. Capuana non si limitava a fotografare il visibile: cercava di catturare l'invisibile." %}</p>
+                  <p>{% trans "Produceva fotografie di defunti, compresa quella della madre, probabilmente con l'intento di cogliere qualche indizio del mondo invisibile che si celava oltre la morte. In camera oscura metteva a punto procedimenti attraverso i quali stampava strane forme in cui credeva di ravvisare immagini di spiriti o fantasmi. Fotografò una giovane posseduta, cercando di documentare i fenomeni paranormali." %}</p>
+                  <p>{% trans "Questo interesse non era isolato: negli ultimi decenni dell'Ottocento esisteva un intero filone di ricerche fotografiche dedicate a catturare spiriti, apparizioni, fenomeni metapsichici. Capuana, da \"ciarlatano appassionato\" (come ironicamente si autodefiniva) ma anche da sperimentatore serio, partecipava a questa ricerca di confine tra scienza e mistero." %}</p>
+                  <p>{% trans "La scoperta dei raggi X - su cui scriverà il racconto \"Raggi X\" nel 1898 - sembrò confermare le sue intuizioni: esisteva davvero un mondo invisibile che la scienza stava scoprendo! La fotografia poteva essere lo strumento per esplorare dimensioni nascoste della realtà." %}</p>
+
+                  <h4 class="h5 fw-bold mt-4 mb-3">{% trans "Gli scherzi fotografici: l'autoritratto da morto" %}</h4>
+                  <p>{% trans "Capuana aveva anche un lato umoristico e teatrale. A 48 anni si fotografò su una poltrona fingendosi morto, con gli occhi chiusi e le mani giunte. Stampò alcune cartoline e le mandò agli amici come macabro scherzo." %}</p>
+                  <p>{% trans "Giovanni Verga, nel 1877, cascò in pieno nello scherzo e corse in casa Capuana a porgere le condoglianze, che si trasformarono in un'allegra chiacchierata non appena fu smascherato l'inganno. Gabriele D'Annunzio rispose con versi ironici: \"Esulta amico forte e non ti disperar / L'aspetto tuo di morte par vita secolar\"." %}</p>
+                  <p>{% trans "Qualche anno dopo Capuana realizzò un altro falso: un'autorappresentazione su un vero letto di morte con velluto nero e fregi dorati. Federico De Roberto pubblicò questa fotografia nel 1916, dopo la morte dell'amico, in un articolo commemorativo intitolato \"Luigi Capuana nei cimeli fotografici di De Roberto\"." %}</p>
+                  <p>{% trans "Questi scherzi rivelano il carattere complesso di Capuana: serietà sperimentale e ironia, ricerca scientifica e gioco teatrale, documentazione realistica e fascinazione per l'illusione." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "Fotografia e letteratura: un dialogo complesso" %}</h3>
+                  <p>{% trans "Le immagini fotografiche di Capuana costituivano anche elementi preparatori per i suoi romanzi. C'è un racconto, \"Gelosia\" (1883), in cui il sentimento nasce proprio dalla scoperta di un ritratto fotografico della rivale in amore: la fotografia come presenza inquietante, prova materiale di un tradimento, oggetto che innesca il dramma psicologico." %}</p>
+                  <p>{% trans "Tuttavia, a differenza di chi cerca connessioni dirette tra le due pratiche, è forse più corretto vedere fotografia e letteratura come ambiti paralleli attraverso cui Capuana esplorava la realtà. Il suo Atelier di Mineo era quasi un rifugio dove poteva sperimentare lontano dalle tensioni letterarie." %}</p>
+                  <p>{% trans "La pratica fotografica di Capuana era di tipo più artistico rispetto a quella di Verga: dedicava grande impegno alle fasi successive allo scatto, al ritocco, alla composizione. Mentre Verga si concentrava sulle qualità istantanee della fotografia, Capuana curava anche le fasi preparatorie: scelta del soggetto, posizione, occupazione dello spazio nell'inquadratura, luci, messinscena." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "La Triade di Catania: Verga, Capuana, De Roberto" %}</h3>
+                  <p>{% trans "Il 4 dicembre 1887 è una data significativa. Nella casa catanese di Verga in via Sant'Anna 8, sul terrazzino del terzo piano, i tre scrittori-fotografi si ritrovano per una sessione fotografica. Si ritraggono a turno, si fotografano reciprocamente, discutono di tecnica e di letteratura." %}</p>
+                  <p>{% trans "Si erano autodefiniti \"La Triade di Catania\" per i continui dibattiti durante i quali discutevano di fotografia, ma non solo. Federico De Roberto, il più giovane e forse il più dotato tecnicamente, si definiva \"apprendista\" di Capuana, che era lusingato dalle lodi ricevute." %}</p>
+                  <p>{% trans "Le fotografie di quella giornata sono documenti preziosi: mostrano i tre autori nel momento di massima complicità intellettuale, quando fotografia e letteratura dialogavano intensamente, quando il Verismo siciliano era nel pieno della sua maturità creativa." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "Fotografia e Verismo: un'affinità elettiva" %}</h3>
+                  <p>{% trans "Il legame tra scrittura e fotografia non è casuale. Il Verismo italiano nasce proprio in quegli anni come movimento impegnato a \"fotografare\" la realtà sociale nella sua dimensione più cruda, diretta, non idealizzata. La metafora fotografica è centrale nella poetica verista: osservazione oggettiva, impersonalità, documento del reale." %}</p>
+                  <p>{% trans "In questo senso, le fotografie di Verga e Capuana costituiscono un archivio visivo del reale perfettamente affine alla loro narrativa. Non sono illustrazioni dei testi, ma documenti paralleli: un altro modo di guardare, registrare, testimoniare." %}</p>
+                  <p>{% trans "Come scrive uno studioso, mostre e ricerche recenti mostrano come la fotografia sia stata un complemento metodologico alla scrittura letteraria, restituendoci un'immagine del Verismo italiano più sfaccettata e complessa di quanto non riesca a fare la sola letteratura." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "Un patrimonio riscoperto" %}</h3>
+                  <p>{% trans "Per decenni le fotografie di Verga e Capuana rimasero dimenticate. Quelle di Verga furono riscoperte solo nel 1966, quelle di Capuana conservate a Mineo rimasero note principalmente agli studiosi di settore. Mostre recenti - come \"La segreta mania. Giovanni Verga fotografo\" organizzata dalla Fondazione 3M - hanno finalmente portato all'attenzione del grande pubblico questo patrimonio." %}</p>
+                  <p>{% trans "Le immagini originali di Verga sono andate perdute o sono troppo delicate per essere maneggiate. Le stampe attuali sono realizzazioni moderne, ottenute con accurata ricerca filologica per riprodurre le corrette tonalità delle lastre originali. Rappresentano comunque una testimonianza preziosa di uno sguardo, di un modo di vedere il mondo che ha accompagnato e forse influenzato la nascita del capolavori letterari." %}</p>
+                  <p>{% trans "Oggi, nell'era della proliferazione delle immagini, guardare le fotografie di Verga e Capuana significa recuperare uno sguardo: quello di chi ha vissuto l'invenzione di un medium che avrebbe cambiato per sempre il nostro rapporto con la realtà, la memoria, il tempo. È uno sguardo ancora capace di interrogarci, di mostrarci volti e luoghi con una presenza che resiste al passare dei decenni." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "L'archivio nel Parco Letterario" %}</h3>
+                  <p>{% trans "Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza questo patrimonio fotografico come parte integrante dell'esperienza verista. Le fotografie non sono semplici documenti storici, ma strumenti per una comprensione più profonda:" %}</p>
+                  <ul>
+                    <li><strong>{% trans "Accompagnano i percorsi letterari:" %}</strong> {% trans "permettendo di vedere i luoghi, i costumi, i volti che hanno ispirato le opere" %}</li>
+                    <li><strong>{% trans "Documentano un'epoca:" %}</strong> {% trans "testimoniando modi di vita, mestieri, architetture, paesaggi in gran parte scomparsi" %}</li>
+                    <li><strong>{% trans "Rivelano uno sguardo:" %}</strong> {% trans "quello degli autori quando non scrivevano ma guardavano, quando la realtà non passava attraverso le parole ma attraverso la luce" %}</li>
+                  </ul>
+                  <p>{% trans "Nelle installazioni del Parco, fotografie e testi dialogano, creando un'esperienza immersiva dove letteratura e immagine si illuminano reciprocamente. Il visitatore può così vedere il mondo con gli occhi di Verga e Capuana, comprendere come quello sguardo fotografico sia diventato stile letterario, scoprire nel dettaglio di un volto o di un paesaggio la genesi di un personaggio o di una descrizione." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "Le collezioni fotografiche" %}</h3>
+                  <p>{% trans "L'archivio fotografico del Parco Letterario si avvale della preziosa collaborazione di due istituzioni fondamentali per la conservazione e valorizzazione del patrimonio verista:" %}</p>
+                  
+                  <h5 class="h6 fw-bold mt-4">{% trans "Casa Museo Luigi Capuana - Mineo" %}</h5>
+                  <p>{% trans "La Casa Museo Luigi Capuana, situata nell'imponente palazzo nobiliare ottocentesco che fu abitazione dello scrittore in Via Romano 16 a Mineo, custodisce l'archivio fotografico originale di Capuana. Il museo conserva 184 fotografie positive e 3 lastre, di cui circa la metà attribuibili con certezza all'autore, insieme ai manoscritti, alle opere a stampa, alla biblioteca personale, ai mobili e ai cimeli dello scrittore." %}</p>
+                  <p>{% trans "Particolarmente significativo è l'archivio che testimonia l'attività di Capuana come fotografo, con i carteggi con intellettuali e scrittori coevi (tra cui Ibsen, Balzac, Zola, Verga, D'Annunzio, De Roberto, Pirandello, Graf) e i ritratti fotografici realizzati dallo stesso Capuana. Il palazzo, acquisito dal Comune di Mineo con atto notarile del 18 novembre 1926, ospita anche la Biblioteca Comunale dedicata allo scrittore e rappresenta una tappa imprescindibile per comprendere la figura di Capuana fotografo e intellettuale." %}</p>
+
+                  <h5 class="h6 fw-bold mt-4">{% trans "Fondazione 3M" %}</h5>
+                  <p>{% trans "Fondazione 3M - ETS è un'istituzione culturale permanente di ricerca e formazione, proprietaria di uno storico archivio fotografico di oltre 110.000 immagini provenienti dalla storica azienda fotografica italiana Ferrania (acquisita negli anni Sessanta da 3M). La Fondazione custodisce il prezioso Fondo Giovanni Verga, che comprende le riproduzioni delle oltre 400 fotografie dello scrittore catanese." %}</p>
+                  <p>{% trans "Le immagini originali di Verga - 327 negativi su lastre di vetro e 121 su pellicola in celluloide - furono scoperte solo nel 1966 nella sua abitazione di campagna a Vizzini. Purtroppo gli originali sono andati perduti o risultano troppo delicati per essere maneggiate. La Fondazione 3M ha realizzato stampe moderne con un'accurata ricerca filologica per riprodurre le corrette tonalità delle lastre originali, permettendo così al pubblico di conoscere l'opera fotografica verghiana." %}</p>
+                  <p>{% trans "Dal 2004, con la prima mostra \"Giovanni Verga Scrittore Fotografo\" al Palazzo dell'Arengario di Milano, fino alle esposizioni più recenti come \"La segreta mania - Giovanni Verga fotografo\" (Vizzini 2022, Seriate 2023), la Fondazione 3M ha contribuito in modo decisivo a far conoscere al grande pubblico questo aspetto dimenticato del padre del Verismo. Nel 2005, la Fondazione donò al Museo Civico \"Immaginario Verghiano\" di Vizzini le stampe di circa 100 fotografie di Verga, contribuendo alla valorizzazione del patrimonio culturale del territorio." %}</p>
+                </div>
+
+                <div class="mb-5">
+                  <h3 class="h4 fw-bold mb-3">{% trans "Un patrimonio condiviso" %}</h3>
+                  <p>{% trans "Le fotografie presenti nell'archivio del Parco Letterario Giovanni Verga e Luigi Capuana sono state gentilmente concesse da Casa Museo Luigi Capuana di Mineo e Fondazione 3M, che hanno reso possibile la creazione di un percorso visivo integrato con gli itinerari letterari del territorio." %}</p>
+                  <p>{% trans "Questa collaborazione permette ai visitatori di accedere a un patrimonio altrimenti disperso o custodito in sedi diverse, creando un'esperienza unitaria dove le immagini di entrambi gli autori dialogano con i luoghi reali, con i testi letterari, con la memoria storica del territorio. L'archivio fotografico del Parco diventa così memoria viva, strumento di conoscenza, ponte tra passato e presente, tra l'occhio che ha guardato e l'occhio che guarda, tra la Sicilia narrata e la Sicilia vissuta." %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Modal per visualizzazione a schermo intero -->

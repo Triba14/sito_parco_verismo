@@ -1,4 +1,4 @@
-# Parco Letterario del Verismo
+# Parco Letterario Giovanni Verga e Luigi Capuana
 
 Piattaforma web moderna per la promozione e valorizzazione del patrimonio letterario verista siciliano, con focus su Giovanni Verga e Luigi Capuana.
 

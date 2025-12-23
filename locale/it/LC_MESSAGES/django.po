@@ -70,7 +70,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:116
 msgid ""
-"Il Parco Letterario del Verismo è ufficialmente riconosciuto da enti "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana è ufficialmente riconosciuto da enti "
 "nazionali e internazionali, garantendo qualità, trasparenza e valore "
 "culturale alle nostre attività."
 msgstr ""
@@ -275,12 +275,12 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/base.html:20
 msgid ""
-"Scopri il Parco Letterario del Verismo: itinerari, eventi e cultura nei "
+"Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi e cultura nei "
 "luoghi di Verga e Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/base.html:29
-msgid "Scopri il Parco Letterario del Verismo in Sicilia"
+msgid "Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/base.html:38
@@ -396,7 +396,7 @@ msgid "alle"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/calendario.html:344
-msgid "Scopri di più sul sito del Parco Letterario del Verismo!"
+msgid "Scopri di più sul sito del Parco Letterario Giovanni Verga e Luigi Capuana!"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/calendario.html:346
@@ -419,7 +419,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/index.html:17
 #: parco_verismo/templates/parco_verismo/index.html:32
 #: parco_verismo/templates/parco_verismo/privacy_policy.html:71
-msgid "Parco Letterario del Verismo"
+msgid "Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:41
@@ -427,7 +427,7 @@ msgid "REGOLAMENTO DEL COMITATO TECNICO-SCIENTIFICO"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:42
-msgid "del Progetto \"Il Parco Letterario del Verismo\""
+msgid "del Progetto \"Il Parco Letterario Giovanni Verga e Luigi Capuana\""
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:47
@@ -437,7 +437,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:49
 msgid ""
 "È istituito il Comitato Tecnico-Scientifico (CTS) del Progetto &ldquo;Il "
-"Parco Letterario del Verismo&rdquo; nell&rsquo;ambito del finanziamento "
+"Parco Letterario Giovanni Verga e Luigi Capuana&rdquo; nell&rsquo;ambito del finanziamento "
 "D.D.G. n. 1159 del 6 marzo 2025 della Regione Siciliana. Il CTS è organo "
 "consultivo e di indirizzo strategico, con il compito di garantire la qualità "
 "scientifica, culturale e metodologica delle attività del progetto, nonché di "
@@ -687,7 +687,7 @@ msgid "Organi Direttivi"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:23
-msgid "Presidio culturale e scientifico del Parco Letterario del Verismo"
+msgid "Presidio culturale e scientifico del Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:118
@@ -1382,7 +1382,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:84
 msgid ""
-"Il Parco Letterario del Verismo si impegna a rendere il proprio sito web "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a rendere il proprio sito web "
 "accessibile, conformemente al"
 msgstr ""
 
@@ -1625,7 +1625,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:162
 msgid ""
 "Gli utenti che riscontrassero difficoltà nell'accesso a contenuti o servizi "
-"del sito possono contattare il Parco Letterario del Verismo per richiedere "
+"del sito possono contattare il Parco Letterario Giovanni Verga e Luigi Capuana per richiedere "
 "assistenza o segnalare problemi di accessibilità:"
 msgstr ""
 
@@ -1646,7 +1646,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:179
 msgid ""
-"Il Parco Letterario del Verismo si impegna a fornire risposta alle "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a fornire risposta alle "
 "segnalazioni entro"
 msgstr ""
 
@@ -1747,7 +1747,7 @@ msgid "8. Aggiornamenti e Miglioramenti"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:227
-msgid "Il Parco Letterario del Verismo si impegna a:"
+msgid "Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a:"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:230
@@ -1826,7 +1826,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/documenti.html:11
 msgid ""
-"Esplora i documenti e gli studi pubblicati dal Parco Letterario del Verismo"
+"Esplora i documenti e gli studi pubblicati dal Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/documenti.html:20
@@ -1957,7 +1957,7 @@ msgid "Agenda"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/eventi.html:60
-msgid "Scopri tutti gli eventi organizzati dal Parco Letterario del Verismo"
+msgid "Scopri tutti gli eventi organizzati dal Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/eventi.html:72
@@ -2110,7 +2110,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/index.html:35
 msgid ""
-"Il Parco Letterario del Verismo valorizza il patrimonio verista attraverso "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso "
 "ricerca, percorsi culturali e progetti che coinvolgono la comunità. "
 "L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo "
 "condiviso, favorendo un turismo culturale responsabile e un territorio in "
@@ -2864,7 +2864,7 @@ msgid "Chi Siamo"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:22
-msgid "Il Parco Letterario del Verismo"
+msgid "Il Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:25
@@ -2875,7 +2875,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:118
 msgid ""
-"Il Parco Letterario del Verismo nasce per costruire nei territori di "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana nasce per costruire nei territori di "
 "Vizzini, Mineo e Licodia Eubea un modello integrato di welfare culturale "
 "fondato sulla valorizzazione dell&rsquo;eredità verista di Giovanni Verga e "
 "Luigi Capuana come motore di crescita sociale, educativa e turistica."
@@ -2960,7 +2960,7 @@ msgid ""
 "Il progetto &egrave; promosso dagli Enti locali del territorio ed &egrave; "
 "formalmente riconosciuto e finanziato dalla Regione Siciliana ai sensi del "
 "D.D.G. n. 1159 del 6 marzo 2025, quale iniziativa di interesse pubblico "
-"finalizzata alla realizzazione del Parco Letterario del Verismo. Questo "
+"finalizzata alla realizzazione del Parco Letterario Giovanni Verga e Luigi Capuana. Questo "
 "riconoscimento istituzionale sancisce il valore strategico "
 "dell&rsquo;intervento e ne legittima l&rsquo;attuazione in un orizzonte di "
 "continuità e pianificazione."
@@ -3083,7 +3083,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:60
 msgid ""
-"Il presente sito web è gestito dal Parco Letterario del Verismo, "
+"Il presente sito web è gestito dal Parco Letterario Giovanni Verga e Luigi Capuana, "
 "un'iniziativa culturale promossa dai Comuni di Vizzini, Licodia Eubea e "
 "Mineo (Provincia di Catania, Sicilia) per la valorizzazione del patrimonio "
 "letterario verista siciliano."
@@ -3139,7 +3139,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/note_legali.html:84
 msgid ""
 "I contenuti presenti sul sito (testi, immagini, documenti, multimedia) sono "
-"forniti a scopo informativo e culturale. Il Parco Letterario del Verismo si "
+"forniti a scopo informativo e culturale. Il Parco Letterario Giovanni Verga e Luigi Capuana si "
 "impegna a mantenere le informazioni aggiornate e accurate, ma non può "
 "garantire l'assenza di errori o omissioni."
 msgstr ""
@@ -3241,7 +3241,7 @@ msgid "6. Esclusione di Responsabilità"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:131
-msgid "Il Parco Letterario del Verismo:"
+msgid "Il Parco Letterario Giovanni Verga e Luigi Capuana:"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:134
@@ -3302,7 +3302,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:154
 msgid ""
-"Il Parco Letterario del Verismo si riserva il diritto di modificare le "
+"Il Parco Letterario Giovanni Verga e Luigi Capuana si riserva il diritto di modificare le "
 "presenti Note Legali in qualsiasi momento. Le modifiche entrano in vigore "
 "dal momento della loro pubblicazione sul sito. Si invita l'utente a "
 "consultare periodicamente questa pagina."
@@ -3372,7 +3372,7 @@ msgid "News & Novità"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/notizie.html:60
-msgid "Rimani aggiornato sulle ultime novità del Parco Letterario del Verismo"
+msgid "Rimani aggiornato sulle ultime novità del Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/notizie.html:72
@@ -3707,7 +3707,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:263
 msgid ""
 "Scopri le opportunità di collaborazione e di partecipazione ai progetti "
-"culturali del Parco Letterario del Verismo."
+"culturali del Parco Letterario Giovanni Verga e Luigi Capuana."
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:265
@@ -4074,7 +4074,7 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:68
 msgid ""
 "Lo statuto fondamentale che definisce la natura, i principi, gli obiettivi e "
-"l'organizzazione del Parco Letterario del Verismo."
+"l'organizzazione del Parco Letterario Giovanni Verga e Luigi Capuana."
 msgstr ""
 
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:76
