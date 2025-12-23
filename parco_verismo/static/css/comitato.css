@@ -1,6 +1,10 @@
 /* ========================================================
-   COMITATO TECNICO-SCIENTIFICO - CSS Ottimizzato
-   Struttura simile a regolamenti_documenti.css
+   COMITATO TECNICO-SCIENTIFICO - STILI PERSONALIZZATI
+   Tutte le variabili colore sono ora in styles.css globale
+   ======================================================== */
+
+/* ========================================================
+   PAGE SETUP
    ======================================================== */
 
 .comitato-page {
@@ -9,10 +13,10 @@
 }
 
 /* ========================================================
-   HERO CUSTOM - Gradiente Rosso Terracotta
+   HERO SECTION
    ======================================================== */
 
-.cts-hero {
+.cts-hero, .mv-hero {
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -27,7 +31,7 @@
     overflow: hidden;
 }
 
-.cts-hero-overlay {
+.cts-hero-overlay, .mv-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,12 +43,12 @@
     pointer-events: none;
 }
 
-.cts-hero-content {
+.cts-hero-content, .mv-hero-content {
     position: relative;
     z-index: 10;
 }
 
-.cts-badge {
+.cts-badge, .mv-badge {
     display: inline-block;
     padding: 0.5rem 1rem;
     background: rgba(243, 196, 113, 0.25);
@@ -58,25 +62,23 @@
     backdrop-filter: blur(10px);
 }
 
-.cts-hero-title {
+.cts-hero-title, .mv-hero-title {
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
 }
 
-.cts-hero-subtitle {
+.cts-hero-subtitle, .mv-hero-subtitle {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     max-width: 90%;
-    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cts-hero-image {
+.cts-hero-image, .mv-hero-image {
     position: relative;
     height: 100%;
     min-height: 500px;
@@ -94,33 +96,73 @@
     animation: float 6s ease-in-out infinite;
 }
 
+/* SVG Color Classes - usando variabili CSS */
+.placeholder-image svg,
+.placeholder-image-secondary svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Colori di riempimento */
+.svg-fill-primary { fill: var(--color-primary); }
+.svg-fill-primary-dark { fill: var(--color-primary-dark); }
+.svg-fill-primary-light { fill: var(--color-primary-light); }
+.svg-fill-secondary { fill: var(--color-secondary); }
+.svg-fill-secondary-light { fill: var(--color-secondary-light); }
+.svg-fill-accent { fill: var(--color-accent); }
+.svg-fill-background { fill: var(--color-background); }
+.svg-fill-surface { fill: var(--color-surface-elevated); }
+
+/* Colori di stroke */
+.svg-stroke-primary { stroke: var(--color-primary); }
+.svg-stroke-primary-dark { stroke: var(--color-primary-dark); }
+.svg-stroke-secondary { stroke: var(--color-secondary); }
+.svg-stroke-accent { stroke: var(--color-accent); }
+
+/* Stop colors per gradienti (tramite style inline) */
+.svg-stop-primary { stop-color: var(--color-primary); }
+.svg-stop-primary-dark { stop-color: var(--color-primary-dark); }
+.svg-stop-secondary { stop-color: var(--color-secondary); }
+.svg-stop-accent { stop-color: var(--color-accent); }
+
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 /* ========================================================
-   SEZIONI - Forza background uniforme
+   SECTIONS
    ======================================================== */
 
-.comitato-page .pages-section,
-.comitato-page .cts-section {
+.cts-section, .mv-section {
     position: relative;
     padding: 4rem 0;
-    background: var(--color-background) !important;
 }
 
-.comitato-page .pages-section.pages-institution,
-.comitato-page .cts-section.cts-institution {
+.cts-section.cts-institution, .mv-section.mv-institution {
+    background: var(--color-background);
     border-bottom: 1px solid var(--color-border);
 }
 
-/* Rimuove margine dal footer per evitare stacco di colore */
-.comitato-page .site-footer {
-    margin-top: 0 !important;
+.cts-section.cts-composition, .mv-section.mv-composition {
+    background: color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-background));
 }
 
-.cts-section-title {
+.cts-section.cts-functions, .mv-section.mv-functions {
+    background: linear-gradient(135deg, 
+        var(--color-surface) 0%,
+        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface)) 100%);
+}
+
+.cts-section.cts-cta, .mv-section.mv-cta {
+    background: var(--color-background);
+}
+
+.cts-section-title, .mv-section-title {
     font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
@@ -128,7 +170,7 @@
     margin-bottom: 1.5rem;
 }
 
-.cts-title-accent {
+.cts-title-accent, .mv-title-accent {
     background: var(--color-gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -136,10 +178,10 @@
 }
 
 /* ========================================================
-   HIGHLIGHT TEXT & INFO BOX
+   HIGHLIGHT TEXT
    ======================================================== */
 
-.cts-highlight-text {
+.cts-highlight-text, .mv-highlight-text {
     padding: 1.5rem;
     background: linear-gradient(135deg,
         rgba(199, 106, 82, 0.08) 0%,
@@ -148,7 +190,7 @@
     border-radius: 0.5rem;
 }
 
-.cts-highlight-text .lead {
+.cts-highlight-text .lead, .mv-highlight-text .lead {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--color-text-secondary);
@@ -156,7 +198,11 @@
     line-height: 1.8;
 }
 
-.cts-info-box {
+/* ========================================================
+   INFO BOX
+   ======================================================== */
+
+.cts-info-box, .mv-info-box {
     padding: 1.5rem;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -167,7 +213,8 @@
 
 .cts-info-box:hover {
     border-color: var(--color-primary-light);
-    box-shadow: 0 4px 12px rgba(74, 103, 65, 0.15);
+    box-shadow: var(--color-shadow-md);
+    background: color-mix(in srgb, var(--color-primary-pale) 30%, var(--color-surface));
 }
 
 .cts-info-box h4 {
@@ -185,7 +232,7 @@
 }
 
 /* ========================================================
-   COMPOSIZIONE - GRUPPI E MEMBER CARDS
+   COMPOSITION GROUPS
    ======================================================== */
 
 .pages-composition-group {
@@ -203,17 +250,22 @@
     color: var(--color-primary);
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    line-height: 1.4;
+    padding-right: 1rem;
 }
+
+/* ========================================================
+   MEMBER CARDS
+   ======================================================== */
 
 .pages-member-card {
     background: var(--color-surface);
-    border: 1px solid var(--color-neutral-200);
+    border: 1px solid var(--color-border);
     border-radius: 0.75rem;
     padding: 1.5rem;
     text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,9 +273,12 @@
 }
 
 .pages-member-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 103, 65, 0.15);
-    border-color: var(--color-primary-light);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.05) 0%,
+        var(--color-surface) 100%);
 }
 
 .pages-member-card-highlight {
@@ -233,42 +288,53 @@
     border: 2px solid var(--color-primary);
 }
 
+.pages-member-card-highlight:hover {
+    box-shadow: 0 12px 24px rgba(131, 50, 40, 0.15);
+}
+
 .pages-member-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 0.75rem;
-    display: inline-flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-primary-pale), var(--color-neutral-100));
+    background: linear-gradient(135deg,
+        rgba(130, 50, 40, 0.1) 0%,
+        rgba(192, 140, 59, 0.1) 100%);
+    border-radius: 50%;
     color: var(--color-primary);
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .pages-member-card:hover .pages-member-icon {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .pages-member-card h4 {
     font-family: 'TeX Gyre Termes', serif;
-    font-size: 0.95rem;
     font-weight: 600;
     color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .pages-member-card p {
     color: var(--color-text-secondary);
     font-size: 0.875rem;
-    margin-bottom: 0;
+    line-height: 1.5;
+    margin: 0;
+    word-wrap: break-word;
+}
+    margin: 0;
 }
 
 /* ========================================================
-   FUNZIONI
+   FUNCTIONS LIST
    ======================================================== */
 
 .cts-functions-list {
@@ -282,16 +348,16 @@
     gap: 1.5rem;
     padding: 1.5rem;
     background: var(--color-surface);
-    border: 1px solid var(--color-neutral-200);
     border-radius: 0.75rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cts-function-item:hover {
     transform: translateX(8px);
-    box-shadow: 0 4px 12px rgba(74, 103, 65, 0.15);
+    box-shadow: var(--color-shadow-md);
     border-color: var(--color-accent);
+    background: color-mix(in srgb, rgba(47, 109, 92, 0.05) 50%, var(--color-surface));
 }
 
 .cts-function-icon {
@@ -321,14 +387,74 @@
 }
 
 /* ========================================================
-   CTA - Copiato da regolamenti
+   CTA SECTION
    ======================================================== */
 
-.comitato-page .pages-section.pages-cta {
-    background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-neutral-100) 100%) !important;
-    min-height: 80vh;
+.cts-cta-card {
+    background: linear-gradient(135deg,
+        color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
+        color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 100%);
+    border: 2px solid var(--color-primary-light);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    box-shadow: var(--color-shadow-lg);
+}
+
+.cts-cta-card h2 {
+    color: var(--color-text-primary);
+}
+
+.cts-cta-card .lead {
+    color: var(--color-text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.cts-cta-buttons {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cts-cta-buttons .btn {
+    font-family: 'TeX Gyre Termes', serif;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cts-cta-buttons .btn-primary {
+    background: var(--color-gradient-primary);
+    border: none;
+    color: white;
+    display: inline-flex;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.cts-cta-buttons .btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(131, 50, 40, 0.3);
+    color: white;
+}
+
+/* ========================================================
+   IMAGE WRAPPERS
+   ======================================================== */
+
+.cts-image-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--color-shadow-lg);
+}
+
+.placeholder-image-secondary {
+    display: block;
+    width: 100%;
 }
 
 /* ========================================================
@@ -338,6 +464,14 @@
 @media (max-width: 991.98px) {
     .cts-hero {
         min-height: 70vh;
+    }
+    
+    .cts-hero-title {
+        font-size: 2rem;
+    }
+    
+    .cts-hero-subtitle {
+        font-size: 1rem;
     }
     
     .cts-section {
@@ -355,7 +489,7 @@
     }
     
     .cts-hero-title {
-        font-size: 2rem !important;
+        font-size: 1.75rem;
     }
     
     .cts-hero-content {
@@ -364,6 +498,8 @@
     
     .cts-hero-subtitle {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .cts-hero-image {
@@ -371,8 +507,8 @@
         margin-top: 2rem;
     }
     
-    .cts-section {
-        padding: 2rem 0;
+    .cts-section-title {
+        font-size: 1.5rem;
     }
     
     .cts-function-item {
@@ -384,8 +520,8 @@
         margin: 0 auto;
     }
     
-    .cts-cta-card {
-        padding: 2rem 1rem;
+    .cts-member-card {
+        padding: 1.25rem;
     }
     
     .cts-cta-buttons {
@@ -399,16 +535,161 @@
 }
 
 /* ========================================================
-   ACCESSIBILITÀ
+   ACCESSIBILITY & PRINT
    ======================================================== */
+
+@media print {
+    .cts-hero {
+        background: var(--color-surface);
+        color: var(--color-text-primary);
+        min-height: auto;
+    }
+    
+    .cts-badge {
+        border: 1px solid var(--color-text-primary);
+        background: none;
+    }
+    
+    .cts-member-card:hover,
+    .cts-function-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
 
 @media (prefers-reduced-motion: reduce) {
     .placeholder-image,
     .placeholder-image-secondary,
-    .pages-member-card,
-    .cts-function-item {
+    .cts-member-card,
+    .cts-function-item,
+    .cts-member-card:hover .cts-member-icon {
         animation: none !important;
         transition: none !important;
     }
+}
+
+/* ------------------------------------------------------------------
+   Compatibility / Hero & Section helpers (copied from missione_visione)
+   Provide both .cts-* and .mv-* selectors so templates that still
+   reference .mv- classes keep working (hero, overlays, image wrappers)
+   ------------------------------------------------------------------ */
+
+/* HERO / OVERLAY */
+.cts-hero, .mv-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, 
+        rgba(74, 20, 13, 0.95) 0%,
+        rgba(131, 50, 40, 0.85) 50%,
+        rgba(192, 140, 59, 0.4) 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="1000" height="1000" fill="url(%23dots)"/></svg>');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cts-hero-overlay, .mv-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 20% 50%, 
+        rgba(199, 106, 82, 0.15) 0%,
+        transparent 50%);
+    pointer-events: none;
+}
+
+.cts-hero-content, .mv-hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Badge / Title / Subtitle */
+.cts-badge, .mv-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(243, 196, 113, 0.25);
+    border: 1px solid rgba(243, 196, 113, 0.5);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.cts-hero-title, .mv-hero-title {
+    font-family: 'TeX Gyre Termes', serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.cts-hero-subtitle, .mv-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 90%;
+}
+
+.cts-hero-image, .mv-hero-image {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Placeholder images (SVG wrappers) */
+.placeholder-image, .placeholder-image-secondary,
+.cts-placeholder-image, .mv-placeholder-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(74, 20, 13, 0.15));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Image wrapper compatibility */
+.cts-image-wrapper, .mv-image-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--color-shadow-lg);
+}
+
+/* Section title compatibility */
+.cts-section-title, .mv-section-title {
+    font-family: 'TeX Gyre Termes', serif;
+    color: var(--color-text-primary);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive tweaks copied for hero behavior */
+@media (max-width: 991.98px) {
+    .cts-hero, .mv-hero { min-height: 70vh; }
+    .cts-hero-title, .mv-hero-title { font-size: 2rem; }
+    .cts-hero-subtitle, .mv-hero-subtitle { font-size: 1rem; }
+}
+
+@media (max-width: 767.98px) {
+    .cts-hero, .mv-hero { min-height: 60vh; }
+    .cts-hero-title, .mv-hero-title { font-size: 1.75rem; }
+    .cts-hero-content, .mv-hero-content { text-align: center; }
+    .cts-hero-image, .mv-hero-image { min-height: 350px; margin-top: 2rem; }
 }
 

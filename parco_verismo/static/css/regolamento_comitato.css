@@ -1,0 +1,309 @@
+/* ========================================================
+   REGOLAMENTO COMITATO - STILI PERSONALIZZATI
+   Tutte le variabili colore sono ora in styles.css globale
+   ======================================================== */
+
+/* ========================================================
+   PAGE SETUP
+   ======================================================== */
+
+.regolamento-comitato-page {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+/* ========================================================
+   HERO SECTION
+   ======================================================== */
+
+.reg-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: var(--color-gradient-primary),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="1000" height="1000" fill="url(%23dots)"/></svg>');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.reg-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 20% 50%,
+            rgba(199, 106, 82, 0.15) 0%,
+            transparent 50%);
+    pointer-events: none;
+}
+
+.reg-hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.reg-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(243, 196, 113, 0.25);
+    border: 1px solid rgba(243, 196, 113, 0.5);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.reg-hero-title {
+    font-family: 'Perandory', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.reg-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================================
+   CONTENT SECTION
+   ======================================================== */
+
+.reg-section {
+    padding: 4rem 0;
+    background: var(--color-background);
+}
+
+.reg-content {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: var(--color-shadow-md);
+}
+
+/* ========================================================
+   HEADER
+   ======================================================== */
+
+.reg-header {
+    border-bottom: 3px solid var(--color-primary-light);
+    padding-bottom: 2rem;
+}
+
+.reg-header h2 {
+    font-family: 'TeX Gyre Termes', serif;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.reg-header p {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+/* ========================================================
+   ARTICLES
+   ======================================================== */
+
+.reg-article {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg,
+            rgba(250, 238, 231, 0.5) 0%,
+            rgba(255, 254, 253, 1) 100%);
+    border-left: 4px solid var(--color-primary-light);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.reg-article:hover {
+    box-shadow: var(--color-shadow-md);
+    border-left-color: var(--color-primary);
+}
+
+.reg-article-title {
+    font-family: 'TeX Gyre Termes', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.reg-article p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.reg-article p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================================
+   LISTS
+   ======================================================== */
+
+.reg-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.reg-list li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+}
+
+.reg-list li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-light);
+    font-weight: bold;
+}
+
+.reg-list-lettered {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.reg-list-lettered li {
+    padding: 0.75rem 0 0.75rem 2.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+}
+
+.reg-list-lettered li strong {
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+/* ========================================================
+   PLACEHOLDER
+   ======================================================== */
+
+.reg-placeholder {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.reg-placeholder .alert {
+    background: linear-gradient(135deg,
+            rgba(199, 106, 82, 0.1) 0%,
+            rgba(192, 140, 59, 0.05) 100%);
+    border: 1px solid var(--color-primary-light);
+    color: var(--color-text-primary);
+    font-size: 1.05rem;
+}
+
+.reg-placeholder .alert i {
+    margin-right: 0.75rem;
+    color: var(--color-primary);
+}
+
+/* ========================================================
+   ACTIONS
+   ======================================================== */
+
+.reg-actions {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 2rem;
+}
+
+.reg-actions .btn {
+    font-family: 'TeX Gyre Termes', serif;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #5B4034 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--color-shadow-lg);
+    border-color: var(--color-primary);
+}
+
+/* ========================================================
+   RESPONSIVE
+   ======================================================== */
+
+@media (max-width: 767.98px) {
+    .reg-hero {
+        min-height: 40vh;
+    }
+
+    .reg-hero-title {
+        font-size: 1.75rem;
+    }
+
+    .reg-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .reg-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .reg-placeholder {
+        min-height: 200px;
+    }
+}
+
+/* ========================================================
+   PRINT
+   ======================================================== */
+
+@media print {
+    .reg-hero {
+        min-height: auto;
+        background: var(--color-surface);
+    }
+
+    .reg-badge {
+        border: 1px solid var(--color-text-primary);
+    }
+
+    .reg-actions {
+        display: none;
+    }
+}

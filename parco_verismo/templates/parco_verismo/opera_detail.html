@@ -11,12 +11,23 @@
     <div class="col-lg-8">
       <h1 class="text-center mb-3">{{ opera.titolo }}</h1>
       <h2 class="text-center text-muted mb-5">{% blocktrans with autore=opera.autore.nome %}di {{ autore }}{% endblocktrans %}</h2>
+      
+      {% if opera.anno_pubblicazione %}
+        <p class="text-center text-muted mb-4"><strong>{% trans 'Anno di pubblicazione' %}:</strong> {{ opera.anno_pubblicazione }}</p>
+      {% endif %}
+
       {% if opera.copertina %}
         <div class="text-center mb-4">
           <img src="{{ opera.copertina.url }}" alt="Copertina di {{ opera.titolo }}" class="img-fluid rounded shadow" style="max-height: 350px; object-fit: contain;">
         </div>
       {% endif %}
       <div class="presentazione-opera mb-5">
+        {% if opera.breve_descrizione %}
+          <div class="alert alert-light border-start border-primary border-4 mb-5">
+            <p class="lead mb-0">{{ opera.breve_descrizione }}</p>
+          </div>
+        {% endif %}
+
         <h3 class="mb-3">{% trans 'Trama' %}</h3>
         <p class="text-justify">{{ opera.trama|linebreaks }}</p>
 
