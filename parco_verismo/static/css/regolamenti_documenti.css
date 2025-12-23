@@ -153,7 +153,7 @@ section.page-section:nth-of-type(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
     color: white;
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
@@ -670,7 +670,7 @@ section.page-section:nth-of-type(even) {
     background: linear-gradient(135deg,
             var(--color-primary-dark) 0%,
             var(--color-primary) 50%,
-            var(--color-secondary-dark) 100%);
+            var(--color-primary-light) 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -911,7 +911,7 @@ section.page-section:nth-of-type(even) {
 }
 
 .page-section-accent {
-    background: linear-gradient(120deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(120deg, var(--color-primary), var(--color-primary-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

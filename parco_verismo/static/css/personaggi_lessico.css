@@ -63,9 +63,6 @@
 
 .personaggi-lessico-page .pages-cta {
     background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-neutral-100) 100%) !important;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
 }
 
 /* Rimuove margine dal footer */
@@ -251,10 +248,17 @@
     .pl-character-header {
         position: static;
         margin-bottom: 1.5rem;
+        padding: 1.25rem 1rem;
     }
     
     .pl-character-block {
         padding: 1.5rem 0;
+    }
+    
+    .pl-character-content,
+    .pl-intro-content,
+    .pl-final-content {
+        padding: 0 1rem;
     }
     
     .pages-section {
@@ -283,11 +287,21 @@
     .pl-intro-content,
     .pl-final-content {
         font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+    
+    .pl-character-header {
+        padding: 1.25rem 1.5rem;
     }
     
     .pl-tipo-card,
     .pl-lessico-item {
         margin-bottom: 1rem;
+    }
+    
+    .pages-cta .btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
