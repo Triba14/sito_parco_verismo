@@ -818,3 +818,127 @@ html, body {
     border-color: var(--color-primary);
     box-shadow: 0 6px 18px rgba(130,50,40,0.06);
 }
+
+/* ========================================================
+   MOBILE/TABLET FIX - RESPONSIVE IMPROVEMENTS
+   ======================================================== */
+
+/* Hide decorative SVG illustrations on mobile - they cause visual noise */
+@media (max-width: 991.98px) {
+    .hp-illustration {
+        display: none !important;
+    }
+    
+    .hp-image-wrapper {
+        display: none !important;
+    }
+    
+    /* Make columns full width when illustration is hidden */
+    .hp-section .col-lg-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    /* Center content when illustration is hidden */
+    .hp-content {
+        text-align: center;
+    }
+    
+    .hp-features {
+        text-align: left;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Further mobile-specific fixes */
+@media (max-width: 767.98px) {
+    /* Ensure no horizontal overflow */
+    .container,
+    .container-xl,
+    .container-fluid {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Reduce hero height for better mobile experience */
+    header {
+        height: 70vh !important;
+        min-height: 350px !important;
+    }
+    
+    /* Smaller hero title on mobile */
+    .hero-title {
+        font-size: 1.75rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    /* Section padding reduction */
+    .hp-section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    /* Smaller section titles */
+    .hp-section-title {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Hide background pseudo-elements that cause overflow */
+    #il-parco.hp-parco::before {
+        display: none !important;
+    }
+    
+    /* Cards full width on mobile */
+    .hp-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Remove max-height restrictions that may clip content */
+    #il-parco.hp-parco {
+        max-height: none !important;
+        min-height: auto !important;
+    }
+    
+    #il-parco .hp-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    /* Form improvements for touch */
+    .hp-contact-form .form-control {
+        height: 50px;
+        font-size: 16px; /* Prevents iOS zoom on input focus */
+    }
+    
+    .hp-contact-card {
+        padding: 1rem !important;
+    }
+}
+
+/* Very small screens (< 400px) */
+@media (max-width: 399px) {
+    .hero-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .hero-content {
+        padding: 1rem !important;
+    }
+    
+    .hp-section-title {
+        font-size: 1.25rem !important;
+    }
+    
+    .hp-cta-buttons .btn {
+        padding: 0.6rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+}
