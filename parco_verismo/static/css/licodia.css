@@ -8,8 +8,8 @@
    =========================== */
 
 .licodia-page .pages-hero.licodia-hero {
-    background-image: linear-gradient(var(--overlay-hero-start), var(--overlay-hero-end)), 
-                      url("/static/assets/img/licodia/hero-bg.jpg");
+    background-image: linear-gradient(rgba(30, 30, 30, 0.55), rgba(30, 30, 30, 0.55)),
+        url("/static/assets/img/licodia/hero-bg.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -19,14 +19,15 @@
     color: var(--color-text-inverse);
     word-spacing: 0.15em;
     letter-spacing: 0.04em;
-} 
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+}
 
 .licodia-page .pages-hero.licodia-hero .pages-hero-subtitle {
     color: var(--color-text-inverse);
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    text-shadow: none;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .licodia-page .pages-hero.licodia-hero .pages-badge {
@@ -57,9 +58,9 @@
 }
 
 .pages-section.pages-natura {
-    background: linear-gradient(135deg, 
-        var(--color-surface) 0%,
-        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
+    background: linear-gradient(135deg,
+            var(--color-surface) 0%,
+            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
 }
 
 .pages-section.pages-lago {
@@ -76,9 +77,9 @@
 }
 
 .pages-section.pages-chiese {
-    background: linear-gradient(135deg, 
-        var(--color-surface) 0%,
-        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
+    background: linear-gradient(135deg,
+            var(--color-surface) 0%,
+            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 100%);
 }
 
 .pages-section.pages-musei {
@@ -123,8 +124,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 12%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 12%, transparent) 100%);
     border-radius: 50%;
     margin: 0 auto;
     color: var(--color-primary);
@@ -144,7 +145,7 @@
     color: var(--color-text-primary);
     font-size: 1rem;
     margin: 0;
-} 
+}
 
 .pages-value-card p {
     color: var(--color-text-secondary);
@@ -216,8 +217,8 @@
 
 .pages-accordion .accordion-button:not(.collapsed) {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
     color: var(--color-primary);
 }
 
@@ -255,8 +256,8 @@
 
 .chiese-tabs .nav-tabs {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 5%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 3%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 5%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 3%, transparent) 100%);
     border-bottom: 1px solid var(--color-border);
     padding: 1rem 1rem 0;
     flex-wrap: wrap;
@@ -335,8 +336,8 @@
     width: 100%;
     height: 200px;
     background: linear-gradient(135deg,
-        var(--color-primary-pale) 0%,
-        var(--color-neutral-100) 100%);
+            var(--color-primary-pale) 0%,
+            var(--color-neutral-100) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,8 +408,8 @@
 
 .cultura-card-header {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 8%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 5%, transparent) 100%);
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -516,8 +517,8 @@
 
 .map-sidebar-header {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 10%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 10%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
     padding: 1rem 1.25rem;
     border-bottom: 1px solid var(--color-border);
 }
@@ -610,8 +611,8 @@
 
 .filters-list .filter-item.active {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary) 12%, transparent) 0%,
-        color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
+            color-mix(in srgb, var(--color-primary) 12%, transparent) 0%,
+            color-mix(in srgb, var(--color-secondary) 8%, transparent) 100%);
     color: var(--color-primary);
     font-weight: 600;
     border-color: var(--color-primary-light);
@@ -746,35 +747,35 @@
     .map-layout {
         flex-direction: column;
     }
-    
+
     .map-sidebar {
         width: 100%;
         max-height: none;
     }
-    
+
     .map-sidebar-content {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
     }
-    
+
     .map-sidebar .search-container {
         width: 100%;
         margin-bottom: 0;
     }
-    
+
     .filters-list {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0.5rem;
         width: 100%;
     }
-    
+
     .filters-list .filter-item {
         padding: 0.5rem 0.75rem;
         font-size: 0.85rem;
     }
-    
+
     .filters-list .filter-item-reset {
         margin-top: 0;
         padding-top: 0.5rem;
@@ -782,7 +783,7 @@
         border-left: 1px dashed var(--color-border);
         padding-left: 0.75rem;
     }
-    
+
     .map-main .map-container {
         height: 400px;
     }
@@ -792,11 +793,11 @@
     .map-main .map-container {
         height: 350px;
     }
-    
+
     .filters-list .filter-item span {
         display: none;
     }
-    
+
     .filters-list .filter-item {
         padding: 0.6rem;
     }
