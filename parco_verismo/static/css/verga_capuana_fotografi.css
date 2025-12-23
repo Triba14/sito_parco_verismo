@@ -1,16 +1,19 @@
+@import url('index.css');
+
 /* ===== ARCHIVIO FOTOGRAFICO ===== */
 
 .archivio-section {
   padding: 6rem 0 4rem;
-  background: var(--color-background);
-  min-height: 100vh;
+  background: var(--pages-background);
+  min-height: auto;
 }
 
 /* Titolo e sottotitolo */
 .archivio-title {
+  font-family: 'TeX Gyre Termes', serif;
   font-size: 3rem;
   font-weight: 400;
-  color: var(--color-text-primary);
+  color: var(--pages-primary);
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(30px);
@@ -19,7 +22,7 @@
 
 .archivio-subtitle {
   font-size: 1.25rem;
-  color: var(--color-text-secondary);
+  color: var(--pages-text-secondary);
   margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(30px);
@@ -34,10 +37,10 @@
 
 /* Carosello */
 #archivioCarousel {
-  border-radius: var(--radius-lg);
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  background: var(--color-surface);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  background: var(--pages-surface);
   margin-bottom: 3rem;
 }
 
@@ -50,7 +53,7 @@
   width: 100%;
   height: 70vh;
   min-height: 500px;
-  background: var(--color-neutral-100);
+  background: var(--pages-neutral-100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,15 +69,15 @@
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   transform: scale(1);
+  border-radius: 0.75rem;
 }
 
 .carousel-item.active .carousel-image {
-  animation: imageZoom 6s ease-in-out infinite;
+  animation: none;
 }
 
 .carousel-image:hover {
-  animation-play-state: paused;
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
 }
 
 @keyframes imageZoom {
@@ -99,6 +102,146 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 60%,
       rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+}
+
+/* ===== SEZIONE TESTUALE (Stile Missione e Visione) ===== */
+
+.pages-section {
+    padding: 5rem 0;
+    border-top: 1px solid var(--pages-border);
+}
+
+.pages-section.pages-intro {
+    background: var(--pages-background);
+}
+
+.pages-section.pages-verga {
+    background: linear-gradient(135deg,
+            var(--pages-surface) 0%,
+            color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface)) 100%);
+}
+
+.pages-section.pages-capuana {
+    background: color-mix(in srgb, var(--pages-neutral-100) 50%, var(--pages-background));
+}
+
+.pages-section-title {
+    font-family: 'TeX Gyre Termes', serif;
+    color: var(--pages-primary);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+
+.pages-title-accent {
+    background: var(--pages-gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pages-highlight-text {
+    padding: 1.5rem;
+    background: linear-gradient(135deg,
+            rgba(199, 106, 82, 0.08) 0%,
+            rgba(192, 140, 59, 0.05) 100%);
+    border-left: 4px solid var(--pages-primary-light);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.pages-highlight-text .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--pages-text-primary);
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Sottotitoli e testi */
+h3, h4, h5 {
+    color: var(--pages-primary);
+    font-family: 'TeX Gyre Termes', serif;
+}
+
+.text-muted {
+    color: var(--pages-text-tertiary) !important;
+}
+
+.text-secondary {
+    color: var(--pages-text-primary) !important;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--pages-text-primary);
+    line-height: 1.8;
+}
+
+/* Liste e punti */
+ol li {
+    font-size: 1.15rem;
+    color: var(--pages-text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+/* Spaziatura paragrafi */
+p {
+    font-size: 1.15rem;
+    color: var(--pages-text-primary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* Nuovi stili per miglioramenti richiesti */
+
+/* Box per elenchi in evidenza */
+.feature-box {
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid var(--pages-primary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+}
+
+.feature-box-title {
+    color: var(--pages-primary);
+    font-family: 'TeX Gyre Termes', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Citazioni in evidenza */
+.custom-blockquote {
+    font-family: 'TeX Gyre Termes', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--pages-primary);
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(to right, transparent, color-mix(in srgb, var(--pages-primary), transparent 95%), transparent);
+    border-top: 1px solid color-mix(in srgb, var(--pages-primary), transparent 80%);
+    border-bottom: 1px solid color-mix(in srgb, var(--pages-primary), transparent 80%);
+    position: relative;
+}
+
+.custom-blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--pages-primary);
+    opacity: 0.2;
+    font-family: serif;
+}
   pointer-events: none;
 }
 
