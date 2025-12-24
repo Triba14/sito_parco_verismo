@@ -4,6 +4,7 @@ Modelli per Autori e Opere letterarie.
 # Django imports
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
 
 # Third-party imports
 from parler.models import TranslatableModel, TranslatedFields
@@ -11,11 +12,23 @@ from parler.models import TranslatableModel, TranslatedFields
 
 class Autore(models.Model):
     nome = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True, blank=True, help_text="Lascia vuoto per generare automaticamente dal nome.")
     # ... puoi aggiungere biografia, foto, etc.
 
     def __str__(self):
         return self.nome
+
+    def save(self, *args, **kwargs):
+        # Genera slug automaticamente dal nome se non specificato
+        if not self.slug:
+            base_slug = slugify(self.nome)
+            slug = base_slug
+            counter = 1
+            while Autore.objects.filter(slug=slug).exclude(pk=self.pk).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Autore"
@@ -24,7 +37,7 @@ class Autore(models.Model):
 
 class Opera(TranslatableModel):
     autore = models.ForeignKey(Autore, on_delete=models.PROTECT, related_name='opere')
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, blank=True, help_text="Lascia vuoto per generare automaticamente dal titolo.")
     anno_pubblicazione = models.IntegerField(null=True, blank=True, verbose_name="Anno di pubblicazione")
     link_wikisource = models.URLField(max_length=500, help_text="Link alla pagina dell'opera su Wikisource.")
     copertina = models.ImageField(upload_to="copertine/", blank=True, null=True, help_text="Carica la copertina dell'opera.")
@@ -44,5 +57,19 @@ class Opera(TranslatableModel):
     def __str__(self):
         return self.safe_translation_getter('titolo', any_language=True) or str(self.pk)
 
+    def save(self, *args, **kwargs):
+        # Genera slug automaticamente dal titolo se non specificato
+        if not self.slug:
+            titolo = self.safe_translation_getter('titolo', any_language=True) or f'opera-{self.pk or "new"}'
+            base_slug = slugify(titolo)
+            slug = base_slug
+            counter = 1
+            while Opera.objects.filter(slug=slug).exclude(pk=self.pk).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
+        super().save(*args, **kwargs)
+
     def get_absolute_url(self):
         return reverse('opera_detail', kwargs={'slug': self.slug})
+

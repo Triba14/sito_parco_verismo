@@ -5,6 +5,7 @@ Modelli per Documenti e Archivio Fotografico.
 # Django imports
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
 
 # Third-party imports
 from parler.models import TranslatableModel, TranslatedFields
@@ -16,7 +17,7 @@ class Documento(TranslatableModel):
     Solo gli admin possono creare e modificare questi documenti.
     """
 
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, blank=True, help_text="Lascia vuoto per generare automaticamente dal titolo.")
     data_pubblicazione = models.DateTimeField(auto_now_add=True)
     anno_pubblicazione = models.IntegerField(
         null=True, blank=True, help_text="Anno di pubblicazione del documento/studio."
@@ -76,6 +77,19 @@ class Documento(TranslatableModel):
 
     def __str__(self):
         return self.safe_translation_getter("titolo", any_language=True) or str(self.pk)
+
+    def save(self, *args, **kwargs):
+        # Genera slug automaticamente dal titolo se non specificato
+        if not self.slug:
+            titolo = self.safe_translation_getter('titolo', any_language=True) or f'documento-{self.pk or "new"}'
+            base_slug = slugify(titolo)
+            slug = base_slug
+            counter = 1
+            while Documento.objects.filter(slug=slug).exclude(pk=self.pk).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
+        super().save(*args, **kwargs)
 
     def get_absolute_url(self):
         return reverse("documento_detail", kwargs={"slug": self.slug})

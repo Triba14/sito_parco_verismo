@@ -5,6 +5,7 @@ Modelli per Itinerari e Tappe.
 # Django imports
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
 
 # Third-party imports
 from parler.models import TranslatableModel, TranslatedFields
@@ -15,7 +16,7 @@ class Itinerario(TranslatableModel):
     Modello per gli itinerari verghiani e capuaniani.
     """
 
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, blank=True, help_text="Lascia vuoto per generare automaticamente dal titolo.")
     immagine = models.ImageField(
         upload_to="itinerari/immagini/",
         help_text="Immagine rappresentativa dell'itinerario.",
@@ -92,6 +93,19 @@ class Itinerario(TranslatableModel):
 
     def __str__(self):
         return self.safe_translation_getter("titolo", any_language=True) or str(self.pk)
+
+    def save(self, *args, **kwargs):
+        # Genera slug automaticamente dal titolo se non specificato
+        if not self.slug:
+            titolo = self.safe_translation_getter('titolo', any_language=True) or f'itinerario-{self.pk or "new"}'
+            base_slug = slugify(titolo)
+            slug = base_slug
+            counter = 1
+            while Itinerario.objects.filter(slug=slug).exclude(pk=self.pk).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
+        super().save(*args, **kwargs)
 
     def get_absolute_url(self):
         """Return the detail URL for this itinerario."""
