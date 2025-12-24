@@ -50,7 +50,17 @@ printf "${GREEN}✓${NC} Virtual environment pronto\n\n"
 # 2. Dipendenze Python
 printf "${YELLOW}[2/6]${NC} Installazione dipendenze Python...\n"
 "$VENV_PY" -m pip install --upgrade pip -q
-"$VENV_PY" -m pip install -r requirements.txt -q
+
+# Rileva se usare SQLite (dev) o PostgreSQL (prod)
+if command -v pg_config >/dev/null 2>&1; then
+    # PostgreSQL disponibile, usa requirements.txt completo
+    printf "  → PostgreSQL rilevato, uso requirements.txt\n"
+    "$VENV_PY" -m pip install -r requirements.txt -q
+else
+    # PostgreSQL non disponibile, usa SQLite con requirements-dev.txt
+    printf "  → PostgreSQL non trovato, uso SQLite (requirements-dev.txt)\n"
+    "$VENV_PY" -m pip install -r requirements-dev.txt -q
+fi
 printf "${GREEN}✓${NC} Dipendenze installate\n\n"
 
 # 3. Dipendenze npm (se necessario)

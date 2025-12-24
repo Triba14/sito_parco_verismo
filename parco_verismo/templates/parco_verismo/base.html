@@ -60,6 +60,11 @@
 
     <title>{% block title %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}</title>
 
+    <!-- Favicon (adattiva al tema del browser) -->
+    <link rel="icon" type="image/png" href="{% static 'assets/img/logo-header.png' %}" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="{% static 'assets/img/logo-header-white.png' %}" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="{% static 'assets/img/logo-header.png' %}">
+
     <!-- Bootstrap CSS locale -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 

@@ -1,0 +1,12 @@
+# Dipendenze per sviluppo locale (senza PostgreSQL)
+# Per produzione con PostgreSQL, usa requirements.txt
+
+asgiref==3.10.0
+Django==5.2.8
+django-parler==2.3
+pillow==12.0.0
+python-decouple==3.8
+sqlparse==0.5.3
+tzdata==2025.3
+gunicorn==23.0.0
+whitenoise==6.8.2
