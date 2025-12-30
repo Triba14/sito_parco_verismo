@@ -339,11 +339,6 @@
     color: var(--color-text-light);
 }
 
-/* Rimuove margine dal footer per evitare stacco di colore */
-.luoghi-opere-page .site-footer {
-    margin-top: 0 !important;
-}
-
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -352,6 +347,15 @@
     .lo-place-header {
         position: static;
         margin-bottom: 2rem;
+        padding: 1.25rem 1rem;
+    }
+    
+    .lo-place-content,
+    .lo-intro-content,
+    .lo-licodia-content,
+    .lo-triangolo-content,
+    .lo-final-content {
+        padding: 0 1rem;
     }
     
     .lo-place-name {
@@ -377,6 +381,18 @@
 }
 
 @media (max-width: 767.98px) {
+    .lo-place-header {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .lo-place-content,
+    .lo-intro-content,
+    .lo-licodia-content,
+    .lo-triangolo-content,
+    .lo-final-content {
+        padding: 0 1.5rem;
+    }
+    
     .lo-place-content p,
     .lo-licodia-content p,
     .lo-triangolo-content p,
@@ -394,6 +410,11 @@
     
     .lo-triangolo-item {
         padding: 1.5rem;
+    }
+    
+    .pages-cta .btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
