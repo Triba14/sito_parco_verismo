@@ -27,20 +27,20 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% block og_type %}website{% endblock %}">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <meta property="og:title" content="{% block og_title %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}{% endblock %}">
     <meta property="og:description"
         content="{% block og_description %}{% trans 'Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi e cultura nei luoghi di Verga e Capuana' %}{% endblock %}">
     <meta property="og:image"
         content="{% block og_image %}{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}{% endblock %}">
     <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Parco Letterario Giovanni Verga Luigi Capuana">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:site_name" content="Parco Letterario Giovanni Verga e Luigi Capuana">
     <meta property="og:locale" content="{% if LANGUAGE_CODE == 'it' %}it_IT{% else %}en_US{% endif %}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ request.build_absolute_uri }}">
-    <meta name="twitter:title" content="{% block twitter_title %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}">
+    <meta name="twitter:title" content="{% block twitter_title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}{% endblock %}">
     <meta name="twitter:description"
         content="{% block twitter_description %}{% trans 'Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia' %}{% endblock %}">
     <meta name="twitter:image"
@@ -94,10 +94,15 @@
     <title>{% block title %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}</title>
 
     <!-- Favicon & Site Identity -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/logo-header.png' %}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'assets/img/logo-header.png' %}">
-    <link rel="apple-touch-icon" href="{% static 'assets/img/logo-header.png' %}">
+    <link rel="icon" type="image/x-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/favicon.ico' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
+    <link rel="apple-touch-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
+    <link rel="mask-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}" color="#4A6741">
     <meta name="theme-color" content="#4A6741">
+    <meta name="msapplication-TileColor" content="#4A6741">
+    <meta name="msapplication-TileImage" content="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
     <meta name="apple-mobile-web-app-title" content="Parco Verismo">
     <meta name="application-name" content="Parco Verismo">
 
