@@ -6,6 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CPRYW1SYB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1CPRYW1SYB');
+    </script>
+
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="{% block meta_description %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana - Un viaggio nella letteratura verista siciliana attraverso i luoghi di Verga e Capuana' %}{% endblock %}">
@@ -39,31 +48,58 @@
 
     <!-- Structured Data - Schema.org -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "{% block schema_type %}TouristAttraction{% endblock %}",
-      "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
-      "description": "{% trans 'Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i luoghi di Giovanni Verga e Luigi Capuana' %}",
-      "url": "{{ request.scheme }}://{{ request.get_host }}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "Sicilia",
-        "addressCountry": "IT"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
+        "url": "{{ request.scheme }}://{{ request.get_host }}",
+        "logo": "{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}",
+        "sameAs": [
+          "https://www.facebook.com/parcoletterariovergacapuana",
+          "https://www.instagram.com/parcovergacapuana"
+        ]
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "37.1667",
-        "longitude": "14.7500"
-      }{% block schema_extra %}{% endblock %}
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
+        "url": "{{ request.scheme }}://{{ request.get_host }}",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ request.scheme }}://{{ request.get_host }}/search/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "{% block schema_type %}TouristAttraction{% endblock %}",
+        "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
+        "description": "{% trans 'Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i luoghi di Giovanni Verga e Luigi Capuana' %}",
+        "url": "{{ request.scheme }}://{{ request.get_host }}{{ request.path }}",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Sicilia",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "37.1667",
+          "longitude": "14.7500"
+        }{% block schema_extra %}{% endblock %}
+      }
+    ]
     </script>
 
     <title>{% block title %}{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}</title>
 
-    <!-- Favicon (adattiva al tema del browser) -->
-    <link rel="icon" type="image/png" href="{% static 'assets/img/logo-header.png' %}" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" href="{% static 'assets/img/logo-header-white.png' %}" media="(prefers-color-scheme: dark)">
+    <!-- Favicon & Site Identity -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/logo-header.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'assets/img/logo-header.png' %}">
     <link rel="apple-touch-icon" href="{% static 'assets/img/logo-header.png' %}">
+    <meta name="theme-color" content="#4A6741">
+    <meta name="apple-mobile-web-app-title" content="Parco Verismo">
+    <meta name="application-name" content="Parco Verismo">
 
     <!-- Bootstrap CSS locale -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -82,6 +118,9 @@
     <!-- Fonts helper (h1/h2 rules) -->
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
     <link rel="stylesheet" href="{% static 'css/cookie_banner.css' %}">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     {% block extra_head %}{% endblock %}
 </head>
@@ -224,6 +263,30 @@
                     });
                 }
             });
+        });
+    </script>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+
+            // Parallax effect for Hero Video
+            const heroVideo = document.querySelector('.videobg');
+            if (heroVideo) {
+                window.addEventListener('scroll', function () {
+                    const scrollY = window.pageYOffset;
+                    // Move the video at half the speed of the scroll
+                    heroVideo.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.4}px))`;
+                }, { passive: true });
+            }
         });
     </script>
 

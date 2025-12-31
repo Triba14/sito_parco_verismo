@@ -20,13 +20,16 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Increased scale to allow room for parallax movement */
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     object-fit: cover;
     z-index: -1;
+    will-change: transform;
+    /* Hint for performance */
 }
 
 /* Overlay per migliorare la leggibilità del testo */
@@ -60,24 +63,26 @@ header::after {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 400;
     margin-bottom: var(--space-lg);
     color: var(--color-text-inverse);
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
     font-weight: 400;
     color: var(--color-text-inverse);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 0;
-    opacity: 0.95;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
 }
 
-/* Animazione fade in */
+/* Animazione fade in staggered */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -88,6 +93,12 @@ header::after {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Animazione per elementi CTA con delay maggiore */
+.hero-cta {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.5s forwards;
 }
 
 /* Responsive adjustments */
@@ -174,29 +185,36 @@ header::after {
 
 .homepage-hero .hero-title {
     font-family: 'Perandory', sans-serif;
+    font-size: clamp(2rem, 7vw, 4rem);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
     text-shadow: 3px 6px 16px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.2s forwards;
 }
 
 .homepage-hero .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.95);
     text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
 }
 
 .homepage-hero .hero-description {
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
     font-weight: 300;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
     max-width: 600px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
 }
 
 .hero-cta .btn {
@@ -251,26 +269,97 @@ header::after {
 }
 
 #il-parco.hp-parco::before {
-    content: '';
+    display: none;
+    /* Rimosso per pulizia come richiesto */
+}
+
+/* Background Quotes Styling */
+.bg-quotes-container {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
-    /* Reduced width/scale to avoid forcing horizontal overflow */
-    transform: translate(-10%, -50%) scale(1.2);
-    transform-origin: left center;
-    width: 70vw;
-    height: auto;
-    background-image: url('../assets/img/logo-header.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
-    opacity: 0.04;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    z-index: 0;
-    /* ensure the pseudo-element can't create scrollbars */
-    max-width: 100%;
+    z-index: 1;
     overflow: hidden;
 }
+
+.bg-quote {
+    position: absolute;
+    color: var(--color-primary-dark);
+    opacity: 0.06;
+    font-family: 'TeX Gyre Termes', serif;
+    font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    line-height: 1.2;
+    max-width: 350px;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Distribution to the four corners */
+.bg-quote-1 {
+    top: 10%;
+    left: 5%;
+    transform: rotate(-3deg);
+}
+
+.bg-quote-2 {
+    top: 10%;
+    right: 5%;
+    transform: rotate(3deg);
+    text-align: right;
+}
+
+.bg-quote-3 {
+    bottom: 10%;
+    left: 5%;
+    transform: rotate(2deg);
+}
+
+.bg-quote-4 {
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(-2deg);
+    text-align: right;
+}
+
+/* Subtle floating animation */
+@keyframes microFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(var(--rot));
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(calc(var(--rot) + 0.5deg));
+    }
+}
+
+.bg-quote-1 {
+    --rot: -3deg;
+    animation: microFloat 14s infinite ease-in-out;
+}
+
+.bg-quote-2 {
+    --rot: 3deg;
+    animation: microFloat 16s infinite ease-in-out;
+}
+
+.bg-quote-3 {
+    --rot: 2deg;
+    animation: microFloat 18s infinite ease-in-out;
+}
+
+.bg-quote-4 {
+    --rot: -2deg;
+    animation: microFloat 20s infinite ease-in-out;
+}
+
+
+
 
 /* Assicura che il contenuto resti sopra il logo di sfondo */
 #il-parco .container-xl,
@@ -375,6 +464,7 @@ section.hp-section:nth-of-type(even) {
     background: var(--color-background) !important;
 }
 
+
 /* Slight border contrast preserved */
 section.hp-section {
     border-bottom: 1px solid var(--color-border);
@@ -414,8 +504,8 @@ section.hp-section {
 
 .hp-section-title {
     font-family: 'TeX Gyre Termes', serif;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 600;
     color: var(--color-text-primary);
     letter-spacing: -0.01em;
     margin-bottom: 1.5rem;
@@ -517,91 +607,203 @@ section.hp-section {
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient border effect on hover */
+.hp-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* Glow effect */
+.hp-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 10%, transparent) 0%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .hp-card:hover {
-    transform: translateY(-12px);
-    box-shadow: var(--color-shadow-lg);
-    border-color: var(--color-primary-light);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+}
+
+.hp-card:hover::before {
+    opacity: 1;
+}
+
+.hp-card:hover::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .hp-card-primary {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 0%,
+    background: linear-gradient(145deg,
+            color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-primary-light) 8%, var(--color-surface)) 50%,
             var(--color-surface) 100%);
+    border-color: color-mix(in srgb, var(--color-primary) 15%, var(--color-border));
 }
 
 .hp-card-primary:hover {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-primary-pale) 80%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-surface)) 100%);
+    background: linear-gradient(145deg,
+            color-mix(in srgb, var(--color-primary-pale) 90%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-primary-light) 20%, var(--color-surface)) 50%,
+            color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-surface)) 100%);
 }
 
 .hp-card-secondary {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 0%,
+    background: linear-gradient(145deg,
+            color-mix(in srgb, var(--color-neutral-100) 80%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-primary-pale) 15%, var(--color-surface)) 50%,
             var(--color-surface) 100%);
+    border-color: color-mix(in srgb, var(--color-primary) 12%, var(--color-border));
 }
 
 .hp-card-secondary:hover {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-secondary-light) 30%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-accent) 10%, var(--color-surface)) 100%);
+    background: linear-gradient(145deg,
+            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-primary-light) 15%, var(--color-surface)) 50%,
+            color-mix(in srgb, var(--color-neutral-100) 30%, var(--color-surface)) 100%);
 }
 
 .hp-card-icon {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+    background: linear-gradient(135deg,
+            color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
+            color-mix(in srgb, var(--color-primary-light) 20%, transparent) 100%);
     border-radius: 50%;
     margin: 0 auto;
     color: var(--color-primary);
     font-size: 2.5rem;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    z-index: 1;
+    border: 2px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
 }
 
+/* Icon animation on hover */
 .hp-card:hover .hp-card-icon {
     background: var(--gradient-primary);
     color: white;
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 10px 25px color-mix(in srgb, var(--color-primary) 35%, transparent);
+    border-color: transparent;
+}
+
+/* Subtle bounce for icon */
+.hp-card:hover .hp-card-icon i {
+    animation: iconPulse 0.8s ease;
+}
+
+@keyframes iconPulse {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    20% {
+        transform: scale(1.2) translateY(-3px);
+    }
+
+    40% {
+        transform: scale(0.95) translateY(1px);
+    }
+
+    60% {
+        transform: scale(1.08) translateY(-1px);
+    }
+
+    80% {
+        transform: scale(0.98) translateY(0);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
 }
 
 .hp-card h3 {
     font-family: 'TeX Gyre Termes', serif;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1.3rem;
     margin: 0;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.hp-card:hover h3 {
+    color: var(--color-primary-dark);
 }
 
 .hp-card p {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.75;
     margin: 0;
     flex-grow: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .hp-card-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* center the link text/icon inside the card */
     gap: 0.5rem;
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     width: 100%;
-    /* make the link take full width so centering is effective */
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.hp-card-link:hover {
+    color: var(--color-primary-dark);
+    gap: 0.75rem;
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.hp-card-link i {
+    transition: transform 0.3s ease;
+}
+
+.hp-card-link:hover i {
+    transform: translateX(4px);
 }
 
 .hp-card-link:hover {

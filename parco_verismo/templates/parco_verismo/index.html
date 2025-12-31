@@ -26,9 +26,25 @@
 
 <!-- Sezione: Il Parco -->
 <section id="il-parco" class="hp-section hp-parco py-6">
+    <!-- Background Quotes -->
+    <div class="bg-quotes-container" aria-hidden="true">
+        <div class="bg-quote bg-quote-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="3000">
+            &ldquo;Il mare non ha paese nemmeno lui, ed è di tutti quelli che lo stanno ad ascoltare&rdquo;
+        </div>
+        <div class="bg-quote bg-quote-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+            &ldquo;La parola deve servire ad esprimere l'idea&rdquo;
+        </div>
+        <div class="bg-quote bg-quote-3" data-aos="fade-up" data-aos-delay="600" data-aos-duration="3200">
+            &ldquo;L'arte è la vita, ma la vita è più dell'arte&rdquo;
+        </div>
+        <div class="bg-quote bg-quote-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="3800">
+            &ldquo;Dobbiamo studiare il vero, non inventarlo&rdquo;
+        </div>
+    </div>
+
     <div class="container-xl">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-10" data-aos="fade-up">
                 <div class="hp-content text-center">
                     <h2 class="hp-section-title fw-bold display-5" style="font-size:2.5rem;">
                         {% trans 'Il Parco Letterario Giovanni Verga e Luigi Capuana' %}
@@ -56,13 +72,13 @@
             <h2 class="hp-section-title">
                 {% trans 'Località' %}
             </h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
+            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
                 {% trans 'Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e Capuana' %}
             </p>
         </div>
 
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="hp-card hp-card-primary">
                     <div class="hp-card-icon">
                         <i class="bi bi-geo-alt-fill"></i>
@@ -73,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="hp-card hp-card-primary">
                     <div class="hp-card-icon">
                         <i class="bi bi-geo-alt-fill"></i>
@@ -84,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="hp-card hp-card-primary">
                     <div class="hp-card-icon">
                         <i class="bi bi-geo-alt-fill"></i>
@@ -108,7 +124,7 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <div class="hp-card">
                     <h3 class="h5 mb-3">{% trans 'Eventi recenti' %}</h3>
                     <ul class="list-unstyled mb-3">
@@ -131,13 +147,13 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <div class="hp-card">
                     <h3 class="h5 mb-3">{% trans 'Notizie recenti' %}</h3>
                     <ul class="list-unstyled mb-3">
                         {% if notizie %}
                             {% for notizia in notizie %}
-                                <li class="mb-3">
+                                <li class="mb-3" data-aos="fade-up" data-aos-delay="100">
                                     <a href="{{ notizia.get_absolute_url }}" class="d-block text-decoration-none">
                                         <strong class="d-block">{{ notizia.titolo }}</strong>
                                         <small class="text-muted"><i class="bi bi-calendar me-1"></i>{{ notizia.data_pubblicazione|date:"d/m/Y" }}</small>
@@ -162,7 +178,7 @@
 <section class="hp-section hp-biblioteca py-6">
     <div class="container-xl">
         <div class="row g-4 align-items-center">
-            <div class="col-lg-6 order-lg-2">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                 <div class="hp-image-wrapper">
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hp-illustration">
                         <defs>
@@ -194,7 +210,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right">
                 <div class="hp-content">
                     <h2 class="hp-section-title">
                         {% trans 'Biblioteca Letteraria' %}
@@ -223,7 +239,7 @@
 <section class="hp-section hp-archivi py-6">
     <div class="container-xl">
         <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <div class="hp-image-wrapper">
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hp-illustration">
                         <defs>
@@ -248,7 +264,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <div class="hp-content">
                     <h2 class="hp-section-title">
                         {% trans 'Archivi & Documenti' %}
@@ -289,7 +305,7 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="hp-card hp-card-secondary">
                     <div class="hp-card-icon">
                         <i class="bi bi-book"></i>
@@ -300,7 +316,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="hp-card hp-card-secondary">
                     <div class="hp-card-icon">
                         <i class="bi bi-book"></i>
@@ -311,7 +327,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="hp-card hp-card-secondary">
                     <div class="hp-card-icon">
                         <i class="bi bi-people"></i>
@@ -332,7 +348,7 @@
             <div class="col-lg-10 mx-auto">
                 <div class="hp-contact-center">
                     <div class="hp-contact-column d-flex justify-content-center">
-                        <div class="hp-contact-card">
+                        <div class="hp-contact-card" data-aos="zoom-in">
                             <div class="text-center mb-4">
                                 <h2 class="hp-section-title">{% trans "Modulo di contatto" %}</h2>
                                 <p class="lead text-secondary mt-3" style="max-width: 700px; margin-left: auto; margin-right: auto;">

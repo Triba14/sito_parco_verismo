@@ -25,9 +25,9 @@
 .notizie-header .pages-badge {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    background: linear-gradient(135deg, 
-        rgba(199, 106, 82, 0.15) 0%, 
-        rgba(192, 140, 59, 0.15) 100%);
+    background: linear-gradient(135deg,
+            rgba(199, 106, 82, 0.15) 0%,
+            rgba(192, 140, 59, 0.15) 100%);
     border-radius: var(--radius-full);
     font-size: 0.875rem;
     font-weight: 600;
@@ -61,16 +61,58 @@
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+/* Gradient border effect on hover */
+.notizia-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glow effect */
+.notizia-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 8%, transparent) 0%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .notizia-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--color-primary-light);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
+}
+
+.notizia-card:hover::before {
+    opacity: 1;
+}
+
+.notizia-card:hover::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .notizia-card-image {
@@ -121,8 +163,8 @@
 .notizia-card-placeholder {
     height: 200px;
     background: linear-gradient(135deg,
-        var(--color-primary-pale) 0%,
-        var(--color-surface-elevated) 100%);
+            var(--color-primary-pale) 0%,
+            var(--color-surface-elevated) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,6 +218,12 @@
     font-size: 1rem;
     width: 18px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.notizia-card:hover .notizia-card-meta-item i {
+    color: var(--color-primary-dark);
+    transform: scale(1.1);
 }
 
 .notizia-card-description {
@@ -236,8 +284,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.15) 0%,
-        rgba(192, 140, 59, 0.15) 100%);
+            rgba(199, 106, 82, 0.15) 0%,
+            rgba(192, 140, 59, 0.15) 100%);
     border-radius: 50%;
     margin: 0 auto 1.5rem;
     color: var(--color-primary);
@@ -273,11 +321,11 @@
     .notizie-header h1 {
         font-size: 1.75rem;
     }
-    
+
     .notizia-card-image {
         height: 180px;
     }
-    
+
     .calendar-popup {
         right: 1rem;
         left: 1rem;
@@ -349,9 +397,9 @@
     display: flex;
     align-items: center;
     padding: 1rem 1.25rem;
-    background: linear-gradient(135deg, 
-        var(--color-primary) 0%, 
-        var(--color-primary-dark) 100%);
+    background: linear-gradient(135deg,
+            var(--color-primary) 0%,
+            var(--color-primary-dark) 100%);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     gap: 0.5rem;
 }
@@ -605,13 +653,13 @@
     font-size: 0.7rem;
 }
 
-.calendar-event-item > .bi-chevron-right {
+.calendar-event-item>.bi-chevron-right {
     color: var(--color-text-tertiary);
     font-size: 0.875rem;
     transition: transform var(--transition-fast);
 }
 
-.calendar-event-item:hover > .bi-chevron-right {
+.calendar-event-item:hover>.bi-chevron-right {
     color: var(--color-primary);
     transform: translateX(2px);
 }

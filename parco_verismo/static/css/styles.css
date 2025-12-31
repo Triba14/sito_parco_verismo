@@ -217,7 +217,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: var(--color-text-primary);
-    line-height: 1.6;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -290,16 +290,17 @@ h6 {
 
 h1 {
     color: var(--color-heading);
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 400;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 
 p {
@@ -650,15 +651,57 @@ svg feDropShadow[flood-color="#4a140d"] {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     overflow: hidden;
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.site-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glow effect */
+.site-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 8%, transparent) 0%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .site-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px) scale(1.02);
+    border-color: transparent;
+}
+
+.site-card:hover::before {
+    opacity: 1;
+}
+
+.site-card:hover::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .site-card-image {
@@ -710,11 +753,18 @@ svg feDropShadow[flood-color="#4a140d"] {
 .site-card-meta-item i {
     margin-right: var(--space-xs);
     color: var(--color-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.site-card:hover .site-card-meta-item i {
+    color: var(--color-primary-dark);
+    transform: scale(1.1);
 }
 
 .site-card-description {
     color: var(--color-text-secondary);
-    line-height: 1.5;
+    line-height: 1.75;
     margin-bottom: var(--space-lg);
     flex: 1;
 }
@@ -725,14 +775,14 @@ svg feDropShadow[flood-color="#4a140d"] {
 
 .site-card-actions .btn {
     min-width: 120px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .site-card-actions .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Card specifiche per tipo */
@@ -778,12 +828,37 @@ svg feDropShadow[flood-color="#4a140d"] {
     background-color: var(--color-surface) !important;
     border-color: var(--color-border) !important;
     box-shadow: var(--shadow-sm);
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient border effect on hover for Bootstrap cards */
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--color-primary-pale) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px) scale(1.01);
+    border-color: transparent !important;
+}
+
+.card:hover::before {
+    opacity: 1;
 }
 
 .card-body {

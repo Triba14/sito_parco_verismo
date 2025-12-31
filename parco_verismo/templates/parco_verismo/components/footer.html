@@ -31,10 +31,17 @@
                 <h6 class="footer-subheading">{% trans 'Navigazione' %}</h6>
                 <ul class="footer-nav-list list-unstyled">
                     <li><a href="{% url 'home' %}" class="footer-link">{% trans 'Home' %}</a></li>
+                    <li><a href="{% url 'missione_visione' %}" class="footer-link">{% trans 'Missione e Visione' %}</a></li>
+                    <li><a href="{% url 'vizzini' %}" class="footer-link">Vizzini</a></li>
+                    <li><a href="{% url 'mineo' %}" class="footer-link">Mineo</a></li>
+                    <li><a href="{% url 'licodia' %}" class="footer-link">Licodia Eubea</a></li>
                     <li><a href="{% url 'biblioteca' %}" class="footer-link">{% trans 'Biblioteca' %}</a></li>
                     <li><a href="{% url 'eventi' %}" class="footer-link">{% trans 'Eventi' %}</a></li>
                     <li><a href="{% url 'notizie' %}" class="footer-link">{% trans 'Notizie' %}</a></li>
                     <li><a href="{% url 'documenti' %}" class="footer-link">{% trans 'Documenti & Studi' %}</a></li>
+                    <li><a href="{% url 'opere_per_autore' 'giovanni-verga' %}" class="footer-link">{% trans 'Opere di Verga' %}</a></li>
+                    <li><a href="{% url 'opere_per_autore' 'luigi-capuana' %}" class="footer-link">{% trans 'Opere di Capuana' %}</a></li>
+                    <li><a href="{% url 'personaggi_lessico' %}" class="footer-link">{% trans 'Personaggi & Lessico' %}</a></li>
                 </ul>
             </nav>
 

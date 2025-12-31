@@ -90,6 +90,10 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 }
 
 /* Link della navbar */
+#mainNav .navbar-nav {
+    align-items: center;
+}
+
 #mainNav .navbar-nav .nav-link {
     color: var(--color-text-inverse);
     font-weight: 400;
@@ -136,7 +140,6 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
     transition: width var(--transition-base) !important;
     /* Reset proprietà freccia Bootstrap */
     border: none !important;
-    vertical-align: baseline !important;
     margin: 0 !important;
     display: block !important;
 }
@@ -220,12 +223,74 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
     margin: var(--space-sm) 0;
 }
 
-/* Pulsante Prenota */
+/* Pulsante Prenota/Contatti */
 #mainNav .navbar-nav .nav-item .btn {
-    padding: var(--space-sm) var(--space-lg);
+    padding: 0.6rem 1.75rem;
+    /* Altezza più precisa per allineamento */
     border-radius: var(--radius-md);
     font-weight: 400;
     margin-left: var(--space-md);
+    transition: all var(--transition-base);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Enhanced Contact CTA Button Styles */
+#mainNav .navbar-nav .nav-item .btn-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#mainNav .navbar-nav .nav-item .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateY(-50%) skewX(-25deg);
+    transition: none;
+}
+
+#mainNav .navbar-nav .nav-item .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+}
+
+#mainNav .navbar-nav .nav-item .btn-primary:hover::before {
+    animation: shine-button 1s forwards;
+}
+
+@keyframes shine-button {
+    100% {
+        left: 200%;
+    }
+}
+
+/* Pulsante Contatti Pulsing Animation (Subtle) */
+#mainNav .navbar-nav .nav-item .btn-primary {
+    animation: pulse-cta 3s infinite;
+}
+
+@keyframes pulse-cta {
+    0% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 4px 25px color-mix(in srgb, var(--color-primary) 40%, transparent);
+    }
+
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
 }
 
 /* Navbar Toggler (mobile) */
