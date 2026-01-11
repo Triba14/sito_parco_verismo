@@ -25,7 +25,7 @@
               <img src="{{ notizia.immagine.url }}" alt="{% trans 'Immagine notizia' %} {{ notizia.titolo }}" class="img-fluid rounded shadow" style="max-height: 450px; width: 100%; object-fit: cover;">
             {% else %}
               {# Carousel se ci sono più foto (principale + addizionali) #}
-              <div id="notiziaCarousel" class="carousel slide rounded shadow overflow-hidden" data-bs-ride="carousel" style="background-color: var(--color-primary-dark);">
+              <div id="notiziaCarousel" class="carousel slide rounded shadow overflow-hidden" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   {% if notizia.immagine %}
                   <button type="button" data-bs-target="#notiziaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -36,14 +36,24 @@
                 </div>
                 <div class="carousel-inner">
                   {% if notizia.immagine %}
-                  <div class="carousel-item active">
-                    <img src="{{ notizia.immagine.url }}" class="d-block w-100" alt="{{ notizia.titolo }}" style="height: 450px; object-fit: contain;">
+                  <div class="carousel-item active" style="height: 450px; overflow: hidden; position: relative; background-color: #000;">
+                    <!-- Blurred Background Layer -->
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('{{ notizia.immagine.url }}'); background-size: cover; background-position: center; filter: blur(20px) brightness(0.5); transform: scale(1.1);"></div>
+                    <!-- Main Image Layer -->
+                    <div style="position: relative; z-index: 2; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img src="{{ notizia.immagine.url }}" alt="{{ notizia.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                    </div>
                   </div>
                   {% endif %}
                   
                   {% for img in notizia.additional_images.all %}
-                    <div class="carousel-item {% if not notizia.immagine and forloop.first %}active{% endif %}">
-                      <img src="{{ img.immagine.url }}" class="d-block w-100" alt="{{ img.didascalia|default:notizia.titolo }}" style="height: 450px; object-fit: contain;">
+                    <div class="carousel-item {% if not notizia.immagine and forloop.first %}active{% endif %}" style="height: 450px; overflow: hidden; position: relative; background-color: #000;">
+                       <!-- Blurred Background Layer -->
+                       <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('{{ img.immagine.url }}'); background-size: cover; background-position: center; filter: blur(20px) brightness(0.5); transform: scale(1.1);"></div>
+                       <!-- Main Image Layer -->
+                       <div style="position: relative; z-index: 2; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                           <img src="{{ img.immagine.url }}" alt="{{ img.didascalia|default:notizia.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                       </div>
                       {% if img.didascalia %}
                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5); border-radius: 10px; padding: 5px 15px;">
                           <p class="m-0">{{ img.didascalia }}</p>
