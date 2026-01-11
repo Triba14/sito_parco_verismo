@@ -27,17 +27,22 @@
               {# Carousel se ci sono più foto (principale + addizionali) #}
               <div id="notiziaCarousel" class="carousel slide rounded shadow overflow-hidden" data-bs-ride="carousel">
                 <div class="carousel-indicators">
+                  {% if notizia.immagine %}
                   <button type="button" data-bs-target="#notiziaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  {% endif %}
                   {% for img in notizia.additional_images.all %}
-                    <button type="button" data-bs-target="#notiziaCarousel" data-bs-slide-to="{{ forloop.counter }}" aria-label="Slide {{ forloop.counter|add:1 }}"></button>
+                    <button type="button" data-bs-target="#notiziaCarousel" data-bs-slide-to="{% if notizia.immagine %}{{ forloop.counter }}{% else %}{{ forloop.counter0 }}{% endif %}" {% if not notizia.immagine and forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter|add:1 }}"></button>
                   {% endfor %}
                 </div>
                 <div class="carousel-inner">
+                  {% if notizia.immagine %}
                   <div class="carousel-item active">
                     <img src="{{ notizia.immagine.url }}" class="d-block w-100" alt="{{ notizia.titolo }}" style="max-height: 450px; object-fit: cover;">
                   </div>
+                  {% endif %}
+                  
                   {% for img in notizia.additional_images.all %}
-                    <div class="carousel-item">
+                    <div class="carousel-item {% if not notizia.immagine and forloop.first %}active{% endif %}">
                       <img src="{{ img.immagine.url }}" class="d-block w-100" alt="{{ img.didascalia|default:notizia.titolo }}" style="max-height: 450px; object-fit: cover;">
                       {% if img.didascalia %}
                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5); border-radius: 10px; padding: 5px 15px;">
