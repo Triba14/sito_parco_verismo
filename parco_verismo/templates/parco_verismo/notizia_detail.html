@@ -5,6 +5,23 @@
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/notizie.css' %}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ notizia.titolo|escapejs }}",
+  "image": [
+    {% if notizia.immagine %}"{{ request.scheme }}://{{ request.get_host }}{{ notizia.immagine.url }}"{% endif %}
+  ],
+  "datePublished": "{{ notizia.data_pubblicazione|date:'Y-m-d' }}",
+  "dateModified": "{{ notizia.data_pubblicazione|date:'Y-m-d' }}",
+  "author": [{
+      "@type": "Organization",
+      "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
+      "url": "{{ request.scheme }}://{{ request.get_host }}"
+  }]
+}
+</script>
 {% endblock %}
 
 {% block body_class %}notizie-page{% endblock %}

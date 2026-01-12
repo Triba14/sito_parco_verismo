@@ -106,15 +106,16 @@
     <title>{% block title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}{% endblock %}</title>
 
     <!-- Favicon & Site Identity -->
-    <link rel="icon" type="image/x-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/favicon.ico' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
-    <link rel="apple-touch-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
-    <link rel="mask-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}" color="#4A6741">
+    <link rel="icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'favicon.ico' %}" sizes="any">
+    <link rel="icon" type="image/png" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/favicon-48.png' %}" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/favicon-32.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-192.png' %}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-512.png' %}">
+    <link rel="apple-touch-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-192.png' %}">
+    <link rel="mask-icon" href="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-512.png' %}" color="#4A6741">
     <meta name="theme-color" content="#4A6741">
     <meta name="msapplication-TileColor" content="#4A6741">
-    <meta name="msapplication-TileImage" content="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}">
+    <meta name="msapplication-TileImage" content="{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-192.png' %}">
     <meta name="apple-mobile-web-app-title" content="Parco Verismo">
     <meta name="application-name" content="Parco Verismo">
 

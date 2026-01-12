@@ -2,6 +2,39 @@
 {% load static i18n %}
 
 {% block title %}{{ evento.titolo }} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
+{% block extra_head %}
+<!-- Event Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "{{ evento.titolo|escapejs }}",
+  "startDate": "{{ evento.data_inizio|date:'Y-m-d\TH:i:s' }}",
+  {% if evento.data_fine %}"endDate": "{{ evento.data_fine|date:'Y-m-d\TH:i:s' }}",{% endif %}
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "{{ evento.luogo|escapejs }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ evento.indirizzo|default:''|escapejs }}",
+      "addressRegion": "Sicilia",
+      "addressCountry": "IT"
+    }
+  },
+  "image": [
+    {% if evento.immagine %}"{{ request.scheme }}://{{ request.get_host }}{{ evento.immagine.url }}"{% endif %}
+  ],
+  "description": "{{ evento.descrizione|striptags|truncatewords:50|escapejs }}",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
+    "url": "{{ request.scheme }}://{{ request.get_host }}"
+  }
+}
+</script>
+{% endblock %}
 
 {% block hero_section %}{% endblock %}
 
