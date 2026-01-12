@@ -3,6 +3,12 @@
 
 {% block title %}{{ notizia.titolo }} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
 
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/notizie.css' %}">
+{% endblock %}
+
+{% block body_class %}notizie-page{% endblock %}
+
 {% block hero_section %}{% endblock %}
 
 {% block content %}
