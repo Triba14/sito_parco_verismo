@@ -3,7 +3,7 @@
 
 {% block body_class %}has-hero{% endblock %}
 
-{% block title %}{% trans 'Parco Letterario Giovanni Verga e Luigi Capuana - I luoghi del Verismo' %}{% endblock %}
+{% block title %}{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana - I luoghi del Verismo' %}{% endblock %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -14,10 +14,10 @@
     <video class="videobg" src="{% static 'assets/video/videobg.mp4' %}" autoplay muted loop playsinline disablePictureInPicture oncontextmenu="return false;"></video>
     <div class="hero-content">
         <h1 class="hero-title">
-            {% trans 'Parco Letterario' %}<br>
+            {% trans 'Parco Letterario®' %}<br>
             {% trans 'Giovanni Verga e Luigi Capuana' %}
         </h1>
-        <p class="hero-subtitle">{% trans 'I luoghi del Verismo' %}</p>
+        <p class="hero-subtitle">{% trans '“I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea”' %}</p>
     </div>
 </header>
 {% endblock %}
@@ -26,7 +26,6 @@
 
 <!-- Sezione: Il Parco -->
 <section id="il-parco" class="hp-section hp-parco">
-    <!-- Background Quotes with Parallax Support - 2 Verga, 2 Capuana -->
     <div class="hp-quotes-layer" aria-hidden="true">
         <div class="bg-quote bg-quote-1" data-parallax-speed="0.1">
             "Il mare non ha paese nemmen lui, ed è di tutti quelli che lo stanno ad ascoltare"
@@ -46,9 +45,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-10" data-aos="fade-up">
                 <div class="hp-content">
-                    <h1 class="hp-section-title" data-aos="fade-up">
-                        {% trans 'Il Parco Letterario Giovanni Verga e Luigi Capuana' %}
-                    </h1>
+                    <h2 class="hp-section-title" data-aos="fade-up">
+                        {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}
+                    </h2>
                     
                     <div class="hp-section-separator" data-aos="zoom-in" data-aos-delay="100">
                         <span class="separator-dot"></span>
@@ -56,7 +55,7 @@
 
                     <p class="lead" data-aos="fade-up" data-aos-delay="200">
                         {% blocktrans trimmed %}
-                        Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso ricerca, percorsi culturali e progetti che coinvolgono la comunità. L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo condiviso, favorendo un turismo culturale responsabile e un territorio in cui identità, storia e futuro dialogano in modo armonioso.
+                        Il Parco Letterario® Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso ricerca, percorsi culturali e progetti che coinvolgono la comunità. L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo condiviso, favorendo un turismo culturale responsabile e un territorio in cui identità, storia e futuro dialogano in modo armonioso.
                         {% endblocktrans %}
                     </p>
 

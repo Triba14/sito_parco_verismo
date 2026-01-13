@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-31 01:14+0100\n"
+"POT-Creation-Date: 2026-01-13 03:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,9 +206,6 @@ msgid "Accrediti e Finanziamenti"
 msgstr "Accreditations and Funding"
 
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:4
-#: parco_verismo/templates/parco_verismo/base.html:21
-#: parco_verismo/templates/parco_verismo/base.html:34
-#: parco_verismo/templates/parco_verismo/base.html:61
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:4
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:4
 #: parco_verismo/templates/parco_verismo/cookie_policy.html:4
@@ -219,8 +216,6 @@ msgstr "Accreditations and Funding"
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:4
 #: parco_verismo/templates/parco_verismo/mineo.html:5
 #: parco_verismo/templates/parco_verismo/missione_visione.html:4
-#: parco_verismo/templates/parco_verismo/navbar.html:13
-#: parco_verismo/templates/parco_verismo/navbar.html:19
 #: parco_verismo/templates/parco_verismo/note_legali.html:4
 #: parco_verismo/templates/parco_verismo/notizia_detail.html:4
 #: parco_verismo/templates/parco_verismo/opera_detail.html:4
@@ -442,7 +437,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:319
 #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:22
-#: parco_verismo/templates/parco_verismo/navbar.html:64
+#: parco_verismo/templates/parco_verismo/navbar.html:86
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:566
 msgid "Itinerari Verghiani"
 msgstr "Verga Itineraries"
@@ -455,59 +450,29 @@ msgstr ""
 "Creation of digital and physical cultural routes in the literary places of "
 "Sicilian Verismo."
 
-#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:335
-msgid "Supporta il Parco Letterario"
-msgstr "Support the Literary Park"
-
-#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:338
+#: parco_verismo/templates/parco_verismo/base.html:13
 msgid ""
-"Contribuisci con una donazione o diventa partner per supportare la "
-"preservazione e lo sviluppo della cultura letteraria siciliana."
-msgstr ""
-"Contribute with a donation or become a partner to support the preservation "
-"and development of Sicilian literary culture."
-
-#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:342
-msgid "Dona Ora"
-msgstr "Donate Now"
-
-#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:345
-msgid "Diventa Partner"
-msgstr "Become a Partner"
-
-#: parco_verismo/templates/parco_verismo/base.html:11
-msgid ""
-"Parco Letterario Giovanni Verga Luigi Capuana - Un viaggio nella letteratura "
-"verista siciliana attraverso i luoghi di Verga e Capuana"
-msgstr ""
-"Giovanni Verga Luigi Capuana Literary Park - A journey through Sicilian "
-"verist literature in the places of Verga and Capuana"
-
-#: parco_verismo/templates/parco_verismo/base.html:23
-msgid ""
-"Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi "
-"e cultura nei luoghi di Verga e Capuana"
+"Parco Letterario® Verga e Capuana: itinerari culturali, eventi e musei nei "
+"luoghi del Verismo in Sicilia (Vizzini, Mineo, Licodia Eubea)."
 msgstr ""
 "Discover the Giovanni Verga and Luigi Capuana Literary Park: itineraries, "
 "events and culture in the places of Verga and Capuana"
 
-#: parco_verismo/templates/parco_verismo/base.html:36
-msgid "Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia"
-msgstr "Discover the Giovanni Verga and Luigi Capuana Literary Park in Sicily"
+#: parco_verismo/templates/parco_verismo/navbar.html:41
+msgid "Parco Letterario® Giovanni Verga e Luigi Capuana"
+msgstr "Giovanni Verga and Luigi Capuana Literary Park"
 
-#: parco_verismo/templates/parco_verismo/base.html:46
-msgid ""
-"Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i "
-"luoghi di Giovanni Verga e Luigi Capuana"
-msgstr ""
-"Literary park dedicated to discovering Sicilian Verismo through the places "
-"of Giovanni Verga and Luigi Capuana"
+#: parco_verismo/templates/parco_verismo/base.html:25
+#: parco_verismo/templates/parco_verismo/base.html:38
+#: parco_verismo/templates/parco_verismo/base.html:84
+msgid "I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea"
+msgstr "The places of Verismo in Vizzini, Mineo and Licodia Eubea"
 
-#: parco_verismo/templates/parco_verismo/base.html:92
+#: parco_verismo/templates/parco_verismo/base.html:142
 msgid "Salta al contenuto principale"
 msgstr "Skip to main content"
 
-#: parco_verismo/templates/parco_verismo/base.html:99
+#: parco_verismo/templates/parco_verismo/base.html:149
 msgid "Contenuto principale"
 msgstr "Main content"
 
@@ -516,7 +481,7 @@ msgid "Biblioteca Digitale - Parco Letterario Giovanni Verga Luigi Capuana"
 msgstr "Digital Library - Giovanni Verga Luigi Capuana Literary Park"
 
 #: parco_verismo/templates/parco_verismo/biblioteca.html:10
-#: parco_verismo/templates/parco_verismo/navbar.html:138
+#: parco_verismo/templates/parco_verismo/navbar.html:160
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:297
 msgid "Biblioteca Digitale"
 msgstr "Digital Library"
@@ -639,8 +604,6 @@ msgid "Regolamento del Comitato Tecnico-Scientifico"
 msgstr "Technical-Scientific Committee Regulations"
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:25
-#: parco_verismo/templates/parco_verismo/components/footer.html:8
-#: parco_verismo/templates/parco_verismo/contatti.html:25
 #: parco_verismo/templates/parco_verismo/privacy_policy.html:71
 msgid "Parco Letterario Giovanni Verga e Luigi Capuana"
 msgstr "Giovanni Verga and Luigi Capuana Literary Park"
@@ -1360,12 +1323,9 @@ msgid "Scopri di più"
 msgstr "Find out more"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:9
-msgid ""
-"I luoghi del Verismo: un viaggio nei paesaggi e nelle comunità che hanno "
-"ispirato i capolavori di Giovanni Verga e Luigi Capuana"
-msgstr ""
-"The places of Verismo: a journey through the landscapes and communities that "
-"inspired the masterpieces of Giovanni Verga and Luigi Capuana"
+#: parco_verismo/templates/parco_verismo/index.html:20
+msgid "“I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea”"
+msgstr "“The places of Verismo in Vizzini, Mineo and Licodia Eubea”"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:31
 msgid "Navigazione"
@@ -1376,78 +1336,113 @@ msgid "Home"
 msgstr "Home"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:34
+#: parco_verismo/templates/parco_verismo/missione_visione.html:4
+msgid "Missione e Visione"
+msgstr "Mission and Vision"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:38
 #: parco_verismo/templates/parco_verismo/mineo.html:367
 msgid "Biblioteca"
 msgstr "Library"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:35
+#: parco_verismo/templates/parco_verismo/components/footer.html:39
 #: parco_verismo/templates/parco_verismo/eventi.html:59
-#: parco_verismo/templates/parco_verismo/navbar.html:84
+#: parco_verismo/templates/parco_verismo/navbar.html:106
 msgid "Eventi"
 msgstr "Events"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:36
+#: parco_verismo/templates/parco_verismo/components/footer.html:40
 msgid "Notizie"
 msgstr "News"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:37
-#: parco_verismo/templates/parco_verismo/navbar.html:148
+#: parco_verismo/templates/parco_verismo/components/footer.html:41
+#: parco_verismo/templates/parco_verismo/navbar.html:170
 msgid "Documenti & Studi"
 msgstr "Documents & Studies"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:42
+#: parco_verismo/templates/parco_verismo/index.html:317
+#: parco_verismo/templates/parco_verismo/navbar.html:138
+msgid "Opere di Verga"
+msgstr "Works by Verga"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:43
+#: parco_verismo/templates/parco_verismo/index.html:328
+#: parco_verismo/templates/parco_verismo/navbar.html:145
+msgid "Opere di Capuana"
+msgstr "Works by Capuana"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:44
+#, fuzzy
+#| msgid "Personaggi & Lessico del Verismo"
+msgid "Personaggi & Lessico"
+msgstr "Characters & Lexicon of Verismo"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:49
+#: parco_verismo/templates/parco_verismo/contatti.html:4
 #: parco_verismo/templates/parco_verismo/contatti.html:23
-#: parco_verismo/templates/parco_verismo/navbar.html:156
+#: parco_verismo/templates/parco_verismo/navbar.html:178
 msgid "Contatti"
 msgstr "Contacts"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:46
+#: parco_verismo/templates/parco_verismo/components/footer.html:53
 msgid "Sicilia, Italia"
 msgstr "Sicily, Italy"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:63
-msgid "Logo Parco Verismo"
-msgstr "Verismo Park Logo"
-
-#: parco_verismo/templates/parco_verismo/components/footer.html:64
+#: parco_verismo/templates/parco_verismo/components/footer.html:70
 msgid "Logo Regione"
 msgstr "Region Logo"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:65
+#: parco_verismo/templates/parco_verismo/components/footer.html:71
+#: parco_verismo/templates/parco_verismo/navbar.html:14
+#: parco_verismo/templates/parco_verismo/navbar.html:19
+#: parco_verismo/templates/parco_verismo/navbar.html:36
+#, fuzzy
+#| msgid "Associazione Parchi Letterari"
+msgid "Logo Parchi Letterari"
+msgstr "Literary Parks Association"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:72
+#, fuzzy
+#| msgid "Verga e Capuana"
+msgid "Logo Parco Verga e Capuana"
+msgstr "Verga and Capuana"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:73
 msgid "Logo Vizzini"
 msgstr "Vizzini Municipality Logo"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:66
+#: parco_verismo/templates/parco_verismo/components/footer.html:74
 msgid "Logo Mineo"
 msgstr "Mineo Municipality Logo"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:67
+#: parco_verismo/templates/parco_verismo/components/footer.html:75
 msgid "Logo Licodia Eubea"
 msgstr "Licodia Eubea Municipality Logo"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:68
+#: parco_verismo/templates/parco_verismo/components/footer.html:76
 msgid "Logo Cesta"
 msgstr "CESTA Logo"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:74
+#: parco_verismo/templates/parco_verismo/components/footer.html:82
 msgid ""
-"Parco Letterario Giovanni Verga Luigi Capuana. Tutti i diritti riservati."
+"Parco Letterario® Giovanni Verga e Luigi Capuana. Tutti i diritti riservati."
 msgstr "Giovanni Verga Luigi Capuana Literary Park. All rights reserved."
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:76
+#: parco_verismo/templates/parco_verismo/components/footer.html:84
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:273
 msgid "Privacy"
 msgstr "Privacy"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:77
+#: parco_verismo/templates/parco_verismo/components/footer.html:85
 msgid "Cookie"
 msgstr "Cookies"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:78
+#: parco_verismo/templates/parco_verismo/components/footer.html:86
 msgid "Gestisci Cookie"
 msgstr "Manage Cookies"
 
-#: parco_verismo/templates/parco_verismo/components/footer.html:79
+#: parco_verismo/templates/parco_verismo/components/footer.html:87
 #: parco_verismo/templates/parco_verismo/note_legali.html:4
 #: parco_verismo/templates/parco_verismo/note_legali.html:55
 msgid "Note Legali"
@@ -1501,9 +1496,24 @@ msgstr "Search..."
 msgid "Cerca"
 msgstr "Search"
 
+#: parco_verismo/templates/parco_verismo/contatti.html:6
+#, fuzzy
+#| msgid ""
+#| "Il Parco Letterario Giovanni Verga e Luigi Capuana è un progetto "
+#| "culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, "
+#| "Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A."
+msgid ""
+"Contatti del Parco Letterario® Giovanni Verga e Luigi Capuana. Centro Studi "
+"C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, "
+"collaborazioni, attività didattiche."
+msgstr ""
+"The Giovanni Verga and Luigi Capuana Literary Park is a shared cultural "
+"project, promoted in collaboration with the Municipalities of Vizzini, Mineo "
+"and Licodia Eubea and coordinated by the C.E.S.T.A. Study Center."
+
 #: parco_verismo/templates/parco_verismo/contatti.html:28
 msgid ""
-"Il Parco Letterario Giovanni Verga e Luigi Capuana è un progetto culturale "
+"Il Parco Letterario® Giovanni Verga e Luigi Capuana è un progetto culturale "
 "condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e "
 "Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A."
 msgstr ""
@@ -1619,12 +1629,12 @@ msgstr ""
 "Badia Cultural Hub, space for events and official ceremonies."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:250
-#: parco_verismo/templates/parco_verismo/index.html:338
+#: parco_verismo/templates/parco_verismo/index.html:357
 msgid "Modulo di contatto"
 msgstr "Contact Form"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:252
-#: parco_verismo/templates/parco_verismo/index.html:340
+#: parco_verismo/templates/parco_verismo/index.html:359
 msgid ""
 "Per richieste di informazioni generali, proposte di collaborazione, attività "
 "didattiche, visite guidate, eventi o comunicazioni istituzionali, è "
@@ -1635,32 +1645,32 @@ msgstr ""
 "use the contact form below."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:255
-#: parco_verismo/templates/parco_verismo/index.html:343
+#: parco_verismo/templates/parco_verismo/index.html:362
 msgid "Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario."
 msgstr "The message will be sent to the official email of the Literary Park."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:297
-#: parco_verismo/templates/parco_verismo/index.html:380
+#: parco_verismo/templates/parco_verismo/index.html:399
 msgid "facoltativo"
 msgstr "optional"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:330
-#: parco_verismo/templates/parco_verismo/index.html:413
+#: parco_verismo/templates/parco_verismo/index.html:432
 msgid "Invia messaggio"
 msgstr "Send message"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:333
-#: parco_verismo/templates/parco_verismo/index.html:416
+#: parco_verismo/templates/parco_verismo/index.html:435
 msgid "I campi contrassegnati con"
 msgstr "Fields marked with"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:333
-#: parco_verismo/templates/parco_verismo/index.html:416
+#: parco_verismo/templates/parco_verismo/index.html:435
 msgid "sono obbligatori."
 msgstr "are required."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:338
-#: parco_verismo/templates/parco_verismo/index.html:421
+#: parco_verismo/templates/parco_verismo/index.html:440
 msgid "Informativa sulla privacy"
 msgstr "Privacy policy"
 
@@ -2027,7 +2037,7 @@ msgid "Tutti i tipi"
 msgstr "All types"
 
 #: parco_verismo/templates/parco_verismo/documenti.html:51
-#: parco_verismo/templates/parco_verismo/index.html:271
+#: parco_verismo/templates/parco_verismo/index.html:290
 msgid "Documenti"
 msgstr "Documents"
 
@@ -2277,58 +2287,59 @@ msgstr "Saturday"
 msgid "Nessun evento in questa data"
 msgstr "No events on this date"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:17
+#: parco_verismo/templates/parco_verismo/evento_detail.html:52
 msgid "Immagine evento"
 msgstr "Event image"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:26
+#: parco_verismo/templates/parco_verismo/evento_detail.html:110
 msgid "Data e Ora"
 msgstr "Date and Time"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:29
+#: parco_verismo/templates/parco_verismo/evento_detail.html:113
 msgid "Inizio:"
 msgstr "Start:"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:33
+#: parco_verismo/templates/parco_verismo/evento_detail.html:117
 msgid "Fine:"
 msgstr "End:"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:43
+#: parco_verismo/templates/parco_verismo/evento_detail.html:127
 msgid "Luogo"
 msgstr "Place"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:66
+#: parco_verismo/templates/parco_verismo/evento_detail.html:152
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:113
+#, fuzzy
+#| msgid "Documenti e Studi"
+msgid "Documenti Allegati"
+msgstr "Documents and Studies"
+
+#: parco_verismo/templates/parco_verismo/evento_detail.html:174
 msgid "Torna agli eventi"
 msgstr "Back to events"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:69
+#: parco_verismo/templates/parco_verismo/evento_detail.html:177
 msgid "Vedi calendario"
 msgstr "View calendar"
 
 #: parco_verismo/templates/parco_verismo/index.html:6
-msgid "Parco Letterario Giovanni Verga e Luigi Capuana - I luoghi del Verismo"
+#, fuzzy
+#| msgid ""
+#| "Parco Letterario Giovanni Verga e Luigi Capuana - I luoghi del Verismo"
+msgid "Parco Letterario® Giovanni Verga e Luigi Capuana - I luoghi del Verismo"
 msgstr "Giovanni Verga and Luigi Capuana Literary Park - The places of Verismo"
 
-#: parco_verismo/templates/parco_verismo/index.html:18
-msgid "Parco Letterario"
+#: parco_verismo/templates/parco_verismo/index.html:17
+msgid "Parco Letterario®"
 msgstr "Literary Park"
 
-#: parco_verismo/templates/parco_verismo/index.html:19
+#: parco_verismo/templates/parco_verismo/index.html:18
 msgid "Giovanni Verga e Luigi Capuana"
 msgstr "Giovanni Verga and Luigi Capuana"
 
-#: parco_verismo/templates/parco_verismo/index.html:21
-msgid "I luoghi del Verismo"
-msgstr "The places of Verismo"
-
-#: parco_verismo/templates/parco_verismo/index.html:35
-#: parco_verismo/templates/parco_verismo/missione_visione.html:22
-msgid "Il Parco Letterario Giovanni Verga e Luigi Capuana"
-msgstr "The Giovanni Verga and Luigi Capuana Literary Park"
-
-#: parco_verismo/templates/parco_verismo/index.html:38
+#: parco_verismo/templates/parco_verismo/index.html:57
 msgid ""
-"Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza il patrimonio "
+"Il Parco Letterario® Giovanni Verga e Luigi Capuana valorizza il patrimonio "
 "verista attraverso ricerca, percorsi culturali e progetti che coinvolgono la "
 "comunità. L'obiettivo è trasformare la memoria letteraria in un motore di "
 "sviluppo condiviso, favorendo un turismo culturale responsabile e un "
@@ -2340,19 +2351,19 @@ msgstr ""
 "development, promoting responsible cultural tourism and a territory where "
 "identity, history and future dialogue harmoniously."
 
-#: parco_verismo/templates/parco_verismo/index.html:44
+#: parco_verismo/templates/parco_verismo/index.html:63
 msgid "Scopri il Parco"
 msgstr "Discover the Park"
 
-#: parco_verismo/templates/parco_verismo/index.html:45
+#: parco_verismo/templates/parco_verismo/index.html:64
 msgid "Comitato Tecnico"
 msgstr "Technical Committee"
 
-#: parco_verismo/templates/parco_verismo/index.html:58
+#: parco_verismo/templates/parco_verismo/index.html:77
 msgid "Località"
 msgstr "Locations"
 
-#: parco_verismo/templates/parco_verismo/index.html:61
+#: parco_verismo/templates/parco_verismo/index.html:80
 msgid ""
 "Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e "
 "Capuana"
@@ -2360,75 +2371,75 @@ msgstr ""
 "Discover the three municipalities of Verismo and the thematic itineraries "
 "dedicated to Verga and Capuana"
 
-#: parco_verismo/templates/parco_verismo/index.html:72
+#: parco_verismo/templates/parco_verismo/index.html:91
 msgid "La patria di Giovanni Verga, dove la letteratura dialoga con i luoghi."
 msgstr ""
 "The homeland of Giovanni Verga, where literature dialogues with places."
 
-#: parco_verismo/templates/parco_verismo/index.html:73
+#: parco_verismo/templates/parco_verismo/index.html:92
 msgid "Scopri Vizzini"
 msgstr "Discover Vizzini"
 
-#: parco_verismo/templates/parco_verismo/index.html:83
+#: parco_verismo/templates/parco_verismo/index.html:102
 msgid "Uno dei luoghi più importanti della narrativa capuaniana e del Verismo."
 msgstr "One of the most important places in Capuana's narrative and Verismo."
 
-#: parco_verismo/templates/parco_verismo/index.html:84
+#: parco_verismo/templates/parco_verismo/index.html:103
 msgid "Scopri Mineo"
 msgstr "Discover Mineo"
 
-#: parco_verismo/templates/parco_verismo/index.html:94
+#: parco_verismo/templates/parco_verismo/index.html:113
 msgid ""
 "Un territorio ricco di storia e di legami con la grande letteratura "
 "siciliana."
 msgstr ""
 "A territory rich in history and connections with great Sicilian literature."
 
-#: parco_verismo/templates/parco_verismo/index.html:95
+#: parco_verismo/templates/parco_verismo/index.html:114
 msgid "Scopri Licodia"
 msgstr "Discover Licodia"
 
-#: parco_verismo/templates/parco_verismo/index.html:107
+#: parco_verismo/templates/parco_verismo/index.html:126
 msgid "Eventi & Notizie"
 msgstr "Events & News"
 
-#: parco_verismo/templates/parco_verismo/index.html:108
+#: parco_verismo/templates/parco_verismo/index.html:127
 msgid "Ultimi eventi e aggiornamenti dal Parco"
 msgstr "Latest events and updates from the Park"
 
-#: parco_verismo/templates/parco_verismo/index.html:114
+#: parco_verismo/templates/parco_verismo/index.html:133
 msgid "Eventi recenti"
 msgstr "Recent events"
 
-#: parco_verismo/templates/parco_verismo/index.html:126
+#: parco_verismo/templates/parco_verismo/index.html:145
 msgid "Nessun evento recente"
 msgstr "No recent events"
 
-#: parco_verismo/templates/parco_verismo/index.html:130
+#: parco_verismo/templates/parco_verismo/index.html:149
 msgid "Vedi tutti gli eventi"
 msgstr "See all events"
 
-#: parco_verismo/templates/parco_verismo/index.html:137
+#: parco_verismo/templates/parco_verismo/index.html:156
 msgid "Notizie recenti"
 msgstr "Recent news"
 
-#: parco_verismo/templates/parco_verismo/index.html:149
+#: parco_verismo/templates/parco_verismo/index.html:168
 msgid "Nessuna notizia recente"
 msgstr "No recent news"
 
-#: parco_verismo/templates/parco_verismo/index.html:153
+#: parco_verismo/templates/parco_verismo/index.html:172
 msgid "Leggi tutte le notizie"
 msgstr "Read all news"
 
-#: parco_verismo/templates/parco_verismo/index.html:194
+#: parco_verismo/templates/parco_verismo/index.html:213
 msgid "Patrimonio Letterario"
 msgstr "Literary Heritage"
 
-#: parco_verismo/templates/parco_verismo/index.html:201
+#: parco_verismo/templates/parco_verismo/index.html:220
 msgid "Biblioteca Letteraria"
 msgstr "Literary Library"
 
-#: parco_verismo/templates/parco_verismo/index.html:204
+#: parco_verismo/templates/parco_verismo/index.html:223
 msgid ""
 "Esplora le opere di Giovanni Verga e Luigi Capuana, i pilastri della "
 "letteratura siciliana e italiana."
@@ -2436,35 +2447,35 @@ msgstr ""
 "Explore the works of Giovanni Verga and Luigi Capuana, the pillars of "
 "Sicilian and Italian literature."
 
-#: parco_verismo/templates/parco_verismo/index.html:207
+#: parco_verismo/templates/parco_verismo/index.html:226
 msgid "Catalogo completo delle opere"
 msgstr "Complete catalogue of works"
 
-#: parco_verismo/templates/parco_verismo/index.html:208
+#: parco_verismo/templates/parco_verismo/index.html:227
 msgid "Biografie dettagliate degli autori"
 msgstr "Detailed author biographies"
 
-#: parco_verismo/templates/parco_verismo/index.html:209
+#: parco_verismo/templates/parco_verismo/index.html:228
 msgid "Analisi letterarie e studi critici"
 msgstr "Literary analyses and critical studies"
 
-#: parco_verismo/templates/parco_verismo/index.html:210
+#: parco_verismo/templates/parco_verismo/index.html:229
 msgid "Contenuti multimediali e interattivi"
 msgstr "Multimedia and interactive content"
 
-#: parco_verismo/templates/parco_verismo/index.html:213
+#: parco_verismo/templates/parco_verismo/index.html:232
 msgid "Accedi alla Biblioteca"
 msgstr "Access the Library"
 
-#: parco_verismo/templates/parco_verismo/index.html:248
+#: parco_verismo/templates/parco_verismo/index.html:267
 msgid "Risorse Documentali"
 msgstr "Documentary Resources"
 
-#: parco_verismo/templates/parco_verismo/index.html:255
+#: parco_verismo/templates/parco_verismo/index.html:274
 msgid "Archivi & Documenti"
 msgstr "Archives & Documents"
 
-#: parco_verismo/templates/parco_verismo/index.html:258
+#: parco_verismo/templates/parco_verismo/index.html:277
 msgid ""
 "Accedi agli archivi fotografici, agli studi critici e ai documenti storici "
 "sul patrimonio verista."
@@ -2472,41 +2483,36 @@ msgstr ""
 "Access the photographic archives, critical studies and historical documents "
 "on Verist heritage."
 
-#: parco_verismo/templates/parco_verismo/index.html:261
-#: parco_verismo/templates/parco_verismo/index.html:268
-#: parco_verismo/templates/parco_verismo/navbar.html:143
+#: parco_verismo/templates/parco_verismo/index.html:280
+#: parco_verismo/templates/parco_verismo/index.html:287
+#: parco_verismo/templates/parco_verismo/navbar.html:165
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:17
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:135
 msgid "Verga e Capuana Fotografi"
 msgstr "Verga and Capuana Photographers"
 
-#: parco_verismo/templates/parco_verismo/index.html:262
+#: parco_verismo/templates/parco_verismo/index.html:281
 msgid "Studi e ricerche scientifiche"
 msgstr "Scientific studies and research"
 
-#: parco_verismo/templates/parco_verismo/index.html:263
+#: parco_verismo/templates/parco_verismo/index.html:282
 msgid "Documenti storici e manoscritti"
 msgstr "Historical documents and manuscripts"
 
-#: parco_verismo/templates/parco_verismo/index.html:264
+#: parco_verismo/templates/parco_verismo/index.html:283
 msgid "Risorse per la ricerca accademica"
 msgstr "Academic research resources"
 
-#: parco_verismo/templates/parco_verismo/index.html:285
-#: parco_verismo/templates/parco_verismo/navbar.html:109
+#: parco_verismo/templates/parco_verismo/index.html:304
+#: parco_verismo/templates/parco_verismo/navbar.html:131
 msgid "Opere & Letteratura"
 msgstr "Works & Literature"
 
-#: parco_verismo/templates/parco_verismo/index.html:288
+#: parco_verismo/templates/parco_verismo/index.html:307
 msgid "Esplora le opere, i testi e i protagonisti del movimento verista"
 msgstr "Explore the works, texts and protagonists of the Verist movement"
 
-#: parco_verismo/templates/parco_verismo/index.html:298
-#: parco_verismo/templates/parco_verismo/navbar.html:116
-msgid "Opere di Verga"
-msgstr "Works by Verga"
-
-#: parco_verismo/templates/parco_verismo/index.html:299
+#: parco_verismo/templates/parco_verismo/index.html:318
 msgid ""
 "Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e "
 "edizioni critiche."
@@ -2514,16 +2520,11 @@ msgstr ""
 "Catalogue and resources on Giovanni Verga's main works, essays and critical "
 "editions."
 
-#: parco_verismo/templates/parco_verismo/index.html:300
+#: parco_verismo/templates/parco_verismo/index.html:319
 msgid "Scopri le opere"
 msgstr "Discover the works"
 
-#: parco_verismo/templates/parco_verismo/index.html:309
-#: parco_verismo/templates/parco_verismo/navbar.html:123
-msgid "Opere di Capuana"
-msgstr "Works by Capuana"
-
-#: parco_verismo/templates/parco_verismo/index.html:310
+#: parco_verismo/templates/parco_verismo/index.html:329
 msgid ""
 "Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua "
 "produzione."
@@ -2531,16 +2532,16 @@ msgstr ""
 "Collection of texts, critical contexts and materials on Luigi Capuana and "
 "his production."
 
-#: parco_verismo/templates/parco_verismo/index.html:311
+#: parco_verismo/templates/parco_verismo/index.html:330
 msgid "Esplora Capuana"
 msgstr "Explore Capuana"
 
-#: parco_verismo/templates/parco_verismo/index.html:320
-#: parco_verismo/templates/parco_verismo/navbar.html:128
+#: parco_verismo/templates/parco_verismo/index.html:339
+#: parco_verismo/templates/parco_verismo/navbar.html:150
 msgid "Personaggi & Lessico del Verismo"
 msgstr "Characters & Lexicon of Verismo"
 
-#: parco_verismo/templates/parco_verismo/index.html:321
+#: parco_verismo/templates/parco_verismo/index.html:340
 msgid ""
 "Schede sui personaggi principali, lessico caratteristico e termini letterari "
 "del Verismo."
@@ -2548,7 +2549,7 @@ msgstr ""
 "Profiles of main characters, characteristic lexicon and literary terms of "
 "Verismo."
 
-#: parco_verismo/templates/parco_verismo/index.html:322
+#: parco_verismo/templates/parco_verismo/index.html:341
 msgid "Approfondisci"
 msgstr "Learn more"
 
@@ -2565,7 +2566,7 @@ msgstr ""
 "literary routes in the heart of Sicily."
 
 #: parco_verismo/templates/parco_verismo/itinerari_capuaniani.html:22
-#: parco_verismo/templates/parco_verismo/navbar.html:65
+#: parco_verismo/templates/parco_verismo/navbar.html:87
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:569
 msgid "Itinerari Capuaniani"
 msgstr "Capuana Itineraries"
@@ -3135,7 +3136,7 @@ msgstr "Show all"
 
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:4
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:23
-#: parco_verismo/templates/parco_verismo/navbar.html:133
+#: parco_verismo/templates/parco_verismo/navbar.html:155
 msgid "Luoghi delle Opere"
 msgstr "Places of the Works"
 
@@ -4423,13 +4424,13 @@ msgstr "Explore Mineo"
 msgid "Luoghi Capuaniani"
 msgstr "Capuana's Places"
 
-#: parco_verismo/templates/parco_verismo/missione_visione.html:4
-msgid "Missione e Visione"
-msgstr "Mission and Vision"
-
 #: parco_verismo/templates/parco_verismo/missione_visione.html:20
 msgid "Chi Siamo"
 msgstr "About Us"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:22
+msgid "Il Parco Letterario Giovanni Verga e Luigi Capuana"
+msgstr "The Giovanni Verga and Luigi Capuana Literary Park"
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:25
 msgid ""
@@ -4630,60 +4631,56 @@ msgstr ""
 "into a center of cultural production, where the legacy of the past offers "
 "keys to reading contemporary challenges."
 
-#: parco_verismo/templates/parco_verismo/navbar.html:31
+#: parco_verismo/templates/parco_verismo/navbar.html:53
 msgid "Apri navigazione"
 msgstr "Open navigation"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:42
+#: parco_verismo/templates/parco_verismo/navbar.html:64
 msgid "Il Parco"
 msgstr "The Park"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:45
+#: parco_verismo/templates/parco_verismo/navbar.html:67
 msgid "Missioni e visione"
 msgstr "Mission and vision"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:46
+#: parco_verismo/templates/parco_verismo/navbar.html:68
 msgid "Comitato tecnico"
 msgstr "Technical committee"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:47
+#: parco_verismo/templates/parco_verismo/navbar.html:69
 msgid "Regolamenti & documenti"
 msgstr "Regulations & documents"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:48
+#: parco_verismo/templates/parco_verismo/navbar.html:70
 msgid "Partner e rete territoriale"
 msgstr "Partners and territorial network"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:49
-msgid "Accrediti e finanziamenti"
-msgstr "Accreditations and funding"
-
-#: parco_verismo/templates/parco_verismo/navbar.html:56
+#: parco_verismo/templates/parco_verismo/navbar.html:78
 msgid "Luoghi & Percorsi"
 msgstr "Places & Routes"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:62
+#: parco_verismo/templates/parco_verismo/navbar.html:84
 msgid "Mappe interattive"
 msgstr "Interactive Maps"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:66
+#: parco_verismo/templates/parco_verismo/navbar.html:88
 msgid "Tematici"
 msgstr "Thematic"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:79
+#: parco_verismo/templates/parco_verismo/navbar.html:101
 msgid "Eventi & News"
 msgstr "Events & News"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:89
+#: parco_verismo/templates/parco_verismo/navbar.html:111
 msgid "Calendario"
 msgstr "Calendar"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:94
+#: parco_verismo/templates/parco_verismo/navbar.html:116
 #: parco_verismo/templates/parco_verismo/notizie.html:58
 msgid "News"
 msgstr "News"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:163
+#: parco_verismo/templates/parco_verismo/navbar.html:185
 msgid "Cambia lingua"
 msgstr "Change language"
 
@@ -4720,7 +4717,9 @@ msgid "2. Oggetto e Finalità del Sito"
 msgstr "2. Purpose and Objectives of the Website"
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:73
-msgid "Il sito www.parcoverismo.it ha lo scopo di:"
+#, fuzzy
+#| msgid "Il sito www.parcoverismo.it ha lo scopo di:"
+msgid "Il sito www.parcovergacapuana.it ha lo scopo di:"
 msgstr "The website www.parcoverismo.it aims to:"
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:76
@@ -5023,7 +5022,7 @@ msgstr "Hosting"
 msgid "Tecnologie utilizzate"
 msgstr "Technologies used"
 
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:15
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:38
 #, python-format
 msgid ""
 "\n"
@@ -5038,11 +5037,11 @@ msgstr ""
 "        </div>\n"
 "        "
 
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:23
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:48
 msgid "Immagine notizia"
 msgstr "News Image"
 
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:37
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:135
 msgid "Torna alle news"
 msgstr "Back to news"
 
@@ -5886,7 +5885,6 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:332
 msgid "Novelle del mondo occulto"
 msgstr "Novelle del mondo occulto"
-
 
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:338
 msgid ""
@@ -8324,6 +8322,56 @@ msgstr "Summer events"
 msgid "Esplora Vizzini"
 msgstr "Explore Vizzini"
 
+#~ msgid "Supporta il Parco Letterario"
+#~ msgstr "Support the Literary Park"
+
+#~ msgid ""
+#~ "Contribuisci con una donazione o diventa partner per supportare la "
+#~ "preservazione e lo sviluppo della cultura letteraria siciliana."
+#~ msgstr ""
+#~ "Contribute with a donation or become a partner to support the "
+#~ "preservation and development of Sicilian literary culture."
+
+#~ msgid "Dona Ora"
+#~ msgstr "Donate Now"
+
+#~ msgid "Diventa Partner"
+#~ msgstr "Become a Partner"
+
+#~ msgid ""
+#~ "Parco Letterario Giovanni Verga Luigi Capuana - Un viaggio nella "
+#~ "letteratura verista siciliana attraverso i luoghi di Verga e Capuana"
+#~ msgstr ""
+#~ "Giovanni Verga Luigi Capuana Literary Park - A journey through Sicilian "
+#~ "verist literature in the places of Verga and Capuana"
+
+#~ msgid "Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia"
+#~ msgstr ""
+#~ "Discover the Giovanni Verga and Luigi Capuana Literary Park in Sicily"
+
+#~ msgid ""
+#~ "Parco letterario dedicato alla scoperta del Verismo siciliano attraverso "
+#~ "i luoghi di Giovanni Verga e Luigi Capuana"
+#~ msgstr ""
+#~ "Literary park dedicated to discovering Sicilian Verismo through the "
+#~ "places of Giovanni Verga and Luigi Capuana"
+
+#~ msgid ""
+#~ "I luoghi del Verismo: un viaggio nei paesaggi e nelle comunità che hanno "
+#~ "ispirato i capolavori di Giovanni Verga e Luigi Capuana"
+#~ msgstr ""
+#~ "The places of Verismo: a journey through the landscapes and communities "
+#~ "that inspired the masterpieces of Giovanni Verga and Luigi Capuana"
+
+#~ msgid "Logo Parco Verismo"
+#~ msgstr "Verismo Park Logo"
+
+#~ msgid "I luoghi del Verismo"
+#~ msgstr "The places of Verismo"
+
+#~ msgid "Accrediti e finanziamenti"
+#~ msgstr "Accreditations and funding"
+
 #~ msgid "Casa Natale"
 #~ msgstr "Birthplace of"
 
@@ -8433,9 +8481,6 @@ msgstr "Explore Vizzini"
 
 #~ msgid "Amministrativa"
 #~ msgstr "Administrative"
-
-#~ msgid "Verga e Capuana"
-#~ msgstr "Verga and Capuana"
 
 #~ msgid "Fotografi"
 #~ msgstr "Photographers"
