@@ -1,10 +1,10 @@
 {% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans 'Itinerari Capuaniani' %} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
+{% block title %}{% trans 'Itinerari Tematici' %} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
 
-{% block meta_description %}{% trans 'Scopri i luoghi letterari di Luigi Capuana attraverso itinerari interattivi. Percorsi guidati nei luoghi che hanno ispirato le opere veriste.' %}{% endblock %}
-{% block meta_keywords %}itinerari capuaniani,Luigi Capuana,percorsi letterari,Sicilia,verismo{% endblock %}
+{% block meta_description %}{% trans 'Scopri i luoghi letterari attraverso itinerari tematici. Percorsi guidati dedicati a temi specifici del verismo siciliano.' %}{% endblock %}
+{% block meta_keywords %}itinerari tematici,percorsi letterari,Sicilia,verismo,parco letterario{% endblock %}
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/itinerari.css' %}" />
@@ -12,12 +12,12 @@
 {% endblock %}
 
 {% block hero_section %}
-<section class="hero-itinerari hero-capuaniani">
+<section class="hero-itinerari hero-tematici">
   <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center">
       <div class="col-lg-8 text-center text-white">
-        <h1 class="hero-title display-3 fw-bold mb-3">{% trans 'Itinerari Capuaniani' %}</h1>
-        <p class="hero-subtitle lead">{% trans 'Scopri i luoghi che hanno ispirato le opere di Luigi Capuana' %}</p>
+        <h1 class="hero-title display-3 fw-bold mb-3">{% trans 'Itinerari Tematici' %}</h1>
+        <p class="hero-subtitle lead">{% trans 'Percorsi dedicati a temi specifici del verismo siciliano' %}</p>
       </div>
     </div>
   </div>
@@ -117,7 +117,7 @@
           <div class="alert alert-info">
             <i class="bi bi-info-circle fs-1 d-block mb-3"></i>
             <h3>{% trans 'Nessun itinerario disponibile' %}</h3>
-            <p>{% trans 'Al momento non ci sono itinerari capuaniani attivi. Torna presto per scoprire nuovi percorsi!' %}</p>
+            <p>{% trans 'Al momento non ci sono itinerari tematici attivi. Torna presto per scoprire nuovi percorsi!' %}</p>
           </div>
         </div>
       </div>
@@ -159,5 +159,5 @@
 
 {% block extra_scripts %}
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="{% static 'js/itinerari-capuaniani.js' %}"></script>
+<script src="{% static 'js/itinerari-tematici.js' %}"></script>
 {% endblock %}

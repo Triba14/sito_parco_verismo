@@ -7,7 +7,7 @@ Importa e registra tutti gli admin organizzati.
 from .biblioteca import AutoreAdmin, OperaAdmin
 from .eventi import EventoAdmin, NotiziaAdmin
 from .documenti import DocumentoAdmin, FotoArchivioAdmin
-from .itinerari import ItinerarioAdmin, TappaItinerarioAdmin
+from .itinerari import ItinerarioAdmin
 from .richieste import RichiestaAdmin
 
 # Gli admin sono già registrati con @admin.register nei rispettivi file
@@ -21,6 +21,5 @@ __all__ = [
     "DocumentoAdmin",
     "FotoArchivioAdmin",
     "ItinerarioAdmin",
-    "TappaItinerarioAdmin",
     "RichiestaAdmin",
 ]

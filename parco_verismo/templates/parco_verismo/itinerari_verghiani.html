@@ -33,25 +33,61 @@
       </div>
 
       <div class="map-layout">
-        <!-- Pannello Laterale Filtri -->
+        <!-- Sidebar Itinerari -->
         <div class="map-sidebar">
           <div class="map-sidebar-header">
             <h4><i class="bi bi-signpost-2 me-2"></i>{% trans 'Percorsi Disponibili' %}</h4>
           </div>
           <div class="map-sidebar-content">
-            <!-- Lista percorsi -->
-            <div class="filters-list">
-              {% for data in itinerari_data %}
-              <div class="filter-item route-btn d-flex align-items-center gap-2" 
-                   data-itinerario='{{ data.itinerario_json|safe }}'>
-                <span style="font-size: 1.2rem;">{{ data.obj.icona_percorso|default:'📖' }}</span>
-                <span>{{ data.obj.titolo }}</span>
+            {% for data in itinerari_data %}
+            <div class="itinerario-card" data-itinerario-id="{{ data.obj.id }}">
+              <script type="application/json" class="itinerario-data">{{ data.itinerario_json|safe }}</script>
+              <div class="itinerario-card-header">
+                <div class="itinerario-header-text">
+                  <h3 class="itinerario-title">{{ data.obj.titolo }}</h3>
+                  <div class="itinerario-meta-mini">
+                    <span class="badge badge-tappe">
+                      <i class="bi bi-geo-alt"></i>
+                      {{ data.obj.get_numero_tappe }} {% trans 'tappe' %}
+                    </span>
+                  </div>
+                </div>
               </div>
-              {% endfor %}
-              <div class="filter-item filter-item-reset reset-view-btn d-flex align-items-center gap-2">
-                <i class="bi bi-arrow-clockwise text-primary"></i>
-                <span>{% trans 'Reset vista' %}</span>
+              
+              <div class="itinerario-card-body">
+                <p class="itinerario-description">{{ data.obj.descrizione|truncatewords:15 }}</p>
+                
+                <div class="itinerario-meta">
+                  <div class="meta-item">
+                    <i class="bi bi-clock"></i>
+                    <span>{{ data.obj.durata_stimata|default:'Non specificata' }}</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-signal"></i>
+                    <span>{{ data.obj.get_difficolta_display }}</span>
+                  </div>
+                </div>
               </div>
+              
+              <div class="itinerario-card-footer">
+                <div class="d-flex gap-2">
+                  <button class="btn btn-show-route btn-sm flex-fill">
+                    <i class="bi bi-geo-alt-fill me-1"></i>
+                    {% trans 'Mostra sulla mappa' %}
+                  </button>
+                  <button class="btn btn-info-itinerario btn-sm">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            
+            <div class="mt-3">
+              <button class="btn btn-secondary btn-sm w-100" id="resetMapView">
+                <i class="bi bi-arrow-clockwise me-2"></i>
+                {% trans 'Reset vista mappa' %}
+              </button>
             </div>
           </div>
         </div>
@@ -59,6 +95,54 @@
         <!-- Mappa -->
         <div class="map-main">
           <div id="map" class="map-container rounded shadow"></div>
+        </div>
+      </div>
+      
+      <!-- Modale Dettagli Tappa -->
+      <div class="modal fade" id="tappaModal" tabindex="-1" aria-labelledby="tappaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header" style="background: linear-gradient(135deg, #4A6741 0%, #3D5535 100%); color: white;">
+              <h5 class="modal-title" id="tappaModalLabel">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                <span id="tappaModalTitolo"></span>
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="tappaModalBody" style="min-height: 200px; max-height: 60vh; overflow-y: auto;">
+              <!-- Contenuto dinamico -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                <i class="bi bi-x-circle me-1"></i>
+                {% trans 'Chiudi' %}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modale Info Itinerario -->
+      <div class="modal fade" id="itinerarioInfoModal" tabindex="-1" aria-labelledby="itinerarioInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header" style="background: linear-gradient(135deg, #4A6741 0%, #3D5535 100%); color: white;">
+              <h5 class="modal-title" id="itinerarioInfoModalLabel">
+                <i class="bi bi-signpost-2 me-2"></i>
+                <span id="itinerarioInfoModalTitolo"></span>
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="itinerarioInfoModalBody" style="max-height: 70vh; overflow-y: auto;">
+              <!-- Contenuto dinamico -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                <i class="bi bi-x-circle me-1"></i>
+                {% trans 'Chiudi' %}
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -76,6 +160,6 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     
     <!-- Map Scripts -->
-    <script src="{% static 'js/map/script_itinerari_verghiani.js' %}"></script>
+    <script src="{% static 'js/itinerari-verghiani.js' %}"></script>
 {% endblock %}
 

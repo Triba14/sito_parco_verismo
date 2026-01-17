@@ -7,7 +7,7 @@ Organizzati per funzionalità e dominio.
 from .autori_opere import Autore, Opera
 from .eventi import Evento, Notizia, EventoImage, NotiziaImage, EventoDocumento, NotiziaDocumento
 from .documenti import Documento, FotoArchivio
-from .itinerari import Itinerario, TappaItinerario
+from .itinerari import Itinerario, ItinerarioImmagine
 from .richieste import Richiesta
 
 # Esporta tutti i modelli
@@ -27,7 +27,7 @@ __all__ = [
     "FotoArchivio",
     # Itinerari
     "Itinerario",
-    "TappaItinerario",
+    "ItinerarioImmagine",
     # Richieste di contatto
     "Richiesta",
 ]

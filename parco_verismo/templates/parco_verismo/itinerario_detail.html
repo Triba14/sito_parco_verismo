@@ -1,123 +1,160 @@
-{% extends "parco_verismo/base.html" %}
+{% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
 {% block title %}{{ itinerario.titolo }} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
 
-{% block hero_section %}{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/itinerari.css' %}" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+{% endblock %}
+
+{% block hero_section %}
+<!-- Hero personalizzato per itinerario -->
+<section class="hero-itinerario-detail" {% if itinerario.immagine %}style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('{{ itinerario.immagine.url }}');"{% endif %}>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-10 col-xl-8">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{% url 'home' %}" class="text-white"><i class="bi bi-house"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              {% if itinerario.tipo == 'verghiano' %}
+                <a href="{% url 'itinerari_verghiani' %}" class="text-white">{% trans 'Itinerari Verghiani' %}</a>
+              {% elif itinerario.tipo == 'capuaniano' %}
+                <a href="{% url 'itinerari_capuaniani' %}" class="text-white">{% trans 'Itinerari Capuaniani' %}</a>
+              {% else %}
+                <a href="#" class="text-white">{% trans 'Itinerari' %}</a>
+              {% endif %}
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">{{ itinerario.titolo }}</li>
+          </ol>
+        </nav>
+        
+        <h1 class="display-4 fw-bold text-white mb-3">
+          <span class="itinerario-icon-large me-3">{{ itinerario.icona_percorso|default:'📍' }}</span>
+          {{ itinerario.titolo }}
+        </h1>
+        
+        <div class="itinerario-meta-hero d-flex flex-wrap gap-3 text-white">
+          <div class="meta-item-hero">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <strong>{{ numero_tappe }}</strong> {% trans 'tappe' %}
+          </div>
+          <div class="meta-item-hero">
+            <i class="bi bi-clock-fill me-2"></i>
+            {{ itinerario.durata_stimata|default:'Non specificata' }}
+          </div>
+          <div class="meta-item-hero">
+            <i class="bi bi-signal me-2"></i>
+            {{ itinerario.get_difficolta_display }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
 
 {% block content %}
-<section class="site-section detail-page">
+<section class="itinerario-detail-section py-5">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <!-- Pulsante indietro -->
-        <div class="mb-4">
-          {% if itinerario.tipo == 'verghiano' %}
-            <a href="{% url 'itinerari_verghiani' %}" class="btn btn-outline-secondary">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari verghiani' %}
-            </a>
-          {% elif itinerario.tipo == 'capuaniano' %}
-            <a href="{% url 'itinerari_capuaniani' %}" class="btn btn-outline-secondary">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari capuaniani' %}
-            </a>
-          {% else %}
-            <a href="{% url 'itinerari_tematici' %}" class="btn btn-outline-secondary">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari tematici' %}
-            </a>
+    <!-- Descrizione itinerario -->
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto">
+        <div class="itinerario-description-box">
+          <h2 class="section-title mb-4">
+            <i class="bi bi-info-circle me-2"></i>
+            {% trans 'Descrizione del percorso' %}
+          </h2>
+          <div class="description-content">
+            {{ itinerario.descrizione|linebreaks }}
+          </div>
+          
+          {% if itinerario.note %}
+          <div class="itinerario-notes mt-4">
+            <h3 class="h5"><i class="bi bi-lightbulb me-2"></i>{% trans 'Note e consigli' %}</h3>
+            {{ itinerario.note|linebreaks }}
+          </div>
           {% endif %}
         </div>
-        
-        <h1 class="site-section-title text-center mb-5">{{ itinerario.titolo }}</h1>
-
-        <div class="row g-4 mb-5">
-          <!-- Colonna sinistra: Immagine -->
-          <div class="col-lg-5">
-            {% if itinerario.immagine %}
-            <div class="itinerario-image-detail">
-              <img src="{{ itinerario.immagine.url }}" 
-                   alt="{% trans 'Mappa' %} {{ itinerario.titolo }}" 
-                   class="img-fluid rounded-3 shadow">
-            </div>
-            {% endif %}
-          </div>
-          
-          <!-- Colonna destra: Descrizione -->
-          <div class="col-lg-7">
-            <div class="site-card">
-              <div class="site-card-body">
-                <h5 class="site-card-title mb-3">
-                  <i class="bi bi-info-circle me-2"></i>{% trans 'Descrizione del percorso' %}
-                </h5>
-                <div class="site-card-description">
-                  {{ itinerario.descrizione|linebreaks }}
-                </div>
-              </div>
-            </div>
-            
-            <!-- Pulsante Maps -->
-            {% if itinerario.link_maps %}
-            <div class="text-center mt-4">
-              <a href="{{ itinerario.link_maps }}" 
-                 target="_blank" 
-                 class="btn btn-maps btn-lg px-5 py-3 rounded-3 shadow" 
-                 rel="noopener noreferrer">
-                <i class="bi bi-geo-alt-fill me-2"></i>
-                <span class="fw-semibold">{% trans 'Apri su Maps' %}</span>
-              </a>
-            </div>
-            {% endif %}
-          </div>
-        </div>
-
-        <!-- Sezione Tappe -->
-        {% if itinerario.tappe.all %}
-        <div class="mb-5">
-          <h2 class="text-center mb-4">
-            <i class="bi bi-signpost-2 me-2"></i>{% trans 'Tappe del percorso' %}
+      </div>
+    </div>
+    
+    <!-- Mappa Interattiva -->
+    {% if tappe %}
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="map-section">
+          <h2 class="section-title text-center mb-4">
+            <i class="bi bi-map me-2"></i>
+            {% trans 'Mappa del percorso' %}
           </h2>
-          
-          {% for tappa in itinerario.tappe.all %}
-          <div class="tappa-card site-card mb-4">
-            <div class="site-card-body">
-              <div class="row g-4">
-                {% if tappa.immagine %}
-                <div class="col-md-4">
-                  <img src="{{ tappa.immagine.url }}" 
-                       alt="{{ tappa.nome }}" 
-                       class="img-fluid rounded-3 shadow-sm tappa-image">
-                </div>
-                <div class="col-md-8">
-                {% else %}
-                <div class="col-12">
-                {% endif %}
-                  <h3 class="tappa-title">
-                    <span class="tappa-number">{{ forloop.counter }}</span>
-                    {{ tappa.nome }}
-                  </h3>
-                  <div class="tappa-description">
-                    {{ tappa.descrizione|linebreaks }}
-                  </div>
-                </div>
+          <div id="mapDetail" class="map-detail-canvas"></div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    
+    <!-- Lista Tappe -->
+    {% if tappe %}
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="section-title text-center mb-4">
+          <i class="bi bi-list-ol me-2"></i>
+          {% trans 'Le tappe del percorso' %}
+        </h2>
+        
+        <div class="tappe-timeline">
+          {% for tappa in tappe %}
+          <div class="tappa-item" data-tappa-index="{{ forloop.counter0 }}">
+            <div class="tappa-number" style="background-color: {{ itinerario.colore_percorso }};">
+              {{ tappa.order }}
+            </div>
+            <div class="tappa-content">
+              <h3 class="tappa-title">{{ tappa.nome }}</h3>
+              <p class="tappa-description">{{ tappa.descrizione }}</p>
+              {% if tappa.coords %}
+              <div class="tappa-coordinates">
+                <i class="bi bi-geo-alt text-muted me-2"></i>
+                <small class="text-muted">
+                  {{ tappa.coords.0|floatformat:6 }}, {{ tappa.coords.1|floatformat:6 }}
+                </small>
+                <button class="btn btn-sm btn-outline-primary ms-3 btn-zoom-tappa" data-coords='{{ tappa.coords|safe }}'>
+                  <i class="bi bi-zoom-in me-1"></i>
+                  {% trans 'Zoom sulla mappa' %}
+                </button>
               </div>
+              {% endif %}
             </div>
           </div>
           {% endfor %}
         </div>
-        {% endif %}
-
-        <!-- Pulsanti di navigazione in basso -->
-        <div class="text-center return-actions">
+      </div>
+    </div>
+    {% endif %}
+    
+    <!-- Pulsanti azione -->
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="action-buttons">
+          {% if itinerario.link_maps %}
+          <a href="{{ itinerario.link_maps }}" target="_blank" class="btn btn-primary btn-lg me-2 mb-2">
+            <i class="bi bi-map me-2"></i>
+            {% trans 'Apri in Google Maps' %}
+          </a>
+          {% endif %}
+          
           {% if itinerario.tipo == 'verghiano' %}
-            <a href="{% url 'itinerari_verghiani' %}" class="btn btn-outline-secondary btn-lg">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari verghiani' %}
+            <a href="{% url 'itinerari_verghiani' %}" class="btn btn-outline-secondary btn-lg mb-2">
+              <i class="bi bi-arrow-left me-2"></i>
+              {% trans 'Torna agli itinerari verghiani' %}
             </a>
           {% elif itinerario.tipo == 'capuaniano' %}
-            <a href="{% url 'itinerari_capuaniani' %}" class="btn btn-outline-secondary btn-lg">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari capuaniani' %}
-            </a>
-          {% else %}
-            <a href="{% url 'itinerari_tematici' %}" class="btn btn-outline-secondary btn-lg">
-              <i class="bi bi-arrow-left me-2"></i>{% trans 'Torna agli itinerari tematici' %}
+            <a href="{% url 'itinerari_capuaniani' %}" class="btn btn-outline-secondary btn-lg mb-2">
+              <i class="bi bi-arrow-left me-2"></i>
+              {% trans 'Torna agli itinerari capuaniani' %}
             </a>
           {% endif %}
         </div>
@@ -125,5 +162,14 @@
     </div>
   </div>
 </section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // Dati per la mappa passati dal backend
+  const itinerarioData = {{ coordinate_json|safe }};
+</script>
+<script src="{% static 'js/itinerario-detail.js' %}"></script>
 {% endblock %}
 
