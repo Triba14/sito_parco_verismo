@@ -1,178 +1,154 @@
 {% load static i18n %}
 {% with is_homepage=request.path|slice:":4" %}
-{% if request.path == '/' or is_homepage == '/it/' or is_homepage == '/en/' and request.path|length <= 4 %}
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-{% else %}
-<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-dark-pages" id="mainNav">
-{% endif %}
+{% if request.path == '/' or is_homepage == '/it/' or is_homepage == '/en/' and request.path|length <= 4 %} <nav
+  class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  {% else %}
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-dark-pages" id="mainNav">
+    {% endif %}
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="{% url 'home' %}">
-        {% if request.path == '/' or is_homepage == '/it/' or is_homepage == '/en/' and request.path|length <= 4 %}
-        <!-- Homepage: White logos on transparent navbar -->
-        <img
-          src="{% static 'assets/img/loghi/network/logo-parchi-letterari-white.png' %}"
-          alt="{% trans 'Logo Parchi Letterari' %}"
-          class="logo-header logo-parchi logo-white"
-        />
-        <img
-          src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}"
-          alt="{% trans 'Logo Parchi Letterari' %}"
-          class="logo-header logo-parchi logo-color"
-        />
-        <img
-          src="{% static 'assets/img/loghi/parco/logo-parco-white.png' %}"
-          alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}"
-          class="logo-header logo-parco logo-white"
-        />
-        <img
-          src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}"
-          alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}"
-          class="logo-header logo-parco logo-black"
-        />
-        {% else %}
-        <!-- Other pages: Original colors on solid navbar -->
-        <img
-          src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}"
-          alt="{% trans 'Logo Parchi Letterari' %}"
-          class="logo-header logo-parchi"
-        />
-        <img
-          src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}"
-          alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}"
-          class="logo-header logo-parco"
-        />
-        {% endif %}
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="{% trans 'Apri navigazione' %}"
-      >
+      <div class="navbar-brand d-flex align-items-center gap-1 gap-lg-2">
+        {% if request.path == '/' or is_homepage == '/it/' or is_homepage == '/en/' and request.path|length <= 4 %} <!--
+          Homepage: White logos on transparent navbar -->
+          <!-- Logo Parchi Letterari -->
+          <a href="https://www.parchiletterari.com" target="_blank" rel="noopener noreferrer">
+            <img src="{% static 'assets/img/loghi/network/logo-parchi-letterari-white.png' %}"
+              alt="{% trans 'Logo Parchi Letterari' %}" class="logo-header logo-parchi logo-white" />
+            <img src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}"
+              alt="{% trans 'Logo Parchi Letterari' %}" class="logo-header logo-parchi logo-color" />
+          </a>
+
+          <!-- Logo Parco Verismo -->
+          <a href="{% url 'home' %}">
+            <img src="{% static 'assets/img/loghi/parco/logo-parco-white.png' %}"
+              alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}"
+              class="logo-header logo-parco logo-white" />
+            <img src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}"
+              alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}"
+              class="logo-header logo-parco logo-black" />
+          </a>
+          {% else %}
+          <!-- Other pages: Original colors on solid navbar -->
+          <a href="https://www.parchiletterari.com" target="_blank" rel="noopener noreferrer">
+            <img src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}"
+              alt="{% trans 'Logo Parchi Letterari' %}" class="logo-header logo-parchi" />
+          </a>
+          <a href="{% url 'home' %}">
+            <img src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}"
+              alt="{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}" class="logo-header logo-parco" />
+          </a>
+          {% endif %}
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="{% trans 'Apri navigazione' %}">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="parcoDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        {% trans 'Il Parco' %}
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="parcoDropdown">
-                        <li><a class="dropdown-item" href="{% url 'missione_visione' %}">{% trans 'Missioni e visione' %}</a></li>
-                        <li><a class="dropdown-item" href="{% url 'comitato_tecnico_scientifico' %}">{% trans 'Comitato tecnico' %}</a></li>
-                        <li><a class="dropdown-item" href="{% url 'regolamenti_documenti' %}">{% trans 'Regolamenti & documenti' %}</a></li>
-                        <li><a class="dropdown-item" href="{% url 'partner_rete_territoriale' %}">{% trans 'Partner e rete territoriale' %}</a></li>
-                        {# <li><a class="dropdown-item" href="{% url 'accrediti_finanziamenti' %}">{% trans 'Accrediti e finanziamenti' %}</a></li> #}
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="luoghiDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        {% trans 'Luoghi & Percorsi' %}
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="luoghiDropdown">
-                        <li><a class="dropdown-item" href="{% url 'vizzini'%}">Vizzini</a></li>
-                        <li><a class="dropdown-item" href="{% url 'mineo'%}">Mineo</a></li>
-                        <li><a class="dropdown-item" href="{% url 'licodia' %}">Licodia Eubea</a></li>
-                        <li><a class="dropdown-item" href="/#mappe">{% trans "Mappe interattive" %}</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{% url 'itinerari_verghiani' %}">{% trans "Itinerari Verghiani" %}</a></li>
-                        <li><a class="dropdown-item" href="{% url 'itinerari_capuaniani' %}">{% trans "Itinerari Capuaniani" %}</a></li>
-                        <li><a class="dropdown-item" href="{% url 'itinerari_tematici' %}">{% trans "Tematici" %}</a></li>
-                    </ul>
-                </li>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
 
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="eventiDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="parcoDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {% trans 'Il Parco' %}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="parcoDropdown">
+              {% trans 'Missioni e visione' as label_missione %}
+              <li><a class="dropdown-item" href="{% url 'missione_visione' %}">{{ label_missione }}</a></li>
+
+              {% trans 'Comitato tecnico' as label_comitato %}
+              <li><a class="dropdown-item" href="{% url 'comitato_tecnico_scientifico' %}">{{ label_comitato }}</a></li>
+
+              {% trans 'Regolamenti & documenti' as label_regolamenti %}
+              <li><a class="dropdown-item" href="{% url 'regolamenti_documenti' %}">{{ label_regolamenti }}</a></li>
+
+              {% trans 'Partner e rete territoriale' as label_partner %}
+              <li><a class="dropdown-item" href="{% url 'partner_rete_territoriale' %}">{{ label_partner }}</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="luoghiDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {% trans 'Luoghi & Percorsi' %}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="luoghiDropdown">
+              <li><a class="dropdown-item" href="{% url 'vizzini'%}">Vizzini</a></li>
+              <li><a class="dropdown-item" href="{% url 'mineo'%}">Mineo</a></li>
+              <li><a class="dropdown-item" href="{% url 'licodia' %}">Licodia Eubea</a></li>
+              <li><a class="dropdown-item" href="/#mappe">{% trans "Mappe interattive" %}</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              {% trans "Itinerari Verghiani" as label_verghiani %}
+              <li><a class="dropdown-item" href="{% url 'itinerari_verghiani' %}">{{ label_verghiani }}</a></li>
+
+              {% trans "Itinerari Capuaniani" as label_capuaniani %}
+              <li><a class="dropdown-item" href="{% url 'itinerari_capuaniani' %}">{{ label_capuaniani }}</a></li>
+
+              {% trans "Cammino del Verismo" as label_tematici %}
+              <li><a class="dropdown-item" href="{% url 'itinerari_tematici' %}">{{ label_tematici }}</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="eventiDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               {% trans 'Eventi & News' %}
             </a>
             <ul class="dropdown-menu" aria-labelledby="eventiDropdown">
               <li>
-                <a class="dropdown-item" href="{% url 'eventi' %}"
-                  >{% trans 'Eventi' %}</a
-                >
+                <a class="dropdown-item" href="{% url 'eventi' %}">{% trans 'Eventi' %}</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{% url 'notizie' %}"
-                  >{% trans 'News' %}</a
-                >
+                <a class="dropdown-item" href="{% url 'notizie' %}">{% trans 'News' %}</a>
               </li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="opereDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="opereDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               {% trans 'Opere & Letteratura' %}
             </a>
             <ul class="dropdown-menu" aria-labelledby="opereDropdown">
               <li>
-                <a
-                  class="dropdown-item"
-                  href="{% url 'opere_per_autore' 'giovanni-verga' %}"
-                  >{% trans 'Opere di Verga' %}</a
-                >
+                <a class="dropdown-item" href="{% url 'opere_per_autore' 'giovanni-verga' %}">
+                  {% blocktrans %}Opere di Verga{% endblocktrans %}
+                </a>
               </li>
               <li>
-                <a
-                  class="dropdown-item"
-                  href="{% url 'opere_per_autore' 'luigi-capuana' %}"
-                  >{% trans 'Opere di Capuana' %}</a
-                >
+                <a class="dropdown-item" href="{% url 'opere_per_autore' 'luigi-capuana' %}">
+                  {% blocktrans %}Opere di Capuana{% endblocktrans %}
+                </a>
               </li>
               <li>
-                <a class="dropdown-item" href="{% url 'personaggi_lessico' %}"
-                  >{% trans 'Personaggi & Lessico del Verismo' %}</a
-                >
+                {% trans 'Personaggi & Lessico del Verismo' as label_personaggi %}
+                <a class="dropdown-item" href="{% url 'personaggi_lessico' %}">{{ label_personaggi }}</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{% url 'luoghi_opere' %}"
-                  >{% trans 'Luoghi delle Opere' %}</a
-                >
+                {% trans 'Luoghi delle Opere' as label_luoghi_opere %}
+                <a class="dropdown-item" href="{% url 'luoghi_opere' %}">{{ label_luoghi_opere }}</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{% url 'verga_capuana_fotografi' %}"
-                  >{% trans 'Verga e Capuana Fotografi' %}</a
-                >
+                {% trans 'Verga e Capuana Fotografi' as label_fotografi %}
+                <a class="dropdown-item" href="{% url 'verga_capuana_fotografi' %}">{{ label_fotografi }}</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{% url 'documenti' %}"
-                  >{% trans 'Documenti & Studi' %}</a
-                >
+                {% trans 'Documenti & Studi' as label_documenti %}
+                <a class="dropdown-item" href="{% url 'documenti' %}">{{ label_documenti }}</a>
               </li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a class="btn btn-primary ms-3" href="{% url 'contatti' %}"
-              >{% trans 'Contatti' %}</a
-            >
+            <a class="btn btn-primary ms-3" href="{% url 'contatti' %}">{% trans 'Contatti' %}</a>
           </li>
 
           <li class="nav-item dropdown ms-lg-3">
             {% get_current_language as LANGUAGE_CODE %}
             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" aria-label="{% trans 'Cambia lingua' %}">
+              data-bs-toggle="dropdown" aria-expanded="false" aria-label="{% trans 'Cambia lingua' %}">
               <i class="bi bi-globe2 me-1"></i>
               <span class="text-uppercase">{{ LANGUAGE_CODE }}</span>
             </a>
@@ -185,18 +161,18 @@
                   {% csrf_token %}
                   {% get_current_language as current_lang %}
                   {% if current_lang == 'en' %}
-                    {# Se siamo in inglese (/en/pagina), rimuovi /en per tornare in italiano #}
-                    <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
+                  {# Se siamo in inglese (/en/pagina), rimuovi /en per tornare in italiano #}
+                  <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
                   {% else %}
-                    {# Se siamo in italiano (/pagina), usa il path corrente #}
-                    <input type="hidden" name="next" value="{{ request.path }}">
+                  {# Se siamo in italiano (/pagina), usa il path corrente #}
+                  <input type="hidden" name="next" value="{{ request.path }}">
                   {% endif %}
-                  <button type="submit" name="language" value="{{ language.code }}" 
+                  <button type="submit" name="language" value="{{ language.code }}"
                     class="dropdown-item d-flex align-items-center {% if language.code == LANGUAGE_CODE %}active{% endif %}">
                     {% if language.code == 'it' %}
-                      <span class="me-2">🇮🇹</span>
+                    <span class="me-2">🇮🇹</span>
                     {% elif language.code == 'en' %}
-                      <span class="me-2">🇬🇧</span>
+                    <span class="me-2">🇬🇧</span>
                     {% endif %}
                     {{ language.name_local|capfirst }}
                   </button>
@@ -208,5 +184,5 @@
         </ul>
       </div>
     </div>
-</nav>
-{% endwith %}
+  </nav>
+  {% endwith %}

@@ -14,7 +14,7 @@ from parco_verismo.utils.image_optimizer import optimize_image
 
 class Itinerario(TranslatableModel):
     """
-    Modello per gli itinerari letterari (Verghiani, Capuaniani, Tematici).
+    Modello per gli itinerari letterari (Verghiani, Capuaniani, Cammino del Verismo).
     Sistema completamente rinnovato con supporto per mappe interattive e tappe JSON.
     """
     
@@ -31,7 +31,7 @@ class Itinerario(TranslatableModel):
         choices=[
             ("verghiano", "Itinerario Verghiano"),
             ("capuaniano", "Itinerario Capuaniano"),
-            ("tematico", "Itinerario Tematico"),
+            ("tematico", "Cammino del Verismo"),
         ],
         default="verghiano",
         help_text="Tipo di itinerario letterario."

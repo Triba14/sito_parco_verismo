@@ -1,10 +1,15 @@
 {% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans 'Itinerari Tematici' %} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
+{% block title %}
+{% trans 'Cammino del Verismo' %} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}
+{% endblock %}
 
-{% block meta_description %}{% trans 'Scopri i luoghi letterari attraverso itinerari tematici. Percorsi guidati dedicati a temi specifici del verismo siciliano.' %}{% endblock %}
-{% block meta_keywords %}itinerari tematici,percorsi letterari,Sicilia,verismo,parco letterario{% endblock %}
+{% block meta_description %}
+{% trans 'Scopri i luoghi letterari attraverso il Cammino del Verismo. Percorsi guidati dedicati a temi specifici del
+verismo siciliano.' %}
+{% endblock %}
+{% block meta_keywords %}Cammino del Verismo,percorsi letterari,Sicilia,verismo,parco letterario{% endblock %}
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/itinerari.css' %}" />
@@ -16,7 +21,7 @@
   <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center">
       <div class="col-lg-8 text-center text-white">
-        <h1 class="hero-title display-3 fw-bold mb-3">{% trans 'Itinerari Tematici' %}</h1>
+        <h1 class="hero-title display-3 fw-bold mb-3">{% trans 'Cammino del Verismo' %}</h1>
         <p class="hero-subtitle lead">{% trans 'Percorsi dedicati a temi specifici del verismo siciliano' %}</p>
       </div>
     </div>
@@ -38,12 +43,12 @@
           </h2>
           <p class="sidebar-subtitle">{% trans 'Seleziona un itinerario per visualizzarlo sulla mappa' %}</p>
         </div>
-        
+
         <div class="sidebar-content">
           {% for data in itinerari_data %}
           <div class="itinerario-card" data-itinerario-id="{{ data.obj.id }}">
             <script type="application/json" class="itinerario-data">{{ data.itinerario_json|safe }}</script>
-            
+
             <div class="itinerario-card-header">
               <div class="itinerario-header-text">
                 <h3 class="itinerario-title">{{ data.obj.titolo }}</h3>
@@ -55,10 +60,11 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="itinerario-card-body">
-              <p class="itinerario-description">{{ data.obj.descrizione_breve|default:data.obj.descrizione|truncatewords:15 }}</p>
-              
+              <p class="itinerario-description">{{
+                data.obj.descrizione_breve|default:data.obj.descrizione|truncatewords:15 }}</p>
+
               <div class="itinerario-meta">
                 <div class="meta-item">
                   <i class="bi bi-clock"></i>
@@ -70,7 +76,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="itinerario-card-footer">
               <div class="d-flex gap-2">
                 <button class="btn btn-show-route btn-sm flex-fill">
@@ -85,7 +91,7 @@
             </div>
           </div>
           {% endfor %}
-          
+
           <!-- Pulsante Reset -->
           <div class="sidebar-footer">
             <button class="btn btn-reset w-100" id="resetMapView">
@@ -95,11 +101,11 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Mappa -->
       <div class="map-main">
         <div id="map" class="map-canvas"></div>
-        
+
         <!-- Info Box che appare al click sulla mappa -->
         <div id="mapInfoBox" class="map-info-box d-none">
           <button class="map-info-close" id="closeInfoBox">
@@ -109,7 +115,6 @@
         </div>
       </div>
     </div>
-    </div>
     {% else %}
     <div class="container">
       <div class="row justify-content-center py-5">
@@ -117,7 +122,8 @@
           <div class="alert alert-info">
             <i class="bi bi-info-circle fs-1 d-block mb-3"></i>
             <h3>{% trans 'Nessun itinerario disponibile' %}</h3>
-            <p>{% trans 'Al momento non ci sono itinerari tematici attivi. Torna presto per scoprire nuovi percorsi!' %}</p>
+            <p>{% trans 'Al momento non ci sono itinerari del Cammino del Verismo attivi. Torna presto per scoprire
+              nuovi percorsi!' %}</p>
           </div>
         </div>
       </div>
@@ -142,7 +148,8 @@
 </div>
 
 <!-- Modal per info completo Itinerario -->
-<div class="modal fade" id="itinerarioInfoModal" tabindex="-1" aria-labelledby="itinerarioInfoModalLabel" aria-hidden="true">
+<div class="modal fade" id="itinerarioInfoModal" tabindex="-1" aria-labelledby="itinerarioInfoModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">

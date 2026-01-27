@@ -1,9 +1,14 @@
--{% extends "parco_verismo/base.html" %}
+{% extends "parco_verismo/base.html" %}
 {% load static i18n %}
 
-{% block title %}{% trans 'Contatti' %} - {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}{% endblock %}
+{% block title %}
+{% trans 'Contatti' %} - {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}
+{% endblock %}
 
-{% block meta_description %}{% trans 'Contatti del Parco Letterario® Giovanni Verga e Luigi Capuana. Centro Studi C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattiche.' %}{% endblock %}
+{% block meta_description %}
+{% blocktrans %}Contatti del Parco Letterario® Giovanni Verga e Luigi Capuana. Centro Studi C.E.S.T.A., Comuni di
+Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattiche.{% endblocktrans %}
+{% endblock %}
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/contatti.css' %}">
@@ -25,10 +30,15 @@
                         {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}
                     </h1>
                     <p class="pages-hero-subtitle lead">
-                        {% trans 'Il Parco Letterario® Giovanni Verga e Luigi Capuana è un progetto culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A.' %}
+                        {% blocktrans %}Il Parco Letterario® Giovanni Verga e Luigi Capuana è un progetto culturale
+                        condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e Licodia Eubea e
+                        coordinato dal Centro Studi C.E.S.T.A.{% endblocktrans %}
                     </p>
                     <p class="pages-hero-subtitle">
-                        {% trans 'Per informazioni, richieste di collaborazione, attività didattiche, eventi e itinerari è possibile fare riferimento ai contatti istituzionali riportati di seguito.' %}
+                        {% blocktrans %}
+                        Per informazioni, richieste di collaborazione, attività didattiche, eventi e itinerari è
+                        possibile fare riferimento ai contatti istituzionali riportati di seguito.
+                        {% endblocktrans %}
                     </p>
                 </div>
             </div>
@@ -43,33 +53,39 @@
                                 </linearGradient>
                             </defs>
                             <!-- Background -->
-                            <rect width="600" height="700" fill="url(#contattiGradient)"/>
-                            
+                            <rect width="600" height="700" fill="url(#contattiGradient)" />
+
                             <!-- Decorative shapes -->
-                            <circle cx="150" cy="100" r="80" class="svg-circle-primary" opacity="0.2"/>
-                            <circle cx="500" cy="600" r="120" class="svg-circle-dark" opacity="0.15"/>
-                            
+                            <circle cx="150" cy="100" r="80" class="svg-circle-primary" opacity="0.2" />
+                            <circle cx="500" cy="600" r="120" class="svg-circle-dark" opacity="0.15" />
+
                             <!-- Envelope icon (contatti) -->
                             <g transform="translate(200, 250)">
-                                <rect x="0" y="20" width="200" height="150" fill="none" class="svg-stroke-primary" stroke-width="3" rx="8"/>
-                                <path d="M 0 20 L 100 120 L 200 20" fill="none" class="svg-stroke-primary" stroke-width="3" stroke-linejoin="round"/>
-                                <line x1="0" y1="170" x2="60" y2="110" class="svg-stroke-primary" stroke-width="3"/>
-                                <line x1="200" y1="170" x2="140" y2="110" class="svg-stroke-primary" stroke-width="3"/>
+                                <rect x="0" y="20" width="200" height="150" fill="none" class="svg-stroke-primary"
+                                    stroke-width="3" rx="8" />
+                                <path d="M 0 20 L 100 120 L 200 20" fill="none" class="svg-stroke-primary"
+                                    stroke-width="3" stroke-linejoin="round" />
+                                <line x1="0" y1="170" x2="60" y2="110" class="svg-stroke-primary" stroke-width="3" />
+                                <line x1="200" y1="170" x2="140" y2="110" class="svg-stroke-primary" stroke-width="3" />
                             </g>
-                            
+
                             <!-- Location pins -->
                             <g transform="translate(100, 480)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
+                                    opacity="0.7" />
                             </g>
                             <g transform="translate(180, 450)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
+                                    opacity="0.7" />
                             </g>
                             <g transform="translate(260, 490)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary" opacity="0.7"/>
+                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
+                                    opacity="0.7" />
                             </g>
-                            
+
                             <!-- Text placeholder -->
-                            <text x="300" y="600" font-family="serif" font-size="28" font-weight="bold" class="svg-text-dark" opacity="0.4" text-anchor="middle">
+                            <text x="300" y="600" font-family="serif" font-size="28" font-weight="bold"
+                                class="svg-text-dark" opacity="0.4" text-anchor="middle">
                                 Vizzini • Mineo • Licodia
                             </text>
                         </svg>
@@ -86,24 +102,31 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <h2 class="contatti-section-title">{% trans 'Coordinamento del Parco' %}</h2>
-                
+
                 <div class="contatti-cesta-card">
                     <h3 class="contatti-cesta-title">{% trans 'Centro Studi C.E.S.T.A.' %}</h3>
-                    
+
                     <p class="contatti-cesta-subtitle">
                         {% trans 'Centro Studi, Ricerca e Promozione Culturale' %}<br>
                         <em>{% trans 'Cultura, Economia, Società, Territorio, Asilo' %}</em>
                     </p>
-                    
+
                     <div class="contatti-cesta-description">
                         <p>
-                            {% trans 'Il Centro Studi C.E.S.T.A. è un Ente del Terzo Settore che cura il coordinamento scientifico, organizzativo e comunicativo delle attività del Parco Letterario Giovanni Verga e Luigi Capuana, in raccordo con i Comuni partner e con gli enti coinvolti.' %}
+                            {% blocktrans %}
+                            Il Centro Studi C.E.S.T.A. è un Ente del Terzo Settore che cura il coordinamento
+                            scientifico, organizzativo e comunicativo delle attività del Parco Letterario Giovanni Verga
+                            e Luigi Capuana, in raccordo con i Comuni partner e con gli enti coinvolti.
+                            {% endblocktrans %}
                         </p>
                         <p>
-                            {% trans 'Fondato nel territorio del Calatino Sud, il Centro Studi opera nelle aree della ricerca culturale, della promozione territoriale, della formazione e dei servizi alla persona, con particolare attenzione alla valorizzazione del patrimonio letterario e alla tutela delle comunità locali.' %}
+                            {% blocktrans %}Fondato nel territorio del Calatino Sud, il Centro Studi opera nelle aree
+                            della ricerca culturale, della promozione territoriale, della formazione e dei servizi alla
+                            persona, con particolare attenzione alla valorizzazione del patrimonio letterario e alla
+                            tutela delle comunità locali.{% endblocktrans %}
                         </p>
                     </div>
-                    
+
                     <div class="contatti-info-grid">
                         <div class="contatti-info-item">
                             <div class="contatti-info-label">{% trans 'Sede legale:' %}</div>
@@ -112,14 +135,14 @@
                                 95049 Vizzini (CT)
                             </div>
                         </div>
-                        
+
                         <div class="contatti-info-item">
                             <div class="contatti-info-label">{% trans 'Tel:' %}</div>
                             <div class="contatti-info-value">
                                 <a href="tel:+390933981792">+39 0933 981792</a>
                             </div>
                         </div>
-                        
+
                         <div class="contatti-info-item">
                             <div class="contatti-info-label">{% trans 'Email:' %}</div>
                             <div class="contatti-info-value">
@@ -127,7 +150,7 @@
                                 <a href="mailto:info@parcovergacapuana.it">info@parcovergacapuana.it</a>
                             </div>
                         </div>
-                        
+
                         <div class="contatti-info-item">
                             <div class="contatti-info-label">{% trans 'Web:' %}</div>
                             <div class="contatti-info-value">
@@ -150,13 +173,14 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <h2 class="contatti-section-title">{% trans 'Comuni partner del Parco Letterario' %}</h2>
-                
+
                 <div class="comuni-grid">
                     <!-- Comune di Vizzini -->
                     <div class="comune-card">
                         <h3 class="comune-name">{% trans 'Comune di Vizzini (CT)' %}</h3>
                         <p class="comune-description">
-                            {% trans 'Luogo natale di Giovanni Verga e cuore narrativo del Verismo. Sede di luoghi iconici come la Cunziria e di itinerari verghiani.' %}
+                            {% blocktrans %}Luogo natale di Giovanni Verga e cuore narrativo del Verismo. Sede di luoghi
+                            iconici come la Cunziria e di itinerari verghiani.{% endblocktrans %}
                         </p>
                         <div class="comune-contatti">
                             <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
@@ -171,20 +195,42 @@
                                 </div>
                                 <div class="comune-info-item">
                                     <i class="bi bi-globe"></i>
-                                    <a href="http://www.comune.vizzini.ct.it/" target="_blank" rel="noopener noreferrer">
+                                    <a href="http://www.comune.vizzini.ct.it/" target="_blank"
+                                        rel="noopener noreferrer">
                                         www.comune.vizzini.ct.it
                                         <i class="bi bi-box-arrow-up-right ms-1"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
+                        <div class="comune-contatti mt-4">
+                            <h4 class="comune-contatti-title">Partner Territoriali</h4>
+                            <div class="comune-info">
+                                <div class="mb-3">
+                                    <h5 class="fw-bold mb-2 text-primary">Associazione Teatro Skenè APS</h5>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Via Spinelli, 55 | Vizzini</span>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+393398255356">+39 339 825 5356</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-envelope"></i>
+                                        <a href="mailto:percorsiteatroskene@gmail.com">percorsiteatroskene@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <!-- Comune di Mineo -->
                     <div class="comune-card">
                         <h3 class="comune-name">{% trans 'Comune di Mineo (CT)' %}</h3>
                         <p class="comune-description">
-                            {% trans 'Città natale di Luigi Capuana. Centro di riferimento per gli studi capuaniani e sede di attività culturali e giornate di studio.' %}
+                            {% blocktrans %}Città natale di Luigi Capuana. Centro di riferimento per gli studi
+                            capuaniani e sede di attività culturali e giornate di studio.{% endblocktrans %}
                         </p>
                         <div class="comune-contatti">
                             <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
@@ -206,13 +252,54 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="comune-contatti mt-4">
+                            <h4 class="comune-contatti-title">Partner Territoriali</h4>
+                            <div class="comune-info">
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-2 text-primary">Parnaso Siculo</h5>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Viale delle Rimembranze, 142 | Mineo</span>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+393338411602">+39 333 841 1602</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-envelope"></i>
+                                        <a href="mailto:info@parnasosiculo.it">info@parnasosiculo.it</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-globe"></i>
+                                        <a href="http://www.parnasosiculo.it" target="_blank"
+                                            rel="noopener noreferrer">www.parnasosiculo.it</a>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="fw-bold mb-2 text-primary">Pro Loco Mineo APS</h5>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Via Trinacria, 16 | Mineo</span>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+393336111862">+39 333 611 1862</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-envelope"></i>
+                                        <a href="mailto:proloco.mineo@gmail.com">proloco.mineo@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <!-- Comune di Licodia Eubea -->
                     <div class="comune-card">
                         <h3 class="comune-name">{% trans 'Comune di Licodia Eubea (CT)' %}</h3>
                         <p class="comune-description">
-                            {% trans 'Comune partner del Parco. Sede di iniziative culturali e del Polo Culturale della Badia, spazio di eventi e cerimonie ufficiali.' %}
+                            {% blocktrans %}Comune partner del Parco. Sede di iniziative culturali e del Polo Culturale
+                            della Badia, spazio di eventi e cerimonie ufficiali.{% endblocktrans %}
                         </p>
                         <div class="comune-contatti">
                             <h4 class="comune-contatti-title">{% trans 'Contatti istituzionali' %}</h4>
@@ -227,10 +314,36 @@
                                 </div>
                                 <div class="comune-info-item">
                                     <i class="bi bi-globe"></i>
-                                    <a href="http://www.comune.licodiaeubea.ct.it/" target="_blank" rel="noopener noreferrer">
+                                    <a href="http://www.comune.licodiaeubea.ct.it/" target="_blank"
+                                        rel="noopener noreferrer">
                                         www.comune.licodiaeubea.ct.it
                                         <i class="bi bi-box-arrow-up-right ms-1"></i>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comune-contatti mt-4">
+                            <h4 class="comune-contatti-title">Partner Territoriali</h4>
+                            <div class="comune-info">
+                                <div class="mb-3">
+                                    <h5 class="fw-bold mb-2 text-primary">Archeoclub d'Italia “Mario Di Benedetto”</h5>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Corso Umberto I, 232 | Licodia Eubea</span>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+393319947101">+39 331 994 7101</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-envelope"></i>
+                                        <a href="mailto:archeoclublicodia@alice.it">archeoclublicodia@alice.it</a>
+                                    </div>
+                                    <div class="comune-info-item">
+                                        <i class="bi bi-globe"></i>
+                                        <a href="http://www.archeoclublicodia.it" target="_blank"
+                                            rel="noopener noreferrer">www.archeoclublicodia.it</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -248,11 +361,16 @@
             <div class="col-lg-10">
                 <div class="text-center mb-4">
                     <h2 class="contatti-section-title d-inline-block">{% trans 'Modulo di contatto' %}</h2>
-                    <p class="lead text-secondary mt-3" style="max-width: 700px; margin-left: auto; margin-right: auto;">
-                        {% trans 'Per richieste di informazioni generali, proposte di collaborazione, attività didattiche, visite guidate, eventi o comunicazioni istituzionali, è possibile utilizzare il modulo di contatto sottostante.' %}
+                    <p class="lead text-secondary mt-3"
+                        style="max-width: 700px; margin-left: auto; margin-right: auto;">
+                        {% blocktrans %}Per richieste di informazioni generali, proposte di collaborazione, attività
+                        didattiche, visite guidate, eventi o comunicazioni istituzionali, è possibile utilizzare il
+                        modulo di contatto sottostante.{% endblocktrans %}
                     </p>
                     <p class="text-secondary">
-                        {% blocktrans %}Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario.{% endblocktrans %}
+                        {% blocktrans %}
+                        Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario.
+                        {% endblocktrans %}
                     </p>
                 </div>
 
@@ -262,75 +380,89 @@
 
 
                             {% if messages %}
-                                {% for message in messages %}
-                                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-                                        {{ message }}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                    </div>
-                                {% endfor %}
+                            {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                            {% endfor %}
                             {% endif %}
 
                             <form class="contatti-form" method="post">
                                 {% csrf_token %}
                                 {% if form.non_field_errors %}
-                                    <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+                                <div class="alert alert-danger">{{ form.non_field_errors }}</div>
                                 {% endif %}
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <label for="{{ form.nome.id_for_label }}" class="form-label mb-2">
-                                            {{ form.nome.label }} {% if form.nome.field.required %}<span class="required">*</span>{% endif %}
+                                            {{ form.nome.label }} {% if form.nome.field.required %}<span
+                                                class="required">*</span>{% endif %}
                                         </label>
                                         {{ form.nome }}
-                                        {% for err in form.nome.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.nome.errors %}<div class="invalid-feedback d-block">{{ err }}
+                                        </div>{% endfor %}
                                     </div>
-                                    
+
                                     <div class="col-md-6 form-group">
                                         <label for="{{ form.cognome.id_for_label }}" class="form-label mb-2">
-                                            {{ form.cognome.label }} {% if form.cognome.field.required %}<span class="required">*</span>{% endif %}
+                                            {{ form.cognome.label }} {% if form.cognome.field.required %}<span
+                                                class="required">*</span>{% endif %}
                                         </label>
                                         {{ form.cognome }}
-                                        {% for err in form.cognome.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.cognome.errors %}<div class="invalid-feedback d-block">{{ err
+                                            }}</div>{% endfor %}
                                     </div>
 
                                     <div class="col-md-6 form-group">
                                         <label for="{{ form.ente.id_for_label }}" class="form-label mb-2">
-                                            {{ form.ente.label }} <span class="optional">({% trans 'facoltativo' %})</span>
+                                            {{ form.ente.label }} <span class="optional">({% trans 'facoltativo'
+                                                %})</span>
                                         </label>
                                         {{ form.ente }}
-                                        {% for err in form.ente.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.ente.errors %}<div class="invalid-feedback d-block">{{ err }}
+                                        </div>{% endfor %}
                                     </div>
-                                    
+
                                     <div class="col-md-6 form-group">
                                         <label for="{{ form.email.id_for_label }}" class="form-label mb-2">
-                                            {{ form.email.label }} {% if form.email.field.required %}<span class="required">*</span>{% endif %}
+                                            {{ form.email.label }} {% if form.email.field.required %}<span
+                                                class="required">*</span>{% endif %}
                                         </label>
                                         {{ form.email }}
-                                        {% for err in form.email.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.email.errors %}<div class="invalid-feedback d-block">{{ err
+                                            }}</div>{% endfor %}
                                     </div>
-                                    
+
                                     <div class="col-12 form-group">
                                         <label for="{{ form.oggetto.id_for_label }}" class="form-label mb-2">
-                                            {{ form.oggetto.label }} {% if form.oggetto.field.required %}<span class="required">*</span>{% endif %}
+                                            {{ form.oggetto.label }} {% if form.oggetto.field.required %}<span
+                                                class="required">*</span>{% endif %}
                                         </label>
                                         {{ form.oggetto }}
-                                        {% for err in form.oggetto.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.oggetto.errors %}<div class="invalid-feedback d-block">{{ err
+                                            }}</div>{% endfor %}
                                     </div>
-                                    
+
                                     <div class="col-12 form-group">
                                         <label for="{{ form.messaggio.id_for_label }}" class="form-label mb-2">
-                                            {{ form.messaggio.label }} {% if form.messaggio.field.required %}<span class="required">*</span>{% endif %}
+                                            {{ form.messaggio.label }} {% if form.messaggio.field.required %}<span
+                                                class="required">*</span>{% endif %}
                                         </label>
                                         {{ form.messaggio }}
-                                        {% for err in form.messaggio.errors %}<div class="invalid-feedback d-block">{{ err }}</div>{% endfor %}
+                                        {% for err in form.messaggio.errors %}<div class="invalid-feedback d-block">{{
+                                            err }}</div>{% endfor %}
                                     </div>
-                                    
+
                                     <div class="col-12 text-center mt-3">
                                         <button type="submit" class="btn btn-primary btn-lg">
                                             <i class="bi bi-send me-2"></i>
                                             {% trans 'Invia messaggio' %}
                                         </button>
                                         <div class="form-note mt-2">
-                                            {% trans 'I campi contrassegnati con' %} <span class="required">*</span> {% trans 'sono obbligatori.' %}
+                                            {% trans 'I campi contrassegnati con' %} <span class="required">*</span> {%
+                                            trans 'sono obbligatori.' %}
                                         </div>
                                         <div class="form-note mt-1">
                                             <small>
@@ -357,7 +489,9 @@
             <div class="col-lg-8">
                 <h2 class="contatti-section-title">{% trans 'Nota sulla privacy' %}</h2>
                 <p>
-                    {% trans 'I dati inviati tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alla richiesta, nel rispetto della normativa vigente in materia di protezione dei dati personali (Regolamento UE 2016/679 - GDPR).' %}
+                    {% blocktrans %}I dati inviati tramite il modulo di contatto saranno utilizzati esclusivamente per
+                    rispondere alla richiesta, nel rispetto della normativa vigente in materia di protezione dei dati
+                    personali (Regolamento UE 2016/679 - GDPR).{% endblocktrans %}
                 </p>
             </div>
         </div>
@@ -371,14 +505,13 @@
             <div class="col-lg-8 text-center">
                 <h2 class="contatti-section-title">{% trans 'Seguici' %}</h2>
                 <p class="contatti-social-intro">
-                    {% trans 'Per rimanere aggiornato sulle attività, gli eventi e le iniziative del Parco Letterario Giovanni Verga e Luigi Capuana, seguici sui canali social ufficiali.' %}
+                    {% blocktrans %}Per rimanere aggiornato sulle attività, gli eventi e le iniziative del Parco
+                    Letterario Giovanni Verga e Luigi Capuana, seguici sui canali social ufficiali.{% endblocktrans %}
                 </p>
-                
+
                 <div class="contatti-social-links">
-                    <a href="https://www.facebook.com/versoilparcoletterariodelverismo" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="social-link social-link-facebook">
+                    <a href="https://www.facebook.com/versoilparcoletterariodelverismo" target="_blank"
+                        rel="noopener noreferrer" class="social-link social-link-facebook">
                         <i class="bi bi-facebook"></i>
                         <span>{% trans 'Pagina Facebook' %}</span>
                     </a>
