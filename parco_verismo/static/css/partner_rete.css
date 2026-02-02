@@ -71,6 +71,11 @@
 
 /* Hero rules moved to global `styles.css` to make hero classes available site-wide. */
 
+.pages-hero-title,
+.pages-hero-subtitle {
+    color: var(--pages-primary);
+}
+
 /* ========================================================
    PAGE SECTIONS
    ======================================================== */

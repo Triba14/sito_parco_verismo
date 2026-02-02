@@ -442,6 +442,10 @@ msgstr ""
 msgid "Itinerari Verghiani"
 msgstr "Verga Itineraries"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:89
+msgid "Cammino del Verismo"
+msgstr "Path of Verismo"
+
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:320
 msgid ""
 "Creazione di percorsi culturali digitali e fisici nei luoghi letterari del "
@@ -2648,6 +2652,55 @@ msgstr "Back to thematic itineraries"
 #: parco_verismo/templates/parco_verismo/itinerario_detail.html:49
 msgid "Descrizione del percorso"
 msgstr "Route description"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:5
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:24
+msgid "Cammino del Verismo"
+msgstr "Path of Verismo"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:5
+msgid "Parco Letterario Giovanni Verga Luigi Capuana"
+msgstr "Giovanni Verga Luigi Capuana Literary Park"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:9
+msgid "Scopri i luoghi letterari attraverso il Cammino del Verismo. Percorsi guidati dedicati a temi specifici del verismo siciliano."
+msgstr "Discover literary places through the Path of Verismo. Guided tours dedicated to specific themes of Sicilian Verismo."
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:25
+msgid "Percorsi dedicati a temi specifici del verismo siciliano"
+msgstr "Routes dedicated to specific themes of Sicilian Verismo"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:42
+msgid "Luoghi di interesse e percorsi del Verismo"
+msgstr "Places of interest and Verismo routes"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:48
+msgid "Visualizza a schermo intero"
+msgstr "View fullscreen"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:65
+msgid "Percorsi Disponibili"
+msgstr "Available Routes"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:66
+msgid "Seleziona un itinerario per visualizzarlo sulla mappa"
+msgstr "Select an itinerary to view it on the map"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:75
+msgid "tappe"
+msgstr "stops"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:100
+msgid "Mostra sulla mappa"
+msgstr "Show on map"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:104
+msgid "Info"
+msgstr "Info"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:113
+msgid "Reset vista mappa"
+msgstr "Reset map view"
 
 #: parco_verismo/templates/parco_verismo/itinerario_detail.html:65
 msgid "Apri su Maps"

@@ -9,7 +9,7 @@
 
 .mineo-page .pages-hero.mineo-hero {
     background-image: linear-gradient(rgba(30, 30, 30, 0.55), rgba(30, 30, 30, 0.55)),
-        url("/static/assets/img/mineo/bg-hero.jpg");
+        url("/static/assets/img/mineo/mineo-background.jpg");
     background-position: center;
     background-size: cover;
 }

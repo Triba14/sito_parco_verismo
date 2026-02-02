@@ -123,6 +123,24 @@ def populate():
     
     opere_verga = [
         {
+            'titolo': 'Mastro-don Gesualdo',
+            'slug': 'mastro-don-gesualdo',
+            'anno_pubblicazione': 1889,
+            'breve_descrizione': 'Secondo romanzo del Ciclo dei Vinti di Verga, incentrato sull\'ascesa sociale e il fallimento esistenziale di un self-made man siciliano nell\'Ottocento.',
+            'trama': 'Gesualdo Motta è un muratore che attraverso il lavoro instancabile e l\'astuzia accumula ricchezze, diventando uno dei più potenti proprietari terrieri di Vizzini. Per consolidare la sua posizione sociale sposa Bianca Trao, nobile decaduta. Tuttavia, il matrimonio è un disastro: Bianca lo disprezza per le sue origini umili, la figlia Isabelle si vergogna di lui, e la nobiltà locale non lo accetta mai veramente. Gesualdo resta intrappolato tra due mondi: troppo ricco per i poveri, troppo plebeo per i nobili. Malato e solo, muore nel palazzo palermitano della figlia, circondato dall\'indifferenza e dal disgusto dei servi, che lo vedono solo come un intruso.',
+            'analisi': 'Il romanzo esplora il tema della "roba" (il possesso materiale) come ossessione e condanna. Gesualdo conquista tutto ma perde sé stesso: la sua vittoria economica coincide con la sua disfatta umana. Verga mostra come la mobilità sociale sia illusoria in una società rigidamente stratificata, e come l\'ambizione possa diventare una forma di autodistruzione. La solitudine finale del protagonista rappresenta il prezzo della violazione delle leggi implicite della società siciliana ottocentesca.',
+            'link_wikisource': ' https://it.wikisource.org/wiki/Mastro-don_Gesualdo_(1889)',
+            'copertina_path': 'storia_di_una_capinera.jpg',
+            'traduzioni': {
+                'en': {
+                    'titolo': 'Mastro-don Gesualdo',
+                    'breve_descrizione': 'Second novel of Verga\'s Cycle of the Vanquished, focused on the social rise and existential failure of a Sicilian self-made man in the 19th century.',
+                    'trama': 'Gesualdo Motta is a mason who, through tireless work and cunning, accumulates wealth, becoming one of the most powerful landowners in Vizzini. To consolidate his social position, he marries Bianca Trao, a declining noblewoman. However, the marriage is a disaster: Bianca despises him for his humble origins, his daughter Isabella is ashamed of him, and the local nobility never truly accepts him. Gesualdo remains trapped between two worlds: too rich for the poor, too plebeian for the nobles. Sick and alone, he dies in his daughter\'s Palermo palace, surrounded by the indifference and disgust of servants who see him only as an intruder.',
+                    'analisi': 'The novel explores the theme of "roba" (material possession) as both obsession and condemnation. Gesualdo conquers everything but loses himself: his economic victory coincides with his human defeat. Verga shows how social mobility is illusory in a rigidly stratified society, and how ambition can become a form of self-destruction. The protagonist\'s final solitude represents the price of violating the implicit laws of 19th-century Sicilian society.'
+                }
+            }
+        },
+        {
             'titolo': 'Storia di una capinera',
             'slug': 'storia-di-una-capinera',
             'anno_pubblicazione': 1871,
@@ -133,10 +151,10 @@ def populate():
             'copertina_path': 'storia_di_una_capinera.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Sparrow',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Storia di una capinera',
+                    'breve_descrizione': 'Epistolary novel that tells the drama of an imposed religious vocation and the conflict between individual desire and social constraint.',
+                    'trama': 'Maria is a young boarder raised in a convent since childhood, destined for monastic life without ever being able to choose. Due to an epidemic, she is temporarily welcomed into her family home, where she comes into contact with the external world for the first time: nature, domestic life, affection, and especially love, embodied by Nino. This brief period of freedom opens an irreversible fracture in her interiority. When Maria is forced to return to the convent, the separation from the world and from love leads her to a progressive psychological disintegration, culminating in madness and spiritual death.',
+                    'analisi': 'Although belonging to the pre-verismo phase, the novel anticipates central themes of Verga\'s work: the impossibility of escaping social destiny, the silent violence of institutions, and the sacrifice of the individual in the name of collective order. The epistolary form accentuates the protagonist\'s isolation and makes evident the distance between internal world and external reality.'
                 }
             }
         },
@@ -152,9 +170,9 @@ def populate():
             'traduzioni': {
                 'en': {
                     'titolo': 'Nedda',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'breve_descrizione': 'Novella that tells the life of a young peasant woman, marked by poverty, seasonal labor, and the loss of affection.',
+                    'trama': 'Nedda is an olive picker who lives in extreme poverty with her sick mother. Her existence is marked by hard work, precariousness, and lack of prospects. The only glimmer of happiness is her love for Janu, a young farmhand with whom she dreams of a different life. But illness, death, and social indifference strike her relentlessly, depriving her even of this hope. Left alone, Nedda faces life with silent dignity, accepting a destiny that offers no redemption.',
+                    'analisi': 'Nedda is a transitional text towards mature Verismo. Verga renounces any idealization and observes poverty as a structural condition. Pain is not exceptional but daily; tragedy is not spectacular but subdued and continuous.'
                 }
             }
         },
@@ -169,10 +187,10 @@ def populate():
             'copertina_path': 'fantasticheria.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Daydreaming',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Fantasticheria',
+                    'breve_descrizione': 'Manifesto-story that explicates Verga\'s narrative method and his gaze on the "humble".',
+                    'trama': 'The narrator addresses an upper-class woman who, during a stay in a fishing village, observed that simple life with superficial curiosity and detachment. Verga dismantles this romantic vision, showing how behind the apparent immobility lie fragile balances, sacrifices, renunciations, and a fierce struggle for survival. The story does not follow true narrative action but is constructed as a reflection on the distance between those who observe and those who truly live that reality.',
+                    'analisi': 'Fantasticheria is fundamental to understanding Verismo: Verga rejects aestheticizing compassion and invites observation of popular reality from within, without moral or sentimental filters. It is a declaration of poetics disguised as a story.'
                 }
             }
         },
@@ -188,9 +206,9 @@ def populate():
             'traduzioni': {
                 'en': {
                     'titolo': 'Rosso Malpelo',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'breve_descrizione': 'One of Verga\'s most celebrated novellas, focused on child labor and social dehumanization.',
+                    'trama': 'Malpelo is a boy who works in a sand quarry. The color of his hair marks him as naturally evil in the eyes of others, justifying every violence he suffers. After his father\'s death, also a miner, Malpelo grows up in an environment that knows no compassion. The only human bond is with Ranocchio, a weak and sick boy, whom he cannot save. Isolated, brutalized, and deprived of all affection, Malpelo internalizes the world\'s hatred until he disappears into the heart of the mine.',
+                    'analisi': 'Here Verismo reaches one of its crudest expressions: the social environment not only oppresses the individual but shapes him. Violence is not openly denounced but emerges as a normal and accepted fact, making the story even more disturbing.'
                 }
             }
         },
@@ -205,10 +223,10 @@ def populate():
             'copertina_path': 'cavalleria_rusticana.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Rustic Chivalry',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Cavalleria rusticana',
+                    'breve_descrizione': 'Tragic novella focused on honor, jealousy, and the unwritten law of the community.',
+                    'trama': 'Turiddu returns to his village after military service and discovers that the woman he loved has married another man. Wounded in pride, he starts a relationship with Lola, now wife of Alfio, triggering a chain of rivalry and suspicion. The relationship is discovered, honor is compromised, and the community demands reparation. The conflict can only conclude with a mortal duel, accepted as inevitable by all characters.',
+                    'analisi': 'The tragedy does not arise from individual passions but from the social code that governs them. In Cavalleria rusticana the individual is completely absorbed by the collectivity: no choice is truly free, everything is already decided by the rules of honor.'
                 }
             }
         },
@@ -223,10 +241,10 @@ def populate():
             'copertina_path': 'la_lupa.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The She-Wolf',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'La lupa',
+                    'breve_descrizione': 'Novella about female desire and its demonization within rural society.',
+                    'trama': 'Gnà Pina, nicknamed "la Lupa" (the She-Wolf), is a woman dominated by irrepressible passion. Her desire for Nanni, a young peasant, leads her to manipulate her daughter\'s life, forcing her to marry him just to have him close. The forbidden and obsessive relationship destroys every family and social balance, leading to a crescendo of tension that results in final violence.',
+                    'analisi': 'Verga stages a society that does not admit deviations from the role imposed on women. Female desire is transformed into guilt and punished. There is no explicit moral judgment, but a ruthless representation of social mechanisms.'
                 }
             }
         },
@@ -241,10 +259,10 @@ def populate():
             'copertina_path': 'i_malavoglia.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The House by the Medlar Tree',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'I Malavoglia',
+                    'breve_descrizione': 'The great verismo novel about family, work, and the defeat of the "vanquished".',
+                    'trama': 'The Toscano family lives in Aci Trezza following ancient rhythms and a fragile balance. An attempt at economic improvement, the purchase on credit of a cargo of lupins, triggers a series of misfortunes: Bastianazzo\'s death, debts, the loss of the house, emigration, and the disintegration of the family nucleus. Every attempt at redemption fails, until a partial and bitter return to the original order.',
+                    'analisi': 'It is the first novel of the Cycle of the Vanquished. Verga shows how economic progress does not liberate but destroys traditional balances. The community judges, isolates, and punishes those who try to leave their role.'
                 }
             }
         },
@@ -259,10 +277,10 @@ def populate():
             'copertina_path': 'la_roba.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The Property',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'La roba',
+                    'breve_descrizione': 'Emblematic novella about the obsession with material possession.',
+                    'trama': 'Mazzarò, an enriched peasant, dedicates his entire existence to accumulating land and goods. His life is totally absorbed by "roba" (property), which becomes the measure of his value. When old age reveals to him that he cannot take anything with him, he explodes in desperate fury against his own riches.',
+                    'analisi': 'Wealth does not emancipate but devours. Verga shows how economy determines identity and how possession becomes a psychological and social prison.'
                 }
             }
         },
@@ -277,10 +295,10 @@ def populate():
             'copertina_path': 'liberta.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Liberty',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Libertà',
+                    'breve_descrizione': 'Historical novella about collective violence and the illusion of emancipation.',
+                    'trama': 'During the uprisings of 1860, the population rises against the notables, convinced that liberty means immediate social justice. The revolt degenerates into indiscriminate violence and looting. The arrival of the army restores order with equally brutal repression, leaving inequalities intact.',
+                    'analisi': 'Verga dismantles the myth of revolution: liberty, if not accompanied by real social transformations, remains an empty word. The story is one of the most lucid analyses of the failure of political utopias.'
                 }
             }
         },
@@ -319,6 +337,16 @@ def populate():
         opera.trama = opera_data['trama']
         opera.analisi = opera_data['analisi']
         opera.save()
+        
+        # Salva traduzioni inglesi se disponibili
+        if 'traduzioni' in opera_data and 'en' in opera_data['traduzioni']:
+            opera.set_current_language('en')
+            opera.titolo = opera_data['traduzioni']['en']['titolo']
+            opera.breve_descrizione = opera_data['traduzioni']['en'].get('breve_descrizione', '')
+            opera.trama = opera_data['traduzioni']['en'].get('trama', '')
+            opera.analisi = opera_data['traduzioni']['en'].get('analisi', '')
+            opera.save()
+        
         if created:
             print(f"✓ Creata opera: {opera.titolo} ({opera.anno_pubblicazione})")
         else:
@@ -344,9 +372,9 @@ def populate():
             'traduzioni': {
                 'en': {
                     'titolo': 'Giacinta',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'breve_descrizione': 'Novel that innovatively explores female psychology, trauma, and determinism, establishing itself as one of the foundational texts of Italian Verismo.',
+                    'trama': 'Giacinta is a young woman marked by childhood trauma that profoundly conditions her affective and social life. Raised in a bourgeois environment, she attempts to build stable sentimental relationships, but every bond is compromised by her emotional fragility and deep-rooted sense of guilt. Love, marriage, and motherhood cannot offer her redemption. Her story is a slow slide toward self-destruction, observed with a clinical eye devoid of complacency.',
+                    'analisi': 'Giacinta is one of the first Italian novels to openly confront the theme of psychological determinism. Capuana, influenced by French naturalism, analyzes the character as a "case," but without annulling her humanity. The novel marks a turning point in Italian narrative for its focus on the psyche and representation of non-idealized femininity.'
                 }
             }
         },
@@ -361,10 +389,10 @@ def populate():
             'copertina_path': 'il_marchese_di_roccaverdina.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The Marquis of Roccaverdina',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Il marchese di Roccaverdina',
+                    'breve_descrizione': 'Capuana\'s narrative masterpiece, a novel about crime, guilt, and the individual\'s moral disintegration.',
+                    'trama': 'The Marquis of Roccaverdina kills his steward out of jealousy but manages to escape human justice. However, the crime condemns him to a deeper punishment: inner torment. Obsessed by remorse and fear, the marquis plunges into progressive psychological isolation, while the surrounding community remains indifferent or unaware. His mind becomes populated with hallucinations, suspicions, and visions, until the final collapse.',
+                    'analisi': 'The novel represents a supreme synthesis between Verismo and psychological investigation. Capuana demonstrates that the true tribunal is not the social one but the inner one. Rural Sicily becomes the immobile backdrop of a mental drama, anticipating twentieth-century narrative themes and approaching an extremely modern form of psychological realism.'
                 }
             }
         },
@@ -379,10 +407,10 @@ def populate():
             'copertina_path': 'le_paesane.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The Country Women',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Le paesane',
+                    'breve_descrizione': 'Collection of novellas dedicated to the rural female world, observed with anthropological and linguistic attention.',
+                    'trama': 'The protagonists of the novellas are women from Sicilian villages: peasants, wives, young lovers, marginal figures whose lives are marked by work, marriage, motherhood, and sacrifice. Each story stages an existence compressed within rigid social roles, where individual feelings conflict with community expectations. The stories seek no solutions but record destinies.',
+                    'analisi': 'Capuana adopts a verismo gaze that neither judges nor consoles. Language is modeled on speech, narrative structure is essential. Le paesane constitutes a precious document on the female condition in the Sicilian rural world and on the interaction between individual and tradition.'
                 }
             }
         },
@@ -397,10 +425,10 @@ def populate():
             'copertina_path': 'cera_una_volta.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Once Upon a Time...',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'C\'era una volta…',
+                    'breve_descrizione': 'Collection of folk tales rewritten by Capuana, blending realism, orality, and fantastic imagination.',
+                    'trama': 'The tales draw on motifs from Sicilian folk tradition: kings, fairies, peasants, ogres, talking animals, and initiatory trials. Despite the fairy-tale structure, the stories maintain surprising concreteness: hunger, fatigue, and peasant cunning coexist with the magical element. The marvelous never completely erases the harshness of reality.',
+                    'analisi': 'Capuana demonstrates that Verismo is not incompatible with the fantastic. Rather, the fairy-tale world becomes another tool for narrating popular mentality. This collection is fundamental to understanding Capuana\'s interest in anthropology, folklore, and collective psychology.'
                 }
             }
         },
@@ -415,10 +443,10 @@ def populate():
             'copertina_path': 'novelle_del_mondo_occulto.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Tales of the Occult World',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Novelle del mondo occulto',
+                    'breve_descrizione': 'Collection of stories focused on spiritualism, mystery, and paranormal phenomena.',
+                    'trama': 'The novellas present bourgeois and intellectual characters who come into contact with inexplicable events: spiritualist séances, apparitions, extrasensory perceptions. The protagonists oscillate between faith and skepticism, between scientific rationality and attraction to the unknown, without the narrative ever offering a definitive explanation.',
+                    'analisi': 'Capuana approaches the theme of the occult with almost experimental rigor. The supernatural is never pure spectacular effect but a field of investigation into the limits of human knowledge. This collection shows the most modern and restless face of the author, in dialogue with late-nineteenth-century European culture.'
                 }
             }
         },
@@ -433,10 +461,10 @@ def populate():
             'copertina_path': 'il_drago.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'The Dragon',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Il drago',
+                    'breve_descrizione': 'Fantastic novel that blends fairy tale, allegory, and social observation.',
+                    'trama': 'Through a symbolic story, Capuana narrates a world governed by dark and irrational forces, in which the \"dragon\" assumes multiple meanings: fear, power, destructive impulse. The characters move in a universe suspended between dream and reality, where the boundary between good and evil remains ambiguous.',
+                    'analisi': 'The Dragon confirms Capuana\'s originality compared to more orthodox Verismo. The fantastic becomes a metaphor for the human and social condition. The novel dialogues with European symbolism and anticipates some suggestions of the early twentieth century.'
                 }
             }
         },
@@ -451,13 +479,13 @@ def populate():
             'copertina_path': 'sogno_di_un_tramonto_dautunno.jpg',
             'traduzioni': {
                 'en': {
-                    'titolo': 'Dream of an Autumn Sunset',
-                    'breve_descrizione': '',
-                    'trama': '',
-                    'analisi': ''
+                    'titolo': 'Sogno di un tramonto d\'autunno',
+                    'breve_descrizione': 'Story of strong introspective intensity, suspended between reality and vision.',
+                    'trama': 'The protagonist experiences a dreamlike occurrence during an autumn sunset that becomes an occasion for reflection on time, memory, and the end of illusions. The boundary between dream and waking is deliberately uncertain, and a melancholic atmosphere dominates the entire story.',
+                    'analisi': 'This text shows the lyrical and symbolic component of Capuana. While remaining anchored to psychological observation, the author experiments with narrative forms that move away from classical Verismo and approach a decadent sensibility.'
                 }
             }
-        },
+        }
     ]
     
     for opera_data in opere_capuana:
@@ -493,6 +521,16 @@ def populate():
         opera.trama = opera_data['trama']
         opera.analisi = opera_data['analisi']
         opera.save()
+        
+        # Salva traduzioni inglesi se disponibili
+        if 'traduzioni' in opera_data and 'en' in opera_data['traduzioni']:
+            opera.set_current_language('en')
+            opera.titolo = opera_data['traduzioni']['en']['titolo']
+            opera.breve_descrizione = opera_data['traduzioni']['en'].get('breve_descrizione', '')
+            opera.trama = opera_data['traduzioni']['en'].get('trama', '')
+            opera.analisi = opera_data['traduzioni']['en'].get('analisi', '')
+            opera.save()
+        
         if created:
             print(f"✓ Creata opera: {opera.titolo} ({opera.anno_pubblicazione})")
         else:
