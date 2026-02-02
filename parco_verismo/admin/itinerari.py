@@ -122,7 +122,7 @@ class ItinerarioAdmin(TranslatableAdmin):
         """Mostra l'icona dell'itinerario"""
         return format_html(
             '<span style="font-size: 24px;">{}</span>',
-            obj.icona_percorso or '📍'
+            '📍'
         )
     
     @admin.display(description='Titolo', ordering='translations__titolo')

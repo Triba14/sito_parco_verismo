@@ -30,6 +30,29 @@ verismo siciliano.' %}
 {% endblock %}
 
 {% block content %}
+<!-- Immagine principale centrata -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8 text-center">
+        <img src="/media/archivio_fotografico/Luoghi_di_interesse_e_percorsi_del_verismo.png" 
+             alt="{% trans 'Luoghi di interesse e percorsi del Verismo' %}" 
+             class="img-fluid rounded shadow-lg mb-3" 
+             style="max-width: 100%; height: auto;">
+        
+        <div class="mt-2">
+            <a href="/media/archivio_fotografico/Luoghi_di_interesse_e_percorsi_del_verismo.png" 
+               target="_blank" 
+               class="btn btn-outline-primary">
+                <i class="bi bi-arrows-fullscreen me-2"></i>
+                {% trans 'Visualizza a schermo intero' %}
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="itinerari-main-section">
   <div class="container-fluid px-0">
     {% if itinerari_data %}
@@ -112,19 +135,6 @@ verismo siciliano.' %}
             <i class="bi bi-x-lg"></i>
           </button>
           <div id="mapInfoContent"></div>
-        </div>
-      </div>
-    </div>
-    {% else %}
-    <div class="container">
-      <div class="row justify-content-center py-5">
-        <div class="col-lg-6 text-center">
-          <div class="alert alert-info">
-            <i class="bi bi-info-circle fs-1 d-block mb-3"></i>
-            <h3>{% trans 'Nessun itinerario disponibile' %}</h3>
-            <p>{% trans 'Al momento non ci sono itinerari del Cammino del Verismo attivi. Torna presto per scoprire
-              nuovi percorsi!' %}</p>
-          </div>
         </div>
       </div>
     </div>

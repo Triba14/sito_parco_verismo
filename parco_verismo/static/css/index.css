@@ -34,13 +34,17 @@ header {
 
 /* Overlay per migliorare la leggibilità del testo */
 header::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--overlay-hero-start) 0%, var(--overlay-hero-end) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--overlay-hero-start) 0%,
+        var(--overlay-hero-end) 100%
+    );
     z-index: 0;
     pointer-events: none;
 }
@@ -169,10 +173,12 @@ header::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg,
-            rgba(74, 20, 13, 0.75) 0%,
-            rgba(131, 50, 40, 0.65) 50%,
-            rgba(192, 140, 59, 0.3) 100%);
+    background: linear-gradient(
+        135deg,
+        rgba(74, 20, 13, 0.75) 0%,
+        rgba(131, 50, 40, 0.65) 50%,
+        rgba(192, 140, 59, 0.3) 100%
+    );
     z-index: 1;
 }
 
@@ -184,7 +190,7 @@ header::after {
 }
 
 .homepage-hero .hero-title {
-    font-family: 'Perandory', sans-serif;
+    font-family: "Perandory", sans-serif;
     font-size: clamp(2rem, 7vw, 4rem);
     font-weight: 400;
     line-height: 1.2;
@@ -239,7 +245,7 @@ header::after {
 }
 
 .hero-cta .btn {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     padding: 0.875rem 2.5rem;
     border-radius: 0.5rem;
@@ -288,8 +294,12 @@ header::after {
     justify-content: center;
     padding: 0 !important;
     background:
-        radial-gradient(circle at center, rgba(255, 255, 235, 0.4) 0%, rgba(74, 103, 65, 0.08) 100%),
-        url('/static/assets/img/textures/paper-texture.webp');
+        radial-gradient(
+            circle at center,
+            rgba(255, 255, 235, 0.4) 0%,
+            rgba(74, 103, 65, 0.08) 100%
+        ),
+        url("/static/assets/img/textures/paper-texture.webp");
     background-blend-mode: multiply;
     background-size: cover;
     overflow: hidden;
@@ -297,13 +307,12 @@ header::after {
 
 /* Internal refined frame */
 #il-parco.hp-parco::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 3rem;
     left: 3rem;
     right: 3rem;
     bottom: 3rem;
-    border: 1px solid rgba(74, 103, 65, 0.12);
     pointer-events: none;
     z-index: 1;
 }
@@ -322,7 +331,7 @@ header::after {
 .bg-quote {
     position: absolute;
     color: var(--color-primary-dark);
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-style: italic;
     font-size: clamp(0.9rem, 2vw, 1.25rem);
     line-height: 1.4;
@@ -338,7 +347,7 @@ header::after {
 }
 
 .bg-quote::before {
-    content: '';
+    content: "";
     position: absolute;
     left: -10px;
     top: 50%;
@@ -350,14 +359,14 @@ header::after {
 }
 
 .bg-quote-1 {
-    top: 15%;
-    left: 8%;
+    top: 5%;
+    left: 5%;
     transform: rotate(-2deg);
 }
 
 .bg-quote-2 {
-    top: 18%;
-    right: 10%;
+    top: 5%;
+    right: 5%;
     transform: rotate(1.5deg);
 }
 
@@ -373,11 +382,13 @@ header::after {
     transform: rotate(-1.5deg);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .hp-quotes-layer {
         display: none;
     }
+}
 
+@media (max-width: 991px) {
     #il-parco.hp-parco::after {
         top: 1.5rem;
         left: 1.5rem;
@@ -388,7 +399,6 @@ header::after {
 
 /* Subtle floating animation */
 @keyframes microFloat {
-
     0%,
     100% {
         transform: translateY(0) rotate(var(--rot));
@@ -419,9 +429,6 @@ header::after {
     animation: microFloat 20s infinite ease-in-out;
 }
 
-
-
-
 /* Assicura che il contenuto resti sopra il logo di sfondo */
 #il-parco .container-xl,
 #il-parco .hp-content {
@@ -447,7 +454,12 @@ header::after {
     align-items: center;
     width: 120px;
     height: 1px;
-    background: linear-gradient(to right, transparent, rgba(74, 103, 65, 0.2), transparent);
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(74, 103, 65, 0.2),
+        transparent
+    );
     position: relative;
 }
 
@@ -521,22 +533,43 @@ header::after {
 }
 
 .hp-luoghi {
-    background: linear-gradient(to bottom,
-            color-mix(in srgb, var(--color-primary-pale) 30%, var(--color-background)) 0%,
-            var(--color-background) 100%);
+    background: linear-gradient(
+        to bottom,
+        color-mix(
+                in srgb,
+                var(--color-primary-pale) 30%,
+                var(--color-background)
+            )
+            0%,
+        var(--color-background) 100%
+    );
 }
 
 .hp-biblioteca {
-    background: linear-gradient(to bottom,
-            var(--color-background) 0%,
-            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 100%);
+    background: linear-gradient(
+        to bottom,
+        var(--color-background) 0%,
+        color-mix(
+                in srgb,
+                var(--color-secondary-light) 15%,
+                var(--color-background)
+            )
+            100%
+    );
     border-bottom: 1px solid var(--color-border);
 }
 
 .hp-eventi {
-    background: linear-gradient(to bottom,
-            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 0%,
-            var(--color-background) 100%);
+    background: linear-gradient(
+        to bottom,
+        color-mix(
+                in srgb,
+                var(--color-secondary-light) 15%,
+                var(--color-background)
+            )
+            0%,
+        var(--color-background) 100%
+    );
 }
 
 .hp-archivi {
@@ -545,9 +578,21 @@ header::after {
 }
 
 .hp-cta-final {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-background)) 0%,
-            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-background)) 100%);
+    background: linear-gradient(
+        135deg,
+        color-mix(
+                in srgb,
+                var(--color-primary-pale) 50%,
+                var(--color-background)
+            )
+            0%,
+        color-mix(
+                in srgb,
+                var(--color-secondary-light) 20%,
+                var(--color-background)
+            )
+            100%
+    );
 }
 
 /* ========================================================
@@ -569,7 +614,6 @@ section.hp-section:nth-of-type(odd) {
 section.hp-section:nth-of-type(even) {
     background: var(--color-background) !important;
 }
-
 
 /* Slight border contrast preserved */
 section.hp-section {
@@ -609,7 +653,7 @@ section.hp-section {
 }
 
 .hp-section-title {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-size: clamp(1.75rem, 5vw, 2.5rem);
     font-weight: 600;
     color: var(--color-text-primary);
@@ -671,7 +715,7 @@ section.hp-section {
 }
 
 .hp-cta-buttons .btn {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
     border-radius: 0.5rem;
@@ -713,7 +757,11 @@ section.hp-section {
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, background 0.4s ease, border-color 0.4s ease;
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.4s ease,
+        background 0.4s ease,
+        border-color 0.4s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -734,33 +782,59 @@ section.hp-section {
 }
 
 .hp-card-primary {
-    background: linear-gradient(145deg,
-            color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-primary-light) 8%, var(--color-surface)) 50%,
-            var(--color-surface) 100%);
-    border-color: color-mix(in srgb, var(--color-primary) 15%, var(--color-border));
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface))
+            0%,
+        color-mix(in srgb, var(--color-primary-light) 8%, var(--color-surface))
+            50%,
+        var(--color-surface) 100%
+    );
+    border-color: color-mix(
+        in srgb,
+        var(--color-primary) 15%,
+        var(--color-border)
+    );
 }
 
 .hp-card-primary:hover {
-    background: linear-gradient(145deg,
-            color-mix(in srgb, var(--color-primary-pale) 90%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-primary-light) 20%, var(--color-surface)) 50%,
-            color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-surface)) 100%);
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--color-primary-pale) 90%, var(--color-surface))
+            0%,
+        color-mix(in srgb, var(--color-primary-light) 20%, var(--color-surface))
+            50%,
+        color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-surface))
+            100%
+    );
 }
 
 .hp-card-secondary {
-    background: linear-gradient(145deg,
-            color-mix(in srgb, var(--color-neutral-100) 80%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-primary-pale) 15%, var(--color-surface)) 50%,
-            var(--color-surface) 100%);
-    border-color: color-mix(in srgb, var(--color-primary) 12%, var(--color-border));
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--color-neutral-100) 80%, var(--color-surface))
+            0%,
+        color-mix(in srgb, var(--color-primary-pale) 15%, var(--color-surface))
+            50%,
+        var(--color-surface) 100%
+    );
+    border-color: color-mix(
+        in srgb,
+        var(--color-primary) 12%,
+        var(--color-border)
+    );
 }
 
 .hp-card-secondary:hover {
-    background: linear-gradient(145deg,
-            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-primary-light) 15%, var(--color-surface)) 50%,
-            color-mix(in srgb, var(--color-neutral-100) 30%, var(--color-surface)) 100%);
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface))
+            0%,
+        color-mix(in srgb, var(--color-primary-light) 15%, var(--color-surface))
+            50%,
+        color-mix(in srgb, var(--color-neutral-100) 30%, var(--color-surface))
+            100%
+    );
 }
 
 .hp-card-icon {
@@ -769,9 +843,11 @@ section.hp-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
-            color-mix(in srgb, var(--color-primary-light) 20%, transparent) 100%);
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
+        color-mix(in srgb, var(--color-primary-light) 20%, transparent) 100%
+    );
     border-radius: 50%;
     margin: 0 auto;
     color: var(--color-primary);
@@ -787,7 +863,8 @@ section.hp-section {
     background: var(--gradient-primary);
     color: white;
     transform: scale(1.15) rotate(5deg);
-    box-shadow: 0 10px 25px color-mix(in srgb, var(--color-primary) 35%, transparent);
+    box-shadow: 0 10px 25px
+        color-mix(in srgb, var(--color-primary) 35%, transparent);
     border-color: transparent;
 }
 
@@ -823,7 +900,7 @@ section.hp-section {
 }
 
 .hp-card h3 {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1.3rem;
@@ -905,9 +982,17 @@ section.hp-section {
    ======================================================== */
 
 .hp-cta-card {
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
-            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 100%);
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface))
+            0%,
+        color-mix(
+                in srgb,
+                var(--color-secondary-light) 20%,
+                var(--color-surface)
+            )
+            100%
+    );
     border: 2px solid var(--color-primary-light);
     border-radius: 2rem;
     padding: 4rem 2rem;
@@ -978,7 +1063,9 @@ section.hp-section {
     .hp-card {
         padding: 1.5rem;
         transform: none !important;
-        transition: opacity 0.4s ease, background 0.4s ease !important;
+        transition:
+            opacity 0.4s ease,
+            background 0.4s ease !important;
         /* Solo opacità e sfondo */
         animation: none !important;
         width: 100% !important;
@@ -1015,7 +1102,6 @@ section.hp-section {
    ======================================================== */
 
 @media (prefers-reduced-motion: reduce) {
-
     .hp-illustration,
     .hp-card,
     .hp-card-icon {
@@ -1076,7 +1162,16 @@ body {
    ======================================================== */
 
 .hp-contact-card {
-    background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-elevated) 60%, var(--color-surface)) 0%, var(--color-surface) 100%);
+    background: linear-gradient(
+        180deg,
+        color-mix(
+                in srgb,
+                var(--color-surface-elevated) 60%,
+                var(--color-surface)
+            )
+            0%,
+        var(--color-surface) 100%
+    );
     border: 1px solid var(--color-border);
     border-radius: 1rem;
     padding: 3rem;
@@ -1184,8 +1279,6 @@ body {
     }
 }
 
-
-
 .hp-contact-form .form-label {
     display: block;
     margin-bottom: 0.35rem;
@@ -1203,7 +1296,9 @@ body {
     background: var(--color-surface);
     color: var(--color-text-primary);
     font-size: 1rem;
-    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
 }
 
 /* Form group margin (custom) */
@@ -1277,7 +1372,6 @@ body {
 
 /* Further mobile-specific fixes */
 @media (max-width: 767.98px) {
-
     /* Ensure no horizontal overflow */
     .container,
     .container-xl,
@@ -1371,7 +1465,6 @@ body {
 
 /* Eliminate gap before footer on mobile */
 @media (max-width: 991px) {
-
     .hp-section.hp-cta-final,
     .hp-section:last-of-type {
         padding-bottom: 2.5rem !important;

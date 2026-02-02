@@ -44,6 +44,7 @@ def itinerari_verghiani_view(request):
             "centro_mappa": itinerario.get_centro_mappa(),
             "numero_tappe": itinerario.get_numero_tappe(),
             "url_detail": itinerario.get_absolute_url(),
+            "link_maps": itinerario.link_maps,
             "url_immagine": itinerario.immagine.url if itinerario.immagine else None,
             "galleria_immagini": [img.immagine.url for img in itinerario.galleria.all()],
         }, ensure_ascii=False)
@@ -92,6 +93,7 @@ def itinerari_capuaniani_view(request):
             "centro_mappa": itinerario.get_centro_mappa(),
             "numero_tappe": itinerario.get_numero_tappe(),
             "url_detail": itinerario.get_absolute_url(),
+            "link_maps": itinerario.link_maps,
             "url_immagine": itinerario.immagine.url if itinerario.immagine else None,
             "galleria_immagini": [img.immagine.url for img in itinerario.galleria.all()],
         }, ensure_ascii=False)
@@ -140,6 +142,7 @@ def itinerari_tematici_view(request):
             "centro_mappa": itinerario.get_centro_mappa(),
             "numero_tappe": itinerario.get_numero_tappe(),
             "url_detail": itinerario.get_absolute_url(),
+            "link_maps": itinerario.link_maps,
             "url_immagine": itinerario.immagine.url if itinerario.immagine else None,
             "galleria_immagini": [img.immagine.url for img in itinerario.galleria.all()],
         }, ensure_ascii=False)
@@ -155,7 +158,7 @@ def itinerari_tematici_view(request):
         "tipo_itinerario": "tematico"
     }
     
-    return render(request, "parco_verismo/itinerari_tematici.html", context)
+    return render(request, "parco_verismo/cammino_del_verismo.html", context)
 
 
 def itinerario_detail_view(request, slug):

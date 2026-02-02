@@ -114,7 +114,7 @@
             </div>
             <div class="tappa-content">
               <h3 class="tappa-title">{{ tappa.nome }}</h3>
-              <p class="tappa-description">{{ tappa.descrizione }}</p>
+              <p class="tappa-description">{{ tappa.descrizione|safe }}</p>
               {% if tappa.coords %}
               <div class="tappa-coordinates">
                 <i class="bi bi-geo-alt text-muted me-2"></i>

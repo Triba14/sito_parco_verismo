@@ -74,7 +74,7 @@ urlpatterns = [
     # Itinerari (liste e dettaglio)
     path('itinerari/verghiani/', itinerari_verghiani_view, name='itinerari_verghiani'),
     path('itinerari/capuaniani/', itinerari_capuaniani_view, name='itinerari_capuaniani'),
-    path('itinerari/tematici/', itinerari_tematici_view, name='itinerari_tematici'),
+    path('cammino-del-verismo/', itinerari_tematici_view, name='cammino_del_verismo'),
     path('itinerario/<slug:slug>/', itinerario_detail_view, name='itinerario_detail'),
     
     # Pagine di conformità GDPR e PA

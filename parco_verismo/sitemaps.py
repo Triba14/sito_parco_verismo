@@ -20,7 +20,7 @@ class StaticViewSitemap(Sitemap):
             'verga_capuana_fotografi',
             'itinerari_verghiani',
             'itinerari_capuaniani',
-            'itinerari_tematici',
+            'cammino_del_verismo',
             'missione_visione',
             'comitato_tecnico_scientifico',
             'comitato_regolamento',

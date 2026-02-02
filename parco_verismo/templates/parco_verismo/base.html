@@ -122,7 +122,7 @@
     <!-- Bootstrap Icons locale -->
     <link rel="stylesheet" href="{% static 'fonts/bootstrap-icons/bootstrap-icons.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=3">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
@@ -138,9 +138,7 @@
 
 <body class="{% block body_class %}{% endblock %}">
     <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-to-main visually-hidden-focusable">
-        {% trans 'Salta al contenuto principale' %}
-    </a>
+
 
     {% include 'parco_verismo/navbar.html' %}
 

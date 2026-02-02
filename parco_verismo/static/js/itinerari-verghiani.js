@@ -336,6 +336,15 @@
                     Descrizione
                 </h6>
                 <p class="lead" style="white-space: pre-line;">${itinerarioData.descrizione || 'Nessuna descrizione disponibile.'}</p>
+                
+                ${itinerarioData.link_maps ? `
+                <div class="mt-3">
+                    <a href="${itinerarioData.link_maps}" target="_blank" class="btn btn-outline-primary">
+                        <i class="bi bi-map-fill me-2"></i>
+                        Vedi percorso su Google Maps
+                    </a>
+                </div>
+                ` : ''}
             </div>
             
             ${itinerarioData.coordinate_tappe && itinerarioData.coordinate_tappe.length > 0 ? `

@@ -217,7 +217,9 @@
     color: var(--color-text-secondary);
     line-height: 1.7;
     margin-bottom: var(--space-xl);
-    flex-grow: 1;
+    /* Rimosso flex-grow per evitare che l'altezza dipenda dal footer */
+    /* flex-grow: 1; */ 
+    min-height: 140px; /* Altezza fissa per allineare i contatti */
 }
 
 .comune-contatti {
