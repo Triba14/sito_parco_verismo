@@ -154,6 +154,13 @@
     <!-- Bootstrap JS -->
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 
+      <!-- Disable right-click context menu -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
     <!-- Google Analytics Configuration -->
     <script>
         window.GA_MEASUREMENT_ID = "{{ GA_MEASUREMENT_ID|default:'G-1CPRYW1SYB' }}";
