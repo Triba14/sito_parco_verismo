@@ -1162,6 +1162,29 @@ svg feDropShadow[flood-color="#4a140d"] {
     }
 }
 
+/* Disable floating animation and border radius on hero for specific pages */
+.missione-visione-page .placeholder-image,
+.missione-visione-page .placeholder-image-secondary,
+.comitato-page .placeholder-image,
+.comitato-page .placeholder-image-secondary,
+.page-regolamenti .placeholder-image,
+.page-regolamenti .placeholder-image-secondary,
+.page-partner .placeholder-image,
+.page-partner .placeholder-image-secondary {
+    animation: none;
+    border-radius: 0;
+}
+
+.missione-visione-page .hero-photo,
+.comitato-page .hero-photo,
+.page-regolamenti .hero-photo,
+.page-partner .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
 /* ============================================================================
    COMPONENTI PAGINE GLOBALI (.pages-*)
    Classi decorative globalizzate da missione_visione.css

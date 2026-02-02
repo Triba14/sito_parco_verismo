@@ -1,4 +1,4 @@
-@import url('index.css');
+@import url("index.css");
 /* import variables and base rules from index */
 /* ========================================================
    MISSIONE E VISIONE - STILI PERSONALIZZATI
@@ -11,6 +11,17 @@
 
 /* Hero rules moved to global `styles.css` to make hero classes available site-wide. */
 
+/* Disable floating animation on hero for this page */
+.missione-visione-page .placeholder-image {
+    animation: none;
+}
+
+/* Hero photo styling */
+.missione-visione-page .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ========================================================
    MISSION & VISION SECTIONS
@@ -21,13 +32,20 @@
 }
 
 .pages-section.pages-vision {
-    background: linear-gradient(135deg,
-            var(--pages-surface) 0%,
-            color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface)) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--pages-surface) 0%,
+        color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface))
+            100%
+    );
 }
 
 .pages-section.pages-recognition {
-    background: color-mix(in srgb, var(--pages-neutral-100) 50%, var(--pages-background));
+    background: color-mix(
+        in srgb,
+        var(--pages-neutral-100) 50%,
+        var(--pages-background)
+    );
 }
 
 .pages-section.pages-values {
@@ -35,7 +53,7 @@
 }
 
 .pages-section-title {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     color: var(--pages-primary);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -61,9 +79,11 @@
 
 .pages-highlight-text {
     padding: 1.5rem;
-    background: linear-gradient(135deg,
-            rgba(199, 106, 82, 0.08) 0%,
-            rgba(192, 140, 59, 0.05) 100%);
+    background: linear-gradient(
+        135deg,
+        rgba(199, 106, 82, 0.08) 0%,
+        rgba(192, 140, 59, 0.05) 100%
+    );
     border-left: 4px solid var(--pages-primary-light);
     border-radius: 0.5rem;
 }
@@ -100,7 +120,11 @@
     transform: translateY(-4px);
     box-shadow: var(--pages-shadow-md);
     border-color: var(--pages-primary-light);
-    background: color-mix(in srgb, var(--pages-primary-pale) 50%, var(--pages-surface));
+    background: color-mix(
+        in srgb,
+        var(--pages-primary-pale) 50%,
+        var(--pages-surface)
+    );
 }
 
 .pages-point-icon {
@@ -110,16 +134,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,
-            rgba(131, 50, 40, 0.1) 0%,
-            rgba(192, 140, 59, 0.1) 100%);
+    background: linear-gradient(
+        135deg,
+        rgba(131, 50, 40, 0.1) 0%,
+        rgba(192, 140, 59, 0.1) 100%
+    );
     border-radius: 0.5rem;
     color: var(--pages-primary);
     font-size: 1.5rem;
 }
 
 .pages-point-content h4 {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-size: 1rem;
     font-weight: 600;
     color: var(--pages-text-primary);
@@ -138,7 +164,7 @@
    ======================================================== */
 
 .pages-actions-list h4 {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     color: var(--pages-text-primary);
     text-transform: uppercase;
@@ -194,7 +220,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--pages-primary-light), var(--pages-secondary-light));
+    background: linear-gradient(
+        135deg,
+        var(--pages-primary-light),
+        var(--pages-secondary-light)
+    );
     border-radius: 50%;
     color: white;
     font-size: 2.5rem;
@@ -202,7 +232,7 @@
 }
 
 .pages-recognition-card h3 {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     color: var(--pages-text-primary);
     font-weight: 400;
 }
@@ -234,7 +264,11 @@
     transform: translateY(-8px);
     box-shadow: var(--pages-shadow-lg);
     border-color: var(--pages-primary-light);
-    background: color-mix(in srgb, var(--pages-primary-pale) 40%, var(--pages-surface));
+    background: color-mix(
+        in srgb,
+        var(--pages-primary-pale) 40%,
+        var(--pages-surface)
+    );
 }
 
 .pages-value-icon {
@@ -243,9 +277,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,
-            rgba(199, 106, 82, 0.15) 0%,
-            rgba(192, 140, 59, 0.15) 100%);
+    background: linear-gradient(
+        135deg,
+        rgba(199, 106, 82, 0.15) 0%,
+        rgba(192, 140, 59, 0.15) 100%
+    );
     border-radius: 50%;
     margin: 0 auto;
     color: var(--pages-primary);
@@ -260,7 +296,7 @@
 }
 
 .pages-value-title {
-    font-family: 'TeX Gyre Termes', serif;
+    font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     color: var(--pages-text-primary);
     font-size: 1rem;
@@ -385,7 +421,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
     .placeholder-image,
     .placeholder-image-secondary,
     .pages-point,
@@ -421,12 +456,12 @@
     justify-content: center;
     color: #fff;
     font-size: 1.25rem;
-    margin-bottom: .75rem
+    margin-bottom: 0.75rem;
 }
 
 .pages-composition .pages-member-card h4 {
-    margin-bottom: .25rem;
-    color: var(--color-text-primary)
+    margin-bottom: 0.25rem;
+    color: var(--color-text-primary);
 }
 
 .pages-separator {
@@ -436,17 +471,21 @@
     width: 100%;
     max-width: 900px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .pages-composition .pages-member-card-highlight {
-    background: linear-gradient(180deg, var(--color-surface-elevated), var(--color-surface));
-    border-color: var(--color-border)
+    background: linear-gradient(
+        180deg,
+        var(--color-surface-elevated),
+        var(--color-surface)
+    );
+    border-color: var(--color-border);
 }
 
 .pages-composition .pages-group-title {
-    margin-bottom: .75rem;
-    color: var(--color-text-primary)
+    margin-bottom: 0.75rem;
+    color: var(--color-text-primary);
 }
 
 /* Alternate section backgrounds (copied from index.css) */
