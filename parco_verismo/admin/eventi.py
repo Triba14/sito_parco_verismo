@@ -95,7 +95,7 @@ class NotiziaAdmin(TranslatableAdmin):
     search_fields = ("translations__titolo", "translations__contenuto")
     date_hierarchy = "data_pubblicazione"
     ordering = ("-data_pubblicazione",)
-    list_editable = ("is_active",)
+    list_editable = ("is_active", "data_pubblicazione")
     inlines = [NotiziaImageInline, NotiziaDocumentoInline]
 
 

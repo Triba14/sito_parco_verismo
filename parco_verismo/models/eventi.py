@@ -6,8 +6,8 @@ Modelli per Eventi e Notizie.
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
+from django.utils import timezone
 
-# Third-party imports
 from parler.models import TranslatableModel, TranslatedFields
 from parco_verismo.utils.image_optimizer import optimize_image
 
@@ -81,7 +81,7 @@ class Evento(TranslatableModel):
 
 class Notizia(TranslatableModel):
     slug = models.SlugField(max_length=200, unique=True, blank=True, help_text="Lascia vuoto per generare automaticamente dal titolo.")
-    data_pubblicazione = models.DateTimeField(auto_now_add=True)
+    data_pubblicazione = models.DateTimeField(default=timezone.now)
     immagine = models.ImageField(
         upload_to="notizie/",
         blank=True,
