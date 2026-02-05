@@ -5,10 +5,39 @@ Middleware personalizzato per rate limiting e sicurezza.
 # Standard library imports
 import time
 
+
 # Django imports
 from django.core.cache import cache
 from django.http import HttpResponse
 from django.utils.translation import gettext as _
+from django.conf import settings
+from django.shortcuts import render
+
+class MaintenanceMiddleware:
+    """
+    Middleware che intercetta tutte le richieste quando il sito è in manutenzione.
+    Lascia passare solo admin, static e media.
+    """
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        # Se la modalità manutenzione non è attiva, procedi normalmente
+        if not getattr(settings, 'MAINTENANCE_MODE', False):
+            return self.get_response(request)
+
+        # Permetti sempre accesso ad admin, static e media
+        if (
+            request.path.startswith('/admin/') or
+            request.path.startswith('/static/') or
+            request.path.startswith('/media/')
+        ):
+            return self.get_response(request)
+
+        # Renderizza la pagina di manutenzione e ritorna 503 Service Unavailable
+        response = render(request, 'maintenance.html')
+        response.status_code = 503
+        return response
 
 
 class SimpleRateLimitMiddleware:

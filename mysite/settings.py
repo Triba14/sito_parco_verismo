@@ -32,7 +32,11 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=True, cast=bool)
 
+
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost,127.0.0.1", cast=Csv())
+
+# Maintenance Mode
+MAINTENANCE_MODE = config("MAINTENANCE_MODE", default=False, cast=bool)
 
 # Security Settings
 SECURE_BROWSER_XSS_FILTER = True
@@ -72,6 +76,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "parco_verismo.middleware.MaintenanceMiddleware",  # Maintenance mode (first check)
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",  # Serve static files in production
     "django.contrib.sessions.middleware.SessionMiddleware",

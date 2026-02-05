@@ -1,0 +1,122 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Sito in Manutenzione" %} - Parco Letterario® Verga e Capuana</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'favicon.ico' %}" sizes="any">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{% static 'fonts/perandory/perandory.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/tex-gyre-termes/tex-gyre-termes.css' %}">
+    
+    <style>
+        :root {
+            --primary-color: #4A6741;
+            --text-color: #ffffff;
+            --bg-color: #4A6741;
+        }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Tex Gyre Termes', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1); /* Make logo white */
+        }
+
+        h1 {
+            font-family: 'Perandory', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 3px solid #FFF;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+        .loader::after {
+            content: '';  
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-bottom-color: #FF3D00;
+        }
+        
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Decorative elements */
+        .decoration {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <!-- Logo placeholder if available, otherwise just text -->
+        <img src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}" alt="Logo Parco Verismo" class="logo">
+        
+        <h1>{% trans "Lavori in Corso" %}</h1>
+        
+        <p>
+            {% trans "Stiamo aggiornando il sito per offrirvi un'esperienza migliore." %}<br>
+            {% trans "Torneremo online al più presto." %}
+        </p>
+
+        <div class="loader" style="border-color: rgba(255,255,255,0.3); border-bottom-color: #fff;"></div>
+    </div>
+</body>
+</html>
