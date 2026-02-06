@@ -55,7 +55,7 @@
                         <span class="separator-dot"></span>
                     </div>
 
-                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    <p class="lead text-justify" data-aos="fade-up" data-aos-delay="200">
                         {% blocktrans trimmed %}
                         Il Parco Letterario® Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso ricerca, percorsi culturali e progetti che coinvolgono la comunità. L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo condiviso, favorendo un turismo culturale responsabile e un territorio in cui identità, storia e futuro dialogano in modo armonioso.
                         {% endblocktrans %}
@@ -78,8 +78,8 @@
             <h2 class="hp-section-title">
                 {% trans 'Località' %}
             </h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
-                {% trans 'Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e Capuana' %}
+            <p class="lead text-secondary text-justify" style="max-width: 600px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+                {% trans 'Scopri i luoghi del Verismo e gli itinerari tematici dedicati a Verga e Capuana.' %}
             </p>
         </div>
 
@@ -90,7 +90,7 @@
                         <i class="bi bi-geo-alt-fill"></i>
                     </div>
                     <h3>Vizzini</h3>
-                    <p>{% trans 'La patria di Giovanni Verga, dove la letteratura dialoga con i luoghi.' %}</p>
+                    <p class="text-justify">{% trans '"Patria letteraria" di Giovanni Verga, dove i capolavori del Verismo dialogano con i luoghi.' %}</p>
                     <a href="{% url 'vizzini' %}" class="hp-card-link">{% trans 'Scopri Vizzini' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                         <i class="bi bi-geo-alt-fill"></i>
                     </div>
                     <h3>Mineo</h3>
-                    <p>{% trans 'Uno dei luoghi più importanti della narrativa capuaniana e del Verismo.' %}</p>
+                    <p class="text-justify">{% trans 'Città di Luigi Capuana che ha ispirato Il Marchese di Roccaverdina, suo capolavoro, e molte altre novelle.' %}</p>
                     <a href="{% url 'mineo' %}" class="hp-card-link">{% trans 'Scopri Mineo' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                         <i class="bi bi-geo-alt-fill"></i>
                     </div>
                     <h3>Licodia Eubea</h3>
-                    <p>{% trans 'Un territorio ricco di storia e di legami con la grande letteratura siciliana.' %}</p>
+                    <p class="text-justify">{% trans 'Un territorio ricco di storia e tradizioni legato alla grande letteratura verghiana.' %}</p>
                     <a href="{% url 'licodia' %}" class="hp-card-link">{% trans 'Scopri Licodia' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
@@ -126,13 +126,13 @@
     <div class="container-xl">
         <div class="text-center mb-5 mb-lg-6">
             <h2 class="hp-section-title">{% trans 'Eventi & Notizie' %}</h2>
-            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans "Ultimi eventi e aggiornamenti dal Parco" %}</p>
+            <p class="lead text-secondary text-justify" style="max-width: 700px; margin: 0 auto;">{% trans "Ultimi eventi e aggiornamenti dal Parco" %}</p>
         </div>
 
         <div class="row g-4">
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="hp-card">
-                    <h3 class="h5 mb-3">{% trans 'Eventi recenti' %}</h3>
+                    <h3 class="mb-3">{% trans 'Eventi recenti' %}</h3>
                     <ul class="list-unstyled mb-3">
                         {% if eventi %}
                             {% for evento in eventi %}
@@ -155,7 +155,7 @@
 
             <div class="col-lg-6" data-aos="fade-left">
                 <div class="hp-card">
-                    <h3 class="h5 mb-3">{% trans 'Notizie recenti' %}</h3>
+                    <h3 class="mb-3">{% trans 'Notizie recenti' %}</h3>
                     <ul class="list-unstyled mb-3">
                         {% if notizie %}
                             {% for notizia in notizie %}
@@ -214,14 +214,13 @@
                     <h2 class="hp-section-title">
                         {% trans 'Archivi & Documenti' %}
                     </h2>
-                    <p class="lead mb-4">
+                    <p class="lead mb-4 text-justify">
                         {% trans 'Accedi agli archivi fotografici, agli studi critici e ai documenti storici sul patrimonio verista.' %}
                     </p>
                     <ul class="hp-features">
                         <li><i class="bi bi-check-circle"></i> {% trans 'Verga e Capuana Fotografi' %}</li>
-                        <li><i class="bi bi-check-circle"></i> {% trans 'Studi e ricerche scientifiche' %}</li>
+                        <li><i class="bi bi-check-circle"></i> {% trans 'Studi e ricerche' %}</li>
                         <li><i class="bi bi-check-circle"></i> {% trans 'Documenti storici e manoscritti' %}</li>
-                        <li><i class="bi bi-check-circle"></i> {% trans 'Risorse per la ricerca accademica' %}</li>
                     </ul>
                     <div class="hp-cta-buttons">
                         <a href="{% url 'verga_capuana_fotografi' %}" class="btn btn-primary">
@@ -244,8 +243,8 @@
             <h2 class="hp-section-title">
                 {% trans 'Opere & Letteratura' %}
             </h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
-                {% trans 'Esplora le opere, i testi e i protagonisti del movimento verista' %}
+            <p class="lead text-secondary text-justify" style="max-width: 600px; margin: 0 auto;">
+                {% trans 'Esplora i testi e i protagonisti del mondo verista.' %}
             </p>
         </div>
 
@@ -256,8 +255,8 @@
                         <i class="bi bi-book"></i>
                     </div>
                     <h3>{% trans 'Opere di Verga' %}</h3>
-                    <p>{% trans 'Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e edizioni critiche.' %}</p>
-                    <a href="#" class="hp-card-link">{% trans 'Scopri le opere' %} <i class="bi bi-arrow-right"></i></a>
+                    <p class="text-justify">{% trans 'Catalogo e risorse sulle opere di Giovanni Verga, ispirate dai luoghi del Parco, saggi ed edizioni critiche.' %}</p>
+                    <a href="{% url 'opere_per_autore' 'giovanni-verga' %}" class="hp-card-link">{% trans 'Scopri le opere' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -267,8 +266,8 @@
                         <i class="bi bi-book"></i>
                     </div>
                     <h3>{% trans 'Opere di Capuana' %}</h3>
-                    <p>{% trans 'Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua produzione.' %}</p>
-                    <a href="#" class="hp-card-link">{% trans 'Esplora Capuana' %} <i class="bi bi-arrow-right"></i></a>
+                    <p class="text-justify">{% trans 'Catalogo e risorse sulle opere di Luigi Capuana, ispirate dai luoghi del Parco, saggi ed edizioni critiche.' %}</p>
+                    <a href="{% url 'opere_per_autore' 'luigi-capuana' %}" class="hp-card-link">{% trans 'Scopri le opere' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -278,8 +277,8 @@
                         <i class="bi bi-people"></i>
                     </div>
                     <h3>{% trans 'Personaggi & Lessico del Verismo' %}</h3>
-                    <p>{% trans 'Schede sui personaggi principali, lessico caratteristico e termini letterari del Verismo.' %}</p>
-                    <a href="#" class="hp-card-link">{% trans 'Approfondisci' %} <i class="bi bi-arrow-right"></i></a>
+                    <p class="text-justify">{% trans 'Schede sui personaggi principali, lessico caratteristico e termini letterari del Verismo.' %}</p>
+                    <a href="{% url 'personaggi_lessico' %}" class="hp-card-link">{% trans 'Approfondisci' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -296,11 +295,11 @@
                         <div class="hp-contact-card" data-aos="zoom-in">
                             <div class="text-center mb-4">
                                 <h2 class="hp-section-title">{% trans "Modulo di contatto" %}</h2>
-                                <p class="lead text-secondary mt-3" style="max-width: 700px; margin-left: auto; margin-right: auto;">
-                                    {% trans 'Per richieste di informazioni generali, proposte di collaborazione, attività didattiche, visite guidate, eventi o comunicazioni istituzionali, è possibile utilizzare il modulo di contatto sottostante.' %}
+                                <p class="lead text-secondary text-justify mt-3" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+                                    {% trans 'Per richieste di informazioni, proposte di collaborazione, eventi e comunicazioni istituzionali è possibile utilizzare il modulo di contatto sottostante. Il messaggio sarà indirizzato all’email ufficiale del Parco Letterario.' %}
                                 </p>
-                                <p class="text-secondary">
-                                    {% blocktrans %}Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario.{% endblocktrans %}
+                                <p class="text-secondary text-justify" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+                                    {% trans 'Per prenotazioni di visite guidate e attività didattiche, rivolgersi ai' %} <a href="{% url 'contatti' %}#partner">{% trans 'Partner territoriali' %}</a>.
                                 </p>
                             </div>
 

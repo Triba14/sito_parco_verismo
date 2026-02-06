@@ -1155,7 +1155,6 @@ section.page-section:nth-of-type(even) {
     left: -10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(192, 140, 59, 0.2), transparent 70%);
     border-radius: 50%;
 }
 

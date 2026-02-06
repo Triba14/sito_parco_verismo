@@ -17,15 +17,12 @@ env/
 *.sqlite3
 db.sqlite3
 db.sqlite3-journal
-/media/
+/media/*
 !/media/README.md
 !/media/.gitkeep
 !/media/copertine/
-!/media/copertine/**
 !/media/archivio_fotografico/
-!/media/archivio_fotografico/**
 !/media/documenti/
-!/media/documenti/**
 /staticfiles/
 /static_root/
 .env
