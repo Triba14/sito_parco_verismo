@@ -20,7 +20,7 @@
                 <div class="pages-hero-content">
                     <span class="pages-badge">{% trans 'Partner & Rete' %}</span>
                     <h1 class="pages-hero-title display-3 fw-bold mb-4">{% trans 'Partner & Rete Territoriale' %}</h1>
-                    <p class="pages-hero-subtitle lead">{% trans 'Una rete integrata di eccellenza con istituzioni, amministrazioni locali e organizzazioni internazionali.' %}</p>
+                    <p class="pages-hero-subtitle lead">{% trans 'Una rete di collaborazione fra istituzioni, enti locali e enti del Terzo Settore.' %}</p>
                 </div>
             </div>
             <div class="col-lg-5">
@@ -72,7 +72,28 @@
                 {% trans 'Partner Istituzionali' %}
             </h2>
             <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
-                {% trans 'Collaborazioni strategiche con enti pubblici e istituzioni per la promozione della cultura verista.' %}
+                {% trans 'Ente finanziatore del Parco Letterario' %}
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center mb-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="partner-card partner-institutional">
+                    <div class="partner-logo-wrap">
+                        <div class="partner-logo">
+                            <img src="{% static 'assets/img/loghi/partner/LogoRegione2.png' %}" alt="Regione Siciliana">
+                        </div>
+                    </div>
+                    <h3>{% trans 'Regione Siciliana' %}</h3>
+                    <p class="partner-role">{% blocktrans %}Assessorato ai beni culturali e dell'identità siciliana{% endblocktrans %}</p>
+                    <a href="https://www2.regione.sicilia.it/beniculturali/" target="_blank" class="partner-link">{% trans 'Sito Web' %} <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <p class="lead text-secondary">
+                {% trans 'Comune capofila e partner istituzionali' %}
             </p>
         </div>
 
@@ -85,8 +106,7 @@
                         </div>
                     </div>
                     <h3>{% trans 'Comune di Vizzini' %}</h3>
-                    <p class="partner-role">{% trans 'Ente Promotore' %}</p>
-                    <p class="partner-desc">{% trans 'Amministrazione locale impegnata nella valorizzazione dei luoghi verghiani.' %}</p>
+                    <p class="partner-role">{% trans 'Ente Promotore e Comune Capofila' %}</p>
                     <a href="https://www.comune.vizzini.ct.it/" target="_blank" class="partner-link">{% trans 'Sito Web' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
@@ -100,7 +120,6 @@
                     </div>
                     <h3>{% trans 'Comune di Mineo' %}</h3>
                     <p class="partner-role">{% trans 'Ente Promotore' %}</p>
-                    <p class="partner-desc">{% trans 'Amministrazione locale custode della memoria di Luigi Capuana.' %}</p>
                     <a href="https://www.comune.mineo.ct.it/" target="_blank" class="partner-link">{% trans 'Sito Web' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
@@ -114,22 +133,7 @@
                     </div>
                     <h3>{% trans 'Comune di Licodia Eubea' %}</h3>
                     <p class="partner-role">{% trans 'Ente Promotore' %}</p>
-                    <p class="partner-desc">{% trans 'Amministrazione locale parte integrante del percorso verista.' %}</p>
                     <a href="https://www.comune.licodiaeubea.ct.it/" target="_blank" class="partner-link">{% trans 'Sito Web' %} <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="partner-card partner-institutional">
-                    <div class="partner-logo-wrap">
-                        <div class="partner-logo">
-                            <img src="{% static 'assets/img/loghi/partner/LogoRegione2.png' %}" alt="Regione Siciliana">
-                        </div>
-                    </div>
-                    <h3>{% trans 'Regione Siciliana' %}</h3>
-                    <p class="partner-role">{% blocktrans %}Assessorato ai beni culturali e dell'identità siciliana{% endblocktrans %}</p>
-                    <p class="partner-desc">{% trans 'Ente finanziatore e di riconoscimento istituzionale del Parco Letterario.' %}</p>
-                    <a href="https://www2.regione.sicilia.it/beniculturali/" target="_blank" class="partner-link">{% trans 'Sito Web' %} <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -152,12 +156,44 @@
             <div class="col-md-6 col-lg-4">
                 <div class="partner-card">
                     <div class="partner-logo-wrap">
-                        <div class="partner-logo">
-                            <img src="{% static 'assets/img/loghi/partner/UNITRE.webp' %}" alt="UNITRE Vizzini" style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
-                        </div>
+                        <a href="https://www.stevejobs.academy" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/logo-stjac.png' %}" alt="Fondazione ITS Steve Jobs" style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
+                            </div>
+                        </a>
                     </div>
-                    <h3>{% trans 'UNITRE - Vizzini' %}</h3>
-                    <p class="partner-role">{% trans 'Università della Terza Età' %}</p>
+                    <h3>{% trans 'Fondazione ITS Steve Jobs' %}</h3>
+                    <p class="partner-role">{% trans 'Caltagirone' %}</p>
+                    <p class="partner-desc">{% trans 'Istituto tecnico superiore per la formazione nel campo dello sviluppo software e della meccatronica' %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="partner-card">
+                    <div class="partner-logo-wrap">
+                        <a href="https://www.parnasosiculo.it" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/paranaso_siculo.webp' %}" alt="Parnaso Siculo">
+                            </div>
+                        </a>
+                    </div>
+                    <h3>{% trans 'Parnaso Siculo' %}</h3>
+                    <p class="partner-role">{% trans 'Mineo' %}</p>
+                    <p class="partner-desc">{% trans 'Associazione Culturale e di Promozione Sociale.' %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="partner-card">
+                    <div class="partner-logo-wrap">
+                        <a href="https://www.unitrevizzini.it" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/UNITRE.webp' %}" alt="UNITRE Vizzini" style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
+                            </div>
+                        </a>
+                    </div>
+                    <h3>{% trans 'UNITRE - Università della Terza Età' %}</h3>
+                    <p class="partner-role">{% trans 'Vizzini' %}</p>
                     <p class="partner-desc">{% trans 'Promozione culturale e formazione permanente.' %}</p>
                 </div>
             </div>
@@ -165,11 +201,13 @@
             <div class="col-md-6 col-lg-4">
                 <div class="partner-card">
                     <div class="partner-logo-wrap">
-                        <div class="partner-logo">
-                            <img src="{% static 'assets/img/loghi/partner/circolo.webp' %}" alt="Circolo Culturale Giovanni Verga">
-                        </div>
+                        <a href="https://www.circolovergavizzini.it" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/circolo.webp' %}" alt="Circolo Culturale Giovanni Verga">
+                            </div>
+                        </a>
                     </div>
-                    <h3>{% trans 'Circolo Culturale “Giovanni Verga”' %}</h3>
+                    <h3>{% trans 'Circolo Culturale "Giovanni Verga"' %}</h3>
                     <p class="partner-role">{% trans 'Vizzini' %}</p>
                     <p class="partner-desc">{% blocktrans %}Valorizzazione della figura e dell'opera di Verga.{% endblocktrans %}</p>
                 </div>
@@ -192,19 +230,36 @@
                 <div class="partner-card">
                     <div class="partner-logo-wrap">
                         <div class="partner-logo">
-                            <img src="{% static 'assets/img/loghi/partner/paranaso_siculo.webp' %}" alt="Parnaso Siculo">
+                            <img src="{% static 'assets/img/loghi/partner/Logo Pro Loco Mineo.png' %}" alt="Pro Loco APS" style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
                         </div>
                     </div>
-                    <h3>{% trans 'Parnaso Siculo' %}</h3>
+                    <h3>{% trans 'Pro Loco APS' %}</h3>
                     <p class="partner-role">{% trans 'Mineo' %}</p>
-                    <p class="partner-desc">{% trans 'Associazione Culturale e di Promozione Sociale.' %}</p>
+                    <p class="partner-desc">{% trans 'Persone, impegno sociale, condivisione' %}</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="partner-card">
                     <div class="partner-logo-wrap">
-                        <div class="partner-logo"><i class="bi bi-columns-gap"></i></div>
+                        <div class="partner-logo">
+                            <img src="{% static 'assets/img/loghi/partner/sicili-antica.png' %}" alt="SiciliAntica" style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
+                        </div>
+                    </div>
+                    <h3>{% trans 'SiciliAntica' %}</h3>
+                    <p class="partner-role">{% trans 'Vizzini' %}</p>
+                    <p class="partner-desc">{% trans 'Associazione culturale di volontariato' %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="partner-card">
+                    <div class="partner-logo-wrap">
+                        <a href="https://www.albacas.it" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/albacas-onlus.png' %}" alt="A.L.B.A.C.A.S." style="width: auto; height: auto; max-width: 70%; max-height: 70%;">
+                            </div>
+                        </a>
                     </div>
                     <h3>{% trans 'A.L.B.A.C.A.S.' %}</h3>
                     <p class="partner-role">{% trans 'Licodia Eubea' %}</p>
@@ -215,11 +270,13 @@
             <div class="col-md-6 col-lg-4">
                 <div class="partner-card">
                     <div class="partner-logo-wrap">
-                        <div class="partner-logo">
-                            <img src="{% static 'assets/img/loghi/partner/ARCHEOCLUB.webp' %}" alt="Archeoclub d’Italia">
-                        </div>
+                        <a href="https://www.archeoclublicodia.it" target="_blank">
+                            <div class="partner-logo">
+                                <img src="{% static 'assets/img/loghi/partner/ARCHEOCLUB.webp' %}" alt="Archeoclub d'Italia">
+                            </div>
+                        </a>
                     </div>
-                    <h3>{% trans 'Archeoclub d’Italia' %}</h3>
+                    <h3>{% trans "Archeoclub d'Italia" %}</h3>
                     <p class="partner-role">{% trans 'Licodia Eubea' %}</p>
                     <p class="partner-desc">{% trans 'Tutela e valorizzazione del patrimonio archeologico e culturale.' %}</p>
                 </div>
@@ -228,105 +285,6 @@
     </div>
 </section>
 
-<!-- Sezione: Rete Territoriale -->
-<section class="page-section py-5 py-lg-6">
-    <div class="container-xl">
-        <div class="text-center mb-5 mb-lg-6">
-            <h2 class="page-section-title h2 fw-bold mb-3">
-                {% trans "Rete Territoriale" %}
-            </h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
-                {% trans 'Una maglia fitta di servizi e strutture distribuite nel territorio dei tre comuni.' %}
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="network-card">
-                    <div class="network-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                    <h3>{% trans 'Vizzini' %}</h3>
-                    <p class="network-subtitle">{% trans 'Patria di Giovanni Verga' %}</p>
-                    <ul class="network-list">
-                        <li><strong>{% trans 'Centro Visitatori' %}</strong></li>
-                        <li>{% trans 'Percorsi tematici letterari' %}</li>
-                        <li>{% trans 'Archivio storico locale' %}</li>
-                        <li>{% trans 'Spazi per convegni' %}</li>
-                    </ul>
-                    <a href="{% url 'vizzini' %}" class="network-link">{% trans 'Visita Vizzini' %}</a>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="network-card">
-                    <div class="network-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                    <h3>{% trans 'Mineo' %}</h3>
-                    <p class="network-subtitle">{% trans 'Terra della narrativa capuaniana' %}</p>
-                    <ul class="network-list">
-                        <li><strong>{% trans 'Museo Etnografico' %}</strong></li>
-                        <li>{% trans 'Laboratori didattici' %}</li>
-                        <li>{% trans 'Archivio archeologico' %}</li>
-                        <li>{% trans 'Sala letture' %}</li>
-                    </ul>
-                    <a href="{% url 'mineo' %}" class="network-link">{% trans 'Visita Mineo' %}</a>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="network-card">
-                    <div class="network-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                    <h3>{% trans 'Licodia Eubea' %}</h3>
-                    <p class="network-subtitle">{% trans 'Centro di ricerca e conservazione' %}</p>
-                    <ul class="network-list">
-                        <li><strong>{% trans 'Centro Studi' %}</strong></li>
-                        <li>{% trans 'Biblioteca specializzata' %}</li>
-                        <li>{% trans 'Archivio letterario' %}</li>
-                        <li>{% trans 'Laboratorio di restauro' %}</li>
-                    </ul>
-                    <a href="{% url 'licodia' %}" class="network-link">{% trans 'Visita Licodia' %}</a>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="network-card">
-                    <div class="network-icon"><i class="bi bi-network"></i></div>
-                    <h3>{% trans 'Piattaforma Digitale' %}</h3>
-                    <p class="network-subtitle">{% trans 'Hub virtuale integrato' %}</p>
-                    <ul class="network-list">
-                        <li><strong>{% trans 'Opere letterarie' %}</strong></li>
-                        <li>{% trans 'Verga e Capuana Fotografi online' %}</li>
-                        <li>{% trans 'Calendario eventi' %}</li>
-                        <li>{% trans 'Community letteraria' %}</li>
-                    </ul>
-                    <a href="{% url 'opere_per_autore' 'giovanni-verga' %}" class="network-link">{% trans 'Accedi Online' %}</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sezione: Sponsor e Sostenitori -->
-<section class="page-section py-5 py-lg-6">
-    <div class="container-xl">
-        <div class="text-center mb-5 mb-lg-6">
-            <h2 class="h2 fw-bold mb-3">{% trans 'Sponsor e Sostenitori' %}</h2>
-            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">
-                {% trans 'Imprese e organizzazioni che credono nella mission culturale del Parco Letterario.' %}
-            </p>
-        </div>
-
-        <div class="sponsor-logos mb-5">
-            <div class="sponsor-item"><div class="sponsor-logo"><i class="bi bi-building"></i><span>{% trans 'Partner' %}</span></div></div>
-            <div class="sponsor-item"><div class="sponsor-logo"><i class="bi bi-shop"></i><span>{% trans 'Sponsor' %}</span></div></div>
-            <div class="sponsor-item"><div class="sponsor-logo"><i class="bi bi-briefcase"></i><span>{% trans 'Supporter' %}</span></div></div>
-            <div class="sponsor-item"><div class="sponsor-logo"><i class="bi bi-heart-fill"></i><span>{% trans 'Donatore' %}</span></div></div>
-        </div>
-
-            <div class="text-center">
-            <p class="lead mb-4">{% trans 'Interessato a collaborare con il Parco Letterario?' %}</p>
-            <a href="mailto:info@parcovergacapuana.it" class="btn btn-primary btn-lg"><i class="bi bi-envelope"></i> {% trans 'Proponi una Collaborazione' %}</a>
-        </div>
-    </div>
-</section>
 
 <!-- Sezione: CTA -->
 <section class="page-section page-section-cta py-5 py-lg-6">
@@ -345,5 +303,3 @@
 </section>
 
 {% endblock %}
-
-
