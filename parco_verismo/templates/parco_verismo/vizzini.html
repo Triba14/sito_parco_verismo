@@ -40,7 +40,7 @@
         <div class="col-lg-6">
           <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
           {% blocktrans %}
-          <p class="lead mb-3">Vizzini è uno dei luoghi simbolo della letteratura italiana. Qui, nel 1840, nacque Giovanni Verga, e da queste colline, dai vicoli del centro storico, dalle campagne e dalle comunità rurali prese forma la visione narrativa che avrebbe trasformato per sempre il realismo europeo. Il paese conserva ancora oggi la struttura sociale e paesaggistica che ispirò al grande scrittore alcune delle sue opere più celebri, rendendolo un crocevia essenziale per comprendere l’identità del Verismo.</p>
+          <p class="lead mb-3">Vizzini è uno dei luoghi simbolo della letteratura italiana e del Verismo. Pur essendo Giovanni Verga nato ufficialmente a Catania nel 1840, una consolidata tradizione locale e il forte legame familiare dello scrittore con questo territorio riconducono in modo inequivocabile alle campagne e al tessuto sociale vizzinese l’origine della sua ispirazione narrativa. Vicoli, colline e comunità rurali di Vizzini fornirono il modello umano e paesaggistico che Verga trasformò in letteratura, rendendo il paese un punto di riferimento essenziale per comprendere la genesi e l’identità della poetica verista.</p>
           {% endblocktrans %}
         </div>
         <div class="col-lg-6">
@@ -59,7 +59,7 @@
         <div class="col-lg-6 order-lg-2">
           <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Vizzini nella vita di Giovanni Verga' %}</h2>
           {% blocktrans %}
-          <p class="lead mb-3">La famiglia Verga, di antica tradizione borghese-rurale, rappresentò per Giovanni un punto di riferimento costante. L’infanzia trascorsa tra Vizzini, le campagne e le residenze familiari fornì allo scrittore un patrimonio umano, linguistico e antropologico che sarebbe riemerso, trasfigurato, in quasi tutte le sue opere. Anche dopo il trasferimento a Firenze, Milano e Catania, Vizzini rimase il centro emotivo della sua immaginazione.</p>
+          <p class="lead mb-3">La famiglia Verga, di antica tradizione nobiliare, rappresentò per lo scrittore un punto di riferimento costante. L’infanzia trascorsa tra Vizzini, Licodia e i territori limitrofi, le campagne e le residenze familiari fornì allo scrittore un patrimonio umano, linguistico e antropologico che sarebbe riemerso, trasfigurato, nella sua produzione maggiore. Anche dopo il trasferimento a Firenze, Milano e Catania, Vizzini rimase il centro emotivo della sua immaginazione.</p>
           {% endblocktrans %}
         </div>
         <div class="col-lg-6 order-lg-1">
@@ -82,62 +82,157 @@
       </div>
 
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="pages-value-card h-100">
             <div class="pages-value-icon">
-              <i class="bi bi-cup-straw"></i>
+              <img src="{% static 'assets/icons/icons-luoghi/cheese-icons.svg' %}" alt="{% trans 'Festa dei Sapori' %}" />
             </div>
-            <h4 class="pages-value-title">{% trans 'Sagra della Ricotta' %}</h4>
+            <h4 class="pages-value-title">{% trans 'Festa dei Sapori e dei Saperi' %}</h4>
             <p>
-              <small class="text-muted">{% trans 'Aprile' %}</small>
+              <small class="text-muted">{% trans '24-25 Aprile' %}</small>
             </p>
             <p>
-              {% blocktrans %}Celebrazione della tradizione casearia locale con degustazioni di <strong>ricotta fresca</strong>, cannoli e dolci tipici siciliani.{% endblocktrans %}
+              {% blocktrans %}Celebrazione della tradizione casearia locale con degustazioni di <strong>ricotta fresca</strong>, cannoli, cassatelle e altri piatti tipici siciliani.{% endblocktrans %}
             </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="pages-value-card h-100">
             <div class="pages-value-icon">
-              <i class="bi bi-brightness-high"></i>
+              <img src="{% static 'assets/icons/icons-luoghi/icons.svg' %}" alt="{% trans 'Settimana Santa' %}" />
             </div>
             <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
             <p>
               <small class="text-muted">{% trans 'Marzo/Aprile' %}</small>
             </p>
             <p>
-              {% blocktrans %}Le suggestive processioni pasquali con la tradizionale <strong>"Giunta"</strong>, momento culminante delle celebrazioni religiose.{% endblocktrans %}
+              {% blocktrans %}Riti della Settimana Santa: Processione del <strong>Cristo alla Colonna</strong> (Mercoledì Santo), Processione dell'<strong>Addolorata</strong> (Venerdì Santo) e Domenica di Pasqua con la tradizionale <strong>"Cugnunta"</strong>.{% endblocktrans %}
             </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="pages-value-card h-100">
             <div class="pages-value-icon">
-              <i class="bi bi-star-fill"></i>
+              <img src="{% static 'assets/icons/icons-luoghi/campana-icons.svg' %}" alt="{% trans 'Festa di San Gregorio' %}" />
             </div>
-            <h4 class="pages-value-title">{% trans 'Festa di San Gregorio' %}</h4>
+            <h4 class="pages-value-title">{% trans 'Festa di San Gregorio Magno' %}</h4>
             <p>
-              <small class="text-muted">{% trans 'Settembre' %}</small>
+              <small class="text-muted">{% trans '2-3 Settembre' %}</small>
             </p>
             <p>
-              {% blocktrans %}Festa patronale con processioni solenni, <strong>luminarie</strong>, concerti e spettacoli pirotecnici.{% endblocktrans %}
+              {% blocktrans %}Solenne celebrazione eucaristica e <strong>processione</strong> della statua del Santo patrono lungo le principali vie cittadine.{% endblocktrans %}
             </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="pages-value-card h-100">
             <div class="pages-value-icon">
-              <i class="bi bi-book"></i>
+              <img src="{% static 'assets/icons/icons-luoghi/campana-icons.svg' %}" alt="{% trans 'Festa di San Giovanni Battista' %}" />
             </div>
-            <h4 class="pages-value-title">{% trans 'Eventi Verghiani' %}</h4>
+            <h4 class="pages-value-title">{% trans 'Festa di S. Giovanni Battista' %}</h4>
             <p>
-              <small class="text-muted">{% trans 'Estate' %}</small>
+              <small class="text-muted">{% trans '28-29 Agosto' %}</small>
             </p>
             <p>
-              {% blocktrans %}Rassegne letterarie, spettacoli teatrali e rappresentazioni delle opere di <strong>Giovanni Verga</strong>.{% endblocktrans %}
+              {% blocktrans %}Festa del Martire S. Giovanni Battista. Processione della <strong>statua cinquecentesca</strong> e finale con fuochi pirotecnici.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="pages-value-card h-100">
+            <div class="pages-value-icon">
+              <img src="{% static 'assets/icons/icons-luoghi/mask-icons.svg' %}" alt="{% trans 'Manifestazioni Verghiane' %}" />
+            </div>
+            <h4 class="pages-value-title">{% trans 'Manifestazioni Verghiane' %}</h4>
+            <p>
+              <small class="text-muted">{% trans 'Luglio/Agosto/Settembre' %}</small>
+            </p>
+            <p>
+              {% blocktrans %}Ciclo di <strong>rappresentazioni teatrali</strong> tratte dalle novelle del famoso scrittore vizzinese, messe in scena negli stessi quartieri in cui l'autore immaginò svolgersi i fatti.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profilo Storico -->
+  <section class="pages-section pages-profilo py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Profilo Storico' %}</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="pages-text-content">
+            {% blocktrans %}
+            <p class="lead mb-4">
+              "Hanno ammazzato compare Turiddu, hanno ammazzato compare Turiddu!". Tutti sanno che questo è il tragico grido con il quale si chiude <strong>Cavalleria rusticana</strong>, l'opera teatrale di Giovanni Verga, resa famosa in tutto il mondo dalla successiva trasposizione lirica con la coinvolgente musica di Pietro Mascagni. In pochi sanno, però, che il luogo in cui il grande scrittore verista ambientò questa vicenda è proprio Vizzini, il suo paese natale, dove viveva la sua famiglia e dove lui tornava spesso fin negli ultimi anni della sua vita.
+            </p>
+
+            <p class="mb-4">
+              Qui Verga ambientò molte sue opere, ma soprattutto la più importante per la storia della letteratura verista: <strong>Mastro-don Gesualdo</strong>, il grande capolavoro che contribuì in modo decisivo alla nascita del romanzo moderno.
+            </p>
+
+            <p class="mb-4">
+              Vizzini è la porta nord del Val di Noto, di quell'area del sud est della Sicilia che detiene ben 10 siti dichiarati <strong>Patrimonio dell'Umanità dall'UNESCO</strong>. Essa è ancora oggi un autentico teatro verista a cielo aperto. Per chi la visita si rivela un vero luogo dell'anima e, passo dopo passo, si comprende come questa piccola parte del territorio siciliano non sia sempre stata terra dei vinti, quasi fosse un destino ineluttabile. Il suo tessuto urbano e culturale è infatti punteggiato da segni che testimoniano una storia grande e antica, che affonda le radici nell'<strong>Età del Bronzo</strong>.
+            </p>
+
+            <p class="mb-4">
+              A questo periodo risalgono importanti reperti rinvenuti dall'archeologo vizzinese <strong>Ippolito Cafici</strong>, oggi custoditi nel Museo Archeologico Regionale di Siracusa. Vizzini è, probabilmente, l'antica <strong>Bidis</strong>, citata da Tucidide, Cicerone e Plinio il Vecchio.
+            </p>
+
+            <p class="mb-4">
+              La città, dopo i Greci e i Romani, passò sotto il controllo dei Bizantini e successivamente degli Arabi, ma conobbe un momento di particolare rilievo storico nel <strong>1252</strong>, quando Corrado IV di Svevia le concesse il privilegio di perpetua demanialità, impegnandosi a sottrarla definitivamente al baronaggio feudale.
+            </p>
+
+            <p class="mb-4">
+              Anche quando, per ben sei volte, fu assegnata a un feudatario, Vizzini riuscì sempre a riscattare la propria libertà. Fu annoverata tra le cinque <strong>città reginali</strong> dell'Isola, occupando il ventottesimo posto nel Parlamento del Regno di Sicilia. Insignita nel 1538 del titolo di <strong>Obbedientissima</strong>, fu equiparata alle città di Palermo, Catania e Messina per privilegi, onori e immunità.
+            </p>
+
+            <p class="mb-4">
+              Fino alla prima metà del Seicento la città conobbe una continua espansione, divenendo un centro sempre più influente. Nel <strong>1693</strong> subì le devastanti conseguenze del terremoto che colpì la Sicilia orientale, ma, sebbene gravemente danneggiata, seppe risollevarsi: la ricostruzione determinò una rinascita non solo sociale, ma anche artistica e culturale.
+            </p>
+
+            <p class="mb-0">
+              Ne sono testimonianza le numerose opere d'arte e i rilevanti monumenti religiosi e civili, alcuni dei quali di grande pregio, come la <strong>Chiesa Madre dedicata a San Gregorio Magno</strong>, che custodisce due importanti opere di Filippo Paladini, la <strong>Basilica di San Vito</strong>, la <strong>Chiesa di San Giovanni Battista</strong> – la più grande della Diocesi di Caltagirone –, la <strong>Chiesa di Santa Maria di Gesù</strong>, che conserva una straordinaria scultura di Antonello Gagini, il maggiore scultore siciliano del Cinquecento, e il <strong>palazzo Càfici</strong>, magnifico esempio di architettura civile tardo barocca.
+            </p>
+            {% endblocktrans %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Giovanni Verga -->
+  <section class="pages-section pages-verga py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold">{% trans 'Giovanni Verga' %}</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="pages-text-content">
+            {% blocktrans %}
+            <p class="mb-4">
+              Nacque ufficialmente a Catania il <strong>2 settembre 1840</strong> o, secondo fondate argomentazioni a Tebidi nella casa di campagna dello zio Salvatore, in territorio di Vizzini, dove la famiglia Verga soggiornava spesso per sovrintendere ai lavori agricoli e dove più volte, in occasioni di epidemie, si era rifugiata lasciando Catania.
+            </p>
+
+            <p class="mb-4">
+              Verga compì i primi studi presso <strong>Antonio Abate</strong> che gli trasmise la sua passione per i romanzi storici. Dopo aver abbandonato gli studi di legge, si dedicò alla scrittura e nel 1865 si trasferì a Firenze e poi a Milano. Qui frequentò gli ambienti della <strong>Scapigliatura</strong> e ampliò i suoi riferimenti letterari guardando ai naturalisti francesi. Dopo aver abbandonato una narrativa fatta di storie sentimentali borghesi e spinto anche dal dibattito che si aprì sulla questione meridionale, nacque il suo progetto di un ciclo di romanzi rivolto al "mondo dei vinti", con capolavori come <strong>I Malavoglia</strong> e <strong>Mastro-don Gesualdo</strong>, che contribuiranno al rinnovamento del romanzo moderno.
+            </p>
+
+            <p class="mb-4">
+              Oltre a Mastro-don Gesualdo, Verga ambienterà a Vizzini molti dei suoi capolavori tra i quali <strong>Jeli il pastore</strong> e <strong>Cavalleria rusticana</strong>. Negli ultimi anni della sua vita lo interessò la fotografia; oggi le sue foto, assieme ad altri cimeli, sono esposte nel <strong>Museo dell'"Immaginario Verghiano"</strong> di Vizzini, ospitato nel Palazzo Trao-Ventimiglia. Lo scrittore morì a Catania nel <strong>1922</strong>.
+            </p>
+            {% endblocktrans %}
+
+            <p class="text-muted fst-italic mb-0">
+              <small>Fonte: Itinerari d'Autore (<a href="https://www.buonastrada.eu/itn/itinerario-degli-autori-vizzini/" target="_blank" rel="noopener noreferrer">buonastrada.eu</a>)</small>
             </p>
           </div>
         </div>
@@ -151,237 +246,128 @@
       <div class="text-center mb-5">
         <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
         <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Scopri i monumenti e i luoghi simbolo di Vizzini' %}
+          {% trans 'MONUMENTI E LUOGHI VERGHIANI' %}
         </p>
       </div>
 
-      <!-- Piazza Umberto I - In evidenza -->
-      <div class="row g-5 align-items-center mb-5">
-        <div class="col-lg-6">
-          <div class="pages-highlight-text">
-            <span class="pages-badge mb-3">{% trans 'Centro Storico' %}</span>
-            <h3 class="h4 fw-bold mb-3">{% trans 'Piazza Umberto I' %}</h3>
-            <p class="lead">{% trans "Il cuore pulsante di Vizzini, dove la vita sociale e le tradizioni si intrecciano in un'atmosfera unica." %}</p>
-            <p class="text-secondary">
-              {% blocktrans %}Dominata dalla scalinata monumentale del <strong>Duomo di San Gregorio Magno</strong>, la piazza è il punto di riferimento della città. Qui si affacciano eleganti palazzi nobiliari e si svolgono le principali manifestazioni cittadine. La "scalunata" in pietra lavica, con i suoi gradini decorati, è uno dei simboli più fotografati di Vizzini.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="pages-points">
-            <div class="pages-point">
-              <div class="pages-point-icon">
+      <div class="row g-4">
+        <!-- Chiese e Luoghi Religiosi -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
                 <i class="bi bi-building"></i>
               </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Palazzo Verga' %}</h4>
-                <p>
-                  {% blocktrans %}Residenza storica della famiglia dello scrittore, oggi <strong>museo e centro culturale</strong>.{% endblocktrans %}
-                </p>
-              </div>
+              <span class="cultura-card-badge">{% trans 'Patrimonio Religioso' %}</span>
             </div>
-            <div class="pages-point">
-              <div class="pages-point-icon">
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">{% trans 'Chiese e Luoghi Religiosi' %}</h3>
+              <ul class="cultura-card-list">
+                <li>
+                  {% trans 'Chiesa Madre di San Gregorio Magno' %}
+                </li>
+                <li>
+                  {% trans 'Basilica di San Giovanni Battista' %}
+                </li>
+                <li>
+                  {% trans 'Basilica di San Vito' %}
+                </li>
+                <li>
+                  {% trans 'Chiesa di Santa Barbara e Convento dei Cappuccini' %}
+                </li>
+                <li>
+                  {% trans 'Chiesa e Convento di Santa Maria di Gesù' %}
+                </li>
+                <li>
+                  {% trans "Chiesa e Convento dell'Annunziata" %}
+                </li>
+                <li>
+                  {% trans 'Chiesa di San Giovanni Evangelista' %}
+                </li>
+                <li>
+                  {% trans 'Santuario di Maria SS. del Pericolo' %}
+                </li>
+                <li>
+                  {% trans 'Chiesa e Monastero di Santa Maria dei Greci' %}
+                </li>
+                <li>
+                  {% trans "Chiesa di Sant'Agata" %}
+                </li>
+                <li>
+                  {% trans 'Chiesa di San Sebastiano' %}
+                </li>
+                <li>
+                  {% trans 'Chiesa di Santa Teresa' %}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palazzi Storici -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
                 <i class="bi bi-bank"></i>
               </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Palazzo Comunale' %}</h4>
-                <p>
-                  {% blocktrans %}Elegante edificio <strong>ottocentesco</strong> sede dell'amministrazione cittadina.{% endblocktrans %}
-                </p>
-              </div>
-            </div>
-            <div class="pages-point">
-              <div class="pages-point-icon">
-                <i class="bi bi-tree"></i>
-              </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Bosco Granvilla' %}</h4>
-                <p>
-                  {% blocktrans %}Area naturale di <strong>querce e lecci</strong>, ideale per escursioni e passeggiate.{% endblocktrans %}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Chiese e Luoghi di Culto -->
-  <section class="pages-section pages-chiese py-5 py-lg-6">
-    <div class="container-xl">
-      <div class="text-center mb-5">
-        <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
-        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Duomo di San Gregorio Magno' %}</h4>
-            <p>
-              {% blocktrans %}Chiesa madre di Vizzini, ricostruita nel <strong>XVIII secolo</strong> dopo il terremoto del 1693. Custodisce pregevoli opere d'arte barocca.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Basilica di San Giovanni Battista' %}</h4>
-            <p>
-              {% blocktrans %}Edificio religioso di grande valore storico con facciata <strong>tardogotica</strong> e portale finemente decorato.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa di Santa Maria di Gesù' %}</h4>
-            <p>
-              {% blocktrans %}Annessa all'antico <strong>Convento dei Cappuccini</strong>, conserva opere d'arte sacra del XVII secolo.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans "Chiesa di Sant'Agata" %}</h4>
-            <p>
-              {% blocktrans %}Piccola chiesa del centro storico, dedicata alla <strong>patrona di Catania</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa di San Sebastiano' %}</h4>
-            <p>
-              {% blocktrans %}Edificio barocco con facciata in pietra calcarea e <strong>campanile panoramico</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa del Rosario' %}</h4>
-            <p>
-              {% blocktrans %}Custodisce un prezioso <strong>crocifisso ligneo</strong> del XV secolo e affreschi votivi.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Musei e Cultura -->
-  <section class="pages-section pages-musei py-5 py-lg-6">
-    <div class="container-xl">
-      <div class="text-center mb-5">
-        <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
-        <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
-        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Testimonianze della storia letteraria e artistica del territorio' %}
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Museo Verghiano -->
-        <div class="col-lg-4">
-          <div class="cultura-card h-100">
-            <div class="cultura-card-header">
-              <div class="cultura-card-icon">
-                <i class="bi bi-book-half"></i>
-              </div>
-              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+              <span class="cultura-card-badge">{% trans 'Architettura Civile' %}</span>
             </div>
             <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Casa Museo Verga' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}La <strong>casa natale dello scrittore</strong>, oggi museo dedicato alla sua vita e alle sue opere immortali.{% endblocktrans %}
-              </p>
+              <h3 class="cultura-card-title">{% trans 'Palazzi Storici' %}</h3>
               <ul class="cultura-card-list">
                 <li>
-                  <i class="bi bi-pen"></i> {% trans 'Manoscritti originali' %}
+                  {% trans 'Casa Senatoria' %}
                 </li>
                 <li>
-                  <i class="bi bi-camera"></i> {% trans "Fotografie d'epoca" %}
+                  {% trans 'Palazzo Càfici' %}
                 </li>
                 <li>
-                  <i class="bi bi-house"></i> {% trans 'Arredi storici' %}
+                  {% trans 'Palazzo La Gurna' %}
+                </li>
+                <li>
+                  {% trans 'Palazzo Sganci' %}
+                </li>
+                <li>
+                  {% trans 'Palazzo Costa' %}
+                </li>
+                <li>
+                  {% trans 'Palazzo Verga-Catalano' %}
+                </li>
+                <li>
+                  {% trans 'Palazzo Cannizzaro' %}
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- Centro Studi Verghiani -->
+        <!-- Luoghi Culturali e Verghiani -->
         <div class="col-lg-4">
           <div class="cultura-card h-100">
             <div class="cultura-card-header">
               <div class="cultura-card-icon">
-                <i class="bi bi-journal-richtext"></i>
+                <i class="bi bi-book"></i>
               </div>
-              <span class="cultura-card-badge">{% trans 'Centro Studi' %}</span>
+              <span class="cultura-card-badge">{% trans 'Luoghi Verghiani' %}</span>
             </div>
             <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Centro Studi Verghiani' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}Centro di ricerca e documentazione dedicato al <strong>Verismo</strong> e alla letteratura siciliana.{% endblocktrans %}
-              </p>
+              <h3 class="cultura-card-title">{% trans 'Luoghi Culturali e Verghiani' %}</h3>
               <ul class="cultura-card-list">
                 <li>
-                  <i class="bi bi-collection"></i> {% trans 'Archivio documentale' %}
+                  {% trans 'Museo dell"Immaginario Verghiano" - Palazzo Trao Ventimiglia' %}
                 </li>
                 <li>
-                  <i class="bi bi-people"></i> {% trans 'Convegni e seminari' %}
+                  {% trans 'Circolo Culturale "Giovanni Verga"' %}
                 </li>
                 <li>
-                  <i class="bi bi-book"></i> {% trans 'Biblioteca specializzata' %}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Borgo della Cunziria -->
-        <div class="col-lg-4">
-          <div class="cultura-card h-100">
-            <div class="cultura-card-header">
-              <div class="cultura-card-icon">
-                <i class="bi bi-film"></i>
-              </div>
-              <span class="cultura-card-badge">{% trans 'Sito Storico' %}</span>
-            </div>
-            <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Borgo della Cunziria' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}Villaggio rupestre set della <strong>Cavalleria Rusticana</strong> di Zeffirelli.{% endblocktrans %}
-              </p>
-              <ul class="cultura-card-list">
-                <li>
-                  <i class="bi bi-geo-alt"></i> {% trans 'Percorsi verghiani' %}
+                  {% trans 'Osteria della gna Nunzia' %}
                 </li>
                 <li>
-                  <i class="bi bi-camera-reels"></i> {% trans 'Location cinematografica' %}
+                  {% trans 'Società Operaia di Mutuo Soccorso' %}
                 </li>
                 <li>
-                  <i class="bi bi-calendar-event"></i> {% trans 'Eventi estivi' %}
+                  {% trans 'Borgo della Cunziria' %}
                 </li>
               </ul>
             </div>
