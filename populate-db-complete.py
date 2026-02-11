@@ -125,7 +125,6 @@ def populate():
         {
             'titolo': 'Mastro-don Gesualdo',
             'slug': 'mastro-don-gesualdo',
-            'anno_pubblicazione': 1889,
             'breve_descrizione': 'Secondo romanzo del Ciclo dei Vinti di Verga, incentrato sull\'ascesa sociale e il fallimento esistenziale di un self-made man siciliano nell\'Ottocento.',
             'trama': 'Gesualdo Motta è un muratore che attraverso il lavoro instancabile e l\'astuzia accumula ricchezze, diventando uno dei più potenti proprietari terrieri di Vizzini. Per consolidare la sua posizione sociale sposa Bianca Trao, nobile decaduta. Tuttavia, il matrimonio è un disastro: Bianca lo disprezza per le sue origini umili, la figlia Isabelle si vergogna di lui, e la nobiltà locale non lo accetta mai veramente. Gesualdo resta intrappolato tra due mondi: troppo ricco per i poveri, troppo plebeo per i nobili. Malato e solo, muore nel palazzo palermitano della figlia, circondato dall\'indifferenza e dal disgusto dei servi, che lo vedono solo come un intruso.',
             'analisi': 'Il romanzo esplora il tema della "roba" (il possesso materiale) come ossessione e condanna. Gesualdo conquista tutto ma perde sé stesso: la sua vittoria economica coincide con la sua disfatta umana. Verga mostra come la mobilità sociale sia illusoria in una società rigidamente stratificata, e come l\'ambizione possa diventare una forma di autodistruzione. La solitudine finale del protagonista rappresenta il prezzo della violazione delle leggi implicite della società siciliana ottocentesca.',
@@ -143,7 +142,6 @@ def populate():
         {
             'titolo': 'Storia di una capinera',
             'slug': 'storia-di-una-capinera',
-            'anno_pubblicazione': 1871,
             'breve_descrizione': 'Romanzo epistolare che racconta il dramma di una vocazione religiosa imposta e il conflitto tra desiderio individuale e costrizione sociale.',
             'trama': 'Maria è una giovane educanda cresciuta in convento fin dall’infanzia, destinata alla vita monastica senza aver mai potuto scegliere. A causa di un’epidemia, viene temporaneamente accolta nella casa di famiglia, dove entra per la prima volta in contatto con il mondo esterno: la natura, la vita domestica, gli affetti e soprattutto l’amore, incarnato dalla figura di Nino. Questo breve periodo di libertà apre una frattura irreversibile nella sua interiorità. Quando Maria è costretta a rientrare in convento, la separazione dal mondo e dall’amore la conduce a una progressiva disgregazione psicologica, fino alla follia e alla morte spirituale.',
             'analisi': 'Pur appartenendo alla fase pre-verista, il romanzo anticipa temi centrali dell’opera di Verga: l’impossibilità di sottrarsi al destino sociale, la violenza silenziosa delle istituzioni e il sacrificio dell’individuo in nome dell’ordine collettivo. La forma epistolare accentua l’isolamento della protagonista e rende evidente la distanza tra mondo interno e realtà esterna.',
@@ -161,7 +159,6 @@ def populate():
         {
             'titolo': 'Nedda',
             'slug': 'nedda',
-            'anno_pubblicazione': 1874,
             'breve_descrizione': 'Novella che racconta la vita di una giovane contadina, segnata dalla miseria, dal lavoro stagionale e dalla perdita degli affetti.',
             'trama': 'Nedda è una raccoglitrice di olive che vive in condizioni di estrema povertà insieme alla madre malata. La sua esistenza è scandita dal lavoro duro, dalla precarietà e dall’assenza di prospettive. L’unico spiraglio di felicità è l’amore per Janu, un giovane bracciante con cui sogna una vita diversa. Ma la malattia, la morte e l’indifferenza sociale si abbattono su di lei senza tregua, privandola anche di questa speranza. Rimasta sola, Nedda affronta la vita con una dignità silenziosa, accettando un destino che non concede redenzione.',
             'analisi': 'Nedda è un testo di passaggio verso il Verismo maturo. Verga rinuncia a qualsiasi idealizzazione e osserva la miseria come una condizione strutturale. Il dolore non è eccezionale, ma quotidiano; la tragedia non è spettacolare, ma sommessa e continua.',
@@ -179,7 +176,6 @@ def populate():
         {
             'titolo': 'Fantasticheria',
             'slug': 'fantasticheria',
-            'anno_pubblicazione': 1880,
             'breve_descrizione': 'Racconto-manifesto che esplicita il metodo narrativo verghiano e il suo sguardo sugli “umili”.',
             'trama': 'Il narratore si rivolge a una donna dell’alta società che, durante un soggiorno in un villaggio di pescatori, ha osservato quella vita semplice con curiosità superficiale e distacco. Verga smonta questa visione romantica, mostrando come dietro l’apparente immobilità si nascondano equilibri fragili, sacrifici, rinunce e una feroce lotta per la sopravvivenza. Il racconto non segue una vera azione narrativa, ma è costruito come una riflessione sulla distanza tra chi guarda e chi vive realmente quella realtà.',
             'analisi': 'Fantasticheria è fondamentale per comprendere il Verismo: Verga rifiuta la compassione estetizzante e invita a osservare la realtà popolare dall’interno, senza filtri morali o sentimentali. È una dichiarazione di poetica mascherata da racconto.',
@@ -197,7 +193,6 @@ def populate():
         {
             'titolo': 'Rosso Malpelo',
             'slug': 'rosso-malpelo',
-            'anno_pubblicazione': 1880,
             'breve_descrizione': 'Una delle novelle più celebri di Verga, incentrata sul lavoro minorile e sulla disumanizzazione sociale.',
             'trama': 'Malpelo è un ragazzo che lavora in una cava di sabbia. Il colore dei suoi capelli lo marchia come naturalmente cattivo agli occhi degli altri, giustificando ogni violenza subita. Dopo la morte del padre, anch’egli minatore, Malpelo cresce in un ambiente che non conosce compassione. L’unico legame umano è con Ranocchio, un ragazzo debole e malato, che però non riesce a salvarsi. Isolato, brutalizzato e privato di ogni affetto, Malpelo interiorizza l’odio del mondo fino a scomparire nel cuore della miniera.',
             'analisi': 'Qui il Verismo raggiunge una delle sue espressioni più crude: l’ambiente sociale non solo opprime l’individuo, ma lo plasma. La violenza non è denunciata apertamente, ma emerge come fatto normale e accettato, rendendo il racconto ancora più disturbante.',
@@ -215,7 +210,6 @@ def populate():
         {
             'titolo': 'Cavalleria rusticana',
             'slug': 'cavalleria-rusticana',
-            'anno_pubblicazione': 1880,
             'breve_descrizione': 'Novella tragica incentrata sull’onore, sulla gelosia e sulla legge non scritta della comunità.',
             'trama': 'Turiddu torna al paese dopo il servizio militare e scopre che la donna amata ha spostato un altro uomo. Ferito nell’orgoglio, intreccia una relazione con Lola, ormai moglie di Alfio, scatenando una catena di rivalità e sospetti. La relazione viene scoperta, l’onore è compromesso e la comunità pretende una riparazione. Il conflitto non può che concludersi con un duello mortale, accettato come inevitabile da tutti i personaggi.',
             'analisi': 'La tragedia non nasce dalle passioni individuali, ma dal codice sociale che le governa. In Cavalleria rusticana l’individuo è completamente assorbito dalla collettività: nessuna scelta è veramente libera, tutto è già deciso dalle regole dell’onore.',
@@ -233,7 +227,6 @@ def populate():
         {
             'titolo': 'La lupa',
             'slug': 'la-lupa',
-            'anno_pubblicazione': 1880,
             'breve_descrizione': 'Novella sul desiderio femminile e sulla sua demonizzazione all’interno della società rurale.',
             'trama': 'Gnà Pina, soprannominata “la Lupa”, è una donna dominata da una passione irrefrenabile. Il suo desiderio per Nanni, un giovane contadino, la porta a manipolare la vita della figlia, costringendola a sposarlo pur di averlo vicino. La relazione proibita e ossessiva distrugge ogni equilibrio familiare e sociale, conducendo a un crescendo di tensione che sfocia nella violenza finale.',
             'analisi': 'Verga mette in scena una società che non ammette deviazioni dal ruolo imposto alle donne. Il desiderio femminile viene trasformato in colpa e punito. Non c’è giudizio morale esplicito, ma una rappresentazione spietata dei meccanismi sociali.',
@@ -251,7 +244,6 @@ def populate():
         {
             'titolo': 'I Malavoglia',
             'slug': 'i-malavoglia',
-            'anno_pubblicazione': 1881,
             'breve_descrizione': 'Il grande romanzo verista sulla famiglia, sul lavoro e sulla sconfitta dei “vinti”.',
             'trama': 'La famiglia Toscano vive ad Aci Trezza seguendo ritmi antichi e un equilibrio fragile. Un tentativo di miglioramento economico, l’acquisto a credito di un carico di lupini, innesca una serie di disgrazie: la morte di Bastianazzo, i debiti, la perdita della casa, l’emigrazione e la disgregazione del nucleo familiare. Ogni tentativo di riscatto fallisce, fino a un parziale e amaro ritorno all’ordine originario.',
             'analisi': 'È il primo romanzo del ciclo dei Vinti. Verga mostra come il progresso economico non liberi, ma distrugga gli equilibri tradizionali. La comunità giudica, isola e punisce chi tenta di uscire dal proprio ruolo.',
@@ -269,7 +261,6 @@ def populate():
         {
             'titolo': 'La roba',
             'slug': 'la-roba',
-            'anno_pubblicazione': 1883,
             'breve_descrizione': 'Novella emblematica sull’ossessione per il possesso materiale.',
             'trama': 'Mazzarò, contadino arricchito, dedica l’intera esistenza all’accumulo di terre e beni. La sua vita è totalmente assorbita dalla “roba”, che diventa misura del suo valore. Quando la vecchiaia gli rivela che non potrà portare nulla con sé, esplode in una furia disperata contro le sue stesse ricchezze.',
             'analisi': 'La ricchezza non emancipa ma divora. Verga mostra come l’economia determini l’identità e come il possesso diventi una prigione psicologica e sociale.',
@@ -287,7 +278,6 @@ def populate():
         {
             'titolo': 'Libertà',
             'slug': 'liberta',
-            'anno_pubblicazione': 1883,
             'breve_descrizione': 'Novella storica sulla violenza collettiva e sull’illusione dell’emancipazione.',
             'trama': 'Durante i moti del 1860, la popolazione insorge contro i notabili, convinta che la libertà significhi immediata giustizia sociale. La rivolta degenera in violenza indiscriminata e saccheggi. L’arrivo dell’esercito ristabilisce l’ordine con una repressione altrettanto brutale, lasciando intatte le disuguaglianze.',
             'analisi': 'Verga smonta il mito della rivoluzione: la libertà, se non accompagnata da reali trasformazioni sociali, resta una parola vuota. Il racconto è una delle analisi più lucide del fallimento delle utopie politiche.',
@@ -309,14 +299,12 @@ def populate():
             slug=opera_data['slug'],
             defaults={
                 'autore': verga,
-                'anno_pubblicazione': opera_data['anno_pubblicazione'],
-                'link_wikisource': opera_data['link_wikisource']
+                'link_fonte': opera_data['link_wikisource']
             }
         )
         if not created:
             opera.autore = verga
-            opera.anno_pubblicazione = opera_data['anno_pubblicazione']
-            opera.link_wikisource = opera_data['link_wikisource']
+            opera.link_fonte = opera_data['link_wikisource']
         
         # Copia la copertina se specificata e non esiste già
         if 'copertina_path' in opera_data and not opera.copertina:
@@ -348,7 +336,7 @@ def populate():
             opera.save()
         
         if created:
-            print(f"✓ Creata opera: {opera.titolo} ({opera.anno_pubblicazione})")
+            print(f"✓ Creata opera: {opera.titolo}")
         else:
             print(f"• Opera aggiornata: {opera.titolo}")
     
@@ -363,7 +351,6 @@ def populate():
         {
             'titolo': 'Giacinta',
             'slug': 'giacinta',
-            'anno_pubblicazione': 1879,
             'breve_descrizione': 'Romanzo che esplora in modo innovativo la psicologia femminile, il trauma e il determinismo, ponendosi come uno dei testi fondativi del Verismo italiano.',
             'trama': 'Giacinta è una giovane donna segnata da un trauma infantile che ne condiziona profondamente la vita affettiva e sociale. Cresciuta in un ambiente borghese, tenta di costruire relazioni sentimentali stabili, ma ogni legame è compromesso dalla sua fragilità emotiva e da un senso di colpa radicato. L’amore, il matrimonio e la maternità non riescono a offrirle redenzione. La sua vicenda è un lento scivolare verso l’autodistruzione, osservato con occhio clinico e privo di compiacimento.',
             'analisi': 'Giacinta è uno dei primi romanzi italiani a confrontarsi apertamente con il tema del determinismo psicologico. Capuana, influenzato dal naturalismo francese, analizza il personaggio come “caso”, ma senza annullarne l’umanità. Il romanzo segna una svolta nella narrativa italiana per la centralità della psiche e per la rappresentazione di una femminilità non idealizzata.',
@@ -381,7 +368,6 @@ def populate():
         {
             'titolo': 'Il marchese di Roccaverdina',
             'slug': 'il-marchese-di-roccaverdina',
-            'anno_pubblicazione': 1901,
             'breve_descrizione': 'Il capolavoro narrativo di Capuana, un romanzo sul delitto, sulla colpa e sulla disgregazione morale dell’individuo.',
             'trama': 'Il marchese di Roccaverdina uccide il suo fattore per gelosia, ma riesce a sottrarsi alla giustizia umana. Tuttavia, il crimine lo condanna a una pena più profonda: il tormento interiore. Ossessionato dal rimorso e dalla paura, il marchese precipita in un progressivo isolamento psicologico, mentre la comunità che lo circonda resta indifferente o ignara. La sua mente si popola di allucinazioni, sospetti e visioni, fino al crollo finale.',
             'analisi': 'Il romanzo rappresenta una sintesi altissima tra Verismo e indagine psicologica. Capuana dimostra che il vero tribunale non è quello sociale, ma quello interiore. La Sicilia rurale diventa lo sfondo immobile di un dramma mentale, anticipando tematiche della narrativa novecentesca e avvicinandosi a una forma di realismo psicologico estremamente moderno.',
@@ -399,7 +385,6 @@ def populate():
         {
             'titolo': 'Le paesane',
             'slug': 'le-paesane',
-            'anno_pubblicazione': 1894,
             'breve_descrizione': 'Raccolta di novelle dedicate al mondo femminile rurale, osservato con attenzione antropologica e linguistica.',
             'trama': 'Le protagoniste delle novelle sono donne dei paesi siciliani: contadine, mogli, giovani innamorate, figure marginali la cui vita è scandita da lavoro, matrimonio, maternità e sacrificio. Ogni racconto mette in scena un’esistenza compressa entro ruoli sociali rigidi, dove i sentimenti individuali entrano in conflitto con le aspettative della comunità. Le storie non cercano soluzioni, ma registrano destini.',
             'analisi': 'Capuana adotta uno sguardo verista che non giudica e non consola. La lingua si modella sul parlato, la struttura narrativa è essenziale. Le paesane costituisce un documento prezioso sulla condizione femminile nel mondo rurale siciliano e sull’interazione tra individuo e tradizione.',
@@ -417,7 +402,6 @@ def populate():
         {
             'titolo': 'C’era una volta…',
             'slug': 'cera-una-volta',
-            'anno_pubblicazione': 1882,
             'breve_descrizione': 'Raccolta di fiabe popolari riscritte da Capuana, tra realismo, oralità e immaginazione fantastica.',
             'trama': 'Le fiabe riprendono motivi della tradizione popolare siciliana: re, fate, contadini, orchi, animali parlanti e prove iniziatiche. Pur nella struttura fiabesca, i racconti mantengono una concretezza sorprendente: la fame, la fatica e l’astuzia contadina convivono con l’elemento magico. Il meraviglioso non cancella mai del tutto la durezza della realtà.',
             'analisi': 'Capuana dimostra che il Verismo non è incompatibile con il fantastico. Anzi, il mondo fiabesco diventa un altro strumento per raccontare la mentalità popolare. Questa raccolta è fondamentale per comprendere l’interesse di Capuana per l’antropologia, il folklore e la psicologia collettiva.',
@@ -435,7 +419,6 @@ def populate():
         {
             'titolo': 'Novelle del mondo occulto',
             'slug': 'novelle-del-mondo-occulto',
-            'anno_pubblicazione': 1896,
             'breve_descrizione': 'Raccolta di racconti incentrati su spiritismo, mistero e fenomeni paranormali.',
             'trama': 'Le novelle presentano personaggi borghesi e intellettuali che entrano in contatto con eventi inspiegabili: sedute spiritiche, apparizioni, percezioni extrasensoriali. I protagonisti oscillano tra fede e scetticismo, tra razionalità scientifica e attrazione per l’ignoto, senza che il racconto offra mai una spiegazione definitiva.',
             'analisi': 'Capuana affronta il tema dell’occulto con rigore quasi sperimentale. Il soprannaturale non è mai puro effetto spettacolare, ma un campo di indagine sui limiti della conoscenza umana. Questa raccolta mostra il volto più moderno e inquieto dell’autore, in dialogo con la cultura europea di fine Ottocento.',
@@ -453,7 +436,6 @@ def populate():
         {
             'titolo': 'Il drago',
             'slug': 'il-drago',
-            'anno_pubblicazione': 1898,
             'breve_descrizione': 'Romanzo fantastico che fonde fiaba, allegoria e osservazione sociale.',
             'trama': 'Attraverso una vicenda simbolica, Capuana racconta un mondo governato da forze oscure e irrazionali, in cui il “drago” assume molteplici significati: paura, potere, pulsione distruttiva. I personaggi si muovono in un universo sospeso tra sogno e realtà, dove il confine tra bene e male resta ambiguo.',
             'analisi': 'Il drago conferma l’originalità di Capuana rispetto al Verismo più ortodosso. Il fantastico diventa metafora della condizione umana e sociale. Il romanzo dialoga con il simbolismo europeo e anticipa alcune suggestioni del primo Novecento.',
@@ -471,7 +453,6 @@ def populate():
         {
             'titolo': 'Sogno di un tramonto d’autunno',
             'slug': 'sogno-di-un-tramonto-dautunno',
-            'anno_pubblicazione': 1898,
             'breve_descrizione': 'Racconto di forte intensità introspettiva, sospeso tra realtà e visione.',
             'trama': 'Il protagonista vive un’esperienza onirica durante un tramonto autunnale che diventa occasione di riflessione sul tempo, sulla memoria e sulla fine delle illusioni. Il confine tra sogno e veglia è volutamente incerto, e l’atmosfera malinconica domina l’intero racconto.',
             'analisi': 'Questo testo mostra la componente lirica e simbolica di Capuana. Pur restando ancorato all’osservazione psicologica, l’autore sperimenta forme narrative che si allontanano dal Verismo classico e si avvicinano a una sensibilità decadente.',
@@ -493,14 +474,12 @@ def populate():
             slug=opera_data['slug'],
             defaults={
                 'autore': capuana,
-                'anno_pubblicazione': opera_data['anno_pubblicazione'],
-                'link_wikisource': opera_data['link_wikisource']
+                'link_fonte': opera_data['link_wikisource']
             }
         )
         if not created:
             opera.autore = capuana
-            opera.anno_pubblicazione = opera_data['anno_pubblicazione']
-            opera.link_wikisource = opera_data['link_wikisource']
+            opera.link_fonte = opera_data['link_wikisource']
         
         # Copia la copertina se specificata e non esiste già
         if 'copertina_path' in opera_data and not opera.copertina:
@@ -532,7 +511,7 @@ def populate():
             opera.save()
         
         if created:
-            print(f"✓ Creata opera: {opera.titolo} ({opera.anno_pubblicazione})")
+            print(f"✓ Creata opera: {opera.titolo}")
         else:
             print(f"• Opera aggiornata: {opera.titolo}")
     

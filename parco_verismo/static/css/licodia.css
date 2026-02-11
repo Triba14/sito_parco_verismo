@@ -129,8 +129,31 @@
     border-radius: 50%;
     margin: 0 auto;
     color: var(--color-primary);
-    font-size: 1.75rem;
+    font-size: 3.2rem;
     transition: all 0.3s ease;
+}
+
+.pages-value-icon img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    /* Filtro per matchare il colore #4A6741 */
+    filter: brightness(0) saturate(100%) invert(37%) sepia(21%) saturate(757%) hue-rotate(63deg) brightness(92%) contrast(88%);
+    transition: filter 0.3s ease;
+}
+
+/* Dimensioni specifiche per le 4 card richieste (Settimana Santa, Uva, Cinema, Patacò) */
+.card-festa-local .pages-value-icon i {
+    font-size: 2.7rem;
+}
+
+.card-festa-local .pages-value-icon img {
+    max-width: 62%;
+    max-height: 62%;
+}
+
+.pages-value-card:hover .pages-value-icon img {
+    filter: brightness(0) invert(1);
 }
 
 .pages-value-card:hover .pages-value-icon {

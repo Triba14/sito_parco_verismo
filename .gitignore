@@ -23,6 +23,12 @@ db.sqlite3-journal
 !/media/copertine/
 !/media/archivio_fotografico/
 !/media/documenti/
+
+# Ignora i duplicati generati da Django (.webp con suffissi casuali)
+/media/copertine/**/*.webp
+/media/eventi/
+/media/notizie/
+/media/itinerari/
 /staticfiles/
 /static_root/
 .env
