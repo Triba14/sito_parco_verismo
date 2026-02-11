@@ -4,7 +4,7 @@ from django.urls import path
 # Local imports
 from .views import (
     home_view,
-    opere_per_autore_view, opera_detail_view,
+    opere_per_autore_view,
     personaggi_lessico_view, luoghi_opere_view,
     eventi_view, evento_detail_view,
     notizie_view, notizia_detail_view,
@@ -24,9 +24,6 @@ urlpatterns = [
     
     # Pagine di presentazione per autore
     path('opere/<slug:autore_slug>/', opere_per_autore_view, name='opere_per_autore'),
-
-    # Pagina di dettaglio/presentazione della singola opera
-    path('opera/<slug:slug>/', opera_detail_view, name='opera_detail'),
 
     # Personaggi e Luoghi
     path('personaggi-lessico/', personaggi_lessico_view, name='personaggi_lessico'),

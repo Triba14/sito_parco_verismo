@@ -61,15 +61,6 @@ def opere_per_autore_view(request, autore_slug):
     return render(request, "parco_verismo/opere_per_autore.html", context)
 
 
-def opera_detail_view(request, slug):
-    """Pagina di dettaglio della singola opera con trama e analisi."""
-    opera = get_object_or_404(Opera, slug=slug)
-    context = {
-        "opera": opera,
-    }
-    return render(request, "parco_verismo/opera_detail.html", context)
-
-
 def personaggi_lessico_view(request):
     """Pagina Personaggi e Lessico del Verismo."""
     return render(request, "parco_verismo/personaggi_lessico.html")
