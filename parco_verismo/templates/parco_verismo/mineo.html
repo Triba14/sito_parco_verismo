@@ -39,9 +39,7 @@
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
           <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
-          {% blocktrans %}
-          <p class="lead mb-3">Mineo è un luogo cardine nella storia della letteratura italiana. Qui, il 28 maggio 1839, nacque Luigi Capuana, scrittore, critico, teorico del Verismo e tra le figure più originali della cultura europea dell’Ottocento. Il borgo conserva ancora oggi l’atmosfera, i paesaggi e l’architettura sociale che plasmarono l’immaginario dello scrittore, rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, le sue piazze, le sue case, i suoi quartieri popolari ricorrono in molte opere capuaniane, spesso trasformate in teatro poetico o fantastico.</p>
-          {% endblocktrans %}
+          <p class="lead mb-3">{% blocktrans %}Mineo è un luogo cardine nella storia della letteratura italiana. Qui, il 28 maggio 1839, nacque Luigi Capuana, scrittore, critico, teorico del Verismo e tra le figure più originali della cultura europea dell'Ottocento. Il borgo conserva ancora oggi l'atmosfera, i paesaggi e l'architettura sociale che plasmarono l'immaginario dello scrittore, rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, le sue piazze, le sue case, i suoi quartieri popolari ricorrono in molte opere capuaniane, spesso trasformate in teatro poetico o fantastico.{% endblocktrans %}</p>
         </div>
         <div class="col-lg-6">
           <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
@@ -58,9 +56,7 @@
       <div class="row g-5 align-items-center">
         <div class="col-lg-6 order-lg-2">
           <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Mineo nella vita di Luigi Capuana' %}</h2>
-          {% blocktrans %}
-          <p class="lead mb-3">La formazione di Capuana avvenne tra le strade e le campagne di Mineo, in una realtà ricca di contrasti: borghesia agraria, mondo contadino, tradizioni popolari, spiritualità, paesaggi aspri e luminosi. Questi elementi costituivano la matrice del suo sguardo critico e antropologico sul reale, ma anche del suo interesse per il mistero, l’occulto, il fiabesco. Mineo non fu solo un paese d’origine, ma una lente attraverso cui Capuana osservò e interpretò il mondo.</p>
-          {% endblocktrans %}
+          <p class="lead mb-3">{% blocktrans %}La formazione di Capuana avvenne tra le strade e le campagne di Mineo, in una realtà ricca di contrasti: borghesia agraria, mondo contadino, tradizioni popolari, spiritualità, paesaggi aspri e luminosi. Questi elementi costituivano la matrice del suo sguardo critico e antropologico sul reale, ma anche del suo interesse per il mistero, l'occulto, il fiabesco. Mineo non fu solo un paese d'origine, ma una lente attraverso cui Capuana osservò e interpretò il mondo.{% endblocktrans %}</p>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
@@ -169,17 +165,25 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="pages-text-content">
-            {% blocktrans %}
-            <p class="lead mb-4">Tra Caltagirone e Palagonia, in una posizione che domina la pianura, a 500 m. sul livello del mare, adagiata su due colli degli Iblei nord-occidentali, sorge la pittoresca e accogliente città di Mineo, con un territorio tra i più estesi della provincia di Catania. Tra storia e leggenda, testimonianze e tradizioni, Mineo ha sempre destato nel turista un certo fascino con il suo glorioso passato e con il grande patrimonio artistico delle sue chiese e dei suoi palazzi.</p>
+            <p class="lead mb-4">
+              {% blocktrans %}Tra Caltagirone e Palagonia, in una posizione che domina la pianura, a 500 m. sul livello del mare, adagiata su due colli degli Iblei nord-occidentali, sorge la pittoresca e accogliente città di Mineo, con un territorio tra i più estesi della provincia di Catania. Tra storia e leggenda, testimonianze e tradizioni, Mineo ha sempre destato nel turista un certo fascino con il suo glorioso passato e con il grande patrimonio artistico delle sue chiese e dei suoi palazzi.{% endblocktrans %}
+            </p>
             
-            <p class="mb-4">Attraversando le stradine e i vicoli, che ricordano, con i vecchi ballatoi nei cortili interni, la struttura medioevale, si ha quasi l'impressione che il tempo si sia fermato. Le necropoli e i villaggi rupestri, i castelli e gli sconfinati agrumeti odoranti di zagara, suscitano incredibili suggestioni e particolari stati d'animo degni di essere vissuti. Patria di poeti e letterati, fu definita in passato il <strong>Parnaso Siculo</strong>: Luigi Capuana, teorico e sperimentatore del Verismo italiano; Corrado Guzzanti, geofisico; Giuseppe Bonaviri, medico e scrittore contemporaneo, sono alcuni tra i nomi più illustri.</p>
+            <p class="mb-4">
+              {% blocktrans %}Attraversando le stradine e i vicoli, che ricordano, con i vecchi ballatoi nei cortili interni, la struttura medioevale, si ha quasi l'impressione che il tempo si sia fermato. Le necropoli e i villaggi rupestri, i castelli e gli sconfinati agrumeti odoranti di zagara, suscitano incredibili suggestioni e particolari stati d'animo degni di essere vissuti. Patria di poeti e letterati, fu definita in passato il <strong>Parnaso Siculo</strong>: Luigi Capuana, teorico e sperimentatore del Verismo italiano; Corrado Guzzanti, geofisico; Giuseppe Bonaviri, medico e scrittore contemporaneo, sono alcuni tra i nomi più illustri.{% endblocktrans %}
+            </p>
             
-            <p class="mb-4">Le origini di Mineo sono antichissime. Il suo territorio è punteggiato di necropoli preistoriche e testimonianze di antichissimi insediamenti umani. Nell'anno <strong>459 a.C.</strong> Ducezio capo dei Siculi fondò la città di <strong>Menainon</strong> (Diodoro XI, 78). Nel 828 venne conquistata dagli arabi, dopo un lunghissimo assedio. Da allora e fino alla metà del XII sec. non si hanno più notizie. Nello stesso periodo assume grande importanza strategica il vicino insediamento di monte Catalfaro voluto dagli arabi al centro di un ampio territorio fra Vizzini ed il castello di Mongialino. Nel 1207 Carlo d'Angiò, in viaggio per la Tunisia, vi risiede guarnendo il castello della città di militi e insediamenti. È parte attiva del <strong>Vespro del 1282</strong>, quando i suoi abitanti in rivolta trucidando i Francesi.</p>
+            <p class="mb-4">
+              {% blocktrans %}Le origini di Mineo sono antichissime. Il suo territorio è punteggiato di necropoli preistoriche e testimonianze di antichissimi insediamenti umani. Nell'anno <strong>459 a.C.</strong> Ducezio capo dei Siculi fondò la città di <strong>Menainon</strong> (Diodoro XI, 78). Nel 828 venne conquistata dagli arabi, dopo un lunghissimo assedio. Da allora e fino alla metà del XII sec. non si hanno più notizie. Nello stesso periodo assume grande importanza strategica il vicino insediamento di monte Catalfaro voluto dagli arabi al centro di un ampio territorio fra Vizzini ed il castello di Mongialino. Nel 1207 Carlo d'Angiò, in viaggio per la Tunisia, vi risiede guarnendo il castello della città di militi e insediamenti. È parte attiva del <strong>Vespro del 1282</strong>, quando i suoi abitanti in rivolta trucidando i Francesi.{% endblocktrans %}
+            </p>
             
-            <p class="mb-4">Nel 1537, l'imperatore <strong>Carlo V</strong> trovandosi in notevoli difficoltà economiche per le continue guerre che sosteneva, alienò moltissimi beni regi in Sicilia e tra questi Mineo. I suoi abitanti, per non cadere in mani baronali, deliberarono di fare un donativo di 10.000 ducati e chiesero di restare in perpetuo un <strong>comune demaniale</strong>. Nel secolo successivo, Mineo, nel massimo del suo splendore ha tre chiese collegate: S. Maria Maggiore, costruita come vuole l'antica tradizione, sul tempio al Dio Sole, S. Agrippina, dove sono conservate le spoglie della patrona e S. Pietro. Numerose le chiese e i conventi: complessivamente quattordici monasteri, sei chiese maggiori e quattordici minori. Dopo un terribile periodo di carestia ed epidemie, l'<strong>11 gennaio 1693</strong> un fortissimo terremoto distrusse tutta Il Val di Noto, con intere città annientate e gravissimi danni. A Mineo fra l'altro fu distrutto il Castello, le chiese principali e moltissime abitazioni con la morte di circa 2.000 abitanti.</p>
+            <p class="mb-4">
+              {% blocktrans %}Nel 1537, l'imperatore <strong>Carlo V</strong> trovandosi in notevoli difficoltà economiche per le continue guerre che sosteneva, alienò moltissimi beni regi in Sicilia e tra questi Mineo. I suoi abitanti, per non cadere in mani baronali, deliberarono di fare un donativo di 10.000 ducati e chiesero di restare in perpetuo un <strong>comune demaniale</strong>. Nel secolo successivo, Mineo, nel massimo del suo splendore ha tre chiese collegate: S. Maria Maggiore, costruita come vuole l'antica tradizione, sul tempio al Dio Sole, S. Agrippina, dove sono conservate le spoglie della patrona e S. Pietro. Numerose le chiese e i conventi: complessivamente quattordici monasteri, sei chiese maggiori e quattordici minori. Dopo un terribile periodo di carestia ed epidemie, l'<strong>11 gennaio 1693</strong> un fortissimo terremoto distrusse tutta Il Val di Noto, con intere città annientate e gravissimi danni. A Mineo fra l'altro fu distrutto il Castello, le chiese principali e moltissime abitazioni con la morte di circa 2.000 abitanti.{% endblocktrans %}
+            </p>
             
-            <p class="mb-0">L'inizio del sec. XVII fu dedicato alla ricostruzione delle chiese e delle abitazioni con l'affermazione del <strong>barocco</strong>. Dopo l'unità d'Italia alcuni personaggi si imposero in politica e nella letteratura. Tra gli altri, verso la fine del secolo, Corrado Guzzanti realizzò un osservatorio sismico che divenne centro di ricerca e osservazione del fenomeno dei terremoti. Mineo mantiene quel tessuto urbano nato dal terremoto del 1693 che ha le radici nel medioevo con le sue strade strette ed erte, con i suoi cortili e catoi, con i suoi palazzi maestosi e le case dei suoi abitanti in un miscuglio affascinante che permette di immergersi in un'atmosfera di altri tempi.</p>
-            {% endblocktrans %}
+            <p class="mb-0">
+              {% blocktrans %}L'inizio del sec. XVII fu dedicato alla ricostruzione delle chiese e delle abitazioni con l'affermazione del <strong>barocco</strong>. Dopo l'unità d'Italia alcuni personaggi si imposero in politica e nella letteratura. Tra gli altri, verso la fine del secolo, Corrado Guzzanti realizzò un osservatorio sismico che divenne centro di ricerca e osservazione del fenomeno dei terremoti. Mineo mantiene quel tessuto urbano nato dal terremoto del 1693 che ha le radici nel medioevo con le sue strade strette ed erte, con i suoi cortili e catoi, con i suoi palazzi maestosi e le case dei suoi abitanti in un miscuglio affascinante che permette di immergersi in un'atmosfera di altri tempi.{% endblocktrans %}
+            </p>
           </div>
         </div>
       </div>
@@ -195,13 +199,17 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="pages-text-content">
-            {% blocktrans %}
-            <p class="mb-4">Nato a Mineo nel <strong>1839</strong> e morto a Catania nel <strong>1915</strong>, fu una personalità poliedrica; ancora oggi a distanza di oltre 100 anni dalla morte, viene ricordato non solo come scrittore e novelliere, ma anche come critico teatrale e autore di opere in dialetto siciliano, disegnatore, occultista (ricordiamo l'opera "Spiritismo!"), ispettore scolastico, politico (fu più volte sindaco di Mineo), autore di letteratura per l'infanzia e fiabe, professore universitario e, non ultimo, fotografo.</p>
+            <p class="mb-4">
+              {% blocktrans %}Nato a Mineo nel <strong>1839</strong> e morto a Catania nel <strong>1915</strong>, fu una personalità poliedrica; ancora oggi a distanza di oltre 100 anni dalla morte, viene ricordato non solo come scrittore e novelliere, ma anche come critico teatrale e autore di opere in dialetto siciliano, disegnatore, occultista (ricordiamo l'opera "Spiritismo!"), ispettore scolastico, politico (fu più volte sindaco di Mineo), autore di letteratura per l'infanzia e fiabe, professore universitario e, non ultimo, fotografo.{% endblocktrans %}
+            </p>
             
-            <p class="mb-4">Ma è nella narrativa che egli occupa un posto di rilievo, sia per l'acutezza e la sensibilità del gusto, che per il vigore con cui propugnò, primo in Italia, il <strong>romanzo naturalista</strong>.</p>
+            <p class="mb-4">
+              {% blocktrans %}Ma è nella narrativa che egli occupa un posto di rilievo, sia per l'acutezza e la sensibilità del gusto, che per il vigore con cui propugnò, primo in Italia, il <strong>romanzo naturalista</strong>.{% endblocktrans %}
+            </p>
             
-            <p class="mb-4">Il suo capolavoro rimane <strong>"Il Marchese di Roccaverdina"</strong>, romanzo pubblicato nel 1901.</p>
-            {% endblocktrans %}
+            <p class="mb-4">
+              {% blocktrans %}Il suo capolavoro rimane <strong>"Il Marchese di Roccaverdina"</strong>, romanzo pubblicato nel 1901.{% endblocktrans %}
+            </p>
             
             <p class="text-muted fst-italic mb-0"><small>Fonte: Mineo. Un paese da scoprire tra Arte, Cultura e Tradizione (Comune di Mineo) / Itinerari d'Autore (<a href="https://www.buonastrada.eu/cmn/mineo/" target="_blank" rel="noopener noreferrer">buonastrada.eu</a>)</small></p>
           </div>
