@@ -1,4 +1,5 @@
 var vizziniPoints = [
+    /*
     // -------------------------------
     // SERVIZI PUBBLICI
     // -------------------------------
@@ -59,4 +60,5 @@ var vizziniPoints = [
     { name: "Luoghi della novella 'La Lupa'", coords: [37.15234, 14.74567], type: "Luoghi Verghiani" },
     { name: "Set Film Cavalleria Rusticana", coords: [37.14912, 14.74456], type: "Luoghi Verghiani" },
     { name: "Bosco Granvilla", coords: [37.13456, 14.76789], type: "Luoghi Verghiani" }
+    */
 ];

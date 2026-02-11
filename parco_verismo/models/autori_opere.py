@@ -122,9 +122,6 @@ class Opera(TranslatableModel):
                 self.copertina = optimize_image(self.copertina)
 
         super().save(*args, **kwargs)
-
-    def get_absolute_url(self):
-        return reverse('opera_detail', kwargs={'slug': self.slug})
     
     def get_fonte_display_text(self):
         """Restituisce il testo completo da mostrare sul bottone"""

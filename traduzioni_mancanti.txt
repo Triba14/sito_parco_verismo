@@ -1,0 +1,3490 @@
+# MESSAGGI DA TRADURRE (Italiano -> Inglese)
+# ==========================================
+# Totale messaggi: 871
+# Formato: [NUMERO] IT: testo italiano
+#         EN: [lasciare vuoto - da completare]
+
+[1] #: parco_verismo/middleware.py:44
+IT: Troppe richieste. Riprova tra qualche minuto.
+EN: 
+
+[2] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:4
+IT: Accrediti e Finanziamenti
+EN: 
+
+[3] #: parco_verismo/templates/parco_verismo/vizzini.html:4
+IT: Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[4] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:21
+IT: Trasparenza
+EN: 
+
+[5] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:22
+IT: Accrediti & Finanziamenti
+EN: 
+
+[6] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:25
+IT:  Trasparenza nella gestione delle risorse finanziarie e degli investimenti  nel territorio siciliano
+EN: 
+
+[7] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:116
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana è ufficialmente riconosciuto da enti  nazionali e internazionali, garantendo qualità, trasparenza e valore  culturale alle nostre attività.
+EN: 
+
+[8] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:87
+IT: Regione Siciliana
+EN: 
+
+[9] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:127
+IT:  Riconoscimento ufficiale come polo culturale di valorizzazione del  patrimonio letterario siciliano con finanziamenti dedicati.
+EN: 
+
+[10] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:136
+IT: Associazione Parchi Letterari
+EN: 
+
+[11] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:137
+IT:  Certificazione di qualità nei servizi culturali come membro  dell'Associazione Nazionale dei Parchi Letterari Italiani.
+EN: 
+
+[12] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:146
+IT: Rete Internazionale UNESCO
+EN: 
+
+[13] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:147
+IT:  Partecipazione attiva alle reti internazionali dedicate alla preservazione  del patrimonio letterario mondiale.
+EN: 
+
+[14] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:206
+IT:  Le risorse economiche che sostengono le attività del Parco provengono da  fonti pubbliche e private, garantendo sostenibilità e crescita continua.
+EN: 
+
+[15] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:211
+IT: Principali Finanziatori
+EN: 
+
+[16] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:251
+IT: Allocazione Trasparente delle Risorse
+EN: 
+
+[17] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:276
+IT: Progetti Finanziati
+EN: 
+
+[18] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:279
+IT:  Principali iniziative e progetti realizzati grazie ai finanziamenti ottenuti.
+EN: 
+
+[19] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:289
+IT: Digitalizzazione Archivi
+EN: 
+
+[20] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:290
+IT:  Scansione e catalogazione digitale di oltre 500 documenti e fotografie  storiche. Progetto completato nel 2024.
+EN: 
+
+[21] #: parco_verismo/templates/parco_verismo/vizzini.html:286
+IT: Centro Studi
+EN: 
+
+[22] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:300
+IT:  Ristrutturazione e realizzazione della nuova Sala di Lettura Interattiva con  tecnologie innovative.
+EN: 
+
+[23] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:309
+IT: Laboratori Didattici
+EN: 
+
+[24] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:310
+IT:  Programma triennale di laboratori per scuole e comunità sulla letteratura  verista e il territorio.
+EN: 
+
+[25] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:36
+IT: Itinerari Verghiani
+EN: 
+
+[26] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:320
+IT:  Creazione di percorsi culturali digitali e fisici nei luoghi letterari del  Verismo siciliano.
+EN: 
+
+[27] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:335
+IT: Supporta il Parco Letterario
+EN: 
+
+[28] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:338
+IT:  Contribuisci con una donazione o diventa partner per supportare la  preservazione e lo sviluppo della cultura letteraria siciliana.
+EN: 
+
+[29] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:342
+IT: Dona Ora
+EN: 
+
+[30] #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:345
+IT: Diventa Partner
+EN: 
+
+[31] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:4
+IT: Archivio Fotografico - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[32] #: parco_verismo/templates/parco_verismo/index.html:265
+IT: Archivio Fotografico
+EN: 
+
+[33] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:18
+IT: Un viaggio visivo attraverso i luoghi e le storie del Verismo
+EN: 
+
+[34] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:58
+IT: Visualizza a schermo intero
+EN: 
+
+[35] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:146
+IT: Precedente
+EN: 
+
+[36] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:150
+IT: Successivo
+EN: 
+
+[37] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:97
+IT: Tutte le foto
+EN: 
+
+[38] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:128
+IT: Nessuna foto disponibile
+EN: 
+
+[39] #: parco_verismo/templates/parco_verismo/archivio_fotografico.html:129
+IT: L'archivio fotografico sarà presto disponibile.
+EN: 
+
+[40] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:24
+IT: Chiudi
+EN: 
+
+[41] #: parco_verismo/templates/parco_verismo/base.html:10
+IT:  Parco Letterario Giovanni Verga e Luigi Capuana - Un viaggio nella letteratura verista siciliana  attraverso i luoghi di Verga e Capuana
+EN: 
+
+[42] #: parco_verismo/templates/parco_verismo/base.html:20
+IT:  Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi e cultura nei  luoghi di Verga e Capuana
+EN: 
+
+[43] #: parco_verismo/templates/parco_verismo/base.html:29
+IT: Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia
+EN: 
+
+[44] #: parco_verismo/templates/parco_verismo/base.html:38
+IT:  Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i  luoghi di Giovanni Verga e Luigi Capuana
+EN: 
+
+[45] #: parco_verismo/templates/parco_verismo/base.html:78
+IT: Salta al contenuto principale
+EN: 
+
+[46] #: parco_verismo/templates/parco_verismo/base.html:85
+IT: Contenuto principale
+EN: 
+
+[47] #: parco_verismo/templates/parco_verismo/biblioteca.html:4
+IT: Biblioteca Digitale - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[48] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:221
+IT: Biblioteca Digitale
+EN: 
+
+[49] #: parco_verismo/templates/parco_verismo/biblioteca.html:11
+IT:  Cerca tra le opere di Verga e Capuana e accedi alla lettura integrale su  Wikisource.
+EN: 
+
+[50] #: parco_verismo/templates/parco_verismo/biblioteca.html:19
+IT: Nessuna opera trovata
+EN: 
+
+[51] #: parco_verismo/templates/parco_verismo/biblioteca.html:19
+IT: Non sono state trovate opere corrispondenti alla tua ricerca.
+EN: 
+
+[52] #: parco_verismo/templates/parco_verismo/calendario.html:3
+IT: Calendario Eventi - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[53] #: parco_verismo/templates/parco_verismo/calendario.html:13
+IT: Calendario Eventi
+EN: 
+
+[54] #: parco_verismo/templates/parco_verismo/calendario.html:16
+IT: Consulta il calendario completo degli eventi e salva i tuoi preferiti
+EN: 
+
+[55] #: parco_verismo/templates/parco_verismo/calendario.html:41
+IT: Vedi dettagli completi
+EN: 
+
+[56] #: parco_verismo/templates/parco_verismo/notizie.html:49
+IT: Oggi
+EN: 
+
+[57] #: parco_verismo/templates/parco_verismo/calendario.html:70
+IT: Mese
+EN: 
+
+[58] #: parco_verismo/templates/parco_verismo/calendario.html:71
+IT: Settimana
+EN: 
+
+[59] #: parco_verismo/templates/parco_verismo/calendario.html:72
+IT: Lista
+EN: 
+
+[60] #: parco_verismo/templates/parco_verismo/calendario.html:118
+IT: Descrizione
+EN: 
+
+[61] #: parco_verismo/templates/parco_verismo/calendario.html:137
+IT: Aggiungi al calendario
+EN: 
+
+[62] #: parco_verismo/templates/parco_verismo/calendario.html:139
+IT: Google Calendar
+EN: 
+
+[63] #: parco_verismo/templates/parco_verismo/calendario.html:142
+IT: Outlook
+EN: 
+
+[64] #: parco_verismo/templates/parco_verismo/calendario.html:145
+IT: Apple Calendar
+EN: 
+
+[65] #: parco_verismo/templates/parco_verismo/calendario.html:148
+IT: WhatsApp
+EN: 
+
+[66] #: parco_verismo/templates/parco_verismo/calendario.html:270
+IT: Evento aperto in Google Calendar!
+EN: 
+
+[67] #: parco_verismo/templates/parco_verismo/calendario.html:292
+IT: Evento aperto in Outlook!
+EN: 
+
+[68] #: parco_verismo/templates/parco_verismo/calendario.html:331
+IT: File calendario scaricato! Aprilo per aggiungere l'evento.
+EN: 
+
+[69] #: parco_verismo/templates/parco_verismo/calendario.html:344
+IT: alle
+EN: 
+
+[70] #: parco_verismo/templates/parco_verismo/calendario.html:344
+IT: Scopri di più sul sito del Parco Letterario Giovanni Verga e Luigi Capuana!
+EN: 
+
+[71] #: parco_verismo/templates/parco_verismo/calendario.html:346
+IT: Evento condiviso su WhatsApp!
+EN: 
+
+[72] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:4
+IT: Regolamento Comitato Tecnico-Scientifico
+EN: 
+
+[73] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:20
+IT: Normativa
+EN: 
+
+[74] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:22
+IT: Regolamento del Comitato Tecnico-Scientifico
+EN: 
+
+[75] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:41
+IT: REGOLAMENTO DEL COMITATO TECNICO-SCIENTIFICO
+EN: 
+
+[76] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:42
+IT: del Progetto \ 
+EN: 
+
+[77] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:47
+IT: Art. 1 – Istituzione e finalità
+EN: 
+
+[78] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:49
+IT:  È istituito il Comitato Tecnico-Scientifico (CTS) del Progetto &ldquo;Il  Parco Letterario Giovanni Verga e Luigi Capuana&rdquo; nell&rsquo;ambito del finanziamento  D.D.G. n. 1159 del 6 marzo 2025 della Regione Siciliana. Il CTS è organo  consultivo e di indirizzo strategico, con il compito di garantire la qualità  scientifica, culturale e metodologica delle attività del progetto, nonché di  favorirne la sostenibilità, la valorizzazione, il radicamento territoriale e  la continuità temporale.
+EN: 
+
+[79] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:55
+IT: Art. 2 – Composizione
+EN: 
+
+[80] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:57
+IT:  Il CTS, il cui insediamento è deliberato dal Comune capofila di Vizzini, è  composto da un numero variabile di membri compreso tra 7 e 11. Ne fanno  parte esperti nei settori letterario, storico, culturale, turistico,  accademico e artistico, nonché rappresentanti dell&rsquo;Ente del Terzo  Settore (ETS) attuatore del progetto. I membri del CTS sono scelti tra  studiosi, ricercatori ed esperti che abbiano dato contributi significativi  nell&rsquo;ambito della letteratura verista, delle discipline storico- artistiche, antropologiche, filologiche, turistiche e culturali, con  comprovata esperienza nella valorizzazione del patrimonio culturale e  territoriale.
+EN: 
+
+[81] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:59
+IT:  Fanno parte del Comitato, in rappresentanza istituzionale, i seguenti enti e  soggetti:
+EN: 
+
+[82] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:61
+IT: Comune di Vizzini – Comune capofila del progetto
+EN: 
+
+[83] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:172
+IT: Comune di Mineo
+EN: 
+
+[84] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:63
+IT: Comune di Licodia Eubea
+EN: 
+
+[85] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:254
+IT: Università degli Studi di Catania
+EN: 
+
+[86] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:220
+IT: Fondazione Verga
+EN: 
+
+[87] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:66
+IT: Centro Studi C.E.S.T.A. (attuatore del progetto)
+EN: 
+
+[88] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:67
+IT: ITS Academy Turismo Sicilia
+EN: 
+
+[89] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:247
+IT: ITS Steve Jobs di Caltagirone
+EN: 
+
+[90] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:69
+IT: Discendenza di Giovanni Verga
+EN: 
+
+[91] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:70
+IT: Discendenza di Luigi Capuana
+EN: 
+
+[92] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:73
+IT:  Possono essere invitati alle sedute, senza diritto di voto, rappresentanti  di università, istituti culturali, ITS, enti di ricerca e altri soggetti  interessati.
+EN: 
+
+[93] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:79
+IT: Art. 3 – Nomina e durata
+EN: 
+
+[94] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:81
+IT:  I componenti del CTS sono nominati con provvedimento del Comune capofila di  Vizzini. Il CTS rimane in carica per tutta la durata del progetto, sino alla  conclusione delle attività previste dal medesimo. L&rsquo;incarico è  gratuito.
+EN: 
+
+[95] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:87
+IT: Art. 4 – Compiti e funzioni
+EN: 
+
+[96] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:88
+IT: Il CTS:
+EN: 
+
+[97] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:90
+IT:  definisce linee di indirizzo metodologico e culturale per la realizzazione  del progetto
+EN: 
+
+[98] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:91
+IT:  supporta la progettazione e la valutazione di itinerari culturali e percorsi  tematici
+EN: 
+
+[99] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:92
+IT:  fornisce pareri e orientamenti sulle attività formative, digitali,  artistiche e partecipative
+EN: 
+
+[100] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:93
+IT:  promuove relazioni con università, ITS, centri di ricerca e istituzioni  culturali
+EN: 
+
+[101] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:94
+IT:  contribuisce alla definizione di protocolli e disciplinari per prodotti  culturali innovativi
+EN: 
+
+[102] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:95
+IT:  collabora alla progettazione del Premio Verga-Capuana e della Giornata di  Studi sul Verismo
+EN: 
+
+[103] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:96
+IT:  valuta gli esiti delle attività e formula raccomandazioni per il  miglioramento
+EN: 
+
+[104] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:97
+IT:  partecipa in modo collegiale alla pianificazione delle attività e alla  definizione delle priorità operative
+EN: 
+
+[105] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:103
+IT: Art. 4-bis – Coordinatore del Comitato Tecnico-Scientifico
+EN: 
+
+[106] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:105
+IT:  Il CTS individua al proprio interno, nella seduta di insediamento, un  Coordinatore scelto tra i componenti. Il Coordinatore ha funzioni di  raccordo tra il CTS, il Comune capofila e l&rsquo;ETS attuatore del  progetto. Coordina le attività del Comitato, presiede le riunioni, assicura  la corretta esecuzione delle deliberazioni e rappresenta il CTS nelle  relazioni esterne di carattere tecnico-scientifico.
+EN: 
+
+[107] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:111
+IT: Art. 5 – Modalità di funzionamento
+EN: 
+
+[108] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:113
+IT:  Il CTS si riunisce ogniqualvolta se ne ravvisi la necessità, su iniziativa  dell&rsquo;ETS attuatore o su richiesta di almeno un terzo dei componenti.  La convocazione è effettuata dalla segreteria tecnico-organizzativa, anche  in forma telematica, con un preavviso minimo di 3 giorni. Le riunioni  possono svolgersi in presenza o da remoto, mediante strumenti digitali  idonei. Le sedute sono valide con la presenza della maggioranza dei  componenti.
+EN: 
+
+[109] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:116
+IT:  Le decisioni sono assunte a maggioranza dei presenti. In caso di parità di  voti si applica il seguente sistema di voto ponderato:
+EN: 
+
+[110] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:119
+IT: Il Comune capofila di Vizzini dispone di due voti
+EN: 
+
+[111] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:120
+IT:  I discendenti di Luigi Capuana dispongono congiuntamente di un voto unico
+EN: 
+
+[112] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:121
+IT: Tutti gli altri componenti del CTS dispongono di un voto ciascuno
+EN: 
+
+[113] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:127
+IT: Art. 6 – Segreteria tecnico-organizzativa
+EN: 
+
+[114] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:129
+IT:  Le funzioni di segreteria del CTS sono svolte dall&rsquo;ETS attuatore del  progetto. La segreteria cura la convocazione delle riunioni, la redazione e  conservazione dei verbali, il supporto organizzativo e amministrativo,  nonché la trasmissione delle deliberazioni ai Comuni partner.
+EN: 
+
+[115] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:135
+IT: Art. 7 – Decadenza e sostituzione dei componenti
+EN: 
+
+[116] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:137
+IT:  I componenti decadono dall&rsquo;incarico per: dimissioni volontarie;  assenza ingiustificata a tre riunioni consecutive; sopravvenuta  incompatibilità con le finalità del progetto. In caso di decadenza o  dimissioni, il Comune capofila provvede alla eventuale sostituzione con  nuova nomina.
+EN: 
+
+[117] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:143
+IT: Art. 8 – Disposizioni finali
+EN: 
+
+[118] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:145
+IT:  Per quanto non espressamente previsto dal presente Regolamento si fa rinvio  alla normativa vigente in materia di organi collegiali. Il presente  Regolamento resterà in vigore fino alla conclusione delle attività  progettuali.
+EN: 
+
+[119] #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:153
+IT: Torna al Comitato
+EN: 
+
+[120] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:22
+IT: Comitato Tecnico-Scientifico
+EN: 
+
+[121] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:21
+IT: Organi Direttivi
+EN: 
+
+[122] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:23
+IT: Presidio culturale e scientifico del Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[123] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:118
+IT:  Il Comitato Tecnico-Scientifico è stato istituito con Determinazione  Sindacale n. 50 del 20 ottobre 2025...
+EN: 
+
+[124] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:121
+IT: Funzione del Comitato
+EN: 
+
+[125] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:122
+IT:  Il Comitato ha funzione consultiva e di orientamento strategico: supporta  gli Enti locali e i partner culturali...
+EN: 
+
+[126] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:126
+IT: Principali Compiti
+EN: 
+
+[127] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:128
+IT:  Valutare e fornire pareri scientifici su progetti culturali, iniziative  editoriali e mostre.
+EN: 
+
+[128] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:129
+IT:  Proporre linee guida per la tutela e la valorizzazione del patrimonio  verghiano e capuaniano.
+EN: 
+
+[129] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:130
+IT:  Favorire collaborazioni con università, centri studi e istituti di ricerca.
+EN: 
+
+[130] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133
+IT: Frequenza incontri:
+EN: 
+
+[131] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133
+IT:  Il Comitato si riunisce con cadenza trimestrale e può essere convocato in  sedute straordinarie.
+EN: 
+
+[132] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134
+IT: Durata incarico:
+EN: 
+
+[133] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134
+IT:  I membri sono nominati per un mandato triennale, rinnovabile secondo le  disposizioni del regolamento.
+EN: 
+
+[134] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:136
+IT:  Per il testo integrale del regolamento e i verbali delle sedute consulta la  pagina
+EN: 
+
+[135] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:148
+IT: Composizione del Comitato
+EN: 
+
+[136] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:149
+IT:  Una rete di esperti e istituzioni dedicati alla valorizzazione del  patrimonio verghiano e capuaniano
+EN: 
+
+[137] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:157
+IT: Rappresentanti Enti Pubblici
+EN: 
+
+[138] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:164
+IT: Dott. Pietro La Rocca
+EN: 
+
+[139] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:165
+IT: Comune di Vizzini
+EN: 
+
+[140] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:171
+IT: Dott. Mario Luca Sebastiano Testa
+EN: 
+
+[141] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:184
+IT: Centri Studi e Famiglie Depositarie del Patrimonio
+EN: 
+
+[142] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:191
+IT: Dott. Raffaele Assunta Brunelli
+EN: 
+
+[143] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:192
+IT: Centro Studi C.E.S.T.A.
+EN: 
+
+[144] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:198
+IT: Dott. Tommaso Domenico Cilia
+EN: 
+
+[145] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:213
+IT: Famiglia Capuana
+EN: 
+
+[146] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:205
+IT: Dott.ssa Carla Verga
+EN: 
+
+[147] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:206
+IT: Famiglia Verga
+EN: 
+
+[148] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:212
+IT: Dott. Carlo Capuana
+EN: 
+
+[149] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:219
+IT: Prof. Antonio Di Silvestro
+EN: 
+
+[150] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:232
+IT: Istituti Superiori e Università
+EN: 
+
+[151] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:239
+IT: Dott.ssa Anna Raudino
+EN: 
+
+[152] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:240
+IT: ITS Academy di Siracusa
+EN: 
+
+[153] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:246
+IT: Prof. Francesco Pignataro
+EN: 
+
+[154] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:253
+IT: Prof. Luigi Ingaliso
+EN: 
+
+[155] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:266
+IT: Coordinamento
+EN: 
+
+[156] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:273
+IT: Dott.ssa Delia Francesca Di Pasquale
+EN: 
+
+[157] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:274
+IT: Coordinatrice del Comitato Tecnico-Scientifico
+EN: 
+
+[158] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:327
+IT: Coerenza Scientifica
+EN: 
+
+[159] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:328
+IT: Garantire coerenza scientifica e culturale alle azioni del progetto
+EN: 
+
+[160] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:335
+IT: Progettazione Strategica
+EN: 
+
+[161] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:336
+IT:  Orientare la progettazione di eventi, percorsi, accordi istituzionali e  produzioni culturali
+EN: 
+
+[162] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:343
+IT: Monitoraggio e Valutazione
+EN: 
+
+[163] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:344
+IT:  Valutare l'impatto e il raggiungimento degli obiettivi culturali e sociali  del Parco
+EN: 
+
+[164] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:351
+IT: Coordinamento Istituzionale
+EN: 
+
+[165] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:352
+IT:  Favorire il dialogo tra enti locali, istituzioni regionali e partner  culturali per la realizzazione condivisa del progetto
+EN: 
+
+[166] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:367
+IT: Presidio Culturale e Scientifico
+EN: 
+
+[167] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:368
+IT:  Il Comitato rappresenta il presidio culturale e scientifico del progetto,  assicurandone continuità e radicamento territoriale.
+EN: 
+
+[168] #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:370
+IT: Leggi il Regolamento
+EN: 
+
+[169] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:7
+IT: Utilizzo dei Cookie
+EN: 
+
+[170] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:9
+IT:  Questo sito utilizza cookie tecnici necessari e, previo consenso, cookie  analytics per migliorare l'esperienza di navigazione.
+EN: 
+
+[171] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:10
+IT: Informativa completa
+EN: 
+
+[172] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:14
+IT: Accetta Tutti
+EN: 
+
+[173] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:15
+IT: Solo Necessari
+EN: 
+
+[174] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:16
+IT: Personalizza
+EN: 
+
+[175] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:27
+IT: Gestione Preferenze Cookie
+EN: 
+
+[176] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:34
+IT: Cookie Tecnici Necessari
+EN: 
+
+[177] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:41
+IT:  Questi cookie sono essenziali per il corretto funzionamento del sito.  Includono cookie di sessione, autenticazione e sicurezza. Non possono essere  disattivati.
+EN: 
+
+[178] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:48
+IT: Cookie di Analisi
+EN: 
+
+[179] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:55
+IT:  Questi cookie ci aiutano a capire come i visitatori interagiscono con il  sito raccogliendo e segnalando informazioni in forma anonima. Utilizziamo  queste informazioni per migliorare il sito.
+EN: 
+
+[180] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:62
+IT: Cookie di Marketing
+EN: 
+
+[181] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:69
+IT:  Questi cookie vengono utilizzati per tracciare i visitatori attraverso i  siti web. L'intento è mostrare annunci pertinenti e coinvolgenti per il  singolo utente.
+EN: 
+
+[182] #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:75
+IT: Salva Preferenze
+EN: 
+
+[183] #: parco_verismo/templates/parco_verismo/components/documento_card.html:44
+IT: Visualizza documento
+EN: 
+
+[184] #: parco_verismo/templates/parco_verismo/opere_per_autore.html:33
+IT: Scopri di più
+EN: 
+
+[185] #: parco_verismo/templates/parco_verismo/components/footer.html:8
+IT:  Un viaggio nella Sicilia di Verga e Capuana attraverso i luoghi che hanno  ispirato i grandi capolavori del verismo italiano.
+EN: 
+
+[186] #: parco_verismo/templates/parco_verismo/components/footer.html:25
+IT: Navigazione
+EN: 
+
+[187] #: parco_verismo/templates/parco_verismo/components/footer.html:27
+IT: Home
+EN: 
+
+[188] #: parco_verismo/templates/parco_verismo/mineo.html:307
+IT: Biblioteca
+EN: 
+
+[189] #: parco_verismo/templates/parco_verismo/navbar.html:84
+IT: Eventi
+EN: 
+
+[190] #: parco_verismo/templates/parco_verismo/components/footer.html:30
+IT: Notizie
+EN: 
+
+[191] #: parco_verismo/templates/parco_verismo/navbar.html:148
+IT: Documenti & Studi
+EN: 
+
+[192] #: parco_verismo/templates/parco_verismo/navbar.html:155
+IT: Contatti
+EN: 
+
+[193] #: parco_verismo/templates/parco_verismo/components/footer.html:52
+IT: Newsletter
+EN: 
+
+[194] #: parco_verismo/templates/parco_verismo/components/footer.html:53
+IT: Ricevi aggiornamenti sugli eventi e le novità del Parco.
+EN: 
+
+[195] #: parco_verismo/templates/parco_verismo/components/footer.html:55
+IT: La tua email
+EN: 
+
+[196] #: parco_verismo/templates/parco_verismo/components/footer.html:55
+IT: Email per newsletter
+EN: 
+
+[197] #: parco_verismo/templates/parco_verismo/components/footer.html:56
+IT: Iscriviti
+EN: 
+
+[198] #: parco_verismo/templates/parco_verismo/components/footer.html:63
+IT: Parco Letterario Giovanni Verga e Luigi Capuana. Tutti i diritti riservati.
+EN: 
+
+[199] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:188
+IT: Privacy
+EN: 
+
+[200] #: parco_verismo/templates/parco_verismo/components/footer.html:77
+IT: Cookie
+EN: 
+
+[201] #: parco_verismo/templates/parco_verismo/note_legali.html:55
+IT: Note Legali
+EN: 
+
+[202] #: parco_verismo/templates/parco_verismo/components/footer.html:79
+IT: Accessibilità
+EN: 
+
+[203] #: parco_verismo/templates/parco_verismo/components/no_results.html:12
+IT: Nessun risultato
+EN: 
+
+[204] #: parco_verismo/templates/parco_verismo/components/no_results.html:13
+IT: Non sono stati trovati elementi corrispondenti alla tua ricerca.
+EN: 
+
+[205] #: parco_verismo/templates/parco_verismo/components/notizia_card.html:35
+IT: Leggi di più
+EN: 
+
+[206] #: parco_verismo/templates/parco_verismo/components/opera_card.html:23
+IT: Anno:
+EN: 
+
+[207] #: parco_verismo/templates/parco_verismo/components/search_form.html:13
+IT: Cerca...
+EN: 
+
+[208] #: parco_verismo/templates/parco_verismo/documenti.html:23
+IT: Cerca
+EN: 
+
+[209] #: parco_verismo/templates/parco_verismo/privacy_policy.html:102
+IT: Cookie Policy
+EN: 
+
+[210] #: parco_verismo/templates/parco_verismo/cookie_policy.html:93
+IT: Informativa sui Cookie
+EN: 
+
+[211] #: parco_verismo/templates/parco_verismo/privacy_policy.html:67
+IT: Ultimo aggiornamento
+EN: 
+
+[212] #: parco_verismo/templates/parco_verismo/cookie_policy.html:96
+IT: 1. Cosa sono i Cookie
+EN: 
+
+[213] #: parco_verismo/templates/parco_verismo/cookie_policy.html:98
+IT:  I cookie sono piccoli file di testo che i siti visitati inviano al terminale  dell'utente (PC, tablet, smartphone, ecc.), dove vengono memorizzati per  essere poi ritrasmessi agli stessi siti alla visita successiva. I cookie  sono utilizzati per diverse finalità, hanno caratteristiche diverse, e  possono essere utilizzati sia dal titolare del sito che si sta visitando,  sia da terze parti.
+EN: 
+
+[214] #: parco_verismo/templates/parco_verismo/cookie_policy.html:101
+IT: 2. Tipologie di Cookie Utilizzati
+EN: 
+
+[215] #: parco_verismo/templates/parco_verismo/cookie_policy.html:103
+IT: 2.1 Cookie Tecnici Necessari
+EN: 
+
+[216] #: parco_verismo/templates/parco_verismo/cookie_policy.html:105
+IT:  Questi cookie sono essenziali per il corretto funzionamento del sito. Senza  questi cookie alcune funzionalità del sito non funzionerebbero.
+EN: 
+
+[217] #: parco_verismo/templates/parco_verismo/cookie_policy.html:107
+IT: Non richiedono consenso dell'utente
+EN: 
+
+[218] #: parco_verismo/templates/parco_verismo/index.html:352
+IT: Nome
+EN: 
+
+[219] #: parco_verismo/templates/parco_verismo/cookie_policy.html:188
+IT: Finalità
+EN: 
+
+[220] #: parco_verismo/templates/parco_verismo/cookie_policy.html:153
+IT: Durata
+EN: 
+
+[221] #: parco_verismo/templates/parco_verismo/cookie_policy.html:120
+IT: Cookie di sessione Django per mantenere lo stato dell'utente
+EN: 
+
+[222] #: parco_verismo/templates/parco_verismo/cookie_policy.html:121
+IT: Sessione
+EN: 
+
+[223] #: parco_verismo/templates/parco_verismo/cookie_policy.html:125
+IT: Cookie di sicurezza Django per protezione CSRF
+EN: 
+
+[224] #: parco_verismo/templates/parco_verismo/cookie_policy.html:136
+IT: 1 anno
+EN: 
+
+[225] #: parco_verismo/templates/parco_verismo/cookie_policy.html:130
+IT: Cookie per memorizzare la preferenza linguistica (IT/EN)
+EN: 
+
+[226] #: parco_verismo/templates/parco_verismo/cookie_policy.html:135
+IT: Cookie per memorizzare le preferenze sui cookie
+EN: 
+
+[227] #: parco_verismo/templates/parco_verismo/cookie_policy.html:141
+IT: 2.2 Cookie di Analisi (Analytics)
+EN: 
+
+[228] #: parco_verismo/templates/parco_verismo/cookie_policy.html:143
+IT:  Questi cookie raccolgono informazioni su come gli utenti utilizzano il sito  (pagine visitate, tempo di permanenza, ecc.) per migliorare il funzionamento  e l'esperienza del sito.
+EN: 
+
+[229] #: parco_verismo/templates/parco_verismo/cookie_policy.html:145
+IT: Richiedono consenso dell'utente
+EN: 
+
+[230] #: parco_verismo/templates/parco_verismo/cookie_policy.html:151
+IT: Fornitore
+EN: 
+
+[231] #: parco_verismo/templates/parco_verismo/cookie_policy.html:160
+IT: Raccolta dati statistici anonimi sull'utilizzo del sito
+EN: 
+
+[232] #: parco_verismo/templates/parco_verismo/cookie_policy.html:161
+IT: 13 mesi
+EN: 
+
+[233] #: parco_verismo/templates/parco_verismo/cookie_policy.html:166
+IT: Tracciamento sessione utente per statistiche
+EN: 
+
+[234] #: parco_verismo/templates/parco_verismo/cookie_policy.html:167
+IT: 30 minuti
+EN: 
+
+[235] #: parco_verismo/templates/parco_verismo/cookie_policy.html:173
+IT:  Nota: Il sito utilizza Matomo (ex Piwik), una piattaforma open source di web  analytics conforme alla normativa privacy europea, con dati anonimizzati e  server in Italia.
+EN: 
+
+[236] #: parco_verismo/templates/parco_verismo/cookie_policy.html:176
+IT: 2.3 Cookie di Marketing
+EN: 
+
+[237] #: parco_verismo/templates/parco_verismo/cookie_policy.html:178
+IT: Al momento questo sito non utilizza cookie di marketing o profilazione.
+EN: 
+
+[238] #: parco_verismo/templates/parco_verismo/cookie_policy.html:181
+IT: 3. Cookie di Terze Parti
+EN: 
+
+[239] #: parco_verismo/templates/parco_verismo/cookie_policy.html:182
+IT:  Il sito potrebbe utilizzare servizi di terze parti che installano i seguenti  cookie:
+EN: 
+
+[240] #: parco_verismo/templates/parco_verismo/cookie_policy.html:187
+IT: Servizio
+EN: 
+
+[241] #: parco_verismo/templates/parco_verismo/privacy_policy.html:4
+IT: Privacy Policy
+EN: 
+
+[242] #: parco_verismo/templates/parco_verismo/cookie_policy.html:195
+IT: Visualizzazione mappe interattive per itinerari
+EN: 
+
+[243] #: parco_verismo/templates/parco_verismo/cookie_policy.html:200
+IT: Incorporazione video (se presenti)
+EN: 
+
+[244] #: parco_verismo/templates/parco_verismo/cookie_policy.html:206
+IT: 4. Gestione dei Cookie
+EN: 
+
+[245] #: parco_verismo/templates/parco_verismo/cookie_policy.html:208
+IT:  È possibile gestire le preferenze relative ai cookie in qualsiasi momento  cliccando sul pulsante qui sotto:
+EN: 
+
+[246] #: parco_verismo/templates/parco_verismo/cookie_policy.html:212
+IT: Gestisci Preferenze Cookie
+EN: 
+
+[247] #: parco_verismo/templates/parco_verismo/cookie_policy.html:215
+IT: 4.1 Disabilitazione Cookie dal Browser
+EN: 
+
+[248] #: parco_verismo/templates/parco_verismo/cookie_policy.html:217
+IT: È possibile disabilitare i cookie direttamente dal browser utilizzato:
+EN: 
+
+[249] #: parco_verismo/templates/parco_verismo/cookie_policy.html:223
+IT: Istruzioni
+EN: 
+
+[250] #: parco_verismo/templates/parco_verismo/cookie_policy.html:226
+IT: 5. Base Giuridica del Trattamento
+EN: 
+
+[251] #: parco_verismo/templates/parco_verismo/cookie_policy.html:228
+IT: Cookie tecnici
+EN: 
+
+[252] #: parco_verismo/templates/parco_verismo/cookie_policy.html:228
+IT: Non richiedono consenso (art. 122 Codice Privacy)
+EN: 
+
+[253] #: parco_verismo/templates/parco_verismo/cookie_policy.html:229
+IT: Cookie analytics
+EN: 
+
+[254] #: parco_verismo/templates/parco_verismo/cookie_policy.html:230
+IT: Consenso esplicito dell'utente (GDPR art. 6, par. 1, lett. a)
+EN: 
+
+[255] #: parco_verismo/templates/parco_verismo/cookie_policy.html:230
+IT: Cookie marketing
+EN: 
+
+[256] #: parco_verismo/templates/parco_verismo/cookie_policy.html:233
+IT: 6. Diritti dell'Utente
+EN: 
+
+[257] #: parco_verismo/templates/parco_verismo/cookie_policy.html:235
+IT:  Per maggiori informazioni sui diritti relativi al trattamento dei dati  personali, consultare la
+EN: 
+
+[258] #: parco_verismo/templates/parco_verismo/cookie_policy.html:238
+IT: 7. Aggiornamenti
+EN: 
+
+[259] #: parco_verismo/templates/parco_verismo/cookie_policy.html:240
+IT:  La presente Cookie Policy può essere soggetta a modifiche. L'utente è  invitato a verificare periodicamente questa pagina.
+EN: 
+
+[260] #: parco_verismo/templates/parco_verismo/cookie_policy.html:243
+IT: 8. Contatti
+EN: 
+
+[261] #: parco_verismo/templates/parco_verismo/cookie_policy.html:245
+IT:  Per qualsiasi informazione relativa alla Cookie Policy è possibile  contattare:
+EN: 
+
+[262] #: parco_verismo/templates/parco_verismo/privacy_policy.html:180
+IT: Email
+EN: 
+
+[263] #: parco_verismo/templates/parco_verismo/privacy_policy.html:181
+IT: PEC
+EN: 
+
+[264] #: parco_verismo/templates/parco_verismo/note_legali.html:169
+IT: Dichiarazione di Accessibilità
+EN: 
+
+[265] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:80
+IT: Data della dichiarazione
+EN: 
+
+[266] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:84
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a rendere il proprio sito web  accessibile, conformemente al
+EN: 
+
+[267] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:85
+IT: che ha recepito la
+EN: 
+
+[268] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:86
+IT: Direttiva UE 2016/2102
+EN: 
+
+[269] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:86
+IT:  relativa all'accessibilità dei siti web e delle applicazioni mobili degli  enti pubblici.
+EN: 
+
+[270] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:90
+IT: La presente dichiarazione di accessibilità si applica al sito web
+EN: 
+
+[271] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:94
+IT: Stato di conformità
+EN: 
+
+[272] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:96
+IT: Il presente sito web è parzialmente conforme
+EN: 
+
+[273] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:96
+IT:  ai requisiti previsti dall'allegato A della norma tecnica UNI EN 301549:2018
+EN: 
+
+[274] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:97
+IT: WCAG 2.1 livello AA
+EN: 
+
+[275] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:97
+IT: a causa delle non conformità e/o delle deroghe elencate di seguito.
+EN: 
+
+[276] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:101
+IT: 1. Contenuti Non Accessibili
+EN: 
+
+[277] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:103
+IT: 1.1 Non conformità
+EN: 
+
+[278] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:104
+IT:  I contenuti di seguito elencati non sono accessibili per i seguenti motivi:
+EN: 
+
+[279] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:108
+IT: Contenuti multimediali
+EN: 
+
+[280] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:109
+IT:  Alcuni video potrebbero non disporre di sottotitoli o trascrizioni testuali  (criteri 1.2.2, 1.2.3 WCAG 2.1)
+EN: 
+
+[281] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:112
+IT: Documenti PDF
+EN: 
+
+[282] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:113
+IT:  Alcuni documenti PDF caricati dagli utenti potrebbero non essere  completamente accessibili (criterio 4.1.2 WCAG 2.1)
+EN: 
+
+[283] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:116
+IT: Mappe interattive
+EN: 
+
+[284] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:117
+IT:  Le mappe degli itinerari fornite tramite servizi di terze parti (Google  Maps) potrebbero presentare limitazioni di accessibilità (criteri 2.1.1,  4.1.2 WCAG 2.1)
+EN: 
+
+[285] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:120
+IT: Contenuti di terze parti
+EN: 
+
+[286] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:121
+IT:  Alcuni contenuti incorporati da terze parti (YouTube, social media)  potrebbero non essere completamente accessibili
+EN: 
+
+[287] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:125
+IT: 1.2 Deroghe per onere sproporzionato
+EN: 
+
+[288] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:126
+IT: Al momento non sono previste deroghe per onere sproporzionato.
+EN: 
+
+[289] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:128
+IT: 1.3 Contenuti non rientranti nell'ambito della normativa applicabile
+EN: 
+
+[290] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:130
+IT:  Documenti pubblicati prima del 23 settembre 2018 (ad eccezione dei contenuti  necessari per lo svolgimento di procedimenti amministrativi in corso)
+EN: 
+
+[291] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:131
+IT: Archivi storici digitalizzati contenenti documenti non modificabili
+EN: 
+
+[292] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:134
+IT: 2. Redazione della Dichiarazione di Accessibilità
+EN: 
+
+[293] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:136
+IT: La presente dichiarazione è stata redatta il 7 dicembre 2025 mediante
+EN: 
+
+[294] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:137
+IT: autovalutazione
+EN: 
+
+[295] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:137
+IT: effettuata direttamente dal soggetto erogatore.
+EN: 
+
+[296] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:141
+IT: La dichiarazione è stata rivista da ultimo il 7 dicembre 2025.
+EN: 
+
+[297] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:144
+IT: 3. Caratteristiche di Accessibilità del Sito
+EN: 
+
+[298] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:145
+IT:  Il sito è stato progettato e sviluppato prestando attenzione ai seguenti  aspetti di accessibilità:
+EN: 
+
+[299] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:148
+IT: Struttura semantica
+EN: 
+
+[300] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:148
+IT:  Utilizzo corretto dei tag HTML5 semantici (header, nav, main, article,  footer)
+EN: 
+
+[301] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:149
+IT: Navigazione da tastiera
+EN: 
+
+[302] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:149
+IT: Tutte le funzionalità sono accessibili tramite tastiera
+EN: 
+
+[303] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:150
+IT: Alternative testuali
+EN: 
+
+[304] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:150
+IT: Le immagini significative dispongono di testo alternativo (alt text)
+EN: 
+
+[305] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:151
+IT: Contrasto colori
+EN: 
+
+[306] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:151
+IT: I colori utilizzati rispettano i rapporti di contrasto minimi (WCAG AA)
+EN: 
+
+[307] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:152
+IT: Dimensione testi
+EN: 
+
+[308] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:153
+IT: Link descrittivi
+EN: 
+
+[309] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:153
+IT: I link hanno testi descrittivi del contenuto di destinazione
+EN: 
+
+[310] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:154
+IT: Form accessibili
+EN: 
+
+[311] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:154
+IT: I moduli dispongono di etichette associate correttamente
+EN: 
+
+[312] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:155
+IT: Compatibilità con screen reader
+EN: 
+
+[313] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:155
+IT: Il sito è testato con lettori di schermo (NVDA, JAWS)
+EN: 
+
+[314] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:156
+IT: Responsive design
+EN: 
+
+[315] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:156
+IT: Il sito è utilizzabile su dispositivi mobili e tablet
+EN: 
+
+[316] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:157
+IT: Multilingua
+EN: 
+
+[317] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:157
+IT:  Supporto italiano e inglese con corretta dichiarazione della lingua (lang  attribute)
+EN: 
+
+[318] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:160
+IT: 4. Feedback e Informazioni di Contatto
+EN: 
+
+[319] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:162
+IT:  Gli utenti che riscontrassero difficoltà nell'accesso a contenuti o servizi  del sito possono contattare il Parco Letterario Giovanni Verga e Luigi Capuana per richiedere  assistenza o segnalare problemi di accessibilità:
+EN: 
+
+[320] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:167
+IT: Email generale
+EN: 
+
+[321] #: parco_verismo/templates/parco_verismo/note_legali.html:179
+IT: Telefono
+EN: 
+
+[322] #: parco_verismo/templates/parco_verismo/note_legali.html:180
+IT: Indirizzo
+EN: 
+
+[323] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:179
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a fornire risposta alle  segnalazioni entro
+EN: 
+
+[324] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:180
+IT: 30 giorni
+EN: 
+
+[325] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:180
+IT: dalla ricezione.
+EN: 
+
+[326] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:183
+IT: 5. Procedure di Attuazione
+EN: 
+
+[327] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:185
+IT: 5.1 Difensore Civico per il Digitale
+EN: 
+
+[328] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:187
+IT:  In caso di risposta insoddisfacente o mancata risposta entro 30 giorni, è  possibile inviare una segnalazione al Difensore Civico per il Digitale  tramite:
+EN: 
+
+[329] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:191
+IT: Form online
+EN: 
+
+[330] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:195
+IT: 5.2 Procedura di Attuazione
+EN: 
+
+[331] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:197
+IT:  La procedura è descritta all'articolo 3-quinquies della Legge n. 241/1990 e  successive modifiche. Il Difensore Civico per il Digitale è stato istituito  presso l'Agenzia per l'Italia Digitale (AGID) ai sensi dell'articolo 17,  comma 1-quater del CAD.
+EN: 
+
+[332] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:200
+IT: 6. Informazioni sulla Struttura
+EN: 
+
+[333] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:202
+IT: Amministrazione
+EN: 
+
+[334] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:203
+IT: Responsabile
+EN: 
+
+[335] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:204
+IT: Data di pubblicazione del sito
+EN: 
+
+[336] #: parco_verismo/templates/parco_verismo/note_legali.html:191
+IT: Tecnologie utilizzate
+EN: 
+
+[337] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:214
+IT: 7. Valutazione e Test
+EN: 
+
+[338] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:215
+IT: Il sito è stato sottoposto a:
+EN: 
+
+[339] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:217
+IT: Test automatici con strumenti di validazione HTML/CSS
+EN: 
+
+[340] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:218
+IT: Test di contrasto colori con strumenti conformi WCAG
+EN: 
+
+[341] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:219
+IT: Test di navigazione da tastiera
+EN: 
+
+[342] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:220
+IT: Test con screen reader NVDA e JAWS
+EN: 
+
+[343] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:221
+IT: Test su browser multipli (Chrome, Firefox, Safari, Edge)
+EN: 
+
+[344] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:222
+IT: Test su dispositivi mobili e tablet
+EN: 
+
+[345] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:225
+IT: 8. Aggiornamenti e Miglioramenti
+EN: 
+
+[346] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:227
+IT: Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a:
+EN: 
+
+[347] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:230
+IT: Monitorare costantemente l'accessibilità del sito
+EN: 
+
+[348] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:231
+IT: Correggere tempestivamente le non conformità segnalate
+EN: 
+
+[349] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:232
+IT: Aggiornare la presente dichiarazione almeno annualmente
+EN: 
+
+[350] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:233
+IT: Formare il personale sui temi dell'accessibilità digitale
+EN: 
+
+[351] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:234
+IT: Migliorare progressivamente l'accessibilità dei contenuti esistenti
+EN: 
+
+[352] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:237
+IT: 9. Note
+EN: 
+
+[353] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:239
+IT: La presente dichiarazione è conforme al
+EN: 
+
+[354] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:240
+IT:  modello per la dichiarazione di accessibilità dei siti web e delle  applicazioni mobili
+EN: 
+
+[355] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:241
+IT: fornito da AGID (Agenzia per l'Italia Digitale).
+EN: 
+
+[356] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:245
+IT: Riferimenti normativi:
+EN: 
+
+[357] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:248
+IT:  Legge 9 gennaio 2004, n. 4 - Disposizioni per favorire l'accesso dei  soggetti disabili agli strumenti informatici
+EN: 
+
+[358] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:249
+IT:  Decreto Legislativo 10 agosto 2018, n. 106 - Rimozione delle barriere alla  accessibilità dei siti web e delle applicazioni mobili
+EN: 
+
+[359] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:250
+IT: Direttiva (UE) 2016/2102 del Parlamento europeo e del Consiglio
+EN: 
+
+[360] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:251
+IT: Linee guida AGID per l'accessibilità degli strumenti informatici
+EN: 
+
+[361] #: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:252
+IT: WCAG 2.1 (Web Content Accessibility Guidelines) livello AA
+EN: 
+
+[362] #: parco_verismo/templates/parco_verismo/documenti.html:4
+IT: Documenti e Studi - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[363] #: parco_verismo/templates/parco_verismo/documenti.html:10
+IT: Documenti e Studi
+EN: 
+
+[364] #: parco_verismo/templates/parco_verismo/documenti.html:11
+IT:  Esplora i documenti e gli studi pubblicati dal Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[365] #: parco_verismo/templates/parco_verismo/documenti.html:20
+IT: Cerca per titolo, descrizione, autori...
+EN: 
+
+[366] #: parco_verismo/templates/parco_verismo/documenti.html:33
+IT: Tutti i tipi
+EN: 
+
+[367] #: parco_verismo/templates/parco_verismo/index.html:268
+IT: Documenti
+EN: 
+
+[368] #: parco_verismo/templates/parco_verismo/documenti.html:35
+IT: Studi
+EN: 
+
+[369] #: parco_verismo/templates/parco_verismo/documenti.html:36
+IT: Ricerche
+EN: 
+
+[370] #: parco_verismo/templates/parco_verismo/documenti.html:37
+IT: Saggi
+EN: 
+
+[371] #: parco_verismo/templates/parco_verismo/documenti.html:50
+IT: Nessun documento disponibile
+EN: 
+
+[372] #: parco_verismo/templates/parco_verismo/documenti.html:51
+IT:  Al momento non ci sono documenti o studi pubblicati. Torna presto per  consultare i nostri materiali!
+EN: 
+
+[373] #: parco_verismo/templates/parco_verismo/documento_detail.html:27
+IT: Autori:
+EN: 
+
+[374] #: parco_verismo/templates/parco_verismo/documento_detail.html:59
+IT: Parole chiave:
+EN: 
+
+[375] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:99
+IT: Scarica PDF
+EN: 
+
+[376] #: parco_verismo/templates/parco_verismo/documento_detail.html:75
+IT: Visualizza PDF
+EN: 
+
+[377] #: parco_verismo/templates/parco_verismo/documento_detail.html:82
+IT: Torna ai documenti
+EN: 
+
+[378] #: parco_verismo/templates/parco_verismo/eventi.html:4
+IT: Eventi - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[379] #: parco_verismo/templates/parco_verismo/notizie.html:14
+IT: Apri calendario
+EN: 
+
+[380] #: parco_verismo/templates/parco_verismo/notizie.html:28
+IT: Lun
+EN: 
+
+[381] #: parco_verismo/templates/parco_verismo/notizie.html:29
+IT: Mar
+EN: 
+
+[382] #: parco_verismo/templates/parco_verismo/notizie.html:30
+IT: Mer
+EN: 
+
+[383] #: parco_verismo/templates/parco_verismo/notizie.html:31
+IT: Gio
+EN: 
+
+[384] #: parco_verismo/templates/parco_verismo/notizie.html:32
+IT: Ven
+EN: 
+
+[385] #: parco_verismo/templates/parco_verismo/notizie.html:33
+IT: Sab
+EN: 
+
+[386] #: parco_verismo/templates/parco_verismo/notizie.html:34
+IT: Dom
+EN: 
+
+[387] #: parco_verismo/templates/parco_verismo/notizie.html:47
+IT: Evento
+EN: 
+
+[388] #: parco_verismo/templates/parco_verismo/notizie.html:48
+IT: Notizia
+EN: 
+
+[389] #: parco_verismo/templates/parco_verismo/eventi.html:58
+IT: Agenda
+EN: 
+
+[390] #: parco_verismo/templates/parco_verismo/eventi.html:60
+IT: Scopri tutti gli eventi organizzati dal Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[391] #: parco_verismo/templates/parco_verismo/eventi.html:72
+IT: Nessun evento programmato
+EN: 
+
+[392] #: parco_verismo/templates/parco_verismo/eventi.html:73
+IT:  Al momento non ci sono eventi in programma. Torna presto per scoprire le  nostre iniziative!
+EN: 
+
+[393] #: parco_verismo/templates/parco_verismo/notizie.html:129
+IT: Gennaio
+EN: 
+
+[394] #: parco_verismo/templates/parco_verismo/notizie.html:129
+IT: Febbraio
+EN: 
+
+[395] #: parco_verismo/templates/parco_verismo/notizie.html:129
+IT: Marzo
+EN: 
+
+[396] #: parco_verismo/templates/parco_verismo/vizzini.html:105
+IT: Aprile
+EN: 
+
+[397] #: parco_verismo/templates/parco_verismo/notizie.html:130
+IT: Maggio
+EN: 
+
+[398] #: parco_verismo/templates/parco_verismo/notizie.html:130
+IT: Giugno
+EN: 
+
+[399] #: parco_verismo/templates/parco_verismo/notizie.html:131
+IT: Luglio
+EN: 
+
+[400] #: parco_verismo/templates/parco_verismo/notizie.html:131
+IT: Agosto
+EN: 
+
+[401] #: parco_verismo/templates/parco_verismo/vizzini.html:127
+IT: Settembre
+EN: 
+
+[402] #: parco_verismo/templates/parco_verismo/notizie.html:132
+IT: Ottobre
+EN: 
+
+[403] #: parco_verismo/templates/parco_verismo/notizie.html:132
+IT: Novembre
+EN: 
+
+[404] #: parco_verismo/templates/parco_verismo/notizie.html:132
+IT: Dicembre
+EN: 
+
+[405] #: parco_verismo/templates/parco_verismo/notizie.html:136
+IT: Domenica
+EN: 
+
+[406] #: parco_verismo/templates/parco_verismo/notizie.html:136
+IT: Lunedì
+EN: 
+
+[407] #: parco_verismo/templates/parco_verismo/notizie.html:136
+IT: Martedì
+EN: 
+
+[408] #: parco_verismo/templates/parco_verismo/notizie.html:137
+IT: Mercoledì
+EN: 
+
+[409] #: parco_verismo/templates/parco_verismo/notizie.html:137
+IT: Giovedì
+EN: 
+
+[410] #: parco_verismo/templates/parco_verismo/notizie.html:137
+IT: Venerdì
+EN: 
+
+[411] #: parco_verismo/templates/parco_verismo/notizie.html:137
+IT: Sabato
+EN: 
+
+[412] #: parco_verismo/templates/parco_verismo/eventi.html:161
+IT: Nessun evento in questa data
+EN: 
+
+[413] #: parco_verismo/templates/parco_verismo/evento_detail.html:26
+IT: Data e Ora
+EN: 
+
+[414] #: parco_verismo/templates/parco_verismo/evento_detail.html:29
+IT: Inizio:
+EN: 
+
+[415] #: parco_verismo/templates/parco_verismo/evento_detail.html:33
+IT: Fine:
+EN: 
+
+[416] #: parco_verismo/templates/parco_verismo/index.html:372
+IT: Luogo
+EN: 
+
+[417] #: parco_verismo/templates/parco_verismo/evento_detail.html:66
+IT: Torna agli eventi
+EN: 
+
+[418] #: parco_verismo/templates/parco_verismo/evento_detail.html:69
+IT: Vedi calendario
+EN: 
+
+[419] #: parco_verismo/templates/parco_verismo/index.html:18
+IT: Un viaggio nella Sicilia di Verga e Capuana
+EN: 
+
+[420] #: parco_verismo/templates/parco_verismo/index.html:32
+IT: Il
+EN: 
+
+[421] #: parco_verismo/templates/parco_verismo/index.html:35
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso  ricerca, percorsi culturali e progetti che coinvolgono la comunità.  L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo  condiviso, favorendo un turismo culturale responsabile e un territorio in  cui identità, storia e futuro dialogano in modo armonioso.
+EN: 
+
+[422] #: parco_verismo/templates/parco_verismo/index.html:41
+IT: Scopri il Parco
+EN: 
+
+[423] #: parco_verismo/templates/parco_verismo/index.html:42
+IT: Comitato Tecnico
+EN: 
+
+[424] #: parco_verismo/templates/parco_verismo/index.html:55
+IT: Località
+EN: 
+
+[425] #: parco_verismo/templates/parco_verismo/index.html:58
+IT:  Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e  Capuana
+EN: 
+
+[426] #: parco_verismo/templates/parco_verismo/index.html:69
+IT: La patria di Giovanni Verga, dove la letteratura dialoga con i luoghi.
+EN: 
+
+[427] #: parco_verismo/templates/parco_verismo/index.html:70
+IT: Scopri Vizzini
+EN: 
+
+[428] #: parco_verismo/templates/parco_verismo/index.html:80
+IT: Uno dei luoghi più importanti della narrativa capuaniana e del Verismo.
+EN: 
+
+[429] #: parco_verismo/templates/parco_verismo/index.html:81
+IT: Scopri Mineo
+EN: 
+
+[430] #: parco_verismo/templates/parco_verismo/index.html:91
+IT:  Un territorio ricco di storia e di legami con la grande letteratura  siciliana.
+EN: 
+
+[431] #: parco_verismo/templates/parco_verismo/index.html:92
+IT: Scopri Licodia
+EN: 
+
+[432] #: parco_verismo/templates/parco_verismo/index.html:104
+IT: Eventi & Notizie
+EN: 
+
+[433] #: parco_verismo/templates/parco_verismo/index.html:105
+IT: Ultimi eventi e aggiornamenti dal Parco
+EN: 
+
+[434] #: parco_verismo/templates/parco_verismo/index.html:111
+IT: Eventi recenti
+EN: 
+
+[435] #: parco_verismo/templates/parco_verismo/index.html:123
+IT: Nessun evento recente
+EN: 
+
+[436] #: parco_verismo/templates/parco_verismo/index.html:127
+IT: Vedi tutti gli eventi
+EN: 
+
+[437] #: parco_verismo/templates/parco_verismo/index.html:134
+IT: Notizie recenti
+EN: 
+
+[438] #: parco_verismo/templates/parco_verismo/index.html:146
+IT: Nessuna notizia recente
+EN: 
+
+[439] #: parco_verismo/templates/parco_verismo/index.html:150
+IT: Leggi tutte le notizie
+EN: 
+
+[440] #: parco_verismo/templates/parco_verismo/index.html:191
+IT: Patrimonio Letterario
+EN: 
+
+[441] #: parco_verismo/templates/parco_verismo/index.html:198
+IT: Biblioteca Letteraria
+EN: 
+
+[442] #: parco_verismo/templates/parco_verismo/index.html:201
+IT:  Esplora le opere di Giovanni Verga e Luigi Capuana, i pilastri della  letteratura siciliana e italiana.
+EN: 
+
+[443] #: parco_verismo/templates/parco_verismo/index.html:204
+IT: Catalogo completo delle opere
+EN: 
+
+[444] #: parco_verismo/templates/parco_verismo/index.html:205
+IT: Biografie dettagliate degli autori
+EN: 
+
+[445] #: parco_verismo/templates/parco_verismo/index.html:206
+IT: Analisi letterarie e studi critici
+EN: 
+
+[446] #: parco_verismo/templates/parco_verismo/index.html:207
+IT: Contenuti multimediali e interattivi
+EN: 
+
+[447] #: parco_verismo/templates/parco_verismo/index.html:210
+IT: Accedi alla Biblioteca
+EN: 
+
+[448] #: parco_verismo/templates/parco_verismo/index.html:245
+IT: Risorse Documentali
+EN: 
+
+[449] #: parco_verismo/templates/parco_verismo/index.html:252
+IT: Archivi & Documenti
+EN: 
+
+[450] #: parco_verismo/templates/parco_verismo/index.html:255
+IT:  Accedi agli archivi fotografici, agli studi critici e ai documenti storici  sul patrimonio verista.
+EN: 
+
+[451] #: parco_verismo/templates/parco_verismo/index.html:258
+IT: Archivio fotografico del territorio
+EN: 
+
+[452] #: parco_verismo/templates/parco_verismo/index.html:259
+IT: Studi e ricerche scientifiche
+EN: 
+
+[453] #: parco_verismo/templates/parco_verismo/index.html:260
+IT: Documenti storici e manoscritti
+EN: 
+
+[454] #: parco_verismo/templates/parco_verismo/index.html:261
+IT: Risorse per la ricerca accademica
+EN: 
+
+[455] #: parco_verismo/templates/parco_verismo/navbar.html:109
+IT: Opere & Letteratura
+EN: 
+
+[456] #: parco_verismo/templates/parco_verismo/index.html:285
+IT: Esplora le opere, i testi e i protagonisti del movimento verista
+EN: 
+
+[457] #: parco_verismo/templates/parco_verismo/navbar.html:116
+IT: Opere di Verga
+EN: 
+
+[458] #: parco_verismo/templates/parco_verismo/index.html:296
+IT:  Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e  edizioni critiche.
+EN: 
+
+[459] #: parco_verismo/templates/parco_verismo/index.html:297
+IT: Scopri le opere
+EN: 
+
+[460] #: parco_verismo/templates/parco_verismo/navbar.html:123
+IT: Opere di Capuana
+EN: 
+
+[461] #: parco_verismo/templates/parco_verismo/index.html:307
+IT:  Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua  produzione.
+EN: 
+
+[462] #: parco_verismo/templates/parco_verismo/index.html:308
+IT: Esplora Capuana
+EN: 
+
+[463] #: parco_verismo/templates/parco_verismo/navbar.html:128
+IT: Personaggi & Lessico del Verismo
+EN: 
+
+[464] #: parco_verismo/templates/parco_verismo/index.html:318
+IT:  Schede sui personaggi principali, lessico caratteristico e termini letterari  del Verismo.
+EN: 
+
+[465] #: parco_verismo/templates/parco_verismo/index.html:319
+IT: Approfondisci
+EN: 
+
+[466] #: parco_verismo/templates/parco_verismo/index.html:335
+IT: Prenota il tuo itinerario
+EN: 
+
+[467] #: parco_verismo/templates/parco_verismo/index.html:336
+IT:  Compila i tuoi dati e scegli luogo e tipologia d'itinerario. Ti contatteremo  al più presto.
+EN: 
+
+[468] #: parco_verismo/templates/parco_verismo/index.html:353
+IT: Inserisci il tuo nome
+EN: 
+
+[469] #: parco_verismo/templates/parco_verismo/index.html:357
+IT: Cognome
+EN: 
+
+[470] #: parco_verismo/templates/parco_verismo/index.html:358
+IT: Inserisci il tuo cognome
+EN: 
+
+[471] #: parco_verismo/templates/parco_verismo/index.html:363
+IT: Inserisci la tua email
+EN: 
+
+[472] #: parco_verismo/templates/parco_verismo/index.html:368
+IT: Numero di telefono (opzionale)
+EN: 
+
+[473] #: parco_verismo/templates/parco_verismo/index.html:384
+IT: Seleziona...
+EN: 
+
+[474] #: parco_verismo/templates/parco_verismo/index.html:382
+IT: Tipologia itinerario
+EN: 
+
+[475] #: parco_verismo/templates/parco_verismo/index.html:385
+IT: Itinerari verghiani
+EN: 
+
+[476] #: parco_verismo/templates/parco_verismo/index.html:386
+IT: Itinerari capuaniani
+EN: 
+
+[477] #: parco_verismo/templates/parco_verismo/index.html:387
+IT: Itinerari tematici
+EN: 
+
+[478] #: parco_verismo/templates/parco_verismo/index.html:392
+IT: Data preferita visita
+EN: 
+
+[479] #: parco_verismo/templates/parco_verismo/index.html:397
+IT: Numero partecipanti
+EN: 
+
+[480] #: parco_verismo/templates/parco_verismo/index.html:402
+IT: Messaggio o richieste particolari
+EN: 
+
+[481] #: parco_verismo/templates/parco_verismo/index.html:403
+IT: Eventuali richieste o informazioni aggiuntive...
+EN: 
+
+[482] #: parco_verismo/templates/parco_verismo/index.html:408
+IT: Invia richiesta
+EN: 
+
+[483] #: parco_verismo/templates/parco_verismo/index.html:410
+IT: Ti risponderemo via email per confermare la tua richiesta.
+EN: 
+
+[484] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:8
+IT:  Itinerari Verghiani - Scopri i luoghi delle opere di Giovanni Verga  attraverso percorsi letterari nel cuore della Sicilia.
+EN: 
+
+[485] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:10
+IT: Parco Letterario Giovanni Verga e Luigi Capuana - Itinerari Verghiani
+EN: 
+
+[486] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:42
+IT: Mappa Itinerari Verghiani
+EN: 
+
+[487] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:43
+IT: Esplora i percorsi letterari di Giovanni Verga attraverso la Sicilia
+EN: 
+
+[488] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:52
+IT: Percorsi Verghiani
+EN: 
+
+[489] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:80
+IT: Legenda
+EN: 
+
+[490] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:94
+IT: Reset vista
+EN: 
+
+[491] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:104
+IT: Nessun itinerario disponibile
+EN: 
+
+[492] #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:105
+IT:  Al momento non ci sono itinerari verghiani disponibili. Torna presto per  scoprire i percorsi!
+EN: 
+
+[493] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:112
+IT: Torna agli itinerari verghiani
+EN: 
+
+[494] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:116
+IT: Torna agli itinerari capuaniani
+EN: 
+
+[495] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:120
+IT: Torna agli itinerari tematici
+EN: 
+
+[496] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:49
+IT: Descrizione del percorso
+EN: 
+
+[497] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:65
+IT: Apri su Maps
+EN: 
+
+[498] #: parco_verismo/templates/parco_verismo/itinerario_detail.html:76
+IT: Tappe del percorso
+EN: 
+
+[499] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:203
+IT: Licodia Eubea
+EN: 
+
+[500] #: parco_verismo/templates/parco_verismo/vizzini.html:21
+IT: Territorio
+EN: 
+
+[501] #: parco_verismo/templates/parco_verismo/licodia.html:23
+IT: Tra storia, natura e tradizione nel cuore degli Iblei
+EN: 
+
+[502] #: parco_verismo/templates/parco_verismo/vizzini.html:35
+IT: Introduzione
+EN: 
+
+[503] #: parco_verismo/templates/parco_verismo/licodia.html:36
+IT:  \n                 <p class=\ >A 600 metri sul livello del mare, sul  versante nord occidentale degli Iblei, sorge Licodia Eubea. Il significato  del toponimo è incerto, ma gli studi concordano nel riconoscere nel  fondovalle la presenza di un'antica civiltà, documentata da una vasta rete  di necropoli.</p>\n                 <p class=\ >In epoca moderna il luogo venne  identificato con la <strong>subcolonia greca Lentini Subcensueta</strong> e  successivamente con <strong>La Ciura</strong>, fino ad assumere nel  <strong>1872</strong> il nome attuale. Le ricerche archeologiche di  <strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</strong> hanno  confermato l'esistenza di una rilevante borgata sicula, con una necropoli  estesa e strutturata, databile all'<strong>VIII secolo a.C.</strong> Il  Borgo rappresenta ancora oggi il nucleo più antico dell'abitato,  sopravvissuto al terremoto del 1693.</p>\n                 
+EN: 
+
+[504] #: parco_verismo/templates/parco_verismo/licodia.html:55
+IT: Bosco Vaito
+EN: 
+
+[505] #: parco_verismo/templates/parco_verismo/licodia.html:56
+IT:  \n                 <p class=\ >Bosco sporadico di circa <strong>84  ettari</strong>, caratterizzato dalla presenza della <em>sughera (Quercus  suber)</em>, specie arborea tipica della macchia mediterranea e  particolarmente rara in questa zona degli Iblei.</p>\n                 <p class=\ >Rappresenta una continuità  naturale con il più esteso <strong>Bosco di Santo Pietro</strong>, situato  verso sud, formando un corridoio ecologico di notevole interesse botanico e  faunistico. L'area è ideale per escursioni naturalistiche, birdwatching e  fotografia paesaggistica, offrendo ai visitatori sentieri immersi nella  vegetazione spontanea e panorami suggestivi sul territorio circostante. Il  bosco conserva un ecosistema prezioso che testimonia l'antico rapporto tra  l'uomo e l'ambiente ibleo.</p>\n                 
+EN: 
+
+[506] #: parco_verismo/templates/parco_verismo/licodia.html:75
+IT: Lago Dirillo
+EN: 
+
+[507] #: parco_verismo/templates/parco_verismo/licodia.html:76
+IT:  \n                 <p class=\ >Bacino artificiale originato dalla  <strong>diga Ragoleto (1961)</strong>, alimentato dal fiume Dirillo, uno dei  principali corsi d'acqua del territorio ibleo. L'invaso, nato per scopi  irrigui e di approvvigionamento idrico, ha trasformato il paesaggio creando  un ambiente lacustre di grande suggestione.</p>\n                 <p class=\ >Nelle aree circostanti sono  stati individuati <strong>sepolcreti e strutture di epoca tardo romana</ strong> (IV secolo d.C.), testimonianza dell'antica presenza umana lungo le  sponde del fiume. Il lago offre un paesaggio ideale per passeggiate  rilassanti, birdwatching e fotografia naturalistica, attirando numerose  specie di avifauna stanziale e migratoria. Le sue acque tranquille e il  contesto naturale incontaminato lo rendono meta privilegiata per gli amanti  della natura e della storia.</p>\n                 
+EN: 
+
+[508] #: parco_verismo/templates/parco_verismo/vizzini.html:94
+IT: Tradizioni e Feste
+EN: 
+
+[509] #: parco_verismo/templates/parco_verismo/licodia.html:95
+IT:  Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  licodiana
+EN: 
+
+[510] #: parco_verismo/templates/parco_verismo/vizzini.html:115
+IT: Settimana Santa
+EN: 
+
+[511] #: parco_verismo/templates/parco_verismo/vizzini.html:116
+IT: Marzo/Aprile
+EN: 
+
+[512] #: parco_verismo/templates/parco_verismo/licodia.html:106
+IT:  L'evento religioso più sentito. Le celebrazioni culminano nel  <strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale  \  pasquale.
+EN: 
+
+[513] #: parco_verismo/templates/parco_verismo/licodia.html:115
+IT: Festa dell'Uva
+EN: 
+
+[514] #: parco_verismo/templates/parco_verismo/licodia.html:116
+IT: Prima domenica di settembre
+EN: 
+
+[515] #: parco_verismo/templates/parco_verismo/licodia.html:117
+IT:  Antica ricorrenza agricola con degustazioni, iniziative culturali e la  tradizionale <strong>pigiatura dell'uva nel tino</strong>.
+EN: 
+
+[516] #: parco_verismo/templates/parco_verismo/licodia.html:126
+IT: Rassegna Archeologica
+EN: 
+
+[517] #: parco_verismo/templates/parco_verismo/licodia.html:128
+IT:  Festival cinematografico tra i principali eventi italiani dedicati alla  <strong>divulgazione archeologica</strong>.
+EN: 
+
+[518] #: parco_verismo/templates/parco_verismo/licodia.html:137
+IT: Sagra della Patacò
+EN: 
+
+[519] #: parco_verismo/templates/parco_verismo/licodia.html:139
+IT:  Evento dedicato alla <strong>farina di fave secche</strong>, pietanza  tradizionale licodiana.
+EN: 
+
+[520] #: parco_verismo/templates/parco_verismo/vizzini.html:150
+IT: Patrimonio Storico
+EN: 
+
+[521] #: parco_verismo/templates/parco_verismo/licodia.html:151
+IT: Scopri i monumenti e i luoghi simbolo di Licodia Eubea
+EN: 
+
+[522] #: parco_verismo/templates/parco_verismo/licodia.html:158
+IT: Sito Storico Principale
+EN: 
+
+[523] #: parco_verismo/templates/parco_verismo/vizzini.html:197
+IT: Chiese e Luoghi di Culto
+EN: 
+
+[524] #: parco_verismo/templates/parco_verismo/vizzini.html:198
+IT: Un patrimonio religioso ricco di storia e arte sacra
+EN: 
+
+[525] #: parco_verismo/templates/parco_verismo/vizzini.html:252
+IT: Cultura e Patrimonio
+EN: 
+
+[526] #: parco_verismo/templates/parco_verismo/vizzini.html:253
+IT: Musei e Cultura
+EN: 
+
+[527] #: parco_verismo/templates/parco_verismo/licodia.html:254
+IT: Testimonianze della storia millenaria del territorio
+EN: 
+
+[528] #: parco_verismo/templates/parco_verismo/vizzini.html:265
+IT: Museo
+EN: 
+
+[529] #: parco_verismo/templates/parco_verismo/licodia.html:307
+IT: Monumento
+EN: 
+
+[530] #: parco_verismo/templates/parco_verismo/licodia.html:328
+IT: Esplora Licodia Eubea
+EN: 
+
+[531] #: parco_verismo/templates/parco_verismo/vizzini.html:329
+IT: Scopri i luoghi di interesse sulla mappa interattiva
+EN: 
+
+[532] #: parco_verismo/templates/parco_verismo/vizzini.html:336
+IT: Filtra per categoria
+EN: 
+
+[533] #: parco_verismo/templates/parco_verismo/vizzini.html:341
+IT: Cerca un luogo...
+EN: 
+
+[534] #: parco_verismo/templates/parco_verismo/vizzini.html:349
+IT: Servizi Pubblici
+EN: 
+
+[535] #: parco_verismo/templates/parco_verismo/vizzini.html:353
+IT: Servizi Culturali
+EN: 
+
+[536] #: parco_verismo/templates/parco_verismo/vizzini.html:357
+IT: Prodotti Tipici
+EN: 
+
+[537] #: parco_verismo/templates/parco_verismo/vizzini.html:361
+IT: Ospitalità
+EN: 
+
+[538] #: parco_verismo/templates/parco_verismo/vizzini.html:365
+IT: Luoghi Verghiani
+EN: 
+
+[539] #: parco_verismo/templates/parco_verismo/vizzini.html:369
+IT: Ristorazione
+EN: 
+
+[540] #: parco_verismo/templates/parco_verismo/vizzini.html:373
+IT: Mostra tutti
+EN: 
+
+[541] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:188
+IT: Mineo
+EN: 
+
+[542] #: parco_verismo/templates/parco_verismo/mineo.html:23
+IT: Patria di Luigi Capuana, culla del Verismo siciliano
+EN: 
+
+[543] #: parco_verismo/templates/parco_verismo/mineo.html:36
+IT:  \n                 <p class=\ >Mineo sorge a 500 metri sul livello  del mare, nel cuore degli Iblei, dominando la piana di Catania. Città di  antichissime origini, identificata con l'antica <strong>Menai</strong> o  <strong>Menaion</strong> citata dalle fonti classiche.</p>\n                 <p class=\ >Conserva tracce di insediamenti  che risalgono all'età del bronzo. Nel corso dei secoli Mineo è stata teatro  di dominazioni greche, romane, bizantine, arabe e normanne. È universalmente  nota per aver dato i natali a <strong>Luigi Capuana</strong> (1839-1915),  uno dei padri fondatori del <strong>Verismo italiano</strong>, narratore e  teorico della letteratura che ha immortalato nei suoi racconti la vita e le  tradizioni del popolo siciliano.</p>\n                 
+EN: 
+
+[544] #: parco_verismo/templates/parco_verismo/mineo.html:55
+IT: Casa Natale di Luigi Capuana
+EN: 
+
+[545] #: parco_verismo/templates/parco_verismo/mineo.html:56
+IT:  \n                 <p class=\ >Nel cuore del centro storico di Mineo  si trova la <strong>Casa Natale di Luigi Capuana</strong>, oggi trasformata  in <strong>museo letterario</strong> dedicato alla vita e all'opera dello  scrittore verista.</p>\n                 <p class=\ >L'edificio, risalente al XVIII  secolo, conserva arredi d'epoca, manoscritti originali, prime edizioni delle  sue opere e oggetti personali. La casa rappresenta un luogo imprescindibile  per comprendere il contesto culturale che ha ispirato capolavori come  <em>Giacinta</em>, <em>Il Marchese di Roccaverdina</em> e le celebri novelle  per l'infanzia.</p>\n                 
+EN: 
+
+[546] #: parco_verismo/templates/parco_verismo/mineo.html:75
+IT: Castello di Mineo
+EN: 
+
+[547] #: parco_verismo/templates/parco_verismo/mineo.html:76
+IT:  \n                 <p class=\ >Il <strong>Castello di Mineo</ strong>, o <strong>Castello dei Palagonia</strong>, domina dall'alto il  profilo della città ed è uno dei simboli architettonici più significativi  del territorio.</p>\n                 <p class=\ >Eretto in epoca medievale e più  volte rimaneggiato, il castello fu residenza della nobile famiglia  Palagonia. Nonostante i segni del tempo, il complesso conserva ancora  imponenti mura, torri e strutture murarie che testimoniano l'importanza  strategica e difensiva del sito. Dalle sue terrazze si gode di un panorama  spettacolare sulla vallata circostante e sui monti Iblei.</p>\n                 
+EN: 
+
+[548] #: parco_verismo/templates/parco_verismo/mineo.html:95
+IT:  Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  mineota
+EN: 
+
+[549] #: parco_verismo/templates/parco_verismo/mineo.html:106
+IT:  Processioni solenni, rappresentazioni della Passione e antichi riti  accompagnano i fedeli in un'atmosfera di <strong>intensa partecipazione  popolare</strong>.
+EN: 
+
+[550] #: parco_verismo/templates/parco_verismo/mineo.html:115
+IT: Festa di Sant'Agrippina
+EN: 
+
+[551] #: parco_verismo/templates/parco_verismo/mineo.html:117
+IT:  La celebrazione più importante dell'anno, con <strong>processioni,  luminarie</strong>, concerti bandistici e spettacoli pirotecnici.
+EN: 
+
+[552] #: parco_verismo/templates/parco_verismo/mineo.html:126
+IT: Premio Luigi Capuana
+EN: 
+
+[553] #: parco_verismo/templates/parco_verismo/mineo.html:128
+IT:  Riconoscimento nazionale dedicato alla letteratura, con scrittori e critici  che celebrano l'eredità del <strong>grande verista</strong>.
+EN: 
+
+[554] #: parco_verismo/templates/parco_verismo/mineo.html:137
+IT: Sagra dell'Arancia
+EN: 
+
+[555] #: parco_verismo/templates/parco_verismo/mineo.html:138
+IT: Febbraio/Marzo
+EN: 
+
+[556] #: parco_verismo/templates/parco_verismo/mineo.html:139
+IT:  Celebrazione dell'<strong>arancia rossa di Sicilia</strong>, con  degustazioni, stand gastronomici e attività culturali.
+EN: 
+
+[557] #: parco_verismo/templates/parco_verismo/mineo.html:151
+IT: Scopri i monumenti e i luoghi simbolo di Mineo
+EN: 
+
+[558] #: parco_verismo/templates/parco_verismo/vizzini.html:158
+IT: Centro Storico
+EN: 
+
+[559] #: parco_verismo/templates/parco_verismo/mineo.html:254
+IT: Testimonianze della storia letteraria e archeologica del territorio
+EN: 
+
+[560] #: parco_verismo/templates/parco_verismo/mineo.html:328
+IT: Esplora Mineo
+EN: 
+
+[561] #: parco_verismo/templates/parco_verismo/mineo.html:365
+IT: Luoghi Capuaniani
+EN: 
+
+[562] #: parco_verismo/templates/parco_verismo/missione_visione.html:4
+IT: Missione e Visione
+EN: 
+
+[563] #: parco_verismo/templates/parco_verismo/missione_visione.html:20
+IT: Chi Siamo
+EN: 
+
+[564] #: parco_verismo/templates/parco_verismo/missione_visione.html:22
+IT: Il Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[565] #: parco_verismo/templates/parco_verismo/missione_visione.html:25
+IT:  Trasformare la letteratura in dispositivo contemporaneo di sviluppo,  identità e partecipazione civica
+EN: 
+
+[566] #: parco_verismo/templates/parco_verismo/missione_visione.html:118
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana nasce per costruire nei territori di  Vizzini, Mineo e Licodia Eubea un modello integrato di welfare culturale  fondato sulla valorizzazione dell&rsquo;eredità verista di Giovanni Verga e  Luigi Capuana come motore di crescita sociale, educativa e turistica.
+EN: 
+
+[567] #: parco_verismo/templates/parco_verismo/missione_visione.html:128
+IT: Letteratura come Dispositivo
+EN: 
+
+[568] #: parco_verismo/templates/parco_verismo/missione_visione.html:129
+IT:  Trasformare la letteratura in uno strumento contemporaneo di sviluppo,  identità e partecipazione civica.
+EN: 
+
+[569] #: parco_verismo/templates/parco_verismo/missione_visione.html:138
+IT: Crescita Integrata
+EN: 
+
+[570] #: parco_verismo/templates/parco_verismo/missione_visione.html:139
+IT:  Sviluppo sociale, educativo e turistico attraverso la valorizzazione del  patrimonio verghiano-capuaniano.
+EN: 
+
+[571] #: parco_verismo/templates/parco_verismo/missione_visione.html:148
+IT: Radicamento Territoriale
+EN: 
+
+[572] #: parco_verismo/templates/parco_verismo/missione_visione.html:149
+IT:  Coinvolgimento delle comunità locali di Vizzini, Mineo e Licodia Eubea nel  modello di welfare culturale.
+EN: 
+
+[573] #: parco_verismo/templates/parco_verismo/missione_visione.html:204
+IT:  Non custodire la memoria, ma riattivare il modo in cui essa viene riattivata  nel presente. Il patrimonio culturale non deve rimanere un reperto, ma  diventare infrastruttura viva di senso, di legami e di futuro per le  comunità coinvolte.
+EN: 
+
+[574] #: parco_verismo/templates/parco_verismo/missione_visione.html:209
+IT: Azioni Strategiche
+EN: 
+
+[575] #: parco_verismo/templates/parco_verismo/missione_visione.html:213
+IT: Costituzione di un Comitato Tecnico-Scientifico
+EN: 
+
+[576] #: parco_verismo/templates/parco_verismo/missione_visione.html:217
+IT: Messa in rete dei servizi culturali e turistici
+EN: 
+
+[577] #: parco_verismo/templates/parco_verismo/missione_visione.html:221
+IT: Creazione di itinerari tematici e digitali
+EN: 
+
+[578] #: parco_verismo/templates/parco_verismo/missione_visione.html:225
+IT: Accordi con università e ITS
+EN: 
+
+[579] #: parco_verismo/templates/parco_verismo/missione_visione.html:229
+IT: Premio Verga-Capuana per le scuole
+EN: 
+
+[580] #: parco_verismo/templates/parco_verismo/missione_visione.html:233
+IT: Giornata di Studi annuale
+EN: 
+
+[581] #: parco_verismo/templates/parco_verismo/missione_visione.html:237
+IT: Manifestazioni teatrali e produzioni culturali contemporanee
+EN: 
+
+[582] #: parco_verismo/templates/parco_verismo/missione_visione.html:261
+IT: Riconoscimento Istituzionale
+EN: 
+
+[583] #: parco_verismo/templates/parco_verismo/missione_visione.html:264
+IT:  Il progetto &egrave; promosso dagli Enti locali del territorio ed &egrave;  formalmente riconosciuto e finanziato dalla Regione Siciliana ai sensi del  D.D.G. n. 1159 del 6 marzo 2025, quale iniziativa di interesse pubblico  finalizzata alla realizzazione del Parco Letterario Giovanni Verga e Luigi Capuana. Questo  riconoscimento istituzionale sancisce il valore strategico  dell&rsquo;intervento e ne legittima l&rsquo;attuazione in un orizzonte di  continuità e pianificazione.
+EN: 
+
+[584] #: parco_verismo/templates/parco_verismo/missione_visione.html:279
+IT: I Nostri Valori Fondamentali
+EN: 
+
+[585] #: parco_verismo/templates/parco_verismo/missione_visione.html:282
+IT:  Un ecosistema coerente e durevole di ricerca, formazione, fruizione pubblica  e narrazione condivisa.
+EN: 
+
+[586] #: parco_verismo/templates/parco_verismo/missione_visione.html:292
+IT: Ricerca
+EN: 
+
+[587] #: parco_verismo/templates/parco_verismo/missione_visione.html:293
+IT:  Approfondimento continuo del patrimonio verghiano-capuaniano attraverso  studi e analisi critiche.
+EN: 
+
+[588] #: parco_verismo/templates/parco_verismo/missione_visione.html:302
+IT: Formazione
+EN: 
+
+[589] #: parco_verismo/templates/parco_verismo/missione_visione.html:303
+IT:  Sviluppo di competenze e consapevolezza culturale nelle comunità locali, in  particolare tra i giovani.
+EN: 
+
+[590] #: parco_verismo/templates/parco_verismo/missione_visione.html:312
+IT: Fruizione Pubblica
+EN: 
+
+[591] #: parco_verismo/templates/parco_verismo/missione_visione.html:313
+IT:  Accesso diffuso e inclusivo al patrimonio culturale per tutta la comunità,  dai residenti ai visitatori.
+EN: 
+
+[592] #: parco_verismo/templates/parco_verismo/missione_visione.html:322
+IT: Narrazione Condivisa
+EN: 
+
+[593] #: parco_verismo/templates/parco_verismo/missione_visione.html:323
+IT:  Costruzione collettiva di significati e storie che valorizzano il patrimonio  nel presente.
+EN: 
+
+[594] #: parco_verismo/templates/parco_verismo/navbar.html:31
+IT: Apri navigazione
+EN: 
+
+[595] #: parco_verismo/templates/parco_verismo/navbar.html:42
+IT: Il Parco
+EN: 
+
+[596] #: parco_verismo/templates/parco_verismo/navbar.html:45
+IT: Missioni e visione
+EN: 
+
+[597] #: parco_verismo/templates/parco_verismo/navbar.html:46
+IT: Comitato tecnico
+EN: 
+
+[598] #: parco_verismo/templates/parco_verismo/navbar.html:47
+IT: Regolamenti & documenti
+EN: 
+
+[599] #: parco_verismo/templates/parco_verismo/navbar.html:48
+IT: Partner e rete territoriale
+EN: 
+
+[600] #: parco_verismo/templates/parco_verismo/navbar.html:49
+IT: Accrediti e finanziamenti
+EN: 
+
+[601] #: parco_verismo/templates/parco_verismo/navbar.html:56
+IT: Luoghi & Percorsi
+EN: 
+
+[602] #: parco_verismo/templates/parco_verismo/navbar.html:79
+IT: Eventi & News
+EN: 
+
+[603] #: parco_verismo/templates/parco_verismo/navbar.html:89
+IT: Calendario
+EN: 
+
+[604] #: parco_verismo/templates/parco_verismo/notizie.html:58
+IT: News
+EN: 
+
+[605] #: parco_verismo/templates/parco_verismo/navbar.html:133
+IT: Luoghi delle Opere
+EN: 
+
+[606] #: parco_verismo/templates/parco_verismo/navbar.html:143
+IT: Archivio fotografico
+EN: 
+
+[607] #: parco_verismo/templates/parco_verismo/navbar.html:160
+IT: Prenota
+EN: 
+
+[608] #: parco_verismo/templates/parco_verismo/navbar.html:167
+IT: Cambia lingua
+EN: 
+
+[609] #: parco_verismo/templates/parco_verismo/note_legali.html:58
+IT: 1. Informazioni Generali
+EN: 
+
+[610] #: parco_verismo/templates/parco_verismo/note_legali.html:60
+IT:  Il presente sito web è gestito dal Parco Letterario Giovanni Verga e Luigi Capuana,  un'iniziativa culturale promossa dai Comuni di Vizzini, Licodia Eubea e  Mineo (Provincia di Catania, Sicilia) per la valorizzazione del patrimonio  letterario verista siciliano.
+EN: 
+
+[611] #: parco_verismo/templates/parco_verismo/note_legali.html:64
+IT: Titolare del sito
+EN: 
+
+[612] #: parco_verismo/templates/parco_verismo/note_legali.html:65
+IT: Sede legale
+EN: 
+
+[613] #: parco_verismo/templates/parco_verismo/note_legali.html:68
+IT: P.IVA/Codice Fiscale
+EN: 
+
+[614] #: parco_verismo/templates/parco_verismo/note_legali.html:71
+IT: 2. Oggetto e Finalità del Sito
+EN: 
+
+[615] #: parco_verismo/templates/parco_verismo/note_legali.html:73
+IT: Il sito www.parcoverismo.it ha lo scopo di:
+EN: 
+
+[616] #: parco_verismo/templates/parco_verismo/note_legali.html:76
+IT:  Promuovere il patrimonio letterario verista siciliano, con particolare  riferimento alle opere di Giovanni Verga e Luigi Capuana
+EN: 
+
+[617] #: parco_verismo/templates/parco_verismo/note_legali.html:77
+IT:  Fornire informazioni su eventi culturali, itinerari letterari e iniziative  del Parco
+EN: 
+
+[618] #: parco_verismo/templates/parco_verismo/note_legali.html:78
+IT:  Diffondere la conoscenza del territorio siciliano legato alla letteratura  verista
+EN: 
+
+[619] #: parco_verismo/templates/parco_verismo/note_legali.html:79
+IT:  Facilitare l'accesso a documenti, studi e risorse bibliografiche sul Verismo
+EN: 
+
+[620] #: parco_verismo/templates/parco_verismo/note_legali.html:82
+IT: 3. Contenuti del Sito
+EN: 
+
+[621] #: parco_verismo/templates/parco_verismo/note_legali.html:84
+IT:  I contenuti presenti sul sito (testi, immagini, documenti, multimedia) sono  forniti a scopo informativo e culturale. Il Parco Letterario Giovanni Verga e Luigi Capuana si  impegna a mantenere le informazioni aggiornate e accurate, ma non può  garantire l'assenza di errori o omissioni.
+EN: 
+
+[622] #: parco_verismo/templates/parco_verismo/note_legali.html:87
+IT:  Il Parco si riserva il diritto di modificare, aggiornare o rimuovere  qualsiasi contenuto in qualsiasi momento senza preavviso.
+EN: 
+
+[623] #: parco_verismo/templates/parco_verismo/note_legali.html:90
+IT: 4. Proprietà Intellettuale
+EN: 
+
+[624] #: parco_verismo/templates/parco_verismo/note_legali.html:92
+IT:  Tutti i contenuti originali presenti sul sito (testi, grafica, loghi,  immagini, video, software) sono di proprietà del Parco Letterario del  Verismo o dei rispettivi autori e sono protetti dalle leggi italiane ed  internazionali sul diritto d'autore e sulla proprietà intellettuale.
+EN: 
+
+[625] #: parco_verismo/templates/parco_verismo/note_legali.html:95
+IT: È consentito:
+EN: 
+
+[626] #: parco_verismo/templates/parco_verismo/note_legali.html:98
+IT: Visualizzare e scaricare i contenuti per uso personale, non commerciale
+EN: 
+
+[627] #: parco_verismo/templates/parco_verismo/note_legali.html:99
+IT: Citare estratti dei contenuti indicando chiaramente la fonte
+EN: 
+
+[628] #: parco_verismo/templates/parco_verismo/note_legali.html:100
+IT: Condividere link alle pagine del sito
+EN: 
+
+[629] #: parco_verismo/templates/parco_verismo/note_legali.html:103
+IT: È vietato:
+EN: 
+
+[630] #: parco_verismo/templates/parco_verismo/note_legali.html:106
+IT:  Riprodurre, duplicare, copiare, vendere o sfruttare commercialmente i  contenuti senza autorizzazione scritta
+EN: 
+
+[631] #: parco_verismo/templates/parco_verismo/note_legali.html:107
+IT: Modificare o alterare i contenuti
+EN: 
+
+[632] #: parco_verismo/templates/parco_verismo/note_legali.html:108
+IT: Rimuovere indicazioni di copyright o altre note di proprietà
+EN: 
+
+[633] #: parco_verismo/templates/parco_verismo/note_legali.html:111
+IT: 4.1 Opere Letterarie
+EN: 
+
+[634] #: parco_verismo/templates/parco_verismo/note_legali.html:113
+IT:  Le opere letterarie di Giovanni Verga, Luigi Capuana e altri autori veristi  citate o collegate dal sito sono di pubblico dominio. I link a Wikisource e  altre biblioteche digitali rimandano a risorse liberamente accessibili.
+EN: 
+
+[635] #: parco_verismo/templates/parco_verismo/note_legali.html:116
+IT: 4.2 Immagini e Fotografie
+EN: 
+
+[636] #: parco_verismo/templates/parco_verismo/note_legali.html:118
+IT:  Le fotografie e le immagini presenti nel sito sono di proprietà del Parco  Letterario del Verismo, dei Comuni partner, o utilizzate previa  autorizzazione. Eventuali immagini di terzi sono utilizzate nel rispetto  delle licenze d'uso applicabili.
+EN: 
+
+[637] #: parco_verismo/templates/parco_verismo/note_legali.html:121
+IT: 5. Link Esterni
+EN: 
+
+[638] #: parco_verismo/templates/parco_verismo/note_legali.html:123
+IT:  Il sito contiene link a siti web esterni gestiti da terze parti. Il Parco  Letterario del Verismo non ha controllo su tali siti e non è responsabile  dei loro contenuti, delle loro politiche sulla privacy o delle loro pratiche.
+EN: 
+
+[639] #: parco_verismo/templates/parco_verismo/note_legali.html:126
+IT:  I link esterni sono forniti come servizio agli utenti e la loro presenza non  implica approvazione o raccomandazione da parte del Parco.
+EN: 
+
+[640] #: parco_verismo/templates/parco_verismo/note_legali.html:129
+IT: 6. Esclusione di Responsabilità
+EN: 
+
+[641] #: parco_verismo/templates/parco_verismo/note_legali.html:131
+IT: Il Parco Letterario Giovanni Verga e Luigi Capuana:
+EN: 
+
+[642] #: parco_verismo/templates/parco_verismo/note_legali.html:134
+IT:  Non garantisce che il sito sarà sempre disponibile, privo di errori o virus
+EN: 
+
+[643] #: parco_verismo/templates/parco_verismo/note_legali.html:135
+IT:  Non è responsabile per interruzioni del servizio, malfunzionamenti tecnici o  perdite di dati
+EN: 
+
+[644] #: parco_verismo/templates/parco_verismo/note_legali.html:136
+IT:  Non è responsabile per danni diretti o indiretti derivanti dall'uso del sito
+EN: 
+
+[645] #: parco_verismo/templates/parco_verismo/note_legali.html:137
+IT:  Non garantisce l'accuratezza, completezza o tempestività delle informazioni  fornite
+EN: 
+
+[646] #: parco_verismo/templates/parco_verismo/note_legali.html:140
+IT: 7. Uso Responsabile
+EN: 
+
+[647] #: parco_verismo/templates/parco_verismo/note_legali.html:142
+IT:  L'utente si impegna a utilizzare il sito in modo lecito e responsabile. È  vietato:
+EN: 
+
+[648] #: parco_verismo/templates/parco_verismo/note_legali.html:145
+IT: Violare leggi, regolamenti o diritti di terzi
+EN: 
+
+[649] #: parco_verismo/templates/parco_verismo/note_legali.html:146
+IT: Trasmettere virus, malware o codice dannoso
+EN: 
+
+[650] #: parco_verismo/templates/parco_verismo/note_legali.html:147
+IT: Tentare accessi non autorizzati ai sistemi informatici
+EN: 
+
+[651] #: parco_verismo/templates/parco_verismo/note_legali.html:148
+IT: Sovraccaricare i server con richieste automatizzate eccessive
+EN: 
+
+[652] #: parco_verismo/templates/parco_verismo/note_legali.html:149
+IT: Utilizzare il sito per attività commerciali non autorizzate
+EN: 
+
+[653] #: parco_verismo/templates/parco_verismo/note_legali.html:152
+IT: 8. Modifiche alle Note Legali
+EN: 
+
+[654] #: parco_verismo/templates/parco_verismo/note_legali.html:154
+IT:  Il Parco Letterario Giovanni Verga e Luigi Capuana si riserva il diritto di modificare le  presenti Note Legali in qualsiasi momento. Le modifiche entrano in vigore  dal momento della loro pubblicazione sul sito. Si invita l'utente a  consultare periodicamente questa pagina.
+EN: 
+
+[655] #: parco_verismo/templates/parco_verismo/note_legali.html:157
+IT: 9. Legge Applicabile e Foro Competente
+EN: 
+
+[656] #: parco_verismo/templates/parco_verismo/note_legali.html:159
+IT:  Le presenti Note Legali sono regolate dalla legge italiana. Per qualsiasi  controversia relativa all'uso del sito, sarà competente in via esclusiva il  Foro di Catania.
+EN: 
+
+[657] #: parco_verismo/templates/parco_verismo/note_legali.html:162
+IT: 10. Privacy e Cookie
+EN: 
+
+[658] #: parco_verismo/templates/parco_verismo/note_legali.html:164
+IT:  Per informazioni sul trattamento dei dati personali e sull'uso dei cookie,  consultare:
+EN: 
+
+[659] #: parco_verismo/templates/parco_verismo/note_legali.html:172
+IT: 11. Contatti
+EN: 
+
+[660] #: parco_verismo/templates/parco_verismo/note_legali.html:174
+IT: Per informazioni, segnalazioni o richieste relative al sito:
+EN: 
+
+[661] #: parco_verismo/templates/parco_verismo/note_legali.html:187
+IT: 12. Crediti
+EN: 
+
+[662] #: parco_verismo/templates/parco_verismo/note_legali.html:189
+IT: Sviluppo e Design
+EN: 
+
+[663] #: parco_verismo/templates/parco_verismo/note_legali.html:190
+IT: Hosting
+EN: 
+
+[664] #: parco_verismo/templates/parco_verismo/notizia_detail.html:37
+IT: Torna alle news
+EN: 
+
+[665] #: parco_verismo/templates/parco_verismo/notizie.html:4
+IT: Notizie - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[666] #: parco_verismo/templates/parco_verismo/notizie.html:59
+IT: News & Novità
+EN: 
+
+[667] #: parco_verismo/templates/parco_verismo/notizie.html:60
+IT: Rimani aggiornato sulle ultime novità del Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[668] #: parco_verismo/templates/parco_verismo/notizie.html:72
+IT: Nessuna notizia disponibile
+EN: 
+
+[669] #: parco_verismo/templates/parco_verismo/notizie.html:73
+IT:  Al momento non ci sono notizie pubblicate. Torna presto per leggere le  nostre novità!
+EN: 
+
+[670] #: parco_verismo/templates/parco_verismo/notizie.html:159
+IT: Nessun contenuto in questa data
+EN: 
+
+[671] #: parco_verismo/templates/parco_verismo/opera_detail.html:20
+IT: Trama
+EN: 
+
+[672] #: parco_verismo/templates/parco_verismo/opera_detail.html:24
+IT: Analisi e Contesto
+EN: 
+
+[673] #: parco_verismo/templates/parco_verismo/opera_detail.html:31
+IT: Leggi l'opera completa su Wikisource
+EN: 
+
+[674] #: parco_verismo/templates/parco_verismo/opera_detail.html:34
+IT:  Il link ti porterà alla pagina di Wikisource dove potrai leggere l'opera  integrale gratuitamente.
+EN: 
+
+[675] #: parco_verismo/templates/parco_verismo/opere_per_autore.html:30
+IT: Anno di pubblicazione:
+EN: 
+
+[676] #: parco_verismo/templates/parco_verismo/opere_per_autore.html:41
+IT: Nessuna opera disponibile per questo autore.
+EN: 
+
+[677] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:6
+IT: Partner e Rete Territoriale - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[678] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:21
+IT: Partner & Rete
+EN: 
+
+[679] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:22
+IT: Partner & Rete Territoriale
+EN: 
+
+[680] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:23
+IT:  Una rete integrata di eccellenza con istituzioni, amministrazioni locali e  organizzazioni internazionali.
+EN: 
+
+[681] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:74
+IT: Partner Istituzionali
+EN: 
+
+[682] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:77
+IT:  Collaborazioni strategiche con enti pubblici e istituzioni per la promozione  della cultura verista.
+EN: 
+
+[683] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:88
+IT: Ente Riconoscente
+EN: 
+
+[684] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:89
+IT:  Riconoscimento e supporto della Regione Siciliana al Parco Letterario come  polo di valorizzazione del patrimonio culturale regionale.
+EN: 
+
+[685] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:150
+IT: Scopri
+EN: 
+
+[686] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:99
+IT: Comuni di Vizzini, Mineo, Licodia
+EN: 
+
+[687] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:100
+IT: Partner Territoriali
+EN: 
+
+[688] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:101
+IT:  Amministrazioni locali impegnate nella conservazione del patrimonio storico- letterario e nello sviluppo culturale sostenibile del territorio.
+EN: 
+
+[689] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:111
+IT: Università della Sicilia
+EN: 
+
+[690] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:112
+IT: Partner Accademico
+EN: 
+
+[691] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:113
+IT:  Collaborazione con atenei regionali per ricerca, formazione e produzione di  contenuti scientifici sulla letteratura verista.
+EN: 
+
+[692] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:123
+IT: Istituto Verga
+EN: 
+
+[693] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:124
+IT: Partner Culturale
+EN: 
+
+[694] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:125
+IT:  Ente dedicato allo studio e alla diffusione dell'opera di Giovanni Verga a  livello nazionale e internazionale.
+EN: 
+
+[695] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:135
+IT: CIPIM Sicilia
+EN: 
+
+[696] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:136
+IT: Partner Strategico
+EN: 
+
+[697] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:137
+IT:  Collaborazione con il Centro di Iniziativa Popolare di Isola di Capo Rizzuto  per lo sviluppo di progetti culturali integrati.
+EN: 
+
+[698] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:147
+IT: Parchi Letterari Internazionali
+EN: 
+
+[699] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:148
+IT: Rete Mondiale
+EN: 
+
+[700] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:149
+IT:  Iscrizione e partecipazione attiva alla rete internazionale dei Parchi  Letterari per lo scambio di esperienze e migliori pratiche.
+EN: 
+
+[701] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162
+IT: Rete
+EN: 
+
+[702] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162
+IT: Territoriale
+EN: 
+
+[703] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:165
+IT:  Una maglia fitta di servizi e strutture distribuite nel territorio dei tre  comuni.
+EN: 
+
+[704] #: parco_verismo/templates/parco_verismo/vizzini.html:4
+IT: Vizzini
+EN: 
+
+[705] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:174
+IT: Patria di Giovanni Verga
+EN: 
+
+[706] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:176
+IT: Centro Visitatori
+EN: 
+
+[707] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:177
+IT: Percorsi tematici letterari
+EN: 
+
+[708] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:178
+IT: Archivio storico locale
+EN: 
+
+[709] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:179
+IT: Spazi per convegni
+EN: 
+
+[710] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:181
+IT: Visita Vizzini
+EN: 
+
+[711] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:189
+IT: Terra della narrativa capuaniana
+EN: 
+
+[712] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:191
+IT: Museo Etnografico
+EN: 
+
+[713] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:192
+IT: Laboratori didattici
+EN: 
+
+[714] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:193
+IT: Archivio archeologico
+EN: 
+
+[715] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:194
+IT: Sala letture
+EN: 
+
+[716] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:196
+IT: Visita Mineo
+EN: 
+
+[717] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:204
+IT: Centro di ricerca e conservazione
+EN: 
+
+[718] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:207
+IT: Biblioteca specializzata
+EN: 
+
+[719] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:208
+IT: Archivio letterario
+EN: 
+
+[720] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:209
+IT: Laboratorio di restauro
+EN: 
+
+[721] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:211
+IT: Visita Licodia
+EN: 
+
+[722] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:218
+IT: Piattaforma Digitale
+EN: 
+
+[723] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:219
+IT: Hub virtuale integrato
+EN: 
+
+[724] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:222
+IT: Archivio fotografico online
+EN: 
+
+[725] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:223
+IT: Calendario eventi
+EN: 
+
+[726] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:224
+IT: Community letteraria
+EN: 
+
+[727] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:226
+IT: Accedi Online
+EN: 
+
+[728] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:237
+IT: Sponsor e Sostenitori
+EN: 
+
+[729] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:239
+IT:  Imprese e organizzazioni che credono nella mission culturale del Parco  Letterario.
+EN: 
+
+[730] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:244
+IT: Partner
+EN: 
+
+[731] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:245
+IT: Sponsor
+EN: 
+
+[732] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:246
+IT: Supporter
+EN: 
+
+[733] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:247
+IT: Donatore
+EN: 
+
+[734] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:251
+IT: Interessato a collaborare con il Parco Letterario?
+EN: 
+
+[735] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:252
+IT: Proponi una Collaborazione
+EN: 
+
+[736] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:262
+IT: Unisciti alla Nostra Comunità
+EN: 
+
+[737] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:263
+IT:  Scopri le opportunità di collaborazione e di partecipazione ai progetti  culturali del Parco Letterario Giovanni Verga e Luigi Capuana.
+EN: 
+
+[738] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:265
+IT: Contattaci
+EN: 
+
+[739] #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:266
+IT: Scopri il Comitato
+EN: 
+
+[740] #: parco_verismo/templates/parco_verismo/privacy_policy.html:66
+IT: Informativa sulla Privacy
+EN: 
+
+[741] #: parco_verismo/templates/parco_verismo/privacy_policy.html:69
+IT: 1. Titolare del Trattamento
+EN: 
+
+[742] #: parco_verismo/templates/parco_verismo/privacy_policy.html:72
+IT: c/o Comuni di Vizzini, Licodia Eubea e Mineo
+EN: 
+
+[743] #: parco_verismo/templates/parco_verismo/privacy_policy.html:77
+IT: 2. Tipologie di Dati Raccolti
+EN: 
+
+[744] #: parco_verismo/templates/parco_verismo/privacy_policy.html:79
+IT: 2.1 Dati di Navigazione
+EN: 
+
+[745] #: parco_verismo/templates/parco_verismo/privacy_policy.html:81
+IT:  I sistemi informatici e le procedure software preposte al funzionamento di  questo sito acquisiscono, nel corso del loro normale esercizio, alcuni dati  personali la cui trasmissione è implicita nell'uso dei protocolli di  comunicazione di Internet.
+EN: 
+
+[746] #: parco_verismo/templates/parco_verismo/privacy_policy.html:83
+IT:  Si tratta di informazioni che non sono raccolte per essere associate a  interessati identificati, ma che per loro stessa natura potrebbero,  attraverso elaborazioni ed associazioni con dati detenuti da terzi,  permettere di identificare gli utenti. In questa categoria di dati rientrano:
+EN: 
+
+[747] #: parco_verismo/templates/parco_verismo/privacy_policy.html:85
+IT: Indirizzi IP
+EN: 
+
+[748] #: parco_verismo/templates/parco_verismo/privacy_policy.html:86
+IT: Nomi di dominio dei computer utilizzati dagli utenti
+EN: 
+
+[749] #: parco_verismo/templates/parco_verismo/privacy_policy.html:87
+IT:  Indirizzi in notazione URI (Uniform Resource Identifier) delle risorse  richieste
+EN: 
+
+[750] #: parco_verismo/templates/parco_verismo/privacy_policy.html:88
+IT: Orario della richiesta
+EN: 
+
+[751] #: parco_verismo/templates/parco_verismo/privacy_policy.html:89
+IT: Metodo utilizzato nel sottoporre la richiesta al server
+EN: 
+
+[752] #: parco_verismo/templates/parco_verismo/privacy_policy.html:90
+IT: Dimensione del file ottenuto in risposta
+EN: 
+
+[753] #: parco_verismo/templates/parco_verismo/privacy_policy.html:91
+IT: Codice numerico indicante lo stato della risposta data dal server
+EN: 
+
+[754] #: parco_verismo/templates/parco_verismo/privacy_policy.html:92
+IT:  Altri parametri relativi al sistema operativo e all'ambiente informatico  dell'utente
+EN: 
+
+[755] #: parco_verismo/templates/parco_verismo/privacy_policy.html:95
+IT: 2.2 Dati Forniti Volontariamente dall'Utente
+EN: 
+
+[756] #: parco_verismo/templates/parco_verismo/privacy_policy.html:97
+IT:  L'invio facoltativo, esplicito e volontario di posta elettronica agli  indirizzi indicati su questo sito comporta la successiva acquisizione  dell'indirizzo del mittente, necessario per rispondere alle richieste,  nonché degli eventuali altri dati personali inseriti nella missiva.
+EN: 
+
+[757] #: parco_verismo/templates/parco_verismo/privacy_policy.html:100
+IT: 2.3 Cookie e Tecnologie Simili
+EN: 
+
+[758] #: parco_verismo/templates/parco_verismo/privacy_policy.html:102
+IT:  Il sito utilizza cookie tecnici necessari per il funzionamento e, previo  consenso, cookie analytics. Per maggiori informazioni consultare la
+EN: 
+
+[759] #: parco_verismo/templates/parco_verismo/privacy_policy.html:105
+IT: 3. Finalità del Trattamento
+EN: 
+
+[760] #: parco_verismo/templates/parco_verismo/privacy_policy.html:106
+IT: I dati personali sono trattati per le seguenti finalità:
+EN: 
+
+[761] #: parco_verismo/templates/parco_verismo/privacy_policy.html:108
+IT: Gestione del sito
+EN: 
+
+[762] #: parco_verismo/templates/parco_verismo/privacy_policy.html:108
+IT: Per garantire il corretto funzionamento del sito web e dei suoi servizi
+EN: 
+
+[763] #: parco_verismo/templates/parco_verismo/privacy_policy.html:109
+IT: Comunicazioni istituzionali
+EN: 
+
+[764] #: parco_verismo/templates/parco_verismo/privacy_policy.html:109
+IT: Per rispondere a richieste di informazioni e comunicazioni degli utenti
+EN: 
+
+[765] #: parco_verismo/templates/parco_verismo/privacy_policy.html:110
+IT: Analisi statistiche
+EN: 
+
+[766] #: parco_verismo/templates/parco_verismo/privacy_policy.html:110
+IT:  Per comprendere come gli utenti utilizzano il sito e migliorare l'esperienza  di navigazione (solo previo consenso)
+EN: 
+
+[767] #: parco_verismo/templates/parco_verismo/privacy_policy.html:111
+IT: Obblighi di legge
+EN: 
+
+[768] #: parco_verismo/templates/parco_verismo/privacy_policy.html:111
+IT:  Per adempiere agli obblighi previsti dalla legge, dai regolamenti e dalla  normativa comunitaria
+EN: 
+
+[769] #: parco_verismo/templates/parco_verismo/privacy_policy.html:114
+IT: 4. Base Giuridica del Trattamento
+EN: 
+
+[770] #: parco_verismo/templates/parco_verismo/privacy_policy.html:115
+IT: Il trattamento dei dati personali si basa su:
+EN: 
+
+[771] #: parco_verismo/templates/parco_verismo/privacy_policy.html:117
+IT:  Necessità di adempiere agli obblighi di legge cui è soggetto il Titolare
+EN: 
+
+[772] #: parco_verismo/templates/parco_verismo/privacy_policy.html:118
+IT:  Esecuzione di un compito di interesse pubblico o connesso all'esercizio di  pubblici poteri di cui è investito il Titolare
+EN: 
+
+[773] #: parco_verismo/templates/parco_verismo/privacy_policy.html:119
+IT: Consenso dell'interessato (per cookie analytics e marketing)
+EN: 
+
+[774] #: parco_verismo/templates/parco_verismo/privacy_policy.html:122
+IT: 5. Modalità del Trattamento
+EN: 
+
+[775] #: parco_verismo/templates/parco_verismo/privacy_policy.html:124
+IT:  I dati personali sono trattati con strumenti automatizzati per il tempo  strettamente necessario a conseguire gli scopi per cui sono stati raccolti.  Specifiche misure di sicurezza sono osservate per prevenire la perdita dei  dati, usi illeciti o non corretti ed accessi non autorizzati.
+EN: 
+
+[776] #: parco_verismo/templates/parco_verismo/privacy_policy.html:127
+IT: 6. Periodo di Conservazione
+EN: 
+
+[777] #: parco_verismo/templates/parco_verismo/privacy_policy.html:128
+IT: I dati saranno conservati per il periodo necessario a:
+EN: 
+
+[778] #: parco_verismo/templates/parco_verismo/privacy_policy.html:130
+IT: Dati di navigazione: 7 giorni (log del server)
+EN: 
+
+[779] #: parco_verismo/templates/parco_verismo/privacy_policy.html:131
+IT: Cookie tecnici: durata della sessione o fino a 12 mesi
+EN: 
+
+[780] #: parco_verismo/templates/parco_verismo/privacy_policy.html:132
+IT: Cookie analytics: fino a 26 mesi (previo consenso)
+EN: 
+
+[781] #: parco_verismo/templates/parco_verismo/privacy_policy.html:133
+IT:  Comunicazioni email: fino al termine della pratica e per eventuali obblighi  di legge
+EN: 
+
+[782] #: parco_verismo/templates/parco_verismo/privacy_policy.html:136
+IT: 7. Comunicazione e Diffusione dei Dati
+EN: 
+
+[783] #: parco_verismo/templates/parco_verismo/privacy_policy.html:138
+IT: I dati personali non saranno diffusi. Potranno essere comunicati a:
+EN: 
+
+[784] #: parco_verismo/templates/parco_verismo/privacy_policy.html:141
+IT: Soggetti che forniscono servizi per la gestione del sistema informatico
+EN: 
+
+[785] #: parco_verismo/templates/parco_verismo/privacy_policy.html:142
+IT: Autorità competenti per adempimenti di obblighi di legge
+EN: 
+
+[786] #: parco_verismo/templates/parco_verismo/privacy_policy.html:145
+IT: 8. Diritti dell'Interessato
+EN: 
+
+[787] #: parco_verismo/templates/parco_verismo/privacy_policy.html:147
+IT: Ai sensi degli articoli 15-22 del GDPR, l'interessato ha diritto di:
+EN: 
+
+[788] #: parco_verismo/templates/parco_verismo/privacy_policy.html:150
+IT:  Ottenere la conferma dell'esistenza o meno di dati personali che lo  riguardano
+EN: 
+
+[789] #: parco_verismo/templates/parco_verismo/privacy_policy.html:151
+IT:  Ottenere l'accesso ai dati personali e alle informazioni relative agli stessi
+EN: 
+
+[790] #: parco_verismo/templates/parco_verismo/privacy_policy.html:152
+IT:  Ottenere la rettifica dei dati inesatti o l'integrazione di quelli incompleti
+EN: 
+
+[791] #: parco_verismo/templates/parco_verismo/privacy_policy.html:153
+IT: Ottenere la cancellazione dei dati (diritto all'oblio)
+EN: 
+
+[792] #: parco_verismo/templates/parco_verismo/privacy_policy.html:154
+IT: Ottenere la limitazione del trattamento
+EN: 
+
+[793] #: parco_verismo/templates/parco_verismo/privacy_policy.html:155
+IT: Opporsi al trattamento
+EN: 
+
+[794] #: parco_verismo/templates/parco_verismo/privacy_policy.html:156
+IT: Ottenere la portabilità dei dati
+EN: 
+
+[795] #: parco_verismo/templates/parco_verismo/privacy_policy.html:157
+IT: Revocare il consenso in qualsiasi momento
+EN: 
+
+[796] #: parco_verismo/templates/parco_verismo/privacy_policy.html:158
+IT:  Proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali
+EN: 
+
+[797] #: parco_verismo/templates/parco_verismo/privacy_policy.html:161
+IT: 9. Esercizio dei Diritti
+EN: 
+
+[798] #: parco_verismo/templates/parco_verismo/privacy_policy.html:163
+IT:  Per esercitare i diritti sopra elencati, l'interessato può rivolgersi al  Titolare del Trattamento tramite:
+EN: 
+
+[799] #: parco_verismo/templates/parco_verismo/privacy_policy.html:168
+IT: Posta ordinaria
+EN: 
+
+[800] #: parco_verismo/templates/parco_verismo/privacy_policy.html:171
+IT: 10. Reclami
+EN: 
+
+[801] #: parco_verismo/templates/parco_verismo/privacy_policy.html:173
+IT:  Gli interessati che ritengono che il trattamento dei dati personali a loro  riferiti avvenga in violazione di quanto previsto dal GDPR hanno il diritto  di proporre reclamo al Garante per la Protezione dei Dati Personali, come  previsto dall'art. 77 del GDPR, o di adire le opportune sedi giudiziarie  (art. 79 del GDPR).
+EN: 
+
+[802] #: parco_verismo/templates/parco_verismo/privacy_policy.html:176
+IT: Garante per la Protezione dei Dati Personali
+EN: 
+
+[803] #: parco_verismo/templates/parco_verismo/privacy_policy.html:177
+IT: Piazza Venezia 11, 00187 Roma
+EN: 
+
+[804] #: parco_verismo/templates/parco_verismo/privacy_policy.html:178
+IT: Tel
+EN: 
+
+[805] #: parco_verismo/templates/parco_verismo/privacy_policy.html:179
+IT: Fax
+EN: 
+
+[806] #: parco_verismo/templates/parco_verismo/privacy_policy.html:182
+IT: Web
+EN: 
+
+[807] #: parco_verismo/templates/parco_verismo/privacy_policy.html:185
+IT: 11. Modifiche alla Privacy Policy
+EN: 
+
+[808] #: parco_verismo/templates/parco_verismo/privacy_policy.html:187
+IT:  La presente Privacy Policy può essere soggetta a modifiche nel tempo. Si  invita pertanto l'utente a verificare periodicamente questa pagina.
+EN: 
+
+[809] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:6
+IT: Regolamenti e Documenti - Parco Letterario Giovanni Verga e Luigi Capuana
+EN: 
+
+[810] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:22
+IT: Regolamenti & Documenti
+EN: 
+
+[811] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:23
+IT:  Trasparenza amministrativa e documentazione ufficiale del Parco Letterario  del Verismo. Scarica regolamenti, bilanci e documenti ufficiali.
+EN: 
+
+[812] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:58
+IT: Regolamenti Operativi
+EN: 
+
+[813] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:59
+IT:  I regolamenti che disciplinano le attività del Parco Letterario e l'accesso  ai servizi.
+EN: 
+
+[814] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:66
+IT: Statuto del Parco Letterario
+EN: 
+
+[815] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:67
+IT: Approvato 2024
+EN: 
+
+[816] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:68
+IT:  Lo statuto fondamentale che definisce la natura, i principi, gli obiettivi e  l'organizzazione del Parco Letterario Giovanni Verga e Luigi Capuana.
+EN: 
+
+[817] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:76
+IT: Regolamento Interno
+EN: 
+
+[818] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:77
+IT: Versione 2.0 - 2024
+EN: 
+
+[819] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:78
+IT:  Norme che regolano il funzionamento interno del Parco, le responsabilità  degli organi e le procedure amministrative.
+EN: 
+
+[820] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:86
+IT: Regolamento Visite e Accessi
+EN: 
+
+[821] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:87
+IT: In vigore
+EN: 
+
+[822] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:88
+IT:  Disposizioni per l'accesso ai siti, alle strutture e agli eventi organizzati  dal Parco Letterario.
+EN: 
+
+[823] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:96
+IT: Privacy e Protezione Dati
+EN: 
+
+[824] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:97
+IT: GDPR Compliant 2024
+EN: 
+
+[825] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:98
+IT:  Politica sulla protezione dei dati personali e sulla privacy secondo le  normative europee GDPR.
+EN: 
+
+[826] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110
+IT: Documentazione
+EN: 
+
+[827] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110
+IT: Amministrativa
+EN: 
+
+[828] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:111
+IT:  Atti, bilanci e documenti pubblici secondo le norme di trasparenza  amministrativa.
+EN: 
+
+[829] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:118
+IT: Bilanci
+EN: 
+
+[830] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:119
+IT: Bilanci annuali, relazioni finanziarie e rendiconti economici.
+EN: 
+
+[831] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:121
+IT: Bilancio 2023
+EN: 
+
+[832] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:122
+IT: Bilancio 2022
+EN: 
+
+[833] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:123
+IT: Relazioni Econom.
+EN: 
+
+[834] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:131
+IT: Atti Amministrativi
+EN: 
+
+[835] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:132
+IT: Delibere, determinazioni e provvedimenti ufficiali.
+EN: 
+
+[836] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:134
+IT: Delibere 2024
+EN: 
+
+[837] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:135
+IT: Determinazioni
+EN: 
+
+[838] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:136
+IT: Provvedimenti
+EN: 
+
+[839] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:144
+IT: Documentazione Generale
+EN: 
+
+[840] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:145
+IT: Rapporti, studi e documenti strategici.
+EN: 
+
+[841] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:147
+IT: Relazione Attività
+EN: 
+
+[842] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:148
+IT: Piano Strategico
+EN: 
+
+[843] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:149
+IT: Programmi Annuali
+EN: 
+
+[844] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:162
+IT: Scarica Rapidamente
+EN: 
+
+[845] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:170
+IT: Statuto
+EN: 
+
+[846] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:176
+IT: Regolamento
+EN: 
+
+[847] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:182
+IT: Bilancio
+EN: 
+
+[848] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:194
+IT: Delibere
+EN: 
+
+[849] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:200
+IT: Archivio
+EN: 
+
+[850] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:215
+IT: Trasparenza e Responsabilità
+EN: 
+
+[851] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:218
+IT:  Il Parco Letterario si impegna per la massima trasparenza amministrativa e  il rispetto della normativa vigente in materia di privacy e protezione dei  dati.
+EN: 
+
+[852] #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:221
+IT: Contattaci per Info
+EN: 
+
+[853] #: parco_verismo/templates/parco_verismo/vizzini.html:23
+IT: Patria di Giovanni Verga, cuore del Verismo siciliano
+EN: 
+
+[854] #: parco_verismo/templates/parco_verismo/vizzini.html:36
+IT:  \n                 <p class=\ >Vizzini sorge a 586 metri sul livello  del mare, arroccata sui monti Iblei. La città conserva un ricco patrimonio  artistico e architettonico che testimonia la sua lunga storia, dalle origini  sicule alle dominazioni greca, romana, araba e normanna.</p>\n                 <p class=\ >Conosciuta in tutto il mondo  come la <strong>patria di Giovanni Verga</strong> (1840-1922), il più grande  esponente del <strong>Verismo italiano</strong>. Qui sono ambientate le sue  opere immortali: <em>Cavalleria Rusticana</em>, <em>La Lupa</em>, <em>Mastro- don Gesualdo</em>. Le strade e i vicoli di Vizzini hanno ispirato le pagine  che hanno rivoluzionato la letteratura italiana, catturando l'essenza della  vita e delle passioni del popolo siciliano.</p>\n                 
+EN: 
+
+[855] #: parco_verismo/templates/parco_verismo/vizzini.html:55
+IT: Casa Natale di Giovanni Verga
+EN: 
+
+[856] #: parco_verismo/templates/parco_verismo/vizzini.html:56
+IT:  \n                 <p class=\ >La <strong>Casa Natale di Giovanni  Verga</strong> rappresenta il luogo simbolo del Verismo italiano. Qui, il 2  settembre 1840, nacque il grande scrittore che avrebbe immortalato la  Sicilia nella letteratura mondiale.</p>\n                 <p class=\ >L'edificio conserva ancora  l'atmosfera del XIX secolo, con arredi d'epoca, documenti originali e cimeli  che testimoniano la vita e l'opera del maestro. La casa museo offre un  percorso emozionante attraverso le radici familiari e l'universo creativo di  Verga, permettendo ai visitatori di immergersi nel contesto che ispirò  capolavori come <em>I Malavoglia</em> e le <em>Novelle Rusticane</em>.</p>\n                 
+EN: 
+
+[857] #: parco_verismo/templates/parco_verismo/vizzini.html:75
+IT: La Cunziria
+EN: 
+
+[858] #: parco_verismo/templates/parco_verismo/vizzini.html:76
+IT:  \n                 <p class=\ >L'antico <strong>Borgo della  Cunziria</strong> è un affascinante villaggio rupestre risalente al XVI-XVII  secolo, dove un tempo si lavoravano le pelli con tecniche tradizionali. Le  sue grotte e abitazioni scavate nella roccia creano un paesaggio unico e  suggestivo.</p>\n                 <p class=\ >Il borgo è celebre per essere  stato il set naturale della <strong>Cavalleria Rusticana</strong> di Verga,  e più tardi del film omonimo di Franco Zeffirelli (1982) con Plácido  Domingo. Oggi la Cunziria è meta di pellegrinaggio letterario e  cinematografico, un luogo dove il tempo sembra essersi fermato, conservando  intatta l'atmosfera descritta nelle pagine verghiane.</p>\n                 
+EN: 
+
+[859] #: parco_verismo/templates/parco_verismo/vizzini.html:95
+IT:  Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  vizzinese
+EN: 
+
+[860] #: parco_verismo/templates/parco_verismo/vizzini.html:104
+IT: Sagra della Ricotta
+EN: 
+
+[861] #: parco_verismo/templates/parco_verismo/vizzini.html:106
+IT:  Celebrazione della tradizione casearia locale con degustazioni di  <strong>ricotta fresca</strong>, cannoli e dolci tipici siciliani.
+EN: 
+
+[862] #: parco_verismo/templates/parco_verismo/vizzini.html:117
+IT:  Le suggestive processioni pasquali con la tradizionale <strong>\ </ strong>, momento culminante delle celebrazioni religiose.
+EN: 
+
+[863] #: parco_verismo/templates/parco_verismo/vizzini.html:126
+IT: Festa di San Gregorio
+EN: 
+
+[864] #: parco_verismo/templates/parco_verismo/vizzini.html:128
+IT:  Festa patronale con processioni solenni, <strong>luminarie</strong>,  concerti e spettacoli pirotecnici.
+EN: 
+
+[865] #: parco_verismo/templates/parco_verismo/vizzini.html:137
+IT: Eventi Verghiani
+EN: 
+
+[866] #: parco_verismo/templates/parco_verismo/vizzini.html:138
+IT: Estate
+EN: 
+
+[867] #: parco_verismo/templates/parco_verismo/vizzini.html:139
+IT:  Rassegne letterarie, spettacoli teatrali e rappresentazioni delle opere di  <strong>Giovanni Verga</strong>.
+EN: 
+
+[868] #: parco_verismo/templates/parco_verismo/vizzini.html:151
+IT: Scopri i monumenti e i luoghi simbolo di Vizzini
+EN: 
+
+[869] #: parco_verismo/templates/parco_verismo/vizzini.html:254
+IT: Testimonianze della storia letteraria e artistica del territorio
+EN: 
+
+[870] #: parco_verismo/templates/parco_verismo/vizzini.html:307
+IT: Sito Storico
+EN: 
+
+[871] #: parco_verismo/templates/parco_verismo/vizzini.html:328
+IT: Esplora Vizzini
+EN: 
+

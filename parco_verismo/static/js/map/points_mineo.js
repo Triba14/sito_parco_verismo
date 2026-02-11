@@ -1,4 +1,5 @@
 var mineoPoints = [
+    /*
     // -------------------------------
     // SERVIZI PUBBLICI
     // -------------------------------
@@ -62,5 +63,6 @@ var mineoPoints = [
     { name: "Palazzo Baronale - Ispirazione per 'La Sfinge'", coords: [37.26900145919647, 14.692417619878162], type: "Luoghi Capuaniani" },
     { name: "Chiesa citata in 'Profumo'", coords: [37.26561782160434, 14.691242196453912], type: "Luoghi Capuaniani" },
     { name: "Belvedere - Panorama descritto nelle Novelle", coords: [37.26551401751246, 14.692703482895629], type: "Luoghi Capuaniani" }
+    */
 ];
 

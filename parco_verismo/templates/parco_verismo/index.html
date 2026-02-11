@@ -30,16 +30,24 @@
 <section id="il-parco" class="hp-section hp-parco">
     <div class="hp-quotes-layer" aria-hidden="true">
         <div class="bg-quote bg-quote-1" data-parallax-speed="0.1">
-            "Il mare non ha paese nemmen lui, ed è di tutti quelli che lo stanno ad ascoltare"
+            {% blocktrans trimmed %}
+            Il mare non ha paese nemmen lui, ed è di tutti quelli che lo stanno ad ascoltare
+            {% endblocktrans %}
         </div>
         <div class="bg-quote bg-quote-2" data-parallax-speed="0.15">
-            "Bisogna saper fare come le ostriche: quando il mare è in tempesta, lasciar passare l'onda"
+            {% blocktrans trimmed %}
+            Bisogna saper fare come le ostriche: quando il mare è in tempesta, lasciar passare l'onda
+            {% endblocktrans %}
         </div>
         <div class="bg-quote bg-quote-3" data-parallax-speed="0.12">
-            "Il vero è il fine dell'arte, l'unica sorgente della bellezza"
+            {% blocktrans trimmed %}
+            Il vero è il fine dell'arte, l'unica sorgente della bellezza
+            {% endblocktrans %}
         </div>
         <div class="bg-quote bg-quote-4" data-parallax-speed="0.08">
-            "Dobbiamo studiare il vero, non inventarlo"
+            {% blocktrans trimmed %}
+            Dobbiamo studiare il vero, non inventarlo
+            {% endblocktrans %}
         </div>
     </div>
 
@@ -126,14 +134,16 @@
         <!-- Citazione Centrale -->
         <div class="text-center mb-5 mb-lg-6">
             <div class="bg-quote mb-5" data-parallax-speed="0.08" style="position: relative; display: inline-block; max-width: 900px;">
-                "In una stanza buia, un uomo fora lentamente una porta con una virrinedda. Da quel piccolo spiraglio filtra un filo di luce e, con esso, il respiro della Sicilia. Emergono voci, figure, paesaggi: i personaggi di Giovanni Verga e Luigi Capuana prendono forma come ombre vive, fatte di memoria e vento. Tra nostalgia e distanza, tra appartenenza e fuga, il corto attraversa i luoghi del Verismo e i paesi di Vizzini, Mineo e Licodia Eubea, restituendo un'isola viva, inquieta, mai conclusa. Un racconto simbolico sulla letteratura come ferita luminosa, capace ancora oggi di aprire la notte e chiamare chi sa fermarsi ad ascoltare."
+                {% blocktrans trimmed %}
+                In una stanza buia, un uomo fora lentamente una porta con una virrinedda. Da quel piccolo spiraglio filtra un filo di luce e, con esso, il respiro della Sicilia. Emergono voci, figure, paesaggi: i personaggi di Giovanni Verga e Luigi Capuana prendono forma come ombre vive, fatte di memoria e vento. Tra nostalgia e distanza, tra appartenenza e fuga, il corto attraversa i luoghi del Verismo e i paesi di Vizzini, Mineo e Licodia Eubea, restituendo un'isola viva, inquieta, mai conclusa. Un racconto simbolico sulla letteratura come ferita luminosa, capace ancora oggi di aprire la notte e chiamare chi sa fermarsi ad ascoltare.
+                {% endblocktrans %}
             </div>
         </div>
 
         <!-- Video e Testo -->
         <div class="row g-5 align-items-center mb-5">
             <!-- Colonna Sinistra: Testo -->
-            <div class="col-lg-6" data-aos="fade-right">
+            <div class="col-lg-6 order-1" data-aos="fade-right">
                 <div class="hp-content">
                     <p class="text-justify mb-4">
                         {% blocktrans trimmed %}
@@ -141,7 +151,8 @@
                         {% endblocktrans %}
                     </p>
                     
-                    <div class="crediti mt-4">
+                    <!-- Crediti visibili solo su desktop -->
+                    <div class="crediti mt-4 d-none d-lg-block">
                         <p><strong>{% trans 'Con la partecipazione straordinaria di' %}</strong> Domenico Centamore</p>
                         
                         <p class="mt-3 mb-2"><strong>{% trans 'Crediti' %}</strong></p>
@@ -164,9 +175,32 @@
             </div>
             
             <!-- Colonna Destra: Video -->
-            <div class="col-lg-6" data-aos="fade-left">
+            <div class="col-lg-6 order-2" data-aos="fade-left">
                 <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden">
-                    <iframe src="https://www.youtube.com/embed/uPwfnlw53A4" title="Il Corto - Parco Letterario del Verismo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                   <iframe  width="560" height="315"  src="https://www.youtube.com/embed/uPwfnlw53A4?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0&amp;modestbranding=1"  title="Il Corto - Parco Letterario del Verismo"  frameborder="0"  allow="autoplay; encrypted-media; picture-in-picture"  referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <!-- Crediti visibili solo su mobile/tablet, dopo il video -->
+            <div class="col-12 order-3 d-lg-none">
+                <div class="crediti mt-4">
+                    <p><strong>{% trans 'Con la partecipazione straordinaria di' %}</strong> Domenico Centamore</p>
+                    
+                    <p class="mt-3 mb-2"><strong>{% trans 'Crediti' %}</strong></p>
+                    <ul class="list-unstyled">
+                        <li><strong>{% trans 'Testo:' %}</strong> Mario Luca Testa</li>
+                        <li><strong>{% trans 'Regia:' %}</strong> Associazione Teatro Skenè APS</li>
+                        <li><strong>{% trans 'Riprese:' %}</strong> Michelangelo Lentini, Rossandra Pepe</li>
+                        <li><strong>{% trans 'Montaggio:' %}</strong> Rossandra Pepe</li>
+                        <li><strong>{% trans 'Assistenti al montaggio:' %}</strong> Delia Di Pasquale, Veronica Garra</li>
+                    </ul>
+                    
+                    <p class="small text-muted mt-3">
+                        {% trans "Si ringraziano le Amministrazioni comunali di Vizzini, Mineo e Licodia Eubea." %}
+                    </p>
+                    <p class="small text-muted">
+                        {% trans "Progetto finanziato dalla Regione Siciliana – Assessorato dei Beni Culturali e dell'Identità Siciliana." %}
+                    </p>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 var licodiaPoints = [
+    /*
     // -------------------------------
     // SERVIZI PUBBLICI
     // -------------------------------
@@ -62,4 +63,5 @@ var licodiaPoints = [
     { name: "Luoghi Fotografati da Giovanni Verga", coords: [37.154017340005275, 14.6987897424153], type: "Luoghi Verghiani" },
     { name: "Luoghi Letterari Verghiani", coords: [37.155164794322225, 14.700044625218881], type: "Luoghi Verghiani" },
     { name: "Luoghi della famiglia Verga – Contrada Giardino del Barone", coords: [37.15703520249028, 14.707157355531645], type: "Luoghi Verghiani" }
+    */
 ];

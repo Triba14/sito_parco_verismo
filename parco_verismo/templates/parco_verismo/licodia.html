@@ -234,7 +234,7 @@
               <h3 class="cultura-card-title">{% trans 'Musei e Luoghi Culturali' %}</h3>
               <ul class="cultura-card-list">
                 <li>{% trans 'Museo civico archeologico "Antonino Di Vita"' %}</li>
-                <li>{% trans 'Biblioteca dell\'Archeoclub d\'Italia "Mario Di Benedetto"' %}</li>
+                <li>{% trans "Biblioteca dell'Archeoclub d'Italia \"Mario Di Benedetto\"" %}</li>
                 <li>{% trans 'Casale rupestre Grotte dei Santi (Contrada Alia)' %}</li>
               </ul>
             </div>
@@ -254,59 +254,7 @@
           {% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}
         </p>
       </div>
-
-      <div class="map-layout">
-        <!-- Pannello Laterale Filtri -->
-        <div class="map-sidebar">
-          <div class="map-sidebar-header">
-            <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
-          </div>
-          <div class="map-sidebar-content">
-            <!-- Barra di ricerca -->
-            <div class="search-container">
-              <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
-              <div class="search-results"></div>
-            </div>
-
-            <!-- Filtri come lista -->
-            <div class="filters-list">
-              <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-building-fill text-primary"></i>
-                <span>{% trans 'Servizi Pubblici' %}</span>
-              </div>
-              <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-bank2 text-primary"></i>
-                <span>{% trans 'Servizi Culturali' %}</span>
-              </div>
-              <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-basket2-fill text-primary"></i>
-                <span>{% trans 'Prodotti Tipici' %}</span>
-              </div>
-              <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-house-heart-fill text-primary"></i>
-                <span>{% trans 'Ospitalità' %}</span>
-              </div>
-              <div data-type="Luoghi Verghiani" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-book-fill text-primary"></i>
-                <span>{% trans 'Luoghi Verghiani' %}</span>
-              </div>
-              <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
-                <i class="bi bi-cup-hot-fill text-primary"></i>
-                <span>{% trans 'Ristorazione' %}</span>
-              </div>
-              <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
-                <i class="bi bi-arrow-clockwise text-primary"></i>
-                <span>{% trans 'Mostra tutti' %}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mappa -->
-        <div class="map-main">
-          <div id="map" class="map-container rounded shadow"></div>
-        </div>
-      </div>
+      <div id="map" class="map-container rounded shadow" style="height: 600px;"></div>
     </div>
   </section>
 {% endblock %}

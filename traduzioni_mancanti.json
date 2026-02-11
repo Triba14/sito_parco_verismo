@@ -1,0 +1,5231 @@
+{
+  "total": 871,
+  "messages": [
+    {
+      "id": 1,
+      "location": "#: parco_verismo/middleware.py:44",
+      "italian": "Troppe richieste. Riprova tra qualche minuto.",
+      "english": ""
+    },
+    {
+      "id": 2,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:4",
+      "italian": "Accrediti e Finanziamenti",
+      "english": ""
+    },
+    {
+      "id": 3,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:4",
+      "italian": "Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 4,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:21",
+      "italian": "Trasparenza",
+      "english": ""
+    },
+    {
+      "id": 5,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:22",
+      "italian": "Accrediti & Finanziamenti",
+      "english": ""
+    },
+    {
+      "id": 6,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:25",
+      "italian": " Trasparenza nella gestione delle risorse finanziarie e degli investimenti  nel territorio siciliano",
+      "english": ""
+    },
+    {
+      "id": 7,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:116",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana è ufficialmente riconosciuto da enti  nazionali e internazionali, garantendo qualità, trasparenza e valore  culturale alle nostre attività.",
+      "english": ""
+    },
+    {
+      "id": 8,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:87",
+      "italian": "Regione Siciliana",
+      "english": ""
+    },
+    {
+      "id": 9,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:127",
+      "italian": " Riconoscimento ufficiale come polo culturale di valorizzazione del  patrimonio letterario siciliano con finanziamenti dedicati.",
+      "english": ""
+    },
+    {
+      "id": 10,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:136",
+      "italian": "Associazione Parchi Letterari",
+      "english": ""
+    },
+    {
+      "id": 11,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:137",
+      "italian": " Certificazione di qualità nei servizi culturali come membro  dell'Associazione Nazionale dei Parchi Letterari Italiani.",
+      "english": ""
+    },
+    {
+      "id": 12,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:146",
+      "italian": "Rete Internazionale UNESCO",
+      "english": ""
+    },
+    {
+      "id": 13,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:147",
+      "italian": " Partecipazione attiva alle reti internazionali dedicate alla preservazione  del patrimonio letterario mondiale.",
+      "english": ""
+    },
+    {
+      "id": 14,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:206",
+      "italian": " Le risorse economiche che sostengono le attività del Parco provengono da  fonti pubbliche e private, garantendo sostenibilità e crescita continua.",
+      "english": ""
+    },
+    {
+      "id": 15,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:211",
+      "italian": "Principali Finanziatori",
+      "english": ""
+    },
+    {
+      "id": 16,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:251",
+      "italian": "Allocazione Trasparente delle Risorse",
+      "english": ""
+    },
+    {
+      "id": 17,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:276",
+      "italian": "Progetti Finanziati",
+      "english": ""
+    },
+    {
+      "id": 18,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:279",
+      "italian": " Principali iniziative e progetti realizzati grazie ai finanziamenti ottenuti.",
+      "english": ""
+    },
+    {
+      "id": 19,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:289",
+      "italian": "Digitalizzazione Archivi",
+      "english": ""
+    },
+    {
+      "id": 20,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:290",
+      "italian": " Scansione e catalogazione digitale di oltre 500 documenti e fotografie  storiche. Progetto completato nel 2024.",
+      "english": ""
+    },
+    {
+      "id": 21,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:286",
+      "italian": "Centro Studi",
+      "english": ""
+    },
+    {
+      "id": 22,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:300",
+      "italian": " Ristrutturazione e realizzazione della nuova Sala di Lettura Interattiva con  tecnologie innovative.",
+      "english": ""
+    },
+    {
+      "id": 23,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:309",
+      "italian": "Laboratori Didattici",
+      "english": ""
+    },
+    {
+      "id": 24,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:310",
+      "italian": " Programma triennale di laboratori per scuole e comunità sulla letteratura  verista e il territorio.",
+      "english": ""
+    },
+    {
+      "id": 25,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:36",
+      "italian": "Itinerari Verghiani",
+      "english": ""
+    },
+    {
+      "id": 26,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:320",
+      "italian": " Creazione di percorsi culturali digitali e fisici nei luoghi letterari del  Verismo siciliano.",
+      "english": ""
+    },
+    {
+      "id": 27,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:335",
+      "italian": "Supporta il Parco Letterario",
+      "english": ""
+    },
+    {
+      "id": 28,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:338",
+      "italian": " Contribuisci con una donazione o diventa partner per supportare la  preservazione e lo sviluppo della cultura letteraria siciliana.",
+      "english": ""
+    },
+    {
+      "id": 29,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:342",
+      "italian": "Dona Ora",
+      "english": ""
+    },
+    {
+      "id": 30,
+      "location": "#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:345",
+      "italian": "Diventa Partner",
+      "english": ""
+    },
+    {
+      "id": 31,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:4",
+      "italian": "Archivio Fotografico - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 32,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:265",
+      "italian": "Archivio Fotografico",
+      "english": ""
+    },
+    {
+      "id": 33,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:18",
+      "italian": "Un viaggio visivo attraverso i luoghi e le storie del Verismo",
+      "english": ""
+    },
+    {
+      "id": 34,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:58",
+      "italian": "Visualizza a schermo intero",
+      "english": ""
+    },
+    {
+      "id": 35,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:146",
+      "italian": "Precedente",
+      "english": ""
+    },
+    {
+      "id": 36,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:150",
+      "italian": "Successivo",
+      "english": ""
+    },
+    {
+      "id": 37,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:97",
+      "italian": "Tutte le foto",
+      "english": ""
+    },
+    {
+      "id": 38,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:128",
+      "italian": "Nessuna foto disponibile",
+      "english": ""
+    },
+    {
+      "id": 39,
+      "location": "#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:129",
+      "italian": "L'archivio fotografico sarà presto disponibile.",
+      "english": ""
+    },
+    {
+      "id": 40,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:24",
+      "italian": "Chiudi",
+      "english": ""
+    },
+    {
+      "id": 41,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:10",
+      "italian": " Parco Letterario Giovanni Verga e Luigi Capuana - Un viaggio nella letteratura verista siciliana  attraverso i luoghi di Verga e Capuana",
+      "english": ""
+    },
+    {
+      "id": 42,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:20",
+      "italian": " Scopri il Parco Letterario Giovanni Verga e Luigi Capuana: itinerari, eventi e cultura nei  luoghi di Verga e Capuana",
+      "english": ""
+    },
+    {
+      "id": 43,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:29",
+      "italian": "Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia",
+      "english": ""
+    },
+    {
+      "id": 44,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:38",
+      "italian": " Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i  luoghi di Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 45,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:78",
+      "italian": "Salta al contenuto principale",
+      "english": ""
+    },
+    {
+      "id": 46,
+      "location": "#: parco_verismo/templates/parco_verismo/base.html:85",
+      "italian": "Contenuto principale",
+      "english": ""
+    },
+    {
+      "id": 47,
+      "location": "#: parco_verismo/templates/parco_verismo/biblioteca.html:4",
+      "italian": "Biblioteca Digitale - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 48,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:221",
+      "italian": "Biblioteca Digitale",
+      "english": ""
+    },
+    {
+      "id": 49,
+      "location": "#: parco_verismo/templates/parco_verismo/biblioteca.html:11",
+      "italian": " Cerca tra le opere di Verga e Capuana e accedi alla lettura integrale su  Wikisource.",
+      "english": ""
+    },
+    {
+      "id": 50,
+      "location": "#: parco_verismo/templates/parco_verismo/biblioteca.html:19",
+      "italian": "Nessuna opera trovata",
+      "english": ""
+    },
+    {
+      "id": 51,
+      "location": "#: parco_verismo/templates/parco_verismo/biblioteca.html:19",
+      "italian": "Non sono state trovate opere corrispondenti alla tua ricerca.",
+      "english": ""
+    },
+    {
+      "id": 52,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:3",
+      "italian": "Calendario Eventi - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 53,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:13",
+      "italian": "Calendario Eventi",
+      "english": ""
+    },
+    {
+      "id": 54,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:16",
+      "italian": "Consulta il calendario completo degli eventi e salva i tuoi preferiti",
+      "english": ""
+    },
+    {
+      "id": 55,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:41",
+      "italian": "Vedi dettagli completi",
+      "english": ""
+    },
+    {
+      "id": 56,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:49",
+      "italian": "Oggi",
+      "english": ""
+    },
+    {
+      "id": 57,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:70",
+      "italian": "Mese",
+      "english": ""
+    },
+    {
+      "id": 58,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:71",
+      "italian": "Settimana",
+      "english": ""
+    },
+    {
+      "id": 59,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:72",
+      "italian": "Lista",
+      "english": ""
+    },
+    {
+      "id": 60,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:118",
+      "italian": "Descrizione",
+      "english": ""
+    },
+    {
+      "id": 61,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:137",
+      "italian": "Aggiungi al calendario",
+      "english": ""
+    },
+    {
+      "id": 62,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:139",
+      "italian": "Google Calendar",
+      "english": ""
+    },
+    {
+      "id": 63,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:142",
+      "italian": "Outlook",
+      "english": ""
+    },
+    {
+      "id": 64,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:145",
+      "italian": "Apple Calendar",
+      "english": ""
+    },
+    {
+      "id": 65,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:148",
+      "italian": "WhatsApp",
+      "english": ""
+    },
+    {
+      "id": 66,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:270",
+      "italian": "Evento aperto in Google Calendar!",
+      "english": ""
+    },
+    {
+      "id": 67,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:292",
+      "italian": "Evento aperto in Outlook!",
+      "english": ""
+    },
+    {
+      "id": 68,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:331",
+      "italian": "File calendario scaricato! Aprilo per aggiungere l'evento.",
+      "english": ""
+    },
+    {
+      "id": 69,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:344",
+      "italian": "alle",
+      "english": ""
+    },
+    {
+      "id": 70,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:344",
+      "italian": "Scopri di più sul sito del Parco Letterario Giovanni Verga e Luigi Capuana!",
+      "english": ""
+    },
+    {
+      "id": 71,
+      "location": "#: parco_verismo/templates/parco_verismo/calendario.html:346",
+      "italian": "Evento condiviso su WhatsApp!",
+      "english": ""
+    },
+    {
+      "id": 72,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:4",
+      "italian": "Regolamento Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 73,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:20",
+      "italian": "Normativa",
+      "english": ""
+    },
+    {
+      "id": 74,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:22",
+      "italian": "Regolamento del Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 75,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:41",
+      "italian": "REGOLAMENTO DEL COMITATO TECNICO-SCIENTIFICO",
+      "english": ""
+    },
+    {
+      "id": 76,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:42",
+      "italian": "del Progetto \\ ",
+      "english": ""
+    },
+    {
+      "id": 77,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:47",
+      "italian": "Art. 1 – Istituzione e finalità",
+      "english": ""
+    },
+    {
+      "id": 78,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:49",
+      "italian": " È istituito il Comitato Tecnico-Scientifico (CTS) del Progetto &ldquo;Il  Parco Letterario Giovanni Verga e Luigi Capuana&rdquo; nell&rsquo;ambito del finanziamento  D.D.G. n. 1159 del 6 marzo 2025 della Regione Siciliana. Il CTS è organo  consultivo e di indirizzo strategico, con il compito di garantire la qualità  scientifica, culturale e metodologica delle attività del progetto, nonché di  favorirne la sostenibilità, la valorizzazione, il radicamento territoriale e  la continuità temporale.",
+      "english": ""
+    },
+    {
+      "id": 79,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:55",
+      "italian": "Art. 2 – Composizione",
+      "english": ""
+    },
+    {
+      "id": 80,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:57",
+      "italian": " Il CTS, il cui insediamento è deliberato dal Comune capofila di Vizzini, è  composto da un numero variabile di membri compreso tra 7 e 11. Ne fanno  parte esperti nei settori letterario, storico, culturale, turistico,  accademico e artistico, nonché rappresentanti dell&rsquo;Ente del Terzo  Settore (ETS) attuatore del progetto. I membri del CTS sono scelti tra  studiosi, ricercatori ed esperti che abbiano dato contributi significativi  nell&rsquo;ambito della letteratura verista, delle discipline storico- artistiche, antropologiche, filologiche, turistiche e culturali, con  comprovata esperienza nella valorizzazione del patrimonio culturale e  territoriale.",
+      "english": ""
+    },
+    {
+      "id": 81,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:59",
+      "italian": " Fanno parte del Comitato, in rappresentanza istituzionale, i seguenti enti e  soggetti:",
+      "english": ""
+    },
+    {
+      "id": 82,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:61",
+      "italian": "Comune di Vizzini – Comune capofila del progetto",
+      "english": ""
+    },
+    {
+      "id": 83,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:172",
+      "italian": "Comune di Mineo",
+      "english": ""
+    },
+    {
+      "id": 84,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:63",
+      "italian": "Comune di Licodia Eubea",
+      "english": ""
+    },
+    {
+      "id": 85,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:254",
+      "italian": "Università degli Studi di Catania",
+      "english": ""
+    },
+    {
+      "id": 86,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:220",
+      "italian": "Fondazione Verga",
+      "english": ""
+    },
+    {
+      "id": 87,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:66",
+      "italian": "Centro Studi C.E.S.T.A. (attuatore del progetto)",
+      "english": ""
+    },
+    {
+      "id": 88,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:67",
+      "italian": "ITS Academy Turismo Sicilia",
+      "english": ""
+    },
+    {
+      "id": 89,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:247",
+      "italian": "ITS Steve Jobs di Caltagirone",
+      "english": ""
+    },
+    {
+      "id": 90,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:69",
+      "italian": "Discendenza di Giovanni Verga",
+      "english": ""
+    },
+    {
+      "id": 91,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:70",
+      "italian": "Discendenza di Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 92,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:73",
+      "italian": " Possono essere invitati alle sedute, senza diritto di voto, rappresentanti  di università, istituti culturali, ITS, enti di ricerca e altri soggetti  interessati.",
+      "english": ""
+    },
+    {
+      "id": 93,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:79",
+      "italian": "Art. 3 – Nomina e durata",
+      "english": ""
+    },
+    {
+      "id": 94,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:81",
+      "italian": " I componenti del CTS sono nominati con provvedimento del Comune capofila di  Vizzini. Il CTS rimane in carica per tutta la durata del progetto, sino alla  conclusione delle attività previste dal medesimo. L&rsquo;incarico è  gratuito.",
+      "english": ""
+    },
+    {
+      "id": 95,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:87",
+      "italian": "Art. 4 – Compiti e funzioni",
+      "english": ""
+    },
+    {
+      "id": 96,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:88",
+      "italian": "Il CTS:",
+      "english": ""
+    },
+    {
+      "id": 97,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:90",
+      "italian": " definisce linee di indirizzo metodologico e culturale per la realizzazione  del progetto",
+      "english": ""
+    },
+    {
+      "id": 98,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:91",
+      "italian": " supporta la progettazione e la valutazione di itinerari culturali e percorsi  tematici",
+      "english": ""
+    },
+    {
+      "id": 99,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:92",
+      "italian": " fornisce pareri e orientamenti sulle attività formative, digitali,  artistiche e partecipative",
+      "english": ""
+    },
+    {
+      "id": 100,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:93",
+      "italian": " promuove relazioni con università, ITS, centri di ricerca e istituzioni  culturali",
+      "english": ""
+    },
+    {
+      "id": 101,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:94",
+      "italian": " contribuisce alla definizione di protocolli e disciplinari per prodotti  culturali innovativi",
+      "english": ""
+    },
+    {
+      "id": 102,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:95",
+      "italian": " collabora alla progettazione del Premio Verga-Capuana e della Giornata di  Studi sul Verismo",
+      "english": ""
+    },
+    {
+      "id": 103,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:96",
+      "italian": " valuta gli esiti delle attività e formula raccomandazioni per il  miglioramento",
+      "english": ""
+    },
+    {
+      "id": 104,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:97",
+      "italian": " partecipa in modo collegiale alla pianificazione delle attività e alla  definizione delle priorità operative",
+      "english": ""
+    },
+    {
+      "id": 105,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:103",
+      "italian": "Art. 4-bis – Coordinatore del Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 106,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:105",
+      "italian": " Il CTS individua al proprio interno, nella seduta di insediamento, un  Coordinatore scelto tra i componenti. Il Coordinatore ha funzioni di  raccordo tra il CTS, il Comune capofila e l&rsquo;ETS attuatore del  progetto. Coordina le attività del Comitato, presiede le riunioni, assicura  la corretta esecuzione delle deliberazioni e rappresenta il CTS nelle  relazioni esterne di carattere tecnico-scientifico.",
+      "english": ""
+    },
+    {
+      "id": 107,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:111",
+      "italian": "Art. 5 – Modalità di funzionamento",
+      "english": ""
+    },
+    {
+      "id": 108,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:113",
+      "italian": " Il CTS si riunisce ogniqualvolta se ne ravvisi la necessità, su iniziativa  dell&rsquo;ETS attuatore o su richiesta di almeno un terzo dei componenti.  La convocazione è effettuata dalla segreteria tecnico-organizzativa, anche  in forma telematica, con un preavviso minimo di 3 giorni. Le riunioni  possono svolgersi in presenza o da remoto, mediante strumenti digitali  idonei. Le sedute sono valide con la presenza della maggioranza dei  componenti.",
+      "english": ""
+    },
+    {
+      "id": 109,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:116",
+      "italian": " Le decisioni sono assunte a maggioranza dei presenti. In caso di parità di  voti si applica il seguente sistema di voto ponderato:",
+      "english": ""
+    },
+    {
+      "id": 110,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:119",
+      "italian": "Il Comune capofila di Vizzini dispone di due voti",
+      "english": ""
+    },
+    {
+      "id": 111,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:120",
+      "italian": " I discendenti di Luigi Capuana dispongono congiuntamente di un voto unico",
+      "english": ""
+    },
+    {
+      "id": 112,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:121",
+      "italian": "Tutti gli altri componenti del CTS dispongono di un voto ciascuno",
+      "english": ""
+    },
+    {
+      "id": 113,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:127",
+      "italian": "Art. 6 – Segreteria tecnico-organizzativa",
+      "english": ""
+    },
+    {
+      "id": 114,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:129",
+      "italian": " Le funzioni di segreteria del CTS sono svolte dall&rsquo;ETS attuatore del  progetto. La segreteria cura la convocazione delle riunioni, la redazione e  conservazione dei verbali, il supporto organizzativo e amministrativo,  nonché la trasmissione delle deliberazioni ai Comuni partner.",
+      "english": ""
+    },
+    {
+      "id": 115,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:135",
+      "italian": "Art. 7 – Decadenza e sostituzione dei componenti",
+      "english": ""
+    },
+    {
+      "id": 116,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:137",
+      "italian": " I componenti decadono dall&rsquo;incarico per: dimissioni volontarie;  assenza ingiustificata a tre riunioni consecutive; sopravvenuta  incompatibilità con le finalità del progetto. In caso di decadenza o  dimissioni, il Comune capofila provvede alla eventuale sostituzione con  nuova nomina.",
+      "english": ""
+    },
+    {
+      "id": 117,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:143",
+      "italian": "Art. 8 – Disposizioni finali",
+      "english": ""
+    },
+    {
+      "id": 118,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:145",
+      "italian": " Per quanto non espressamente previsto dal presente Regolamento si fa rinvio  alla normativa vigente in materia di organi collegiali. Il presente  Regolamento resterà in vigore fino alla conclusione delle attività  progettuali.",
+      "english": ""
+    },
+    {
+      "id": 119,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:153",
+      "italian": "Torna al Comitato",
+      "english": ""
+    },
+    {
+      "id": 120,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:22",
+      "italian": "Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 121,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:21",
+      "italian": "Organi Direttivi",
+      "english": ""
+    },
+    {
+      "id": 122,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:23",
+      "italian": "Presidio culturale e scientifico del Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 123,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:118",
+      "italian": " Il Comitato Tecnico-Scientifico è stato istituito con Determinazione  Sindacale n. 50 del 20 ottobre 2025...",
+      "english": ""
+    },
+    {
+      "id": 124,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:121",
+      "italian": "Funzione del Comitato",
+      "english": ""
+    },
+    {
+      "id": 125,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:122",
+      "italian": " Il Comitato ha funzione consultiva e di orientamento strategico: supporta  gli Enti locali e i partner culturali...",
+      "english": ""
+    },
+    {
+      "id": 126,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:126",
+      "italian": "Principali Compiti",
+      "english": ""
+    },
+    {
+      "id": 127,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:128",
+      "italian": " Valutare e fornire pareri scientifici su progetti culturali, iniziative  editoriali e mostre.",
+      "english": ""
+    },
+    {
+      "id": 128,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:129",
+      "italian": " Proporre linee guida per la tutela e la valorizzazione del patrimonio  verghiano e capuaniano.",
+      "english": ""
+    },
+    {
+      "id": 129,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:130",
+      "italian": " Favorire collaborazioni con università, centri studi e istituti di ricerca.",
+      "english": ""
+    },
+    {
+      "id": 130,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133",
+      "italian": "Frequenza incontri:",
+      "english": ""
+    },
+    {
+      "id": 131,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133",
+      "italian": " Il Comitato si riunisce con cadenza trimestrale e può essere convocato in  sedute straordinarie.",
+      "english": ""
+    },
+    {
+      "id": 132,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134",
+      "italian": "Durata incarico:",
+      "english": ""
+    },
+    {
+      "id": 133,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134",
+      "italian": " I membri sono nominati per un mandato triennale, rinnovabile secondo le  disposizioni del regolamento.",
+      "english": ""
+    },
+    {
+      "id": 134,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:136",
+      "italian": " Per il testo integrale del regolamento e i verbali delle sedute consulta la  pagina",
+      "english": ""
+    },
+    {
+      "id": 135,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:148",
+      "italian": "Composizione del Comitato",
+      "english": ""
+    },
+    {
+      "id": 136,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:149",
+      "italian": " Una rete di esperti e istituzioni dedicati alla valorizzazione del  patrimonio verghiano e capuaniano",
+      "english": ""
+    },
+    {
+      "id": 137,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:157",
+      "italian": "Rappresentanti Enti Pubblici",
+      "english": ""
+    },
+    {
+      "id": 138,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:164",
+      "italian": "Dott. Pietro La Rocca",
+      "english": ""
+    },
+    {
+      "id": 139,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:165",
+      "italian": "Comune di Vizzini",
+      "english": ""
+    },
+    {
+      "id": 140,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:171",
+      "italian": "Dott. Mario Luca Sebastiano Testa",
+      "english": ""
+    },
+    {
+      "id": 141,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:184",
+      "italian": "Centri Studi e Famiglie Depositarie del Patrimonio",
+      "english": ""
+    },
+    {
+      "id": 142,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:191",
+      "italian": "Dott. Raffaele Assunta Brunelli",
+      "english": ""
+    },
+    {
+      "id": 143,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:192",
+      "italian": "Centro Studi C.E.S.T.A.",
+      "english": ""
+    },
+    {
+      "id": 144,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:198",
+      "italian": "Dott. Tommaso Domenico Cilia",
+      "english": ""
+    },
+    {
+      "id": 145,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:213",
+      "italian": "Famiglia Capuana",
+      "english": ""
+    },
+    {
+      "id": 146,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:205",
+      "italian": "Dott.ssa Carla Verga",
+      "english": ""
+    },
+    {
+      "id": 147,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:206",
+      "italian": "Famiglia Verga",
+      "english": ""
+    },
+    {
+      "id": 148,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:212",
+      "italian": "Dott. Carlo Capuana",
+      "english": ""
+    },
+    {
+      "id": 149,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:219",
+      "italian": "Prof. Antonio Di Silvestro",
+      "english": ""
+    },
+    {
+      "id": 150,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:232",
+      "italian": "Istituti Superiori e Università",
+      "english": ""
+    },
+    {
+      "id": 151,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:239",
+      "italian": "Dott.ssa Anna Raudino",
+      "english": ""
+    },
+    {
+      "id": 152,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:240",
+      "italian": "ITS Academy di Siracusa",
+      "english": ""
+    },
+    {
+      "id": 153,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:246",
+      "italian": "Prof. Francesco Pignataro",
+      "english": ""
+    },
+    {
+      "id": 154,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:253",
+      "italian": "Prof. Luigi Ingaliso",
+      "english": ""
+    },
+    {
+      "id": 155,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:266",
+      "italian": "Coordinamento",
+      "english": ""
+    },
+    {
+      "id": 156,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:273",
+      "italian": "Dott.ssa Delia Francesca Di Pasquale",
+      "english": ""
+    },
+    {
+      "id": 157,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:274",
+      "italian": "Coordinatrice del Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 158,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:327",
+      "italian": "Coerenza Scientifica",
+      "english": ""
+    },
+    {
+      "id": 159,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:328",
+      "italian": "Garantire coerenza scientifica e culturale alle azioni del progetto",
+      "english": ""
+    },
+    {
+      "id": 160,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:335",
+      "italian": "Progettazione Strategica",
+      "english": ""
+    },
+    {
+      "id": 161,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:336",
+      "italian": " Orientare la progettazione di eventi, percorsi, accordi istituzionali e  produzioni culturali",
+      "english": ""
+    },
+    {
+      "id": 162,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:343",
+      "italian": "Monitoraggio e Valutazione",
+      "english": ""
+    },
+    {
+      "id": 163,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:344",
+      "italian": " Valutare l'impatto e il raggiungimento degli obiettivi culturali e sociali  del Parco",
+      "english": ""
+    },
+    {
+      "id": 164,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:351",
+      "italian": "Coordinamento Istituzionale",
+      "english": ""
+    },
+    {
+      "id": 165,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:352",
+      "italian": " Favorire il dialogo tra enti locali, istituzioni regionali e partner  culturali per la realizzazione condivisa del progetto",
+      "english": ""
+    },
+    {
+      "id": 166,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:367",
+      "italian": "Presidio Culturale e Scientifico",
+      "english": ""
+    },
+    {
+      "id": 167,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:368",
+      "italian": " Il Comitato rappresenta il presidio culturale e scientifico del progetto,  assicurandone continuità e radicamento territoriale.",
+      "english": ""
+    },
+    {
+      "id": 168,
+      "location": "#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:370",
+      "italian": "Leggi il Regolamento",
+      "english": ""
+    },
+    {
+      "id": 169,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:7",
+      "italian": "Utilizzo dei Cookie",
+      "english": ""
+    },
+    {
+      "id": 170,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:9",
+      "italian": " Questo sito utilizza cookie tecnici necessari e, previo consenso, cookie  analytics per migliorare l'esperienza di navigazione.",
+      "english": ""
+    },
+    {
+      "id": 171,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:10",
+      "italian": "Informativa completa",
+      "english": ""
+    },
+    {
+      "id": 172,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:14",
+      "italian": "Accetta Tutti",
+      "english": ""
+    },
+    {
+      "id": 173,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:15",
+      "italian": "Solo Necessari",
+      "english": ""
+    },
+    {
+      "id": 174,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:16",
+      "italian": "Personalizza",
+      "english": ""
+    },
+    {
+      "id": 175,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:27",
+      "italian": "Gestione Preferenze Cookie",
+      "english": ""
+    },
+    {
+      "id": 176,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:34",
+      "italian": "Cookie Tecnici Necessari",
+      "english": ""
+    },
+    {
+      "id": 177,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:41",
+      "italian": " Questi cookie sono essenziali per il corretto funzionamento del sito.  Includono cookie di sessione, autenticazione e sicurezza. Non possono essere  disattivati.",
+      "english": ""
+    },
+    {
+      "id": 178,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:48",
+      "italian": "Cookie di Analisi",
+      "english": ""
+    },
+    {
+      "id": 179,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:55",
+      "italian": " Questi cookie ci aiutano a capire come i visitatori interagiscono con il  sito raccogliendo e segnalando informazioni in forma anonima. Utilizziamo  queste informazioni per migliorare il sito.",
+      "english": ""
+    },
+    {
+      "id": 180,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:62",
+      "italian": "Cookie di Marketing",
+      "english": ""
+    },
+    {
+      "id": 181,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:69",
+      "italian": " Questi cookie vengono utilizzati per tracciare i visitatori attraverso i  siti web. L'intento è mostrare annunci pertinenti e coinvolgenti per il  singolo utente.",
+      "english": ""
+    },
+    {
+      "id": 182,
+      "location": "#: parco_verismo/templates/parco_verismo/components/cookie_banner.html:75",
+      "italian": "Salva Preferenze",
+      "english": ""
+    },
+    {
+      "id": 183,
+      "location": "#: parco_verismo/templates/parco_verismo/components/documento_card.html:44",
+      "italian": "Visualizza documento",
+      "english": ""
+    },
+    {
+      "id": 184,
+      "location": "#: parco_verismo/templates/parco_verismo/opere_per_autore.html:33",
+      "italian": "Scopri di più",
+      "english": ""
+    },
+    {
+      "id": 185,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:8",
+      "italian": " Un viaggio nella Sicilia di Verga e Capuana attraverso i luoghi che hanno  ispirato i grandi capolavori del verismo italiano.",
+      "english": ""
+    },
+    {
+      "id": 186,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:25",
+      "italian": "Navigazione",
+      "english": ""
+    },
+    {
+      "id": 187,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:27",
+      "italian": "Home",
+      "english": ""
+    },
+    {
+      "id": 188,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:307",
+      "italian": "Biblioteca",
+      "english": ""
+    },
+    {
+      "id": 189,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:84",
+      "italian": "Eventi",
+      "english": ""
+    },
+    {
+      "id": 190,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:30",
+      "italian": "Notizie",
+      "english": ""
+    },
+    {
+      "id": 191,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:148",
+      "italian": "Documenti & Studi",
+      "english": ""
+    },
+    {
+      "id": 192,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:155",
+      "italian": "Contatti",
+      "english": ""
+    },
+    {
+      "id": 193,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:52",
+      "italian": "Newsletter",
+      "english": ""
+    },
+    {
+      "id": 194,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:53",
+      "italian": "Ricevi aggiornamenti sugli eventi e le novità del Parco.",
+      "english": ""
+    },
+    {
+      "id": 195,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:55",
+      "italian": "La tua email",
+      "english": ""
+    },
+    {
+      "id": 196,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:55",
+      "italian": "Email per newsletter",
+      "english": ""
+    },
+    {
+      "id": 197,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:56",
+      "italian": "Iscriviti",
+      "english": ""
+    },
+    {
+      "id": 198,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:63",
+      "italian": "Parco Letterario Giovanni Verga e Luigi Capuana. Tutti i diritti riservati.",
+      "english": ""
+    },
+    {
+      "id": 199,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:188",
+      "italian": "Privacy",
+      "english": ""
+    },
+    {
+      "id": 200,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:77",
+      "italian": "Cookie",
+      "english": ""
+    },
+    {
+      "id": 201,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:55",
+      "italian": "Note Legali",
+      "english": ""
+    },
+    {
+      "id": 202,
+      "location": "#: parco_verismo/templates/parco_verismo/components/footer.html:79",
+      "italian": "Accessibilità",
+      "english": ""
+    },
+    {
+      "id": 203,
+      "location": "#: parco_verismo/templates/parco_verismo/components/no_results.html:12",
+      "italian": "Nessun risultato",
+      "english": ""
+    },
+    {
+      "id": 204,
+      "location": "#: parco_verismo/templates/parco_verismo/components/no_results.html:13",
+      "italian": "Non sono stati trovati elementi corrispondenti alla tua ricerca.",
+      "english": ""
+    },
+    {
+      "id": 205,
+      "location": "#: parco_verismo/templates/parco_verismo/components/notizia_card.html:35",
+      "italian": "Leggi di più",
+      "english": ""
+    },
+    {
+      "id": 206,
+      "location": "#: parco_verismo/templates/parco_verismo/components/opera_card.html:23",
+      "italian": "Anno:",
+      "english": ""
+    },
+    {
+      "id": 207,
+      "location": "#: parco_verismo/templates/parco_verismo/components/search_form.html:13",
+      "italian": "Cerca...",
+      "english": ""
+    },
+    {
+      "id": 208,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:23",
+      "italian": "Cerca",
+      "english": ""
+    },
+    {
+      "id": 209,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:102",
+      "italian": "Cookie Policy",
+      "english": ""
+    },
+    {
+      "id": 210,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:93",
+      "italian": "Informativa sui Cookie",
+      "english": ""
+    },
+    {
+      "id": 211,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:67",
+      "italian": "Ultimo aggiornamento",
+      "english": ""
+    },
+    {
+      "id": 212,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:96",
+      "italian": "1. Cosa sono i Cookie",
+      "english": ""
+    },
+    {
+      "id": 213,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:98",
+      "italian": " I cookie sono piccoli file di testo che i siti visitati inviano al terminale  dell'utente (PC, tablet, smartphone, ecc.), dove vengono memorizzati per  essere poi ritrasmessi agli stessi siti alla visita successiva. I cookie  sono utilizzati per diverse finalità, hanno caratteristiche diverse, e  possono essere utilizzati sia dal titolare del sito che si sta visitando,  sia da terze parti.",
+      "english": ""
+    },
+    {
+      "id": 214,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:101",
+      "italian": "2. Tipologie di Cookie Utilizzati",
+      "english": ""
+    },
+    {
+      "id": 215,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:103",
+      "italian": "2.1 Cookie Tecnici Necessari",
+      "english": ""
+    },
+    {
+      "id": 216,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:105",
+      "italian": " Questi cookie sono essenziali per il corretto funzionamento del sito. Senza  questi cookie alcune funzionalità del sito non funzionerebbero.",
+      "english": ""
+    },
+    {
+      "id": 217,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:107",
+      "italian": "Non richiedono consenso dell'utente",
+      "english": ""
+    },
+    {
+      "id": 218,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:352",
+      "italian": "Nome",
+      "english": ""
+    },
+    {
+      "id": 219,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:188",
+      "italian": "Finalità",
+      "english": ""
+    },
+    {
+      "id": 220,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:153",
+      "italian": "Durata",
+      "english": ""
+    },
+    {
+      "id": 221,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:120",
+      "italian": "Cookie di sessione Django per mantenere lo stato dell'utente",
+      "english": ""
+    },
+    {
+      "id": 222,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:121",
+      "italian": "Sessione",
+      "english": ""
+    },
+    {
+      "id": 223,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:125",
+      "italian": "Cookie di sicurezza Django per protezione CSRF",
+      "english": ""
+    },
+    {
+      "id": 224,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:136",
+      "italian": "1 anno",
+      "english": ""
+    },
+    {
+      "id": 225,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:130",
+      "italian": "Cookie per memorizzare la preferenza linguistica (IT/EN)",
+      "english": ""
+    },
+    {
+      "id": 226,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:135",
+      "italian": "Cookie per memorizzare le preferenze sui cookie",
+      "english": ""
+    },
+    {
+      "id": 227,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:141",
+      "italian": "2.2 Cookie di Analisi (Analytics)",
+      "english": ""
+    },
+    {
+      "id": 228,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:143",
+      "italian": " Questi cookie raccolgono informazioni su come gli utenti utilizzano il sito  (pagine visitate, tempo di permanenza, ecc.) per migliorare il funzionamento  e l'esperienza del sito.",
+      "english": ""
+    },
+    {
+      "id": 229,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:145",
+      "italian": "Richiedono consenso dell'utente",
+      "english": ""
+    },
+    {
+      "id": 230,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:151",
+      "italian": "Fornitore",
+      "english": ""
+    },
+    {
+      "id": 231,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:160",
+      "italian": "Raccolta dati statistici anonimi sull'utilizzo del sito",
+      "english": ""
+    },
+    {
+      "id": 232,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:161",
+      "italian": "13 mesi",
+      "english": ""
+    },
+    {
+      "id": 233,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:166",
+      "italian": "Tracciamento sessione utente per statistiche",
+      "english": ""
+    },
+    {
+      "id": 234,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:167",
+      "italian": "30 minuti",
+      "english": ""
+    },
+    {
+      "id": 235,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:173",
+      "italian": " Nota: Il sito utilizza Matomo (ex Piwik), una piattaforma open source di web  analytics conforme alla normativa privacy europea, con dati anonimizzati e  server in Italia.",
+      "english": ""
+    },
+    {
+      "id": 236,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:176",
+      "italian": "2.3 Cookie di Marketing",
+      "english": ""
+    },
+    {
+      "id": 237,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:178",
+      "italian": "Al momento questo sito non utilizza cookie di marketing o profilazione.",
+      "english": ""
+    },
+    {
+      "id": 238,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:181",
+      "italian": "3. Cookie di Terze Parti",
+      "english": ""
+    },
+    {
+      "id": 239,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:182",
+      "italian": " Il sito potrebbe utilizzare servizi di terze parti che installano i seguenti  cookie:",
+      "english": ""
+    },
+    {
+      "id": 240,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:187",
+      "italian": "Servizio",
+      "english": ""
+    },
+    {
+      "id": 241,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:4",
+      "italian": "Privacy Policy",
+      "english": ""
+    },
+    {
+      "id": 242,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:195",
+      "italian": "Visualizzazione mappe interattive per itinerari",
+      "english": ""
+    },
+    {
+      "id": 243,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:200",
+      "italian": "Incorporazione video (se presenti)",
+      "english": ""
+    },
+    {
+      "id": 244,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:206",
+      "italian": "4. Gestione dei Cookie",
+      "english": ""
+    },
+    {
+      "id": 245,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:208",
+      "italian": " È possibile gestire le preferenze relative ai cookie in qualsiasi momento  cliccando sul pulsante qui sotto:",
+      "english": ""
+    },
+    {
+      "id": 246,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:212",
+      "italian": "Gestisci Preferenze Cookie",
+      "english": ""
+    },
+    {
+      "id": 247,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:215",
+      "italian": "4.1 Disabilitazione Cookie dal Browser",
+      "english": ""
+    },
+    {
+      "id": 248,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:217",
+      "italian": "È possibile disabilitare i cookie direttamente dal browser utilizzato:",
+      "english": ""
+    },
+    {
+      "id": 249,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:223",
+      "italian": "Istruzioni",
+      "english": ""
+    },
+    {
+      "id": 250,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:226",
+      "italian": "5. Base Giuridica del Trattamento",
+      "english": ""
+    },
+    {
+      "id": 251,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:228",
+      "italian": "Cookie tecnici",
+      "english": ""
+    },
+    {
+      "id": 252,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:228",
+      "italian": "Non richiedono consenso (art. 122 Codice Privacy)",
+      "english": ""
+    },
+    {
+      "id": 253,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:229",
+      "italian": "Cookie analytics",
+      "english": ""
+    },
+    {
+      "id": 254,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:230",
+      "italian": "Consenso esplicito dell'utente (GDPR art. 6, par. 1, lett. a)",
+      "english": ""
+    },
+    {
+      "id": 255,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:230",
+      "italian": "Cookie marketing",
+      "english": ""
+    },
+    {
+      "id": 256,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:233",
+      "italian": "6. Diritti dell'Utente",
+      "english": ""
+    },
+    {
+      "id": 257,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:235",
+      "italian": " Per maggiori informazioni sui diritti relativi al trattamento dei dati  personali, consultare la",
+      "english": ""
+    },
+    {
+      "id": 258,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:238",
+      "italian": "7. Aggiornamenti",
+      "english": ""
+    },
+    {
+      "id": 259,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:240",
+      "italian": " La presente Cookie Policy può essere soggetta a modifiche. L'utente è  invitato a verificare periodicamente questa pagina.",
+      "english": ""
+    },
+    {
+      "id": 260,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:243",
+      "italian": "8. Contatti",
+      "english": ""
+    },
+    {
+      "id": 261,
+      "location": "#: parco_verismo/templates/parco_verismo/cookie_policy.html:245",
+      "italian": " Per qualsiasi informazione relativa alla Cookie Policy è possibile  contattare:",
+      "english": ""
+    },
+    {
+      "id": 262,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:180",
+      "italian": "Email",
+      "english": ""
+    },
+    {
+      "id": 263,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:181",
+      "italian": "PEC",
+      "english": ""
+    },
+    {
+      "id": 264,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:169",
+      "italian": "Dichiarazione di Accessibilità",
+      "english": ""
+    },
+    {
+      "id": 265,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:80",
+      "italian": "Data della dichiarazione",
+      "english": ""
+    },
+    {
+      "id": 266,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:84",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a rendere il proprio sito web  accessibile, conformemente al",
+      "english": ""
+    },
+    {
+      "id": 267,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:85",
+      "italian": "che ha recepito la",
+      "english": ""
+    },
+    {
+      "id": 268,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:86",
+      "italian": "Direttiva UE 2016/2102",
+      "english": ""
+    },
+    {
+      "id": 269,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:86",
+      "italian": " relativa all'accessibilità dei siti web e delle applicazioni mobili degli  enti pubblici.",
+      "english": ""
+    },
+    {
+      "id": 270,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:90",
+      "italian": "La presente dichiarazione di accessibilità si applica al sito web",
+      "english": ""
+    },
+    {
+      "id": 271,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:94",
+      "italian": "Stato di conformità",
+      "english": ""
+    },
+    {
+      "id": 272,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:96",
+      "italian": "Il presente sito web è parzialmente conforme",
+      "english": ""
+    },
+    {
+      "id": 273,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:96",
+      "italian": " ai requisiti previsti dall'allegato A della norma tecnica UNI EN 301549:2018",
+      "english": ""
+    },
+    {
+      "id": 274,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:97",
+      "italian": "WCAG 2.1 livello AA",
+      "english": ""
+    },
+    {
+      "id": 275,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:97",
+      "italian": "a causa delle non conformità e/o delle deroghe elencate di seguito.",
+      "english": ""
+    },
+    {
+      "id": 276,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:101",
+      "italian": "1. Contenuti Non Accessibili",
+      "english": ""
+    },
+    {
+      "id": 277,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:103",
+      "italian": "1.1 Non conformità",
+      "english": ""
+    },
+    {
+      "id": 278,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:104",
+      "italian": " I contenuti di seguito elencati non sono accessibili per i seguenti motivi:",
+      "english": ""
+    },
+    {
+      "id": 279,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:108",
+      "italian": "Contenuti multimediali",
+      "english": ""
+    },
+    {
+      "id": 280,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:109",
+      "italian": " Alcuni video potrebbero non disporre di sottotitoli o trascrizioni testuali  (criteri 1.2.2, 1.2.3 WCAG 2.1)",
+      "english": ""
+    },
+    {
+      "id": 281,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:112",
+      "italian": "Documenti PDF",
+      "english": ""
+    },
+    {
+      "id": 282,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:113",
+      "italian": " Alcuni documenti PDF caricati dagli utenti potrebbero non essere  completamente accessibili (criterio 4.1.2 WCAG 2.1)",
+      "english": ""
+    },
+    {
+      "id": 283,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:116",
+      "italian": "Mappe interattive",
+      "english": ""
+    },
+    {
+      "id": 284,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:117",
+      "italian": " Le mappe degli itinerari fornite tramite servizi di terze parti (Google  Maps) potrebbero presentare limitazioni di accessibilità (criteri 2.1.1,  4.1.2 WCAG 2.1)",
+      "english": ""
+    },
+    {
+      "id": 285,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:120",
+      "italian": "Contenuti di terze parti",
+      "english": ""
+    },
+    {
+      "id": 286,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:121",
+      "italian": " Alcuni contenuti incorporati da terze parti (YouTube, social media)  potrebbero non essere completamente accessibili",
+      "english": ""
+    },
+    {
+      "id": 287,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:125",
+      "italian": "1.2 Deroghe per onere sproporzionato",
+      "english": ""
+    },
+    {
+      "id": 288,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:126",
+      "italian": "Al momento non sono previste deroghe per onere sproporzionato.",
+      "english": ""
+    },
+    {
+      "id": 289,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:128",
+      "italian": "1.3 Contenuti non rientranti nell'ambito della normativa applicabile",
+      "english": ""
+    },
+    {
+      "id": 290,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:130",
+      "italian": " Documenti pubblicati prima del 23 settembre 2018 (ad eccezione dei contenuti  necessari per lo svolgimento di procedimenti amministrativi in corso)",
+      "english": ""
+    },
+    {
+      "id": 291,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:131",
+      "italian": "Archivi storici digitalizzati contenenti documenti non modificabili",
+      "english": ""
+    },
+    {
+      "id": 292,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:134",
+      "italian": "2. Redazione della Dichiarazione di Accessibilità",
+      "english": ""
+    },
+    {
+      "id": 293,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:136",
+      "italian": "La presente dichiarazione è stata redatta il 7 dicembre 2025 mediante",
+      "english": ""
+    },
+    {
+      "id": 294,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:137",
+      "italian": "autovalutazione",
+      "english": ""
+    },
+    {
+      "id": 295,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:137",
+      "italian": "effettuata direttamente dal soggetto erogatore.",
+      "english": ""
+    },
+    {
+      "id": 296,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:141",
+      "italian": "La dichiarazione è stata rivista da ultimo il 7 dicembre 2025.",
+      "english": ""
+    },
+    {
+      "id": 297,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:144",
+      "italian": "3. Caratteristiche di Accessibilità del Sito",
+      "english": ""
+    },
+    {
+      "id": 298,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:145",
+      "italian": " Il sito è stato progettato e sviluppato prestando attenzione ai seguenti  aspetti di accessibilità:",
+      "english": ""
+    },
+    {
+      "id": 299,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:148",
+      "italian": "Struttura semantica",
+      "english": ""
+    },
+    {
+      "id": 300,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:148",
+      "italian": " Utilizzo corretto dei tag HTML5 semantici (header, nav, main, article,  footer)",
+      "english": ""
+    },
+    {
+      "id": 301,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:149",
+      "italian": "Navigazione da tastiera",
+      "english": ""
+    },
+    {
+      "id": 302,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:149",
+      "italian": "Tutte le funzionalità sono accessibili tramite tastiera",
+      "english": ""
+    },
+    {
+      "id": 303,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:150",
+      "italian": "Alternative testuali",
+      "english": ""
+    },
+    {
+      "id": 304,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:150",
+      "italian": "Le immagini significative dispongono di testo alternativo (alt text)",
+      "english": ""
+    },
+    {
+      "id": 305,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:151",
+      "italian": "Contrasto colori",
+      "english": ""
+    },
+    {
+      "id": 306,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:151",
+      "italian": "I colori utilizzati rispettano i rapporti di contrasto minimi (WCAG AA)",
+      "english": ""
+    },
+    {
+      "id": 307,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:152",
+      "italian": "Dimensione testi",
+      "english": ""
+    },
+    {
+      "id": 308,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:153",
+      "italian": "Link descrittivi",
+      "english": ""
+    },
+    {
+      "id": 309,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:153",
+      "italian": "I link hanno testi descrittivi del contenuto di destinazione",
+      "english": ""
+    },
+    {
+      "id": 310,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:154",
+      "italian": "Form accessibili",
+      "english": ""
+    },
+    {
+      "id": 311,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:154",
+      "italian": "I moduli dispongono di etichette associate correttamente",
+      "english": ""
+    },
+    {
+      "id": 312,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:155",
+      "italian": "Compatibilità con screen reader",
+      "english": ""
+    },
+    {
+      "id": 313,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:155",
+      "italian": "Il sito è testato con lettori di schermo (NVDA, JAWS)",
+      "english": ""
+    },
+    {
+      "id": 314,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:156",
+      "italian": "Responsive design",
+      "english": ""
+    },
+    {
+      "id": 315,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:156",
+      "italian": "Il sito è utilizzabile su dispositivi mobili e tablet",
+      "english": ""
+    },
+    {
+      "id": 316,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:157",
+      "italian": "Multilingua",
+      "english": ""
+    },
+    {
+      "id": 317,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:157",
+      "italian": " Supporto italiano e inglese con corretta dichiarazione della lingua (lang  attribute)",
+      "english": ""
+    },
+    {
+      "id": 318,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:160",
+      "italian": "4. Feedback e Informazioni di Contatto",
+      "english": ""
+    },
+    {
+      "id": 319,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:162",
+      "italian": " Gli utenti che riscontrassero difficoltà nell'accesso a contenuti o servizi  del sito possono contattare il Parco Letterario Giovanni Verga e Luigi Capuana per richiedere  assistenza o segnalare problemi di accessibilità:",
+      "english": ""
+    },
+    {
+      "id": 320,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:167",
+      "italian": "Email generale",
+      "english": ""
+    },
+    {
+      "id": 321,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:179",
+      "italian": "Telefono",
+      "english": ""
+    },
+    {
+      "id": 322,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:180",
+      "italian": "Indirizzo",
+      "english": ""
+    },
+    {
+      "id": 323,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:179",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a fornire risposta alle  segnalazioni entro",
+      "english": ""
+    },
+    {
+      "id": 324,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:180",
+      "italian": "30 giorni",
+      "english": ""
+    },
+    {
+      "id": 325,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:180",
+      "italian": "dalla ricezione.",
+      "english": ""
+    },
+    {
+      "id": 326,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:183",
+      "italian": "5. Procedure di Attuazione",
+      "english": ""
+    },
+    {
+      "id": 327,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:185",
+      "italian": "5.1 Difensore Civico per il Digitale",
+      "english": ""
+    },
+    {
+      "id": 328,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:187",
+      "italian": " In caso di risposta insoddisfacente o mancata risposta entro 30 giorni, è  possibile inviare una segnalazione al Difensore Civico per il Digitale  tramite:",
+      "english": ""
+    },
+    {
+      "id": 329,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:191",
+      "italian": "Form online",
+      "english": ""
+    },
+    {
+      "id": 330,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:195",
+      "italian": "5.2 Procedura di Attuazione",
+      "english": ""
+    },
+    {
+      "id": 331,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:197",
+      "italian": " La procedura è descritta all'articolo 3-quinquies della Legge n. 241/1990 e  successive modifiche. Il Difensore Civico per il Digitale è stato istituito  presso l'Agenzia per l'Italia Digitale (AGID) ai sensi dell'articolo 17,  comma 1-quater del CAD.",
+      "english": ""
+    },
+    {
+      "id": 332,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:200",
+      "italian": "6. Informazioni sulla Struttura",
+      "english": ""
+    },
+    {
+      "id": 333,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:202",
+      "italian": "Amministrazione",
+      "english": ""
+    },
+    {
+      "id": 334,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:203",
+      "italian": "Responsabile",
+      "english": ""
+    },
+    {
+      "id": 335,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:204",
+      "italian": "Data di pubblicazione del sito",
+      "english": ""
+    },
+    {
+      "id": 336,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:191",
+      "italian": "Tecnologie utilizzate",
+      "english": ""
+    },
+    {
+      "id": 337,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:214",
+      "italian": "7. Valutazione e Test",
+      "english": ""
+    },
+    {
+      "id": 338,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:215",
+      "italian": "Il sito è stato sottoposto a:",
+      "english": ""
+    },
+    {
+      "id": 339,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:217",
+      "italian": "Test automatici con strumenti di validazione HTML/CSS",
+      "english": ""
+    },
+    {
+      "id": 340,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:218",
+      "italian": "Test di contrasto colori con strumenti conformi WCAG",
+      "english": ""
+    },
+    {
+      "id": 341,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:219",
+      "italian": "Test di navigazione da tastiera",
+      "english": ""
+    },
+    {
+      "id": 342,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:220",
+      "italian": "Test con screen reader NVDA e JAWS",
+      "english": ""
+    },
+    {
+      "id": 343,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:221",
+      "italian": "Test su browser multipli (Chrome, Firefox, Safari, Edge)",
+      "english": ""
+    },
+    {
+      "id": 344,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:222",
+      "italian": "Test su dispositivi mobili e tablet",
+      "english": ""
+    },
+    {
+      "id": 345,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:225",
+      "italian": "8. Aggiornamenti e Miglioramenti",
+      "english": ""
+    },
+    {
+      "id": 346,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:227",
+      "italian": "Il Parco Letterario Giovanni Verga e Luigi Capuana si impegna a:",
+      "english": ""
+    },
+    {
+      "id": 347,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:230",
+      "italian": "Monitorare costantemente l'accessibilità del sito",
+      "english": ""
+    },
+    {
+      "id": 348,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:231",
+      "italian": "Correggere tempestivamente le non conformità segnalate",
+      "english": ""
+    },
+    {
+      "id": 349,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:232",
+      "italian": "Aggiornare la presente dichiarazione almeno annualmente",
+      "english": ""
+    },
+    {
+      "id": 350,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:233",
+      "italian": "Formare il personale sui temi dell'accessibilità digitale",
+      "english": ""
+    },
+    {
+      "id": 351,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:234",
+      "italian": "Migliorare progressivamente l'accessibilità dei contenuti esistenti",
+      "english": ""
+    },
+    {
+      "id": 352,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:237",
+      "italian": "9. Note",
+      "english": ""
+    },
+    {
+      "id": 353,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:239",
+      "italian": "La presente dichiarazione è conforme al",
+      "english": ""
+    },
+    {
+      "id": 354,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:240",
+      "italian": " modello per la dichiarazione di accessibilità dei siti web e delle  applicazioni mobili",
+      "english": ""
+    },
+    {
+      "id": 355,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:241",
+      "italian": "fornito da AGID (Agenzia per l'Italia Digitale).",
+      "english": ""
+    },
+    {
+      "id": 356,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:245",
+      "italian": "Riferimenti normativi:",
+      "english": ""
+    },
+    {
+      "id": 357,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:248",
+      "italian": " Legge 9 gennaio 2004, n. 4 - Disposizioni per favorire l'accesso dei  soggetti disabili agli strumenti informatici",
+      "english": ""
+    },
+    {
+      "id": 358,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:249",
+      "italian": " Decreto Legislativo 10 agosto 2018, n. 106 - Rimozione delle barriere alla  accessibilità dei siti web e delle applicazioni mobili",
+      "english": ""
+    },
+    {
+      "id": 359,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:250",
+      "italian": "Direttiva (UE) 2016/2102 del Parlamento europeo e del Consiglio",
+      "english": ""
+    },
+    {
+      "id": 360,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:251",
+      "italian": "Linee guida AGID per l'accessibilità degli strumenti informatici",
+      "english": ""
+    },
+    {
+      "id": 361,
+      "location": "#: parco_verismo/templates/parco_verismo/dichiarazione_accessibilita.html:252",
+      "italian": "WCAG 2.1 (Web Content Accessibility Guidelines) livello AA",
+      "english": ""
+    },
+    {
+      "id": 362,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:4",
+      "italian": "Documenti e Studi - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 363,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:10",
+      "italian": "Documenti e Studi",
+      "english": ""
+    },
+    {
+      "id": 364,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:11",
+      "italian": " Esplora i documenti e gli studi pubblicati dal Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 365,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:20",
+      "italian": "Cerca per titolo, descrizione, autori...",
+      "english": ""
+    },
+    {
+      "id": 366,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:33",
+      "italian": "Tutti i tipi",
+      "english": ""
+    },
+    {
+      "id": 367,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:268",
+      "italian": "Documenti",
+      "english": ""
+    },
+    {
+      "id": 368,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:35",
+      "italian": "Studi",
+      "english": ""
+    },
+    {
+      "id": 369,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:36",
+      "italian": "Ricerche",
+      "english": ""
+    },
+    {
+      "id": 370,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:37",
+      "italian": "Saggi",
+      "english": ""
+    },
+    {
+      "id": 371,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:50",
+      "italian": "Nessun documento disponibile",
+      "english": ""
+    },
+    {
+      "id": 372,
+      "location": "#: parco_verismo/templates/parco_verismo/documenti.html:51",
+      "italian": " Al momento non ci sono documenti o studi pubblicati. Torna presto per  consultare i nostri materiali!",
+      "english": ""
+    },
+    {
+      "id": 373,
+      "location": "#: parco_verismo/templates/parco_verismo/documento_detail.html:27",
+      "italian": "Autori:",
+      "english": ""
+    },
+    {
+      "id": 374,
+      "location": "#: parco_verismo/templates/parco_verismo/documento_detail.html:59",
+      "italian": "Parole chiave:",
+      "english": ""
+    },
+    {
+      "id": 375,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:99",
+      "italian": "Scarica PDF",
+      "english": ""
+    },
+    {
+      "id": 376,
+      "location": "#: parco_verismo/templates/parco_verismo/documento_detail.html:75",
+      "italian": "Visualizza PDF",
+      "english": ""
+    },
+    {
+      "id": 377,
+      "location": "#: parco_verismo/templates/parco_verismo/documento_detail.html:82",
+      "italian": "Torna ai documenti",
+      "english": ""
+    },
+    {
+      "id": 378,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:4",
+      "italian": "Eventi - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 379,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:14",
+      "italian": "Apri calendario",
+      "english": ""
+    },
+    {
+      "id": 380,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:28",
+      "italian": "Lun",
+      "english": ""
+    },
+    {
+      "id": 381,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:29",
+      "italian": "Mar",
+      "english": ""
+    },
+    {
+      "id": 382,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:30",
+      "italian": "Mer",
+      "english": ""
+    },
+    {
+      "id": 383,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:31",
+      "italian": "Gio",
+      "english": ""
+    },
+    {
+      "id": 384,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:32",
+      "italian": "Ven",
+      "english": ""
+    },
+    {
+      "id": 385,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:33",
+      "italian": "Sab",
+      "english": ""
+    },
+    {
+      "id": 386,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:34",
+      "italian": "Dom",
+      "english": ""
+    },
+    {
+      "id": 387,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:47",
+      "italian": "Evento",
+      "english": ""
+    },
+    {
+      "id": 388,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:48",
+      "italian": "Notizia",
+      "english": ""
+    },
+    {
+      "id": 389,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:58",
+      "italian": "Agenda",
+      "english": ""
+    },
+    {
+      "id": 390,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:60",
+      "italian": "Scopri tutti gli eventi organizzati dal Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 391,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:72",
+      "italian": "Nessun evento programmato",
+      "english": ""
+    },
+    {
+      "id": 392,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:73",
+      "italian": " Al momento non ci sono eventi in programma. Torna presto per scoprire le  nostre iniziative!",
+      "english": ""
+    },
+    {
+      "id": 393,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:129",
+      "italian": "Gennaio",
+      "english": ""
+    },
+    {
+      "id": 394,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:129",
+      "italian": "Febbraio",
+      "english": ""
+    },
+    {
+      "id": 395,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:129",
+      "italian": "Marzo",
+      "english": ""
+    },
+    {
+      "id": 396,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:105",
+      "italian": "Aprile",
+      "english": ""
+    },
+    {
+      "id": 397,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:130",
+      "italian": "Maggio",
+      "english": ""
+    },
+    {
+      "id": 398,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:130",
+      "italian": "Giugno",
+      "english": ""
+    },
+    {
+      "id": 399,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:131",
+      "italian": "Luglio",
+      "english": ""
+    },
+    {
+      "id": 400,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:131",
+      "italian": "Agosto",
+      "english": ""
+    },
+    {
+      "id": 401,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:127",
+      "italian": "Settembre",
+      "english": ""
+    },
+    {
+      "id": 402,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:132",
+      "italian": "Ottobre",
+      "english": ""
+    },
+    {
+      "id": 403,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:132",
+      "italian": "Novembre",
+      "english": ""
+    },
+    {
+      "id": 404,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:132",
+      "italian": "Dicembre",
+      "english": ""
+    },
+    {
+      "id": 405,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:136",
+      "italian": "Domenica",
+      "english": ""
+    },
+    {
+      "id": 406,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:136",
+      "italian": "Lunedì",
+      "english": ""
+    },
+    {
+      "id": 407,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:136",
+      "italian": "Martedì",
+      "english": ""
+    },
+    {
+      "id": 408,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:137",
+      "italian": "Mercoledì",
+      "english": ""
+    },
+    {
+      "id": 409,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:137",
+      "italian": "Giovedì",
+      "english": ""
+    },
+    {
+      "id": 410,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:137",
+      "italian": "Venerdì",
+      "english": ""
+    },
+    {
+      "id": 411,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:137",
+      "italian": "Sabato",
+      "english": ""
+    },
+    {
+      "id": 412,
+      "location": "#: parco_verismo/templates/parco_verismo/eventi.html:161",
+      "italian": "Nessun evento in questa data",
+      "english": ""
+    },
+    {
+      "id": 413,
+      "location": "#: parco_verismo/templates/parco_verismo/evento_detail.html:26",
+      "italian": "Data e Ora",
+      "english": ""
+    },
+    {
+      "id": 414,
+      "location": "#: parco_verismo/templates/parco_verismo/evento_detail.html:29",
+      "italian": "Inizio:",
+      "english": ""
+    },
+    {
+      "id": 415,
+      "location": "#: parco_verismo/templates/parco_verismo/evento_detail.html:33",
+      "italian": "Fine:",
+      "english": ""
+    },
+    {
+      "id": 416,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:372",
+      "italian": "Luogo",
+      "english": ""
+    },
+    {
+      "id": 417,
+      "location": "#: parco_verismo/templates/parco_verismo/evento_detail.html:66",
+      "italian": "Torna agli eventi",
+      "english": ""
+    },
+    {
+      "id": 418,
+      "location": "#: parco_verismo/templates/parco_verismo/evento_detail.html:69",
+      "italian": "Vedi calendario",
+      "english": ""
+    },
+    {
+      "id": 419,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:18",
+      "italian": "Un viaggio nella Sicilia di Verga e Capuana",
+      "english": ""
+    },
+    {
+      "id": 420,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:32",
+      "italian": "Il",
+      "english": ""
+    },
+    {
+      "id": 421,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:35",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza il patrimonio verista attraverso  ricerca, percorsi culturali e progetti che coinvolgono la comunità.  L'obiettivo è trasformare la memoria letteraria in un motore di sviluppo  condiviso, favorendo un turismo culturale responsabile e un territorio in  cui identità, storia e futuro dialogano in modo armonioso.",
+      "english": ""
+    },
+    {
+      "id": 422,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:41",
+      "italian": "Scopri il Parco",
+      "english": ""
+    },
+    {
+      "id": 423,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:42",
+      "italian": "Comitato Tecnico",
+      "english": ""
+    },
+    {
+      "id": 424,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:55",
+      "italian": "Località",
+      "english": ""
+    },
+    {
+      "id": 425,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:58",
+      "italian": " Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e  Capuana",
+      "english": ""
+    },
+    {
+      "id": 426,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:69",
+      "italian": "La patria di Giovanni Verga, dove la letteratura dialoga con i luoghi.",
+      "english": ""
+    },
+    {
+      "id": 427,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:70",
+      "italian": "Scopri Vizzini",
+      "english": ""
+    },
+    {
+      "id": 428,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:80",
+      "italian": "Uno dei luoghi più importanti della narrativa capuaniana e del Verismo.",
+      "english": ""
+    },
+    {
+      "id": 429,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:81",
+      "italian": "Scopri Mineo",
+      "english": ""
+    },
+    {
+      "id": 430,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:91",
+      "italian": " Un territorio ricco di storia e di legami con la grande letteratura  siciliana.",
+      "english": ""
+    },
+    {
+      "id": 431,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:92",
+      "italian": "Scopri Licodia",
+      "english": ""
+    },
+    {
+      "id": 432,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:104",
+      "italian": "Eventi & Notizie",
+      "english": ""
+    },
+    {
+      "id": 433,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:105",
+      "italian": "Ultimi eventi e aggiornamenti dal Parco",
+      "english": ""
+    },
+    {
+      "id": 434,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:111",
+      "italian": "Eventi recenti",
+      "english": ""
+    },
+    {
+      "id": 435,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:123",
+      "italian": "Nessun evento recente",
+      "english": ""
+    },
+    {
+      "id": 436,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:127",
+      "italian": "Vedi tutti gli eventi",
+      "english": ""
+    },
+    {
+      "id": 437,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:134",
+      "italian": "Notizie recenti",
+      "english": ""
+    },
+    {
+      "id": 438,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:146",
+      "italian": "Nessuna notizia recente",
+      "english": ""
+    },
+    {
+      "id": 439,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:150",
+      "italian": "Leggi tutte le notizie",
+      "english": ""
+    },
+    {
+      "id": 440,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:191",
+      "italian": "Patrimonio Letterario",
+      "english": ""
+    },
+    {
+      "id": 441,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:198",
+      "italian": "Biblioteca Letteraria",
+      "english": ""
+    },
+    {
+      "id": 442,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:201",
+      "italian": " Esplora le opere di Giovanni Verga e Luigi Capuana, i pilastri della  letteratura siciliana e italiana.",
+      "english": ""
+    },
+    {
+      "id": 443,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:204",
+      "italian": "Catalogo completo delle opere",
+      "english": ""
+    },
+    {
+      "id": 444,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:205",
+      "italian": "Biografie dettagliate degli autori",
+      "english": ""
+    },
+    {
+      "id": 445,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:206",
+      "italian": "Analisi letterarie e studi critici",
+      "english": ""
+    },
+    {
+      "id": 446,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:207",
+      "italian": "Contenuti multimediali e interattivi",
+      "english": ""
+    },
+    {
+      "id": 447,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:210",
+      "italian": "Accedi alla Biblioteca",
+      "english": ""
+    },
+    {
+      "id": 448,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:245",
+      "italian": "Risorse Documentali",
+      "english": ""
+    },
+    {
+      "id": 449,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:252",
+      "italian": "Archivi & Documenti",
+      "english": ""
+    },
+    {
+      "id": 450,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:255",
+      "italian": " Accedi agli archivi fotografici, agli studi critici e ai documenti storici  sul patrimonio verista.",
+      "english": ""
+    },
+    {
+      "id": 451,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:258",
+      "italian": "Archivio fotografico del territorio",
+      "english": ""
+    },
+    {
+      "id": 452,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:259",
+      "italian": "Studi e ricerche scientifiche",
+      "english": ""
+    },
+    {
+      "id": 453,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:260",
+      "italian": "Documenti storici e manoscritti",
+      "english": ""
+    },
+    {
+      "id": 454,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:261",
+      "italian": "Risorse per la ricerca accademica",
+      "english": ""
+    },
+    {
+      "id": 455,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:109",
+      "italian": "Opere & Letteratura",
+      "english": ""
+    },
+    {
+      "id": 456,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:285",
+      "italian": "Esplora le opere, i testi e i protagonisti del movimento verista",
+      "english": ""
+    },
+    {
+      "id": 457,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:116",
+      "italian": "Opere di Verga",
+      "english": ""
+    },
+    {
+      "id": 458,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:296",
+      "italian": " Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e  edizioni critiche.",
+      "english": ""
+    },
+    {
+      "id": 459,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:297",
+      "italian": "Scopri le opere",
+      "english": ""
+    },
+    {
+      "id": 460,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:123",
+      "italian": "Opere di Capuana",
+      "english": ""
+    },
+    {
+      "id": 461,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:307",
+      "italian": " Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua  produzione.",
+      "english": ""
+    },
+    {
+      "id": 462,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:308",
+      "italian": "Esplora Capuana",
+      "english": ""
+    },
+    {
+      "id": 463,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:128",
+      "italian": "Personaggi & Lessico del Verismo",
+      "english": ""
+    },
+    {
+      "id": 464,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:318",
+      "italian": " Schede sui personaggi principali, lessico caratteristico e termini letterari  del Verismo.",
+      "english": ""
+    },
+    {
+      "id": 465,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:319",
+      "italian": "Approfondisci",
+      "english": ""
+    },
+    {
+      "id": 466,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:335",
+      "italian": "Prenota il tuo itinerario",
+      "english": ""
+    },
+    {
+      "id": 467,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:336",
+      "italian": " Compila i tuoi dati e scegli luogo e tipologia d'itinerario. Ti contatteremo  al più presto.",
+      "english": ""
+    },
+    {
+      "id": 468,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:353",
+      "italian": "Inserisci il tuo nome",
+      "english": ""
+    },
+    {
+      "id": 469,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:357",
+      "italian": "Cognome",
+      "english": ""
+    },
+    {
+      "id": 470,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:358",
+      "italian": "Inserisci il tuo cognome",
+      "english": ""
+    },
+    {
+      "id": 471,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:363",
+      "italian": "Inserisci la tua email",
+      "english": ""
+    },
+    {
+      "id": 472,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:368",
+      "italian": "Numero di telefono (opzionale)",
+      "english": ""
+    },
+    {
+      "id": 473,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:384",
+      "italian": "Seleziona...",
+      "english": ""
+    },
+    {
+      "id": 474,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:382",
+      "italian": "Tipologia itinerario",
+      "english": ""
+    },
+    {
+      "id": 475,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:385",
+      "italian": "Itinerari verghiani",
+      "english": ""
+    },
+    {
+      "id": 476,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:386",
+      "italian": "Itinerari capuaniani",
+      "english": ""
+    },
+    {
+      "id": 477,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:387",
+      "italian": "Itinerari tematici",
+      "english": ""
+    },
+    {
+      "id": 478,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:392",
+      "italian": "Data preferita visita",
+      "english": ""
+    },
+    {
+      "id": 479,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:397",
+      "italian": "Numero partecipanti",
+      "english": ""
+    },
+    {
+      "id": 480,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:402",
+      "italian": "Messaggio o richieste particolari",
+      "english": ""
+    },
+    {
+      "id": 481,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:403",
+      "italian": "Eventuali richieste o informazioni aggiuntive...",
+      "english": ""
+    },
+    {
+      "id": 482,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:408",
+      "italian": "Invia richiesta",
+      "english": ""
+    },
+    {
+      "id": 483,
+      "location": "#: parco_verismo/templates/parco_verismo/index.html:410",
+      "italian": "Ti risponderemo via email per confermare la tua richiesta.",
+      "english": ""
+    },
+    {
+      "id": 484,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:8",
+      "italian": " Itinerari Verghiani - Scopri i luoghi delle opere di Giovanni Verga  attraverso percorsi letterari nel cuore della Sicilia.",
+      "english": ""
+    },
+    {
+      "id": 485,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:10",
+      "italian": "Parco Letterario Giovanni Verga e Luigi Capuana - Itinerari Verghiani",
+      "english": ""
+    },
+    {
+      "id": 486,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:42",
+      "italian": "Mappa Itinerari Verghiani",
+      "english": ""
+    },
+    {
+      "id": 487,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:43",
+      "italian": "Esplora i percorsi letterari di Giovanni Verga attraverso la Sicilia",
+      "english": ""
+    },
+    {
+      "id": 488,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:52",
+      "italian": "Percorsi Verghiani",
+      "english": ""
+    },
+    {
+      "id": 489,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:80",
+      "italian": "Legenda",
+      "english": ""
+    },
+    {
+      "id": 490,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:94",
+      "italian": "Reset vista",
+      "english": ""
+    },
+    {
+      "id": 491,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:104",
+      "italian": "Nessun itinerario disponibile",
+      "english": ""
+    },
+    {
+      "id": 492,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:105",
+      "italian": " Al momento non ci sono itinerari verghiani disponibili. Torna presto per  scoprire i percorsi!",
+      "english": ""
+    },
+    {
+      "id": 493,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:112",
+      "italian": "Torna agli itinerari verghiani",
+      "english": ""
+    },
+    {
+      "id": 494,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:116",
+      "italian": "Torna agli itinerari capuaniani",
+      "english": ""
+    },
+    {
+      "id": 495,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:120",
+      "italian": "Torna agli itinerari tematici",
+      "english": ""
+    },
+    {
+      "id": 496,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:49",
+      "italian": "Descrizione del percorso",
+      "english": ""
+    },
+    {
+      "id": 497,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:65",
+      "italian": "Apri su Maps",
+      "english": ""
+    },
+    {
+      "id": 498,
+      "location": "#: parco_verismo/templates/parco_verismo/itinerario_detail.html:76",
+      "italian": "Tappe del percorso",
+      "english": ""
+    },
+    {
+      "id": 499,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:203",
+      "italian": "Licodia Eubea",
+      "english": ""
+    },
+    {
+      "id": 500,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:21",
+      "italian": "Territorio",
+      "english": ""
+    },
+    {
+      "id": 501,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:23",
+      "italian": "Tra storia, natura e tradizione nel cuore degli Iblei",
+      "english": ""
+    },
+    {
+      "id": 502,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:35",
+      "italian": "Introduzione",
+      "english": ""
+    },
+    {
+      "id": 503,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:36",
+      "italian": " \\n                 <p class=\\ >A 600 metri sul livello del mare, sul  versante nord occidentale degli Iblei, sorge Licodia Eubea. Il significato  del toponimo è incerto, ma gli studi concordano nel riconoscere nel  fondovalle la presenza di un'antica civiltà, documentata da una vasta rete  di necropoli.</p>\\n                 <p class=\\ >In epoca moderna il luogo venne  identificato con la <strong>subcolonia greca Lentini Subcensueta</strong> e  successivamente con <strong>La Ciura</strong>, fino ad assumere nel  <strong>1872</strong> il nome attuale. Le ricerche archeologiche di  <strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</strong> hanno  confermato l'esistenza di una rilevante borgata sicula, con una necropoli  estesa e strutturata, databile all'<strong>VIII secolo a.C.</strong> Il  Borgo rappresenta ancora oggi il nucleo più antico dell'abitato,  sopravvissuto al terremoto del 1693.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 504,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:55",
+      "italian": "Bosco Vaito",
+      "english": ""
+    },
+    {
+      "id": 505,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:56",
+      "italian": " \\n                 <p class=\\ >Bosco sporadico di circa <strong>84  ettari</strong>, caratterizzato dalla presenza della <em>sughera (Quercus  suber)</em>, specie arborea tipica della macchia mediterranea e  particolarmente rara in questa zona degli Iblei.</p>\\n                 <p class=\\ >Rappresenta una continuità  naturale con il più esteso <strong>Bosco di Santo Pietro</strong>, situato  verso sud, formando un corridoio ecologico di notevole interesse botanico e  faunistico. L'area è ideale per escursioni naturalistiche, birdwatching e  fotografia paesaggistica, offrendo ai visitatori sentieri immersi nella  vegetazione spontanea e panorami suggestivi sul territorio circostante. Il  bosco conserva un ecosistema prezioso che testimonia l'antico rapporto tra  l'uomo e l'ambiente ibleo.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 506,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:75",
+      "italian": "Lago Dirillo",
+      "english": ""
+    },
+    {
+      "id": 507,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:76",
+      "italian": " \\n                 <p class=\\ >Bacino artificiale originato dalla  <strong>diga Ragoleto (1961)</strong>, alimentato dal fiume Dirillo, uno dei  principali corsi d'acqua del territorio ibleo. L'invaso, nato per scopi  irrigui e di approvvigionamento idrico, ha trasformato il paesaggio creando  un ambiente lacustre di grande suggestione.</p>\\n                 <p class=\\ >Nelle aree circostanti sono  stati individuati <strong>sepolcreti e strutture di epoca tardo romana</ strong> (IV secolo d.C.), testimonianza dell'antica presenza umana lungo le  sponde del fiume. Il lago offre un paesaggio ideale per passeggiate  rilassanti, birdwatching e fotografia naturalistica, attirando numerose  specie di avifauna stanziale e migratoria. Le sue acque tranquille e il  contesto naturale incontaminato lo rendono meta privilegiata per gli amanti  della natura e della storia.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 508,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:94",
+      "italian": "Tradizioni e Feste",
+      "english": ""
+    },
+    {
+      "id": 509,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:95",
+      "italian": " Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  licodiana",
+      "english": ""
+    },
+    {
+      "id": 510,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:115",
+      "italian": "Settimana Santa",
+      "english": ""
+    },
+    {
+      "id": 511,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:116",
+      "italian": "Marzo/Aprile",
+      "english": ""
+    },
+    {
+      "id": 512,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:106",
+      "italian": " L'evento religioso più sentito. Le celebrazioni culminano nel  <strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale  \\  pasquale.",
+      "english": ""
+    },
+    {
+      "id": 513,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:115",
+      "italian": "Festa dell'Uva",
+      "english": ""
+    },
+    {
+      "id": 514,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:116",
+      "italian": "Prima domenica di settembre",
+      "english": ""
+    },
+    {
+      "id": 515,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:117",
+      "italian": " Antica ricorrenza agricola con degustazioni, iniziative culturali e la  tradizionale <strong>pigiatura dell'uva nel tino</strong>.",
+      "english": ""
+    },
+    {
+      "id": 516,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:126",
+      "italian": "Rassegna Archeologica",
+      "english": ""
+    },
+    {
+      "id": 517,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:128",
+      "italian": " Festival cinematografico tra i principali eventi italiani dedicati alla  <strong>divulgazione archeologica</strong>.",
+      "english": ""
+    },
+    {
+      "id": 518,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:137",
+      "italian": "Sagra della Patacò",
+      "english": ""
+    },
+    {
+      "id": 519,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:139",
+      "italian": " Evento dedicato alla <strong>farina di fave secche</strong>, pietanza  tradizionale licodiana.",
+      "english": ""
+    },
+    {
+      "id": 520,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:150",
+      "italian": "Patrimonio Storico",
+      "english": ""
+    },
+    {
+      "id": 521,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:151",
+      "italian": "Scopri i monumenti e i luoghi simbolo di Licodia Eubea",
+      "english": ""
+    },
+    {
+      "id": 522,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:158",
+      "italian": "Sito Storico Principale",
+      "english": ""
+    },
+    {
+      "id": 523,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:197",
+      "italian": "Chiese e Luoghi di Culto",
+      "english": ""
+    },
+    {
+      "id": 524,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:198",
+      "italian": "Un patrimonio religioso ricco di storia e arte sacra",
+      "english": ""
+    },
+    {
+      "id": 525,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:252",
+      "italian": "Cultura e Patrimonio",
+      "english": ""
+    },
+    {
+      "id": 526,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:253",
+      "italian": "Musei e Cultura",
+      "english": ""
+    },
+    {
+      "id": 527,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:254",
+      "italian": "Testimonianze della storia millenaria del territorio",
+      "english": ""
+    },
+    {
+      "id": 528,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:265",
+      "italian": "Museo",
+      "english": ""
+    },
+    {
+      "id": 529,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:307",
+      "italian": "Monumento",
+      "english": ""
+    },
+    {
+      "id": 530,
+      "location": "#: parco_verismo/templates/parco_verismo/licodia.html:328",
+      "italian": "Esplora Licodia Eubea",
+      "english": ""
+    },
+    {
+      "id": 531,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:329",
+      "italian": "Scopri i luoghi di interesse sulla mappa interattiva",
+      "english": ""
+    },
+    {
+      "id": 532,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:336",
+      "italian": "Filtra per categoria",
+      "english": ""
+    },
+    {
+      "id": 533,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:341",
+      "italian": "Cerca un luogo...",
+      "english": ""
+    },
+    {
+      "id": 534,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:349",
+      "italian": "Servizi Pubblici",
+      "english": ""
+    },
+    {
+      "id": 535,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:353",
+      "italian": "Servizi Culturali",
+      "english": ""
+    },
+    {
+      "id": 536,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:357",
+      "italian": "Prodotti Tipici",
+      "english": ""
+    },
+    {
+      "id": 537,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:361",
+      "italian": "Ospitalità",
+      "english": ""
+    },
+    {
+      "id": 538,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:365",
+      "italian": "Luoghi Verghiani",
+      "english": ""
+    },
+    {
+      "id": 539,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:369",
+      "italian": "Ristorazione",
+      "english": ""
+    },
+    {
+      "id": 540,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:373",
+      "italian": "Mostra tutti",
+      "english": ""
+    },
+    {
+      "id": 541,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:188",
+      "italian": "Mineo",
+      "english": ""
+    },
+    {
+      "id": 542,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:23",
+      "italian": "Patria di Luigi Capuana, culla del Verismo siciliano",
+      "english": ""
+    },
+    {
+      "id": 543,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:36",
+      "italian": " \\n                 <p class=\\ >Mineo sorge a 500 metri sul livello  del mare, nel cuore degli Iblei, dominando la piana di Catania. Città di  antichissime origini, identificata con l'antica <strong>Menai</strong> o  <strong>Menaion</strong> citata dalle fonti classiche.</p>\\n                 <p class=\\ >Conserva tracce di insediamenti  che risalgono all'età del bronzo. Nel corso dei secoli Mineo è stata teatro  di dominazioni greche, romane, bizantine, arabe e normanne. È universalmente  nota per aver dato i natali a <strong>Luigi Capuana</strong> (1839-1915),  uno dei padri fondatori del <strong>Verismo italiano</strong>, narratore e  teorico della letteratura che ha immortalato nei suoi racconti la vita e le  tradizioni del popolo siciliano.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 544,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:55",
+      "italian": "Casa Natale di Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 545,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:56",
+      "italian": " \\n                 <p class=\\ >Nel cuore del centro storico di Mineo  si trova la <strong>Casa Natale di Luigi Capuana</strong>, oggi trasformata  in <strong>museo letterario</strong> dedicato alla vita e all'opera dello  scrittore verista.</p>\\n                 <p class=\\ >L'edificio, risalente al XVIII  secolo, conserva arredi d'epoca, manoscritti originali, prime edizioni delle  sue opere e oggetti personali. La casa rappresenta un luogo imprescindibile  per comprendere il contesto culturale che ha ispirato capolavori come  <em>Giacinta</em>, <em>Il Marchese di Roccaverdina</em> e le celebri novelle  per l'infanzia.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 546,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:75",
+      "italian": "Castello di Mineo",
+      "english": ""
+    },
+    {
+      "id": 547,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:76",
+      "italian": " \\n                 <p class=\\ >Il <strong>Castello di Mineo</ strong>, o <strong>Castello dei Palagonia</strong>, domina dall'alto il  profilo della città ed è uno dei simboli architettonici più significativi  del territorio.</p>\\n                 <p class=\\ >Eretto in epoca medievale e più  volte rimaneggiato, il castello fu residenza della nobile famiglia  Palagonia. Nonostante i segni del tempo, il complesso conserva ancora  imponenti mura, torri e strutture murarie che testimoniano l'importanza  strategica e difensiva del sito. Dalle sue terrazze si gode di un panorama  spettacolare sulla vallata circostante e sui monti Iblei.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 548,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:95",
+      "italian": " Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  mineota",
+      "english": ""
+    },
+    {
+      "id": 549,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:106",
+      "italian": " Processioni solenni, rappresentazioni della Passione e antichi riti  accompagnano i fedeli in un'atmosfera di <strong>intensa partecipazione  popolare</strong>.",
+      "english": ""
+    },
+    {
+      "id": 550,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:115",
+      "italian": "Festa di Sant'Agrippina",
+      "english": ""
+    },
+    {
+      "id": 551,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:117",
+      "italian": " La celebrazione più importante dell'anno, con <strong>processioni,  luminarie</strong>, concerti bandistici e spettacoli pirotecnici.",
+      "english": ""
+    },
+    {
+      "id": 552,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:126",
+      "italian": "Premio Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 553,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:128",
+      "italian": " Riconoscimento nazionale dedicato alla letteratura, con scrittori e critici  che celebrano l'eredità del <strong>grande verista</strong>.",
+      "english": ""
+    },
+    {
+      "id": 554,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:137",
+      "italian": "Sagra dell'Arancia",
+      "english": ""
+    },
+    {
+      "id": 555,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:138",
+      "italian": "Febbraio/Marzo",
+      "english": ""
+    },
+    {
+      "id": 556,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:139",
+      "italian": " Celebrazione dell'<strong>arancia rossa di Sicilia</strong>, con  degustazioni, stand gastronomici e attività culturali.",
+      "english": ""
+    },
+    {
+      "id": 557,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:151",
+      "italian": "Scopri i monumenti e i luoghi simbolo di Mineo",
+      "english": ""
+    },
+    {
+      "id": 558,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:158",
+      "italian": "Centro Storico",
+      "english": ""
+    },
+    {
+      "id": 559,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:254",
+      "italian": "Testimonianze della storia letteraria e archeologica del territorio",
+      "english": ""
+    },
+    {
+      "id": 560,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:328",
+      "italian": "Esplora Mineo",
+      "english": ""
+    },
+    {
+      "id": 561,
+      "location": "#: parco_verismo/templates/parco_verismo/mineo.html:365",
+      "italian": "Luoghi Capuaniani",
+      "english": ""
+    },
+    {
+      "id": 562,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:4",
+      "italian": "Missione e Visione",
+      "english": ""
+    },
+    {
+      "id": 563,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:20",
+      "italian": "Chi Siamo",
+      "english": ""
+    },
+    {
+      "id": 564,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:22",
+      "italian": "Il Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 565,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:25",
+      "italian": " Trasformare la letteratura in dispositivo contemporaneo di sviluppo,  identità e partecipazione civica",
+      "english": ""
+    },
+    {
+      "id": 566,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:118",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana nasce per costruire nei territori di  Vizzini, Mineo e Licodia Eubea un modello integrato di welfare culturale  fondato sulla valorizzazione dell&rsquo;eredità verista di Giovanni Verga e  Luigi Capuana come motore di crescita sociale, educativa e turistica.",
+      "english": ""
+    },
+    {
+      "id": 567,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:128",
+      "italian": "Letteratura come Dispositivo",
+      "english": ""
+    },
+    {
+      "id": 568,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:129",
+      "italian": " Trasformare la letteratura in uno strumento contemporaneo di sviluppo,  identità e partecipazione civica.",
+      "english": ""
+    },
+    {
+      "id": 569,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:138",
+      "italian": "Crescita Integrata",
+      "english": ""
+    },
+    {
+      "id": 570,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:139",
+      "italian": " Sviluppo sociale, educativo e turistico attraverso la valorizzazione del  patrimonio verghiano-capuaniano.",
+      "english": ""
+    },
+    {
+      "id": 571,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:148",
+      "italian": "Radicamento Territoriale",
+      "english": ""
+    },
+    {
+      "id": 572,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:149",
+      "italian": " Coinvolgimento delle comunità locali di Vizzini, Mineo e Licodia Eubea nel  modello di welfare culturale.",
+      "english": ""
+    },
+    {
+      "id": 573,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:204",
+      "italian": " Non custodire la memoria, ma riattivare il modo in cui essa viene riattivata  nel presente. Il patrimonio culturale non deve rimanere un reperto, ma  diventare infrastruttura viva di senso, di legami e di futuro per le  comunità coinvolte.",
+      "english": ""
+    },
+    {
+      "id": 574,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:209",
+      "italian": "Azioni Strategiche",
+      "english": ""
+    },
+    {
+      "id": 575,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:213",
+      "italian": "Costituzione di un Comitato Tecnico-Scientifico",
+      "english": ""
+    },
+    {
+      "id": 576,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:217",
+      "italian": "Messa in rete dei servizi culturali e turistici",
+      "english": ""
+    },
+    {
+      "id": 577,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:221",
+      "italian": "Creazione di itinerari tematici e digitali",
+      "english": ""
+    },
+    {
+      "id": 578,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:225",
+      "italian": "Accordi con università e ITS",
+      "english": ""
+    },
+    {
+      "id": 579,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:229",
+      "italian": "Premio Verga-Capuana per le scuole",
+      "english": ""
+    },
+    {
+      "id": 580,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:233",
+      "italian": "Giornata di Studi annuale",
+      "english": ""
+    },
+    {
+      "id": 581,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:237",
+      "italian": "Manifestazioni teatrali e produzioni culturali contemporanee",
+      "english": ""
+    },
+    {
+      "id": 582,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:261",
+      "italian": "Riconoscimento Istituzionale",
+      "english": ""
+    },
+    {
+      "id": 583,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:264",
+      "italian": " Il progetto &egrave; promosso dagli Enti locali del territorio ed &egrave;  formalmente riconosciuto e finanziato dalla Regione Siciliana ai sensi del  D.D.G. n. 1159 del 6 marzo 2025, quale iniziativa di interesse pubblico  finalizzata alla realizzazione del Parco Letterario Giovanni Verga e Luigi Capuana. Questo  riconoscimento istituzionale sancisce il valore strategico  dell&rsquo;intervento e ne legittima l&rsquo;attuazione in un orizzonte di  continuità e pianificazione.",
+      "english": ""
+    },
+    {
+      "id": 584,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:279",
+      "italian": "I Nostri Valori Fondamentali",
+      "english": ""
+    },
+    {
+      "id": 585,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:282",
+      "italian": " Un ecosistema coerente e durevole di ricerca, formazione, fruizione pubblica  e narrazione condivisa.",
+      "english": ""
+    },
+    {
+      "id": 586,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:292",
+      "italian": "Ricerca",
+      "english": ""
+    },
+    {
+      "id": 587,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:293",
+      "italian": " Approfondimento continuo del patrimonio verghiano-capuaniano attraverso  studi e analisi critiche.",
+      "english": ""
+    },
+    {
+      "id": 588,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:302",
+      "italian": "Formazione",
+      "english": ""
+    },
+    {
+      "id": 589,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:303",
+      "italian": " Sviluppo di competenze e consapevolezza culturale nelle comunità locali, in  particolare tra i giovani.",
+      "english": ""
+    },
+    {
+      "id": 590,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:312",
+      "italian": "Fruizione Pubblica",
+      "english": ""
+    },
+    {
+      "id": 591,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:313",
+      "italian": " Accesso diffuso e inclusivo al patrimonio culturale per tutta la comunità,  dai residenti ai visitatori.",
+      "english": ""
+    },
+    {
+      "id": 592,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:322",
+      "italian": "Narrazione Condivisa",
+      "english": ""
+    },
+    {
+      "id": 593,
+      "location": "#: parco_verismo/templates/parco_verismo/missione_visione.html:323",
+      "italian": " Costruzione collettiva di significati e storie che valorizzano il patrimonio  nel presente.",
+      "english": ""
+    },
+    {
+      "id": 594,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:31",
+      "italian": "Apri navigazione",
+      "english": ""
+    },
+    {
+      "id": 595,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:42",
+      "italian": "Il Parco",
+      "english": ""
+    },
+    {
+      "id": 596,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:45",
+      "italian": "Missioni e visione",
+      "english": ""
+    },
+    {
+      "id": 597,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:46",
+      "italian": "Comitato tecnico",
+      "english": ""
+    },
+    {
+      "id": 598,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:47",
+      "italian": "Regolamenti & documenti",
+      "english": ""
+    },
+    {
+      "id": 599,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:48",
+      "italian": "Partner e rete territoriale",
+      "english": ""
+    },
+    {
+      "id": 600,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:49",
+      "italian": "Accrediti e finanziamenti",
+      "english": ""
+    },
+    {
+      "id": 601,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:56",
+      "italian": "Luoghi & Percorsi",
+      "english": ""
+    },
+    {
+      "id": 602,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:79",
+      "italian": "Eventi & News",
+      "english": ""
+    },
+    {
+      "id": 603,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:89",
+      "italian": "Calendario",
+      "english": ""
+    },
+    {
+      "id": 604,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:58",
+      "italian": "News",
+      "english": ""
+    },
+    {
+      "id": 605,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:133",
+      "italian": "Luoghi delle Opere",
+      "english": ""
+    },
+    {
+      "id": 606,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:143",
+      "italian": "Archivio fotografico",
+      "english": ""
+    },
+    {
+      "id": 607,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:160",
+      "italian": "Prenota",
+      "english": ""
+    },
+    {
+      "id": 608,
+      "location": "#: parco_verismo/templates/parco_verismo/navbar.html:167",
+      "italian": "Cambia lingua",
+      "english": ""
+    },
+    {
+      "id": 609,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:58",
+      "italian": "1. Informazioni Generali",
+      "english": ""
+    },
+    {
+      "id": 610,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:60",
+      "italian": " Il presente sito web è gestito dal Parco Letterario Giovanni Verga e Luigi Capuana,  un'iniziativa culturale promossa dai Comuni di Vizzini, Licodia Eubea e  Mineo (Provincia di Catania, Sicilia) per la valorizzazione del patrimonio  letterario verista siciliano.",
+      "english": ""
+    },
+    {
+      "id": 611,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:64",
+      "italian": "Titolare del sito",
+      "english": ""
+    },
+    {
+      "id": 612,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:65",
+      "italian": "Sede legale",
+      "english": ""
+    },
+    {
+      "id": 613,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:68",
+      "italian": "P.IVA/Codice Fiscale",
+      "english": ""
+    },
+    {
+      "id": 614,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:71",
+      "italian": "2. Oggetto e Finalità del Sito",
+      "english": ""
+    },
+    {
+      "id": 615,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:73",
+      "italian": "Il sito www.parcoverismo.it ha lo scopo di:",
+      "english": ""
+    },
+    {
+      "id": 616,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:76",
+      "italian": " Promuovere il patrimonio letterario verista siciliano, con particolare  riferimento alle opere di Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 617,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:77",
+      "italian": " Fornire informazioni su eventi culturali, itinerari letterari e iniziative  del Parco",
+      "english": ""
+    },
+    {
+      "id": 618,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:78",
+      "italian": " Diffondere la conoscenza del territorio siciliano legato alla letteratura  verista",
+      "english": ""
+    },
+    {
+      "id": 619,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:79",
+      "italian": " Facilitare l'accesso a documenti, studi e risorse bibliografiche sul Verismo",
+      "english": ""
+    },
+    {
+      "id": 620,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:82",
+      "italian": "3. Contenuti del Sito",
+      "english": ""
+    },
+    {
+      "id": 621,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:84",
+      "italian": " I contenuti presenti sul sito (testi, immagini, documenti, multimedia) sono  forniti a scopo informativo e culturale. Il Parco Letterario Giovanni Verga e Luigi Capuana si  impegna a mantenere le informazioni aggiornate e accurate, ma non può  garantire l'assenza di errori o omissioni.",
+      "english": ""
+    },
+    {
+      "id": 622,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:87",
+      "italian": " Il Parco si riserva il diritto di modificare, aggiornare o rimuovere  qualsiasi contenuto in qualsiasi momento senza preavviso.",
+      "english": ""
+    },
+    {
+      "id": 623,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:90",
+      "italian": "4. Proprietà Intellettuale",
+      "english": ""
+    },
+    {
+      "id": 624,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:92",
+      "italian": " Tutti i contenuti originali presenti sul sito (testi, grafica, loghi,  immagini, video, software) sono di proprietà del Parco Letterario del  Verismo o dei rispettivi autori e sono protetti dalle leggi italiane ed  internazionali sul diritto d'autore e sulla proprietà intellettuale.",
+      "english": ""
+    },
+    {
+      "id": 625,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:95",
+      "italian": "È consentito:",
+      "english": ""
+    },
+    {
+      "id": 626,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:98",
+      "italian": "Visualizzare e scaricare i contenuti per uso personale, non commerciale",
+      "english": ""
+    },
+    {
+      "id": 627,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:99",
+      "italian": "Citare estratti dei contenuti indicando chiaramente la fonte",
+      "english": ""
+    },
+    {
+      "id": 628,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:100",
+      "italian": "Condividere link alle pagine del sito",
+      "english": ""
+    },
+    {
+      "id": 629,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:103",
+      "italian": "È vietato:",
+      "english": ""
+    },
+    {
+      "id": 630,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:106",
+      "italian": " Riprodurre, duplicare, copiare, vendere o sfruttare commercialmente i  contenuti senza autorizzazione scritta",
+      "english": ""
+    },
+    {
+      "id": 631,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:107",
+      "italian": "Modificare o alterare i contenuti",
+      "english": ""
+    },
+    {
+      "id": 632,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:108",
+      "italian": "Rimuovere indicazioni di copyright o altre note di proprietà",
+      "english": ""
+    },
+    {
+      "id": 633,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:111",
+      "italian": "4.1 Opere Letterarie",
+      "english": ""
+    },
+    {
+      "id": 634,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:113",
+      "italian": " Le opere letterarie di Giovanni Verga, Luigi Capuana e altri autori veristi  citate o collegate dal sito sono di pubblico dominio. I link a Wikisource e  altre biblioteche digitali rimandano a risorse liberamente accessibili.",
+      "english": ""
+    },
+    {
+      "id": 635,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:116",
+      "italian": "4.2 Immagini e Fotografie",
+      "english": ""
+    },
+    {
+      "id": 636,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:118",
+      "italian": " Le fotografie e le immagini presenti nel sito sono di proprietà del Parco  Letterario del Verismo, dei Comuni partner, o utilizzate previa  autorizzazione. Eventuali immagini di terzi sono utilizzate nel rispetto  delle licenze d'uso applicabili.",
+      "english": ""
+    },
+    {
+      "id": 637,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:121",
+      "italian": "5. Link Esterni",
+      "english": ""
+    },
+    {
+      "id": 638,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:123",
+      "italian": " Il sito contiene link a siti web esterni gestiti da terze parti. Il Parco  Letterario del Verismo non ha controllo su tali siti e non è responsabile  dei loro contenuti, delle loro politiche sulla privacy o delle loro pratiche.",
+      "english": ""
+    },
+    {
+      "id": 639,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:126",
+      "italian": " I link esterni sono forniti come servizio agli utenti e la loro presenza non  implica approvazione o raccomandazione da parte del Parco.",
+      "english": ""
+    },
+    {
+      "id": 640,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:129",
+      "italian": "6. Esclusione di Responsabilità",
+      "english": ""
+    },
+    {
+      "id": 641,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:131",
+      "italian": "Il Parco Letterario Giovanni Verga e Luigi Capuana:",
+      "english": ""
+    },
+    {
+      "id": 642,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:134",
+      "italian": " Non garantisce che il sito sarà sempre disponibile, privo di errori o virus",
+      "english": ""
+    },
+    {
+      "id": 643,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:135",
+      "italian": " Non è responsabile per interruzioni del servizio, malfunzionamenti tecnici o  perdite di dati",
+      "english": ""
+    },
+    {
+      "id": 644,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:136",
+      "italian": " Non è responsabile per danni diretti o indiretti derivanti dall'uso del sito",
+      "english": ""
+    },
+    {
+      "id": 645,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:137",
+      "italian": " Non garantisce l'accuratezza, completezza o tempestività delle informazioni  fornite",
+      "english": ""
+    },
+    {
+      "id": 646,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:140",
+      "italian": "7. Uso Responsabile",
+      "english": ""
+    },
+    {
+      "id": 647,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:142",
+      "italian": " L'utente si impegna a utilizzare il sito in modo lecito e responsabile. È  vietato:",
+      "english": ""
+    },
+    {
+      "id": 648,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:145",
+      "italian": "Violare leggi, regolamenti o diritti di terzi",
+      "english": ""
+    },
+    {
+      "id": 649,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:146",
+      "italian": "Trasmettere virus, malware o codice dannoso",
+      "english": ""
+    },
+    {
+      "id": 650,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:147",
+      "italian": "Tentare accessi non autorizzati ai sistemi informatici",
+      "english": ""
+    },
+    {
+      "id": 651,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:148",
+      "italian": "Sovraccaricare i server con richieste automatizzate eccessive",
+      "english": ""
+    },
+    {
+      "id": 652,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:149",
+      "italian": "Utilizzare il sito per attività commerciali non autorizzate",
+      "english": ""
+    },
+    {
+      "id": 653,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:152",
+      "italian": "8. Modifiche alle Note Legali",
+      "english": ""
+    },
+    {
+      "id": 654,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:154",
+      "italian": " Il Parco Letterario Giovanni Verga e Luigi Capuana si riserva il diritto di modificare le  presenti Note Legali in qualsiasi momento. Le modifiche entrano in vigore  dal momento della loro pubblicazione sul sito. Si invita l'utente a  consultare periodicamente questa pagina.",
+      "english": ""
+    },
+    {
+      "id": 655,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:157",
+      "italian": "9. Legge Applicabile e Foro Competente",
+      "english": ""
+    },
+    {
+      "id": 656,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:159",
+      "italian": " Le presenti Note Legali sono regolate dalla legge italiana. Per qualsiasi  controversia relativa all'uso del sito, sarà competente in via esclusiva il  Foro di Catania.",
+      "english": ""
+    },
+    {
+      "id": 657,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:162",
+      "italian": "10. Privacy e Cookie",
+      "english": ""
+    },
+    {
+      "id": 658,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:164",
+      "italian": " Per informazioni sul trattamento dei dati personali e sull'uso dei cookie,  consultare:",
+      "english": ""
+    },
+    {
+      "id": 659,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:172",
+      "italian": "11. Contatti",
+      "english": ""
+    },
+    {
+      "id": 660,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:174",
+      "italian": "Per informazioni, segnalazioni o richieste relative al sito:",
+      "english": ""
+    },
+    {
+      "id": 661,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:187",
+      "italian": "12. Crediti",
+      "english": ""
+    },
+    {
+      "id": 662,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:189",
+      "italian": "Sviluppo e Design",
+      "english": ""
+    },
+    {
+      "id": 663,
+      "location": "#: parco_verismo/templates/parco_verismo/note_legali.html:190",
+      "italian": "Hosting",
+      "english": ""
+    },
+    {
+      "id": 664,
+      "location": "#: parco_verismo/templates/parco_verismo/notizia_detail.html:37",
+      "italian": "Torna alle news",
+      "english": ""
+    },
+    {
+      "id": 665,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:4",
+      "italian": "Notizie - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 666,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:59",
+      "italian": "News & Novità",
+      "english": ""
+    },
+    {
+      "id": 667,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:60",
+      "italian": "Rimani aggiornato sulle ultime novità del Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 668,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:72",
+      "italian": "Nessuna notizia disponibile",
+      "english": ""
+    },
+    {
+      "id": 669,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:73",
+      "italian": " Al momento non ci sono notizie pubblicate. Torna presto per leggere le  nostre novità!",
+      "english": ""
+    },
+    {
+      "id": 670,
+      "location": "#: parco_verismo/templates/parco_verismo/notizie.html:159",
+      "italian": "Nessun contenuto in questa data",
+      "english": ""
+    },
+    {
+      "id": 671,
+      "location": "#: parco_verismo/templates/parco_verismo/opera_detail.html:20",
+      "italian": "Trama",
+      "english": ""
+    },
+    {
+      "id": 672,
+      "location": "#: parco_verismo/templates/parco_verismo/opera_detail.html:24",
+      "italian": "Analisi e Contesto",
+      "english": ""
+    },
+    {
+      "id": 673,
+      "location": "#: parco_verismo/templates/parco_verismo/opera_detail.html:31",
+      "italian": "Leggi l'opera completa su Wikisource",
+      "english": ""
+    },
+    {
+      "id": 674,
+      "location": "#: parco_verismo/templates/parco_verismo/opera_detail.html:34",
+      "italian": " Il link ti porterà alla pagina di Wikisource dove potrai leggere l'opera  integrale gratuitamente.",
+      "english": ""
+    },
+    {
+      "id": 675,
+      "location": "#: parco_verismo/templates/parco_verismo/opere_per_autore.html:30",
+      "italian": "Anno di pubblicazione:",
+      "english": ""
+    },
+    {
+      "id": 676,
+      "location": "#: parco_verismo/templates/parco_verismo/opere_per_autore.html:41",
+      "italian": "Nessuna opera disponibile per questo autore.",
+      "english": ""
+    },
+    {
+      "id": 677,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:6",
+      "italian": "Partner e Rete Territoriale - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 678,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:21",
+      "italian": "Partner & Rete",
+      "english": ""
+    },
+    {
+      "id": 679,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:22",
+      "italian": "Partner & Rete Territoriale",
+      "english": ""
+    },
+    {
+      "id": 680,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:23",
+      "italian": " Una rete integrata di eccellenza con istituzioni, amministrazioni locali e  organizzazioni internazionali.",
+      "english": ""
+    },
+    {
+      "id": 681,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:74",
+      "italian": "Partner Istituzionali",
+      "english": ""
+    },
+    {
+      "id": 682,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:77",
+      "italian": " Collaborazioni strategiche con enti pubblici e istituzioni per la promozione  della cultura verista.",
+      "english": ""
+    },
+    {
+      "id": 683,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:88",
+      "italian": "Ente Riconoscente",
+      "english": ""
+    },
+    {
+      "id": 684,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:89",
+      "italian": " Riconoscimento e supporto della Regione Siciliana al Parco Letterario come  polo di valorizzazione del patrimonio culturale regionale.",
+      "english": ""
+    },
+    {
+      "id": 685,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:150",
+      "italian": "Scopri",
+      "english": ""
+    },
+    {
+      "id": 686,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:99",
+      "italian": "Comuni di Vizzini, Mineo, Licodia",
+      "english": ""
+    },
+    {
+      "id": 687,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:100",
+      "italian": "Partner Territoriali",
+      "english": ""
+    },
+    {
+      "id": 688,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:101",
+      "italian": " Amministrazioni locali impegnate nella conservazione del patrimonio storico- letterario e nello sviluppo culturale sostenibile del territorio.",
+      "english": ""
+    },
+    {
+      "id": 689,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:111",
+      "italian": "Università della Sicilia",
+      "english": ""
+    },
+    {
+      "id": 690,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:112",
+      "italian": "Partner Accademico",
+      "english": ""
+    },
+    {
+      "id": 691,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:113",
+      "italian": " Collaborazione con atenei regionali per ricerca, formazione e produzione di  contenuti scientifici sulla letteratura verista.",
+      "english": ""
+    },
+    {
+      "id": 692,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:123",
+      "italian": "Istituto Verga",
+      "english": ""
+    },
+    {
+      "id": 693,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:124",
+      "italian": "Partner Culturale",
+      "english": ""
+    },
+    {
+      "id": 694,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:125",
+      "italian": " Ente dedicato allo studio e alla diffusione dell'opera di Giovanni Verga a  livello nazionale e internazionale.",
+      "english": ""
+    },
+    {
+      "id": 695,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:135",
+      "italian": "CIPIM Sicilia",
+      "english": ""
+    },
+    {
+      "id": 696,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:136",
+      "italian": "Partner Strategico",
+      "english": ""
+    },
+    {
+      "id": 697,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:137",
+      "italian": " Collaborazione con il Centro di Iniziativa Popolare di Isola di Capo Rizzuto  per lo sviluppo di progetti culturali integrati.",
+      "english": ""
+    },
+    {
+      "id": 698,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:147",
+      "italian": "Parchi Letterari Internazionali",
+      "english": ""
+    },
+    {
+      "id": 699,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:148",
+      "italian": "Rete Mondiale",
+      "english": ""
+    },
+    {
+      "id": 700,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:149",
+      "italian": " Iscrizione e partecipazione attiva alla rete internazionale dei Parchi  Letterari per lo scambio di esperienze e migliori pratiche.",
+      "english": ""
+    },
+    {
+      "id": 701,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162",
+      "italian": "Rete",
+      "english": ""
+    },
+    {
+      "id": 702,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162",
+      "italian": "Territoriale",
+      "english": ""
+    },
+    {
+      "id": 703,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:165",
+      "italian": " Una maglia fitta di servizi e strutture distribuite nel territorio dei tre  comuni.",
+      "english": ""
+    },
+    {
+      "id": 704,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:4",
+      "italian": "Vizzini",
+      "english": ""
+    },
+    {
+      "id": 705,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:174",
+      "italian": "Patria di Giovanni Verga",
+      "english": ""
+    },
+    {
+      "id": 706,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:176",
+      "italian": "Centro Visitatori",
+      "english": ""
+    },
+    {
+      "id": 707,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:177",
+      "italian": "Percorsi tematici letterari",
+      "english": ""
+    },
+    {
+      "id": 708,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:178",
+      "italian": "Archivio storico locale",
+      "english": ""
+    },
+    {
+      "id": 709,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:179",
+      "italian": "Spazi per convegni",
+      "english": ""
+    },
+    {
+      "id": 710,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:181",
+      "italian": "Visita Vizzini",
+      "english": ""
+    },
+    {
+      "id": 711,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:189",
+      "italian": "Terra della narrativa capuaniana",
+      "english": ""
+    },
+    {
+      "id": 712,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:191",
+      "italian": "Museo Etnografico",
+      "english": ""
+    },
+    {
+      "id": 713,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:192",
+      "italian": "Laboratori didattici",
+      "english": ""
+    },
+    {
+      "id": 714,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:193",
+      "italian": "Archivio archeologico",
+      "english": ""
+    },
+    {
+      "id": 715,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:194",
+      "italian": "Sala letture",
+      "english": ""
+    },
+    {
+      "id": 716,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:196",
+      "italian": "Visita Mineo",
+      "english": ""
+    },
+    {
+      "id": 717,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:204",
+      "italian": "Centro di ricerca e conservazione",
+      "english": ""
+    },
+    {
+      "id": 718,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:207",
+      "italian": "Biblioteca specializzata",
+      "english": ""
+    },
+    {
+      "id": 719,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:208",
+      "italian": "Archivio letterario",
+      "english": ""
+    },
+    {
+      "id": 720,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:209",
+      "italian": "Laboratorio di restauro",
+      "english": ""
+    },
+    {
+      "id": 721,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:211",
+      "italian": "Visita Licodia",
+      "english": ""
+    },
+    {
+      "id": 722,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:218",
+      "italian": "Piattaforma Digitale",
+      "english": ""
+    },
+    {
+      "id": 723,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:219",
+      "italian": "Hub virtuale integrato",
+      "english": ""
+    },
+    {
+      "id": 724,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:222",
+      "italian": "Archivio fotografico online",
+      "english": ""
+    },
+    {
+      "id": 725,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:223",
+      "italian": "Calendario eventi",
+      "english": ""
+    },
+    {
+      "id": 726,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:224",
+      "italian": "Community letteraria",
+      "english": ""
+    },
+    {
+      "id": 727,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:226",
+      "italian": "Accedi Online",
+      "english": ""
+    },
+    {
+      "id": 728,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:237",
+      "italian": "Sponsor e Sostenitori",
+      "english": ""
+    },
+    {
+      "id": 729,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:239",
+      "italian": " Imprese e organizzazioni che credono nella mission culturale del Parco  Letterario.",
+      "english": ""
+    },
+    {
+      "id": 730,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:244",
+      "italian": "Partner",
+      "english": ""
+    },
+    {
+      "id": 731,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:245",
+      "italian": "Sponsor",
+      "english": ""
+    },
+    {
+      "id": 732,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:246",
+      "italian": "Supporter",
+      "english": ""
+    },
+    {
+      "id": 733,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:247",
+      "italian": "Donatore",
+      "english": ""
+    },
+    {
+      "id": 734,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:251",
+      "italian": "Interessato a collaborare con il Parco Letterario?",
+      "english": ""
+    },
+    {
+      "id": 735,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:252",
+      "italian": "Proponi una Collaborazione",
+      "english": ""
+    },
+    {
+      "id": 736,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:262",
+      "italian": "Unisciti alla Nostra Comunità",
+      "english": ""
+    },
+    {
+      "id": 737,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:263",
+      "italian": " Scopri le opportunità di collaborazione e di partecipazione ai progetti  culturali del Parco Letterario Giovanni Verga e Luigi Capuana.",
+      "english": ""
+    },
+    {
+      "id": 738,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:265",
+      "italian": "Contattaci",
+      "english": ""
+    },
+    {
+      "id": 739,
+      "location": "#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:266",
+      "italian": "Scopri il Comitato",
+      "english": ""
+    },
+    {
+      "id": 740,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:66",
+      "italian": "Informativa sulla Privacy",
+      "english": ""
+    },
+    {
+      "id": 741,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:69",
+      "italian": "1. Titolare del Trattamento",
+      "english": ""
+    },
+    {
+      "id": 742,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:72",
+      "italian": "c/o Comuni di Vizzini, Licodia Eubea e Mineo",
+      "english": ""
+    },
+    {
+      "id": 743,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:77",
+      "italian": "2. Tipologie di Dati Raccolti",
+      "english": ""
+    },
+    {
+      "id": 744,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:79",
+      "italian": "2.1 Dati di Navigazione",
+      "english": ""
+    },
+    {
+      "id": 745,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:81",
+      "italian": " I sistemi informatici e le procedure software preposte al funzionamento di  questo sito acquisiscono, nel corso del loro normale esercizio, alcuni dati  personali la cui trasmissione è implicita nell'uso dei protocolli di  comunicazione di Internet.",
+      "english": ""
+    },
+    {
+      "id": 746,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:83",
+      "italian": " Si tratta di informazioni che non sono raccolte per essere associate a  interessati identificati, ma che per loro stessa natura potrebbero,  attraverso elaborazioni ed associazioni con dati detenuti da terzi,  permettere di identificare gli utenti. In questa categoria di dati rientrano:",
+      "english": ""
+    },
+    {
+      "id": 747,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:85",
+      "italian": "Indirizzi IP",
+      "english": ""
+    },
+    {
+      "id": 748,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:86",
+      "italian": "Nomi di dominio dei computer utilizzati dagli utenti",
+      "english": ""
+    },
+    {
+      "id": 749,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:87",
+      "italian": " Indirizzi in notazione URI (Uniform Resource Identifier) delle risorse  richieste",
+      "english": ""
+    },
+    {
+      "id": 750,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:88",
+      "italian": "Orario della richiesta",
+      "english": ""
+    },
+    {
+      "id": 751,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:89",
+      "italian": "Metodo utilizzato nel sottoporre la richiesta al server",
+      "english": ""
+    },
+    {
+      "id": 752,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:90",
+      "italian": "Dimensione del file ottenuto in risposta",
+      "english": ""
+    },
+    {
+      "id": 753,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:91",
+      "italian": "Codice numerico indicante lo stato della risposta data dal server",
+      "english": ""
+    },
+    {
+      "id": 754,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:92",
+      "italian": " Altri parametri relativi al sistema operativo e all'ambiente informatico  dell'utente",
+      "english": ""
+    },
+    {
+      "id": 755,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:95",
+      "italian": "2.2 Dati Forniti Volontariamente dall'Utente",
+      "english": ""
+    },
+    {
+      "id": 756,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:97",
+      "italian": " L'invio facoltativo, esplicito e volontario di posta elettronica agli  indirizzi indicati su questo sito comporta la successiva acquisizione  dell'indirizzo del mittente, necessario per rispondere alle richieste,  nonché degli eventuali altri dati personali inseriti nella missiva.",
+      "english": ""
+    },
+    {
+      "id": 757,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:100",
+      "italian": "2.3 Cookie e Tecnologie Simili",
+      "english": ""
+    },
+    {
+      "id": 758,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:102",
+      "italian": " Il sito utilizza cookie tecnici necessari per il funzionamento e, previo  consenso, cookie analytics. Per maggiori informazioni consultare la",
+      "english": ""
+    },
+    {
+      "id": 759,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:105",
+      "italian": "3. Finalità del Trattamento",
+      "english": ""
+    },
+    {
+      "id": 760,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:106",
+      "italian": "I dati personali sono trattati per le seguenti finalità:",
+      "english": ""
+    },
+    {
+      "id": 761,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:108",
+      "italian": "Gestione del sito",
+      "english": ""
+    },
+    {
+      "id": 762,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:108",
+      "italian": "Per garantire il corretto funzionamento del sito web e dei suoi servizi",
+      "english": ""
+    },
+    {
+      "id": 763,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:109",
+      "italian": "Comunicazioni istituzionali",
+      "english": ""
+    },
+    {
+      "id": 764,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:109",
+      "italian": "Per rispondere a richieste di informazioni e comunicazioni degli utenti",
+      "english": ""
+    },
+    {
+      "id": 765,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:110",
+      "italian": "Analisi statistiche",
+      "english": ""
+    },
+    {
+      "id": 766,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:110",
+      "italian": " Per comprendere come gli utenti utilizzano il sito e migliorare l'esperienza  di navigazione (solo previo consenso)",
+      "english": ""
+    },
+    {
+      "id": 767,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:111",
+      "italian": "Obblighi di legge",
+      "english": ""
+    },
+    {
+      "id": 768,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:111",
+      "italian": " Per adempiere agli obblighi previsti dalla legge, dai regolamenti e dalla  normativa comunitaria",
+      "english": ""
+    },
+    {
+      "id": 769,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:114",
+      "italian": "4. Base Giuridica del Trattamento",
+      "english": ""
+    },
+    {
+      "id": 770,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:115",
+      "italian": "Il trattamento dei dati personali si basa su:",
+      "english": ""
+    },
+    {
+      "id": 771,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:117",
+      "italian": " Necessità di adempiere agli obblighi di legge cui è soggetto il Titolare",
+      "english": ""
+    },
+    {
+      "id": 772,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:118",
+      "italian": " Esecuzione di un compito di interesse pubblico o connesso all'esercizio di  pubblici poteri di cui è investito il Titolare",
+      "english": ""
+    },
+    {
+      "id": 773,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:119",
+      "italian": "Consenso dell'interessato (per cookie analytics e marketing)",
+      "english": ""
+    },
+    {
+      "id": 774,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:122",
+      "italian": "5. Modalità del Trattamento",
+      "english": ""
+    },
+    {
+      "id": 775,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:124",
+      "italian": " I dati personali sono trattati con strumenti automatizzati per il tempo  strettamente necessario a conseguire gli scopi per cui sono stati raccolti.  Specifiche misure di sicurezza sono osservate per prevenire la perdita dei  dati, usi illeciti o non corretti ed accessi non autorizzati.",
+      "english": ""
+    },
+    {
+      "id": 776,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:127",
+      "italian": "6. Periodo di Conservazione",
+      "english": ""
+    },
+    {
+      "id": 777,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:128",
+      "italian": "I dati saranno conservati per il periodo necessario a:",
+      "english": ""
+    },
+    {
+      "id": 778,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:130",
+      "italian": "Dati di navigazione: 7 giorni (log del server)",
+      "english": ""
+    },
+    {
+      "id": 779,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:131",
+      "italian": "Cookie tecnici: durata della sessione o fino a 12 mesi",
+      "english": ""
+    },
+    {
+      "id": 780,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:132",
+      "italian": "Cookie analytics: fino a 26 mesi (previo consenso)",
+      "english": ""
+    },
+    {
+      "id": 781,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:133",
+      "italian": " Comunicazioni email: fino al termine della pratica e per eventuali obblighi  di legge",
+      "english": ""
+    },
+    {
+      "id": 782,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:136",
+      "italian": "7. Comunicazione e Diffusione dei Dati",
+      "english": ""
+    },
+    {
+      "id": 783,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:138",
+      "italian": "I dati personali non saranno diffusi. Potranno essere comunicati a:",
+      "english": ""
+    },
+    {
+      "id": 784,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:141",
+      "italian": "Soggetti che forniscono servizi per la gestione del sistema informatico",
+      "english": ""
+    },
+    {
+      "id": 785,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:142",
+      "italian": "Autorità competenti per adempimenti di obblighi di legge",
+      "english": ""
+    },
+    {
+      "id": 786,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:145",
+      "italian": "8. Diritti dell'Interessato",
+      "english": ""
+    },
+    {
+      "id": 787,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:147",
+      "italian": "Ai sensi degli articoli 15-22 del GDPR, l'interessato ha diritto di:",
+      "english": ""
+    },
+    {
+      "id": 788,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:150",
+      "italian": " Ottenere la conferma dell'esistenza o meno di dati personali che lo  riguardano",
+      "english": ""
+    },
+    {
+      "id": 789,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:151",
+      "italian": " Ottenere l'accesso ai dati personali e alle informazioni relative agli stessi",
+      "english": ""
+    },
+    {
+      "id": 790,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:152",
+      "italian": " Ottenere la rettifica dei dati inesatti o l'integrazione di quelli incompleti",
+      "english": ""
+    },
+    {
+      "id": 791,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:153",
+      "italian": "Ottenere la cancellazione dei dati (diritto all'oblio)",
+      "english": ""
+    },
+    {
+      "id": 792,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:154",
+      "italian": "Ottenere la limitazione del trattamento",
+      "english": ""
+    },
+    {
+      "id": 793,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:155",
+      "italian": "Opporsi al trattamento",
+      "english": ""
+    },
+    {
+      "id": 794,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:156",
+      "italian": "Ottenere la portabilità dei dati",
+      "english": ""
+    },
+    {
+      "id": 795,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:157",
+      "italian": "Revocare il consenso in qualsiasi momento",
+      "english": ""
+    },
+    {
+      "id": 796,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:158",
+      "italian": " Proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali",
+      "english": ""
+    },
+    {
+      "id": 797,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:161",
+      "italian": "9. Esercizio dei Diritti",
+      "english": ""
+    },
+    {
+      "id": 798,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:163",
+      "italian": " Per esercitare i diritti sopra elencati, l'interessato può rivolgersi al  Titolare del Trattamento tramite:",
+      "english": ""
+    },
+    {
+      "id": 799,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:168",
+      "italian": "Posta ordinaria",
+      "english": ""
+    },
+    {
+      "id": 800,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:171",
+      "italian": "10. Reclami",
+      "english": ""
+    },
+    {
+      "id": 801,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:173",
+      "italian": " Gli interessati che ritengono che il trattamento dei dati personali a loro  riferiti avvenga in violazione di quanto previsto dal GDPR hanno il diritto  di proporre reclamo al Garante per la Protezione dei Dati Personali, come  previsto dall'art. 77 del GDPR, o di adire le opportune sedi giudiziarie  (art. 79 del GDPR).",
+      "english": ""
+    },
+    {
+      "id": 802,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:176",
+      "italian": "Garante per la Protezione dei Dati Personali",
+      "english": ""
+    },
+    {
+      "id": 803,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:177",
+      "italian": "Piazza Venezia 11, 00187 Roma",
+      "english": ""
+    },
+    {
+      "id": 804,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:178",
+      "italian": "Tel",
+      "english": ""
+    },
+    {
+      "id": 805,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:179",
+      "italian": "Fax",
+      "english": ""
+    },
+    {
+      "id": 806,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:182",
+      "italian": "Web",
+      "english": ""
+    },
+    {
+      "id": 807,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:185",
+      "italian": "11. Modifiche alla Privacy Policy",
+      "english": ""
+    },
+    {
+      "id": 808,
+      "location": "#: parco_verismo/templates/parco_verismo/privacy_policy.html:187",
+      "italian": " La presente Privacy Policy può essere soggetta a modifiche nel tempo. Si  invita pertanto l'utente a verificare periodicamente questa pagina.",
+      "english": ""
+    },
+    {
+      "id": 809,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:6",
+      "italian": "Regolamenti e Documenti - Parco Letterario Giovanni Verga e Luigi Capuana",
+      "english": ""
+    },
+    {
+      "id": 810,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:22",
+      "italian": "Regolamenti & Documenti",
+      "english": ""
+    },
+    {
+      "id": 811,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:23",
+      "italian": " Trasparenza amministrativa e documentazione ufficiale del Parco Letterario  del Verismo. Scarica regolamenti, bilanci e documenti ufficiali.",
+      "english": ""
+    },
+    {
+      "id": 812,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:58",
+      "italian": "Regolamenti Operativi",
+      "english": ""
+    },
+    {
+      "id": 813,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:59",
+      "italian": " I regolamenti che disciplinano le attività del Parco Letterario e l'accesso  ai servizi.",
+      "english": ""
+    },
+    {
+      "id": 814,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:66",
+      "italian": "Statuto del Parco Letterario",
+      "english": ""
+    },
+    {
+      "id": 815,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:67",
+      "italian": "Approvato 2024",
+      "english": ""
+    },
+    {
+      "id": 816,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:68",
+      "italian": " Lo statuto fondamentale che definisce la natura, i principi, gli obiettivi e  l'organizzazione del Parco Letterario Giovanni Verga e Luigi Capuana.",
+      "english": ""
+    },
+    {
+      "id": 817,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:76",
+      "italian": "Regolamento Interno",
+      "english": ""
+    },
+    {
+      "id": 818,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:77",
+      "italian": "Versione 2.0 - 2024",
+      "english": ""
+    },
+    {
+      "id": 819,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:78",
+      "italian": " Norme che regolano il funzionamento interno del Parco, le responsabilità  degli organi e le procedure amministrative.",
+      "english": ""
+    },
+    {
+      "id": 820,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:86",
+      "italian": "Regolamento Visite e Accessi",
+      "english": ""
+    },
+    {
+      "id": 821,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:87",
+      "italian": "In vigore",
+      "english": ""
+    },
+    {
+      "id": 822,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:88",
+      "italian": " Disposizioni per l'accesso ai siti, alle strutture e agli eventi organizzati  dal Parco Letterario.",
+      "english": ""
+    },
+    {
+      "id": 823,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:96",
+      "italian": "Privacy e Protezione Dati",
+      "english": ""
+    },
+    {
+      "id": 824,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:97",
+      "italian": "GDPR Compliant 2024",
+      "english": ""
+    },
+    {
+      "id": 825,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:98",
+      "italian": " Politica sulla protezione dei dati personali e sulla privacy secondo le  normative europee GDPR.",
+      "english": ""
+    },
+    {
+      "id": 826,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110",
+      "italian": "Documentazione",
+      "english": ""
+    },
+    {
+      "id": 827,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110",
+      "italian": "Amministrativa",
+      "english": ""
+    },
+    {
+      "id": 828,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:111",
+      "italian": " Atti, bilanci e documenti pubblici secondo le norme di trasparenza  amministrativa.",
+      "english": ""
+    },
+    {
+      "id": 829,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:118",
+      "italian": "Bilanci",
+      "english": ""
+    },
+    {
+      "id": 830,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:119",
+      "italian": "Bilanci annuali, relazioni finanziarie e rendiconti economici.",
+      "english": ""
+    },
+    {
+      "id": 831,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:121",
+      "italian": "Bilancio 2023",
+      "english": ""
+    },
+    {
+      "id": 832,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:122",
+      "italian": "Bilancio 2022",
+      "english": ""
+    },
+    {
+      "id": 833,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:123",
+      "italian": "Relazioni Econom.",
+      "english": ""
+    },
+    {
+      "id": 834,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:131",
+      "italian": "Atti Amministrativi",
+      "english": ""
+    },
+    {
+      "id": 835,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:132",
+      "italian": "Delibere, determinazioni e provvedimenti ufficiali.",
+      "english": ""
+    },
+    {
+      "id": 836,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:134",
+      "italian": "Delibere 2024",
+      "english": ""
+    },
+    {
+      "id": 837,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:135",
+      "italian": "Determinazioni",
+      "english": ""
+    },
+    {
+      "id": 838,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:136",
+      "italian": "Provvedimenti",
+      "english": ""
+    },
+    {
+      "id": 839,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:144",
+      "italian": "Documentazione Generale",
+      "english": ""
+    },
+    {
+      "id": 840,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:145",
+      "italian": "Rapporti, studi e documenti strategici.",
+      "english": ""
+    },
+    {
+      "id": 841,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:147",
+      "italian": "Relazione Attività",
+      "english": ""
+    },
+    {
+      "id": 842,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:148",
+      "italian": "Piano Strategico",
+      "english": ""
+    },
+    {
+      "id": 843,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:149",
+      "italian": "Programmi Annuali",
+      "english": ""
+    },
+    {
+      "id": 844,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:162",
+      "italian": "Scarica Rapidamente",
+      "english": ""
+    },
+    {
+      "id": 845,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:170",
+      "italian": "Statuto",
+      "english": ""
+    },
+    {
+      "id": 846,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:176",
+      "italian": "Regolamento",
+      "english": ""
+    },
+    {
+      "id": 847,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:182",
+      "italian": "Bilancio",
+      "english": ""
+    },
+    {
+      "id": 848,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:194",
+      "italian": "Delibere",
+      "english": ""
+    },
+    {
+      "id": 849,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:200",
+      "italian": "Archivio",
+      "english": ""
+    },
+    {
+      "id": 850,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:215",
+      "italian": "Trasparenza e Responsabilità",
+      "english": ""
+    },
+    {
+      "id": 851,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:218",
+      "italian": " Il Parco Letterario si impegna per la massima trasparenza amministrativa e  il rispetto della normativa vigente in materia di privacy e protezione dei  dati.",
+      "english": ""
+    },
+    {
+      "id": 852,
+      "location": "#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:221",
+      "italian": "Contattaci per Info",
+      "english": ""
+    },
+    {
+      "id": 853,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:23",
+      "italian": "Patria di Giovanni Verga, cuore del Verismo siciliano",
+      "english": ""
+    },
+    {
+      "id": 854,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:36",
+      "italian": " \\n                 <p class=\\ >Vizzini sorge a 586 metri sul livello  del mare, arroccata sui monti Iblei. La città conserva un ricco patrimonio  artistico e architettonico che testimonia la sua lunga storia, dalle origini  sicule alle dominazioni greca, romana, araba e normanna.</p>\\n                 <p class=\\ >Conosciuta in tutto il mondo  come la <strong>patria di Giovanni Verga</strong> (1840-1922), il più grande  esponente del <strong>Verismo italiano</strong>. Qui sono ambientate le sue  opere immortali: <em>Cavalleria Rusticana</em>, <em>La Lupa</em>, <em>Mastro- don Gesualdo</em>. Le strade e i vicoli di Vizzini hanno ispirato le pagine  che hanno rivoluzionato la letteratura italiana, catturando l'essenza della  vita e delle passioni del popolo siciliano.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 855,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:55",
+      "italian": "Casa Natale di Giovanni Verga",
+      "english": ""
+    },
+    {
+      "id": 856,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:56",
+      "italian": " \\n                 <p class=\\ >La <strong>Casa Natale di Giovanni  Verga</strong> rappresenta il luogo simbolo del Verismo italiano. Qui, il 2  settembre 1840, nacque il grande scrittore che avrebbe immortalato la  Sicilia nella letteratura mondiale.</p>\\n                 <p class=\\ >L'edificio conserva ancora  l'atmosfera del XIX secolo, con arredi d'epoca, documenti originali e cimeli  che testimoniano la vita e l'opera del maestro. La casa museo offre un  percorso emozionante attraverso le radici familiari e l'universo creativo di  Verga, permettendo ai visitatori di immergersi nel contesto che ispirò  capolavori come <em>I Malavoglia</em> e le <em>Novelle Rusticane</em>.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 857,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:75",
+      "italian": "La Cunziria",
+      "english": ""
+    },
+    {
+      "id": 858,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:76",
+      "italian": " \\n                 <p class=\\ >L'antico <strong>Borgo della  Cunziria</strong> è un affascinante villaggio rupestre risalente al XVI-XVII  secolo, dove un tempo si lavoravano le pelli con tecniche tradizionali. Le  sue grotte e abitazioni scavate nella roccia creano un paesaggio unico e  suggestivo.</p>\\n                 <p class=\\ >Il borgo è celebre per essere  stato il set naturale della <strong>Cavalleria Rusticana</strong> di Verga,  e più tardi del film omonimo di Franco Zeffirelli (1982) con Plácido  Domingo. Oggi la Cunziria è meta di pellegrinaggio letterario e  cinematografico, un luogo dove il tempo sembra essersi fermato, conservando  intatta l'atmosfera descritta nelle pagine verghiane.</p>\\n                 ",
+      "english": ""
+    },
+    {
+      "id": 859,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:95",
+      "italian": " Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità  vizzinese",
+      "english": ""
+    },
+    {
+      "id": 860,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:104",
+      "italian": "Sagra della Ricotta",
+      "english": ""
+    },
+    {
+      "id": 861,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:106",
+      "italian": " Celebrazione della tradizione casearia locale con degustazioni di  <strong>ricotta fresca</strong>, cannoli e dolci tipici siciliani.",
+      "english": ""
+    },
+    {
+      "id": 862,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:117",
+      "italian": " Le suggestive processioni pasquali con la tradizionale <strong>\\ </ strong>, momento culminante delle celebrazioni religiose.",
+      "english": ""
+    },
+    {
+      "id": 863,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:126",
+      "italian": "Festa di San Gregorio",
+      "english": ""
+    },
+    {
+      "id": 864,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:128",
+      "italian": " Festa patronale con processioni solenni, <strong>luminarie</strong>,  concerti e spettacoli pirotecnici.",
+      "english": ""
+    },
+    {
+      "id": 865,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:137",
+      "italian": "Eventi Verghiani",
+      "english": ""
+    },
+    {
+      "id": 866,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:138",
+      "italian": "Estate",
+      "english": ""
+    },
+    {
+      "id": 867,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:139",
+      "italian": " Rassegne letterarie, spettacoli teatrali e rappresentazioni delle opere di  <strong>Giovanni Verga</strong>.",
+      "english": ""
+    },
+    {
+      "id": 868,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:151",
+      "italian": "Scopri i monumenti e i luoghi simbolo di Vizzini",
+      "english": ""
+    },
+    {
+      "id": 869,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:254",
+      "italian": "Testimonianze della storia letteraria e artistica del territorio",
+      "english": ""
+    },
+    {
+      "id": 870,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:307",
+      "italian": "Sito Storico",
+      "english": ""
+    },
+    {
+      "id": 871,
+      "location": "#: parco_verismo/templates/parco_verismo/vizzini.html:328",
+      "italian": "Esplora Vizzini",
+      "english": ""
+    }
+  ]
+}
