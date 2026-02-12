@@ -13,7 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-
 #: parco_verismo/forms/richiesta.py:53
 msgid "Nome ente o istituzione (facoltativo)"
 msgstr "Organization or institution name (optional)"
@@ -323,9 +322,70 @@ msgstr ""
 msgid "Principali Finanziatori"
 msgstr "Main Funders"
 
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:215
+#, python-format
+msgid ""
+"Fondi Pubblici Regionali (45%%) - POR, PSR e finanziamenti Regione Siciliana"
+msgstr "Regional Public Funds (45%%) - POR, PSR and Sicilian Region funding"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:219
+#, python-format
+msgid ""
+"Sponsorizzazioni Aziendali (25%%) - Partner privati impegnati nella cultura"
+msgstr "Corporate Sponsorships (25%%) - Private partners committed to culture"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:223
+#, python-format
+msgid ""
+"Proventi da Servizi (20%%) - Visite guidate, laboratori ed eventi culturali"
+msgstr "Service Revenue (20%%) - Guided tours, workshops and cultural events"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:227
+#, python-format
+msgid "Contributi Benefici (10%%) - Donazioni e supporto filantropico"
+msgstr "Charitable Contributions (10%%) - Donations and philanthropic support"
+
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:251
 msgid "Allocazione Trasparente delle Risorse"
 msgstr "Transparent Resource Allocation"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:254
+#, python-format
+msgid ""
+"Le risorse finanziarie sono distribuite strategicamente per massimizzare "
+"l'impatto culturale e sociale del Parco: Attività Culturali (35%%), Ricerca "
+"e Conservazione (25%%), Infrastrutture e Manutenzione (20%%), "
+"Amministrazione e Gestione (15%%), Riserva (5%%)."
+msgstr ""
+"Financial resources are strategically distributed to maximize the cultural "
+"and social impact of the Park: Cultural Activities (35%%), Research and "
+"Conservation (25%%), Infrastructure and Maintenance (20%%), Administration "
+"and Management (15%%), Reserve (5%%)."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:257
+#, python-format
+msgid "35%% Cultura"
+msgstr "35%% Culture"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:258
+#, python-format
+msgid "25%% Ricerca"
+msgstr "25%% Research"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:259
+#, python-format
+msgid "20%% Infrastrutture"
+msgstr "20%% Infrastructure"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:260
+#, python-format
+msgid "15%% Gestione"
+msgstr "15%% Management"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:261
+#, python-format
+msgid "5%% Riserva"
+msgstr "5%% Reserve"
 
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:276
 msgid "Progetti Finanziati"
@@ -381,10 +441,6 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:566
 msgid "Itinerari Verghiani"
 msgstr "Verga Itineraries"
-
-#: parco_verismo/templates/parco_verismo/navbar.html:89
-msgid "Cammino del Verismo"
-msgstr "Path of Verismo"
 
 #: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:320
 msgid ""
@@ -556,6 +612,10 @@ msgstr "Giovanni Verga and Luigi Capuana Literary Park"
 msgid "REGOLAMENTO DEL COMITATO TECNICO-SCIENTIFICO"
 msgstr "TECHNICAL-SCIENTIFIC COMMITTEE REGULATIONS"
 
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:42
+msgid "del Progetto \"Il Parco Letterario Giovanni Verga e Luigi Capuana\""
+msgstr "of the Project \"The Giovanni Verga and Luigi Capuana Literary Park\""
+
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:47
 msgid "Art. 1 – Istituzione e finalità"
 msgstr "Art. 1 – Establishment and purposes"
@@ -618,7 +678,7 @@ msgid "Comune di Vizzini – Comune capofila del progetto"
 msgstr "Municipality of Vizzini – Lead municipality of the project"
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:62
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:171
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:169
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:103
 msgid "Comune di Mineo"
 msgstr "Municipality of Mineo"
@@ -629,12 +689,12 @@ msgid "Comune di Licodia Eubea"
 msgstr "Municipality of Licodia Eubea"
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:64
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:253
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:251
 msgid "Università degli Studi di Catania"
 msgstr "University of Catania"
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:65
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:219
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:217
 msgid "Fondazione Verga"
 msgstr "Verga Foundation"
 
@@ -647,7 +707,7 @@ msgid "ITS Academy Turismo Sicilia"
 msgstr "ITS Academy Tourism Sicily"
 
 #: parco_verismo/templates/parco_verismo/comitato_regolamento.html:68
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:246
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:244
 msgid "ITS Steve Jobs di Caltagirone"
 msgstr "ITS Steve Jobs of Caltagirone"
 
@@ -870,8 +930,8 @@ msgstr ""
 msgid "Torna al Comitato"
 msgstr "Back to Committee"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:4
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:22
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:4
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:59
 msgid "Comitato Tecnico-Scientifico"
 msgstr "Technical-Scientific Committee"
@@ -900,9 +960,39 @@ msgstr "Institution & Competencies"
 msgid "Istituzione e Competenze"
 msgstr "Institution and Competencies"
 
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:117
+msgid ""
+"Il Comitato Tecnico-Scientifico del Progetto \"Il Parco Letterario Giovanni "
+"Verga e Luigi Capuana\" è stato istituito con Determinazione Sindacale n. 50 "
+"del 20 ottobre 2025 del Comune di Vizzini, in attuazione di quanto previsto "
+"dal progetto esecutivo approvato con Delibera di Giunta n. 65 del 13 giugno "
+"2025 e finanziato dalla Regione Siciliana – Assessorato dei Beni Culturali e "
+"dell'Identità Siciliana ai sensi della L.R. 3/2025, art. 7, comma 3."
+msgstr ""
+"The Technical-Scientific Committee of the Project \"The Giovanni Verga and "
+"Luigi Capuana Literary Park\" was established by Mayoral Determination n. 50 "
+"of October 20, 2025 of the Municipality of Vizzini, implementing the "
+"executive project approved by Council Resolution n. 65 of June 13, 2025 and "
+"funded by the Sicilian Region – Department of Cultural Heritage and Sicilian "
+"Identity pursuant to L.R. 3/2025, art. 7, paragraph 3."
+
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:120
 msgid "Funzione del Comitato"
 msgstr "Committee Function"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:121
+msgid ""
+"Il Comitato ha funzione consultiva e di orientamento strategico: supporta "
+"gli Enti locali e i partner culturali nella definizione scientifica delle "
+"attività, nella direzione culturale e nel coordinamento metodologico delle "
+"azioni previste dal Progetto \"Il Parco Letterario Giovanni Verga e Luigi "
+"Capuana\" tra Vizzini, Mineo e Licodia Eubea."
+msgstr ""
+"The Committee has an advisory and strategic orientation function: it "
+"supports local authorities and cultural partners in the scientific "
+"definition of activities, cultural direction and methodological coordination "
+"of actions provided by the Project \"The Giovanni Verga and Luigi Capuana "
+"Literary Park\" between Vizzini, Mineo and Licodia Eubea."
 
 #: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:125
 msgid "Principali Compiti"
@@ -964,11 +1054,11 @@ msgstr "For the full text of the regulations and meeting minutes, consult the"
 msgid "Regolamento del Comitato"
 msgstr "Committee Regulation"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:147
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:145
 msgid "Composizione del Comitato"
 msgstr "Committee Composition"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:148
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:146
 msgid ""
 "Una rete di esperti e istituzioni dedicati alla valorizzazione del "
 "patrimonio verghiano e capuaniano"
@@ -976,24 +1066,24 @@ msgstr ""
 "A network of experts and institutions dedicated to the enhancement of the "
 "Verga and Capuana heritage"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:156
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:154
 msgid "Rappresentanti Enti Pubblici"
 msgstr "Public Entity Representatives"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:163
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:161
 msgid "Dott. Pietro La Rocca"
 msgstr "Dr. Pietro La Rocca"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:164
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:162
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:89
 msgid "Comune di Vizzini"
 msgstr "Municipality of Vizzini"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:170
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:168
 msgid "Dott. Mario Luca Sebastiano Testa"
 msgstr "Dr. Mario Luca Sebastiano Testa"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:183
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:181
 msgid "Centri Studi e Famiglie Depositarie del Patrimonio"
 msgstr "Study Centres and Heritage Custodian Families"
 
@@ -1001,89 +1091,89 @@ msgstr "Study Centres and Heritage Custodian Families"
 msgid "Dott. Raffaele Assunta Brunelli"
 msgstr "Dr. Raffaele Assunta Brunelli"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:191
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:189
 #: parco_verismo/templates/parco_verismo/contatti.html:91
 msgid "Centro Studi C.E.S.T.A."
 msgstr "C.E.S.T.A. Study Centre"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:197
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:195
 msgid "Dott. Tommaso Domenico Cilia"
 msgstr "Dr. Tommaso Domenico Cilia"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:198
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:212
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:196
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:210
 msgid "Famiglia Capuana"
 msgstr "Capuana Family"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:204
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:202
 msgid "Dott.ssa Carla Verga"
 msgstr "Dr. Carla Verga"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:205
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:203
 msgid "Famiglia Verga"
 msgstr "Verga Family"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:211
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:209
 msgid "Dott. Carlo Capuana"
 msgstr "Dr. Carlo Capuana"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:218
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:216
 msgid "Prof. Antonio Di Silvestro"
 msgstr "Prof. Antonio Di Silvestro"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:231
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:229
 msgid "Istituti Superiori e Università"
 msgstr "Higher Institutes and Universities"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:238
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:236
 msgid "Dott.ssa Anna Raudino"
 msgstr "Dr. Anna Raudino"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:239
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:237
 msgid "ITS Academy di Siracusa"
 msgstr "ITS Academy of Syracuse"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:245
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:243
 msgid "Prof. Francesco Pignataro"
 msgstr "Prof. Francesco Pignataro"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:252
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:250
 msgid "Prof. Luigi Ingaliso"
 msgstr "Prof. Luigi Ingaliso"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:265
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:263
 msgid "Coordinamento"
 msgstr "Coordination"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:272
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:270
 msgid "Dott.ssa Delia Francesca Di Pasquale"
 msgstr "Dr. Delia Francesca Di Pasquale"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:273
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:271
 msgid "Coordinatrice del Comitato Tecnico-Scientifico"
 msgstr "Coordinator of the Technical-Scientific Committee"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:327
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:325
 msgid "Finalità & Funzioni"
 msgstr "Purposes & Functions"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:333
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:331
 msgid "Finalità e Funzioni"
 msgstr "Purposes and Functions"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:338
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:336
 msgid "Coerenza Scientifica"
 msgstr "Scientific Consistency"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:339
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:337
 msgid "Garantire coerenza scientifica e culturale alle azioni del progetto"
 msgstr "Ensure scientific and cultural consistency of project actions"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:345
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:343
 msgid "Progettazione Strategica"
 msgstr "Strategic Planning"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:346
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:344
 msgid ""
 "Orientare la progettazione di eventi, percorsi, accordi istituzionali e "
 "produzioni culturali"
@@ -1091,11 +1181,11 @@ msgstr ""
 "Guide the design of events, routes, institutional agreements and cultural "
 "productions"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:352
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:350
 msgid "Costruzione di Reti"
 msgstr "Network Building"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:353
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:351
 msgid ""
 "Favorire la costruzione di reti tra enti pubblici, università, ITS, realtà "
 "culturali e famiglie depositarie del patrimonio"
@@ -1103,19 +1193,19 @@ msgstr ""
 "Foster the building of networks between public bodies, universities, ITS, "
 "cultural entities and heritage custodian families"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:359
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:357
 msgid "Welfare Culturale"
 msgstr "Cultural Welfare"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:360
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:358
 msgid "Promuovere una visione di welfare culturale condiviso e partecipato"
 msgstr "Promote a vision of shared and participatory cultural welfare"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:366
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:364
 msgid "Sviluppo Identitario e Sociale"
 msgstr "Identity and Social Development"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:367
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:365
 msgid ""
 "Trasformare il patrimonio verghiano e capuaniano in un motore di sviluppo "
 "identitario, educativo e sociale"
@@ -1123,11 +1213,11 @@ msgstr ""
 "Transform the Verga and Capuana heritage into an engine of identity, "
 "educational and social development"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:381
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:379
 msgid "Presidio Culturale e Scientifico"
 msgstr "Cultural and Scientific Hub"
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:382
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:380
 msgid ""
 "Il Comitato rappresenta il presidio culturale e scientifico del progetto, "
 "assicurandone continuità e radicamento territoriale."
@@ -1135,7 +1225,7 @@ msgstr ""
 "The Committee represents the cultural and scientific hub of the project, "
 "ensuring its continuity and territorial rooting."
 
-#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:384
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:382
 msgid "Leggi il Regolamento"
 msgstr "Read the Regulations"
 
@@ -1272,15 +1362,23 @@ msgstr "Documents & Studies"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:42
 #: parco_verismo/templates/parco_verismo/index.html:317
+#: parco_verismo/templates/parco_verismo/index.html:345
 #: parco_verismo/templates/parco_verismo/navbar.html:138
 msgid "Opere di Verga"
 msgstr "Works by Verga"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:43
 #: parco_verismo/templates/parco_verismo/index.html:328
+#: parco_verismo/templates/parco_verismo/index.html:356
 #: parco_verismo/templates/parco_verismo/navbar.html:145
 msgid "Opere di Capuana"
 msgstr "Works by Capuana"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:44
+#, fuzzy
+#| msgid "Personaggi & Lessico del Verismo"
+msgid "Personaggi & Lessico"
+msgstr "Characters & Lexicon of Verismo"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:49
 #: parco_verismo/templates/parco_verismo/contatti.html:4
@@ -1296,6 +1394,21 @@ msgstr "Sicily, Italy"
 #: parco_verismo/templates/parco_verismo/components/footer.html:70
 msgid "Logo Regione"
 msgstr "Region Logo"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:71
+#: parco_verismo/templates/parco_verismo/navbar.html:14
+#: parco_verismo/templates/parco_verismo/navbar.html:19
+#: parco_verismo/templates/parco_verismo/navbar.html:36
+#, fuzzy
+#| msgid "Associazione Parchi Letterari"
+msgid "Logo Parchi Letterari"
+msgstr "Literary Parks Association"
+
+#: parco_verismo/templates/parco_verismo/components/footer.html:72
+#, fuzzy
+#| msgid "Verga e Capuana"
+msgid "Logo Parco Verga e Capuana"
+msgstr "Verga and Capuana"
 
 #: parco_verismo/templates/parco_verismo/components/footer.html:73
 msgid "Logo Vizzini"
@@ -1360,6 +1473,17 @@ msgstr "Read more"
 msgid "Copertina di"
 msgstr "Cover of"
 
+#: parco_verismo/templates/parco_verismo/components/opera_card.html:19
+#, python-format
+msgid ""
+"\n"
+"      <p class=\"card-text text-muted mb-2\">di %(autore)s</p>\n"
+"      "
+msgstr ""
+"\n"
+"      <p class=\"card-text text-muted mb-2\">by %(autore)s</p>\n"
+"      "
+
 #: parco_verismo/templates/parco_verismo/components/opera_card.html:23
 #: parco_verismo/templates/parco_verismo/opere_per_autore.html:30
 msgid "Anno:"
@@ -1373,6 +1497,21 @@ msgstr "Search..."
 #: parco_verismo/templates/parco_verismo/documenti.html:40
 msgid "Cerca"
 msgstr "Search"
+
+#: parco_verismo/templates/parco_verismo/contatti.html:6
+#, fuzzy
+#| msgid ""
+#| "Il Parco Letterario Giovanni Verga e Luigi Capuana è un progetto "
+#| "culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, "
+#| "Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A."
+msgid ""
+"Contatti del Parco Letterario® Giovanni Verga e Luigi Capuana. Centro Studi "
+"C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, "
+"collaborazioni, attività didattiche."
+msgstr ""
+"The Giovanni Verga and Luigi Capuana Literary Park is a shared cultural "
+"project, promoted in collaboration with the Municipalities of Vizzini, Mineo "
+"and Licodia Eubea and coordinated by the C.E.S.T.A. Study Center."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:28
 msgid ""
@@ -1493,6 +1632,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/contatti.html:250
 #: parco_verismo/templates/parco_verismo/index.html:357
+#: parco_verismo/templates/parco_verismo/index.html:384
 msgid "Modulo di contatto"
 msgstr "Contact Form"
 
@@ -1514,26 +1654,31 @@ msgstr "The message will be sent to the official email of the Literary Park."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:297
 #: parco_verismo/templates/parco_verismo/index.html:399
+#: parco_verismo/templates/parco_verismo/index.html:426
 msgid "facoltativo"
 msgstr "optional"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:330
 #: parco_verismo/templates/parco_verismo/index.html:432
+#: parco_verismo/templates/parco_verismo/index.html:457
 msgid "Invia messaggio"
 msgstr "Send message"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:333
 #: parco_verismo/templates/parco_verismo/index.html:435
+#: parco_verismo/templates/parco_verismo/index.html:460
 msgid "I campi contrassegnati con"
 msgstr "Fields marked with"
 
 #: parco_verismo/templates/parco_verismo/contatti.html:333
 #: parco_verismo/templates/parco_verismo/index.html:435
+#: parco_verismo/templates/parco_verismo/index.html:460
 msgid "sono obbligatori."
 msgstr "are required."
 
 #: parco_verismo/templates/parco_verismo/contatti.html:338
 #: parco_verismo/templates/parco_verismo/index.html:440
+#: parco_verismo/templates/parco_verismo/index.html:464
 msgid "Informativa sulla privacy"
 msgstr "Privacy policy"
 
@@ -1932,6 +2077,21 @@ msgstr ""
 msgid "Autori:"
 msgstr "Authors:"
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:30
+#, python-format
+msgid ""
+"\n"
+"          <p class=\"mb-0\">\n"
+"            <i class=\"bi bi-calendar me-2\"></i>Pubblicato il %(data_pub)s\n"
+"          </p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"mb-0\">\n"
+"            <i class=\"bi bi-calendar me-2\"></i>Published on %(data_pub)s\n"
+"          </p>\n"
+"          "
+
 #: parco_verismo/templates/parco_verismo/documento_detail.html:59
 msgid "Parole chiave:"
 msgstr "Keywords:"
@@ -2155,6 +2315,13 @@ msgstr "End:"
 msgid "Luogo"
 msgstr "Place"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:152
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:113
+#, fuzzy
+#| msgid "Documenti e Studi"
+msgid "Documenti Allegati"
+msgstr "Documents and Studies"
+
 #: parco_verismo/templates/parco_verismo/evento_detail.html:174
 msgid "Torna agli eventi"
 msgstr "Back to events"
@@ -2163,11 +2330,19 @@ msgstr "Back to events"
 msgid "Vedi calendario"
 msgstr "View calendar"
 
+#: parco_verismo/templates/parco_verismo/index.html:6
+#, fuzzy
+#| msgid ""
+#| "Parco Letterario Giovanni Verga e Luigi Capuana - I luoghi del Verismo"
+msgid "Parco Letterario® Giovanni Verga e Luigi Capuana - I luoghi del Verismo"
+msgstr "Giovanni Verga and Luigi Capuana Literary Park - The places of Verismo"
+
 #: parco_verismo/templates/parco_verismo/index.html:17
 msgid "Parco Letterario®"
 msgstr "Literary Park"
 
 #: parco_verismo/templates/parco_verismo/index.html:18
+#: parco_verismo/templates/parco_verismo/missione_visione.html:32
 msgid "Giovanni Verga e Luigi Capuana"
 msgstr "Giovanni Verga and Luigi Capuana"
 
@@ -2337,56 +2512,6 @@ msgstr "Historical documents and manuscripts"
 msgid "Risorse per la ricerca accademica"
 msgstr "Academic research resources"
 
-#: parco_verismo/templates/parco_verismo/index.html:304
-#: parco_verismo/templates/parco_verismo/navbar.html:131
-msgid "Opere & Letteratura"
-msgstr "Works & Literature"
-
-#: parco_verismo/templates/parco_verismo/index.html:307
-msgid "Esplora le opere, i testi e i protagonisti del movimento verista"
-msgstr "Explore the works, texts and protagonists of the Verist movement"
-
-#: parco_verismo/templates/parco_verismo/index.html:318
-msgid ""
-"Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e "
-"edizioni critiche."
-msgstr ""
-"Catalogue and resources on Giovanni Verga's main works, essays and critical "
-"editions."
-
-#: parco_verismo/templates/parco_verismo/index.html:319
-msgid "Scopri le opere"
-msgstr "Discover the works"
-
-#: parco_verismo/templates/parco_verismo/index.html:329
-msgid ""
-"Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua "
-"produzione."
-msgstr ""
-"Collection of texts, critical contexts and materials on Luigi Capuana and "
-"his production."
-
-#: parco_verismo/templates/parco_verismo/index.html:330
-msgid "Esplora Capuana"
-msgstr "Explore Capuana"
-
-#: parco_verismo/templates/parco_verismo/index.html:339
-#: parco_verismo/templates/parco_verismo/navbar.html:150
-msgid "Personaggi & Lessico del Verismo"
-msgstr "Characters & Lexicon of Verismo"
-
-#: parco_verismo/templates/parco_verismo/index.html:340
-msgid ""
-"Schede sui personaggi principali, lessico caratteristico e termini letterari "
-"del Verismo."
-msgstr ""
-"Profiles of main characters, characteristic lexicon and literary terms of "
-"Verismo."
-
-#: parco_verismo/templates/parco_verismo/index.html:341
-msgid "Approfondisci"
-msgstr "Learn more"
-
 #: parco_verismo/templates/parco_verismo/itinerari_capuaniani.html:4
 msgid "Parco Letterario Giovanni Verga Luigi Capuana - Itinerari Capuaniani"
 msgstr "Giovanni Verga Luigi Capuana Literary Park - Capuana Itineraries"
@@ -2412,6 +2537,11 @@ msgstr "Capuana Itineraries Map"
 #: parco_verismo/templates/parco_verismo/itinerari_capuaniani.html:32
 #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:32
 #: parco_verismo/templates/parco_verismo/licodia.html:402
+#: parco_verismo/templates/parco_verismo/mineo.html:398
+#: parco_verismo/templates/parco_verismo/vizzini.html:400
+msgid "Scopri i luoghi di interesse sulla mappa interattiva"
+msgstr "Discover points of interest on the interactive map"
+
 #: parco_verismo/templates/parco_verismo/itinerari_capuaniani.html:39
 #: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:39
 msgid "Percorsi Disponibili"
@@ -2478,42 +2608,6 @@ msgstr "Back to thematic itineraries"
 msgid "Descrizione del percorso"
 msgstr "Route description"
 
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:9
-msgid "Scopri i luoghi letterari attraverso il Cammino del Verismo. Percorsi guidati dedicati a temi specifici del verismo siciliano."
-msgstr "Discover literary places through the Path of Verismo. Guided tours dedicated to specific themes of Sicilian Verismo."
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:25
-msgid "Percorsi dedicati a temi specifici del verismo siciliano"
-msgstr "Routes dedicated to specific themes of Sicilian Verismo"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:42
-msgid "Luoghi di interesse e percorsi del Verismo"
-msgstr "Places of interest and Verismo routes"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:48
-msgid "Visualizza a schermo intero"
-msgstr "View fullscreen"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:66
-msgid "Seleziona un itinerario per visualizzarlo sulla mappa"
-msgstr "Select an itinerary to view it on the map"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:75
-msgid "tappe"
-msgstr "stops"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:100
-msgid "Mostra sulla mappa"
-msgstr "Show on map"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:104
-msgid "Info"
-msgstr "Info"
-
-#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:113
-msgid "Reset vista mappa"
-msgstr "Reset map view"
-
 #: parco_verismo/templates/parco_verismo/itinerario_detail.html:65
 msgid "Apri su Maps"
 msgstr "Open in Maps"
@@ -2547,6 +2641,26 @@ msgstr "Community, landscapes and memory of Verismo"
 msgid "Introduzione"
 msgstr "Introduction"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:42
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">Licodia Eubea è un borgo antico e ricco di "
+"stratificazioni culturali, situato tra le colline che uniscono idealmente "
+"Vizzini e Mineo. La sua identità agricola, il rapporto profondo con il "
+"paesaggio, la forte coesione comunitaria e la ricchezza delle tradizioni "
+"popolari ne fanno uno dei luoghi più rappresentativi per comprendere il "
+"contesto umano e sociale da cui nasce il Verismo.</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">Licodia Eubea is an ancient village rich in "
+"cultural stratifications, located among the hills that ideally unite Vizzini "
+"and Mineo. Its agricultural identity, deep relationship with the landscape, "
+"strong community cohesion and richness of popular traditions make it one of "
+"the most representative places to understand the human and social context "
+"from which Verismo was born.</p>\n"
+"          "
+
 #: parco_verismo/templates/parco_verismo/licodia.html:48
 msgid "Panorama di Licodia Eubea"
 msgstr "Panorama of Licodia Eubea"
@@ -2554,6 +2668,32 @@ msgstr "Panorama of Licodia Eubea"
 #: parco_verismo/templates/parco_verismo/licodia.html:60
 msgid "Un territorio che riflette il mondo verista"
 msgstr "A territory that reflects the Verist world"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:61
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">Le campagne licodiane, le vie del centro "
+"storico, la pietra bianca delle case, i ritmi del lavoro e della vita "
+"comunitaria sono elementi che evocano da vicino le atmosfere della narrativa "
+"verista. In questo territorio prendono forma molte delle dinamiche sociali "
+"raccontate da Verga e Capuana: la famiglia, il ruolo delle donne, la fede "
+"religiosa, la dimensione del lavoro agricolo, la fragilità e la forza delle "
+"comunità rurali. Anche se Licodia non viene citata esplicitamente nelle "
+"opere, ne incarna pienamente lo spirito: è un luogo in cui i meccanismi "
+"narrativi del Verismo si percepiscono nella realtà quotidiana.</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">The Licodian countryside, the streets of "
+"the historic center, the white stone of the houses, the rhythms of work and "
+"community life are elements that closely evoke the atmosphere of Verist "
+"narrative. In this territory, many of the social dynamics recounted by Verga "
+"and Capuana take shape: the family, the role of women, religious faith, the "
+"dimension of agricultural work, the fragility and strength of rural "
+"communities. Although Licodia is not explicitly mentioned in the works, it "
+"fully embodies their spirit: it is a place where the narrative mechanisms of "
+"Verismo are perceived in daily reality.</p>\n"
+"          "
 
 #: parco_verismo/templates/parco_verismo/licodia.html:67
 msgid "Bosco Vaito"
@@ -2582,6 +2722,19 @@ msgstr "Holy Week"
 #: parco_verismo/templates/parco_verismo/licodia.html:92
 #: parco_verismo/templates/parco_verismo/mineo.html:92
 #: parco_verismo/templates/parco_verismo/vizzini.html:107
+msgid "Marzo/Aprile"
+msgstr "March/April"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:95
+msgid ""
+"L'evento religioso più sentito. Le celebrazioni culminano nel "
+"<strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale "
+"\"Giunta\" pasquale."
+msgstr ""
+"The most deeply felt religious event. Celebrations culminate on <strong>Good "
+"Friday</strong> with the <em>Via Giunta</em> and the traditional Easter "
+"\"Giunta\"."
+
 #: parco_verismo/templates/parco_verismo/licodia.html:105
 msgid "Festa dell'Uva"
 msgstr "Grape Festival"
@@ -2835,6 +2988,14 @@ msgstr "Roman ceramics and lamps"
 msgid "Museo Etnografico"
 msgstr "Ethnographic Museum"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:347
+msgid ""
+"Intitolato a <strong>\"Padre A. Coniglione\"</strong>, allestito nei locali "
+"dell'ex Ospedale Civico."
+msgstr ""
+"Named after <strong>\"Father A. Coniglione\"</strong>, set up in the "
+"premises of the former Civic Hospital."
+
 #: parco_verismo/templates/parco_verismo/licodia.html:351
 msgid "Strumenti del lavoro agricolo"
 msgstr "Agricultural work tools"
@@ -2917,6 +3078,9 @@ msgstr "Hospitality"
 
 #: parco_verismo/templates/parco_verismo/licodia.html:439
 #: parco_verismo/templates/parco_verismo/vizzini.html:437
+msgid "Luoghi Verghiani"
+msgstr "Verga's Places"
+
 #: parco_verismo/templates/parco_verismo/licodia.html:443
 #: parco_verismo/templates/parco_verismo/mineo.html:439
 #: parco_verismo/templates/parco_verismo/vizzini.html:441
@@ -3052,6 +3216,24 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:145
 msgid "Il tessuto urbano e sociale"
 msgstr "The urban and social fabric"
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:147
+msgid ""
+"Vizzini è strutturato come un organismo compatto, dove ogni quartiere ha una "
+"sua identità sociale precisa. I quartieri popolari - le \"vanelle\" strette "
+"e ombrose - sono il cuore pulsante della narrazione verghiana: qui vivono "
+"contadini, braccianti, artigiani, donne che tessono e cuciono nelle case "
+"basse. Qui nascono le storie di Cavalleria rusticana e de La lupa, storie "
+"dove il codice dell'onore regola ogni gesto, dove l'amore si intreccia alla "
+"gelosia, dove il sangue lava l'offesa."
+msgstr ""
+"Vizzini is structured as a compact organism, where every neighborhood has "
+"its precise social identity. The popular neighborhoods - the narrow and "
+"shady \"vanelle\" - are the beating heart of Verga's narrative: here live "
+"peasants, laborers, artisans, women weaving and sewing in low houses. Here "
+"the stories of Cavalleria rusticana and La lupa are born, stories where the "
+"code of honor regulates every gesture, where love is intertwined with "
+"jealousy, where blood washes away the offense."
 
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:150
 msgid "La Cunziria: luogo iconico della tragedia"
@@ -3235,6 +3417,20 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:253
 msgid "Il latifondo e la proprietà"
 msgstr "The latifundium and property"
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:255
+msgid ""
+"La roba mette in scena il latifondo siciliano in tutta la sua estensione: "
+"\"...terre a perdita d'occhio, vigneti, uliveti, seminativi...\". Mazzarò "
+"percorre i suoi possedimenti come un generale che ispeziona un esercito: "
+"conta le mandrie, controlla i raccolti, sorveglia i contadini. La terra qui "
+"non è madre, ma proprietà da difendere, da far fruttare, da moltiplicare."
+msgstr ""
+"La roba stages the Sicilian latifundium in all its extension: \"...lands as "
+"far as the eye can see, vineyards, olive groves, arable land...\". Mazzarò "
+"patrols his possessions like a general inspecting an army: he counts the "
+"herds, checks the harvest, supervises the peasants. The land here is not a "
+"mother, but property to be defended, made fruitful, multiplied."
 
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:258
 msgid "La vita dei braccianti"
@@ -3582,6 +3778,18 @@ msgstr ""
 msgid "Connessioni letterarie"
 msgstr "Literary connections"
 
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:498
+msgid ""
+"Licodia Eubea rappresenta l'archetipo del paese agricolo dell'interno, "
+"quello descritto nelle novelle verghiane ambientate \"nelle campagne\" senza "
+"indicazione geografica precisa. È il tipo di paese dove potrebbe svolgersi "
+"La roba, dove Mazzarò avrebbe potuto accumulare le sue terre."
+msgstr ""
+"Licodia Eubea represents the archetype of the inland agricultural village, "
+"the one described in Verga's short stories set \"in the countryside\" "
+"without precise geographical indication. It is the type of village where La "
+"roba could take place, where Mazzarò could have accumulated his lands."
+
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:501
 msgid ""
 "Come Vizzini e Mineo, anche Licodia ha una struttura sociale stratificata. I "
@@ -3839,6 +4047,30 @@ msgstr ""
 msgid "La città natale di Luigi Capuana"
 msgstr "The birthplace of Luigi Capuana"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:42
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">Mineo è un luogo cardinale nella storia "
+"della letteratura italiana. Qui, il 28 maggio 1839, nacque Luigi Capuana, "
+"scrittore, critico, teorico del Verismo e tra le figure più originali della "
+"cultura europea dell’Ottocento. Il borgo conserva ancora oggi l’atmosfera, i "
+"paesaggi e l’architettura sociale che plasmarono l’immaginario dello "
+"scrittore, rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, "
+"le sue piazze, le sue case, i suoi quartieri popolari ricorrono in molte "
+"opere capuaniane, spesso trasformati in teatro poetico o fantastico.</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">Mineo is a cardinal place in the history of "
+"Italian literature. Here, on May 28, 1839, Luigi Capuana was born, writer, "
+"critic, theorist of Verismo and one of the most original figures of European "
+"culture of the nineteenth century. The village still preserves the "
+"atmosphere, landscapes and social architecture that shaped the writer's "
+"imagination, creating a living and recognizable narrative space. Its "
+"streets, its squares, its houses, its popular districts recur in many "
+"Capuana works, often transformed into poetic or fantastic theater.</p>\n"
+"          "
+
 #: parco_verismo/templates/parco_verismo/mineo.html:48
 msgid "Panorama di Mineo"
 msgstr "Panorama of Mineo"
@@ -3846,6 +4078,29 @@ msgstr "Panorama of Mineo"
 #: parco_verismo/templates/parco_verismo/mineo.html:60
 msgid "Mineo nella vita di Luigi Capuana"
 msgstr "Mineo in the life of Luigi Capuana"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:61
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">La formazione di Capuana avvenne "
+"interamente tra le strade e le campagne di Mineo, in una realtà ricca di "
+"contrasti: borghesia agraria, mondo contadino, tradizioni popolari, "
+"spiritualità, paesaggi aspri e luminosi. Questi elementi costituirono la "
+"matrice del suo sguardo critico e antropologico sul reale, ma anche del suo "
+"interesse per il mistero, l’occulto, il fiabesco. Mineo non fu solo un paese "
+"d’origine, ma una lente attraverso cui Capuana osservò e interpretò il mondo."
+"</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">Capuana's formation took place entirely in "
+"the streets and countryside of Mineo, in a reality rich in contrasts: "
+"agrarian bourgeoisie, peasant world, popular traditions, spirituality, harsh "
+"and luminous landscapes. These elements constituted the matrix of his "
+"critical and anthropological gaze on reality, but also of his interest in "
+"mystery, the occult, the fairy tale. Mineo was not just a hometown, but a "
+"lens through which Capuana observed and interpreted the world.</p>\n"
+"          "
 
 #: parco_verismo/templates/parco_verismo/mineo.html:67
 msgid "Casa Natale di Luigi Capuana"
@@ -4138,10 +4393,10 @@ msgstr "The Giovanni Verga and Luigi Capuana Literary Park"
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:25
 msgid ""
-"Trasformare la letteratura in dispositivo contemporaneo di sviluppo, "
-"identità e partecipazione civica"
+"Trasformare la letteratura in strumento contemporaneo di sviluppo, identità "
+"e partecipazione civica"
 msgstr ""
-"Transforming literature into a contemporary device for development, identity "
+"Transforming literature into a contemporary tool for development, identity "
 "and civic participation"
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:76
@@ -4162,15 +4417,27 @@ msgstr ""
 "making literature a living experience that connects history, landscape and "
 "contemporaneity."
 
-#: parco_verismo/templates/parco_verismo/missione_visione.html:94
+#: parco_verismo/templates/parco_verismo/missione_visione.html:64
 msgid ""
-"Promosso dagli Enti locali, il progetto è riconosciuto e finanziato dalla "
-"Regione Siciliana (D.D.G. n. 1159 del 6/3/2025) come iniziativa di interesse "
-"pubblico, sancendone il valore strategico per lo sviluppo del territorio."
+"Promosso dal Comune di Vizzini, in qualità di ente capofila, in rete con i "
+"Comuni di Mineo e Licodia Eubea, il progetto è riconosciuto e finanziato "
+"dalla Regione Siciliana (D.D.G. n. 1159 del 6/03/2025) come iniziativa di "
+"interesse pubblico, sancendone il valore strategico per lo sviluppo del "
+"territorio. In particolare, il D.D.G. n. 1159 del 6/03/2025 individua il "
+"Comune di Vizzini quale ente beneficiario del contributo straordinario "
+"previsto dall'art. 7, comma 3, della Legge Regionale 30 gennaio 2025, n. 3, "
+"finalizzato alla realizzazione del Parco Letterario del Verismo nei Comuni "
+"di Vizzini, Mineo e Licodia Eubea."
 msgstr ""
-"Promoted by local authorities, the project is recognized and funded by the "
-"Sicilian Region (D.D.G. n. 1159 of 6/3/2025) as an initiative of public "
-"interest, establishing its strategic value for territorial development."
+"Promoted by the Municipality of Vizzini, as lead entity, in partnership with "
+"the Municipalities of Mineo and Licodia Eubea, the project is recognized and "
+"funded by the Sicilian Region (D.D.G. n. 1159 of 6/03/2025) as an initiative "
+"of public interest, establishing its strategic value for territorial "
+"development. In particular, D.D.G. n. 1159 of 6/03/2025 identifies the "
+"Municipality of Vizzini as the beneficiary of the extraordinary contribution "
+"provided for in art. 7, paragraph 3, of Regional Law of January 30, 2025, n. "
+"3, aimed at the realization of the Literary Park of Verismo in the "
+"Municipalities of Vizzini, Mineo and Licodia Eubea."
 
 #: parco_verismo/templates/parco_verismo/missione_visione.html:101
 msgid ""
@@ -4419,6 +4686,12 @@ msgstr "VAT/Tax Code"
 #: parco_verismo/templates/parco_verismo/note_legali.html:71
 msgid "2. Oggetto e Finalità del Sito"
 msgstr "2. Purpose and Objectives of the Website"
+
+#: parco_verismo/templates/parco_verismo/note_legali.html:73
+#, fuzzy
+#| msgid "Il sito www.parcoverismo.it ha lo scopo di:"
+msgid "Il sito www.parcovergacapuana.it ha lo scopo di:"
+msgstr "The website www.parcoverismo.it aims to:"
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:76
 msgid ""
@@ -4720,6 +4993,21 @@ msgstr "Hosting"
 msgid "Tecnologie utilizzate"
 msgstr "Technologies used"
 
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:38
+#, python-format
+msgid ""
+"\n"
+"        <div class=\"text-center text-secondary mb-5\">\n"
+"          <i class=\"bi bi-calendar me-2\"></i>Pubblicata il %(data_pub)s\n"
+"        </div>\n"
+"        "
+msgstr ""
+"\n"
+"        <div class=\"text-center text-secondary mb-5\">\n"
+"          <i class=\"bi bi-calendar me-2\"></i>Published on %(data_pub)s\n"
+"        </div>\n"
+"        "
+
 #: parco_verismo/templates/parco_verismo/notizia_detail.html:48
 msgid "Immagine notizia"
 msgstr "News Image"
@@ -4759,6 +5047,11 @@ msgstr ""
 msgid "Nessun contenuto in questa data"
 msgstr "No content on this date"
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:13
+#, python-format
+msgid "di %(autore)s"
+msgstr "by %(autore)s"
+
 #: parco_verismo/templates/parco_verismo/opera_detail.html:16
 msgid "Anno di pubblicazione"
 msgstr "Year of publication"
@@ -4782,6 +5075,27 @@ msgid ""
 msgstr ""
 "The link will take you to the Wikisource page where you can read the "
 "complete work for free."
+
+#: parco_verismo/templates/parco_verismo/opera_detail.html:50
+#, python-format
+msgid "← Torna alle opere di %(autore)s"
+msgstr "← Back to works by %(autore)s"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:4
+#, python-format
+msgid "Opere di %(autore)s"
+msgstr "Works by %(autore)s"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:10
+#, python-format
+msgid ""
+"\n"
+"  <h1 class=\"text-center mb-4\">Opere di %(autore)s</h1>\n"
+"  "
+msgstr ""
+"\n"
+"  <h1 class=\"text-center mb-4\">Works by %(autore)s</h1>\n"
+"  "
 
 #: parco_verismo/templates/parco_verismo/opere_per_autore.html:47
 msgid "Nessuna opera disponibile per questo autore."
@@ -4881,7 +5195,8 @@ msgstr "Cultural promotion and lifelong learning."
 
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:174
 msgid "Circolo Culturale “Giovanni Verga”"
-msgstr "Cultural Club \""
+msgstr "Cultural Club \"Giovanni Verga\""
+
 #: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:176
 msgid "Valorizzazione della figura e dell'opera di Verga."
 msgstr "Enhancement of the figure and work of Verga."
@@ -5117,6 +5432,20 @@ msgstr "The characters of Giovanni Verga"
 msgid "Padron 'Ntoni"
 msgstr ""
 
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:102
+msgid ""
+"Padron 'Ntoni è il patriarca della famiglia Toscano, custode di una saggezza "
+"antica racchiusa nei proverbi e nelle consuetudini tramandate. Incarnazione "
+"della tradizione, della memoria e dell'ordine antico, crede fermamente che "
+"ogni cosa abbia il suo posto e il suo tempo: \"Per menare il remo bisogna "
+"che le cinque dita s'aiutino l'un l'altro\"."
+msgstr ""
+"Padron 'Ntoni is the patriarch of the Toscano family, guardian of an ancient "
+"wisdom contained in proverbs and handed-down customs. Incarnation of "
+"tradition, memory and ancient order, he firmly believes that everything has "
+"its place and time: \"To row the boat, the five fingers must help each "
+"other\"."
+
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:105
 msgid ""
 "Il suo dramma non è la povertà materiale, ma il crollo irreversibile di un "
@@ -5183,6 +5512,26 @@ msgstr ""
 "possible conclusion. There is no rebellion, no escape: his end is accepted "
 "as necessary, almost ritual."
 
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:133
+msgid ""
+"Verga non giudica, non condanna, ma mostra la forza devastante di una "
+"cultura in cui l'individuo è schiacciato dal peso delle convenzioni. Turiddu "
+"è vittima e carnefice insieme, intrappolato in un meccanismo che non lascia "
+"scampo. Il suo grido finale alla madre – \"Ah! mamma mia!\" – è uno dei "
+"momenti più strazianti della letteratura italiana, un lampo di umanità prima "
+"dell'annientamento."
+msgstr ""
+"Verga does not judge, does not condemn, but shows the devastating force of a "
+"culture where the individual is crushed by the weight of conventions. "
+"Turiddu is both victim and executioner, trapped in a mechanism that leaves "
+"no escape. His final cry to his mother – \"Ah! mamma mia!\" – is one of the "
+"most heartrending moments in Italian literature, a flash of humanity before "
+"annihilation."
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:145
+msgid "Gnà Pina, detta \"la Lupa\""
+msgstr ""
+
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:152
 msgid ""
 "La Lupa è il desiderio che non chiede permesso, la passione che non conosce "
@@ -5192,6 +5541,22 @@ msgstr ""
 "La Lupa is desire that asks no permission, passion that knows neither shame "
 "nor measure. A woman who refuses the assigned role and for this reason is "
 "transformed into living guilt, into the incarnation of evil."
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:155
+msgid ""
+"Gnà Pina arde di un desiderio viscerale per Nanni, un giovane che finisce "
+"per sposare sua figlia pur di allontanarla. Ma la Lupa non si arrende: "
+"torna, insegue, pretende. La comunità non la comprende né la perdona: la sua "
+"passione diventa scandalo, minaccia, disordine. È accusata di essere "
+"\"indemoniata\", di portare sfortuna, di contaminare con la sua sola "
+"presenza."
+msgstr ""
+"Gnà Pina burns with a visceral desire for Nanni, a young man who ends up "
+"marrying her daughter just to keep her away. But the Lupa does not give up: "
+"she returns, pursues, demands. The community neither understands nor "
+"forgives her: her passion becomes scandal, threat, disorder. She is accused "
+"of being \"possessed\", of bringing bad luck, of contaminating with her mere "
+"presence."
 
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:158
 msgid ""
@@ -5226,6 +5591,22 @@ msgstr ""
 "quarry consumes him, solitude shapes him, suffered violence becomes the only "
 "form of relationship he knows."
 
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:180
+msgid ""
+"Verga descrive la sua esistenza con implacabile crudezza: \"Era malizioso, "
+"era cattivo, era prepotente, era tutto quello che si vuole\". Ma questa "
+"\"cattiveria\" è la conseguenza diretta dell'esclusione, del rifiuto, della "
+"durezza di un mondo che lo ha condannato fin dalla nascita. Il rapporto con "
+"il padre, sepolto vivo nella cava, e poi con il ragazzo che cerca di "
+"proteggere, mostra lampi di umanità negata, di tenerezza impossibile."
+msgstr ""
+"Verga describes his existence with implacable rawness: \"He was malicious, "
+"he was bad, he was bully, he was everything you want\". But this \"badness\" "
+"is the direct consequence of exclusion, rejection, the hardness of a world "
+"that has condemned him since birth. The relationship with his father, buried "
+"alive in the quarry, and then with the boy he tries to protect, shows "
+"flashes of denied humanity, of impossible tenderness."
+
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:183
 msgid ""
 "La sua scomparsa finale – inviato a esplorare un cunicolo da cui non farà "
@@ -5245,6 +5626,52 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:195
 msgid "Mazzarò"
 msgstr ""
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:202
+msgid ""
+"Mazzarò è l'uomo che possiede tutto, tranne se stesso. Partito dal nulla, ha "
+"costruito un impero di terre, masserie, vigne, mandrie. La sua vita è "
+"interamente assorbita dall'accumulo di beni: non mangia, non riposa, non "
+"gode. La \"roba\" diventa misura dell'esistenza, fino a sostituirsi a ogni "
+"relazione umana."
+msgstr ""
+"Mazzarò is the man who possesses everything, except himself. Starting from "
+"nothing, he built an empire of lands, farms, vineyards, herds. His life is "
+"entirely absorbed by the accumulation of goods: he does not eat, does not "
+"rest, does not enjoy. \"The stuff\" becomes the measure of existence, until "
+"it replaces every human relationship."
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:205
+msgid ""
+"\"Tutta questa roba è mia!\" – esclama guardando i suoi possedimenti. Ma "
+"quella stessa roba che ha costruito con fatica ossessiva diventa la sua "
+"prigione. Mazzarò non ha famiglia, non ha affetti, non ha eredi che "
+"comprenda o rispetti. Quando si rende conto che la morte lo separerà dai "
+"suoi beni, impazzisce di rabbia e impotenza."
+msgstr ""
+"\"All this stuff is mine!\" – he exclaims looking at his possessions. But "
+"that same stuff he built with obsessive effort becomes his prison. Mazzarò "
+"has no family, no affections, no heirs he understands or respects. When he "
+"realizes that death will separate him from his goods, he goes mad with rage "
+"and powerlessness."
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:208
+msgid ""
+"È l'emblema di un progresso che non libera, ma isola e disumanizza. Il "
+"capitalismo agrario siciliano, la corsa alla proprietà, l'identificazione "
+"totale tra essere e avere: tutto questo si condensa nella figura tragica di "
+"Mazzarò. Verga mostra come il successo materiale possa coincidere con il "
+"vuoto esistenziale più assoluto. La \"roba\" non è solo oggetto di possesso, "
+"ma ossessione, idolo, sostituto di ogni altra forma di vita. Mazzarò muore "
+"da vinto, nonostante abbia vinto tutto."
+msgstr ""
+"He is the emblem of a progress that does not free, but isolates and "
+"dehumanizes. Sicilian agrarian capitalism, the race for property, the total "
+"identification between being and having: all this condenses in the tragic "
+"figure of Mazzarò. Verga shows how material success can coincide with the "
+"most absolute existential emptiness. \"The stuff\" is not just an object of "
+"possession, but obsession, idol, substitute for any other form of life. "
+"Mazzarò dies vanquished, despite having won everything."
 
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:220
 msgid "Gesualdo Motta"
@@ -5303,6 +5730,18 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:247
 msgid "I personaggi di Luigi Capuana"
 msgstr "The characters of Luigi Capuana"
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:263
+msgid ""
+"Giacinta è una figura segnata dal trauma e dalla fragilità psicologica, una "
+"delle prime eroine \"malate\" della letteratura italiana. Capuana la osserva "
+"come un \"caso umano\", con lo sguardo dello scienziato più che del "
+"moralista, senza giudizio né indulgenza."
+msgstr ""
+"Giacinta is a figure marked by trauma and psychological fragility, one of "
+"the first \"sick\" heroines of Italian literature. Capuana observes her as a "
+"\"human case\", with the gaze of a scientist rather than a moralist, without "
+"judgment or indulgence."
 
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:266
 msgid ""
@@ -5519,6 +5958,10 @@ msgstr ""
 "does not accept imposed marriage, the girl who lost her honor, the widow too "
 "free. She becomes an object of gossip, scandal, symbolic and real violence."
 
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:407
+msgid "Il \"vinto\""
+msgstr "The \"vanquished\""
+
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:409
 msgid ""
 "Chi tenta di cambiare destino e fallisce. È il tema centrale del Verga del "
@@ -5597,6 +6040,20 @@ msgstr ""
 "defended, can be lost. It governs relationships between men, families, "
 "sexes. Its violation requires blood. It is the pillar of patriarchal "
 "society, the mechanism that imposes fixed roles and punishes every deviation."
+
+#: parco_verismo/templates/parco_verismo/personaggi_lessico.html:467
+msgid ""
+"Termine siciliano che indica i beni, le proprietà, la ricchezza materiale. "
+"Ma nella narrazione verista diventa qualcosa di più: ossessione, identità, "
+"sostituto di ogni affetto. \"La roba\" è ciò per cui si vive e si muore, ciò "
+"che definisce il valore sociale dell'individuo, ciò che illude di dare senso "
+"all'esistenza."
+msgstr ""
+"Sicilian term indicating goods, properties, material wealth. But in Verist "
+"narration it becomes something more: obsession, identity, substitute for "
+"affection. \"The stuff\" is what one lives and dies for, what defines the "
+"social value of the individual, what deludes into giving meaning to "
+"existence."
 
 #: parco_verismo/templates/parco_verismo/personaggi_lessico.html:474
 msgid "La fatalità"
@@ -6159,6 +6616,7 @@ msgstr ""
 "evaluates cultural projects, collaborates in defining educational programs "
 "and contributes to enhancing the Verist literary heritage."
 
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:45
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:76
 msgid "Documenti Ufficiali"
 msgstr "Official Documents"
@@ -6171,6 +6629,10 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:86
 msgid "Determina Sindacale n. 50"
 msgstr "Mayoral Determination n. 50"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:102
+msgid "Premio Nazionale \"Verga - Capuana\""
+msgstr "National Award \"Verga - Capuana\""
 
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:105
 msgid ""
@@ -6233,6 +6695,38 @@ msgstr "Enhancement projects"
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:132
 msgid "Leggi il Bando Completo"
 msgstr "Read the Complete Call"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:111
+msgid "Scarica il Bando 2025"
+msgstr "Download the 2025 Call"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:117
+msgid "Informazioni sul Premio"
+msgstr "Award Information"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:119
+msgid "Destinatari:"
+msgstr "Recipients:"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:120
+msgid "Scuole primarie e secondarie di I e II grado"
+msgstr "Primary and secondary schools of I and II level"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:123
+msgid "Leggi il Bando Completo 2025"
+msgstr "Read the Complete 2025 Call"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:137
+msgid "Trasparenza e Responsabilità"
+msgstr "Transparency and Accountability"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:140
+msgid "Il Parco Letterario si impegna per la massima trasparenza amministrativa e il rispetto della normativa vigente in materia di privacy e protezione dei dati."
+msgstr "The Literary Park is committed to maximum administrative transparency and compliance with current regulations on privacy and data protection."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:143
+msgid "Contattaci per Info"
+msgstr "Contact Us for Info"
 
 #: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:143
 msgid "Regolamenti Operativi"
@@ -6469,6 +6963,22 @@ msgstr ""
 "approaches and intensities, explored through the lens the daily life, "
 "landscapes and people that animated the Sicily of Verismo."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:142
+msgid ""
+"Le loro immagini, dimenticate per decenni e riscoperte solo nella seconda "
+"metà del Novecento, offrono uno sguardo complementare alla narrativa: un "
+"modo visivo di \"fotografare\" la realtà, perfettamente coerente con le "
+"istanze veriste di rappresentazione oggettiva del mondo. Letteratura e "
+"fotografia si intrecciano, si illuminano reciprocamente, creano "
+"un'esperienza conoscitiva stratificata."
+msgstr ""
+"Their images, forgotten for decades and rediscovered only in the second half "
+"of the twentieth century, offer a complementary look to the narrative: a "
+"visual way of \"photographing\" reality, perfectly consistent with the "
+"Verist requests for objective representation of the world. Literature and "
+"photography intertwine, illuminate each other, create a stratified cognitive "
+"experience."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:146
 msgid "L'archivio fotografico del Parco"
 msgstr "The Park's photo archive"
@@ -6505,9 +7015,47 @@ msgstr ""
 "present, between the eye that looked and the eye that looks, between "
 "narrated Sicily and lived Sicily."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:161
+msgid "Giovanni Verga fotografo: \"la segreta mania\""
+msgstr "Giovanni Verga photographer: \"the secret mania\""
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:162
 msgid "La scoperta di un archivio nascosto"
 msgstr "The discovery of a hidden archive"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:163
+msgid ""
+"Era il 1966 quando, nell'abitazione di campagna di Giovanni Verga a Vizzini, "
+"un letterato di nome Garra Agosta fece una scoperta straordinaria. "
+"Rovistando in un vecchio armadio chiuso da decenni, trovò più di 400 "
+"negativi fotografici: 327 su lastre di vetro e altri 121 su pellicola in "
+"celluloide, arrotolati \"a forma di sigaretta\". Erano passati oltre "
+"quarant'anni dalla morte dello scrittore, e le sue fotografie - scattate tra "
+"il 1878 e il 1911 - erano state completamente dimenticate."
+msgstr ""
+"It was 1966 when, in Giovanni Verga's country house in Vizzini, a man of "
+"letters named Garra Agosta made an extraordinary discovery. Rummaging "
+"through an old cupboard closed for decades, he found more than 400 "
+"photographic negatives: 327 on glass plates and another 121 on celluloid "
+"film, rolled up \"in the shape of a cigarette\". More than forty years had "
+"passed since the writer's death, and his photographs - taken between 1878 "
+"and 1911 - had been completely forgotten."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:164
+msgid ""
+"Questa scoperta rivelò un aspetto fino ad allora sconosciuto di uno dei "
+"padri del Verismo: la sua intensa passione per la fotografia, un'arte che "
+"aveva praticato parallelamente all'attività letteraria per oltre trent'anni. "
+"Verga stesso, in una lettera all'amico Capuana, aveva definito la fotografia "
+"\"la mia segreta mania\", un'espressione che rivela quanto profondo fosse il "
+"suo legame con questo mezzo espressivo."
+msgstr ""
+"This discovery revealed a hitherto unknown aspect of one of the fathers of "
+"Verismo: his intense passion for photography, an art he had practiced "
+"parallel to his literary activity for over thirty years. Verga himself, in a "
+"letter to his friend Capuana, had defined photography as \"my secret "
+"mania\", an expression that reveals how deep his bond with this expressive "
+"medium was."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:166
 msgid "Gli inizi: infanzia e influenze"
@@ -6562,6 +7110,36 @@ msgstr ""
 msgid "1. Il mondo familiare e degli affetti"
 msgstr "1. The world of family and affection"
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:175
+msgid ""
+"Ritratti di parenti e amici, spesso realizzati nel terrazzino della sua casa "
+"catanese in via Sant'Anna. In queste immagini compaiono figure intime: Luigi "
+"Capuana, Federico De Roberto (con cui formava <strong>\"La Triade di "
+"Catania\"</strong>), familiari. Sono pose spesso statiche e rigide, secondo "
+"la convenzione dell'epoca, ma rivelano l'affetto e la quotidianità di "
+"relazioni profonde."
+msgstr ""
+"Portraits of relatives and friends, often taken on the small terrace of his "
+"Catanese house in Via Sant'Anna. Intimate figures appear in these images: "
+"Luigi Capuana, Federico De Roberto (with whom he formed <strong>\"The Triad "
+"of Catania\"</strong>), family members. They are often static and rigid "
+"poses, according to the convention of the time, but they reveal the "
+"affection and daily life of deep relationships."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:176
+msgid ""
+"Un'immagine particolarmente significativa è l'autoscatto del 4 dicembre "
+"1887, in cui Verga si ritrae con le mani abbandonate, intrecciate: mani "
+"grandi, vigorose, \"da lavoratore\", che contrastano con la posa formale. "
+"Davanti all'obiettivo Verga si contrae, chiuso in una fissità espressiva che "
+"rivela il suo carattere riservato e la sua gelosa solitudine."
+msgstr ""
+"A particularly significant image is the self-portrait of December 4, 1887, "
+"in which Verga portrays himself with his hands abandoned, clasped: large, "
+"vigorous, \"worker's\" hands, which contrast with the formal pose. In front "
+"of the lens Verga contracts, closed in an expressive fixity that reveals his "
+"reserved character and his jealous solitude."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:180
 msgid "2. L'ambiente siciliano: il Verismo in immagine"
 msgstr "2. The Sicilian environment: Verismo in image"
@@ -6595,6 +7173,19 @@ msgstr ""
 "photographs of landscapes and costumes for his Sicilian works, showing how "
 "photography was for him a preparatory tool for writing."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:183
+msgid ""
+"Le vedute urbane di Catania - quella \"non aristocratica\", popolare - e le "
+"campagne circostanti mostrano una continuità evidente con il Verga "
+"scrittore. Sono immagini che documentano mestieri, posture, abiti, modi di "
+"vita: indizi preziosi dello stile di vita, dell'estetica e della storia del "
+"tempo."
+msgstr ""
+"The urban views of Catania - the \"non-aristocratic\", popular one - and the "
+"surrounding countryside show an evident continuity with Verga the writer. "
+"These are images that document trades, postures, clothes, ways of life: "
+"precious clues to the lifestyle, aesthetics and history of the time."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:187
 msgid "3. I paesaggi del Nord"
 msgstr "3. The landscapes of the North"
@@ -6617,9 +7208,57 @@ msgstr ""
 msgid "Lo stile fotografico verghiano"
 msgstr "Verga's photographic style"
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:192
+msgid ""
+"Il linguaggio fotografico di Verga è ridotto all'osso, senza contaminazioni "
+"esterne. Non cerca la perfezione tecnica né l'effetto artistico: alcuni "
+"soggetti non sono perfettamente a fuoco, alcune inquadrature sono "
+"leggermente sbilanciate. Ma questo \"difetto\" è in realtà coerenza: Verga "
+"fotografo è sostanza, non forma."
+msgstr ""
+"Verga's photographic language is reduced to the bone, without external "
+"contaminations. He does not seek technical perfection nor artistic effect: "
+"some subjects are not perfectly in focus, some shots are slightly "
+"unbalanced. But this \"defect\" is actually coherence: Verga photographer is "
+"substance, not form."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:193
+msgid ""
+"Come nella scrittura usa i colori con estrema parsimonia (in "
+"<strong>Cavalleria rusticana</strong> solo bianco, nero e raramente il "
+"rosso; ne <strong>I Malavoglia</strong> il termine \"azzurro\" compare una "
+"sola volta), così nelle fotografie cerca l'essenziale, il momento colto "
+"senza artifici. L'obiettivo è ridurre tutto all'essenzialità, cogliere "
+"l'attimo, fermare il momento e il movimento nella sua bellezza nuda e cruda."
+msgstr ""
+"As in writing he uses colors extremely sparingly (in <strong>Cavalleria "
+"rusticana</strong> only white, black and rarely red; in <strong>I "
+"Malavoglia</strong> the term \"blue\" appears only once), so in photographs "
+"he looks for the essential, the moment seized without artifices. The goal is "
+"to reduce everything to essentiality, to seize the moment, to stop the "
+"moment and movement in its naked and raw beauty."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:195
 msgid "Fotografia e impersonalità"
 msgstr "Photography and impersonality"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:196
+msgid ""
+"C'è un dibattito critico sul rapporto tra l'attività fotografica e quella "
+"letteraria di Verga. Per molto tempo si è pensato che le due attività "
+"procedessero parallelamente ma separate. In una lettera a Capuana, Verga "
+"afferma che la fotografia è \"rimasta\" la sua grande passione, suggerendo "
+"che avesse resistito alle crisi dell'attività letteraria."
+msgstr ""
+"There is a critical debate on the relationship between Verga's photographic "
+"and literary activity. For a long time it was thought that the two "
+"activities proceeded in parallel but separate. In a letter to Capuana, Verga "
+"states that photography has \"remained\" his great passion, suggesting that "
+"it had withstood the crises of literary activity."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:199
+msgid "\"La mia segreta mania\""
+msgstr "\"My secret mania\""
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:202
 msgid ""
@@ -6634,6 +7273,19 @@ msgstr ""
 "disappear behind the story, who shows without judging - has much to do with "
 "the photographic act: immortalizing reality objectively, without explicit "
 "moral purposes, without evident subjective interventions."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:203
+msgid ""
+"La fotografia offre a Verga un modo di vedere: uno sguardo che cerca il "
+"documento, la testimonianza diretta, la vita colta nel suo svolgersi "
+"quotidiano. Questo sguardo fotografico permea la sua scrittura, contribuendo "
+"a quella sensazione di \"realtà fotografata\" che è caratteristica del suo "
+"stile maturo."
+msgstr ""
+"Photography offers Verga a way of seeing: a gaze that seeks the document, "
+"the direct testimony, life caught in its daily unfolding. This photographic "
+"gaze permeates his writing, contributing to that sensation of \"photographed "
+"reality\" that is characteristic of his mature style."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:216
 msgid "Luigi Capuana fotografo: il Grande Atelier e la ricerca dell'invisibile"
@@ -6658,9 +7310,40 @@ msgstr ""
 "in photography is documented since 1862, during his Florentine stay in the "
 "city of the Alinari, pioneers of Italian photography."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:219
+msgid ""
+"La fotografia divenne per Capuana una \"passione sviscerata\" a cui dedicò "
+"tempo, denaro ed energie creative. Si diede alla rudimentale e ingegnosa "
+"fabbricazione di macchine fotografiche, sperimentò con i materiali, costruì "
+"attrezzature personalizzate. Si autodefiniva un <strong>\"maniaco della "
+"camera oscura\"</strong> e passava ore nel suo laboratorio a sviluppare "
+"lastre e perfezionare stampe, tanto da compromettere la vista a causa "
+"dell'uso degli acidi."
+msgstr ""
+"Photography became for Capuana a \"visceral passion\" to which he devoted "
+"time, money and creative energy. He dedicated himself to the rudimentary and "
+"ingenious manufacture of cameras, experimented with materials, built "
+"customized equipment. He called himself a <strong>\"darkroom maniac\"</"
+"strong> and spent hours in his laboratory developing plates and perfecting "
+"prints, so much so that he compromised his eyesight due to the use of acids."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:221
 msgid "Il Grande Atelier Fotografico di Mineo (1880)"
 msgstr "The Great Photographic Atelier of Mineo (1880)"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:222
+msgid ""
+"Nel 1880, tornato in Sicilia da Firenze, Capuana compie un passo decisivo: "
+"mette su a Mineo un laboratorio fotografico sistematicamente attrezzato, il "
+"<strong>\"Grande Atelier Fotografico in Mineo diretto dal Professor Luigi "
+"Capuana\"</strong>. Il nome, enfatico e solenne, rivela l'ambizione del "
+"progetto ma anche un carattere romanzesco e teatrale."
+msgstr ""
+"In 1880, back in Sicily from Florence, Capuana took a decisive step: he set "
+"up in Mineo a systematically equipped photographic laboratory, the "
+"<strong>\"Great Photographic Atelier in Mineo directed by Professor Luigi "
+"Capuana\"</strong>. The name, emphatic and solemn, reveals the ambition of "
+"the project but also a romantic and theatrical character."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:223
 msgid ""
@@ -6695,6 +7378,22 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:226
 msgid "La produzione fotografica: varietà e sperimentazione"
 msgstr "Photographic production: variety and experimentation"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:227
+msgid ""
+"L'archivio fotografico di Capuana, conservato nella Casa Museo Luigi Capuana "
+"e nella Biblioteca Comunale di Mineo, comprende 184 fotografie positive e 3 "
+"lastre, di cui circa la metà attribuibili con certezza allo scrittore. "
+"Tuttavia, molte fotografie autografe sono disperse in collezioni private. "
+"Capuana stesso, nel suo \"Catalogo delle negative fotografiche di L.C.\", "
+"riferiva di oltre 353 negativi e 100 positivi."
+msgstr ""
+"Capuana's photographic archive, preserved in the Casa Museo Luigi Capuana "
+"and in the Municipal Library of Mineo, includes 184 positive photographs and "
+"3 plates, of which about half are certainly attributable to the writer. "
+"However, many autograph photographs are dispersed in private collections. "
+"Capuana himself, in his \"Catalog of photographic negatives of L.C.\", "
+"reported over 353 negatives and 100 positives."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:230
 msgid "I ritratti: psicologia e naturalezza"
@@ -6851,6 +7550,34 @@ msgstr ""
 "spirits or ghosts. He photographed a possessed young woman, trying to "
 "document paranormal phenomena."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:256
+msgid ""
+"Questo interesse non era isolato: negli ultimi decenni dell'Ottocento "
+"esisteva un intero filone di ricerche fotografiche dedicate a catturare "
+"spiriti, apparizioni, fenomeni metapsichici. Capuana, da \"ciarlatano "
+"appassionato\" (come ironicamente si autodefiniva) ma anche da "
+"sperimentatore serio, partecipava a questa ricerca di confine tra scienza e "
+"mistero."
+msgstr ""
+"This interest was not isolated: in the last decades of the nineteenth "
+"century there was a whole strand of photographic research dedicated to "
+"capturing spirits, apparitions, metapsychic phenomena. Capuana, as a "
+"\"passionate charlatan\" (as he ironically defined himself) but also as a "
+"serious experimenter, participated in this research on the border between "
+"science and mystery."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:257
+msgid ""
+"La scoperta dei <strong>raggi X</strong> - su cui scriverà il racconto "
+"\"Raggi X\" nel 1898 - sembrò confermare le sue intuizioni: esisteva davvero "
+"un mondo invisibile che la scienza stava scoprendo! La fotografia poteva "
+"essere lo strumento per esplorare dimensioni nascoste della realtà."
+msgstr ""
+"The discovery of <strong>X-rays</strong> - on which he would write the story "
+"\"X-rays\" in 1898 - seemed to confirm his intuitions: there really was an "
+"invisible world that science was discovering! Photography could be the tool "
+"to explore hidden dimensions of reality."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:259
 msgid "Gli scherzi fotografici: l'autoritratto da morto"
 msgstr "Photographic pranks: the dead self-portrait"
@@ -6877,6 +7604,28 @@ msgstr ""
 "soon as the deception was unmasked. Gabriele D'Annunzio responded with "
 "ironic verses:"
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:264
+msgid ""
+"\"Esulta amico forte e non ti disperar / L'aspetto tuo di morte par vita "
+"secolar\""
+msgstr ""
+"\"Rejoice strong friend and do not despair / Your aspect of death seems "
+"secular life\""
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:267
+msgid ""
+"Qualche anno dopo Capuana realizzò un altro falso: un'autorappresentazione "
+"su un vero letto di morte con velluto nero e fregi dorati. Federico De "
+"Roberto pubblicò questa fotografia nel 1916, dopo la morte dell'amico, in un "
+"articolo commemorativo intitolato \"Luigi Capuana nei cimeli fotografici di "
+"De Roberto\"."
+msgstr ""
+"A few years later Capuana created another fake: a self-representation on a "
+"real deathbed with black velvet and golden friezes. Federico De Roberto "
+"published this photograph in 1916, after his friend's death, in a "
+"commemorative article entitled \"Luigi Capuana in De Roberto's photographic "
+"relics\"."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:268
 msgid ""
 "Questi scherzi rivelano il carattere complesso di Capuana: serietà "
@@ -6890,6 +7639,20 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:281
 msgid "Fotografia e letteratura: un dialogo complesso"
 msgstr "Photography and literature: a complex dialogue"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:282
+msgid ""
+"Le immagini fotografiche di Capuana costituivano anche elementi preparatori "
+"per i suoi romanzi. C'è un racconto, \"Gelosia\" (1883), in cui il "
+"sentimento nasce proprio dalla scoperta di un ritratto fotografico della "
+"rivale in amore: la fotografia come presenza inquietante, prova materiale di "
+"un tradimento, oggetto che innesca il dramma psicologico."
+msgstr ""
+"Capuana's photographic images also constituted preparatory elements for his "
+"novels. There is a story, \"Jealousy\" (1883), in which the feeling arises "
+"precisely from the discovery of a photographic portrait of the rival in "
+"love: photography as a disturbing presence, material proof of a betrayal, an "
+"object that triggers psychological drama."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:283
 msgid ""
@@ -6934,6 +7697,19 @@ msgstr ""
 "for a photo session. They take turns portraying each other, photograph each "
 "other, discuss technique and literature."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:290
+msgid ""
+"Si erano autodefiniti \"La Triade di Catania\" per i continui dibattiti "
+"durante i quali discutevano di fotografia, ma non solo. Federico De Roberto, "
+"il più giovane e forse il più dotato tecnicamente, si definiva "
+"\"apprendista\" di Capuana, che era lusingato dalle lodi ricevute."
+msgstr ""
+"They had defined themselves \"The Triad of Catania\" for the continuous "
+"debates during which they discussed photography, but not only. Federico De "
+"Roberto, the youngest and perhaps the most technically gifted, defined "
+"himself as an \"apprentice\" of Capuana, who was flattered by the praise "
+"received."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:291
 msgid ""
 "Le fotografie di quella giornata sono documenti preziosi: mostrano i tre "
@@ -6949,6 +7725,20 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:295
 msgid "Fotografia e Verismo: un'affinità elettiva"
 msgstr "Photography and Verismo: an elective affinity"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:296
+msgid ""
+"Il legame tra scrittura e fotografia non è casuale. Il Verismo italiano "
+"nasce proprio in quegli anni come movimento impegnato a \"fotografare\" la "
+"realtà sociale nella sua dimensione più cruda, diretta, non idealizzata. La "
+"metafora fotografica è centrale nella poetica verista: osservazione "
+"oggettiva, impersonalità, documento del reale."
+msgstr ""
+"The link between writing and photography is not accidental. Italian Verismo "
+"was born in those years as a movement committed to \"photographing\" social "
+"reality in its rawest, most direct, unidealized dimension. The photographic "
+"metaphor is central to Verist poetics: objective observation, impersonality, "
+"document of the real."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:297
 msgid ""
@@ -6977,6 +7767,21 @@ msgstr ""
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:302
 msgid "Un patrimonio riscoperto"
 msgstr "A rediscovered heritage"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:303
+msgid ""
+"Per decenni le fotografie di Verga e Capuana rimasero dimenticate. Quelle di "
+"Verga furono riscoperte solo nel 1966, quelle di Capuana conservate a Mineo "
+"rimasero note principalmente agli studiosi di settore. Mostre recenti - come "
+"\"La segreta mania. Giovanni Verga fotografo\" organizzata dalla Fondazione "
+"3M - hanno finalmente portato all'attenzione del grande pubblico questo "
+"patrimonio."
+msgstr ""
+"For decades Verga's and Capuana's photographs remained forgotten. Verga's "
+"were rediscovered only in 1966, Capuana's preserved in Mineo remained known "
+"mainly to scholars in the sector. Recent exhibitions - such as \"The secret "
+"mania. Giovanni Verga photographer\" organized by the 3M Foundation - have "
+"finally brought this heritage to the attention of the general public."
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:304
 msgid ""
@@ -7166,6 +7971,26 @@ msgstr ""
 "to reproduce the correct tones of the original plates, thus allowing the "
 "public to know Verga's photographic work."
 
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:340
+msgid ""
+"Dal 2004, con la prima mostra \"Giovanni Verga Scrittore Fotografo\" al "
+"Palazzo dell'Arengario di Milano, fino alle esposizioni più recenti come "
+"\"La segreta mania - Giovanni Verga fotografo\" (Vizzini 2022, Seriate "
+"2023), la Fondazione 3M ha contribuito in modo decisivo a far conoscere al "
+"grande pubblico questo aspetto dimenticato del padre del Verismo. Nel 2005, "
+"la Fondazione donò al Museo Civico \"Immaginario Verghiano\" di Vizzini le "
+"stampe di circa 100 fotografie di Verga, contribuendo alla valorizzazione "
+"del patrimonio culturale del territorio."
+msgstr ""
+"Since 2004, with the first exhibition \"Giovanni Verga Writer Photographer\" "
+"at the Palazzo dell'Arengario in Milan, up to the most recent exhibitions "
+"such as \"The secret mania - Giovanni Verga photographer\" (Vizzini 2022, "
+"Seriate 2023), Fondazione 3M has decisively contributed to making this "
+"forgotten aspect of the father of Verismo known to the general public. In "
+"2005, the Foundation donated prints of about 100 photographs by Verga to the "
+"Civic Museum \"Immaginario Verghiano\" in Vizzini, contributing to the "
+"enhancement of the cultural heritage of the territory."
+
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:345
 msgid "Un patrimonio condiviso"
 msgstr "A shared heritage"
@@ -7174,6 +7999,30 @@ msgstr "A shared heritage"
 msgid "Cuore narrativo del Verismo"
 msgstr "Narrative heart of Verismo"
 
+#: parco_verismo/templates/parco_verismo/vizzini.html:42
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">Vizzini è uno dei luoghi simbolo della "
+"letteratura italiana. Qui, nel 1840, nacque Giovanni Verga, e da queste "
+"colline, dai vicoli del centro storico, dalle campagne e dalle comunità "
+"rurali prese forma la visione narrativa che avrebbe trasformato per sempre "
+"il realismo europeo. Il paese conserva ancora oggi la struttura sociale e "
+"paesaggistica che ispirò al grande scrittore alcune delle sue opere più "
+"celebri, rendendolo un crocevia essenziale per comprendere l’identità del "
+"Verismo.</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">Vizzini is one of the symbolic places of "
+"Italian literature. Here, in 1840, Giovanni Verga was born, and from these "
+"hills, from the alleys of the historic center, from the countryside and "
+"rural communities took shape the narrative vision that would forever "
+"transform European realism. The town still preserves the social and "
+"landscape structure that inspired the great writer's most famous works, "
+"making it an essential crossroads for understanding the identity of Verismo."
+"</p>\n"
+"          "
+
 #: parco_verismo/templates/parco_verismo/vizzini.html:48
 msgid "Panorama di Vizzini"
 msgstr "Panorama of Vizzini"
@@ -7181,6 +8030,40 @@ msgstr "Panorama of Vizzini"
 #: parco_verismo/templates/parco_verismo/vizzini.html:60
 msgid "Vizzini nella vita di Giovanni Verga"
 msgstr "Vizzini in the life of Giovanni Verga"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:61
+msgid ""
+"\n"
+"          <p class=\"lead mb-3\">La famiglia Verga, di antica tradizione "
+"borghese-rurale, rappresentò per Giovanni un punto di riferimento costante. "
+"L’infanzia trascorsa tra Vizzini, le campagne e le residenze familiari fornì "
+"allo scrittore un patrimonio umano, linguistico e antropologico che sarebbe "
+"riemerso, trasfigurato, in quasi tutte le sue opere. Anche dopo il "
+"trasferimento a Firenze, Milano e Catania, Vizzini rimase il centro emotivo "
+"della sua immaginazione.</p>\n"
+"          "
+msgstr ""
+"\n"
+"          <p class=\"lead mb-3\">The Verga family, of ancient bourgeois-"
+"rural tradition, represented for Giovanni a constant point of reference. "
+"Childhood spent between Vizzini, the countryside and family residences "
+"provided the writer with a human, linguistic and anthropological heritage "
+"that would re-emerge, transfigured, in almost all his works. Even after "
+"moving to Florence, Milan and Catania, Vizzini remained the emotional center "
+"of his imagination.</p>\n"
+"          "
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:67
+msgid "Casa Natale di Giovanni Verga"
+msgstr "Birthplace of Giovanni Verga"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:80
+msgid ""
+"Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità "
+"vizzinese"
+msgstr ""
+"Discover the celebrations and events that mark the life of the Vizzini "
+"community"
 
 #: parco_verismo/templates/parco_verismo/vizzini.html:90
 msgid "Sagra della Ricotta"
@@ -7193,6 +8076,14 @@ msgid ""
 msgstr ""
 "Celebration of the local dairy tradition with tastings of <strong>fresh "
 "ricotta</strong>, cannoli and typical Sicilian sweets."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:110
+msgid ""
+"Le suggestive processioni pasquali con la tradizionale <strong>\"Giunta\"</"
+"strong>, momento culminante delle celebrazioni religiose."
+msgstr ""
+"The evocative Easter processions with the traditional <strong>\"Giunta\"</"
+"strong>, the culminating moment of religious celebrations."
 
 #: parco_verismo/templates/parco_verismo/vizzini.html:120
 msgid "Festa di San Gregorio"
@@ -7237,6 +8128,20 @@ msgid ""
 msgstr ""
 "The beating heart of Vizzini, where social life and traditions intertwine in "
 "a unique atmosphere."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:166
+msgid ""
+"Dominata dalla scalinata monumentale del <strong>Duomo di San Gregorio "
+"Magno</strong>, la piazza è il punto di riferimento della città. Qui si "
+"affacciano eleganti palazzi nobiliari e si svolgono le principali "
+"manifestazioni cittadine. La \"scalunata\" in pietra lavica, con i suoi "
+"gradini decorati, è uno dei simboli più fotografati di Vizzini."
+msgstr ""
+"Dominated by the monumental staircase of the <strong>Cathedral of San "
+"Gregorio Magno</strong>, the square is the city landmark. Here elegant noble "
+"palaces overlook and the main city events take place. The lava stone "
+"\"scalunata\", with its decorated steps, is one of the most photographed "
+"symbols of Vizzini."
 
 #: parco_verismo/templates/parco_verismo/vizzini.html:177
 msgid "Palazzo Verga"
@@ -7413,818 +8318,883 @@ msgstr "Film location"
 msgid "Eventi estivi"
 msgstr "Summer events"
 
-#: Added manually
-msgid "Il mare non ha paese nemmen lui, ed è di tutti quelli che lo stanno ad ascoltare"
-msgstr "The sea has no country, and belongs to all those who stand to listen to it"
-
-#: Added manually
-msgid "Bisogna saper fare come le ostriche: quando il mare è in tempesta, lasciar passare l'onda"
-msgstr "One must know how to act like oysters: when the sea is stormy, let the wave pass"
-
-#: Added manually
-msgid "Il vero è il fine dell'arte, l'unica sorgente della bellezza"
-msgstr "Truth is the goal of art, the only source of beauty"
-
-#: Added manually
-msgid "Dobbiamo studiare il vero, non inventarlo"
-msgstr "We must study the truth, not invent it"
-
-#: Added manually
-msgid "Scopri i luoghi del Verismo e gli itinerari tematici dedicati a Verga e Capuana."
-msgstr "Discover the places of Verismo and the thematic itineraries dedicated to Verga and Capuana."
-
-#: Added manually
-msgid "\"Patria letteraria\" di Giovanni Verga, dove i capolavori del Verismo dialogano con i luoghi."
-msgstr "\"Literary homeland\" of Giovanni Verga, where the masterpieces of Verismo dialogue with the places."
-
-#: Added manually
-msgid "Città di Luigi Capuana che ha ispirato Il Marchese di Roccaverdina, suo capolavoro, e molte altre novelle."
-msgstr "City of Luigi Capuana that inspired The Marquis of Roccaverdina, his masterpiece, and many other short stories."
-
-#: Added manually
-msgid "Un territorio ricco di storia e tradizioni legato alla grande letteratura verghiana."
-msgstr "A territory rich in history and traditions linked to the great Verga's literature."
-
-#: Added manually
-msgid "In una stanza buia, un uomo fora lentamente una porta con una virrinedda. Da quel piccolo spiraglio filtra un filo di luce e, con esso, il respiro della Sicilia. Emergono voci, figure, paesaggi: i personaggi di Giovanni Verga e Luigi Capuana prendono forma come ombre vive, fatte di memoria e vento. Tra nostalgia e distanza, tra appartenenza e fuga, il corto attraversa i luoghi del Verismo e i paesi di Vizzini, Mineo e Licodia Eubea, restituendo un'isola viva, inquieta, mai conclusa. Un racconto simbolico sulla letteratura come ferita luminosa, capace ancora oggi di aprire la notte e chiamare chi sa fermarsi ad ascoltare."
-msgstr "In a dark room, a man slowly drills through a door with a virrinedda. From that small opening filters a thread of light and, with it, the breath of Sicily. Voices, figures, landscapes emerge: the characters of Giovanni Verga and Luigi Capuana take shape like living shadows, made of memory and wind. Between nostalgia and distance, between belonging and escape, the short film traverses the places of Verismo and the towns of Vizzini, Mineo and Licodia Eubea, returning a living, restless, never-concluded island. A symbolic tale about literature as a luminous wound, still capable today of opening the night and calling those who know how to stop and listen."
-
-#: Added manually
-msgid "Il \"Parco Letterario® Giovanni Verga e Luigi Capuana - I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea\", promosso e gestito dal Centro Studi C.E.S.T.A., è un progetto culturale convenzionato con i Comuni di Vizzini, Mineo e Licodia Eubea ed è ufficialmente entrato a far parte del circuito dei Parchi Letterari Italiani®, con l'obiettivo di valorizzare in modo unitario i luoghi, la memoria e l'eredità letteraria del Verismo."
-msgstr "The \"Giovanni Verga and Luigi Capuana Literary Park® - The Places of Verismo in Vizzini, Mineo and Licodia Eubea\", promoted and managed by the C.E.S.T.A. Study Center, is a cultural project in partnership with the Municipalities of Vizzini, Mineo and Licodia Eubea and has officially become part of the Italian Literary Parks® network, with the aim of enhancing in a unified way the places, memory and literary heritage of Verismo."
-
-#: Added manually
-msgid "Con la partecipazione straordinaria di"
-msgstr "With the extraordinary participation of"
-
-#: Added manually
-msgid "Crediti"
-msgstr "Credits"
-
-#: Added manually
-msgid "Testo:"
-msgstr "Text:"
-
-#: Added manually
-msgid "Regia:"
-msgstr "Direction:"
-
-#: Added manually
-msgid "Riprese:"
-msgstr "Filming:"
-
-#: Added manually
-msgid "Montaggio:"
-msgstr "Editing:"
-
-#: Added manually
-msgid "Assistenti al montaggio:"
-msgstr "Assistant editors:"
-
-#: Added manually
-msgid "Si ringraziano le Amministrazioni comunali di Vizzini, Mineo e Licodia Eubea."
-msgstr "We thank the Municipal Administrations of Vizzini, Mineo and Licodia Eubea."
-
-#: Added manually
-msgid "Progetto finanziato dalla Regione Siciliana – Assessorato dei Beni Culturali e dell'Identità Siciliana."
-msgstr "Project funded by the Sicilian Region – Department of Cultural Heritage and Sicilian Identity."
-
-#: Added manually
-msgid "Per richieste di informazioni, proposte di collaborazione, eventi e comunicazioni istituzionali è possibile utilizzare il modulo di contatto sottostante. Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario."
-msgstr "For information requests, collaboration proposals, events and institutional communications, you can use the contact form below. The message will be directed to the official email of the Literary Park."
-
-#: Added manually
-msgid "Per prenotazioni di visite guidate e attività didattiche, rivolgersi ai"
-msgstr "For bookings of guided tours and educational activities, contact the"
-
-#: Added manually
-msgid "Partner territoriali"
-msgstr "Territorial partners"
-
-#: Added manually
-msgid "Studi e ricerche"
-msgstr "Studies and research"
-
-#: Added manually
-msgid "Esplora i testi e i protagonisti del mondo verista."
-msgstr "Explore the texts and protagonists of the Verist world."
-
-#: Added manually
-msgid "Catalogo e risorse sulle opere di Giovanni Verga, ispirate dai luoghi del Parco, saggi ed edizioni critiche."
-msgstr "Catalog and resources on the works of Giovanni Verga, inspired by the places of the Park, essays and critical editions."
-
-#: Added manually
-msgid "Catalogo e risorse sulle opere di Luigi Capuana, ispirate dai luoghi del Parco, saggi ed edizioni critiche."
-msgstr "Catalog and resources on the works of Luigi Capuana, inspired by the places of the Park, essays and critical editions."
-
-#: Added manually
-msgid "I campi contrassegnati con * sono obbligatori."
-msgstr "Fields marked with * are required."
-
-#: Added manually
-msgid "Informativa privacy"
-msgstr "Privacy policy"
-#: Added manually - Mission page subtitle
-msgid "Trasformare la letteratura in strumento contemporaneo di sviluppo, identità e partecipazione civica"
-msgstr "Transforming literature into a contemporary tool for development, identity and civic participation"
-
-#: Added manually - Regional recognition
-msgid "Promosso dal Comune di Vizzini, in qualità di ente capofila, in rete con i Comuni di Mineo e Licodia Eubea, il progetto è riconosciuto e finanziato dalla Regione Siciliana (D.D.G. n. 1159 del 6/03/2025) come iniziativa di interesse pubblico, sancendone il valore strategico per lo sviluppo del territorio. In particolare, il D.D.G. n. 1159 del 6/03/2025 individua il Comune di Vizzini quale ente beneficiario del contributo straordinario previsto dall'art. 7, comma 3, della Legge Regionale 30 gennaio 2025, n. 3, finalizzato alla realizzazione del Parco Letterario del Verismo nei Comuni di Vizzini, Mineo e Licodia Eubea."
-msgstr "Promoted by the Municipality of Vizzini, as lead entity, in network with the Municipalities of Mineo and Licodia Eubea, the project is recognized and funded by the Sicilian Region (D.D.G. no. 1159 of 6/03/2025) as an initiative of public interest, establishing its strategic value for the development of the territory. In particular, D.D.G. no. 1159 of 6/03/2025 identifies the Municipality of Vizzini as the beneficiary of the extraordinary contribution provided for by art. 7, paragraph 3, of Regional Law of 30 January 2025, no. 3, aimed at the creation of the Verismo Literary Park in the Municipalities of Vizzini, Mineo and Licodia Eubea."
-
-#: Added manually - Technical Committee institution
-msgid "Il Comitato Tecnico-Scientifico del Progetto \"Il Parco Letterario Giovanni Verga e Luigi Capuana\" è stato istituito con Determinazione Sindacale n. 50 del 20 ottobre 2025 del Comune di Vizzini, in attuazione di quanto previsto dal progetto esecutivo approvato con Delibera di Giunta n. 65 del 13 giugno 2025 e finanziato dalla Regione Siciliana – Assessorato dei Beni Culturali e dell'Identità Siciliana ai sensi della L.R. 3/2025, art. 7, comma 3."
-msgstr "The Technical-Scientific Committee of the Project \"The Giovanni Verga and Luigi Capuana Literary Park\" was established with Mayoral Determination no. 50 of 20 October 2025 of the Municipality of Vizzini, in implementation of the provisions of the executive project approved with Council Resolution no. 65 of 13 June 2025 and funded by the Sicilian Region - Department of Cultural Heritage and Sicilian Identity pursuant to Regional Law 3/2025, art. 7, paragraph 3."
-
-#: Added manually - Technical Committee function
-msgid "Il Comitato ha funzione consultiva e di orientamento strategico: supporta gli Enti locali e i partner culturali nella definizione scientifica delle attività, nella direzione culturale e nel coordinamento metodologico delle azioni previste dal Progetto \"Il Parco Letterario Giovanni Verga e Luigi Capuana\" tra Vizzini, Mineo e Licodia Eubea."
-msgstr "The Committee has an advisory and strategic guidance function: it supports local authorities and cultural partners in the scientific definition of activities, in the cultural direction and in the methodological coordination of the actions envisaged by the Project \"The Giovanni Verga and Luigi Capuana Literary Park\" between Vizzini, Mineo and Licodia Eubea."
-
-#: Added manually - Award documents
-msgid "Leggi il Bando Completo 2025"
-msgstr "Read the Complete Call 2025"
-
-#: Added manually - Award download button
-msgid "Scarica il Bando 2025"
-msgstr "Download the 2025 Call"
-
-#: Added manually - Partner page funding entity
-msgid "Ente finanziatore del Parco Letterario"
-msgstr "Financing entity of the Literary Park"
-
-#: Added manually - Partner page municipalities section
-msgid "Comune capofila e partner istituzionali"
-msgstr "Lead municipality and institutional partners"
-
-#: Added manually - Partner page lead role
-msgid "Ente Promotore e Comune Capofila"
-msgstr "Promoting Body and Lead Municipality"
-
-#: Added manually - Vizzini page missing translations
-
-msgid "Profilo Storico"
-msgstr "Historical Profile"
-
-msgid "Festa dei Sapori e dei Saperi"
-msgstr "Flavors and Knowledge Festival"
-
-msgid "24-25 Aprile"
-msgstr "24-25 April"
-
-msgid "Marzo/Aprile"
-msgstr "March/April"
-
-msgid "Festa di San Gregorio Magno"
-msgstr "Feast of San Gregorio"
-
-msgid "2-3 Settembre"
-msgstr "2-3 September"
-
-msgid "Festa di S. Giovanni Battista"
-msgstr "St. John the Baptist Festival"
-
-msgid "28-29 Agosto"
-msgstr "28-29 August"
-
-msgid "Manifestazioni Verghiane"
-msgstr "Verghian Manifestations"
-
-msgid "Luglio/Agosto/Settembre"
-msgstr "July/August/September"
-
-msgid "MONUMENTI E LUOGHI VERGHIANI"
-msgstr "MONUMENTS AND VERGHIAN PLACES"
-
-msgid "Patrimonio Religioso"
-msgstr "Religious Heritage"
-
-msgid "Chiese e Luoghi Religiosi"
-msgstr "Churches and Religious Places"
-
-msgid "Architettura Civile"
-msgstr "Civil Architecture"
-
-msgid "Palazzi Storici"
-msgstr "Historical Palaces"
-
-msgid "Luoghi Verghiani"
-msgstr "Verga's Places"
-
-msgid "Luoghi Culturali e Verghiani"
-msgstr "Cultural and Verghian Places"
-
+#: parco_verismo/templates/parco_verismo/vizzini.html:398
 msgid "Esplora Vizzini"
 msgstr "Explore Vizzini"
 
-msgid "Scopri i luoghi di interesse sulla mappa interattiva"
-msgstr "Discover points of interest on the interactive map"
+#: parco_verismo/templates/parco_verismo/index.html:34
+msgid "Il mare non ha paese nemmen lui, ed è di tutti quelli che lo stanno ad ascoltare"
+msgstr "The sea has no country either, and it belongs to all those who listen to it"
 
-msgid "Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità vizzinese"
-msgstr "Discover the celebrations and events that mark the life of the Vizzini community"
+#: parco_verismo/templates/parco_verismo/index.html:38
+msgid "Bisogna saper fare come le ostriche: quando il mare è in tempesta, lasciar passare l'onda"
+msgstr "You have to know how to do like oysters: when the sea is stormy, let the wave pass"
 
-msgid "Casa Natale di Giovanni Verga"
-msgstr "Birthplace of Giovanni Verga"
+#: parco_verismo/templates/parco_verismo/index.html:43
+msgid "Il vero è il fine dell'arte, l'unica sorgente della bellezza"
+msgstr "Truth is the purpose of art, the only source of beauty"
 
-msgid ""
-"Vizzini è uno dei luoghi simbolo della letteratura italiana e del Verismo. "
-"Pur essendo Giovanni Verga nato ufficialmente a Catania nel 1840, una "
-"consolidata tradizione locale e il forte legame familiare dello scrittore "
-"con questo territorio riconducono in modo inequivocabile alle campagne e al "
-"tessuto sociale vizzinese l'origine della sua ispirazione narrativa. Vicoli, "
-"colline e comunità rurali di Vizzini fornirono il modello umano e "
-"paesaggistico che Verga trasformò in letteratura, rendendo il paese un punto "
-"di riferimento essenziale per comprendere la genesi e l'identità della "
-"poetica verista."
-msgstr ""
-"Vizzini is one of the symbolic places of Italian literature and Verismo. "
-"Although Giovanni Verga was officially born in Catania in 1840, a "
-"consolidated local tradition and the writer's strong family bond with this "
-"territory unequivocably trace the origin of his narrative inspiration to the "
-"countryside and social fabric of Vizzini. The alleys, hills and rural "
-"communities of Vizzini provided the human and landscape model that Verga "
-"transformed into literature, making the town an essential reference point "
-"for understanding the genesis and identity of verist poetics."
+#: parco_verismo/templates/parco_verismo/index.html:48
+msgid "Dobbiamo studiare il vero, non inventarlo"
+msgstr "We must study the truth, not invent it"
 
-msgid ""
-"La famiglia Verga, di antica tradizione nobiliare, rappresentò per lo "
-"scrittore un punto di riferimento costante. L'infanzia trascorsa tra "
-"Vizzini, Licodia e i territori limitrofi, le campagne e le residenze "
-"familiari fornì allo scrittore un patrimonio umano, linguistico e "
-"antropologico che sarebbe riemerso, trasfigurato, nella sua produzione "
-"maggiore. Anche dopo il trasferimento a Firenze, Milano e Catania, Vizzini "
-"rimase il centro emotivo della sua immaginazione."
-msgstr ""
-"The Verga family, of ancient noble tradition, represented a constant point "
-"of reference for the writer. His childhood spent between Vizzini, Licodia "
-"and the surrounding territories, the countryside and family residences "
-"provided the writer with a human, linguistic and anthropological heritage "
-"that would re-emerge, transfigured, in his major works. Even after moving "
-"to Florence, Milan and Catania, Vizzini remained the emotional center of "
-"his imagination."
+#: parco_verismo/templates/parco_verismo/index.html:90
+msgid "Scopri i luoghi del Verismo e gli itinerari tematici dedicati a Verga e Capuana."
+msgstr "Discover the places of Verismo and the thematic itineraries dedicated to Verga and Capuana."
 
-msgid ""
-"Celebrazione della tradizione casearia locale con degustazioni di "
-"<strong>ricotta fresca</strong>, cannoli, cassatelle e altri piatti tipici "
-"siciliani."
-msgstr ""
-"Celebration of the local dairy tradition with tastings of <strong>fresh "
-"ricotta</strong>, cannoli, cassatelle and other typical Sicilian dishes."
+#: parco_verismo/templates/parco_verismo/index.html:101
+msgid "\"Patria letteraria\" di Giovanni Verga, dove i capolavori del Verismo dialogano con i luoghi."
+msgstr "\"Literary homeland\" of Giovanni Verga, where the masterpieces of Verismo dialogue with the places."
 
-msgid ""
-"Riti della Settimana Santa: Processione del <strong>Cristo alla "
-"Colonna</strong> (Mercoledì Santo), Processione dell'<strong>Addolorata"
-"</strong> (Venerdì Santo) e Domenica di Pasqua con la tradizionale "
-"<strong>\"Cugnunta\"</strong>."
-msgstr ""
-"Holy Week rites: Procession of <strong>Christ at the Column</strong> (Holy "
-"Wednesday), Procession of the <strong>Sorrowful</strong> (Good Friday) and "
-"Easter Sunday with the traditional <strong>\"Cugnunta\"</strong>."
+#: parco_verismo/templates/parco_verismo/index.html:112
+msgid "Città di Luigi Capuana che ha ispirato Il Marchese di Roccaverdina, suo capolavoro, e molte altre novelle."
+msgstr "City of Luigi Capuana which inspired The Marquis of Roccaverdina, his masterpiece, and many other short stories."
 
-msgid ""
-"Solenne celebrazione eucaristica e <strong>processione</strong> della "
-"statua del Santo patrono lungo le principali vie cittadine."
-msgstr ""
-"Solemn Eucharistic celebration and <strong>procession</strong> of the "
-"patron saint's statue along the main city streets."
+#: parco_verismo/templates/parco_verismo/index.html:123
+msgid "Un territorio ricco di storia e tradizioni legato alla grande letteratura verghiana."
+msgstr "A territory rich in history and traditions linked to the great Verga literature."
 
-msgid ""
-"Festa del Martire S. Giovanni Battista. Processione della <strong>statua "
-"cinquecentesca</strong> e finale con fuochi pirotecnici."
-msgstr ""
-"Feast of the Martyr St. John the Baptist. Procession of the <strong>16th-"
-"century statue</strong> and finale with fireworks."
+#: parco_verismo/templates/parco_verismo/index.html:138
+msgid "In una stanza buia, un uomo fora lentamente una porta con una virrinedda. Da quel piccolo spiraglio filtra un filo di luce e, con esso, il respiro della Sicilia. Emergono voci, figure, paesaggi: i personaggi di Giovanni Verga e Luigi Capuana prendono forma come ombre vive, fatte di memoria e vento. Tra nostalgia e distanza, tra appartenenza e fuga, il corto attraversa i luoghi del Verismo e i paesi di Vizzini, Mineo e Licodia Eubea, restituendo un'isola viva, inquieta, mai conclusa. Un racconto simbolico sulla letteratura come ferita luminosa, capace ancora oggi di aprire la notte e chiamare chi sa fermarsi ad ascoltare."
+msgstr "In a dark room, a man slowly pierces a door with a virrinedda. From that small crack, a sliver of light filters through, and with it, the breath of Sicily. Voices, figures, and landscapes emerge: the characters of Giovanni Verga and Luigi Capuana take shape like living shadows, made of memory and wind. Between nostalgia and distance, belonging and escape, the short film traverses the places of Verismo and the villages of Vizzini, Mineo, and Licodia Eubea, portraying a living, restless, never-ending island. A symbolic tale of literature as a luminous wound, still capable of opening the night and calling to those who stop and listen."
 
-msgid ""
-"Ciclo di <strong>rappresentazioni teatrali</strong> tratte dalle novelle "
-"del famoso scrittore vizzinese, messe in scena negli stessi quartieri in "
-"cui l'autore immaginò svolgersi i fatti."
-msgstr ""
-"Cycle of <strong>theatrical performances</strong> drawn from the novels of "
-"the famous Vizzini writer, staged in the same neighborhoods where the "
-"author imagined the events taking place."
+#: parco_verismo/templates/parco_verismo/index.html:150
+msgid "Il \"Parco Letterario® Giovanni Verga e Luigi Capuana - I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea\", promosso e gestito dal Centro Studi C.E.S.T.A., è un progetto culturale convenzionato con i Comuni di Vizzini, Mineo e Licodia Eubea ed è ufficialmente entrato a far parte del circuito dei Parchi Letterari Italiani®, con l'obiettivo di valorizzare in modo unitario i luoghi, la memoria e l'eredità letteraria del Verismo."
+msgstr "The \"Giovanni Verga and Luigi Capuana Literary Park® - The Places of Verismo in Vizzini, Mineo and Licodia Eubea\", promoted and managed by the C.E.S.T.A. Study Center, is a cultural project in partnership with the Municipalities of Vizzini, Mineo and Licodia Eubea and has officially become part of the Italian Literary Parks® network, with the aim of promoting in a unified way the places, memory and literary heritage of Verismo."
 
-msgid ""
-"\"Hanno ammazzato compare Turiddu, hanno ammazzato compare Turiddu!\". "
-"Tutti sanno che questo è il tragico grido con il quale si chiude "
-"<strong>Cavalleria rusticana</strong>, l'opera teatrale di Giovanni Verga, "
-"resa famosa in tutto il mondo dalla successiva trasposizione lirica con la "
-"coinvolgente musica di Pietro Mascagni. In pochi sanno, però, che il luogo "
-"in cui il grande scrittore verista ambientò questa vicenda è proprio "
-"Vizzini, il suo paese natale, dove viveva la sua famiglia e dove lui "
-"tornava spesso fin negli ultimi anni della sua vita."
-msgstr ""
-"\"They have killed compare Turiddu, they have killed compare Turiddu!\". "
-"Everyone knows that this is the tragic cry with which <strong>Cavalleria "
-"rusticana</strong> ends, the theatrical work by Giovanni Verga, made famous "
-"all over the world by the subsequent lyrical adaptation with the engaging "
-"music of Pietro Mascagni. Few know, however, that the place where the great "
-"verist writer set this story is precisely Vizzini, his birthplace, where "
-"his family lived and where he often returned until the last years of his "
-"life."
+#: parco_verismo/templates/parco_verismo/index.html:156
+msgid "Con la partecipazione straordinaria di"
+msgstr "With the extraordinary participation of"
 
-msgid ""
-"Nacque ufficialmente a Catania il <strong>2 settembre 1840</strong> o, "
-"secondo fondate argomentazioni a Tebidi nella casa di campagna dello zio "
-"Salvatore, in territorio di Vizzini, dove la famiglia Verga soggiornava "
-"spesso per sovrintendere ai lavori agricoli e dove più volte, in occasioni "
-"di epidemie, si era rifugiata lasciando Catania."
-msgstr ""
-"He was officially born in Catania on <strong>September 2, 1840</strong> or, "
-"according to well-founded arguments, in Tebidi in his uncle Salvatore's "
-"country house, in the territory of Vizzini, where the Verga family often "
-"stayed to oversee agricultural work and where, on several occasions during "
-"epidemics, they had taken refuge, leaving Catania."
+#: parco_verismo/templates/parco_verismo/index.html:158
+msgid "Crediti"
+msgstr "Credits"
 
-msgid ""
-"Verga compì i primi studi presso <strong>Antonio Abate</strong> che gli "
-"trasmise la sua passione per i romanzi storici. Dopo aver abbandonato gli "
-"studi di legge, si dedicò alla scrittura e nel 1865 si trasferì a Firenze e "
-"poi a Milano. Qui frequentò gli ambienti della <strong>Scapigliatura"
-"</strong> e ampliò i suoi riferimenti letterari guardando ai naturalisti "
-"francesi. Dopo aver abbandonato una narrativa fatta di storie sentimentali "
-"borghesi e spinto anche dal dibattito che si aprì sulla questione "
-"meridionale, nacque il suo progetto di un ciclo di romanzi rivolto al \"mondo "
-"dei vinti\", con capolavori come <strong>I Malavoglia</strong> e <strong>"
-"Mastro-don Gesualdo</strong>, che contribuiranno al rinnovamento del "
-"romanzo moderno."
-msgstr ""
-"Verga completed his first studies under <strong>Antonio Abate</strong> who "
-"transmitted his passion for historical novels. After abandoning his law "
-"studies, he devoted himself to writing and in 1865 moved to Florence and "
-"then to Milan. Here he frequented the environments of the <strong>"
-"Scapigliatura</strong> and expanded his literary references by looking to "
-"French naturalists. After abandoning a narrative made of bourgeois "
-"sentimental stories and also driven by the debate that opened on the "
-"Southern question, his project of a cycle of novels aimed at the \"world of "
-"the defeated\" was born, with masterpieces such as <strong>I Malavoglia"
-"</strong> and <strong>Mastro-don Gesualdo</strong>, which will contribute "
-"to the renewal of the modern novel."
+#: parco_verismo/templates/parco_verismo/index.html:160
+msgid "Testo:"
+msgstr "Text:"
 
-msgid ""
-"Oltre a Mastro-don Gesualdo, Verga ambienterà a Vizzini molti dei suoi "
-"capolavori tra i quali <strong>Jeli il pastore</strong> e <strong>Cavalleria "
-"rusticana</strong>. Negli ultimi anni della sua vita lo interessò la "
-"fotografia; oggi le sue foto, assieme ad altri cimeli, sono esposte nel "
-"<strong>Museo dell'\"Immaginario Verghiano\"</strong> di Vizzini, ospitato "
-"nel Palazzo Trao-Ventimiglia. Lo scrittore morì a Catania nel <strong>1922"
-"</strong>."
-msgstr ""
-"In addition to Mastro-don Gesualdo, Verga will set many of his masterpieces "
-"in Vizzini including <strong>Jeli the shepherd</strong> and <strong>"
-"Cavalleria rusticana</strong>. In the last years of his life he became "
-"interested in photography; today his photos, together with other "
-"memorabilia, are exhibited in the <strong>Museum of \"Verghian Imagination"
-"\"</strong> in Vizzini, housed in Palazzo Trao-Ventimiglia. The writer died "
-"in Catania in <strong>1922</strong>."
+#: parco_verismo/templates/parco_verismo/index.html:161
+msgid "Regia:"
+msgstr "Direction:"
 
-msgid ""
-"Qui Verga ambientò molte sue opere, ma soprattutto la più importante per la "
-"storia della letteratura verista: <strong>Mastro-don Gesualdo</strong>, il "
-"grande capolavoro che contribuì in modo decisivo alla nascita del romanzo "
-"moderno."
-msgstr ""
-"Here Verga set many of his works, but above all the most important for the "
-"history of verist literature: <strong>Mastro-don Gesualdo</strong>, the "
-"great masterpiece that contributed decisively to the birth of the modern "
-"novel."
+#: parco_verismo/templates/parco_verismo/index.html:162
+msgid "Riprese:"
+msgstr "Filming:"
 
-msgid ""
-"Vizzini è la porta nord del Val di Noto, di quell'area del sud est della "
-"Sicilia che detiene ben 10 siti dichiarati <strong>Patrimonio dell'Umanità "
-"dall'UNESCO</strong>. Essa è ancora oggi un autentico teatro verista a "
-"cielo aperto. Per chi la visita si rivela un vero luogo dell'anima e, passo "
-"dopo passo, si comprende come questa piccola parte del territorio siciliano "
-"non sia sempre stata terra dei vinti, quasi fosse un destino ineluttabile. "
-"Il suo tessuto urbano e culturale è infatti punteggiato da segni che "
-"testimoniano una storia grande e antica, che affonda le radici nell'<strong>"
-"Età del Bronzo</strong>."
-msgstr ""
-"Vizzini is the northern gateway to the Val di Noto, that area of "
-"southeastern Sicily that holds 10 sites declared <strong>UNESCO World "
-"Heritage Sites</strong>. It is still today an authentic open-air verist "
-"theater. For those who visit it, it reveals itself as a true place of the "
-"soul and, step by step, one understands how this small part of Sicilian "
-"territory has not always been the land of the defeated, as if it were an "
-"inescapable destiny. Its urban and cultural fabric is indeed dotted with "
-"signs that testify to a great and ancient history, which has its roots in "
-"the <strong>Bronze Age</strong>."
+#: parco_verismo/templates/parco_verismo/index.html:163
+msgid "Montaggio:"
+msgstr "Editing:"
 
-msgid ""
-"A questo periodo risalgono importanti reperti rinvenuti dall'archeologo "
-"vizzinese <strong>Ippolito Cafici</strong>, oggi custoditi nel Museo "
-"Archeologico Regionale di Siracusa. Vizzini è, probabilmente, l'antica "
-"<strong>Bidis</strong>, citata da Tucidide, Cicerone e Plinio il Vecchio."
-msgstr ""
-"Important findings by the Vizzini archaeologist <strong>Ippolito Cafici</"
-"strong> date back to this period, now preserved in the Regional "
-"Archaeological Museum of Syracuse. Vizzini is probably the ancient <strong>"
-"Bidis</strong>, mentioned by Thucydides, Cicero and Pliny the Elder."
+#: parco_verismo/templates/parco_verismo/index.html:164
+msgid "Assistenti al montaggio:"
+msgstr "Editing assistants:"
 
-msgid ""
-"La città, dopo i Greci e i Romani, passò sotto il controllo dei Bizantini e "
-"successivamente degli Arabi, ma conobbe un momento di particolare rilievo "
-"storico nel <strong>1252</strong>, quando Corrado IV di Svevia le concesse "
-"il privilegio di perpetua demanialità, impegnandosi a sottrarla "
-"definitivamente al baronaggio feudale."
-msgstr ""
-"The city, after the Greeks and Romans, came under the control of the "
-"Byzantines and subsequently the Arabs, but experienced a moment of "
-"particular historical importance in <strong>1252</strong>, when Conrad IV "
-"of Swabia granted it the privilege of perpetual state property, committing "
-"to permanently remove it from feudal baronage."
+#: parco_verismo/templates/parco_verismo/index.html:168
+msgid "Si ringraziano le Amministrazioni comunali di Vizzini, Mineo e Licodia Eubea."
+msgstr "We thank the Municipal Administrations of Vizzini, Mineo and Licodia Eubea."
 
-msgid ""
-"Anche quando, per ben sei volte, fu assegnata a un feudatario, Vizzini "
-"riuscì sempre a riscattare la propria libertà. Fu annoverata tra le cinque "
-"<strong>città reginali</strong> dell'Isola, occupando il ventottesimo posto "
-"nel Parlamento del Regno di Sicilia. Insignita nel 1538 del titolo di "
-"<strong>Obbedientissima</strong>, fu equiparata alle città di Palermo, "
-"Catania e Messina per privilegi, onori e immunità."
-msgstr ""
-"Even when, six times, it was assigned to a feudal lord, Vizzini always "
-"managed to redeem its freedom. It was counted among the five <strong>regal "
-"cities</strong> of the Island, occupying the twenty-eighth place in the "
-"Parliament of the Kingdom of Sicily. Awarded the title of <strong>Most "
-"Obedient</strong> in 1538, it was equated to the cities of Palermo, "
-"Catania and Messina for privileges, honors and immunities."
+#: parco_verismo/templates/parco_verismo/index.html:171
+msgid "Progetto finanziato dalla Regione Siciliana – Assessorato dei Beni Culturali e dell'Identità Siciliana."
+msgstr "Project funded by the Sicilian Region – Department of Cultural Heritage and Sicilian Identity."
 
-msgid ""
-"Fino alla prima metà del Seicento la città conobbe una continua espansione, "
-"divenendo un centro sempre più influente. Nel <strong>1693</strong> subì le "
-"devastanti conseguenze del terremoto che colpì la Sicilia orientale, ma, "
-"sebbene gravemente danneggiata, seppe risollevarsi: la ricostruzione "
-"determinò una rinascita non solo sociale, ma anche artistica e culturale."
-msgstr ""
-"Until the first half of the seventeenth century, the city experienced "
-"continuous expansion, becoming an increasingly influential center. In "
-"<strong>1693</strong> it suffered the devastating consequences of the "
-"earthquake that struck eastern Sicily, but, although severely damaged, it "
-"knew how to recover: the reconstruction determined a rebirth not only "
-"social, but also artistic and cultural."
+#: parco_verismo/templates/parco_verismo/index.html:331
+#: parco_verismo/templates/parco_verismo/navbar.html:131
+msgid "Opere & Letteratura"
+msgstr "Works & Literature"
 
-msgid ""
-"Ne sono testimonianza le numerose opere d'arte e i rilevanti monumenti "
-"religiosi e civili, alcuni dei quali di grande pregio, come la <strong>"
-"Chiesa Madre dedicata a San Gregorio Magno</strong>, che custodisce due "
-"importanti opere di Filippo Paladini, la <strong>Basilica di San Vito</"
-"strong>, la <strong>Chiesa di San Giovanni Battista</strong> – la più "
-"grande della Diocesi di Caltagirone –, la <strong>Chiesa di Santa Maria di "
-"Gesù</strong>, che conserva una straordinaria scultura di Antonello Gagini, "
-"il maggiore scultore siciliano del Cinquecento, e il <strong>palazzo Càfici"
-"</strong>, magnifico esempio di architettura civile tardo barocca."
-msgstr ""
-"Testimony to this are the numerous works of art and the important religious "
-"and civil monuments, some of which are of great value, such as the <strong>"
-"Mother Church dedicated to San Gregorio Magno</strong>, which houses two "
-"important works by Filippo Paladini, the <strong>Basilica of San Vito</"
-"strong>, the <strong>Church of San Giovanni Battista</strong> – the largest "
-"in the Diocese of Caltagirone –, the <strong>Church of Santa Maria di Gesù</"
-"strong>, which preserves an extraordinary sculpture by Antonello Gagini, the "
-"greatest Sicilian sculptor of the sixteenth century, and the <strong>Cafici "
-""palace</strong>, a magnificent example of late Baroque civil architecture."
+#: parco_verismo/templates/parco_verismo/index.html:333
+msgid "Esplora i testi e i protagonisti del mondo verista."
+msgstr "Explore the texts and protagonists of the Verist world."
 
+#: parco_verismo/templates/parco_verismo/index.html:346
+msgid "Catalogo e risorse sulle opere di Giovanni Verga, ispirate dai luoghi del Parco, saggi ed edizioni critiche."
+msgstr "Catalogue and resources on Giovanni Verga's works, inspired by the Park's places, essays and critical editions."
+
+#: parco_verismo/templates/parco_verismo/index.html:347
+msgid "Scopri le opere"
+msgstr "Discover the works"
+
+#: parco_verismo/templates/parco_verismo/index.html:357
+msgid "Catalogo e risorse sulle opere di Luigi Capuana, ispirate dai luoghi del Parco, saggi ed edizioni critiche."
+msgstr "Catalogue and resources on Luigi Capuana's works, inspired by the Park's places, essays and critical editions."
+
+#: parco_verismo/templates/parco_verismo/index.html:367
+#: parco_verismo/templates/parco_verismo/navbar.html:150
+msgid "Personaggi & Lessico del Verismo"
+msgstr "Characters & Lexicon of Verismo"
+
+#: parco_verismo/templates/parco_verismo/index.html:368
+msgid "Schede sui personaggi principali, lessico caratteristico e termini letterari del Verismo."
+msgstr "Profiles of the main characters, characteristic lexicon and literary terms of Verismo."
+
+#: parco_verismo/templates/parco_verismo/index.html:369
+msgid "Approfondisci"
+msgstr "Learn more"
+
+#: parco_verismo/templates/parco_verismo/index.html:386
+msgid "Per richieste di informazioni, proposte di collaborazione, eventi e comunicazioni istituzionali è possibile utilizzare il modulo di contatto sottostante. Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario."
+msgstr "For information requests, collaboration proposals, events and institutional communications, please use the contact form below. The message will be forwarded to the official email of the Literary Park."
+
+#: parco_verismo/templates/parco_verismo/index.html:389
+msgid "Per prenotazioni di visite guidate e attività didattiche, rivolgersi ai"
+msgstr "For bookings of guided tours and educational activities, contact the"
+
+#: parco_verismo/templates/parco_verismo/index.html:389
+msgid "Partner territoriali"
+msgstr "Local partners"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:57
+msgid "Partner"
+msgstr "Partner"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:72
+msgid "Partner Istituzionali"
+msgstr "Institutional Partners"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:75
+msgid "Ente finanziatore del Parco Letterario"
+msgstr "Funding body of the Literary Park"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:87
+msgid "Regione Siciliana"
+msgstr "Sicilian Region"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:96
+msgid "Comune capofila e partner istituzionali"
+msgstr "Lead municipality and institutional partners"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:108
+msgid "Comune di Vizzini"
+msgstr "Municipality of Vizzini"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:109
+msgid "Ente Promotore e Comune Capofila"
+msgstr "Promoting Body and Lead Municipality"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:110
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:123
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:137
+msgid "Sito Web"
+msgstr "Website"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:121
+msgid "Comune di Mineo"
+msgstr "Municipality of Mineo"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:122
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:136
+msgid "Ente Promotore"
+msgstr "Promoting Body"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:135
+msgid "Comune di Licodia Eubea"
+msgstr "Municipality of Licodia Eubea"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:148
+msgid "Associazioni & Rete Culturale"
+msgstr "Associations & Cultural Network"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:151
+msgid "Le realtà associative che animano il territorio e collaborano con il Parco."
+msgstr "The associations that enliven the territory and collaborate with the Park."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:165
+msgid "Fondazione ITS Steve Jobs"
+msgstr "ITS Steve Jobs Foundation"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:166
+msgid "Caltagirone"
+msgstr "Caltagirone"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:167
+msgid "Istituto tecnico superiore per la formazione nel campo dello sviluppo software e della meccatronica"
+msgstr "Higher technical institute for training in software development and mechatronics"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:180
+msgid "Parnaso Siculo"
+msgstr "Parnaso Siculo"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:181
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:237
 msgid "Mineo"
 msgstr "Mineo"
 
-msgid "La città natale di Luigi Capuana"
-msgstr "The birthplace of Luigi Capuana"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:182
+msgid "Associazione Culturale e di Promozione Sociale."
+msgstr "Cultural and Social Promotion Association."
 
-msgid ""
-"Mineo è un luogo cardine nella storia della letteratura italiana. Qui, il "
-"28 maggio 1839, nacque Luigi Capuana, scrittore, critico, teorico del "
-"Verismo e tra le figure più originali della cultura europea "
-"dell'Ottocento. Il borgo conserva ancora oggi l'atmosfera, i paesaggi e "
-"l'architettura sociale che plasmarono l'immaginario dello scrittore, "
-"rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, le sue "
-"piazze, le sue case, i suoi quartieri popolari ricorrono in molte opere "
-"capuaniane, spesso trasformate in teatro poetico o fantastico."
-msgstr ""
-"Mineo is a pivotal place in the history of Italian literature. Here, on May "
-"28, 1839, Luigi Capuana was born, writer, critic, theorist of Verismo and "
-"among the most original figures of nineteenth-century European culture. The "
-"village still preserves the atmosphere, landscapes and social architecture "
-"that shaped the writer's imagination, making it a living and recognizable "
-"narrative space. Its streets, squares, houses, and popular neighborhoods "
-"recur in many Capuanian works, often transformed into poetic or fantastic "
-"theater."
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:195
+msgid "UNITRE - Università della Terza Età"
+msgstr "UNITRE - University of the Third Age"
 
-msgid "Panorama di Mineo"
-msgstr "Panorama of Mineo"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:196
+msgid "Vizzini"
+msgstr "Vizzini"
 
-msgid "Mineo nella vita di Luigi Capuana"
-msgstr "Mineo in Luigi Capuana's life"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:197
+msgid "Promozione culturale e formazione permanente."
+msgstr "Cultural promotion and lifelong learning."
 
-msgid ""
-"La formazione di Capuana avvenne tra le strade e le campagne di Mineo, in "
-"una realtà ricca di contrasti: borghesia agraria, mondo contadino, "
-"tradizioni popolari, spiritualità, paesaggi aspri e luminosi. Questi "
-"elementi costituivano la matrice del suo sguardo critico e antropologico "
-"sul reale, ma anche del suo interesse per il mistero, l'occulto, il "
-"fiabesco. Mineo non fu solo un paese d'origine, ma una lente attraverso cui "
-"Capuana osservò e interpretò il mondo."
-msgstr ""
-"Capuana's formation took place between the streets and countryside of Mineo, "
-"in a reality rich in contrasts: agrarian bourgeoisie, peasant world, popular "
-"traditions, spirituality, harsh and luminous landscapes. These elements "
-"constituted the matrix of his critical and anthropological gaze on reality, "
-"but also of his interest in mystery, the occult, the fairy tale. Mineo was "
-"not just a country of origin, but a lens through which Capuana observed and "
-"interpreted the world."
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:210
+msgid "Circolo Culturale \"Giovanni Verga\""
+msgstr "Cultural Circle \"Giovanni Verga\""
 
-msgid "Casa Natale di Luigi Capuana"
-msgstr "Luigi Capuana's Birthplace"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:223
+msgid "Associazione Teatro Skenè APS"
+msgstr "Teatro Skenè APS Association"
 
-msgid "Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità mineota"
-msgstr "Discover the celebrations and events that mark the life of the Mineo community"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:236
+msgid "Pro Loco APS"
+msgstr "Pro Loco APS"
 
-msgid ""
-"Riti della Settimana Santa: Processione del <strong>Cristo alla Colonna</"
-"strong> (Mercoledì Santo), <strong>\"Scisa 'a Cruci\"</strong> (Venerdì "
-"Santo) e <strong>\"L'incrinata\"</strong> (Domenica di Pasqua)."
-msgstr ""
-"Holy Week rites: Procession of <strong>Christ at the Column</strong> (Holy "
-"Wednesday), <strong>\"Scisa 'a Cruci\"</strong> (Good Friday) and <strong>"
-"\"L'incrinata\"</strong> (Easter Sunday)."
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:251
+msgid "Associazione culturale di volontariato"
+msgstr "Volunteer cultural association"
 
-msgid "Festa della Regina degli Angeli"
-msgstr "Feast of the Queen of Angels"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:266
+msgid "Associazione Licodiese per i Beni Archeologici Culturali Ambientali e Sacri."
+msgstr "Licodia Association for Archaeological, Cultural, Environmental and Sacred Heritage."
 
-msgid "Maggio"
-msgstr "May"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:281
+msgid "Tutela e valorizzazione del patrimonio archeologico e culturale."
+msgstr "Protection and enhancement of archaeological and cultural heritage."
 
-msgid ""
-"Celebrazione mariana dedicata alla <strong>Regina degli Angeli</strong>, "
-"con processioni e momenti di preghiera."
-msgstr ""
-"Marian celebration dedicated to the <strong>Queen of Angels</strong>, with "
-"processions and moments of prayer."
+#: parco_verismo/templates/parco_verismo/vizzini.html:26
+msgid "Vizzini"
+msgstr "Vizzini"
 
-msgid "Festa patronale di Sant'Agrippina"
-msgstr "Patronal Feast of St. Agrippa"
+#: parco_verismo/templates/parco_verismo/vizzini.html:28
+msgid "Cuore narrativo del Verismo"
+msgstr "Narrative heart of Verismo"
 
-msgid "Le ultime due settimane di agosto"
-msgstr "The last two weeks of August"
+#: parco_verismo/templates/parco_verismo/vizzini.html:42
+msgid "Vizzini è uno dei luoghi simbolo della letteratura italiana e del Verismo. Pur essendo Giovanni Verga nato ufficialmente a Catania nel 1840, una consolidata tradizione locale e il forte legame familiare dello scrittore con questo territorio riconducono in modo inequivocabile alle campagne e al tessuto sociale vizzinese l'origine della sua ispirazione narrativa. Vicoli, colline e comunità rurali di Vizzini fornirono il modello umano e paesaggistico che Verga trasformò in letteratura, rendendo il paese un punto di riferimento essenziale per comprendere la genesi e l'identità della poetica verista."
+msgstr "Vizzini is one of the symbolic places of Italian literature and Verismo. Although Giovanni Verga was officially born in Catania in 1840, a consolidated local tradition and the writer's strong family ties with this territory unequivocally trace the origin of his narrative inspiration to the Vizzini countryside and social fabric. The alleys, hills and rural communities of Vizzini provided the human and landscape model that Verga transformed into literature, making the town an essential reference point for understanding the genesis and identity of verist poetics."
 
-msgid ""
-"La celebrazione più importante dell'anno, con <strong>processioni, "
-"luminarie</strong>, concerti bandistici e spettacoli pirotecnici."
-msgstr ""
-"The most important celebration of the year, with <strong>processions, "
-"illuminations</strong>, band concerts and pyrotechnic shows."
+#: parco_verismo/templates/parco_verismo/vizzini.html:47
+msgid "Panorama di Vizzini"
+msgstr "Panorama of Vizzini"
 
-msgid "Festa della Madonna Maria SS. dell'Aiuto"
-msgstr "Feast of the Madonna Maria SS. dell'Aiuto"
+#: parco_verismo/templates/parco_verismo/vizzini.html:59
+msgid "Vizzini nella vita di Giovanni Verga"
+msgstr "Vizzini in Giovanni Verga's life"
 
-msgid "Seconda domenica di settembre"
-msgstr "Second Sunday of September"
+#: parco_verismo/templates/parco_verismo/vizzini.html:60
+msgid "La famiglia Verga, di antica tradizione nobiliare, rappresentò per lo scrittore un punto di riferimento costante. L'infanzia trascorsa tra Vizzini, Licodia e i territori limitrofi, le campagne e le residenze familiari fornì allo scrittore un patrimonio umano, linguistico e antropologico che sarebbe riemerso, trasfigurato, nella sua produzione maggiore. Anche dopo il trasferimento a Firenze, Milano e Catania, Vizzini rimase il centro emotivo della sua immaginazione."
+msgstr "The Verga family, of ancient noble tradition, represented a constant point of reference for the writer. The childhood spent between Vizzini, Licodia and neighboring territories, the countryside and family residences provided the writer with a human, linguistic and anthropological heritage that would re-emerge, transfigured, in his major production. Even after moving to Florence, Milan and Catania, Vizzini remained the emotional center of his imagination."
 
-msgid ""
-"Festa dedicata alla <strong>Madonna dell'Aiuto</strong>, con celebrazioni "
-"religiose e momenti di devozione popolare."
-msgstr ""
-"Feast dedicated to the <strong>Madonna dell'Aiuto</strong>, with religious "
-"celebrations and moments of popular devotion."
+#: parco_verismo/templates/parco_verismo/vizzini.html:65
+msgid "Casa Natale di Giovanni Verga"
+msgstr "Giovanni Verga's Birthplace"
 
-msgid "Natale a Mineo"
-msgstr "Christmas in Mineo"
+#: parco_verismo/templates/parco_verismo/vizzini.html:76
+msgid "Tradizioni e Feste"
+msgstr "Traditions and Festivals"
 
-msgid "Dicembre/Gennaio"
-msgstr "December/January"
+#: parco_verismo/templates/parco_verismo/vizzini.html:78
+msgid "Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità vizzinese"
+msgstr "Discover the celebrations and events that mark the life of the Vizzini community"
 
-msgid ""
-"Periodo natalizio ricco di eventi, <strong>presepi viventi</strong>, "
-"mercatini e tradizioni che animano il borgo."
-msgstr ""
-"Christmas period rich in events, <strong>living nativity scenes</strong>, "
-"markets and traditions that animate the village."
+#: parco_verismo/templates/parco_verismo/vizzini.html:84
+msgid "Festa dei Sapori"
+msgstr "Festival of Flavors"
 
-msgid ""
-"Tra Caltagirone e Palagonia, in una posizione che domina la pianura, a 500 "
-"m. sul livello del mare, adagiata su due colli degli Iblei nord-occidentali, "
-"sorge la pittoresca e accogliente città di Mineo, con un territorio tra i "
-"più estesi della provincia di Catania. Tra storia e leggenda, testimonianze "
-"e tradizioni, Mineo ha sempre destato nel turista un certo fascino con il "
-"suo glorioso passato e con il grande patrimonio artistico delle sue chiese "
-"e dei suoi palazzi."
-msgstr ""
-"Between Caltagirone and Palagonia, in a position that dominates the plain, "
-"at 500 m. above sea level, nestled on two hills of the northwestern Hyblaean "
-"Mountains, stands the picturesque and welcoming city of Mineo, with a "
-"territory among the most extensive in the province of Catania. Between "
-"history and legend, testimonies and traditions, Mineo has always aroused a "
-"certain fascination in tourists with its glorious past and the great artistic "
-"heritage of its churches and palaces."
+#: parco_verismo/templates/parco_verismo/vizzini.html:86
+msgid "Festa dei Sapori e dei Saperi"
+msgstr "Festival of Flavors and Knowledge"
 
-msgid ""
-"Attraversando le stradine e i vicoli, che ricordano, con i vecchi ballatoi "
-"nei cortili interni, la struttura medioevale, si ha quasi l'impressione che "
-"il tempo si sia fermato. Le necropoli e i villaggi rupestri, i castelli e "
-"gli sconfinati agrumeti odoranti di zagara, suscitano incredibili "
-"suggestioni e particolari stati d'animo degni di essere vissuti. Patria di "
-"poeti e letterati, fu definita in passato il <strong>Parnaso Siculo</strong>: "
-"Luigi Capuana, teorico e sperimentatore del Verismo italiano; Corrado "
-"Guzzanti, geofisico; Giuseppe Bonaviri, medico e scrittore contemporaneo, "
-"sono alcuni tra i nomi più illustri."
-msgstr ""
-"Walking through the narrow streets and alleys, which recall, with the old "
-"galleries in the internal courtyards, the medieval structure, one almost has "
-"the impression that time has stopped. The necropolises and rock villages, "
-"the castles and the boundless citrus groves fragrant with orange blossoms, "
-"arouse incredible suggestions and particular moods worthy of being "
-"experienced. Homeland of poets and men of letters, it was defined in the "
-"past as the <strong>Sicilian Parnassus</strong>: Luigi Capuana, theorist and "
-"experimenter of Italian Verismo; Corrado Guzzanti, geophysicist; Giuseppe "
-"Bonaviri, physician and contemporary writer, are some of the most "
-"illustrious names."
+#: parco_verismo/templates/parco_verismo/vizzini.html:88
+msgid "24-25 Aprile"
+msgstr "April 24-25"
 
-msgid ""
-"Le origini di Mineo sono antichissime. Il suo territorio è punteggiato di "
-"necropoli preistoriche e testimonianze di antichissimi insediamenti umani. "
-"Nell'anno <strong>459 a.C.</strong> Ducezio capo dei Siculi fondò la città "
-"di <strong>Menainon</strong> (Diodoro XI, 78). Nel 828 venne conquistata "
-"dagli arabi, dopo un lunghissimo assedio. Da allora e fino alla metà del "
-"XII sec. non si hanno più notizie. Nello stesso periodo assume grande "
-"importanza strategica il vicino insediamento di monte Catalfaro voluto dagli "
-"arabi al centro di un ampio territorio fra Vizzini ed il castello di "
-"Mongialino. Nel 1207 Carlo d'Angiò, in viaggio per la Tunisia, vi risiede "
-"guarnendo il castello della città di militi e insediamenti. È parte attiva "
-"del <strong>Vespro del 1282</strong>, quando i suoi abitanti in rivolta "
-"trucidando i Francesi."
-msgstr ""
-"The origins of Mineo are very ancient. Its territory is dotted with "
-"prehistoric necropolises and testimonies of very ancient human settlements. "
-"In the year <strong>459 BC</strong> Ducezio, chief of the Sicels, founded "
-"the city of <strong>Menainon</strong> (Diodorus XI, 78). In 828 it was "
-"conquered by the Arabs, after a very long siege. From then until the middle "
-"of the XII century there is no more news. In the same period, the nearby "
-"settlement of Monte Catalfaro, wanted by the Arabs at the center of a vast "
-"territory between Vizzini and the castle of Mongialino, assumes great "
-"strategic importance. In 1207 Charles of Anjou, traveling to Tunisia, "
-"resides there garrisoning the city castle with soldiers and settlements. It "
-"is an active part of the <strong>Vespers of 1282</strong>, when its "
-"inhabitants in revolt slaughtered the French."
+#: parco_verismo/templates/parco_verismo/vizzini.html:91
+msgid "Celebrazione della tradizione casearia locale con degustazioni di <strong>ricotta fresca</strong>, cannoli, cassatelle e altri piatti tipici siciliani."
+msgstr "Celebration of the local cheese-making tradition with tastings of <strong>fresh ricotta</strong>, cannoli, cassatelle and other typical Sicilian dishes."
 
-msgid ""
-"Nel 1537, l'imperatore <strong>Carlo V</strong> trovandosi in notevoli "
-"difficoltà economiche per le continue guerre che sosteneva, alienò "
-"moltissimi beni regi in Sicilia e tra questi Mineo. I suoi abitanti, per "
-"non cadere in mani baronali, deliberarono di fare un donativo di 10.000 "
-"ducati e chiesero di restare in perpetuo un <strong>comune demaniale</"
-"strong>. Nel secolo successivo, Mineo, nel massimo del suo splendore ha tre "
-"chiese collegate: S. Maria Maggiore, costruita come vuole l'antica "
-"tradizione, sul tempio al Dio Sole, S. Agrippina, dove sono conservate le "
-"spoglie della patrona e S. Pietro. Numerose le chiese e i conventi: "
-"complessivamente quattordici monasteri, sei chiese maggiori e quattordici "
-"minori. Dopo un terribile periodo di carestia ed epidemie, l'<strong>11 "
-"gennaio 1693</strong> un fortissimo terremoto distrusse tutta Il Val di "
-"Noto, con intere città annientate e gravissimi danni. A Mineo fra l'altro "
-"fu distrutto il Castello, le chiese principali e moltissime abitazioni con "
-"la morte di circa 2.000 abitanti."
-msgstr ""
-"In 1537, the emperor <strong>Charles V</strong>, finding himself in "
-"considerable economic difficulties due to the continuous wars he was waging, "
-"alienated many royal assets in Sicily including Mineo. Its inhabitants, in "
-"order not to fall into baronial hands, decided to make a donation of 10,000 "
-"ducats and asked to remain perpetually a <strong>state municipality</strong>. "
-"In the following century, Mineo, at the height of its splendor, has three "
-"connected churches: S. Maria Maggiore, built as ancient tradition requires, "
-"on the temple to the Sun God, S. Agrippa, where the remains of the patron "
-"saint are preserved and S. Peter. Numerous churches and convents: a total of "
-"fourteen monasteries, six major churches and fourteen minor ones. After a "
-"terrible period of famine and epidemics, on <strong>January 11, 1693</"
-"strong> a very strong earthquake destroyed all of Val di Noto, with entire "
-"cities annihilated and very serious damage. In Mineo, among other things, "
-"the Castle, the main churches and many houses were destroyed with the death "
-"of about 2,000 inhabitants."
+#: parco_verismo/templates/parco_verismo/vizzini.html:99
+msgid "Settimana Santa"
+msgstr "Holy Week"
 
-msgid ""
-"L'inizio del sec. XVII fu dedicato alla ricostruzione delle chiese e delle "
-"abitazioni con l'affermazione del <strong>barocco</strong>. Dopo l'unità "
-"d'Italia alcuni personaggi si imposero in politica e nella letteratura. Tra "
-"gli altri, verso la fine del secolo, Corrado Guzzanti realizzò un "
-"osservatorio sismico che divenne centro di ricerca e osservazione del "
-"fenomeno dei terremoti. Mineo mantiene quel tessuto urbano nato dal "
-"terremoto del 1693 che ha le radici nel medioevo con le sue strade strette "
-"ed erte, con i suoi cortili e catoi, con i suoi palazzi maestosi e le case "
-"dei suoi abitanti in un miscuglio affascinante che permette di immergersi "
-"in un'atmosfera di altri tempi."
-msgstr ""
-"The beginning of the XVII century was dedicated to the reconstruction of "
-"churches and houses with the affirmation of the <strong>baroque</strong>. "
-"After the unification of Italy some characters established themselves in "
-"politics and literature. Among others, towards the end of the century, "
-"Corrado Guzzanti built a seismological observatory that became a center for "
-"research and observation of the earthquake phenomenon. Mineo maintains that "
-"urban fabric born from the earthquake of 1693 which has its roots in the "
-"Middle Ages with its narrow and steep streets, with its courtyards and "
-"cellars, with its majestic palaces and the houses of its inhabitants in a "
-"fascinating mixture that allows you to immerse yourself in an atmosphere of "
-"other times."
+#: parco_verismo/templates/parco_verismo/vizzini.html:101
+msgid "Marzo/Aprile"
+msgstr "March/April"
 
-msgid "Luigi Capuana"
-msgstr "Luigi Capuana"
+#: parco_verismo/templates/parco_verismo/vizzini.html:104
+msgid "Riti della Settimana Santa: Processione del <strong>Cristo alla Colonna</strong> (Mercoledì Santo), Processione dell'<strong>Addolorata</strong> (Venerdì Santo) e Domenica di Pasqua con la tradizionale <strong>\"Cugnunta\"</strong>."
+msgstr "Holy Week rituals: Procession of the <strong>Christ at the Column</strong> (Holy Wednesday), Procession of the <strong>Sorrowful Virgin</strong> (Good Friday) and Easter Sunday with the traditional <strong>\"Cugnunta\"</strong>."
 
-msgid ""
-"Nato a Mineo nel <strong>1839</strong> e morto a Catania nel <strong>1915</"
-"strong>, fu una personalità poliedrica; ancora oggi a distanza di oltre 100 "
-"anni dalla morte, viene ricordato non solo come scrittore e novelliere, ma "
-"anche come critico teatrale e autore di opere in dialetto siciliano, "
-"disegnatore, occultista (ricordiamo l'opera \"Spiritismo!\"), ispettore "
-"scolastico, politico (fu più volte sindaco di Mineo), autore di letteratura "
-"per l'infanzia e fiabe, professore universitario e, non ultimo, fotografo."
-msgstr ""
-"Born in Mineo in <strong>1839</strong> and died in Catania in <strong>1915</"
-"strong>, he was a multifaceted personality; even today, over 100 years after "
-"his death, he is remembered not only as a writer and novelist, but also as a "
-"theater critic and author of works in Sicilian dialect, draftsman, occultist "
-"(we remember the work \"Spiritism!\"), school inspector, politician (he was "
-"several times mayor of Mineo), author of children's literature and fairy "
-"tales, university professor and, last but not least, photographer."
+#: parco_verismo/templates/parco_verismo/vizzini.html:113
+msgid "Festa di San Gregorio"
+msgstr "Feast of St. Gregory"
 
-msgid ""
-"Ma è nella narrativa che egli occupa un posto di rilievo, sia per l'acutezza "
-"e la sensibilità del gusto, che per il vigore con cui propugnò, primo in "
-"Italia, il <strong>romanzo naturalista</strong>."
-msgstr ""
-"But it is in narrative that he occupies a prominent place, both for the "
-"acuteness and sensitivity of taste, and for the vigor with which he "
-"advocated, first in Italy, the <strong>naturalist novel</strong>."
+#: parco_verismo/templates/parco_verismo/vizzini.html:115
+msgid "Festa di San Gregorio Magno"
+msgstr "Feast of St. Gregory the Great"
 
-msgid ""
-"Il suo capolavoro rimane <strong>\"Il Marchese di Roccaverdina\"</strong>, "
-"romanzo pubblicato nel 1901."
-msgstr ""
-"His masterpiece remains <strong>\"The Marquis of Roccaverdina\"</strong>, a "
-"novel published in 1901."
+#: parco_verismo/templates/parco_verismo/vizzini.html:117
+msgid "2-3 Settembre"
+msgstr "September 2-3"
 
-msgid "MONUMENTI E LUOGHI CAPUANIANI"
-msgstr "MONUMENTS AND CAPUANIAN PLACES"
+#: parco_verismo/templates/parco_verismo/vizzini.html:120
+msgid "Solenne celebrazione eucaristica e <strong>processione</strong> della statua del Santo patrono lungo le principali vie cittadine."
+msgstr "Solemn Eucharistic celebration and <strong>procession</strong> of the patron saint's statue along the main city streets."
 
+#: parco_verismo/templates/parco_verismo/vizzini.html:128
+msgid "Festa di San Giovanni Battista"
+msgstr "Feast of St. John the Baptist"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:130
+msgid "Festa di S. Giovanni Battista"
+msgstr "Feast of St. John the Baptist"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:132
+msgid "28-29 Agosto"
+msgstr "August 28-29"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:135
+msgid "Festa del Martire S. Giovanni Battista. Processione della <strong>statua cinquecentesca</strong> e finale con fuochi pirotecnici."
+msgstr "Feast of the Martyr St. John the Baptist. Procession of the <strong>sixteenth-century statue</strong> and finale with fireworks."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:143
+msgid "Manifestazioni Verghiane"
+msgstr "Verghian Events"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:145
+msgid "Luglio/Agosto/Settembre"
+msgstr "July/August/September"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:148
+msgid "Ciclo di <strong>rappresentazioni teatrali</strong> tratte dalle novelle del famoso scrittore vizzinese, messe in scena negli stessi quartieri in cui l'autore immaginò svolgersi i fatti."
+msgstr "Cycle of <strong>theatrical performances</strong> drawn from the novels of the famous Vizzini writer, staged in the same neighborhoods where the author imagined the events taking place."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:160
+msgid "Profilo Storico"
+msgstr "Historical Profile"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:166
+msgid "\"Hanno ammazzato compare Turiddu, hanno ammazzato compare Turiddu!\". Tutti sanno che questo è il tragico grido con il quale si chiude <strong>Cavalleria rusticana</strong>, l'opera teatrale di Giovanni Verga, resa famosa in tutto il mondo dalla successiva trasposizione lirica con la coinvolgente musica di Pietro Mascagni. In pochi sanno, però, che il luogo in cui il grande scrittore verista ambientò questa vicenda è proprio Vizzini, il suo paese natale, dove viveva la sua famiglia e dove lui tornava spesso fin negli ultimi anni della sua vita."
+msgstr "\"They killed compare Turiddu, they killed compare Turiddu!\". Everyone knows that this is the tragic cry with which <strong>Cavalleria rusticana</strong>, Giovanni Verga's theatrical work, made famous worldwide by the subsequent lyrical transposition with Pietro Mascagni's engaging music, ends. Few know, however, that the place where the great verist writer set this story is precisely Vizzini, his birthplace, where his family lived and where he often returned until the last years of his life."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:171
+msgid "Qui Verga ambientò molte sue opere, ma soprattutto la più importante per la storia della letteratura verista: <strong>Mastro-don Gesualdo</strong>, il grande capolavoro che contribuì in modo decisivo alla nascita del romanzo moderno."
+msgstr "Here Verga set many of his works, but above all the most important for the history of verist literature: <strong>Mastro-don Gesualdo</strong>, the great masterpiece that decisively contributed to the birth of the modern novel."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:175
+msgid "Vizzini è la porta nord del Val di Noto, di quell'area del sud est della Sicilia che detiene ben 10 siti dichiarati <strong>Patrimonio dell'Umanità dall'UNESCO</strong>. Essa è ancora oggi un autentico teatro verista a cielo aperto. Per chi la visita si rivela un vero luogo dell'anima e, passo dopo passo, si comprende come questa piccola parte del territorio siciliano non sia sempre stata terra dei vinti, quasi fosse un destino ineluttabile. Il suo tessuto urbano e culturale è infatti punteggiato da segni che testimoniano una storia grande e antica, che affonda le radici nell'<strong>Età del Bronzo</strong>."
+msgstr "Vizzini is the northern gate of Val di Noto, of that area in southeastern Sicily that holds 10 sites declared <strong>UNESCO World Heritage</strong>. It is still today an authentic open-air verist theater. For those who visit it, it reveals itself as a true place of the soul and, step by step, one understands how this small part of the Sicilian territory has not always been the land of the vanquished, as if it were an inescapable destiny. Its urban and cultural fabric is in fact dotted with signs that testify to a great and ancient history, which has its roots in the <strong>Bronze Age</strong>."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:179
+msgid "A questo periodo risalgono importanti reperti rinvenuti dall'archeologo vizzinese <strong>Ippolito Cafici</strong>, oggi custoditi nel Museo Archeologico Regionale di Siracusa. Vizzini è, probabilmente, l'antica <strong>Bidis</strong>, citata da Tucidide, Cicerone e Plinio il Vecchio."
+msgstr "Important artifacts found by the Vizzini archaeologist <strong>Ippolito Cafici</strong>, now kept in the Regional Archaeological Museum of Syracuse, date back to this period. Vizzini is probably the ancient <strong>Bidis</strong>, mentioned by Thucydides, Cicero and Pliny the Elder."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:183
+msgid "La città, dopo i Greci e i Romani, passò sotto il controllo dei Bizantini e successivamente degli Arabi, ma conobbe un momento di particolare rilievo storico nel <strong>1252</strong>, quando Corrado IV di Svevia le concesse il privilegio di perpetua demanialità, impegnandosi a sottrarla definitivamente al baronaggio feudale."
+msgstr "The city, after the Greeks and Romans, came under the control of the Byzantines and subsequently the Arabs, but it experienced a moment of particular historical significance in <strong>1252</strong>, when Conrad IV of Swabia granted it the privilege of perpetual state ownership, committing to definitively remove it from feudal baronage."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:187
+msgid "Anche quando, per ben sei volte, fu assegnata a un feudatario, Vizzini riuscì sempre a riscattare la propria libertà. Fu annoverata tra le cinque <strong>città reginali</strong> dell'Isola, occupando il ventottesimo posto nel Parlamento del Regno di Sicilia. Insignita nel 1538 del titolo di <strong>Obbedientissima</strong>, fu equiparata alle città di Palermo, Catania e Messina per privilegi, onori e immunità."
+msgstr "Even when, on six occasions, it was assigned to a feudal lord, Vizzini always managed to redeem its freedom. It was counted among the five <strong>royal cities</strong> of the Island, occupying the twenty-eighth place in the Parliament of the Kingdom of Sicily. Awarded the title of <strong>Most Obedient</strong> in 1538, it was equated with the cities of Palermo, Catania and Messina for privileges, honors and immunities."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:191
+msgid "Fino alla prima metà del Seicento la città conobbe una continua espansione, divenendo un centro sempre più influente. Nel <strong>1693</strong> subì le devastanti conseguenze del terremoto che colpì la Sicilia orientale, ma, sebbene gravemente danneggiata, seppe risollevarsi: la ricostruzione determinò una rinascita non solo sociale, ma anche artistica e culturale."
+msgstr "Until the first half of the seventeenth century, the city experienced continuous expansion, becoming an increasingly influential center. In <strong>1693</strong> it suffered the devastating consequences of the earthquake that struck eastern Sicily, but although severely damaged, it managed to recover: the reconstruction determined a rebirth not only social, but also artistic and cultural."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:195
+msgid "Ne sono testimonianza le numerose opere d'arte e i rilevanti monumenti religiosi e civili, alcuni dei quali di grande pregio, come la <strong>Chiesa Madre dedicata a San Gregorio Magno</strong>, che custodisce due importanti opere di Filippo Paladini, la <strong>Basilica di San Vito</strong>, la <strong>Chiesa di San Giovanni Battista</strong> – la più grande della Diocesi di Caltagirone –, la <strong>Chiesa di Santa Maria di Gesù</strong>, che conserva una straordinaria scultura di Antonello Gagini, il maggiore scultore siciliano del Cinquecento, e il <strong>palazzo Càfici</strong>, magnifico esempio di architettura civile tardo barocca."
+msgstr "The numerous works of art and significant religious and civil monuments bear witness to this, some of which are of great value, such as the <strong>Mother Church dedicated to St. Gregory the Great</strong>, which houses two important works by Filippo Paladini, the <strong>Basilica of San Vito</strong>, the <strong>Church of San Giovanni Battista</strong> – the largest in the Diocese of Caltagirone –, the <strong>Church of Santa Maria di Gesù</strong>, which preserves an extraordinary sculpture by Antonello Gagini, the greatest Sicilian sculptor of the sixteenth century, and the <strong>Palazzo Càfici</strong>, a magnificent example of late Baroque civil architecture."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:209
+msgid "Giovanni Verga"
+msgstr "Giovanni Verga"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:215
+msgid "Nacque ufficialmente a Catania il <strong>2 settembre 1840</strong> o, secondo fondate argomentazioni a Tebidi nella casa di campagna dello zio Salvatore, in territorio di Vizzini, dove la famiglia Verga soggiornava spesso per sovrintendere ai lavori agricoli e dove più volte, in occasioni di epidemie, si era rifugiata lasciando Catania."
+msgstr "He was officially born in Catania on <strong>September 2, 1840</strong> or, according to well-founded arguments, in Tebidi at his uncle Salvatore's country house, in the territory of Vizzini, where the Verga family often stayed to oversee agricultural work and where they had taken refuge several times during epidemics, leaving Catania."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:219
+msgid "Verga compì i primi studi presso <strong>Antonio Abate</strong> che gli trasmise la sua passione per i romanzi storici. Dopo aver abbandonato gli studi di legge, si dedicò alla scrittura e nel 1865 si trasferì a Firenze e poi a Milano. Qui frequentò gli ambienti della <strong>Scapigliatura</strong> e ampliò i suoi riferimenti letterari guardando ai naturalisti francesi. Dopo aver abbandonato una narrativa fatta di storie sentimentali borghesi e spinto anche dal dibattito che si aprì sulla questione meridionale, nacque il suo progetto di un ciclo di romanzi rivolto al \"mondo dei vinti\", con capolavori come <strong>I Malavoglia</strong> e <strong>Mastro-don Gesualdo</strong>, che contribuiranno al rinnovamento del romanzo moderno."
+msgstr "Verga completed his first studies with <strong>Antonio Abate</strong> who transmitted his passion for historical novels. After abandoning his law studies, he devoted himself to writing and in 1865 moved to Florence and then to Milan. Here he frequented the circles of the <strong>Scapigliatura</strong> and expanded his literary references by looking to the French naturalists. After abandoning a narrative made of bourgeois sentimental stories and also driven by the debate that opened on the southern question, his project of a cycle of novels addressed to the \"world of the vanquished\" was born, with masterpieces such as <strong>I Malavoglia</strong> and <strong>Mastro-don Gesualdo</strong>, which will contribute to the renewal of the modern novel."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:223
+msgid "Oltre a Mastro-don Gesualdo, Verga ambienterà a Vizzini molti dei suoi capolavori tra i quali <strong>Jeli il pastore</strong> e <strong>Cavalleria rusticana</strong>. Negli ultimi anni della sua vita lo interessò la fotografia; oggi le sue foto, assieme ad altri cimeli, sono esposte nel <strong>Museo dell'\"Immaginario Verghiano\"</strong> di Vizzini, ospitato nel Palazzo Trao-Ventimiglia. Lo scrittore morì a Catania nel <strong>1922</strong>."
+msgstr "In addition to Mastro-don Gesualdo, Verga will set many of his masterpieces in Vizzini, including <strong>Jeli il pastore</strong> and <strong>Cavalleria rusticana</strong>. In the last years of his life he became interested in photography; today his photos, together with other memorabilia, are exhibited in the <strong>Museum of the \"Verghian Imaginary\"</strong> in Vizzini, housed in Palazzo Trao-Ventimiglia. The writer died in Catania in <strong>1922</strong>."
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:241
+msgid "MONUMENTI E LUOGHI VERGHIANI"
+msgstr "MONUMENTS AND VERGHIAN PLACES"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:251
 msgid "Patrimonio Religioso"
 msgstr "Religious Heritage"
 
+#: parco_verismo/templates/parco_verismo/vizzini.html:254
 msgid "Chiese e Luoghi Religiosi"
 msgstr "Churches and Religious Places"
 
-msgid "Chiesa di San Tommaso"
-msgstr "Church of San Tommaso"
+#: parco_verismo/templates/parco_verismo/vizzini.html:257
+msgid "Chiesa Madre di San Gregorio Magno"
+msgstr "Mother Church of St. Gregory the Great"
 
-msgid "Chiesa di Santa Agrippina"
-msgstr "Church of Santa Agrippa"
+#: parco_verismo/templates/parco_verismo/vizzini.html:263
+msgid "Basilica di San Vito"
+msgstr "Basilica of San Vito"
 
-msgid "Chiesa dei Santi Apostoli Pietro e Paolo"
-msgstr "Church of the Holy Apostles Peter and Paul"
+#: parco_verismo/templates/parco_verismo/vizzini.html:266
+msgid "Chiesa di Santa Barbara e Convento dei Cappuccini"
+msgstr "Church of Santa Barbara and Capuchin Convent"
 
-msgid "Chiesa di Santa Maria Maggiore"
-msgstr "Church of Santa Maria Maggiore"
+#: parco_verismo/templates/parco_verismo/vizzini.html:269
+msgid "Chiesa e Convento di Santa Maria di Gesù"
+msgstr "Church and Convent of Santa Maria di Gesù"
 
-msgid "Chiesa di San Francesco"
-msgstr "Church of San Francesco"
+#: parco_verismo/templates/parco_verismo/vizzini.html:272
+msgid "Chiesa e Convento dell'Annunziata"
+msgstr "Church and Convent of the Annunciation"
 
+#: parco_verismo/templates/parco_verismo/vizzini.html:275
+msgid "Chiesa di San Giovanni Evangelista"
+msgstr "Church of St. John the Evangelist"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:278
+msgid "Santuario di Maria SS. del Pericolo"
+msgstr "Sanctuary of Mary Most Holy of Danger"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:281
+msgid "Chiesa e Monastero di Santa Maria dei Greci"
+msgstr "Church and Monastery of Santa Maria dei Greci"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:290
+msgid "Chiesa di Santa Teresa"
+msgstr "Church of Santa Teresa"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:301
 msgid "Architettura Civile"
 msgstr "Civil Architecture"
 
+#: parco_verismo/templates/parco_verismo/vizzini.html:304
+msgid "Palazzi Storici"
+msgstr "Historical Palaces"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:307
+msgid "Casa Senatoria"
+msgstr "Senate House"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:310
+msgid "Palazzo Càfici"
+msgstr "Palazzo Càfici"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:313
+msgid "Palazzo La Gurna"
+msgstr "Palazzo La Gurna"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:316
+msgid "Palazzo Sganci"
+msgstr "Palazzo Sganci"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:319
+msgid "Palazzo Costa"
+msgstr "Palazzo Costa"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:322
+msgid "Palazzo Verga-Catalano"
+msgstr "Palazzo Verga-Catalano"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:325
+msgid "Palazzo Cannizzaro"
+msgstr "Palazzo Cannizzaro"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:338
+msgid "Luoghi Culturali e Verghiani"
+msgstr "Cultural and Verghian Places"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:341
+msgid "Museo dell\"Immaginario Verghiano\" - Palazzo Trao Ventimiglia"
+msgstr "Museum of the \"Verghian Imaginary\" - Palazzo Trao Ventimiglia"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:347
+msgid "Osteria della gna Nunzia"
+msgstr "Osteria della gna Nunzia"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:350
+msgid "Società Operaia di Mutuo Soccorso"
+msgstr "Workers' Mutual Aid Society"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:353
+msgid "Borgo della Cunziria"
+msgstr "Borgo della Cunziria"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:365
+msgid "Esplora Vizzini"
+msgstr "Explore Vizzini"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:367
+msgid "Scopri i luoghi di interesse sulla mappa interattiva"
+msgstr "Discover places of interest on the interactive map"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:5
+msgid "Mineo"
+msgstr "Mineo"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:27
+msgid "La città natale di Luigi Capuana"
+msgstr "Luigi Capuana's birthplace"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:41
+msgid "Mineo è un luogo cardine nella storia della letteratura italiana. Qui, il 28 maggio 1839, nacque Luigi Capuana, scrittore, critico, teorico del Verismo e tra le figure più originali della cultura europea dell'Ottocento. Il borgo conserva ancora oggi l'atmosfera, i paesaggi e l'architettura sociale che plasmarono l'immaginario dello scrittore, rendendolo uno spazio narrativo vivo e riconoscibile. Le sue vie, le sue piazze, le sue case, i suoi quartieri popolari ricorrono in molte opere capuaniane, spesso trasformate in teatro poetico o fantastico."
+msgstr "Mineo is a pivotal place in the history of Italian literature. Here, on May 28, 1839, Luigi Capuana was born, a writer, critic, theorist of Verismo and among the most original figures of nineteenth-century European culture. The village still preserves today the atmosphere, landscapes and social architecture that shaped the writer's imagination, making it a living and recognizable narrative space. Its streets, squares, houses, and working-class neighborhoods recur in many of Capuana's works, often transformed into a poetic or fantastic theater."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:46
+msgid "Panorama di Mineo"
+msgstr "Panorama of Mineo"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:58
+msgid "Mineo nella vita di Luigi Capuana"
+msgstr "Mineo in Luigi Capuana's life"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:59
+msgid "La formazione di Capuana avvenne tra le strade e le campagne di Mineo, in una realtà ricca di contrasti: borghesia agraria, mondo contadino, tradizioni popolari, spiritualità, paesaggi aspri e luminosi. Questi elementi costituivano la matrice del suo sguardo critico e antropologico sul reale, ma anche del suo interesse per il mistero, l'occulto, il fiabesco. Mineo non fu solo un paese d'origine, ma una lente attraverso cui Capuana osservò e interpretò il mondo."
+msgstr "Capuana's formation took place among the streets and countryside of Mineo, in a reality rich in contrasts: agrarian bourgeoisie, peasant world, popular traditions, spirituality, harsh and luminous landscapes. These elements constituted the matrix of his critical and anthropological gaze on reality, but also of his interest in mystery, the occult, the fairy tale. Mineo was not just a place of origin, but a lens through which Capuana observed and interpreted the world."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:64
+msgid "Casa Natale di Luigi Capuana"
+msgstr "Luigi Capuana's Birthplace"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:74
+msgid "Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità mineota"
+msgstr "Discover the celebrations and events that mark the life of the Mineo community"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:90
+msgid "Riti della Settimana Santa: Processione del <strong>Cristo alla Colonna</strong> (Mercoledì Santo), <strong>\"Scisa 'a Cruci\"</strong> (Venerdì Santo) e <strong>\"L'incrinata\"</strong> (Domenica di Pasqua)."
+msgstr "Holy Week rituals: Procession of the <strong>Christ at the Column</strong> (Holy Wednesday), <strong>\"Scisa 'a Cruci\"</strong> (Good Friday) and <strong>\"L'incrinata\"</strong> (Easter Sunday)."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:101
+msgid "Festa della Regina degli Angeli"
+msgstr "Feast of the Queen of Angels"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:103
+msgid "Maggio"
+msgstr "May"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:106
+msgid "Celebrazione mariana dedicata alla <strong>Regina degli Angeli</strong>, con processioni e momenti di preghiera."
+msgstr "Marian celebration dedicated to the <strong>Queen of Angels</strong>, with processions and moments of prayer."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:117
+msgid "Festa patronale di Sant'Agrippina"
+msgstr "Patronal Feast of St. Agrippina"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:119
+msgid "Le ultime due settimane di agosto"
+msgstr "The last two weeks of August"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:122
+msgid "La celebrazione più importante dell'anno, con <strong>processioni, luminarie</strong>, concerti bandistici e spettacoli pirotecnici."
+msgstr "The most important celebration of the year, with <strong>processions, illuminations</strong>, band concerts and fireworks displays."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:129
+msgid "Festa della Madonna dell'Aiuto"
+msgstr "Feast of Our Lady of Help"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:131
+msgid "Festa della Madonna Maria SS. dell'Aiuto"
+msgstr "Feast of Our Lady Mary Most Holy of Help"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:133
+msgid "Seconda domenica di settembre"
+msgstr "Second Sunday of September"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:136
+msgid "Festa dedicata alla <strong>Madonna dell'Aiuto</strong>, con celebrazioni religiose e momenti di devozione popolare."
+msgstr "Feast dedicated to <strong>Our Lady of Help</strong>, with religious celebrations and moments of popular devotion."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:146
+msgid "Natale a Mineo"
+msgstr "Christmas in Mineo"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:148
+msgid "Dicembre/Gennaio"
+msgstr "December/January"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:151
+msgid "Periodo natalizio ricco di eventi, <strong>presepi viventi</strong>, mercatini e tradizioni che animano il borgo."
+msgstr "Christmas period rich in events, <strong>living nativity scenes</strong>, markets and traditions that enliven the village."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:164
+msgid "Tra Caltagirone e Palagonia, in una posizione che domina la pianura, a 500 m. sul livello del mare, adagiata su due colli degli Iblei nord-occidentali, sorge la pittoresca e accogliente città di Mineo, con un territorio tra i più estesi della provincia di Catania. Tra storia e leggenda, testimonianze e tradizioni, Mineo ha sempre destato nel turista un certo fascino con il suo glorioso passato e con il grande patrimonio artistico delle sue chiese e dei suoi palazzi."
+msgstr "Between Caltagirone and Palagonia, in a position dominating the plain, at 500 m above sea level, nestled on two hills of the northwestern Iblei, stands the picturesque and welcoming city of Mineo, with one of the largest territories in the province of Catania. Between history and legend, testimonies and traditions, Mineo has always aroused in tourists a certain fascination with its glorious past and the great artistic heritage of its churches and palaces."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:168
+msgid "Attraversando le stradine e i vicoli, che ricordano, con i vecchi ballatoi nei cortili interni, la struttura medioevale, si ha quasi l'impressione che il tempo si sia fermato. Le necropoli e i villaggi rupestri, i castelli e gli sconfinati agrumeti odoranti di zagara, suscitano incredibili suggestioni e particolari stati d'animo degni di essere vissuti. Patria di poeti e letterati, fu definita in passato il <strong>Parnaso Siculo</strong>: Luigi Capuana, teorico e sperimentatore del Verismo italiano; Corrado Guzzanti, geofisico; Giuseppe Bonaviri, medico e scrittore contemporaneo, sono alcuni tra i nomi più illustri."
+msgstr "Walking through the narrow streets and alleys, which recall, with the old balconies in the inner courtyards, the medieval structure, one almost has the impression that time has stood still. The necropolises and rock villages, the castles and the boundless citrus groves fragrant with orange blossoms, evoke incredible suggestions and particular moods worthy of being experienced. Homeland of poets and men of letters, it was defined in the past as the <strong>Sicilian Parnassus</strong>: Luigi Capuana, theorist and experimenter of Italian Verismo; Corrado Guzzanti, geophysicist; Giuseppe Bonaviri, doctor and contemporary writer, are some of the most illustrious names."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:172
+msgid "Le origini di Mineo sono antichissime. Il suo territorio è punteggiato di necropoli preistoriche e testimonianze di antichissimi insediamenti umani. Nell'anno <strong>459 a.C.</strong> Ducezio capo dei Siculi fondò la città di <strong>Menainon</strong> (Diodoro XI, 78). Nel 828 venne conquistata dagli arabi, dopo un lunghissimo assedio. Da allora e fino alla metà del XII sec. non si hanno più notizie. Nello stesso periodo assume grande importanza strategica il vicino insediamento di monte Catalfaro voluto dagli arabi al centro di un ampio territorio fra Vizzini ed il castello di Mongialino. Nel 1207 Carlo d'Angiò, in viaggio per la Tunisia, vi risiede guarnendo il castello della città di militi e insediamenti. È parte attiva del <strong>Vespro del 1282</strong>, quando i suoi abitanti in rivolta trucidando i Francesi."
+msgstr "The origins of Mineo are very ancient. Its territory is dotted with prehistoric necropolises and evidence of very ancient human settlements. In the year <strong>459 BC</strong> Ducetius, chief of the Sicels, founded the city of <strong>Menainon</strong> (Diodorus XI, 78). In 828 it was conquered by the Arabs, after a very long siege. From then on until the middle of the 12th century there is no further news. In the same period, the nearby settlement of Monte Catalfaro, wanted by the Arabs at the center of a large territory between Vizzini and the castle of Mongialino, assumed great strategic importance. In 1207 Charles of Anjou, traveling to Tunisia, resided there, garrisoning the city's castle with soldiers and settlements. It was an active part of the <strong>Vespers of 1282</strong>, when its inhabitants in revolt slaughtered the French."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:176
+msgid "Nel 1537, l'imperatore <strong>Carlo V</strong> trovandosi in notevoli difficoltà economiche per le continue guerre che sosteneva, alienò moltissimi beni regi in Sicilia e tra questi Mineo. I suoi abitanti, per non cadere in mani baronali, deliberarono di fare un donativo di 10.000 ducati e chiesero di restare in perpetuo un <strong>comune demaniale</strong>. Nel secolo successivo, Mineo, nel massimo del suo splendore ha tre chiese collegate: S. Maria Maggiore, costruita come vuole l'antica tradizione, sul tempio al Dio Sole, S. Agrippina, dove sono conservate le spoglie della patrona e S. Pietro. Numerose le chiese e i conventi: complessivamente quattordici monasteri, sei chiese maggiori e quattordici minori. Dopo un terribile periodo di carestia ed epidemie, l'<strong>11 gennaio 1693</strong> un fortissimo terremoto distrusse tutta Il Val di Noto, con intere città annientate e gravissimi danni. A Mineo fra l'altro fu distrutto il Castello, le chiese principali e moltissime abitazioni con la morte di circa 2.000 abitanti."
+msgstr "In 1537, Emperor <strong>Charles V</strong>, finding himself in considerable economic difficulties due to the continuous wars he was waging, alienated many royal assets in Sicily, including Mineo. Its inhabitants, in order not to fall into baronial hands, decided to make a donation of 10,000 ducats and asked to remain perpetually a <strong>state-owned municipality</strong>. In the following century, Mineo, at the height of its splendor, had three connected churches: S. Maria Maggiore, built as ancient tradition dictates, on the temple to the Sun God, S. Agrippina, where the remains of the patron saint are preserved, and S. Pietro. Numerous churches and convents: a total of fourteen monasteries, six major churches and fourteen minor ones. After a terrible period of famine and epidemics, on <strong>January 11, 1693</strong> a very strong earthquake destroyed the entire Val di Noto, with entire cities annihilated and very serious damage. In Mineo, among other things, the Castle, the main churches and many homes were destroyed with the death of about 2,000 inhabitants."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:180
+msgid "L'inizio del sec. XVII fu dedicato alla ricostruzione delle chiese e delle abitazioni con l'affermazione del <strong>barocco</strong>. Dopo l'unità d'Italia alcuni personaggi si imposero in politica e nella letteratura. Tra gli altri, verso la fine del secolo, Corrado Guzzanti realizzò un osservatorio sismico che divenne centro di ricerca e osservazione del fenomeno dei terremoti. Mineo mantiene quel tessuto urbano nato dal terremoto del 1693 che ha le radici nel medioevo con le sue strade strette ed erte, con i suoi cortili e catoi, con i suoi palazzi maestosi e le case dei suoi abitanti in un miscuglio affascinante che permette di immergersi in un'atmosfera di altri tempi."
+msgstr "The beginning of the 17th century was dedicated to the reconstruction of churches and homes with the affirmation of the <strong>Baroque</strong>. After the unification of Italy, some figures emerged in politics and literature. Among others, towards the end of the century, Corrado Guzzanti built a seismic observatory which became a research and observation center for the phenomenon of earthquakes. Mineo maintains that urban fabric born from the 1693 earthquake which has its roots in the Middle Ages with its narrow and steep streets, its courtyards and cellars, its majestic palaces and the houses of its inhabitants in a fascinating mixture that allows one to immerse oneself in an atmosphere of bygone times."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:193
+msgid "Luigi Capuana"
+msgstr "Luigi Capuana"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:199
+msgid "Nato a Mineo nel <strong>1839</strong> e morto a Catania nel <strong>1915</strong>, fu una personalità poliedrica; ancora oggi a distanza di oltre 100 anni dalla morte, viene ricordato non solo come scrittore e novelliere, ma anche come critico teatrale e autore di opere in dialetto siciliano, disegnatore, occultista (ricordiamo l'opera \"Spiritismo!\"), ispettore scolastico, politico (fu più volte sindaco di Mineo), autore di letteratura per l'infanzia e fiabe, professore universitario e, non ultimo, fotografo."
+msgstr "Born in Mineo in <strong>1839</strong> and died in Catania in <strong>1915</strong>, he was a multifaceted personality; even today, more than 100 years after his death, he is remembered not only as a writer and short story writer, but also as a theater critic and author of works in Sicilian dialect, designer, occultist (we remember the work \"Spiritism!\"), school inspector, politician (he was several times mayor of Mineo), author of children's literature and fairy tales, university professor and, last but not least, photographer."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:203
+msgid "Ma è nella narrativa che egli occupa un posto di rilievo, sia per l'acutezza e la sensibilità del gusto, che per il vigore con cui propugnò, primo in Italia, il <strong>romanzo naturalista</strong>."
+msgstr "But it is in narrative that he occupies a prominent place, both for the acuteness and sensitivity of taste, and for the vigor with which he championed, first in Italy, the <strong>naturalist novel</strong>."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:207
+msgid "Il suo capolavoro rimane <strong>\"Il Marchese di Roccaverdina\"</strong>, romanzo pubblicato nel 1901."
+msgstr "His masterpiece remains <strong>\"Il Marchese di Roccaverdina\"</strong>, a novel published in 1901."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:220
+msgid "MONUMENTI E LUOGHI CAPUANIANI"
+msgstr "MONUMENTS AND CAPUANIAN PLACES"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:235
+msgid "Chiesa di San Tommaso"
+msgstr "Church of St. Thomas"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:236
+msgid "Chiesa di Santa Agrippina"
+msgstr "Church of St. Agrippina"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:237
+msgid "Chiesa dei Santi Apostoli Pietro e Paolo"
+msgstr "Church of the Holy Apostles Peter and Paul"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:238
+msgid "Chiesa di Santa Maria Maggiore"
+msgstr "Church of Santa Maria Maggiore"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:239
+msgid "Chiesa di San Francesco"
+msgstr "Church of St. Francis"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:253
 msgid "Palazzi e Architettura Civile"
 msgstr "Palaces and Civil Architecture"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:256
 msgid "Palazzo Comunale e Archivio Storico"
 msgstr "Town Hall and Historical Archive"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:257
 msgid "Circolo di Cultura Luigi Capuana (Casino dei Nobili)"
-msgstr "Luigi Capuana Cultural Circle (Casino of the Nobles)"
+msgstr "Luigi Capuana Cultural Circle (Casino dei Nobili)"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:258
 msgid "Castello Ducezio"
 msgstr "Ducezio Castle"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:259
 msgid "Palazzo Morgana (Casa dei Roccaverdina)"
 msgstr "Palazzo Morgana (House of the Roccaverdina)"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:260
 msgid "Porta Adinolfo"
 msgstr "Porta Adinolfo"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:261
 msgid "Piazza Buglio (ex Piazza del Mercato)"
 msgstr "Piazza Buglio (former Market Square)"
 
-msgid "Luoghi Capuaniani"
-msgstr "Capuanian Places"
-
+#: parco_verismo/templates/parco_verismo/mineo.html:274
 msgid "Musei e Luoghi Culturali"
 msgstr "Museums and Cultural Places"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:276
 msgid "Casa Museo \"Luigi Capuana\""
 msgstr "House Museum \"Luigi Capuana\""
 
+#: parco_verismo/templates/parco_verismo/mineo.html:277
 msgid "Casa natale di Giuseppe Bonaviri"
 msgstr "Giuseppe Bonaviri's birthplace"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:278
 msgid "Museo Civico \"Corrado Tamburino Merlini\""
 msgstr "Civic Museum \"Corrado Tamburino Merlini\""
 
+#: parco_verismo/templates/parco_verismo/mineo.html:279
 msgid "Museo Sismologico \"Corrado Guzzanti\" e Museo della Memoria"
 msgstr "Seismological Museum \"Corrado Guzzanti\" and Museum of Memory"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:292
 msgid "Esplora Mineo"
 msgstr "Explore Mineo"
 
-msgid "Scopri i luoghi di interesse sulla mappa interattiva"
-msgstr "Discover points of interest on the interactive map""""
+#: parco_verismo/templates/parco_verismo/mineo.html:215
+msgid " <small>Fonte: Mineo. Un paese da scoprire tra Arte, Cultura e Tradizione (Comune di Mineo) / Itinerari d'Autore (<a href=\"https://www.buonastrada.eu/cmn/mineo/\" target=\"_blank\" rel=\"noopener noreferrer\">buonastrada.eu</a>)</small>"
+msgstr " <small>Source: Mineo. A town to discover through Art, Culture and Tradition (Municipality of Mineo) / Author Itineraries (<a href=\"https://www.buonastrada.eu/cmn/mineo/\" target=\"_blank\" rel=\"noopener noreferrer\">buonastrada.eu</a>)</small>"
+
+#~ msgid "Supporta il Parco Letterario"
+#~ msgstr "Support the Literary Park"
+
+#~ msgid ""
+#~ "Contribuisci con una donazione o diventa partner per supportare la "
+#~ "preservazione e lo sviluppo della cultura letteraria siciliana."
+#~ msgstr ""
+#~ "Contribute with a donation or become a partner to support the "
+#~ "preservation and development of Sicilian literary culture."
+
+#~ msgid "Dona Ora"
+#~ msgstr "Donate Now"
+
+#~ msgid "Diventa Partner"
+#~ msgstr "Become a Partner"
+
+#~ msgid ""
+#~ "Parco Letterario Giovanni Verga Luigi Capuana - Un viaggio nella "
+#~ "letteratura verista siciliana attraverso i luoghi di Verga e Capuana"
+#~ msgstr ""
+#~ "Giovanni Verga Luigi Capuana Literary Park - A journey through Sicilian "
+#~ "verist literature in the places of Verga and Capuana"
+
+#~ msgid "Scopri il Parco Letterario Giovanni Verga e Luigi Capuana in Sicilia"
+#~ msgstr ""
+#~ "Discover the Giovanni Verga and Luigi Capuana Literary Park in Sicily"
+
+#~ msgid ""
+#~ "Parco letterario dedicato alla scoperta del Verismo siciliano attraverso "
+#~ "i luoghi di Giovanni Verga e Luigi Capuana"
+#~ msgstr ""
+#~ "Literary park dedicated to discovering Sicilian Verismo through the "
+#~ "places of Giovanni Verga and Luigi Capuana"
+
+#~ msgid ""
+#~ "I luoghi del Verismo: un viaggio nei paesaggi e nelle comunità che hanno "
+#~ "ispirato i capolavori di Giovanni Verga e Luigi Capuana"
+#~ msgstr ""
+#~ "The places of Verismo: a journey through the landscapes and communities "
+#~ "that inspired the masterpieces of Giovanni Verga and Luigi Capuana"
+
+#~ msgid "Logo Parco Verismo"
+#~ msgstr "Verismo Park Logo"
+
+#~ msgid "I luoghi del Verismo"
+#~ msgstr "The places of Verismo"
+
+#~ msgid "Accrediti e finanziamenti"
+#~ msgstr "Accreditations and funding"
+
+#~ msgid "Casa Natale"
+#~ msgstr "Birthplace of"
+
+#~ msgid "Le donne de"
+#~ msgstr "Women of"
+
+#~ msgid "I protagonisti delle"
+#~ msgstr "Protagonists of"
+
+#~ msgid "Casa Natale di"
+#~ msgstr "Birthplace of"
+
+#~ msgid "Accrediti"
+#~ msgstr "Accreditations"
+
+#~ msgid "Istituzionali"
+#~ msgstr "Institutional"
+
+#~ msgid "Fonti di"
+#~ msgstr "Sources of"
+
+#~ msgid "Parco"
+#~ msgstr "Park"
+
+#~ msgid "Comuni partner del"
+#~ msgstr "Partner municipalities of the"
+
+#~ msgid "Modulo di"
+#~ msgstr "Contact"
+
+#~ msgid "contatto"
+#~ msgstr "form"
+
+#~ msgid "Nome e cognome"
+#~ msgstr "Full name"
+
+#~ msgid "Inserisci nome e cognome"
+#~ msgstr "Enter full name"
+
+#~ msgid "Nome ente o istituzione"
+#~ msgstr "Organization or institution name"
+
+#~ msgid "Indirizzo email"
+#~ msgstr "Email address"
+
+#~ msgid "La tua email"
+#~ msgstr "Your email"
+
+#~ msgid "Messaggio"
+#~ msgstr "Message"
+
+#~ msgid "Nota sulla"
+#~ msgstr "Note on"
+
+#~ msgid "privacy"
+#~ msgstr "privacy"
+
+#~ msgid "Il"
+#~ msgstr "The"
+
+#~ msgid ""
+#~ "Per richieste di informazioni generali, proposte di collaborazione, "
+#~ "attività didattiche, visite guidate, eventi o comunicazioni "
+#~ "istituzionali, è possibile utilizzare il modulo di contatto sottostante. "
+#~ "Il messaggio sarà indirizzato all'email ufficiale del Parco Letterario."
+#~ msgstr ""
+#~ "For general information requests, collaboration proposals, educational "
+#~ "activities, guided tours, events or institutional communications, you can "
+#~ "use the contact form below. The message will be forwarded to the Literary "
+#~ "Park's official email."
+
+#~ msgid "elementi ricorrenti"
+#~ msgstr "recurrent elements"
+
+#~ msgid "Geografia letteraria:"
+#~ msgstr "Literary geography:"
+
+#~ msgid "Missione"
+#~ msgstr "Mission"
+
+#~ msgid "Visione"
+#~ msgstr "Vision"
+
+#~ msgid "Associazioni"
+#~ msgstr "Associations"
+
+#~ msgid "Rete"
+#~ msgstr "Network"
+
+#~ msgid "Lessico del Verismo:"
+#~ msgstr "Lexicon of Verismo:"
+
+#~ msgid "un sistema integrato"
+#~ msgstr "an integrated system"
+
+#~ msgid "Comitato"
+#~ msgstr "Committee"
+
+#~ msgid "Tecnico-Scientifico"
+#~ msgstr "Technical-Scientific"
+
+#~ msgid "Premio Nazionale"
+#~ msgstr "National Award"
+
+#~ msgid "Documentazione"
+#~ msgstr "Documentation"
+
+#~ msgid "Amministrativa"
+#~ msgstr "Administrative"
+
+#~ msgid "Fotografi"
+#~ msgstr "Photographers"
