@@ -10,9 +10,9 @@
 
 {% block content %}
   <section class="container my-5 pt-5">
-    {% blocktrans with autore=autore.nome %}
-    <h1 class="text-center mb-5">Opere di {{ autore }}</h1>
-    {% endblocktrans %}
+    <h1 class="text-center mb-5">
+      {% blocktrans with autore=autore.nome %}Opere di {{ autore }}{% endblocktrans %}
+    </h1>
 
     {% for luogo_nome, categorie in luoghi.items %}
       <!-- Titolo Luogo Centrato -->
