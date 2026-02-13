@@ -9,6 +9,7 @@ from .eventi import Evento, Notizia, EventoImage, NotiziaImage, EventoDocumento,
 from .documenti import Documento, FotoArchivio
 from .itinerari import Itinerario, ItinerarioImmagine
 from .richieste import Richiesta
+from .ristoranti import Ristorante
 
 # Esporta tutti i modelli
 __all__ = [
@@ -32,4 +33,6 @@ __all__ = [
     "ItinerarioImmagine",
     # Richieste di contatto
     "Richiesta",
+    # Ristoranti
+    "Ristorante",
 ]

@@ -1,0 +1,141 @@
+{% extends "parco_verismo/base.html" %}
+{% load static i18n %}
+
+{% block title %}{% trans 'Menu del Verismo - Parco Letterario®' %}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .menu-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 100%;
+    }
+    .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .restaurant-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .menu-img-preview {
+        cursor: pointer;
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .modal-fullscreen-img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+    }
+    .placeholder-card {
+        border: 2px dashed #ccc;
+        background: #f9f9f9;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="py-6 bg-light mt-5">
+    <div class="container container-xl">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h1 class="display-4 fw-bold">{% trans 'Menu del Verismo' %}</h1>
+            <p class="lead text-muted">{% trans 'Scopri i sapori autentici del territorio e dei ristoratori che aderiscono all’iniziativa.' %}</p>
+            <div class="hp-section-separator mx-auto">
+                <span class="separator-dot"></span>
+            </div>
+        </div>
+
+        {% if ristoranti %}
+        <div class="row g-4">
+            {% for ristorante in ristoranti %}
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+                <div class="card menu-card shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            {% if ristorante.logo %}
+                            <img src="{{ ristorante.logo.url }}" alt="{{ ristorante.nome }}" class="restaurant-logo me-3">
+                            {% else %}
+                            <div class="restaurant-logo me-3 d-flex align-items-center justify-content-center bg-light">
+                                <i class="bi bi-shop fs-2 text-primary"></i>
+                            </div>
+                            {% endif %}
+                            <div>
+                                <h3 class="h5 mb-1">{{ ristorante.nome }}</h3>
+                            </div>
+                        </div>
+                        <hr class="my-3 opacity-10">
+                        <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>{{ ristorante.indirizzo }}</p>
+                        <p class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i>{{ ristorante.numeri }}</p>
+                        
+                        <div class="mt-4">
+                            <h4 class="h6 mb-3 text-uppercase fw-bold text-muted">{% trans 'Il Nostro Menu' %}</h4>
+                            <div class="position-relative overflow-hidden rounded-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal{{ ristorante.id }}">
+                                <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="menu-img-preview">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white text-center w-100 opacity-0 hover-overlay" style="transition: opacity 0.3s; background: rgba(0,0,0,0.4);">
+                                    <i class="bi bi-fullscreen display-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for Menu Image -->
+            <div class="modal fade" id="menuModal{{ ristorante.id }}" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content border-0 bg-transparent">
+                        <div class="modal-header border-0 pb-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center pt-0">
+                            <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="modal-fullscreen-img shadow-lg rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="row justify-content-center" data-aos="zoom-in">
+            <div class="col-md-8">
+                <div class="placeholder-card p-5">
+                    <div>
+                        <i class="bi bi-calendar2-week display-1 text-muted mb-4"></i>
+                        <h2 class="h3 mb-3">{% trans 'Iniziativa in corso' %}</h2>
+                        <p class="text-muted mb-0">{% trans 'Stiamo raccogliendo le adesioni dei ristoratori locali. A breve troverai qui i primi menu del Verismo.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<style>
+    .hover-overlay {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+    .position-relative:hover .hover-overlay {
+        opacity: 1 !important;
+    }
+</style>
+{% endblock %}

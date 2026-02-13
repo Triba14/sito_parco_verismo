@@ -12,6 +12,7 @@ from .views import (
     itinerari_verghiani_view, itinerari_capuaniani_view, 
     itinerari_tematici_view, itinerario_detail_view,
     licodia_view, mineo_view, vizzini_view,
+    menu_del_verismo_view,
     missione_visione_view, comitato_tecnico_scientifico_view,
     comitato_regolamento_view, regolamenti_documenti_view,
     partner_rete_territoriale_view, accrediti_finanziamenti_view,
@@ -48,6 +49,9 @@ urlpatterns = [
     path('licodia/', licodia_view, name='licodia'),
     path('mineo/', mineo_view, name='mineo'),
     path('vizzini/', vizzini_view, name='vizzini'),
+
+    # Menu del Verismo
+    path('menu-del-verismo/', menu_del_verismo_view, name='menu_del_verismo'),
 
     # Missione e Visione
     path('missione-visione/', missione_visione_view, name='missione_visione'),
