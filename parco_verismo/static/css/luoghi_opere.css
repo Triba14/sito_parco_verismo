@@ -16,7 +16,7 @@
 }
 
 .lo-intro-content .lead {
-    font-size: 1.15rem;
+    font-size: var(--font-size-md);
     color: var(--color-text-light);
 }
 
@@ -113,14 +113,14 @@
 
 .lo-place-name {
     font-family: var(--font-title);
-    font-size: 1.75rem;
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 0.5rem;
 }
 
 .lo-place-subtitle {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: 500;
     color: var(--color-primary);
     margin-bottom: 0.75rem;
@@ -128,7 +128,7 @@
 }
 
 .lo-place-opere {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-light);
     margin-bottom: 0;
     padding-top: 0.75rem;
@@ -152,7 +152,7 @@
 /* Subsection Titles */
 .lo-subsection-title {
     font-family: var(--font-title);
-    font-size: 1.1rem;
+    font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--color-primary);
     margin-top: 1.5rem;
@@ -250,13 +250,13 @@
 }
 
 .lo-paesaggio-icon i {
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     color: white;
 }
 
 .lo-paesaggio-title {
     font-family: var(--font-title);
-    font-size: 1.3rem;
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 0.75rem;
@@ -298,14 +298,14 @@
 
 .lo-triangolo-place {
     font-family: var(--font-title);
-    font-size: 1.4rem;
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 0.5rem;
 }
 
 .lo-triangolo-role {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: #5d7d52;
     font-style: italic;
@@ -315,7 +315,7 @@
 }
 
 .lo-triangolo-item p {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text);
     line-height: 1.7;
     text-align: left;
@@ -335,7 +335,7 @@
 }
 
 .lo-final-content .lead {
-    font-size: 1.15rem;
+    font-size: var(--font-size-md);
     color: var(--color-text-light);
 }
 
@@ -355,11 +355,11 @@
     }
     
     .lo-place-name {
-        font-size: 1.5rem;
+        font-size: var(--font-size-xl);
     }
     
     .lo-subsection-title {
-        font-size: 1rem;
+        font-size: var(--font-size-base);
     }
     
     .lo-paesaggio-icon {
@@ -368,11 +368,11 @@
     }
     
     .lo-paesaggio-icon i {
-        font-size: 1.75rem;
+        font-size: var(--font-size-xl);
     }
     
     .lo-triangolo-place {
-        font-size: 1.25rem;
+        font-size: var(--font-size-lg);
     }
 }
 

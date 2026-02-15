@@ -67,7 +67,7 @@ header::after {
 }
 
 .hero-title {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(var(--font-size-2xl), 6vw, var(--font-size-4xl));
     font-weight: 400;
     margin-bottom: var(--space-lg);
     color: var(--color-text-inverse);
@@ -77,7 +77,7 @@ header::after {
 }
 
 .hero-subtitle {
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-size: clamp(var(--font-size-md), 3vw, var(--font-size-xl));
     font-weight: 400;
     color: var(--color-text-inverse);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -113,11 +113,11 @@ header::after {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: var(--font-size-3xl);
     }
 
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: var(--font-size-lg);
     }
 }
 
@@ -132,11 +132,11 @@ header::after {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: var(--font-size-2xl);
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: var(--font-size-md);
     }
 }
 
@@ -191,7 +191,7 @@ header::after {
 
 .homepage-hero .hero-title {
     font-family: "Perandory", sans-serif;
-    font-size: clamp(2rem, 7vw, 4rem);
+    font-size: clamp(var(--font-size-2xl), 7vw, var(--font-size-5xl));
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -202,7 +202,7 @@ header::after {
 }
 
 .homepage-hero .hero-subtitle {
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-size: clamp(var(--font-size-md), 3vw, var(--font-size-xl));
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.95);
@@ -213,7 +213,7 @@ header::after {
 }
 
 .homepage-hero .hero-description {
-    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    font-size: clamp(var(--font-size-base), 2.5vw, var(--font-size-md));
     font-weight: 300;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
@@ -333,7 +333,7 @@ header::after {
     color: var(--color-primary-dark);
     font-family: "TeX Gyre Termes", serif;
     font-style: italic;
-    font-size: clamp(0.9rem, 2vw, 1.25rem);
+    font-size: clamp(var(--font-size-sm), 2vw, var(--font-size-lg));
     line-height: 1.4;
     max-width: 280px;
     padding: 0.5rem 1rem;
@@ -476,7 +476,7 @@ header::after {
 }
 
 #il-parco .hp-section-title {
-    font-size: clamp(2rem, 5.5vw, 3rem);
+    font-size: clamp(var(--font-size-2xl), 5.5vw, var(--font-size-4xl));
     margin-bottom: 0.5rem;
     color: var(--color-primary-dark);
 }
@@ -484,7 +484,7 @@ header::after {
 #il-parco .lead {
     max-width: 800px;
     margin: 0 auto 2.5rem;
-    font-size: 1.15rem;
+    font-size: var(--font-size-md);
     line-height: 1.9;
     color: var(--color-text-secondary);
 }
@@ -654,7 +654,7 @@ section.hp-section {
 
 .hp-section-title {
     font-family: "TeX Gyre Termes", serif;
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 600;
     color: var(--color-text-primary);
     letter-spacing: -0.01em;
@@ -678,7 +678,7 @@ section.hp-section {
 }
 
 .hp-content .lead {
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
     font-weight: 400;
     color: var(--color-text-secondary);
     line-height: 1.8;
@@ -696,14 +696,14 @@ section.hp-section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     color: var(--color-text-primary);
     line-height: 1.6;
 }
 
 .hp-features i {
     color: var(--color-accent);
-    font-size: 1.3rem;
+    font-size: var(--font-size-xl);
     flex-shrink: 0;
 }
 

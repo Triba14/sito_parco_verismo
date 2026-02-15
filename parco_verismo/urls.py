@@ -18,6 +18,7 @@ from .views import (
     partner_rete_territoriale_view, accrediti_finanziamenti_view,
     contatti_view,
     privacy_policy_view, note_legali_view, cookie_policy_view,
+    biblioteca_view,
 )
 
 urlpatterns = [
@@ -29,6 +30,9 @@ urlpatterns = [
     # Personaggi e Luoghi
     path('personaggi-lessico/', personaggi_lessico_view, name='personaggi_lessico'),
     path('luoghi-opere/', luoghi_opere_view, name='luoghi_opere'),
+
+    # Biblioteca
+    path('biblioteca/', biblioteca_view, name='biblioteca'),
 
     # Eventi
     path('eventi/', eventi_view, name='eventi'),

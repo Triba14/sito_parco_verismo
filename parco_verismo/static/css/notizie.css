@@ -36,7 +36,7 @@
             rgba(199, 106, 82, 0.15) 0%,
             rgba(192, 140, 59, 0.15) 100%);
     border-radius: var(--radius-full);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: var(--color-primary);
     text-transform: uppercase;
@@ -48,13 +48,13 @@
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     color: var(--color-heading);
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
     margin-bottom: 0.75rem;
 }
 
 .notizie-header p {
     color: var(--color-text-secondary);
-    font-size: 1.125rem;
+    font-size: var(--font-size-md);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -118,14 +118,14 @@
 
 .notizia-date-badge .day {
     display: block;
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     font-weight: 400;
     line-height: 1;
 }
 
 .notizia-date-badge .month {
     display: block;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-top: 2px;
@@ -140,7 +140,7 @@
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
-    font-size: 3rem;
+    font-size: var(--font-size-4xl);
 }
 
 .notizia-card-body {
@@ -153,7 +153,7 @@
 .notizia-card-title {
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
     color: var(--color-text-primary);
     margin-bottom: 0.75rem;
     line-height: 1.3;
@@ -180,13 +180,13 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
 }
 
 .notizia-card-meta-item i {
     color: var(--color-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     width: 18px;
     text-align: center;
     transition: all 0.3s ease;
@@ -199,7 +199,7 @@
 
 .notizia-card-description {
     color: var(--color-text-secondary);
-    font-size: 0.9375rem;
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     margin-bottom: 1.25rem;
     flex: 1;
@@ -218,7 +218,7 @@
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
     border-radius: var(--radius-full);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     text-decoration: none;
     transition: all var(--transition-fast);
@@ -260,7 +260,7 @@
     border-radius: 50%;
     margin: 0 auto 1.5rem;
     color: var(--color-primary);
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
 }
 
 .notizie-empty h5 {
@@ -284,13 +284,13 @@
 
 @media (max-width: 991.98px) {
     .notizie-header h1 {
-        font-size: 2rem;
+        font-size: var(--font-size-2xl);
     }
 }
 
 @media (max-width: 767.98px) {
     .notizie-header h1 {
-        font-size: 1.75rem;
+        font-size: var(--font-size-xl);
     }
 
     .notizia-card-image {
@@ -325,7 +325,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     transition: all var(--transition-fast);
 }
 
@@ -380,7 +380,7 @@
     text-align: center;
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     color: white;
     margin: 0;
 }
@@ -418,7 +418,7 @@
 
 .calendar-weekdays span {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     font-weight: 600;
     color: var(--color-text-tertiary);
     text-transform: uppercase;
@@ -436,7 +436,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-primary);
     border-radius: 50%;
     cursor: default;
@@ -484,7 +484,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.8rem;
+    font-size: var(--font-size-xs);
     color: var(--color-text-secondary);
 }
 
@@ -546,7 +546,7 @@
 .calendar-events-list .no-events {
     text-align: center;
     color: var(--color-text-tertiary);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     padding: 1rem;
     margin: 0;
 }
@@ -602,7 +602,7 @@
 .event-title {
     display: block;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-primary);
     white-space: nowrap;
     overflow: hidden;
@@ -614,7 +614,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     color: var(--color-text-secondary);
     margin-right: 0.75rem;
 }
@@ -626,7 +626,7 @@
 
 .calendar-event-item>.bi-chevron-right {
     color: var(--color-text-tertiary);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     transition: transform var(--transition-fast);
 }
 

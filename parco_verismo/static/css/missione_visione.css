@@ -89,7 +89,7 @@
 }
 
 .pages-highlight-text .lead {
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
     font-weight: 400;
     color: var(--pages-text-secondary);
     margin: 0;
@@ -141,19 +141,19 @@
     );
     border-radius: 0.5rem;
     color: var(--pages-primary);
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
 }
 
 .pages-point-content h4 {
     font-family: "TeX Gyre Termes", serif;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: var(--pages-text-primary);
     margin-bottom: 0.5rem;
 }
 
 .pages-point-content p {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     color: var(--pages-text-secondary);
     margin: 0;
     line-height: 1.6;
@@ -168,7 +168,7 @@
     font-weight: 600;
     color: var(--pages-text-primary);
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     letter-spacing: 0.05em;
 }
 
@@ -186,7 +186,7 @@
     gap: 1rem;
     padding: 0.75rem 0;
     color: var(--pages-text-secondary);
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     border-bottom: 1px solid var(--pages-border);
 }
@@ -199,7 +199,7 @@
     flex-shrink: 0;
     color: var(--pages-primary-light);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
 }
 
 /* ========================================================
@@ -227,7 +227,7 @@
     );
     border-radius: 50%;
     color: white;
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
     box-shadow: var(--pages-shadow-lg);
 }
 
@@ -239,7 +239,7 @@
 
 .pages-recognition-card p {
     color: var(--pages-text-secondary);
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     line-height: 1.8;
 }
 
@@ -285,7 +285,7 @@
     border-radius: 50%;
     margin: 0 auto;
     color: var(--pages-primary);
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     transition: all 0.3s ease;
 }
 
@@ -299,13 +299,13 @@
     font-family: "TeX Gyre Termes", serif;
     font-weight: 600;
     color: var(--pages-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     margin: 0.5rem 0 0 0;
 }
 
 .pages-value-card p {
     color: var(--pages-text-secondary);
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     margin: 0;
 }
@@ -336,11 +336,11 @@
     }
 
     .pages-hero-title {
-        font-size: 2rem;
+        font-size: var(--font-size-2xl);
     }
 
     .pages-hero-subtitle {
-        font-size: 1rem;
+        font-size: var(--font-size-base);
     }
 
     .pages-section {
@@ -362,7 +362,7 @@
     }
 
     .pages-hero-title {
-        font-size: 1.75rem;
+        font-size: var(--font-size-xl);
     }
 
     .pages-hero-content {
@@ -381,7 +381,7 @@
     }
 
     .pages-section-title {
-        font-size: 1.5rem;
+        font-size: var(--font-size-xl);
     }
 
     .pages-point {
@@ -455,7 +455,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
     margin-bottom: 0.75rem;
 }
 

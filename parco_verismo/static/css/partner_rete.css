@@ -136,7 +136,7 @@
     border-radius: 50%;
     margin: 0 auto;
     color: var(--mv-primary);
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     transition: all 0.3s ease;
     overflow: hidden;
 }
@@ -177,12 +177,12 @@
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--mv-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     margin: 0.5rem 0 0 0;
 }
 
 .partner-role {
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: var(--mv-secondary);
     text-transform: uppercase;
@@ -191,7 +191,7 @@
 
 .partner-desc {
     color: var(--mv-text-secondary);
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     margin: 0;
 }
@@ -250,20 +250,20 @@
             rgba(192, 140, 59, 0.1) 100%);
     border-radius: 0.5rem;
     color: var(--mv-primary);
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     margin-bottom: 1rem;
 }
 
 .network-card h3 {
     font-family: 'TeX Gyre Termes', serif;
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--mv-text-primary);
     margin-bottom: 0.5rem;
 }
 
 .network-subtitle {
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--mv-secondary);
     font-weight: 600;
     margin-bottom: 1rem;
@@ -278,7 +278,7 @@
 .network-list li {
     padding: 0.5rem 0;
     color: var(--mv-text-secondary);
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     border-bottom: 1px solid var(--mv-border);
 }
@@ -344,12 +344,12 @@
 }
 
 .sponsor-logo i {
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     color: var(--mv-primary);
 }
 
 .sponsor-logo span {
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: var(--mv-text-secondary);
 }
@@ -374,7 +374,7 @@
 
 .partner-cta-card .lead {
     color: var(--mv-text-secondary);
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     line-height: 1.8;
 }
 
@@ -434,11 +434,11 @@
     }
 
     .mv-hero-title {
-        font-size: 2rem;
+        font-size: var(--font-size-2xl);
     }
 
     .mv-hero-subtitle {
-        font-size: 1rem;
+        font-size: var(--font-size-base);
     }
 
     .page-section {
@@ -452,7 +452,7 @@
     }
 
     .mv-hero-title {
-        font-size: 1.75rem;
+        font-size: var(--font-size-xl);
     }
 
     .mv-hero-content {
@@ -471,7 +471,7 @@
     }
 
     .page-section-title {
-        font-size: 1.5rem;
+        font-size: var(--font-size-xl);
     }
 
     .partner-card,

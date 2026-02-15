@@ -54,7 +54,7 @@
     background: rgba(243, 196, 113, 0.25);
     border: 1px solid rgba(243, 196, 113, 0.5);
     border-radius: 50px;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -71,7 +71,7 @@
 }
 
 .cts-hero-subtitle, .mv-hero-subtitle {
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
@@ -191,7 +191,7 @@
 }
 
 .cts-highlight-text .lead, .mv-highlight-text .lead {
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
     font-weight: 400;
     color: var(--color-text-secondary);
     margin: 0;
@@ -226,7 +226,7 @@
 
 .cts-info-box p {
     color: var(--color-text-secondary);
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     line-height: 1.8;
     margin: 0;
 }
@@ -248,7 +248,7 @@
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     color: var(--color-primary);
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
     margin-bottom: 1.5rem;
     line-height: 1.4;
     padding-right: 1rem;
@@ -303,7 +303,7 @@
         rgba(192, 140, 59, 0.1) 100%);
     border-radius: 50%;
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     transition: all 0.3s ease;
     flex-shrink: 0;
 }
@@ -318,20 +318,19 @@
     font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     margin: 0;
     line-height: 1.4;
 }
 
 .pages-member-card p {
     color: var(--color-text-secondary);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     line-height: 1.5;
     margin: 0;
     word-wrap: break-word;
 }
-    margin: 0;
-}
+
 
 /* ========================================================
    FUNCTIONS LIST
@@ -368,19 +367,19 @@
     align-items: center;
     justify-content: center;
     color: var(--color-accent);
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
 }
 
 .cts-function-content h4 {
     font-family: 'TeX Gyre Termes', serif;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: var(--color-text-primary);
     margin: 0 0 0.5rem 0;
 }
 
 .cts-function-content p {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
     margin: 0;
     line-height: 1.6;
@@ -406,7 +405,7 @@
 
 .cts-cta-card .lead {
     color: var(--color-text-secondary);
-    font-size: 1.05rem;
+    font-size: var(--font-size-md);
     line-height: 1.8;
 }
 
@@ -467,11 +466,11 @@
     }
     
     .cts-hero-title {
-        font-size: 2rem;
+        font-size: var(--font-size-2xl);
     }
     
     .cts-hero-subtitle {
-        font-size: 1rem;
+        font-size: var(--font-size-base);
     }
     
     .cts-section {
@@ -489,7 +488,7 @@
     }
     
     .cts-hero-title {
-        font-size: 1.75rem;
+        font-size: var(--font-size-xl);
     }
     
     .cts-hero-content {
@@ -508,7 +507,7 @@
     }
     
     .cts-section-title {
-        font-size: 1.5rem;
+        font-size: var(--font-size-xl);
     }
     
     .cts-function-item {
@@ -682,13 +681,13 @@
 /* Responsive tweaks copied for hero behavior */
 @media (max-width: 991.98px) {
     .cts-hero, .mv-hero { min-height: 70vh; }
-    .cts-hero-title, .mv-hero-title { font-size: 2rem; }
-    .cts-hero-subtitle, .mv-hero-subtitle { font-size: 1rem; }
+    .cts-hero-title, .mv-hero-title { font-size: var(--font-size-2xl); }
+    .cts-hero-subtitle, .mv-hero-subtitle { font-size: var(--font-size-base); }
 }
 
 @media (max-width: 767.98px) {
     .cts-hero, .mv-hero { min-height: 60vh; }
-    .cts-hero-title, .mv-hero-title { font-size: 1.75rem; }
+    .cts-hero-title, .mv-hero-title { font-size: var(--font-size-xl); }
     .cts-hero-content, .mv-hero-content { text-align: center; }
     .cts-hero-image, .mv-hero-image { min-height: 350px; margin-top: 2rem; }
 }

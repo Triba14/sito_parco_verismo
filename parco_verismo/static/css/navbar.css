@@ -395,11 +395,11 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 
 /* Language Dropdown - usa variabili del tema */
 #languageDropdown {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
 }
 
 #languageDropdown .bi-globe2 {
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
 }
 
 /* Dropdown menu lingua - segue il tema */
@@ -410,7 +410,7 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 
 #mainNav .navbar-nav .dropdown-menu[aria-labelledby="languageDropdown"] .dropdown-item {
     padding: var(--space-xs) var(--space-sm);
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
 }
 
 #mainNav .navbar-nav .dropdown-menu[aria-labelledby="languageDropdown"] .dropdown-item.active {

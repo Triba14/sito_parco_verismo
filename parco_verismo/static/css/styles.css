@@ -23,7 +23,7 @@
 
 .skip-to-main:focus {
     left: 0;
-    outline: 3px solid #FFD700;
+    outline: 3px solid var(--color-primary);
     outline-offset: 2px;
 }
 
@@ -78,9 +78,9 @@ a:focus {
     --color-primary-light: #7A9A6F;
     --color-primary-pale: #E8F0E6;
 
-    --color-secondary: #BF9B30;
-    --color-secondary-dark: #8B6F15;
-    --color-secondary-light: #E8C560;
+    --color-secondary: #C76A52; /* Terra Cotta */
+    --color-secondary-dark: #9A4D3B;
+    --color-secondary-light: #E09A6A;
 
     --color-accent: #A85D3A;
 
@@ -107,8 +107,8 @@ a:focus {
 
     /* Stati */
     --color-success: #52A770;
-    --color-warning: #D89020;
-    --color-warning-dark: #A86D15;
+    --color-warning: #D87020; /* More orange than gold */
+    --color-warning-dark: #A85015;
     --color-error: #B44033;
     --color-info: #3D7A6F;
 
@@ -140,6 +140,18 @@ a:focus {
     --space-md: 1rem;
     --space-lg: 1.5rem;
     --space-xl: 2rem;
+
+    /* Typography Scale - Major Third (1.25) */
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-base: 1rem;    /* 16px */
+    --font-size-md: 1.125rem;  /* 18px */
+    --font-size-lg: 1.25rem;   /* 20px */
+    --font-size-xl: 1.5rem;    /* 24px */
+    --font-size-2xl: 2rem;     /* 32px */
+    --font-size-3xl: 2.5rem;   /* 40px */
+    --font-size-4xl: 3rem;     /* 48px */
+    --font-size-5xl: 4rem;     /* 64px */
 
     /* Border radius */
     --radius-sm: 0.25rem;
@@ -216,12 +228,22 @@ html {
     overflow-x: hidden;
 }
 
+.lead {
+    font-size: var(--font-size-md);
+    font-weight: 300;
+}
+
+.lead strong, .lead b {
+    font-weight: 700;
+}
+
 body {
     background-color: var(--color-background);
     background-image: var(--gradient-background);
     background-attachment: fixed;
     background-size: cover;
     color: var(--color-text-primary);
+    font-size: var(--font-size-base);
     line-height: 1.75;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -309,17 +331,29 @@ h6 {
 
 h1 {
     color: var(--color-heading);
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
     font-weight: 400;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
     font-weight: 600;
 }
 
 h3 {
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: var(--font-size-3xl);
+}
+
+h4 {
+    font-size: var(--font-size-2xl);
+}
+
+h5 {
+    font-size: var(--font-size-xl);
+}
+
+h6 {
+    font-size: var(--font-size-lg);
 }
 
 p {

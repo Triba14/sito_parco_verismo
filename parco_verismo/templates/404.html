@@ -6,17 +6,17 @@
 {% block meta_description %}{% trans "La pagina che stai cercando non esiste o è stata spostata." %}{% endblock %}
 
 {% block content %}
-<section class="error-page py-5">
+<section class="error-page d-flex align-items-center justify-content-center" style="min-height: 80vh; background: var(--color-background);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10 text-center">
                 <!-- Error Code -->
                 <div class="error-code mb-4">
-                    <h1 class="display-1 fw-bold text-primary" style="font-size: 10rem;">404</h1>
+                    <h1 class="display-1 fw-bold" style="font-size: 10rem; color: var(--color-primary); text-shadow: 4px 4px 0px rgba(74, 103, 65, 0.1);">404</h1>
                 </div>
 
                 <!-- Error Title -->
-                <h2 class="h1 mb-4">
+                <h2 class="h1 mb-4" style="color: var(--color-heading);">
                     {% trans "Pagina Non Trovata" %}
                 </h2>
 
@@ -27,27 +27,27 @@
 
                 <!-- Illustration/Icon -->
                 <div class="mb-5">
-                    <i class="bi bi-compass" style="font-size: 8rem; color: var(--bs-primary); opacity: 0.2;"></i>
+                    <i class="bi bi-compass" style="font-size: 8rem; color: var(--color-primary-light); opacity: 0.3;"></i>
                 </div>
 
                 <!-- Action Buttons -->
                 <div class="d-flex flex-wrap gap-3 justify-content-center">
-                    <a href="{% url 'home' %}" class="btn btn-primary btn-lg">
+                    <a href="{% url 'home' %}" class="btn btn-primary btn-lg px-4 py-3">
                         <i class="bi bi-house-door me-2"></i>
                         {% trans "Torna alla Home" %}
                     </a>
-                    <a href="{% url 'biblioteca' %}" class="btn btn-outline-primary btn-lg">
+                    <a href="{% url 'biblioteca' %}" class="btn btn-outline-primary btn-lg px-4 py-3">
                         <i class="bi bi-book me-2"></i>
                         {% trans "Esplora la Biblioteca" %}
                     </a>
-                    <a href="{% url 'itinerari' %}" class="btn btn-outline-primary btn-lg">
+                    <a href="{% url 'cammino_del_verismo' %}" class="btn btn-outline-primary btn-lg px-4 py-3">
                         <i class="bi bi-map me-2"></i>
                         {% trans "Scopri gli Itinerari" %}
                     </a>
                 </div>
 
                 <!-- Search Suggestion -->
-                <div class="mt-5 pt-4 border-top">
+                <div class="mt-5 pt-4 border-top" style="border-color: var(--color-border) !important;">
                     <p class="text-muted mb-3">
                         {% trans "Oppure cerca quello che ti interessa:" %}
                     </p>
@@ -57,7 +57,8 @@
                                    class="form-control" 
                                    name="q" 
                                    placeholder="{% trans 'Cerca opere, autori...' %}"
-                                   aria-label="{% trans 'Cerca' %}">
+                                   aria-label="{% trans 'Cerca' %}"
+                                   style="border-color: var(--color-primary-light); background-color: var(--color-surface);">
                             <button class="btn btn-primary" type="submit">
                                 <i class="bi bi-search"></i>
                             </button>
@@ -70,14 +71,8 @@
 </section>
 
 <style>
-    .error-page {
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-    }
-    
     .error-code {
-        animation: fadeInDown 0.6s ease-out;
+        animation: fadeInDown 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     
     @keyframes fadeInDown {

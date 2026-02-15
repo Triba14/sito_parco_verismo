@@ -8,6 +8,7 @@ from .home import home_view
 
 # Biblioteca
 from .biblioteca import (
+    biblioteca_view,
     opere_per_autore_view,
     personaggi_lessico_view,
     luoghi_opere_view,
@@ -72,6 +73,7 @@ __all__ = [
     # Home
     'home_view',
     # Biblioteca
+    'biblioteca_view',
     'opere_per_autore_view',
     # Eventi e Notizie
     'eventi_view',

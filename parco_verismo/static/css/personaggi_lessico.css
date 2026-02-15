@@ -260,6 +260,12 @@
     .pages-section {
         padding: 3rem 0;
     }
+
+    .pl-tipo-card,
+    .pl-lessico-item {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
 }
 
 @media (max-width: 767.98px) {

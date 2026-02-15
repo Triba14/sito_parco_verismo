@@ -138,13 +138,13 @@
 }
 
 .itinerario-icon {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   line-height: 1;
   flex-shrink: 0;
 }
 
 .itinerario-title {
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   font-weight: 700;
   color: var(--color-text-primary);
   margin: 0 0 0.3rem 0;
@@ -158,11 +158,12 @@
 
 .itinerario-description {
   color: var(--color-text-tertiary);
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   line-height: 1.5;
   margin-bottom: 0.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -177,13 +178,13 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   color: var(--color-text-tertiary);
 }
 
 .meta-item i {
   color: var(--color-primary, #4A6741);
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
 }
 
 .badge-tappe {
@@ -191,7 +192,7 @@
   color: var(--color-primary, #4A6741);
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   font-weight: 600;
 }
 
@@ -271,7 +272,7 @@
 
 .marker-number {
   color: white;
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   font-weight: 700;
   line-height: 1;
 }
@@ -296,12 +297,12 @@
 
 #tappaModal .modal-body {
   padding: 1.5rem;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   line-height: 1.7;
 }
 
 #tappaModal .modal-body .lead {
-  font-size: 1.05rem;
+  font-size: var(--font-size-md);
   color: #333;
   line-height: 1.8;
 }
@@ -335,7 +336,7 @@
 }
 
 .custom-popup h5 {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   font-weight: 600;
   color: #2C3E2D;
 }
@@ -398,7 +399,7 @@
 }
 
 .tappa-title {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 0.75rem;
@@ -417,14 +418,14 @@
   color: white;
   border-radius: 50%;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   flex-shrink: 0;
 }
 
 .tappa-description {
   color: var(--color-text-secondary);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
 }
 
 .tappa-description p {
@@ -448,13 +449,13 @@
   }
 
   .tappa-title {
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
   }
 
   .tappa-number {
     width: 28px;
     height: 28px;
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
   }
 
   .tappa-card .site-card-body {
@@ -472,13 +473,13 @@
   .hero-verghiani h1,
   .hero-capuaniani h1,
   .hero-tematici h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
   }
 
   .hero-verghiani p,
   .hero-capuaniani p,
   .hero-tematici p {
-    font-size: 1.1rem;
+    font-size: var(--font-size-md);
   }
 }
 
@@ -501,13 +502,13 @@
   .hero-verghiani h1,
   .hero-capuaniani h1,
   .hero-tematici h1 {
-    font-size: 2.2rem;
+    font-size: var(--font-size-2xl);
   }
 
   .hero-verghiani p,
   .hero-capuaniani p,
   .hero-tematici p {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
   }
 
   .btn-maps {
@@ -535,13 +536,13 @@
   .hero-verghiani h1,
   .hero-capuaniani h1,
   .hero-tematici h1 {
-    font-size: 1.8rem;
+    font-size: var(--font-size-xl);
   }
 
   .hero-verghiani p,
   .hero-capuaniani p,
   .hero-tematici p {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
   }
 }
 
@@ -564,23 +565,23 @@
   .hero-verghiani h1,
   .hero-capuaniani h1,
   .hero-tematici h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
   }
 
   .hero-verghiani p,
   .hero-capuaniani p,
   .hero-tematici p {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
   }
 }
 
 /* Mobile Extra Small (≤400px) */
 @media (max-width: 400px) {
   .hero-verghiani h1 {
-    font-size: 1.3rem;
+    font-size: var(--font-size-lg);
   }
 
   .hero-verghiani p {
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
   }
 }

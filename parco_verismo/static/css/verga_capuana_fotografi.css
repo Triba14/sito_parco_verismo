@@ -175,26 +175,9 @@ h5 {
   color: var(--pages-text-primary) !important;
 }
 
-.lead {
-  font-size: 1.25rem;
-  color: var(--pages-text-primary);
-  line-height: 1.8;
-}
-
-/* Liste e punti */
-ol li {
-  font-size: 1.15rem;
-  color: var(--pages-text-primary);
-  margin-bottom: 0.5rem;
-  line-height: 1.7;
-}
-
 /* Spaziatura paragrafi */
 p {
-  font-size: 1.15rem;
-  color: var(--pages-text-primary);
   margin-bottom: 2rem;
-  line-height: 1.8;
 }
 
 /* Nuovi stili per miglioramenti richiesti */
@@ -245,8 +228,7 @@ p {
   font-family: serif;
 }
 
-pointer-events: none;
-}
+
 
 /* Pulsante expand */
 .carousel-expand-btn {
