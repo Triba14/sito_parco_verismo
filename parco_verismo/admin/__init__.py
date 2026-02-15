@@ -9,6 +9,7 @@ from .eventi import EventoAdmin, NotiziaAdmin
 from .documenti import DocumentoAdmin, FotoArchivioAdmin
 from .itinerari import ItinerarioAdmin
 from .richieste import RichiestaAdmin
+from .ristoranti import RistoranteAdmin
 
 # Gli admin sono già registrati con @admin.register nei rispettivi file
 # Questo file serve solo per importarli tutti insieme
@@ -22,4 +23,5 @@ __all__ = [
     "FotoArchivioAdmin",
     "ItinerarioAdmin",
     "RichiestaAdmin",
+    "RistoranteAdmin",
 ]

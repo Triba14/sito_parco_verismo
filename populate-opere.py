@@ -17,9 +17,20 @@ def populate_luoghi_e_opere():
     print("POPOLAMENTO LUOGHI E ASSOCIAZIONI OPERE")
     print("="*70)
     
-    # Ottieni autori
-    verga = Autore.objects.get(slug='giovanni-verga')
-    capuana = Autore.objects.get(slug='luigi-capuana')
+    # Ottieni o crea autori
+    verga, created = Autore.objects.get_or_create(
+        slug='giovanni-verga',
+        defaults={'nome': 'Giovanni Verga'}
+    )
+    if created:
+        print(f"✓ Creato autore: {verga.nome}")
+
+    capuana, created = Autore.objects.get_or_create(
+        slug='luigi-capuana',
+        defaults={'nome': 'Luigi Capuana'}
+    )
+    if created:
+        print(f"✓ Creato autore: {capuana.nome}")
     
     # ========================================================================
     # OPERE DI VERGA

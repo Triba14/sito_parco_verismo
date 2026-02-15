@@ -1,0 +1,132 @@
+{% extends "parco_verismo/base.html" %}
+{% load static i18n %}
+
+{% block title %}{% trans 'Menu del Verismo - Parco Letterario®' %}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .modal-fullscreen-img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+    }
+    .hover-opacity {
+        transition: opacity var(--transition-fast);
+    }
+    .hover-opacity:hover {
+        opacity: 0.7;
+    }
+    .placeholder-card {
+        border: 2px dashed var(--color-border);
+        background: var(--color-surface-elevated);
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: var(--radius-lg);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="pt-5 bg-light mt-5" style="padding-bottom: 5rem;">
+    <div class="container container-xl">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h1 class="display-4 fw-bold">{% trans 'Menu del Verismo' %}</h1>
+            <p class="lead text-muted">{% trans 'Scopri i sapori autentici nei ristoranti convenzionati col Parco' %}</p>
+            <div class="hp-section-separator mx-auto">
+                <span class="separator-dot"></span>
+            </div>
+        </div>
+
+        {% if grouped_ristoranti %}
+            {% for luogo, ristoranti in grouped_ristoranti %}
+                <div class="mb-5" data-aos="fade-up">
+                    <h2 class="text-center text-uppercase text-secondary mb-3 mt-5">{{ luogo }}</h2>
+                    <div class="hp-section-separator mx-auto mb-5">
+                        <span class="separator-dot"></span>
+                    </div>
+                    
+                    <div class="row g-4 justify-content-center">
+                        {% for ristorante in ristoranti %}
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+                            <article class="site-card">
+                                <div class="site-card-body">
+                                    <div class="d-flex align-items-center gap-3 mb-4">
+                                        {% if ristorante.logo %}
+                                            <div class="bg-white p-2 rounded shadow-sm d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                                                <img src="{{ ristorante.logo.url }}" alt="{{ ristorante.nome }}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                                            </div>
+                                        {% else %}
+                                            <div class="bg-light p-2 rounded d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                                                <i class="bi bi-shop text-muted fs-3"></i>
+                                            </div>
+                                        {% endif %}
+                                        <div>
+                                            <h3 class="site-card-title mb-0">{{ ristorante.nome }}</h3>
+                                            {% if ristorante.tipo %}
+                                            <p class="small text-primary mb-0 fw-semibold">{{ ristorante.tipo }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+
+                                    <div class="site-card-meta mb-4">
+                                        <div class="site-card-meta-item w-100">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <span>{{ ristorante.indirizzo }}</span>
+                                        </div>
+                                        <div class="site-card-meta-item w-100">
+                                            <i class="bi bi-telephone"></i>
+                                            <span>{{ ristorante.numeri }}</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="site-card-actions d-flex flex-column gap-2">
+                                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#menuModal{{ ristorante.id }}">
+                                            <i class="bi bi-book"></i> {% trans 'Vedi Menu' %}
+                                        </button>
+                                        
+                                        {% if ristorante.link_maps %}
+                                        <a href="{{ ristorante.link_maps }}" target="_blank" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-2">
+                                            <i class="bi bi-geo-alt"></i> {% trans 'Vedi su Google Maps' %}
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Modal for Menu Image -->
+                        <div class="modal fade" id="menuModal{{ ristorante.id }}" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content border-0 bg-transparent">
+                                    <div class="modal-header border-0 pb-0">
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center pt-0">
+                                        <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="modal-fullscreen-img shadow-lg rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+        <div class="row justify-content-center" data-aos="zoom-in">
+            <div class="col-md-8">
+                <div class="placeholder-card p-5">
+                    <div class="text-center">
+                        <i class="bi bi-calendar2-week display-1 text-muted mb-4 d-block"></i>
+                        <h2 class="h3 mb-3">{% trans 'Iniziativa in corso' %}</h2>
+                        <p class="text-muted mb-0">{% trans 'Stiamo raccogliendo le adesioni dei ristoratori locali. A breve troverai qui i primi menu del Verismo.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
