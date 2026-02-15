@@ -80,7 +80,15 @@ fi
 # 4. Database
 printf "${YELLOW}[4/6]${NC} Setup database...\n"
 "$VENV_PY" manage.py migrate
-printf "${GREEN}✓${NC} Migrazioni applicate\n\n"
+printf "${GREEN}✓${NC} Migrazioni applicate\n"
+
+# Creazione superuser (se non esiste già)
+if ! "$VENV_PY" manage.py shell -c "from django.contrib.auth.models import User; exit(0 if User.objects.filter(username='admin').exists() else 1)" 2>/dev/null; then
+    DJANGO_SUPERUSER_PASSWORD=admin123 "$VENV_PY" manage.py createsuperuser --username admin --email admin@example.com --noinput
+    printf "${GREEN}✓${NC} Superuser creato (admin / admin123)\n\n"
+else
+    printf "${GREEN}✓${NC} Superuser 'admin' già esistente\n\n"
+fi
 
 # 5. Traduzioni
 printf "${YELLOW}[5/6]${NC} Compilazione traduzioni...\n"
