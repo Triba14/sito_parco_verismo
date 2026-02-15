@@ -11,7 +11,7 @@ def menu_del_verismo_view(request):
     codici_luoghi = [codice for codice, _ in LUOGO_CHOICES]
     ristoranti_list = Ristorante.objects.filter(
         luogo__in=codici_luoghi
-    ).order_by('nome')
+    ).order_by('translations__nome').distinct()
     
     # Mappa codice → nome leggibile
     luogo_display = dict(LUOGO_CHOICES)

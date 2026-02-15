@@ -1,0 +1,4 @@
+Operations to perform:
+  Apply all migrations: parco_verismo
+Running migrations:
+  Applying parco_verismo.0027_alter_ristorante_options_remove_ristorante_indirizzo_and_more... OK
