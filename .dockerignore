@@ -12,3 +12,4 @@ staticfiles
 media/*
 !media/copertine
 !media/archivio_fotografico
+!media/documenti
