@@ -43,6 +43,9 @@ from .comuni import (
     vizzini_view,
 )
 
+# Ristoranti
+from .ristoranti import menu_del_verismo_view
+
 # Pagine Istituzionali
 from .istituzionale import (
     missione_visione_view,
@@ -88,6 +91,8 @@ __all__ = [
     'licodia_view',
     'mineo_view',
     'vizzini_view',
+    # Ristoranti
+    'menu_del_verismo_view',
     # Istituzionali
     'missione_visione_view',
     'comitato_tecnico_scientifico_view',

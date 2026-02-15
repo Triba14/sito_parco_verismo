@@ -5,111 +5,115 @@
 
 {% block extra_css %}
 <style>
-    .menu-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: none;
-        border-radius: 15px;
-        overflow: hidden;
-        height: 100%;
-    }
-    .menu-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .restaurant-logo {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        background: #fff;
-        padding: 5px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .menu-img-preview {
-        cursor: pointer;
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-    }
     .modal-fullscreen-img {
         max-width: 100%;
         max-height: 90vh;
         object-fit: contain;
     }
+    .hover-opacity {
+        transition: opacity var(--transition-fast);
+    }
+    .hover-opacity:hover {
+        opacity: 0.7;
+    }
     .placeholder-card {
-        border: 2px dashed #ccc;
-        background: #f9f9f9;
+        border: 2px dashed var(--color-border);
+        background: var(--color-surface-elevated);
         min-height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        border-radius: 15px;
+        border-radius: var(--radius-lg);
     }
 </style>
 {% endblock %}
 
 {% block content %}
-<section class="py-6 bg-light mt-5">
+<section class="pt-5 bg-light mt-5" style="padding-bottom: 5rem;">
     <div class="container container-xl">
         <div class="text-center mb-5" data-aos="fade-up">
             <h1 class="display-4 fw-bold">{% trans 'Menu del Verismo' %}</h1>
-            <p class="lead text-muted">{% trans 'Scopri i sapori autentici del territorio e dei ristoratori che aderiscono all’iniziativa.' %}</p>
+            <p class="lead text-muted">{% trans 'Scopri i sapori autentici nei ristoranti convenzionati col Parco' %}</p>
             <div class="hp-section-separator mx-auto">
                 <span class="separator-dot"></span>
             </div>
         </div>
 
-        {% if ristoranti %}
-        <div class="row g-4">
-            {% for ristorante in ristoranti %}
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
-                <div class="card menu-card shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            {% if ristorante.logo %}
-                            <img src="{{ ristorante.logo.url }}" alt="{{ ristorante.nome }}" class="restaurant-logo me-3">
-                            {% else %}
-                            <div class="restaurant-logo me-3 d-flex align-items-center justify-content-center bg-light">
-                                <i class="bi bi-shop fs-2 text-primary"></i>
-                            </div>
-                            {% endif %}
-                            <div>
-                                <h3 class="h5 mb-1">{{ ristorante.nome }}</h3>
-                            </div>
+        {% if grouped_ristoranti %}
+            {% for luogo, ristoranti in grouped_ristoranti %}
+                <div class="mb-5" data-aos="fade-up">
+                    <h2 class="text-center text-uppercase text-secondary mb-3 mt-5">{{ luogo }}</h2>
+                    <div class="hp-section-separator mx-auto mb-5">
+                        <span class="separator-dot"></span>
+                    </div>
+                    
+                    <div class="row g-4 justify-content-center">
+                        {% for ristorante in ristoranti %}
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+                            <article class="site-card">
+                                <div class="site-card-body">
+                                    <div class="d-flex align-items-center gap-3 mb-4">
+                                        {% if ristorante.logo %}
+                                            <div class="bg-white p-2 rounded shadow-sm d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                                                <img src="{{ ristorante.logo.url }}" alt="{{ ristorante.nome }}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                                            </div>
+                                        {% else %}
+                                            <div class="bg-light p-2 rounded d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                                                <i class="bi bi-shop text-muted fs-3"></i>
+                                            </div>
+                                        {% endif %}
+                                        <div>
+                                            <h3 class="site-card-title mb-0">{{ ristorante.nome }}</h3>
+                                            {% if ristorante.tipo %}
+                                            <p class="small text-primary mb-0 fw-semibold">{{ ristorante.tipo }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+
+                                    <div class="site-card-meta mb-4">
+                                        <div class="site-card-meta-item w-100">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <span>{{ ristorante.indirizzo }}</span>
+                                        </div>
+                                        <div class="site-card-meta-item w-100">
+                                            <i class="bi bi-telephone"></i>
+                                            <span>{{ ristorante.numeri }}</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="site-card-actions d-flex flex-column gap-2">
+                                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#menuModal{{ ristorante.id }}">
+                                            <i class="bi bi-book"></i> {% trans 'Vedi Menu' %}
+                                        </button>
+                                        
+                                        {% if ristorante.link_maps %}
+                                        <a href="{{ ristorante.link_maps }}" target="_blank" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-2">
+                                            <i class="bi bi-geo-alt"></i> {% trans 'Vedi su Google Maps' %}
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                        <hr class="my-3 opacity-10">
-                        <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>{{ ristorante.indirizzo }}</p>
-                        <p class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i>{{ ristorante.numeri }}</p>
-                        
-                        <div class="mt-4">
-                            <h4 class="h6 mb-3 text-uppercase fw-bold text-muted">{% trans 'Il Nostro Menu' %}</h4>
-                            <div class="position-relative overflow-hidden rounded-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal{{ ristorante.id }}">
-                                <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="menu-img-preview">
-                                <div class="position-absolute top-50 start-50 translate-middle text-white text-center w-100 opacity-0 hover-overlay" style="transition: opacity 0.3s; background: rgba(0,0,0,0.4);">
-                                    <i class="bi bi-fullscreen display-6"></i>
+
+                        <!-- Modal for Menu Image -->
+                        <div class="modal fade" id="menuModal{{ ristorante.id }}" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content border-0 bg-transparent">
+                                    <div class="modal-header border-0 pb-0">
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center pt-0">
+                                        <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="modal-fullscreen-img shadow-lg rounded">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
-            </div>
-
-            <!-- Modal for Menu Image -->
-            <div class="modal fade" id="menuModal{{ ristorante.id }}" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content border-0 bg-transparent">
-                        <div class="modal-header border-0 pb-0">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center pt-0">
-                            <img src="{{ ristorante.menu.url }}" alt="{% trans 'Menu' %} {{ ristorante.nome }}" class="modal-fullscreen-img shadow-lg rounded">
-                        </div>
-                    </div>
-                </div>
-            </div>
             {% endfor %}
-        </div>
         {% else %}
         <div class="row justify-content-center" data-aos="zoom-in">
             <div class="col-md-8">
@@ -125,17 +129,4 @@
         {% endif %}
     </div>
 </section>
-
-<style>
-    .hover-overlay {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        pointer-events: none;
-    }
-    .position-relative:hover .hover-overlay {
-        opacity: 1 !important;
-    }
-</style>
 {% endblock %}
