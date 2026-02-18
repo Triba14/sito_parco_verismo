@@ -8,10 +8,14 @@
    =========================== */
 
 .licodia-page .pages-hero.licodia-hero {
-    background-image: linear-gradient(rgba(30, 30, 30, 0.55), rgba(30, 30, 30, 0.55)),
+    background-image: linear-gradient(rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)),
         url("/static/assets/img/licodia/hero-bg.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.licodia-page .pages-hero-overlay {
+    background: none;
 }
 
 .licodia-page .pages-hero.licodia-hero .pages-hero-title {
