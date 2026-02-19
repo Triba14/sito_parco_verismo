@@ -8,10 +8,14 @@
    =========================== */
 
 .mineo-page .pages-hero.mineo-hero {
-    background-image: linear-gradient(rgba(30, 30, 30, 0.55), rgba(30, 30, 30, 0.55)),
-        url("/static/assets/img/mineo/mineo-background.jpg");
+    background-image: linear-gradient(rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)),
+        url("/static/assets/img/mineo/hero-bg.jpeg");
     background-position: center;
     background-size: cover;
+}
+
+.mineo-page .pages-hero-overlay {
+    background: none;
 }
 
 .mineo-page .pages-hero.mineo-hero .pages-hero-title {
@@ -180,7 +184,7 @@
 
 .pages-image-wrapper {
     position: relative;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-8lg);
 }
 
 /* ===========================

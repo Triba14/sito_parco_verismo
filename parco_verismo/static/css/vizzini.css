@@ -8,11 +8,14 @@
    =========================== */
 
 .vizzini-page .pages-hero.vizzini-hero {
-    background-image:
-        linear-gradient(rgba(30, 30, 30, 0.55), rgba(30, 30, 30, 0.55)),
-        url("/static/assets/img/vizzini/Vizzini,_Catania,_Sicily,_Italy.webp");
+    background-image: linear-gradient(rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)),
+        url("/static/assets/img/vizzini/hero-bg.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.vizzini-page .pages-hero-overlay {
+    background: none;
 }
 
 .vizzini-page .pages-hero.vizzini-hero .pages-hero-title {
