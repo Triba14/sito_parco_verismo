@@ -10,7 +10,7 @@
 
 /* Accent line above the footer for elegant separation */
 .site-footer.compact-footer::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: 0;
@@ -124,7 +124,10 @@
 
     color: var(--color-primary);
     font-size: var(--font-size-sm);
-    transition: background .15s ease, transform .15s ease, color .15s ease;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease,
+        color 0.15s ease;
 }
 
 .footer-social-link .bi,
@@ -201,7 +204,7 @@
 }
 
 .footer-link:hover,
-.footer-link:focus {
+.footer-link:focus-visible {
     color: var(--color-primary);
     text-decoration: underline;
 }
@@ -265,7 +268,10 @@
     /* Scale proportionally within the box */
     object-position: center !important;
     opacity: 0.95;
-    transition: opacity .15s ease, transform .15s ease, filter .15s ease;
+    transition:
+        opacity 0.15s ease,
+        transform 0.15s ease,
+        filter 0.15s ease;
 }
 
 .footer-logo:hover {
@@ -274,37 +280,11 @@
 }
 
 /* --- Individual Logo Adjustments --- */
-/* Cesta: wide logo */
-.footer-logo.logo-cesta {
-    width: 200px !important;
-    max-width: 200px !important;
-    height: 105px !important;
-    max-height: 105px !important;
-}
 
-/* Mineo: slightly bigger */
-.footer-logo.logo-mineo {
-    width: 110px !important;
-    max-width: 110px !important;
-    height: 80px !important;
-    max-height: 80px !important;
-}
 
-/* Regione Sicilia: needs larger box */
-.footer-logo.logo-regione {
-    width: 120px !important;
-    max-width: 120px !important;
-    height: 80px !important;
-    max-height: 80px !important;
-}
 
-/* Licodia: smaller */
-.footer-logo.logo-licodia {
-    width: 70px !important;
-    max-width: 70px !important;
-    height: 50px !important;
-    max-height: 50px !important;
-}
+
+
 
 /* Parchi Letterari: default size */
 /* Parco Locale: default size */
@@ -324,34 +304,7 @@
         max-height: 50px !important;
     }
 
-    /* Keep proportions for individual logos */
-    .footer-logo.logo-cesta {
-        width: 150px !important;
-        max-width: 150px !important;
-        height: 80px !important;
-        max-height: 80px !important;
-    }
 
-    .footer-logo.logo-regione {
-        width: 85px !important;
-        max-width: 85px !important;
-        height: 55px !important;
-        max-height: 55px !important;
-    }
-
-    .footer-logo.logo-mineo {
-        width: 75px !important;
-        max-width: 75px !important;
-        height: 55px !important;
-        max-height: 55px !important;
-    }
-
-    .footer-logo.logo-licodia {
-        width: 50px !important;
-        max-width: 50px !important;
-        height: 35px !important;
-        max-height: 35px !important;
-    }
 
     .footer-logo.logo-parchi-naz,
     .footer-logo.logo-parco-local {
@@ -382,33 +335,9 @@
         max-height: 40px !important;
     }
 
-    .footer-logo.logo-cesta {
-        width: 130px !important;
-        max-width: 130px !important;
-        height: 70px !important;
-        max-height: 70px !important;
-    }
 
-    .footer-logo.logo-regione {
-        width: 66px !important;
-        max-width: 66px !important;
-        height: 44px !important;
-        max-height: 44px !important;
-    }
 
-    .footer-logo.logo-mineo {
-        width: 60px !important;
-        max-width: 60px !important;
-        height: 44px !important;
-        max-height: 44px !important;
-    }
 
-    .footer-logo.logo-licodia {
-        width: 40px !important;
-        max-width: 40px !important;
-        height: 28px !important;
-        max-height: 28px !important;
-    }
 
     .footer-logo.logo-parchi-naz,
     .footer-logo.logo-parco-local {
@@ -448,19 +377,62 @@
 /* Bottom bar */
 .footer-bottom {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 0.25rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
     border-top: 1px solid var(--color-border-strong);
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    width: 100%;
+}
+
+.footer-row-credits {
+    border-top: 1px dashed var(--color-border-subtle, #e9ecef);
+    padding-top: 0.5rem;
+    opacity: 0.9;
 }
 
 .footer-bottom .footer-links {
     display: flex;
-    gap: 0.6rem;
+    gap: 0.8rem;
     align-items: center;
+}
+
+.footer-credits-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.footer-credits-left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-credits-right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+@media (max-width: 576px) {
+    .footer-credits-left,
+    .footer-credits-right {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.credit-category {
+    font-weight: 500;
+    color: var(--color-text-primary);
 }
 
 /* Responsive rules */

@@ -76,14 +76,29 @@
             </div>
         </div>
 
-        <!-- Bottom bar: small and compact -->
+        <!-- Bottom bar: professional two-row socket -->
         <div class="footer-bottom">
-            <p class="mb-0 small footer-text">&copy; {% now "Y" %} {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana. Tutti i diritti riservati.' %}</p>
-            <div class="footer-links small">
-                <a href="{% url 'privacy_policy' %}" class="footer-link">{% trans 'Privacy' %}</a>
-                <a href="{% url 'cookie_policy' %}" class="footer-link">{% trans 'Cookie' %}</a>
-                <a href="javascript:void(0)" class="footer-link" data-cookie-preferences style="cursor: pointer;">{% trans 'Gestisci Cookie' %}</a>
-                <a href="{% url 'note_legali' %}" class="footer-link">{% trans 'Note Legali' %}</a>
+            <!-- Row 1: Brand/Copyright + Global Nav Links -->
+            <div class="footer-row footer-row-main">
+                <p class="mb-0 small footer-text">&copy; {% now "Y" %} {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana. Tutti i diritti riservati.' %}</p>
+                <div class="footer-links small">
+                    <a href="{% url 'privacy_policy' %}" class="footer-link">{% trans 'Privacy' %}</a>
+                    <a href="{% url 'cookie_policy' %}" class="footer-link">{% trans 'Cookie' %}</a>
+                    <a href="javascript:void(0)" class="footer-link" data-cookie-preferences style="cursor: pointer;">{% trans 'Gestisci Cookie' %}</a>
+                    <a href="{% url 'note_legali' %}" class="footer-link">{% trans 'Note Legali' %}</a>
+                </div>
+            </div>
+
+            <!-- Row 2: Production Credits (ITS Steve Jobs + Detailed Team) -->
+            <div class="footer-row footer-row-credits">
+                <div class="footer-credits-group footer-credits-left small footer-text">
+                    <div>{% trans 'Realizzato da' %} <a href="https://www.stevejobs.academy/" target="_blank" rel="noopener noreferrer" class="footer-link">{% trans 'Fondazione ITS Steve Jobs' %}</a></div>
+                    <div><span class="credit-category">{% trans 'Foto' %}:</span> Delia Di Pasquale, Rossandra Pepe</div>
+                </div>
+                <div class="footer-credits-group footer-credits-right small footer-text">
+                    <div><span class="credit-category">{% trans 'Webmaster' %}:</span> Giuseppe Cairone, Gabriele Di Modica, Luigi Meli, Giuseppe Tribastone</div>
+                    <div><span class="credit-category">{% trans 'Copywriter' %}:</span> Delia Di Pasquale, Pietro La Rocca</div>
+                </div>
             </div>
         </div>
     </div>
