@@ -304,6 +304,12 @@
         max-height: 50px !important;
     }
 
+    /* Proporzione compensata per il logo orizzontale */
+    .footer-logo.logo-cesta {
+        width: 76px !important;
+        max-width: 76px !important;
+    }
+
 
 
     .footer-logo.logo-parchi-naz,
@@ -333,6 +339,12 @@
         height: 40px !important;
         max-width: 55px !important;
         max-height: 40px !important;
+    }
+    
+    /* Proporzione compensata per il logo orizzontale */
+    .footer-logo.logo-cesta {
+        width: 60px !important;
+        max-width: 60px !important;
     }
 
 
