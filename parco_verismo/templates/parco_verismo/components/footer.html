@@ -5,7 +5,7 @@
         <!-- Top: Brand + Navigation + Contact (stack on mobile, three columns on desktop) -->
         <div class="footer-grid">
             <div class="footer-brand" aria-labelledby="footer-brand-title">
-                <h5 id="footer-brand-title" class="footer-heading">{% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}</h5>
+                <h5 id="footer-brand-title" class="footer-heading">Parco Letterario® Giovanni Verga e Luigi Capuana</h5>
                 <p class="footer-text">{% trans '“I luoghi del Verismo a Vizzini, Mineo e Licodia Eubea”' %}</p>
                 <div class="social-links" aria-label="Social links">
                     <a href="https://www.facebook.com/ParcoLetterarioGiovanniVergaeLuigiCapuana" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook">
@@ -37,7 +37,7 @@
                 <address class="footer-contact-list">
                     <div>
                         <i class="bi bi-geo-alt-fill footer-icon" aria-hidden="true"></i>
-                        <span class="d-inline-block">{% trans "Viale Regina Margherita, 6 - Vizzini (CT)" %}</span>
+                        <span class="d-inline-block">Viale Regina Margherita, 6 - Vizzini (CT)</span>
                     </div>
                     <div>
                         <i class="bi bi-envelope-fill footer-icon" aria-hidden="true"></i>
@@ -54,24 +54,24 @@
         <!-- Logos row (compact, wraps as needed) -->
         <div class="footer-logos-wrap">
             <div class="footer-logos" role="group" aria-label="Partner logos">
-                <img src="{% static 'assets/img/loghi/partner/LogoRegione2.png' %}" alt="{% trans 'Logo Regione' %}" class="footer-logo logo-regione">
+                <img src="{% static 'assets/img/loghi/partner/LogoRegione2.png' %}" alt="Logo Regione Sicilia" class="footer-logo logo-regione">
                 <a href="https://www.parchiletterari.com/" target="_blank" rel="noopener noreferrer" title="Parchi Letterari">
-                    <img src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}" alt="{% trans 'Logo Parchi Letterari' %}" class="footer-logo logo-parchi-naz">
+                    <img src="{% static 'assets/img/loghi/network/logo-parchi-letterari.png' %}" alt="Logo Parchi Letterari" class="footer-logo logo-parchi-naz">
                 </a>
                 <a href="https://parcovergacapuana.it/" target="_blank" rel="noopener noreferrer" title="Parco Letterario Giovanni Verga e Luigi Capuana">
-                    <img src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}" alt="{% trans 'Logo Parco Verga e Capuana' %}" class="footer-logo logo-parco-local">
+                    <img src="{% static 'assets/img/loghi/parco/logo-parco-black.png' %}" alt="Logo Parco Verga e Capuana" class="footer-logo logo-parco-local">
                 </a>
                 <a href="https://www.comune.vizzini.ct.it/" target="_blank" rel="noopener noreferrer" title="Comune di Vizzini">
-                    <img src="{% static 'assets/img/loghi/partner/LogoVizzini3.png' %}" alt="{% trans 'Logo Vizzini' %}" class="footer-logo logo-vizzini">
+                    <img src="{% static 'assets/img/loghi/partner/LogoVizzini3.png' %}" alt="Logo Vizzini" class="footer-logo logo-vizzini">
                 </a>
                 <a href="https://www.comune.mineo.ct.it/" target="_blank" rel="noopener noreferrer" title="Comune di Mineo">
-                    <img src="{% static 'assets/img/loghi/partner/LogoMineo4.png' %}" alt="{% trans 'Logo Mineo' %}" class="footer-logo logo-mineo">
+                    <img src="{% static 'assets/img/loghi/partner/LogoMineo4.png' %}" alt="Logo Mineo" class="footer-logo logo-mineo">
                 </a>
                 <a href="https://comune.licodiaeubea.ct.it/" target="_blank" rel="noopener noreferrer" title="Comune di Licodia Eubea">
-                    <img src="{% static 'assets/img/loghi/partner/LogoLicodiaEubea5.png' %}" alt="{% trans 'Logo Licodia Eubea' %}" class="footer-logo logo-licodia">
+                    <img src="{% static 'assets/img/loghi/partner/LogoLicodiaEubea5.png' %}" alt="Logo Licodia Eubea" class="footer-logo logo-licodia">
                 </a>
                 <a href="https://www.centrostudicesta.it/" target="_blank" rel="noopener noreferrer" title="Centro Studi Cesta">
-                    <img src="{% static 'assets/img/loghi/partner/LogoCesta6.png' %}" alt="{% trans 'Logo Cesta' %}" class="footer-logo logo-cesta">
+                    <img src="{% static 'assets/img/loghi/partner/LogoCesta6.png' %}" alt="Logo C.E.S.T.A." class="footer-logo logo-cesta">
                 </a>
             </div>
         </div>
@@ -80,7 +80,7 @@
         <div class="footer-bottom">
             <!-- Row 1: Brand/Copyright + Global Nav Links -->
             <div class="footer-row footer-row-main">
-                <p class="mb-0 small footer-text">&copy; {% now "Y" %} {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana. Tutti i diritti riservati.' %}</p>
+                <p class="mb-0 small footer-text">&copy; {% now "Y" %} Parco Letterario® Giovanni Verga e Luigi Capuana. {% trans 'Tutti i diritti riservati.' %}</p>
                 <div class="footer-links small">
                     <a href="{% url 'privacy_policy' %}" class="footer-link">{% trans 'Privacy' %}</a>
                     <a href="{% url 'cookie_policy' %}" class="footer-link">{% trans 'Cookie' %}</a>
@@ -92,7 +92,7 @@
             <!-- Row 2: Production Credits (ITS Steve Jobs + Detailed Team) -->
             <div class="footer-row footer-row-credits">
                 <div class="footer-credits-group footer-credits-left small footer-text">
-                    <div>{% trans 'Realizzato da' %} <a href="https://www.stevejobs.academy/" target="_blank" rel="noopener noreferrer" class="footer-link">{% trans 'Fondazione ITS Steve Jobs' %}</a></div>
+                    <div>{% trans 'Realizzato da' %} <a href="https://www.stevejobs.academy/" target="_blank" rel="noopener noreferrer" class="footer-link">Fondazione ITS Steve Jobs</a></div>
                     <div><span class="credit-category">{% trans 'Crediti fotografici' %}:</span> Delia Di Pasquale e Rossandra Pepe</div>
                 </div>
                 <div class="footer-credits-group footer-credits-right small footer-text">
