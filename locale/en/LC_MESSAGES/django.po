@@ -4638,7 +4638,7 @@ msgstr "Website owner"
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:65
 msgid "Sede legale"
-msgstr "Registered office"
+msgstr "Head office"
 
 #: parco_verismo/templates/parco_verismo/note_legali.html:68
 msgid "P.IVA/Codice Fiscale"
@@ -10413,6 +10413,18 @@ msgstr "Work in Place"
 #. parco_verismo/models/autori_opere.py
 msgid "Opere nei Luoghi"
 msgstr "Works in Places"
+
+msgid "L'istituzione in sé non ha partita IVA, per informazioni e riferimenti di qualsiasi genere è possibile contattare l'ente gestore"
+msgstr "The institution itself does not have a VAT number; for information and references of any kind, you can contact the managing body"
+
+msgid "Sede"
+msgstr "Head office"
+
+msgid "Realizzato da"
+msgstr "Created by"
+
+msgid "Crediti fotografici"
+msgstr "Photo credits"
 
 #~ msgid "Supporta il Parco Letterario"
 #~ msgstr "Support the Literary Park"

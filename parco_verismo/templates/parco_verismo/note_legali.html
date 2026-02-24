@@ -62,10 +62,20 @@
 
     <div class="contact-box">
         <p><strong>{% trans "Titolare del sito" %}:</strong> Parco Letterario Giovanni Verga e Luigi Capuana</p>
-        <p><strong>{% trans "Sede legale" %}:</strong> c/o Comune di Vizzini, Piazza Umberto I, 95049 Vizzini (CT)</p>
+        <p><strong>{% trans "Sede" %}:</strong> Viale Regina Margherita, 6 | 95049 Vizzini (CT)</p>
         <p><strong>{% trans "Email" %}:</strong> info@parcovergacapuana.it</p>
-        <p><strong>{% trans "PEC" %}:</strong> parcovergacapuana@pec.it</p>
-        <p><strong>{% trans "P.IVA/Codice Fiscale" %}:</strong> [DA INSERIRE]</p>
+    </div>
+
+    <p>
+        {% blocktrans %}L'istituzione in sé non ha partita IVA, per informazioni e riferimenti di qualsiasi genere è possibile contattare l'ente gestore{% endblocktrans %} Centro Studi C.E.S.T.A.
+    </p>
+
+    <div class="contact-box">
+        <p><strong>{% trans "Ente gestore" %}:</strong> Centro Studi C.E.S.T.A.</p>
+        <p><strong>{% trans "Sede legale" %}:</strong> Viale Regina Margherita, 6 | 95049 Vizzini (CT)</p>
+        <p><strong>{% trans "PEC" %}:</strong> centrostudicesta@pec.it</p>
+        <p><strong>{% trans "C. F." %}:</strong> 91017000877</p>
+        <p><strong>{% trans "P. IVA" %}:</strong> 05674330872</p>
     </div>
 
     <h2>{% trans "2. Oggetto e Finalità del Sito" %}</h2>
@@ -108,12 +118,12 @@
         <li>{% trans "Rimuovere indicazioni di copyright o altre note di proprietà" %}</li>
     </ul>
 
-    <h3>{% trans "4.1 Opere Letterarie" %}</h3>
+    <h2>{% trans "4.1 Opere Letterarie" %}</h2>
     <p>
         {% trans "Le opere letterarie di Giovanni Verga, Luigi Capuana e altri autori veristi citate o collegate dal sito sono di pubblico dominio. I link a Wikisource e altre biblioteche digitali rimandano a risorse liberamente accessibili." %}
     </p>
 
-    <h3>{% trans "4.2 Immagini e Fotografie" %}</h3>
+    <h2>{% trans "4.2 Immagini e Fotografie" %}</h2>
     <p>
         {% trans "Le fotografie e le immagini presenti nel sito sono di proprietà del Parco Letterario Giovanni Verga e Luigi Capuana, dei Comuni partner, o utilizzate previa autorizzazione. Eventuali immagini di terzi sono utilizzate nel rispetto delle licenze d'uso applicabili." %}
     </p>
@@ -168,25 +178,10 @@
         <li><a href="{% url 'cookie_policy' %}">{% trans "Cookie Policy" %}</a></li>
     </ul>
 
-    <h2>{% trans "11. Contatti" %}</h2>
+    <h2>{% trans "11. Crediti" %}</h2>
     <p>
-        {% trans "Per informazioni, segnalazioni o richieste relative al sito:" %}
-    </p>
-    <div class="contact-box">
-        <p><strong>{% trans "Email" %}:</strong> info@parcovergacapuana.it</p>
-        <p><strong>{% trans "PEC" %}:</strong> parcovergacapuana@pec.it</p>
-        <p><strong>{% trans "Telefono" %}:</strong> 0933 196 7333</p>
-        <p><strong>{% trans "Indirizzo" %}:</strong> Parco Letterario Giovanni Verga e Luigi Capuana<br>
-        c/o Comune di Vizzini<br>
-        Piazza Umberto I<br>
-        95049 Vizzini (CT)<br>
-        Italia</p>
-    </div>
-
-    <h2>{% trans "12. Crediti" %}</h2>
-    <p>
-        <strong>{% trans "Sviluppo e Design" %}:</strong> Giuseppe Tribastone, <a href="https://giuseppecairone.dev" target="_blank" rel="noopener noreferrer">Giuseppe Cairone</a>, <a href="https://luigimeli.work" target="_blank" rel="noopener noreferrer">Luigi Meli</a>, Gabriele di Modica<br>
-        <strong>{% trans "Hosting" %}:</strong> Aruba</a><br>
+        <strong>{% trans "Sviluppo e Design" %}:</strong> Giuseppe Tribastone, <a href="https://giuseppecairone.dev" target="_blank" rel="noopener noreferrer">Giuseppe Cairone</a>, <a href="https://luigimeli.work" target="_blank" rel="noopener noreferrer">Luigi Meli</a>, Gabriele Di Modica<br>
+        <strong>{% trans "Hosting" %}:</strong> Aruba<br>
         <strong>{% trans "Tecnologie utilizzate" %}:</strong> Django 5.2, Bootstrap 5, Python
     </p>
 </div>
